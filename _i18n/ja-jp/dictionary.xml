@@ -1195,7 +1195,6 @@
   <block id="cb947e43fc5b51270600556c1bdc9a6e" category="paragraph">また、 [ データ調査 ] ページから結果をフィルタリングして、結果のレポートを CSV ファイルとしてダウンロードすることもできます。を参照してください <block ref="d866de3580f3d4e6c76a60eb4ffbd9e6" category="inline-xref-macro-rx"></block> を参照してください。</block>
   <block id="4dd66ca96fb96e8e0b7ea1d39b21b6d2" category="section-title">個人データを含むファイルを表示する</block>
   <block id="99c411b30c0d86f95c6416318f98106b" category="inline-link-macro">すべてのリストを参照してください</block>
-  <block id="81235bb8dbca2b584e21b3ca23730b54" category="paragraph">Cloud Data Sense は、データ内の特定の単語、文字列、パターン（ Regex ）を自動的に識別します。たとえば、個人識別情報（ PII ）、クレジットカード番号、社会保障番号、銀行口座番号、パスワード、 その他。 <block ref="3a25cef7ea1e79696c3eac86ef0a5a72" category="inline-link-macro-rx"></block>。</block>
   <block id="c39a62af3ed5ce08e86086b818d3d335" category="paragraph">また、スキャン対象のデータベースサーバを追加した場合、 Data Fusion の機能を使用してファイルをスキャンし、データベースから一意の識別子がこれらのファイルまたは他のデータベースのいずれに存在するかを特定できます。を参照してください <block ref="e5fd618a95839b26abd9eb3c166b6d5a" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="ff63178a8a067a8614bbbfdf75252bf4" category="inline-link-macro">個人データのテーブル</block>
   <block id="0b89e2aeea46e7ca57ab15ff5bbc7f74" category="paragraph">一部のタイプの個人データについては、データセンスは _ 近接性検証 _ を使用してその結果を検証します。検証は、見つかった個人データに近接した 1 つまたは複数の定義済みキーワードを検索することによって行われます。たとえば、データセンスは米国を識別しますソーシャルセキュリティ番号（ SSN ）は、 IT の横に近接語（ _SSN_or_social security_ など）が表示されている場合、 SSN として表示されます。 <block ref="62bae47b4917c28b4ad589ca12fe7ebd" category="inline-link-macro-rx"></block> データセンスがプロキシミティ検証を使用する場合に表示されます</block>
@@ -1206,10 +1205,8 @@
   <block id="8c17e3b1b4e627d4a92973aec9ef4ce0" category="inline-image-macro">個人ファイルダイアログボックスのスクリーンショット。個人データタイプの横にある調査結果アイコンをクリックできます。</block>
   <block id="a08520118359e571f24b420e7729b107" category="paragraph"><block ref="a08520118359e571f24b420e7729b107" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bec06ffefcc7ab6b7882b310c3c7790a" category="list-text">特定のファイルの検索、ソート、詳細の展開、 * 調査結果 * をクリックしてマスクされた情報を表示、またはファイルリストをダウンロードして、データを調査します。</block>
-  <block id="7cdf7364a52ab6af797f1b1dcae76247" category="inline-image-macro">調査結果をクリックした後の詳細情報のスクリーンショット。</block>
   <block id="14e7cee2f25241a9d6084f5ac31f54b0" category="section-title">機密性の高い個人データを含むファイルを表示する</block>
   <block id="8677494d8f5c3e6a2c69e93e5254639f" category="inline-link">GDPR の第 9 、 10 記事</block>
-  <block id="9c0bd6a9f0ddda0f88659e943db1d4cd" category="paragraph">クラウドデータセンスは、などのプライバシー規制によって定義された、特別な種類の機密情報を自動的に識別します<block ref="413dcff8641b851bffd5ca7e45c359a4" category="inline-link-rx"></block>。たとえば、人の健康、民族の起源、性的指向に関する情報などです。 <block ref="6507e706b290d038d0deb8cb0d263511" category="inline-link-macro-rx"></block>。</block>
   <block id="0bf6d005e569afb6ee5ee230348f89c1" category="paragraph">Cloud Data Sense は、人工知能（ AI ）、自然言語処理（ NLP ）、機械学習（ ML ）、コグニティブコンピューティング（ CC ）を使用して、スキャンするコンテンツの意味を理解し、エンティティを抽出してそれに応じて分類します。</block>
   <block id="a99f79bee091a240f28dc9e017d5efd7" category="paragraph">たとえば、機密性の高い GDPR データカテゴリの 1 つは民族起源です。データセンスは NLP の能力を持つため、「ジョージ・メキシカン」と書かれた文（ GDPR の第 9 条に規定されている機密データを示す文）と「ジョージ・メキシカン料理を食べている文（ George is exican food ）」の違いを区別することができます。</block>
   <block id="a8dc04f8b2b452296a4b47a8a5006a86" category="admonition">機密性の高い個人データをスキャンする場合は、英語のみがサポートされます。言語のサポートは、あとで追加されます。</block>
@@ -1293,7 +1290,6 @@
   <block id="dad25b649a281b9705d7fbdfc91bb96c" category="inline-link-macro">カテゴリのタイプ</block>
   <block id="0e44b2b774524434cca65d00db4db5b6" category="cell">を選択します <block ref="d4eabbd4fb9268c1389fccae66300714" category="inline-link-macro-rx"></block></block>
   <block id="86171ac828a961155f1ccf4dfa1eb93f" category="cell">感度レベル</block>
-  <block id="8745a2887b8fcb877ada09dffce47ece" category="cell">感度レベルを選択します</block>
   <block id="d0902d27bce16ddeb2cb9c788db8ddcd" category="cell">個人データ</block>
   <block id="7a3dcbf3ed229470d34578d4f4f6fc43" category="inline-link-macro">個人データの種類</block>
   <block id="4fcae143243cf4e0c0e7aacf6294e13a" category="cell">を選択します <block ref="1b5fb6ede432593c04dc0306b78c1e56" category="inline-link-macro-rx"></block></block>
@@ -1427,7 +1423,6 @@
   <block id="2b6411ec708c0a6b6901665ecd561906" category="list-text">ボタンバーで、 * 移動 * をクリックします。</block>
   <block id="298d8e5bc86c1519b540e84e997c2325" category="inline-image-macro">選択したすべてのファイルを移動する NFS 共有の名前を指定できるように、ファイルの移動ダイアログを示すスクリーンショット。</block>
   <block id="82d99b9b7230edf33a8c8b355ea71e98" category="paragraph"><block ref="82d99b9b7230edf33a8c8b355ea71e98" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e69431e5fa3d603583a708416843df99" category="list-text">_ ファイルの移動 _ ダイアログで ' 選択したすべてのファイルを移動する NFS 共有の名前を '&lt; ホスト名 &gt;:/&lt;share_path&gt;' の形式で入力し ' * ファイルの移動 * をクリックします</block>
   <block id="b46806dad0d4346d50ec215cb81c8e7e" category="paragraph">ファイルのメタデータの詳細を表示するときに、個々のファイルを移動することもできます。「 * ファイルを移動 * 」をクリックします。</block>
   <block id="652c33068cfd81ee8751b1f84d12e4a0" category="inline-image-macro">[ データ調査 ] ページのファイルのメタデータ詳細から [ ファイルの移動 ] ボタンを選択したことを示すスクリーンショット。</block>
   <block id="aea50b39bf674599cf913ca73fc8eeb2" category="paragraph"><block ref="aea50b39bf674599cf913ca73fc8eeb2" category="inline-image-macro-rx" type="image"></block></block>
@@ -2083,7 +2078,6 @@
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">データで特定できるすべての種類の個人データを表示します</block>
   <block id="6fef68839fa6cc086be3d7d7abb69cad" category="paragraph">。<block ref="d5f59196a7b849b257c625be10a1d93c" category="inline-link-rx"></block> クラウドデータセンスのサポートが追加されました。従量課金制（ PAYGO ）サブスクリプションを使用して、ネットアップのライセンスを使用するだけでなく、 Google Cloud ストレージに導入された Cloud Volumes ONTAP システムからデータをスキャンできるようになりました。</block>
   <block id="9ffceb20e382df6e4587add0d24af321" category="cell">オーストラリア TFN ( 税ファイル番号 )</block>
-  <block id="e1ae59ed032376d2ab05147c6442f610" category="cell">オーストラリア運転免許証番号</block>
   <block id="67863eec6ed398cda366fe555c1746bd" category="cell">オーストラリアのメディケア番号</block>
   <block id="bba082dd43baad5296b00863b2fd871e" category="cell">オーストラリアパスポート番号</block>
   <block id="17dca5bf3d125aa4d0f3309727923bc6" category="list-text">AIP ラベルを Cloud Data Sense と統合している場合は、このファイルにラベルを割り当てるか、すでに存在する場合は別のラベルに変更できます。を参照してください <block ref="1d610d8b86b5e1441346aa765100c237" category="inline-link-macro-rx"></block> を参照してください。</block>
@@ -2361,7 +2355,6 @@
   <block id="9f2913099fea83e0f323c9eaa2647551" category="inline-link-macro">SharePointアカウント全体をデータセンスから削除します</block>
   <block id="22653e7e1ce41c78cecfefd77069565b" category="paragraph">できることに注意してください <block ref="b445b66eb7994fc8803d57fcbaaa50f1" category="inline-link-macro-rx"></block> SharePointアカウントからユーザーデータをスキャンする必要がなくなった場合。</block>
   <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">現在、 30MB を超えるファイルのラベルは変更できません。OneDrive、SharePoint、Google Driveアカウントの場合、最大ファイルサイズは4 MBです。</block>
-  <block id="ccff7c05ce1ff2ff0bafe406c61338f6" category="paragraph"><block ref="ccff7c05ce1ff2ff0bafe406c61338f6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5ba18772d6c4efd6fedbaf5fb29d559a" category="paragraph">調査ページの内容をフィルタリングして、表示する結果のみを表示できます。これは非常に強力な機能です。データをリファインした後、ページ上部のボタンバーを使用して、ファイルのコピー、ファイルの移動、ファイルへのタグまたはAIPラベルの追加など、さまざまなアクションを実行できます。</block>
   <block id="fe340da6c921cdc51f04bc690aa53387" category="cell">ポリシーを選択します。実行します <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> をクリックして、既存のポリシーのリストを表示し、独自のカスタムポリシーを作成します。</block>
   <block id="1a81671798e285bd46fa9b2aa3c86d00" category="cell">1つ以上のユーザ名またはグループ名を選択するか、または名前の一部を入力してください</block>
@@ -2439,7 +2432,6 @@
   <block id="61e409921fe798c5667689af4656a112" category="inline-link">ポリシーの編集方法については、を参照してください</block>
   <block id="dccade93a4eb5827c9c662378d30957d" category="paragraph">以前に作成したカスタムポリシーに変更を加える必要がある場合は、新しいポリシーを作成する代わりにポリシーを編集できるようになりました。<block ref="9b2d4d6793839e9e21c2eaa1cfc45637" category="inline-link-rx"></block>。</block>
   <block id="1f50cc006f0a9aa5fa08f3f58b10bf1d" category="paragraph">インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンできるようになりました。 <block ref="8c0c83431a0c54e3e158fb0a6b366a6d" category="inline-link-macro-rx"></block></block>
-  <block id="a26fd963c8509a271edf19a08fc0d3ae" category="list-text">オペレーティングシステム：Red Hat Enterprise LinuxまたはCentOSバージョン8.0、8.1、8.4</block>
   <block id="fbbd4044d95d7d79fb98ebd8d7daf546" category="summary">必要に応じて、1つ以上の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、Google Driveアカウント、 またはSharePointアカウント。</block>
   <block id="a80767bb4322f81d8b7bd0b15673f6ab" category="summary">Data Senseソフトウェアをアンインストールして、問題のトラブルシューティングを行ったり、ソフトウェアをホストから完全に削除したりできます。インスタンスを削除すると、インデックス付きデータが存在する関連ディスクも削除されます。データセンスがスキャンされたすべての情報は完全に削除されます。</block>
   <block id="9cd2794f7afcdacb42a1ab6334e60324" category="doc">Cloud Data Senseをアンインストールしています</block>
@@ -2458,7 +2450,6 @@
   <block id="0dde885c45d0ef5ba59d628be1651196" category="inline-link-macro">データ調査レポートの詳細については、こちらをご覧ください</block>
   <block id="d0db8780768b860617a4252d66600fdb" category="paragraph">ページをリファインした後で、そのページの内容をレポートとしてダウンロードする場合は、をクリックします <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> ボタンを押します。レポートは、.csvファイル（最大5、000行のデータを含めることができます）または、NFS共有にエクスポートする.jsonファイル（無制限の行数を含めることができます）として保存できます。 <block ref="94b4ac215f06d804e337d419fce0c8e4" category="inline-link-macro-rx"></block>。</block>
   <block id="26ec7ebe8b7297e79affc05b3e89352b" category="cell">IDの数</block>
-  <block id="5eea9611e0978b939581b9bb18ff1a29" category="cell">検出された機密識別子のファイルごとの範囲を選択します。個人データと機密性の高い個人データが含まれます。</block>
   <block id="9774801e5b642078494706b6a4b33bd0" category="paragraph">コピー処理の進捗状況はで確認できます <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
   <block id="a0f66640fa5131ddb32f4ddcbd1d9281" category="paragraph">クローニング処理の進捗状況はで確認できます <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
   <block id="1fdb52ff740ba099a079361368705733" category="paragraph">削除処理の進捗状況はで確認できます <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
@@ -2537,26 +2528,20 @@
   <block id="a6e2475f148e034250ac7cb66419f3f3" category="list-text">データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.11.xがインストールされている場合は、1.12.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
   <block id="fae289ef9204f7c3119e084615a6d53f" category="list-text">政府機関、またはインターネットにアクセスできないオンプレミスの場所（ダークサイトとも呼ばれます）にデータセンスを配置した場合、AIPラベル機能は使用できません。</block>
   <block id="49346bec66601a23d58acfc71f396d3f" category="list-text">Azure NetApp Files の場合は、スキャンするボリュームと同じ領域に配置する必要があります。</block>
-  <block id="87ebc84b19af9756bbc43a1c3850a080" category="list-text">バージョン7.8または7.9を使用できますが、Linuxカーネルのバージョンは4.14以降である必要があります</block>
   <block id="b39e81db6545fcc5e2567ec3c6930540" category="section-title">政府機関によるサポート</block>
   <block id="1c8dc4f89ff17cff9b19b208d74ea4a3" category="paragraph">コネクタが政府機関リージョン（AWS GovCloud、Azure Gov、またはAzure DoD）に導入されている場合は、Cloud Data Senseがサポートされます。この方法で展開する場合、データセンスには次の制約があります。</block>
   <block id="b3478a494adde25715314b14559dd6a4" category="list-text">OneDriveアカウント、SharePointアカウント、Googleドライブアカウントはスキャンできません。</block>
   <block id="d1f03114b8fef49b0f0cb0a28049ecdf" category="list-text">Microsoft Azure Information Protection（AIP）ラベル機能を統合できません。</block>
   <block id="d022b1f14ebf8b0b397ff02f8b6bfe78" category="section-title">政府機関に導入した場合、制限はありますか？</block>
   <block id="3f1d923e5a351dcc541f10e98f5da114" category="summary">作業環境とデータソースごとに、スキャンされるデータを管理できます。変更は「リポジトリ」単位で行うことができます。つまり、ボリューム、バケット、共有、スキーマ、ユーザ、 など、スキャンするデータソースの種類によって異なります。</block>
-  <block id="cb73c564126960ae6ca282e79abf7c40" category="doc">リポジトリのスキャン設定を変更します</block>
   <block id="e4723f182b426a80c2a46707ff02e15e" category="inline-link-macro">マッピングスキャンまたはマッピング&amp;amp;分類スキャン</block>
   <block id="4645b000842c59ed1aaeb9e534c34e85" category="paragraph">変更できる点は'リポジトリがスキャンされているかどうか'およびデータセンスがを実行しているかどうかです <block ref="9c20ac53e6a16bb1a8678a8405359003" category="inline-link-macro-rx"></block>。また、一定期間にわたるボリュームのスキャンを停止する必要がある場合などに、スキャンを一時停止および再開することもできます。</block>
-  <block id="1c4489a47397251870bd0d51f8701063" category="section-title">スキャンされているリポジトリを表示します</block>
-  <block id="bdedbcd07e14573fe6ff9e61fa471628" category="paragraph">データがスキャンしている、それぞれの作業環境およびデータソースのリポジトリを個別に表示できます。</block>
   <block id="86cfaa233cd6203ca98aec701f702508" category="list-text">[構成（Configuration）]タブで、作業環境の[*構成*（* Configuration *）]ボタンをクリックします。</block>
   <block id="c220e333c84311a5247ea56021c7f9af" category="inline-image-macro">作業環境の設定ボタンをクリックする方法を示すスクリーンショット。</block>
   <block id="42b33a03e844c37998934099293f35e3" category="paragraph"><block ref="42b33a03e844c37998934099293f35e3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d572e0d4b826c4aedc53e9ebf7b16a8f" category="list-text">[Scan Configuration]ページでは、すべてのリポジトリのスキャン設定を表示できます。</block>
-  <block id="2767187e50c5d0cd06a373007090d513" category="paragraph"><block ref="2767187e50c5d0cd06a373007090d513" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dbb0dfda8b378050531f81450c4bc33e" category="section-title">リポジトリのスキャンタイプを変更する</block>
   <block id="80442a9b9f6c43539008be8521ce5283" category="paragraph">設定ページからは、作業環境でマッピング専用スキャンまたはマッピングおよび分類スキャンをいつでも開始または停止できます。マッピングのみのスキャンからマッピングおよび分類スキャンに変更することもできます。また、マッピングのみのスキャンからマッピングおよび分類スキャンに変更することもできます。</block>
-  <block id="d2ec03a8c1a8422301c71b6c3e6e8b4c" category="admonition">データベースをマッピング専用スキャンに設定することはできません。データベーススキャンは、[オフ]または[オン]にできます。これは、[マップアンド分類]と同じです。</block>
   <block id="e2fd7fccc8e37c687bd3d80bafb4e9fd" category="list-text">Scan Configurationページでは、任意のリポジトリ（この例ではバケット）を変更して* Map *スキャンまたは* Map &amp; Classify *スキャンを実行したり、* Off *を選択して特定のバケットのスキャンを停止したりできます。</block>
   <block id="d2c070afb22765e227addc428b9bb43d" category="inline-image-macro">バケットのスキャンのタイプを選択する方法を示すスクリーンショット。</block>
   <block id="8d501a2dffff147be5f9997f70b34348" category="paragraph"><block ref="8d501a2dffff147be5f9997f70b34348" category="inline-image-macro-rx" type="image"></block></block>
@@ -2614,4 +2599,46 @@
   <block id="fb575acbb63d1898a1021e2856b18b6e" category="inline-image-macro">SharePointサイトでスキャンを一時停止および再開する方法を示すスクリーンショット。</block>
   <block id="9e9d3c723f9f4d6ab1b9e783f2239e62" category="paragraph"><block ref="9e9d3c723f9f4d6ab1b9e783f2239e62" category="inline-image-macro-rx" type="image"></block></block>
   <block id="faa8551af182d75e7a3f5d7e7a6dc071" category="sidebar">スキャン設定を変更します</block>
+  <block id="dd85b6e90159d1cdbde0d5badd022af0" category="paragraph">Cloud Data Sense は、データ内の特定の単語、文字列、パターン（ Regex ）を自動的に識別します。たとえば、個人識別情報（ PII ）、クレジットカード番号、社会保障番号、銀行口座番号、パスワード、 その他。 <block ref="3a25cef7ea1e79696c3eac86ef0a5a72" category="inline-link-macro-rx"></block>。データセンスは、個々のファイル、ディレクトリ（共有およびフォルダ）内のファイル、およびデータベーステーブル内のこのタイプの情報を識別します。</block>
+  <block id="f4f50af532754b5670ea58ed6b969ba0" category="paragraph">以下の2つのスクリーンショットは、個々のファイルに保存されている個人データを示しています。これらのデータは、ディレクトリ（共有およびフォルダ）内のファイルに保存されています。[構造化*]タブを選択して、データベース内で検出された個人データを表示することもできます。</block>
+  <block id="bfe1194df41f0cc26cfdf2f75931ac0d" category="inline-image-macro">[調査結果]をクリックした後にファイルで見つかった詳細情報のスクリーンショット。</block>
+  <block id="67524a6d2ea2d542c817bd783e914070" category="paragraph"><block ref="67524a6d2ea2d542c817bd783e914070" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5529cbafb2e0562120cf639c1f822fa6" category="inline-image-macro">[調査結果]をクリックした後にディレクトリで見つかった詳細情報のスクリーンショット。</block>
+  <block id="886eca0ba693f7fa50ef2d9fe4c0887f" category="paragraph"><block ref="886eca0ba693f7fa50ef2d9fe4c0887f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bf5b7f26c8f48a1eb758b47185081250" category="paragraph">クラウドデータセンスは、などのプライバシー規制によって定義された、特別な種類の機密情報を自動的に識別します<block ref="413dcff8641b851bffd5ca7e45c359a4" category="inline-link-rx"></block>。たとえば、人の健康、民族の起源、性的指向に関する情報などです。 <block ref="6507e706b290d038d0deb8cb0d263511" category="inline-link-macro-rx"></block>。データセンスは、個々のファイル、ディレクトリ（共有およびフォルダ）内のファイル、およびデータベーステーブル内のこのタイプの情報を識別します。</block>
+  <block id="a3e2b4b381ddb4550a30923ee80c5bd7" category="cell">感度レベルを選択します。個人レベル、個人レベル、または非機密レベルを選択します</block>
+  <block id="2c967160785c40cca46a7d4cade36507" category="cell">検出された機密識別子のファイルごとの範囲を選択します。個人データと機密性の高い個人データが含まれます。ディレクトリでフィルタリングする場合、データ検出によって各フォルダ（およびサブフォルダ）内のすべてのファイルから一致するデータが合計されます。</block>
+  <block id="c82ffa722bb30ecf26aa93c8c1f6491b" category="paragraph">必要に応じて、移動したファイルの場所にブレッドクラムファイルを残すことができます。ブレッドクラムファイルは、ファイルが元の場所から移動された理由をユーザーが理解するのに役立ちます。移動された各ファイルについて、システムは「&lt;filename&gt;-ブレッドクラム-&lt;date&gt;.txt」という名前のソース位置にブレッドクラムファイルを作成します。ダイアログボックスで、ブレッドクラムファイルに追加されるテキストを追加して、ファイルが移動された場所とファイルを移動したユーザを示すことができます。</block>
+  <block id="e947d88fc82f247e554cf80e35ff0831" category="list-text">_Move Files_Dialogに、選択したすべてのファイルを移動するNFS共有の名前を「&lt;host_name&gt;：/&lt;share_path&gt;`」の形式で入力します。</block>
+  <block id="9bf85e569c6ef93411e4ce74471413a0" category="list-text">ブレッドクラムファイルを残す場合は、_ブレッドクラム履歴_ボックスをオンにします。ダイアログボックスにテキストを入力して、ファイルが移動された場所、ファイルを移動したユーザー、およびファイルが移動された理由などのその他の情報を指定できます。</block>
+  <block id="b91992584de04476d486c6819d26aaf3" category="list-text">「*ファイルの移動*」をクリックします。</block>
+  <block id="e023ca0db491fe9b0e7722609710e69b" category="doc">リポジトリのスキャン設定を変更する</block>
+  <block id="cc044854b72a7b1c98c22253b0aaedcd" category="section-title">リポジトリのスキャンステータスの表示</block>
+  <block id="3b9cf0dce36d878eb8c76ab1d9a8dd16" category="paragraph">データがスキャンしている個々のリポジトリ（ボリューム、バケットなど）を、それぞれの作業環境およびデータソースについて表示できます。さらに、「マッピング済み」の数と「分類済み」の数を確認できます。すべてのデータに対してAIの完全な識別が実行されるため、分類にかかる時間が長くなります。</block>
+  <block id="bf3aeefcdd65b55f2612004f45b7257f" category="inline-image-macro">バケットがスキャンされているかどうか、および現在のスキャンステータスを示すスクリーンショット。</block>
+  <block id="69c5667893c99e5a388e892cc9784e66" category="paragraph"><block ref="69c5667893c99e5a388e892cc9784e66" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ecc7450cf52e0d0d89139603b07ea706" category="paragraph">_Scan Status_columnのグラフにカーソルを合わせると、各リポジトリ（この例ではbucket）でマッピングまたは分類されたファイルの数を確認できます。</block>
+  <block id="1a8f03950c641e2ffffb33146f70ef55" category="admonition">データベースをマッピング専用スキャンに設定することはできません。データベーススキャンはオフまたはオンにできます。ここで、OnはMap &amp; Classifyと同じです。</block>
+  <block id="9db1ab99c3f7640c000fdc19054af26c" category="list-text">オペレーティングシステム：Red Hat Enterprise LinuxまたはCentOSバージョン8.0~8.4</block>
+  <block id="ce12cca419124f32a01c6fec5a3be62f" category="list-text">バージョン7.8または7.9を使用できますが、Linuxカーネルバージョンは4.0以降である必要があります</block>
+  <block id="9308bcab83008e639f95b088d89b11c4" category="cell">オーストラリア運転免許証</block>
+  <block id="1ce92447664cc42f3e2c04aaf8570862" category="cell">ニュージーランド銀行口座</block>
+  <block id="fd9022553098e5fa6a8b25ae3a2dc65d" category="cell">ニュージーランド・ドライバー・ライセンス</block>
+  <block id="2be885677b02540592a1f44b87ee5fb9" category="cell">ニュージーランドIRD番号（税ID）</block>
+  <block id="52c2b4f82109d0afee40fe69db9a8cbe" category="cell">ニュージーランドNHI（National Health Index）番号 </block>
+  <block id="3c266b4db1bf588305e19eddcef36116" category="cell">ニュージーランドパスポート番号</block>
+  <block id="6006377785b7aa3dfed8795e05fbc569" category="section-title">2022年8月7日（バージョン1.15）</block>
+  <block id="afae08b9f3014d73a3bf7e0c201b2b36" category="section-title">ニュージーランドの5つの新しいタイプの個人データは、データセンスによって識別されます</block>
+  <block id="3b4b0faa54186ef002c6026e97e51a10" category="paragraph">データセンスでは、次の種類のデータを含むファイルを識別および分類できます。</block>
+  <block id="c189819be34e41f0ac712261c4bb10b0" category="list-text">ニュージーランド銀行口座番号</block>
+  <block id="57d4e061073cf52ee992a5523c0e31cb" category="list-text">ニュージーランド・ドライバーのライセンス番号</block>
+  <block id="c8c8337bd5f0527c7ba4b08117f3d96f" category="paragraph"><block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
+  <block id="8d3dd83a131924f6dd08fdea2d8e7828" category="section-title">ブレッドクラムファイルを追加して、ファイルが移動された理由を示す機能</block>
+  <block id="e92169a6172fd2cba6d57bfe01aea45a" category="paragraph">データ検出機能を使用してソースファイルをNFS共有に移動する際に、移動したファイルの場所にブレッドクラムファイルを残すことができるようになりました。ブレッドクラムファイルは、ファイルが元の場所から移動された理由をユーザーが理解するのに役立ちます。移動された各ファイルについて、システムは「&lt;filename&gt;-ブレッドクラム-&lt;date&gt;.txt」という名前のソースロケーションにブレッドクラムファイルを作成し、ファイルが移動された場所とファイルを移動したユーザを表示します。<block ref="c1eac1298d336c56373b10262d37ad96" category="inline-link-rx"></block>。</block>
+  <block id="13cd21aa095db4c5e2c5cd12303ecc97" category="section-title">ディレクトリにある個人データと機密性の高い個人データは、調査結果に表示されます</block>
+  <block id="6b473faf5fc253b69b173e6b8b87f726" category="inline-link">例を参照してください</block>
+  <block id="e8886543955f7a165a88e44f53559443" category="paragraph">[データ調査]ページに、個人データと、ディレクトリ（フォルダおよび共有）内で検出された機密性の高い個人データの結果が表示されるようになりました。<block ref="37ae8b694ca9dace0885ec3ddd4e8904" category="inline-link-rx"></block>。</block>
+  <block id="76013a8e1044d1903752927bac2c2799" category="section-title">分類に成功したボリューム、バケットなどの数のステータスを表示します</block>
+  <block id="046e94b126bcddc4303664d7f72819a5" category="inline-link">この情報の表示方法については、を参照してください</block>
+  <block id="7e79533726de53720d91f0e491df7b7f" category="paragraph">データ検出でスキャンしている個々のリポジトリ（ボリューム、バケットなど）を表示したときに、マッピングされているリポジトリの数と「分類済み」の数が表示されるようになりました。すべてのデータに対してAIの完全な識別が実行されるため、分類にかかる時間が長くなります。<block ref="0871135af547cfbd7267d7772f52c15b" category="inline-link-rx"></block>。</block>
 </blocks>

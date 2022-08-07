@@ -31,7 +31,7 @@ image:screenshot_compliance_dashboard.png["クラウドデータセンスダッ�
 
 == 個人データを含むファイルを表示する
 
-Cloud Data Sense は、データ内の特定の単語、文字列、パターン（ Regex ）を自動的に識別します。たとえば、個人識別情報（ PII ）、クレジットカード番号、社会保障番号、銀行口座番号、パスワード、 その他。 link:reference-private-data-categories.html#types-of-personal-data["すべてのリストを参照してください"^]。
+Cloud Data Sense は、データ内の特定の単語、文字列、パターン（ Regex ）を自動的に識別します。たとえば、個人識別情報（ PII ）、クレジットカード番号、社会保障番号、銀行口座番号、パスワード、 その他。 link:reference-private-data-categories.html#types-of-personal-data["すべてのリストを参照してください"^]。データセンスは、個々のファイル、ディレクトリ（共有およびフォルダ）内のファイル、およびデータベーステーブル内のこのタイプの情報を識別します。
 
 また、スキャン対象のデータベースサーバを追加した場合、 Data Fusion の機能を使用してファイルをスキャンし、データベースから一意の識別子がこれらのファイルまたは他のデータベースのいずれに存在するかを特定できます。を参照してください link:task-managing-data-fusion.html["Data Fusion を使用して個人データ識別子を追加する"^] を参照してください。
 
@@ -49,7 +49,13 @@ image:screenshot_personal_files.gif["個人ファイルダイアログボック�
 
 . 特定のファイルの検索、ソート、詳細の展開、 * 調査結果 * をクリックしてマスクされた情報を表示、またはファイルリストをダウンロードして、データを調査します。
 +
-image:screenshot_compliance_investigation_page.png["調査結果をクリックした後の詳細情報のスクリーンショット。"]
+以下の2つのスクリーンショットは、個々のファイルに保存されている個人データを示しています。これらのデータは、ディレクトリ（共有およびフォルダ）内のファイルに保存されています。[構造化*]タブを選択して、データベース内で検出された個人データを表示することもできます。
+
++
+image:screenshot_compliance_investigation_page.png["[調査結果]をクリックした後にファイルで見つかった詳細情報のスクリーンショット。"]
+
++
+image:screenshot_compliance_investigation_page_directory.png["[調査結果]をクリックした後にディレクトリで見つかった詳細情報のスクリーンショット。"]
 
 
 
@@ -57,7 +63,7 @@ image:screenshot_compliance_investigation_page.png["調査結果をクリック�
 
 == 機密性の高い個人データを含むファイルを表示する
 
-クラウドデータセンスは、などのプライバシー規制によって定義された、特別な種類の機密情報を自動的に識別します https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["GDPR の第 9 、 10 記事"^]。たとえば、人の健康、民族の起源、性的指向に関する情報などです。 link:reference-private-data-categories.html#types-of-sensitive-personal-data["すべてのリストを参照してください"^]。
+クラウドデータセンスは、などのプライバシー規制によって定義された、特別な種類の機密情報を自動的に識別します https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["GDPR の第 9 、 10 記事"^]。たとえば、人の健康、民族の起源、性的指向に関する情報などです。 link:reference-private-data-categories.html#types-of-sensitive-personal-data["すべてのリストを参照してください"^]。データセンスは、個々のファイル、ディレクトリ（共有およびフォルダ）内のファイル、およびデータベーステーブル内のこのタイプの情報を識別します。
 
 Cloud Data Sense は、人工知能（ AI ）、自然言語処理（ NLP ）、機械学習（ ML ）、コグニティブコンピューティング（ CC ）を使用して、スキャンするコンテンツの意味を理解し、エンティティを抽出してそれに応じて分類します。
 
@@ -246,10 +252,10 @@ image:screenshot_compliance_investigation_filtered.png["調査ページで結果
 | カテゴリ | を選択します link:reference-private-data-categories.html#types-of-categories["カテゴリのタイプ"^] 
 
 
-| 感度レベル | 感度レベルを選択します 
+| 感度レベル | 感度レベルを選択します。個人レベル、個人レベル、または非機密レベルを選択します 
 
 
-| IDの数 | 検出された機密識別子のファイルごとの範囲を選択します。個人データと機密性の高い個人データが含まれます。 
+| IDの数 | 検出された機密識別子のファイルごとの範囲を選択します。個人データと機密性の高い個人データが含まれます。ディレクトリでフィルタリングする場合、データ検出によって各フォルダ（およびサブフォルダ）内のすべてのファイルから一致するデータが合計されます。 
 
 
 | 個人データ | を選択します link:reference-private-data-categories.html#types-of-personal-data["個人データの種類"^] 
