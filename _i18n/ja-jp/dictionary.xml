@@ -951,7 +951,6 @@
   <block id="399d9d9194e5aac73d00fdd68d88fed1" category="paragraph"><block ref="d2df47398690701c36c48ad6a1a06ca4" category="inline-link-macro-rx"></block>。</block>
   <block id="883ee475fde85ed340a34ff3e7779a40" category="section-title">クラウドデータの意味に関する情報を特定のユーザに制限できますか。</block>
   <block id="a4d3498bfb4708ef940bb7704acbd0aa" category="paragraph">はい。 Cloud Data Sense は Cloud Manager と完全に統合されています。Cloud Manager ユーザは、ワークスペースの権限に基づいて表示可能な作業環境の情報のみを表示できます。</block>
-  <block id="a7bfd66e1935af8f12cb8a19f3000290" category="paragraph">また、特定のユーザーがデータセンス設定を管理することなくデータセンススキャン結果を表示できるようにするには、これらのユーザーに _Cloud Compliance Viewer_role を割り当てることができます。</block>
   <block id="70e4204451ab8b7224b342245071bd70" category="paragraph"><block ref="8b78b4503f012c98d9a7bad6859a8875" category="inline-link-macro-rx"></block>。</block>
   <block id="7ffd1bb560f33a5347a7a153f2a393a8" category="summary">Cloud Data Sense は、プライベートデータを管理、整理するためのさまざまな方法を提供します。これにより、最も重要なデータを簡単に確認できます。</block>
   <block id="82e6e10597cf7de906fad4f53b7deab7" category="doc">プライベートデータを整理する</block>
@@ -2273,7 +2272,6 @@
   <block id="ddc3aba4eccf7778417b3605919f552e" category="list-text">従来型システムからクラウドへデータを移行</block>
   <block id="929a567aeb50b6bfed31d080645db9d2" category="paragraph">Cloud Data Sense は、 Cloud Manager システムやストレージシステムと並行して、もう 1 つの人工知能レイヤを導入します。次に、ボリューム、バケット、データベース、その他のストレージアカウントのデータをスキャンして、見つかったデータ分析のインデックスを作成します。データセンスは、正規表現やパターンマッチングを中心に構築される代替ソリューションとは対照的に、人工知能と自然言語処理の両方を活用します。Cloud Data Senseは、AIを使用してデータをコンテキストに基づいて把握し、正確な検出と分類を行います。AIは、最新のデータタイプと拡張性を考慮して設計されているため、この目的はAIによって推進されます。また、データコンテキストを理解して、強力で正確な検出と分類を提供します。</block>
   <block id="d7f674bb407247f888d30ade7b86a73a" category="section-title">Cloud Data Senseがサポートしている導入モデルを教えてください。</block>
-  <block id="bf804f144530d65026fe3d0982584bc2" category="paragraph">通常、Cloud Data SenseはSaaSモデルを使用して導入されます。このモデルでは、Cloud Managerのインターフェイスからサービスが有効になります。Cloud Data Senseを導入すると、オンプレミス、クラウド、ハイブリッド環境など、ほぼすべての場所にあるシステムをスキャンしてレポートを作成できます。セキュアなインストールの場合、Cloud ManagerとCloud Data Senseは「ダークサイト」モデルで導入できます。ダークサイトは、オンプレミスのパッケージとしてインストールされ、外部ネットワーク接続は必要ありません。</block>
   <block id="c0f907bdf9a6cc93e97081efb1ad0ba0" category="section-title">ブラウザとデータセンスの間で送信されたプライベートデータに誰でもアクセスできますか。</block>
   <block id="90ecb8f144bb75027d2645db76b9c80e" category="paragraph">いいえブラウザとデータセンスインスタンスの間で送信されるプライベートデータはエンドツーエンドの暗号化によって保護されるため、ネットアップとサードパーティが読み取ることはできません。データセンスは、アクセスをリクエストして承認しない限り、データや結果をネットアップと共有しません。</block>
   <block id="9184420bd7268b81521fe2c0fb829c50" category="paragraph">はい。Cloud Data Sense が提供する情報は、組織内の他の関係者にも関係があるため、レポートを作成して分析情報を共有することができます。Data Sense で使用できるレポートは次のとおりです。</block>
@@ -2282,7 +2280,6 @@
   <block id="1e99ed6a00e6ef3956359cd96c54b66c" category="section-title">ソースシステムとデータタイプのタイプ</block>
   <block id="9648ab08d5b3fccc9c9ca3160e445cda" category="paragraph">スキャン可能なストレージのタイプ、およびスキャンするデータのタイプに関連する情報を次に示します。</block>
   <block id="53603d1a728f100ed9ec53da6f3de981" category="section-title">データセンスでスキャンできるデータソースを教えてください。</block>
-  <block id="08ece2b3a533d5b9f3fb6a576d49dcd8" category="paragraph">Cloud Data Senseでは、Cloud Manager Canvasに追加した作業環境や、データがネットワーク経由でアクセスできるさまざまな種類のデータソースからデータをスキャンできます。</block>
   <block id="bdcce4158cfc2b8c6a2ccd87f6c5170b" category="list-text">データベース（Amazon RDS、MongoDB、MySQL、Oracle、PostgreSQL、 SAP HANA、SQL Serverなど）</block>
   <block id="3ea2a425923f5c3bd5e4de2e3212bca6" category="section-title">インターネットにアクセスできないサイトにデータセンスをインストールすると、どのデータソースをスキャンできますか。</block>
   <block id="d6340d13b9b8fa586b95920b3d4151c7" category="paragraph">データセンスでスキャンできるのは、ローカルのデータソースからオンプレミスのサイトへのデータのみです。現時点では、「ダーク」サイトで次のローカルデータソースをスキャンできます。</block>
@@ -2641,4 +2638,25 @@
   <block id="76013a8e1044d1903752927bac2c2799" category="section-title">分類に成功したボリューム、バケットなどの数のステータスを表示します</block>
   <block id="046e94b126bcddc4303664d7f72819a5" category="inline-link">この情報の表示方法については、を参照してください</block>
   <block id="7e79533726de53720d91f0e491df7b7f" category="paragraph">データ検出でスキャンしている個々のリポジトリ（ボリューム、バケットなど）を表示したときに、マッピングされているリポジトリの数と「分類済み」の数が表示されるようになりました。すべてのデータに対してAIの完全な識別が実行されるため、分類にかかる時間が長くなります。<block ref="0871135af547cfbd7267d7772f52c15b" category="inline-link-rx"></block>。</block>
+  <block id="6bd775ee8beb1e5f4357351f2c9f1cb9" category="section-title">クラウドデータのアーキテクチャについてどう思いますか？</block>
+  <block id="22f5473ccc0fe2ca21d83a977c643189" category="paragraph">Cloud Data Senseは、クラウド内またはオンプレミス内のユーザが選択した場所に、単一のサーバまたはクラスタを導入します。サーバは標準プロトコルでデータソースに接続し、同じサーバにも導入されているElasticsearchクラスタの結果をインデックス化します。これにより、マルチクラウド、クロスクラウド、プライベートクラウド、オンプレミス環境をサポートできます。</block>
+  <block id="4d07f115b06861679eb4ddd208912bc0" category="section-title">クラウドデータセンスにはREST APIが搭載されており、サードパーティのツールと連携できますか。</block>
+  <block id="08f6917d656313f303c462e694349fad" category="paragraph">Cloud Managerは、サービスに対してREST API機能をサポートしています。管理ポイントとしてCloud Managerを使用しない場合は、Cloud Data SenseなどのサービスもREST API経由で使用できます。すべてのユーザアクションには、サードパーティのシステムと統合できるREST APIがあります。</block>
+  <block id="af8ec8dd6f763f0113145ba362c3524c" category="section-title">クラウドデータセンスはマーケットプレイスを通じて利用できるか？</block>
+  <block id="298a5adbd264d29cc2ae375eb03bb4b8" category="paragraph">Cloud Managerには、すべての主要ハイパースケーラ（AWSではNetApp ONTAP 向けのAWS FSX、AzureではAzure NetApp Files 、Google CloudではCloud Volumes Service ）でファーストパーティサービスとして利用できる実装があります。これらすべての実装では、Cloud Data SenseなどのCloud Managerサービスを利用しており、単一の画面からCloud ManagerのUIを使用して、ポイントアンドクリックで有効になった機能を使用して管理できます。Cloud Data Senseなどのサービスは、主要なハイパースケーラのファーストパーティ製品のいずれかを使用している、許可されたCloud Managerユーザがシームレスに有効にすることができます。また、このサービスはすべてのマーケットプレイスで提供されており、ハイパースケーラとの共同販売が許可されているため、ハイパースケーラの営業チームは自社のアカウントでこれらのサービスが有効な場合に報酬を受け取ることができます。これらすべての要素が、Cloud Managerのサービスをエコシステム全体に分散させ、サービスの範囲を拡大しています。</block>
+  <block id="bc41d4c1da3b7cbf27dde44eccf58ae0" category="paragraph">これらのファーストパーティ製品により、ネットアップクラウドデータセンス、クラウドバックアップ、クラウド階層化、Cloud Sync 、グローバルファイルキャッシュなどのワールドクラスのデータサービスを必要としているハイパースケーラマーケットプレイス内の数百万人のユーザに優先的にアクセスできるようになります。 その他。すべての市場でクラウドポートフォリオを補完し完全なものにするサービスをユーザが簡単に導入できるようになりました。</block>
+  <block id="a91599b8b9c2521748fc37816cb91748" category="section-title">Cloud Data Senseのスキャンと分析</block>
+  <block id="dbbe3cdd356f7995b0954547b7f8a6a6" category="paragraph">以下の質問は、クラウドデータセンススキャンのパフォーマンスとユーザーが利用できる分析に関連しています。</block>
+  <block id="5e91cc59958451bd9fd5c42d09fcff38" category="section-title">クラウドデータセンスでデータを検索できますか？</block>
+  <block id="11dffc624b27cac7baae53814f8508fb" category="paragraph">Cloud Data Senseサービスは、接続されているすべてのソースで特定のファイルやデータを簡単に検索できるように、幅広い検索機能を提供します。Cloud Data Sense機能を使用すると、メタデータの効果だけでなく、より深いレベルでデータを検索できます。言語に依存しないサービスで、ファイルを読み取ったり、名前やIDなどの機密データの種類を多数分析したりすることもできます。たとえば、構造化データストアと非構造化データストアの両方を検索して、企業ポリシーに違反してデータベースからユーザファイルに漏れた可能性のあるデータを見つけることができます。検索は後で保存できます。ポリシーを作成して、設定した頻度で結果を検索してアクションを実行できます。</block>
+  <block id="92979877e63ad07334e79a27044c0f2e" category="paragraph">対象となるファイルが見つかったら、タグ、作業環境アカウント、バケット、ファイルパス、 カテゴリ（分類から）、ファイルサイズ、最終変更、権限ステータス、重複、 感度レベル、個人データ、ファイル内の機密データタイプ、所有者、ファイルタイプ、ファイルサイズ、作成時刻、 ファイルハッシュ、注意を求めているユーザーにデータが割り当てられたかどうかなど。フィルタを適用して、適切でないスクリーンアウト特性を適用できます。Cloud Data Senseでは、適切な権限があれば、ファイルを移動または削除するためのRBACも制御されています。適切な権限がない場合は、適切な権限を持つ組織内のユーザーにタスクを割り当てることができます。</block>
+  <block id="a620bbcc75be31bcbeacaf64aa44f0d9" category="section-title">Cloud Data Senseは、どのような種類の分析を提供していますか？</block>
+  <block id="cdaf867a4c5ffa14e476eb7e7bb0831c" category="paragraph">データソースを視覚的に表現したり、リレーションシップを定義して視覚的に表現したりできます。たとえば、企業内のデータソース（オンプレミスのシステム、データベース、クラウドファイル共有、S3ストア、OneDrive、 など）。データの移動、削除、管理が可能になり、ストレージコストを最適化してリスクを軽減できます。ユーザは、どのような機密データが公開されるかを確認することでリスクを軽減でき、強力なデータ保護を実現するための権限を管理するジョブを作成できます。Cloud Data Senseサービスでは、すべての種類のデータが分類されるため、管理者はタイプごとにデータを調査し、データに対して実行されたアクションをいつ確認することもできます。</block>
+  <block id="2ff213cf58060ebbba92ce3d8cb5f2fe" category="section-title">クラウドデータセンス管理とプライバシー</block>
+  <block id="98cbc012ffb904cb276a1e79d6cda97a" category="paragraph">以下の質問では、クラウドデータのセンスとプライバシーの設定を管理する方法について説明します。</block>
+  <block id="b1f65700494451606ff0a8c99ec0733d" category="paragraph">また、データセンス設定を管理しなくても、特定のユーザにデータセンススキャンの結果の表示を許可する場合は、そのユーザにCloud Compliance Viewerロールを割り当てることができます。</block>
+  <block id="429cc98b9dab48feedbd99a04157659f" category="paragraph">Cloud Data Senseでは、Cloud Manager Canvasに追加した作業環境や、データがネットワーク経由でアクセスできる構造化データソースや非構造化データソースからデータをスキャンできます。</block>
+  <block id="cf99941ff561faca0c0212ca46e7a3fc" category="paragraph">Cloud Managerを使用すると、オンプレミス環境、クラウド環境、ハイブリッド環境など、システムのスキャンやレポート作成を仮想的にどこからでも実行できます。通常、Cloud Data Senseは、SaaSモデルを使用して導入されます。このモデルでは、Cloud Managerインターフェイスを介してサービスを有効にし、ハードウェアやソフトウェアをインストールする必要はありません。このクリックアンドランの導入モードであっても、同期、階層化、バックアップ、リストアなどのデータ管理が可能です。 セキュリティ、ガバナンス、コンプライアンスは、データストアがオンプレミスかパブリッククラウドかにかかわらず実現できます。</block>
+  <block id="3a4d237826f192247ddd80ff000856e8" category="paragraph">セキュアなインストールの場合、Cloud ManagerとCloud Data Senseは「ダークサイト」モデルで導入できます。ダークサイトは、オンプレミスのパッケージとしてインストールされ、外部ネットワーク接続は必要ありません。</block>
+  <block id="6ba16caafcf4be6931257967930a3921" category="paragraph">導入方法（オンプレミスまたはSaaSで提供されるクラウドモデル）に関係なく、ユーザはインストール環境の設定を完全に制御できます。ネットアップには情報は送信されず、サーバには完全な処理がカプセル化されます。</block>
 </blocks>
