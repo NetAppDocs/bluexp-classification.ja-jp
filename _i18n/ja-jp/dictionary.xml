@@ -37,21 +37,9 @@
   <block id="204c243905d5df7c4c3d0da1c22a5f3f" category="inline-link">Cloud Data Sense のユースケースについて説明します</block>
   <block id="6deb5c6e27820e725efcd4150fe731f3" category="paragraph"><block ref="980ee729f7602ada6becedc64d110fdb" category="inline-link-rx"></block>。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">の機能</block>
-  <block id="06a51c52ef02a569af2a9307dacc091c" category="paragraph">Cloud Data Sense には、コンプライアンスの取り組みに役立つツールがいくつか用意されています。データセンスを使用すると、次のことができます。</block>
-  <block id="82d27ffcdb71ca4bd44b98e1e42ab5a6" category="list-text">個人識別情報（ PII ）の識別</block>
-  <block id="c5b63840c4310d7cf96b0e5da6044540" category="list-text">GDPR 、 CCPA 、 PCI 、 HIPAA の各プライバシー規制の要件に応じて、さまざまな機密情報の範囲を特定します</block>
-  <block id="29b69a85db4b6122e7a36a94b50bb233" category="list-text">データサブジェクトアクセス要求への応答（ dsar ）</block>
   <block id="9e476387322a5c250893cf9c5c4ce78c" category="inline-link-macro">ポリシー</block>
-  <block id="ce6e3eb342a6b567c6f1b1fe0e3cd172" category="list-text">ファイルに特定のが含まれている場合は、 Cloud Manager ユーザに E メールで通知します PII （この基準は、を使用して定義します <block ref="0a2fc0f403ef4a50a3606f593b466bde" category="inline-link-macro-rx"></block>)</block>
   <block id="30085eb68cdb8a51af49b0a08058bacd" category="inline-link-macro">Azure Information Protection （ AIP ）ラベル</block>
-  <block id="797c9546d4f366091861852dfe4c83fb" category="list-text">表示と変更 <block ref="d0f9730625a218e637a0d6df3df12f2b" category="inline-link-macro-rx"></block> ファイルに保存できます</block>
-  <block id="c61ee35290295caccba51215e5d066f3" category="list-text">ファイルにカスタムタグを追加し（「移動が必要」など）、 Cloud Manager ユーザを割り当てて、ユーザがファイルの更新を所有できるようにします</block>
-  <block id="c581144b8663a130929f00041ab0d805" category="list-text">ファイルをコピー、移動、および削除します</block>
-  <block id="4daf20d23efab7d2dd169161e78b8602" category="paragraph">クラウドデータセンスには、ガバナンスの取り組みに役立つツールも用意されています。Cloud Data Sense を使用すると、次のことが可能になります。</block>
-  <block id="9322818c5eb3ebdb89d9db4eb2bbd10b" category="list-text">古いデータ、ビジネス以外のデータ、重複するファイル、開いている権限を持つファイル、システム内の大容量ファイルを特定します。</block>
-  <block id="7e47a492771472738db538f441f118ce" category="paragraph">この情報を使用して、一部のファイルを低コストのオブジェクトストレージに移動、削除、または階層化するかどうかを決定できます。</block>
   <block id="802346cffb7edd26cc64835acbf1e825" category="list-text">データのサイズ、および移動前に機密情報が含まれているデータがないかどうかを確認する。</block>
-  <block id="8a4d466108313af1af7ba9b0b81c1e14" category="paragraph">これは、オンプレミスの場所からクラウドにデータを移行する場合に便利です。</block>
   <block id="53fa8df095671f897c8cbcd13ce182b1" category="section-title">サポートされている作業環境とデータソース</block>
   <block id="d8700a28a2c66588bb3d2a9477ebd5c5" category="paragraph">Cloud Data Sense では、次のような作業環境やデータソースからデータをスキャンできます。</block>
   <block id="335e4bf959c1a6bf79337e11e91e4b41" category="paragraph">* 作業環境： *</block>
@@ -882,14 +870,11 @@
   <block id="eab720ff04548794ffc2cbbd9f06daf4" category="doc">クラウドデータの意味についてよく寄せられる質問</block>
   <block id="64a21279fa6b558777872e8b5865a2ab" category="section-title">クラウドデータの意味</block>
   <block id="71f9b1308ab675e9dd6df174e1a60f18" category="paragraph">Cloud Data Sense は、事前定義されたパラメータ（機密情報の種類やカテゴリなど）を提供し、 GDPR 、 CCPA 、 HIPAA などのデータプライバシーと機密性に関する新しいデータコンプライアンス規制に対応します。</block>
-  <block id="d6a75f271c34ca45be980272b9847d51" category="section-title">クラウドデータが適している理由</block>
-  <block id="f8ae17057d50237f6762d4039f49a6e3" category="paragraph">Cloud Data Sense は、データを活用して以下のことを支援します。</block>
   <block id="3cba68afa7ab7242fd51494aeb5d8d7b" category="list-text">データコンプライアンスやプライバシーの規制に準拠</block>
   <block id="29c9ae62d38a9d393cc687207b213fa5" category="list-text">データ保持ポリシーに準拠</block>
   <block id="22e218023aca4f3c1af5339aa10fd3f1" category="list-text">GDPR 、 CCPA 、 HIPAA 、その他のデータプライバシー規制の要件に応じて、データ主体に応じて特定のデータを容易に検索し、レポートを作成できます。</block>
   <block id="941d93d741b2550833570d67f7262c4c" category="section-title">クラウドデータの意味でよく使用されるユースケースはどれですか？</block>
   <block id="6858b5f69ec006bf6e2de7960deffea9" category="list-text">個人識別情報（ PII ）を識別します。</block>
-  <block id="db70b17c5b8b057347bca6710f75a657" category="list-text">GDPR および CCPA のプライバシー規制の要件に応じて、さまざまな機密情報の範囲を特定します。</block>
   <block id="75561c13a7f1550c1d376b995ed2e83f" category="list-text">データプライバシーに関する新しい規制や今後の規制に対応できます。</block>
   <block id="f352cd4e6c6b4737822722679f9fb9eb" category="inline-link">Cloud Data Sense のユースケースについて詳しくは、こちらをご覧ください</block>
   <block id="d824a36535436f47cdb45562372579a9" category="paragraph"><block ref="a3797b949ad4ca122a2891cd0995ed6e" category="inline-link-rx"></block>。</block>
@@ -924,9 +909,6 @@
   <block id="67ac5f32af21c3fe8a472d38846e6f3e" category="list-text">個人データや機密性の高い個人データを含む、特定されたファイルの詳細を含むレポートを利用できます。カテゴリおよびファイルタイプ別に分類されたファイルを表示することもできます。 <block ref="d26e3d99d92944a7a05ba133462080b2" category="inline-link-macro-rx"></block>。</block>
   <block id="c50a6cbc569afa1deaa247aaeb038787" category="section-title">スキャンのパフォーマンスは変化しますか？</block>
   <block id="477cc4915054f9673449fba3eb8237f7" category="inline-link-macro">Cloud Data Sense の導入</block>
-  <block id="2631e546efa2924027835ebc5ce3f2a0" category="paragraph">スキャンのパフォーマンスは、環境内のネットワーク帯域幅と平均ファイルサイズによって異なります。また、（クラウドまたはオンプレミスの）ホストシステムのサイズ特性にも左右されます。を参照してください <block ref="54cc658f11f9a5e47a4489ab8d81a58c" category="inline-link-macro-rx"></block> および <block ref="172bdded39d96cf7508fb42f154d1871" category="inline-link-macro-rx"></block> を参照してください。</block>
-  <block id="8c1896ebd0bea05ef3c8e18467a9ca07" category="inline-link-macro">マッピングスキャンと分類スキャンの違いを参照してください。</block>
-  <block id="fa07ec52541c98901015394277e86a73" category="paragraph">新しいデータソースを最初に追加するときに、「分類」のフルスキャンではなく「マッピング」スキャンのみを実行するように選択することもできます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。 <block ref="7dda8a42e8b908f8c520b46d25b02f04" category="inline-link-macro-rx"></block></block>
   <block id="5f4ceba489dc56da6edff02213d6e21c" category="section-title">サポートされているファイルタイプはどれですか。</block>
   <block id="a3b503a46334e3fb2ab7ae78049e483b" category="section-title">クラウドデータセンスを有効にする方法</block>
   <block id="7d782479a41a3941b57cc7c2b60d318a" category="inline-link-macro">開始方法をご確認ください</block>
@@ -2275,7 +2257,6 @@
   <block id="c0f907bdf9a6cc93e97081efb1ad0ba0" category="section-title">ブラウザとデータセンスの間で送信されたプライベートデータに誰でもアクセスできますか。</block>
   <block id="90ecb8f144bb75027d2645db76b9c80e" category="paragraph">いいえブラウザとデータセンスインスタンスの間で送信されるプライベートデータはエンドツーエンドの暗号化によって保護されるため、ネットアップとサードパーティが読み取ることはできません。データセンスは、アクセスをリクエストして承認しない限り、データや結果をネットアップと共有しません。</block>
   <block id="9184420bd7268b81521fe2c0fb829c50" category="paragraph">はい。Cloud Data Sense が提供する情報は、組織内の他の関係者にも関係があるため、レポートを作成して分析情報を共有することができます。Data Sense で使用できるレポートは次のとおりです。</block>
-  <block id="a39a4df8314a27ad3dd4677975511322" category="paragraph">まず、 Cloud Manager に Cloud Data Sense のインスタンスを導入する必要があります。インスタンスの実行が完了したら、既存の作業環境、データベース、およびその他のデータソースに対して、* Data Sense *タブからサービスを有効にするか、特定の作業環境を選択してサービスを有効にすることができます。</block>
   <block id="d998d7b40ffedd2d0b6c4e2cd0e738fb" category="admonition">データソースでCloud Data Senseをアクティブにすると、すぐに初期スキャンが実行されます。スキャン結果はすぐ後に表示されます。</block>
   <block id="1e99ed6a00e6ef3956359cd96c54b66c" category="section-title">ソースシステムとデータタイプのタイプ</block>
   <block id="9648ab08d5b3fccc9c9ca3160e445cda" category="paragraph">スキャン可能なストレージのタイプ、およびスキャンするデータのタイプに関連する情報を次に示します。</block>
@@ -2292,7 +2273,6 @@
   <block id="f115a278ea0212572398753377dc2287" category="paragraph">データセンスはメタデータのみをスキャンします。これは、全体的なデータ管理とガバナンス、プロジェクトの迅速な範囲設定、非常に大規模な環境、優先順位付けに役立ちます。データマッピングはメタデータに基づいており、*高速*スキャンとみなされます。</block>
   <block id="00fb8639b6c2826bd3fceaa0d36399d8" category="paragraph">高速スキャンの後、データマッピングレポートを生成できます。このレポートは、企業データソースに保存されているデータの概要を示しており、リソースの使用率、移行、バックアップ、セキュリティ、コンプライアンスの各プロセスに関する決定に役立ちます。</block>
   <block id="201f7350fba7bb40edd7973d2df21f7d" category="list-text">データ分類（ディープ）スキャン。</block>
-  <block id="c9e62ad150311eaae555d82e1b8e2076" category="paragraph">お客様の環境全体で、標準プロトコルと読み取り専用アクセス権を使用してデータセンススキャンを実行します。一部のファイルは、ビジネスに関連する機密データ、プライベート情報、ランサムウェアに関連する問題の有無をチェックして開きます。</block>
   <block id="e6955249e6953613536ae08a88475a81" category="paragraph">フルスキャンの後にデータに適用できるデータ検出機能が多数あります。たとえば、[データ調査]ページでのデータの表示とリファイン、ファイル内での名前の検索、ソースファイルのコピー、移動、削除などです。</block>
   <block id="1a068d00fba0764fe495dfcb9428ba33" category="section-title">ライセンスとコスト</block>
   <block id="efd4a405d0fc94dd44dd46314145b533" category="paragraph">Cloud Data Senseを使用するためのライセンスとコストに関する質問を次に示します。</block>
@@ -2313,12 +2293,10 @@
   <block id="45c9d2d43a741ab63e518aa05e11fa70" category="paragraph">はい。可能です<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 自社ネットワーク内またはクラウド内の Linux ホストオンプレミスにデータセンスを導入する場合は、オンプレミスにもコネクタをインストールできますが、必須ではありません。</block>
   <block id="729ba1cfab33ecb7cda6d642c21b247d" category="section-title">インターネットにアクセスできないセキュアなサイトはどうでしょうか。</block>
   <block id="7521d190d3b7edc316bb592221196fcf" category="inline-link">インターネットにアクセスできないオンプレミスのLinuxホストにコネクタを導入します</block>
-  <block id="7b0dda74db6ec7e3e5eb3ca096c115c2" category="paragraph">はい、サポートされています。可能です<block ref="4fae73c4748f58a56669baba6ceab594" category="inline-link-rx"></block>。その上で、オンプレミスのONTAP クラスタやその他のローカルデータソースを検出し、データセンスを使用してデータをスキャンすることができます。</block>
   <block id="20ddf180d77766369cf9eb26a7165489" category="section-title">データセンスの導入</block>
   <block id="5bab44a31f81eef054e5895c9d068607" category="paragraph">以下の質問は、個別のData Senseインスタンスに関連しています。</block>
   <block id="794e12ef176fc9da8e4f9c105c9930df" category="section-title">データセンスを自分のホストに導入できますか。</block>
   <block id="3e9b0b67019f2d0b48a4828209573441" category="paragraph">はい。データセンスソフトウェアは、ネットワーク内またはクラウド内でインターネットにアクセスできる Linux ホストにインストールできます。すべてが同じように機能し、 Cloud Manager を使用してスキャンの設定と結果を引き続き管理できます。を参照してください <block ref="a7e82d64861a5e64770734ee02976112" category="inline-link-macro-rx"></block> を参照してください。</block>
-  <block id="64f5cbf64bda7d75632e3c56632689f8" category="paragraph">はい、サポートされています。可能です <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 完全にセキュアなサイトに。</block>
   <block id="24ef8c726486795460d31edd12ab8ed9" category="paragraph">デフォルトでは、Cloud Data Senseダッシュボードには、すべての作業環境、データベース、およびデータソースのコンプライアンスデータとガバナンスデータが表示されます。一部の作業環境のデータのみを含むレポートを表示する場合は、 <block ref="68584290e1051ffc6ccba308e6db06b0" category="inline-xref-macro-rx"></block>。</block>
   <block id="b783177554ae1d03f46ea830d39a7822" category="section-title">データ調査レポート</block>
   <block id="f6ba29512f0eaabde0c49365c8ab9bd2" category="inline-link-macro">Data Investigationページの詳細については、こちらをご覧ください</block>
@@ -2639,24 +2617,52 @@
   <block id="046e94b126bcddc4303664d7f72819a5" category="inline-link">この情報の表示方法については、を参照してください</block>
   <block id="7e79533726de53720d91f0e491df7b7f" category="paragraph">データ検出でスキャンしている個々のリポジトリ（ボリューム、バケットなど）を表示したときに、マッピングされているリポジトリの数と「分類済み」の数が表示されるようになりました。すべてのデータに対してAIの完全な識別が実行されるため、分類にかかる時間が長くなります。<block ref="0871135af547cfbd7267d7772f52c15b" category="inline-link-rx"></block>。</block>
   <block id="6bd775ee8beb1e5f4357351f2c9f1cb9" category="section-title">クラウドデータのアーキテクチャについてどう思いますか？</block>
-  <block id="22f5473ccc0fe2ca21d83a977c643189" category="paragraph">Cloud Data Senseは、クラウド内またはオンプレミス内のユーザが選択した場所に、単一のサーバまたはクラスタを導入します。サーバは標準プロトコルでデータソースに接続し、同じサーバにも導入されているElasticsearchクラスタの結果をインデックス化します。これにより、マルチクラウド、クロスクラウド、プライベートクラウド、オンプレミス環境をサポートできます。</block>
   <block id="4d07f115b06861679eb4ddd208912bc0" category="section-title">クラウドデータセンスにはREST APIが搭載されており、サードパーティのツールと連携できますか。</block>
   <block id="08f6917d656313f303c462e694349fad" category="paragraph">Cloud Managerは、サービスに対してREST API機能をサポートしています。管理ポイントとしてCloud Managerを使用しない場合は、Cloud Data SenseなどのサービスもREST API経由で使用できます。すべてのユーザアクションには、サードパーティのシステムと統合できるREST APIがあります。</block>
   <block id="af8ec8dd6f763f0113145ba362c3524c" category="section-title">クラウドデータセンスはマーケットプレイスを通じて利用できるか？</block>
-  <block id="298a5adbd264d29cc2ae375eb03bb4b8" category="paragraph">Cloud Managerには、すべての主要ハイパースケーラ（AWSではNetApp ONTAP 向けのAWS FSX、AzureではAzure NetApp Files 、Google CloudではCloud Volumes Service ）でファーストパーティサービスとして利用できる実装があります。これらすべての実装では、Cloud Data SenseなどのCloud Managerサービスを利用しており、単一の画面からCloud ManagerのUIを使用して、ポイントアンドクリックで有効になった機能を使用して管理できます。Cloud Data Senseなどのサービスは、主要なハイパースケーラのファーストパーティ製品のいずれかを使用している、許可されたCloud Managerユーザがシームレスに有効にすることができます。また、このサービスはすべてのマーケットプレイスで提供されており、ハイパースケーラとの共同販売が許可されているため、ハイパースケーラの営業チームは自社のアカウントでこれらのサービスが有効な場合に報酬を受け取ることができます。これらすべての要素が、Cloud Managerのサービスをエコシステム全体に分散させ、サービスの範囲を拡大しています。</block>
-  <block id="bc41d4c1da3b7cbf27dde44eccf58ae0" category="paragraph">これらのファーストパーティ製品により、ネットアップクラウドデータセンス、クラウドバックアップ、クラウド階層化、Cloud Sync 、グローバルファイルキャッシュなどのワールドクラスのデータサービスを必要としているハイパースケーラマーケットプレイス内の数百万人のユーザに優先的にアクセスできるようになります。 その他。すべての市場でクラウドポートフォリオを補完し完全なものにするサービスをユーザが簡単に導入できるようになりました。</block>
   <block id="a91599b8b9c2521748fc37816cb91748" category="section-title">Cloud Data Senseのスキャンと分析</block>
   <block id="dbbe3cdd356f7995b0954547b7f8a6a6" category="paragraph">以下の質問は、クラウドデータセンススキャンのパフォーマンスとユーザーが利用できる分析に関連しています。</block>
-  <block id="5e91cc59958451bd9fd5c42d09fcff38" category="section-title">クラウドデータセンスでデータを検索できますか？</block>
-  <block id="11dffc624b27cac7baae53814f8508fb" category="paragraph">Cloud Data Senseサービスは、接続されているすべてのソースで特定のファイルやデータを簡単に検索できるように、幅広い検索機能を提供します。Cloud Data Sense機能を使用すると、メタデータの効果だけでなく、より深いレベルでデータを検索できます。言語に依存しないサービスで、ファイルを読み取ったり、名前やIDなどの機密データの種類を多数分析したりすることもできます。たとえば、構造化データストアと非構造化データストアの両方を検索して、企業ポリシーに違反してデータベースからユーザファイルに漏れた可能性のあるデータを見つけることができます。検索は後で保存できます。ポリシーを作成して、設定した頻度で結果を検索してアクションを実行できます。</block>
-  <block id="92979877e63ad07334e79a27044c0f2e" category="paragraph">対象となるファイルが見つかったら、タグ、作業環境アカウント、バケット、ファイルパス、 カテゴリ（分類から）、ファイルサイズ、最終変更、権限ステータス、重複、 感度レベル、個人データ、ファイル内の機密データタイプ、所有者、ファイルタイプ、ファイルサイズ、作成時刻、 ファイルハッシュ、注意を求めているユーザーにデータが割り当てられたかどうかなど。フィルタを適用して、適切でないスクリーンアウト特性を適用できます。Cloud Data Senseでは、適切な権限があれば、ファイルを移動または削除するためのRBACも制御されています。適切な権限がない場合は、適切な権限を持つ組織内のユーザーにタスクを割り当てることができます。</block>
   <block id="a620bbcc75be31bcbeacaf64aa44f0d9" category="section-title">Cloud Data Senseは、どのような種類の分析を提供していますか？</block>
-  <block id="cdaf867a4c5ffa14e476eb7e7bb0831c" category="paragraph">データソースを視覚的に表現したり、リレーションシップを定義して視覚的に表現したりできます。たとえば、企業内のデータソース（オンプレミスのシステム、データベース、クラウドファイル共有、S3ストア、OneDrive、 など）。データの移動、削除、管理が可能になり、ストレージコストを最適化してリスクを軽減できます。ユーザは、どのような機密データが公開されるかを確認することでリスクを軽減でき、強力なデータ保護を実現するための権限を管理するジョブを作成できます。Cloud Data Senseサービスでは、すべての種類のデータが分類されるため、管理者はタイプごとにデータを調査し、データに対して実行されたアクションをいつ確認することもできます。</block>
   <block id="2ff213cf58060ebbba92ce3d8cb5f2fe" category="section-title">クラウドデータセンス管理とプライバシー</block>
   <block id="98cbc012ffb904cb276a1e79d6cda97a" category="paragraph">以下の質問では、クラウドデータのセンスとプライバシーの設定を管理する方法について説明します。</block>
   <block id="b1f65700494451606ff0a8c99ec0733d" category="paragraph">また、データセンス設定を管理しなくても、特定のユーザにデータセンススキャンの結果の表示を許可する場合は、そのユーザにCloud Compliance Viewerロールを割り当てることができます。</block>
   <block id="429cc98b9dab48feedbd99a04157659f" category="paragraph">Cloud Data Senseでは、Cloud Manager Canvasに追加した作業環境や、データがネットワーク経由でアクセスできる構造化データソースや非構造化データソースからデータをスキャンできます。</block>
-  <block id="cf99941ff561faca0c0212ca46e7a3fc" category="paragraph">Cloud Managerを使用すると、オンプレミス環境、クラウド環境、ハイブリッド環境など、システムのスキャンやレポート作成を仮想的にどこからでも実行できます。通常、Cloud Data Senseは、SaaSモデルを使用して導入されます。このモデルでは、Cloud Managerインターフェイスを介してサービスを有効にし、ハードウェアやソフトウェアをインストールする必要はありません。このクリックアンドランの導入モードであっても、同期、階層化、バックアップ、リストアなどのデータ管理が可能です。 セキュリティ、ガバナンス、コンプライアンスは、データストアがオンプレミスかパブリッククラウドかにかかわらず実現できます。</block>
-  <block id="3a4d237826f192247ddd80ff000856e8" category="paragraph">セキュアなインストールの場合、Cloud ManagerとCloud Data Senseは「ダークサイト」モデルで導入できます。ダークサイトは、オンプレミスのパッケージとしてインストールされ、外部ネットワーク接続は必要ありません。</block>
-  <block id="6ba16caafcf4be6931257967930a3921" category="paragraph">導入方法（オンプレミスまたはSaaSで提供されるクラウドモデル）に関係なく、ユーザはインストール環境の設定を完全に制御できます。ネットアップには情報は送信されず、サーバには完全な処理がカプセル化されます。</block>
+  <block id="204587d47b4c54d160f439fadfe18fc5" category="paragraph">クラウドデータセンスでは、クラウド内でもオンプレミスでも、単一のサーバまたはクラスタをどこにでも導入できます。サーバは標準プロトコルでデータソースに接続し、同じサーバにも導入されているElasticsearchクラスタの結果をインデックス化します。これにより、マルチクラウド環境、クロスクラウド環境、プライベートクラウド環境、オンプレミス環境をサポートできます。</block>
+  <block id="9c158aa39e93da1129bb153a9fda2f3f" category="paragraph">はい。Cloud ManagerとCloud Data Senseは、AWS、Azure、GCP Marketplaceから入手できます。</block>
+  <block id="adccc4d2cca8d8234f516afeec155d17" category="section-title">Cloud Data Senseを使ってデータを検索できますか？</block>
+  <block id="c5a4c30302bcf6c00f47a3aa96512f69" category="paragraph">Cloud Data Senseは、接続されているすべてのソースで特定のファイルやデータを簡単に検索できるように、幅広い検索機能を提供しています。データセンスを使用すると、メタデータに反映される情報だけでなく、より詳細な情報も検索できます。言語に依存しないサービスで、ファイルを読み取ったり、名前やIDなどの機密データの種類を多数分析したりすることもできます。たとえば、構造化データストアと非構造化データストアの両方を検索して、企業ポリシーに違反してデータベースからユーザファイルに漏れた可能性のあるデータを見つけることができます。検索は後で保存できます。ポリシーを作成して、設定した頻度で結果を検索してアクションを実行できます。</block>
+  <block id="079d7156babd96f6ffb88d74b81e0293" category="paragraph">対象となるファイルが見つかったら、タグ、作業環境アカウント、バケット、ファイルパス、 カテゴリ（分類から）、ファイルサイズ、最終変更、権限ステータス、重複、 感度レベル、個人データ、ファイル内の機密データタイプ、所有者、ファイルタイプ、ファイルサイズ、作成時刻、 ファイルハッシュ、注意を求めているユーザーにデータが割り当てられたかどうかなど。フィルタを適用して、適切でないスクリーンアウト特性を適用できます。データセンスには、適切な権限があれば、ファイルの移動や削除を行うためのRBACコントロールもあります。適切な権限がない場合は、適切な権限を持つ組織内のユーザーにタスクを割り当てることができます。</block>
+  <block id="3a88ff6fa01735721c31c271559e1eba" category="paragraph">データソースを視覚的に表現したり、リレーションシップを定義して視覚的に表現したりできます。たとえば、企業内のすべてのデータソース（オンプレミスのシステム、データベース、ファイル共有、S3ストア、OneDrive、 など）。データのコピー、移動、削除、管理が可能になり、ストレージコストを最適化してリスクを軽減できます。ユーザは、どのような機密データが公開されるかを確認することでリスクを軽減でき、強力なデータ保護を実現するための権限を管理するジョブを作成できます。また、データセンスではさまざまな種類のデータを分類できるため、管理者はデータの種類別にデータを調査し、データに対してどのようなアクションが実行されたのか、いつ実行されたのかを確認できます。</block>
+  <block id="38f627c4b21375a40c92925baf7924e3" category="paragraph">スキャンのパフォーマンスは、環境内のネットワーク帯域幅と平均ファイルサイズによって異なります。また、（クラウドまたはオンプレミスの）ホストシステムのサイズ特性にも左右されます。を参照してください <block ref="ba79215ce103197616664775b93ba86f" category="inline-link-macro-rx"></block> および <block ref="1cff0a801d1de3ceb2e474846f005821" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="992e3ca84c2944a0dbcaf7e99231a50e" category="inline-link-macro">マッピングスキャンと分類スキャンの違いを参照してください</block>
+  <block id="def0998b91888f6c8913daf5857514fe" category="paragraph">新しいデータソースを最初に追加するときに、「分類」のフルスキャンではなく「マッピング」スキャンのみを実行するように選択することもできます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。 <block ref="51b8d4ed20a0bce6d8202eb3e674faa5" category="inline-link-macro-rx"></block>。</block>
+  <block id="5eae291eed2e16546f5fc58b2458fe67" category="paragraph">まず、Cloud ManagerまたはオンプレミスシステムにCloud Data Senseのインスタンスを導入する必要があります。インスタンスの実行が完了したら、既存の作業環境、データベース、およびその他のデータソースに対して、* Data Sense *タブからサービスを有効にするか、特定の作業環境を選択してサービスを有効にすることができます。</block>
+  <block id="30cedf267127066ad1ae6900fcd4efd6" category="paragraph">標準プロトコルを使用したデータ検出スキャンと、環境全体での読み取り専用アクセス許可。一部のファイルは、ビジネスに関連する機密データ、プライベート情報、ランサムウェアに関連する問題の有無をチェックして開きます。</block>
+  <block id="726caa59a84bb2953cc18c8dfd2aa4ea" category="paragraph">はい、サポートされています。可能です<block ref="4fae73c4748f58a56669baba6ceab594" category="inline-link-rx"></block>。その上で、オンプレミスのONTAP クラスタやその他のローカルデータソースを検出し、データセンスを使用してデータをスキャンすることができます。</block>
+  <block id="702d88f8e519980a560ae9f3170df5f5" category="paragraph">Cloud Managerを使用すると、オンプレミス環境、クラウド環境、ハイブリッド環境など、システムのスキャンやレポート作成を仮想的にどこからでも実行できます。通常、Cloud Data Senseは、SaaSモデルを使用して導入されます。このモデルでは、Cloud Managerインターフェイスを介してサービスを有効にし、ハードウェアやソフトウェアをインストールする必要はありません。このクリックアンドランの導入モードであっても、データストアがオンプレミスとパブリッククラウドのどちらにあるかに関係なく、データ管理を実行できます。</block>
+  <block id="6d221b0532f183c43399fe3cf826487d" category="paragraph">はい、サポートされています。可能です <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 完全にセキュアなサイトに。</block>
+  <block id="861f912bdc60a9b71f6f643f31234fb5" category="paragraph">Cloud Data Senseは、人工知能（AI）、自然言語処理（NLP）、機械学習（ML）を使用して、エンティティを抽出し、それに応じてコンテンツを分類するためにスキャンするコンテンツを理解します。これにより、データセンスは次の機能領域を提供できます。</block>
+  <block id="5e27c5cc9f66f543d963585b42d1709d" category="section-title">コンプライアンスを維持</block>
+  <block id="9d759fbb4cbb51dc4cf6d20ce4d7d9a9" category="paragraph">データセンスには、コンプライアンスの取り組みに役立つツールがいくつか用意されています。データセンスを使用すると、次のことができます。</block>
+  <block id="3a1ce1b3df0ddd54818235c5f83820d9" category="list-text">GDPR、CCPA、PCI、HIPAAの各プライバシー規制の要件に応じて、機密性の高い個人情報の範囲を特定します。</block>
+  <block id="aa1b21b925a987e64de4f7ff816313c0" category="list-text">名前または電子メールアドレスに基づいてデータサブジェクトアクセス要求（dsar）に応答します。</block>
+  <block id="b0eb7209de1c7007992716e29fe58da5" category="list-text">データベースから一意の識別子が他のリポジトリ内のファイルにあるかどうかを確認します。基本的に、データ検出スキャンで識別される「個人データ」のリストを独自に作成します。</block>
+  <block id="a328deb96ac07e550c18f0a9152bcebb" category="list-text">ファイルに特定のが含まれている場合は、 Cloud Manager ユーザに E メールで通知します PII （この基準は、を使用して定義します <block ref="0a2fc0f403ef4a50a3606f593b466bde" category="inline-link-macro-rx"></block>）では、アクションプランを決定することができます。</block>
+  <block id="947194b810ea64bcea87e2425aed8a89" category="section-title">セキュリティの強化</block>
+  <block id="d3359a9aa3e07091cc3b695ce623afb6" category="paragraph">データセンスは、犯罪目的でアクセスされるリスクのあるデータを特定することができます。データセンスを使用すると、次のことができます。</block>
+  <block id="7aa9c47f42013735e3c5573eb7004a9d" category="list-text">組織全体またはパブリックに公開されているオープンな権限を持つすべてのファイルとディレクトリ（共有およびフォルダ）を特定します。</block>
+  <block id="5e27afd1e1e5a71e7aff888767d3214a" category="list-text">初期の専用の場所以外に存在する機密データを特定します。</block>
+  <block id="2f548b9a1e6e69aa1914a6a893db7f50" category="list-text">新しいセキュリティ問題をセキュリティスタッフに自動的に通知して、ただちに対処できるようにするには、_Policies_を使用します。</block>
+  <block id="30259a2551381a28757271a99c3bf856" category="list-text">ファイルにカスタムタグを追加し（「移動が必要」など）、Cloud Managerユーザを割り当てて、ユーザがファイルの更新を所有できるようにします。</block>
+  <block id="1d6cf8f9413aa74ccb67dc25a0cd30f6" category="list-text">表示と変更 <block ref="d0f9730625a218e637a0d6df3df12f2b" category="inline-link-macro-rx"></block> ファイルに保存できます。</block>
+  <block id="c5f92f73b9ea92063c2fc24f82a835d2" category="section-title">ストレージ使用量を最適化</block>
+  <block id="5df73f30ee77990aa89c16d3484cbec4" category="paragraph">データセンスは、ストレージの総所有コスト（TCO）に役立つツールを提供します。データセンスを使用すると、次のことができます。</block>
+  <block id="17e4f6fc55d9d61a5481011f4bc71a46" category="list-text">重複データやビジネス以外のデータを特定することで、ストレージ効率を向上させます。この情報を使用して、特定のファイルを移動するか削除するかを決定できます。</block>
+  <block id="1dd59d53f98a1d164f58cb70191c512b" category="list-text">安全でないようであるか、ストレージシステムに残すのにリスクが高すぎるファイル、または重複として識別されたファイルを削除してください。_Policies_を使用すると'特定の条件に一致するファイルを自動的に削除できます</block>
+  <block id="4adf15614982e126334e7fcb5609beb6" category="inline-link">階層化の詳細を確認してください</block>
+  <block id="2ec592d707b81ee084ad77b364a2f19b" category="list-text">アクセス頻度の低いデータを低コストのオブジェクトストレージに階層化できるため、ストレージコストを削減できます。<block ref="1c87834aa441e9ddec7d154f9ed3550f" category="inline-link-rx"></block>。</block>
+  <block id="0539321f76da9af4cf373049cff32281" category="section-title">データ移行を高速化</block>
+  <block id="031851f09928a9ba770d9a60621692bb" category="paragraph">データセンスを使用すると、パブリッククラウドやプライベートクラウドに移行する前に、オンプレミスのデータをスキャンできます。データセンスを使用すると、次のことができます。</block>
+  <block id="3b53e0b18b32eb9915a9cbf82593a1a1" category="list-text">ソースデータを（25種類以上の基準に基づいて）フィルタリングして、必要なファイルのみを宛先に移動できるようにします。不要なデータは移動されません。</block>
+  <block id="eb1c9efb95b9cc5e1cf4c8f6b05d88a1" category="list-text">必要なデータのみをクラウドリポジトリに自動的かつ継続的に移動、コピー、同期</block>
 </blocks>

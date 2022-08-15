@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-cloud-compliance.html 
-keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, azure netapp files, amazon fsx for ontap, fsx, cloud volumes ontap, Amazon S3, database, onedrive, sharepoint, google drive, on-prem ontap, file shares, object storage, aip labels, governance, data sense 
+keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, data sense, privacy control, classification, optimization 
 summary: Cloud Data Sense は、社内のオンプレミスデータソースやクラウドデータソース、作業環境をスキャンしてデータをマッピング、分類し、プライベート情報を特定する、 Cloud Manager のデータガバナンスサービスです。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減し、データ移行プロジェクトを支援できます。 
 ---
 = クラウドデータの意味をご確認ください
@@ -22,27 +22,55 @@ https://cloud.netapp.com/netapp-cloud-data-sense["Cloud Data Sense のユース�
 
 == の機能
 
-Cloud Data Sense には、コンプライアンスの取り組みに役立つツールがいくつか用意されています。データセンスを使用すると、次のことができます。
-
-* 個人識別情報（ PII ）の識別
-* GDPR 、 CCPA 、 PCI 、 HIPAA の各プライバシー規制の要件に応じて、さまざまな機密情報の範囲を特定します
-* データサブジェクトアクセス要求への応答（ dsar ）
-* ファイルに特定のが含まれている場合は、 Cloud Manager ユーザに E メールで通知します PII （この基準は、を使用して定義します link:task-org-private-data.html#controlling-your-data-using-policies["ポリシー"^])
-* 表示と変更 link:https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection （ AIP ）ラベル"^] ファイルに保存できます
-* ファイルにカスタムタグを追加し（「移動が必要」など）、 Cloud Manager ユーザを割り当てて、ユーザがファイルの更新を所有できるようにします
-* ファイルをコピー、移動、および削除します
+Cloud Data Senseは、人工知能（AI）、自然言語処理（NLP）、機械学習（ML）を使用して、エンティティを抽出し、それに応じてコンテンツを分類するためにスキャンするコンテンツを理解します。これにより、データセンスは次の機能領域を提供できます。
 
 
-クラウドデータセンスには、ガバナンスの取り組みに役立つツールも用意されています。Cloud Data Sense を使用すると、次のことが可能になります。
 
-* 古いデータ、ビジネス以外のデータ、重複するファイル、開いている権限を持つファイル、システム内の大容量ファイルを特定します。
-+
-この情報を使用して、一部のファイルを低コストのオブジェクトストレージに移動、削除、または階層化するかどうかを決定できます。
+=== コンプライアンスを維持
+
+データセンスには、コンプライアンスの取り組みに役立つツールがいくつか用意されています。データセンスを使用すると、次のことができます。
+
+* 個人識別情報（ PII ）を識別します。
+* GDPR、CCPA、PCI、HIPAAの各プライバシー規制の要件に応じて、機密性の高い個人情報の範囲を特定します。
+* 名前または電子メールアドレスに基づいてデータサブジェクトアクセス要求（dsar）に応答します。
+* データベースから一意の識別子が他のリポジトリ内のファイルにあるかどうかを確認します。基本的に、データ検出スキャンで識別される「個人データ」のリストを独自に作成します。
+* ファイルに特定のが含まれている場合は、 Cloud Manager ユーザに E メールで通知します PII （この基準は、を使用して定義します link:task-org-private-data.html#controlling-your-data-using-policies["ポリシー"^]）では、アクションプランを決定することができます。
+
+
+
+
+=== セキュリティの強化
+
+データセンスは、犯罪目的でアクセスされるリスクのあるデータを特定することができます。データセンスを使用すると、次のことができます。
+
+* 組織全体またはパブリックに公開されているオープンな権限を持つすべてのファイルとディレクトリ（共有およびフォルダ）を特定します。
+* 初期の専用の場所以外に存在する機密データを特定します。
+* データ保持ポリシーに準拠
+* 新しいセキュリティ問題をセキュリティスタッフに自動的に通知して、ただちに対処できるようにするには、_Policies_を使用します。
+* ファイルにカスタムタグを追加し（「移動が必要」など）、Cloud Managerユーザを割り当てて、ユーザがファイルの更新を所有できるようにします。
+* 表示と変更 link:https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection （ AIP ）ラベル"^] ファイルに保存できます。
+
+
+
+
+=== ストレージ使用量を最適化
+
+データセンスは、ストレージの総所有コスト（TCO）に役立つツールを提供します。データセンスを使用すると、次のことができます。
+
+* 重複データやビジネス以外のデータを特定することで、ストレージ効率を向上させます。この情報を使用して、特定のファイルを移動するか削除するかを決定できます。
+* 安全でないようであるか、ストレージシステムに残すのにリスクが高すぎるファイル、または重複として識別されたファイルを削除してください。_Policies_を使用すると'特定の条件に一致するファイルを自動的に削除できます
+* アクセス頻度の低いデータを低コストのオブジェクトストレージに階層化できるため、ストレージコストを削減できます。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["階層化の詳細を確認してください"^]。
+
+
+
+
+=== データ移行を高速化
+
+データセンスを使用すると、パブリッククラウドやプライベートクラウドに移行する前に、オンプレミスのデータをスキャンできます。データセンスを使用すると、次のことができます。
 
 * データのサイズ、および移動前に機密情報が含まれているデータがないかどうかを確認する。
-+
-これは、オンプレミスの場所からクラウドにデータを移行する場合に便利です。
-
+* ソースデータを（25種類以上の基準に基づいて）フィルタリングして、必要なファイルのみを宛先に移動できるようにします。不要なデータは移動されません。
+* 必要なデータのみをクラウドリポジトリに自動的かつ継続的に移動、コピー、同期
 
 
 
