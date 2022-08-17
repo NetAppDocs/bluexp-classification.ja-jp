@@ -71,7 +71,7 @@ NOTE: このセクションで説明する機能は、データソースに対�
 
 === ワークスペースへの AIP ラベルの統合
 
-AIP ラベルを管理するには、既存の Azure アカウントにサインインして AIP ラベル機能をクラウドデータセンスに統合する必要があります。有効にすると、すべてのファイルの AIP ラベルを管理できます link:concept-cloud-compliance.html#supported-working-environments-and-data-sources["作業環境とデータソース"^] をクリックします。
+AIP ラベルを管理するには、既存の Azure アカウントにサインインして AIP ラベル機能をクラウドデータセンスに統合する必要があります。有効にすると、すべてのファイルの AIP ラベルを管理できます link:concept-cloud-compliance.html#supported-data-sources["データソース"^] をクリックします。
 
 .要件
 * アカウントと Azure Information Protection のライセンスが必要です。
