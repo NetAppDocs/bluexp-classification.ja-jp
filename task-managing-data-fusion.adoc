@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-managing-data-fusion.html 
 keywords: data identifiers, personal data, sensitive personal data, compliance, data fusion, data sense 
-summary: 「 Data Fusion 」と呼ばれる機能を使用すると、組織のデータをスキャンして、データベースからの一意の識別子がファイルやその他のデータベースで見つかったかどうかを確認できます。基本的には、クラウドデータ検出スキャンで識別される「個人データ」のリストを作成します。これにより、機密性の高いデータがすべてのファイル内でどこに保存されているかを完全に把握できます。 
+summary: データセンスには、将来のスキャンで特定される「個人データ」のカスタムリストを追加する方法が2つあります。このリストを使用すると、機密データが存在するすべての組織のファイルの場所に関する全体像を把握できます。 
 ---
-= Data Fusion を使用して個人データ識別子を追加する
+= 個人データ識別子をデータセンススキャンに追加する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,11 @@ summary: 「 Data Fusion 」と呼ばれる機能を使用すると、組織の�
 
 
 [role="lead"]
-Data Fusion では ' 企業のデータをスキャンして ' データベースから一意の識別子がファイルまたはその他のデータベースで見つかったかどうかを確認できます基本的には ' クラウドデータ検出スキャンで識別される個人データの一覧を作成しますこれにより、機密データが存在する可能性のある場所に関する全体像が _all_your ファイルに表示されます。
+データセンスには、将来のスキャンで特定される「個人データ」のカスタムリストを追加する方法が2つあります。このリストを使用すると、機密データが置かれている可能性のある場所に関する全体像を_all_your Organizationsのファイルに表示できます。
 
-独自のデータベースをスキャンするので、データが保存されている言語に関係なく、将来の Cloud Data Sense スキャンでデータを識別するために使用されます。
+* スキャンするデータベース内の特定の列に基づいて一意の識別子を追加できます。
+* 正規表現（regex）を使用してパーソナルパターンを追加できます。既存の定義済みパターンに正規表現が追加されます。
+
 
 
 NOTE: このセクションで説明する機能は、データソースに対して完全な分類スキャンを実行することを選択した場合にのみ使用できます。マッピングのみのスキャンを実行したデータソースでは、ファイルレベルの詳細は表示されません。
@@ -25,11 +27,13 @@ NOTE: このセクションで説明する機能は、データソースに対�
 
 == データベースからカスタムの個人データ識別子を作成する
 
-データベーステーブルで特定の列を選択することにより、クラウドデータセンスがスキャンで検索する追加の識別子を選択できます。たとえば、次の図は、データ Fusion を使用してボリューム、バケット、およびデータベースをスキャンし、 Oracle データベースからすべての顧客 ID が出現する状況を示しています。
+Data Fusion _という機能を使用すると、組織のデータをスキャンして、データベースからの一意の識別子がファイルまたは他のデータベースにあるかどうかを識別できます。データベーステーブルで特定の列を選択することにより、クラウドデータセンスがスキャンで検索する追加の識別子を選択できます。たとえば、次の図は、データ Fusion を使用してボリューム、バケット、およびデータベースをスキャンし、 Oracle データベースからすべての顧客 ID が出現する状況を示しています。
 
 image:diagram_compliance_data_fusion.png["データベースのコンテンツをソースとして使用して、同じデータを含むファイルを識別する方法を示す図。"]
 
 このように、 2 つのボリュームと 1 つの S3 バケットにそれぞれ一意の顧客 ID が見つかりました。データベーステーブル内の一致も識別されます。
+
+独自のデータベースをスキャンするので、データが保存されている言語に関係なく、将来のCloud Data Senseスキャンでデータを識別するために使用されることに注意してください。
 
 が必要です link:task-scanning-databases.html#adding-the-database-server["データベースサーバを少なくとも 1 つ追加しました"^] データ Fusion ソースを追加する前にクラウドデータを検出
 
@@ -60,12 +64,98 @@ image:screenshot_compliance_data_fusion_list.png["Data Fusion で設定したす
 
 
 
-次のスキャンの後、この新しい情報は、 ［ 個人 ］ 結果セクションの ［ ダッシュボード ］ 、 ［ 個人データ ］ フィルタの ［ 調査 ］ ページに表示されます。追加した各ソース・カラムは ' フィルタ・リストに "Table.column" として表示されますたとえば 'Customers .Customer ID' のように表示されます
+次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。追加した各ソース列は、「Table.Column」という形式でフィルタリストに表示されます。たとえば、「customers.CustomerID」のようになります。
+
+image:screenshot_add_data_fusion_result.png["［調査結果］ペインに表示されるData Fusion の結果の例を示すスクリーンショット。"]
 
 
 
-== Data Fusion ソースの削除
+=== Data Fusion ソースの削除
 
 特定の Data Fusion ソースを使用してファイルをスキャンしない場合は、 Data Fusion インベントリページからソース行を選択し、 ［ * データ Fusion ソースの削除 * ］ をクリックします。
 
 image:screenshot_compliance_delete_data_fusion.png["データ Fusion ソースを削除する方法を示すスクリーンショット。"]
+
+
+
+== 正規表現を使用したカスタムの個人データ識別子の作成
+
+カスタム正規表現（regex）を使用して、データ内の特定の情報を識別するためのパーソナルパターンを追加できます。正規表現は、すでにData Senseで使用されている既存の事前定義パターンに追加され、結果は[personal patterns（個人パターン）]セクションに表示されます。
+
+たとえば、すべてのファイルで内部製品IDが記載されている場所を確認できます。製品IDに明確な構造が含まれている場合、たとえば、201で始まる12桁の数値であれば、カスタム正規表現機能を使用してファイル内で検索できます。
+
+
+
+=== コマンドラインへのアクセス
+
+正規表現を追加するコマンドを開始するには、Data Senseシステムにアクセスする必要があります。
+
+データセンスをオンプレミスにインストールした場合は、コマンドラインに直接アクセスできます。
+
+データセンスをクラウドに導入した場合、データセンスインスタンスにSSHで接続できます。システムにSSHするには、ユーザとパスワードを入力するか、Cloud Manager Connectorのインストール時に指定したSSHキーを使用します。SSHコマンドは次のとおりです。
+
+ ssh -i <path to the ssh key> <machine user>@<datasense ip>
+* <path to the ssh key>= ssh認証キーの場所
+* <マシンユーザー>：
++
+** AWSの場合：<ec2-user>を使用します
+** Azureの場合：Cloud Managerインスタンス用に作成したユーザを使用します
+** GCPの場合：Cloud Managerインスタンス用に作成されたユーザを使用します
+
+
+* <datasense IP>は仮想マシンインスタンスのIPアドレスです
+
+
+システムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#ports-and-security-groups["ポートおよびセキュリティグループ"^] を参照してください。
+
+
+
+=== 正規表現を追加するコマンド構文
+
+カスタム正規表現を追加するコマンドの構文は次のとおりです。
+
+ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "<pattern name>" -r "<regular expression>"
+* <pattern name>=データセンスUIに表示される名前です。正規表現で検索される内容が、名前で示されていることを確認します。名前にはアルファベットを1文字以上含める必要があります。最大文字数は70文字です。
+* <regular expression>=任意の正規表現を指定できます。
+
+
+新しい正規表現が多すぎるかどうかを毎回テストし、一致する値が多すぎるかどうかを確認します。その場合は、次のログメッセージが表示されます。
+
+ log v1.0 | 2022-08-17 07:24:19,585 | ERROR | ds_logger | custom_regex | 119 | 1 | None | custom_regex_119 | The regex has high risk to identify false positives. Please narrow the regular expression and try again. To add it anyway, use the force flag (-f) at the end
+正規表現をData Senseに強制的に追加する場合は、コマンドラインの最後に*-f *を使用できます。
+
+
+
+=== 例
+
+製品IDは201で始まる12桁の数値であるため、正規表現は*\b201\d｛9｝\b *です。データセンスUIのテキストで、このパターンを*内部製品ID *として識別したいとします。
+
+すべてのファイルで内部製品IDが指定されている場所を確認するには、次のコマンドを入力します。
+
+[source, cli]
+----
+[user ~]$ cd /opt/netapp/Datasense/
+[user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "Internal Product ID" -r "\b201\d{9}\b"
+----
+....
+[+] Adding Custom Regex to Data Sense
+log v1.0 | 2022-08-23 13:19:01,476 | INFO | ds_logger | custom_regex | 154 | 1 | None | custom_regex_154 | A pattern named 'Internal Product ID' was added successfully to Data Sense
+....
+次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。
+
+image:screenshot_add_regex_result.png["［調査結果］ペインに表示される、カスタム正規表現の結果の例を示すスクリーンショット。"]
+
+
+
+=== カスタム正規表現を非アクティブにします
+
+後で、正規表現として入力したカスタムパターンを識別するためにData senseが不要であると判断した場合は、次のコマンドを使用して各正規表現を削除します。
+
+ sudo bash tools/datascience/custom_regex/custom_regex.sh -s deactivate -n "<pattern name>"
+たとえば、*内部製品ID * regexを削除するには、次のようにします。
+
+[source, cli]
+----
+[user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s deactivate -n "Internal Product ID"
+----
+ log v1.0 | 2022-08-17 09:13:15,431 | INFO | ds_logger | custom_regex | 31 | 1 | None | custom_regex_31 | A pattern named 'Internal Product ID' was deactivated successfully

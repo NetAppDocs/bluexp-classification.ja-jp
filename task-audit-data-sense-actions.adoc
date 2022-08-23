@@ -54,20 +54,20 @@ summary: データセンスは、データをスキャンするすべての作�
 
 監査ログは、Data Senseマシンの「/opt/NetApp/audit_logs/<date>/DataSense _audit_log_<date>_<process_name>.log」に保存されています
 
-オンプレミス環境の場合は、ログファイルに直接移動できます。
+データセンスをオンプレミスにインストールした場合は、ログファイルに直接移動できます。
 
-データセンスをクラウドに導入した場合、データセンスインスタンスにSSHで接続できます。システムにSSHを実行するには、ユーザとパスワードを入力するか、Cloud Manager Connectorのインストール時に指定したSSHキーを使用します。SSHコマンドは次のとおりです。
+データセンスをクラウドに導入した場合、データセンスインスタンスにSSHで接続できます。システムにSSHするには、ユーザとパスワードを入力するか、Cloud Manager Connectorのインストール時に指定したSSHキーを使用します。SSHコマンドは次のとおりです。
 
  ssh -i <path to the ssh key> <machine user>@<datasense ip>
 * <path to the ssh key>= ssh認証キーの場所
 * <マシンユーザー>：
 +
-** AWSの場合=<ec2-user>を使用します
+** AWSの場合：<ec2-user>を使用します
 ** Azureの場合：Cloud Managerインスタンス用に作成したユーザを使用します
 ** GCPの場合：Cloud Managerインスタンス用に作成されたユーザを使用します
 
 
-* <data sense IP>は仮想マシンインスタンスのIPアドレスです
+* <datasense IP>は仮想マシンインスタンスのIPアドレスです
 
 
 システムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#ports-and-security-groups["ポートおよびセキュリティグループ"^] を参照してください。
