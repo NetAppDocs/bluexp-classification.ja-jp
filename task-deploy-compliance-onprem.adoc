@@ -101,6 +101,9 @@ CPU 数と RAM 容量が少ないシステムには Data Sense を導入でき�
 
 
 
+NOTE: Data Senseホスト・システムのIPアドレスは、インストール後は変更できません。
+
+
 
 == Cloud Manager と Data Sense の前提条件を確認
 

@@ -2706,4 +2706,5 @@
   <block id="8b4506c76e97dc4cbdfa92467d581a0a" category="section-title">これで、データの中でデータを識別するカスタムパターンを追加できるようになりました</block>
   <block id="cdb141fc7c1c0fc93208e7dbbad88e03" category="paragraph">カスタム正規表現（regex）を使用して、データ内の特定の情報を識別するためのパーソナルパターンを追加できます。正規表現は、すでにData Senseで使用されている既存の事前定義パターンに追加され、結果は［個人パターン］セクションに表示されます。<block ref="2190fe4edde1bb0ebe7888202a9ce641" category="inline-link-rx"></block>。</block>
   <block id="f11466d242ef66f0b539b785de1f046b" category="paragraph">データセンスをオンプレミスにインストールした場合は、ログファイルに直接移動できます。</block>
+  <block id="cdd8fa6a73205d146405999abb5c86ec" category="admonition">Data Senseホスト・システムのIPアドレスは、インストール後は変更できません。</block>
 </blocks>
