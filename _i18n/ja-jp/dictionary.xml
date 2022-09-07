@@ -164,7 +164,6 @@
   <block id="e84e463a5d50d51ba24671ea703ccd3a" category="list-text">コンプライアンスビューア * の役割を持つユーザーは、アクセス権を持つシステムのコンプライアンス情報を表示し、レポートを生成することのみができます。これらのユーザは、ボリューム、バケット、またはデータベーススキーマのスキャンを有効または無効にすることはできません。これらのユーザーは、ファイルのコピー、移動、または削除もできません。</block>
   <block id="7001fd90c77b65d22e1a21481db3ddca" category="inline-link">Cloud Manager のロールに関する詳細情報</block>
   <block id="2d4684d2aec68a0b0d987ac449846c38" category="inline-link">特定のロールのユーザを追加します</block>
-  <block id="2aec26a935db620d45a2b36968d20c71" category="summary">Cloud Data Sense を使用して、 SharePoint アカウント内のファイルのスキャンを開始するには、いくつかの手順を実行します。</block>
   <block id="2ef77a3845de73c82db787233e991d0c" category="doc">SharePoint アカウントをスキャンしています</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="section-title">クイックスタート</block>
   <block id="91e06e9a9ef97681b798e2e5e007ba97" category="paragraph">これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。</block>
@@ -174,7 +173,6 @@
   <block id="0fd354f4598b432146c03a6c1b496e25" category="paragraph">管理者ユーザーの資格情報を使用して、アクセスする SharePoint アカウントにログインし、新しいデータソース / 作業環境として追加します。</block>
   <block id="a8c0024f4de7eafbcc79573f90579f5f" category="paragraph">SharePoint アカウントでスキャンする SharePoint サイト URL のリストを追加し、スキャンの種類を選択します。一度に最大 100 個の URL を追加できます。</block>
   <block id="2b4e0126afcd89267252cefaf503c414" category="section-title">SharePoint の要件を確認する</block>
-  <block id="a32be683d63a4b0f5bebaf59aa3ae393" category="paragraph">以下の前提条件を確認して、 SharePoint アカウントで Cloud Data Sense を有効にする準備ができていることを確認します。</block>
   <block id="e1f7c840b56984612690abc476c04c51" category="list-text">すべての SharePoint サイトへの読み取りアクセスを提供する SharePoint アカウントの管理者ログインクレデンシャルが必要です。</block>
   <block id="f86df9b5b428fe5b37c14bd1162bc107" category="list-text">スキャンするすべてのデータについて、 SharePoint サイトの URL の行区切りリストが必要です。</block>
   <block id="923e0e9139b80b545817bb342c8afa44" category="section-title">Cloud Data Sense インスタンスの導入</block>
@@ -183,14 +181,9 @@
   <block id="d56c40a575de98938d6b1b6814e422d2" category="inline-link-macro">インターネットにアクセスできるオンプレミスの場所</block>
   <block id="cb4787e4f5b2886c42c46c918daec655" category="paragraph">データセンスは、のいずれかです <block ref="879c41e64fac303868428ba32472ed0b" category="inline-link-macro-rx"></block> または <block ref="5433f857b708e940349e34ece6281ba0" category="inline-link-macro-rx"></block>。</block>
   <block id="151eca0a4859a8fbf17435fcbaa0001e" category="paragraph">Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。</block>
-  <block id="2d625acbf82ccc24e4827ee53e0193d4" category="section-title">SharePoint アカウントを追加しています</block>
-  <block id="7ab591f864cfe0a16aa275b9434fcde7" category="paragraph">ユーザーファイルが存在する SharePoint アカウントを追加します。</block>
   <block id="cb49e9afef4bc3127fbf2d354d00fd54" category="list-text">[ 作業環境の構成 ] ページで、 [ * データソースの追加 *&gt;* SharePoint Online アカウントの追加 * ] をクリックします。</block>
-  <block id="9055101ac50b789e701a27583a1d468d" category="inline-image-macro">SharePoint の追加ボタンをクリックできる [ スキャン構成 ] ページのスクリーンショット。</block>
-  <block id="8b093e17a55171454a6c2e03e23f0b0f" category="paragraph"><block ref="8b093e17a55171454a6c2e03e23f0b0f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ea56ecd454d4962a21bd35be41237229" category="list-text">[SharePoint Online アカウントの追加 ] ダイアログで、 [* SharePoint にサインインする * ] をクリックします。</block>
   <block id="e61b097ecbac4c8e2db9675d4c9f64cb" category="list-text">表示される Microsoft ページで、 SharePoint アカウントを選択し、必要な管理者ユーザーとパスワードを入力してから、 *Accept * をクリックして Cloud Data Sense がこのアカウントからデータを読み取ることを許可します。</block>
-  <block id="85733eb33599ec713f72376aae6df768" category="paragraph">SharePoint アカウントが作業環境のリストに追加されます。</block>
   <block id="88f6018b4c4004a32e426fcb13381212" category="section-title">SharePoint サイトをコンプライアンススキャンに追加する</block>
   <block id="01ad50a8c51cb7caa81313f1655cae00" category="paragraph">個々の SharePoint サイト、またはアカウント内のすべての SharePoint サイトを追加して、関連するファイルが Cloud Data Sense によってスキャンされるようにすることができます。</block>
   <block id="32d4436877412c0a858739daddb125a4" category="list-text">[_Configuration_] ページで、 SharePoint アカウントの [*Configuration*] ボタンをクリックします。</block>
@@ -1442,7 +1435,6 @@
   <block id="e2115e429619cedeaf6aeedfb1d4d0d7" category="inline-link-macro">インターネットにアクセス可能なオンプレミスサイトにデータセンスを導入</block>
   <block id="1c038c580523f9a3d7126408c53a8288" category="paragraph">また、次のことも可能です <block ref="1079604978fa03138d29a36dc3d0bf3f" category="inline-link-macro-rx"></block>。</block>
   <block id="70d7362b35a6ff039264c78f2d35ab2c" category="section-title">サポートされているデータソース</block>
-  <block id="77b1f6686417067688ea9a1806e7a438" category="paragraph">この方法でインストールすると（「オフライン」または「ダーク」サイトと呼ばれることもあります）、データ検出でスキャンできるのは、オンプレミスサイトに対してもローカルなデータソースのデータのみです。現時点では、 Data Sense は次のローカルデータソースをスキャンできます。</block>
   <block id="d0a39c85bb5fdaacac18ed6c4e5b511f" category="list-text">オンプレミスの ONTAP システム</block>
   <block id="ae9d17dd7732dafc7b97f62ac9094cf7" category="list-text">データベーススキーマ</block>
   <block id="ec1fb1662782ed20e20c07aa72cea943" category="list-text">ネットアップ以外の NFS または CIFS ファイル共有</block>
@@ -2157,18 +2149,15 @@
   <block id="7d48333086004a7939c29f033e1bfad5" category="section-title">ダークサイトに導入した場合、 OneDrive と SharePoint のデータをスキャンできます</block>
   <block id="5d1023de4743a538d723b0eea67b9c49" category="inline-link">次のエンドポイントへのアクセスを許可する必要があります。</block>
   <block id="143cbb5198b43152fc02c7822c0a4df1" category="inline-xref">SharePoint と OneDrive の特別な要件</block>
-  <block id="26c2bd17725502dd41a7ea99643a8a29" category="paragraph">Cloud Manager を非常にセキュアにインストールする必要があるが、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンする場合は、 Data Sense オフラインインストーラを使用して、選択したいくつかのエンドポイントへのインターネットアクセスを提供できます。を参照してください <block ref="4422d2d61ce862ef7035c7cbbfd3b606" category="inline-xref-macro-rx"></block> を参照してください。</block>
   <block id="83925eb41f224ab078a6ede41fce2ce8" category="list-text">特定の重大ポリシーが結果を返すときに Cloud Manager ユーザに E メールアラートを送信する</block>
   <block id="65097bbc12ec4bd1b84a583f86720dbc" category="list-text">さまざまなユーザに対する Cloud Manager ロールの設定（ Account Admin や Compliance Viewer など）</block>
   <block id="03ab5a445b96670c4d6471f1e0ae786c" category="list-text">Cloud Sync を使用したソースファイルのコピーと同期</block>
   <block id="21d99d41f7aa56147e5b8e2f64a15458" category="list-text">ユーザからのフィードバックを受け取る</block>
-  <block id="d988b54f3b64e974362e6cbf74785f60" category="paragraph">Cloud Manager と Data Sense がインターネットにアクセスできないサイトに導入されている場合は、 SharePoint アカウントと OneDrive アカウントでローカルファイルをスキャンできます。そのためには、選択したいくつかのエンドポイントへのインターネットアクセスが提供されています。</block>
   <block id="ca31f5af8410452f51d81153fffb5c54" category="cell">¥ login.microsoft.com ¥ graph.microsoft.com</block>
   <block id="bea203a1b40a7cbfe57a7032625d4eed" category="cell">選択したオンラインサービスにログインするための Microsoft サーバとの通信。</block>
   <block id="665921fa8f2b4f0c994ec8d226f8544f" category="paragraph">_cloudmanager.cloud.netapp.com_ へのアクセスは、これらの外部サービスへの初期接続時にのみ必要です。</block>
   <block id="1b602d3afff4393bd19938efb7312da3" category="inline-link-macro">インターネットにアクセスできないオンプレミスの場所に導入されている</block>
   <block id="72be220d746bd2e14365d0ceeea52365" category="inline-link-macro">必要なエンドポイントのリストを参照してください</block>
-  <block id="99428c3925d465acb3903496e22efe4c" category="paragraph">データセンスは、の場合もあります <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。ただし、ローカルの SharePoint ファイルをスキャンするには、いくつかの選択したエンドポイントへのインターネットアクセスを提供する必要があります。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
   <block id="e9b6d5f264bba809d5461558e8379d9e" category="paragraph">データセンスは、の場合もあります <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。ただし、ローカルの OneDrive ファイルをスキャンするには、いくつかの一部のエンドポイントへのインターネットアクセスを提供する必要があります。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
   <block id="9aa68bac48e77ad847d7e57a68f08944" category="paragraph">このステータスは、デジタルウォレットにも表示されます。</block>
   <block id="06314d3359f0409e52f485d16ab0c81f" category="paragraph">Cloud Data Sense ライセンスは、期限が切れる前に更新できるため、スキャンしたデータへのアクセスが中断されることはありません。</block>
@@ -2321,7 +2310,6 @@
   <block id="fe340da6c921cdc51f04bc690aa53387" category="cell">ポリシーを選択します。実行します <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> をクリックして、既存のポリシーのリストを表示し、独自のカスタムポリシーを作成します。</block>
   <block id="1a81671798e285bd46fa9b2aa3c86d00" category="cell">1つ以上のユーザ名またはグループ名を選択するか、または名前の一部を入力してください</block>
   <block id="c9b82f90ba4459b8fcdadccfbe372539" category="cell">選択するオプション <block ref="b0becded2b1c1949046ca8118d27118b" category="inline-link-macro-rx"></block> ファイルに割り当てられます</block>
-  <block id="910acb975ea7aecd9808b83a0cb3e7eb" category="cell">作業環境のタイプを選択します。OneDrive、SharePoint、Google Driveは、「クラウドアプリ」に分類されています。</block>
   <block id="c3a9830be43f6515257f3979e66816fd" category="cell">ディレクトリタイプ（Directory Type）</block>
   <block id="9091f9c1f743dae16df2f0455ff3be56" category="cell">ディレクトリタイプを選択します。「共有」または「フォルダ」のいずれかを選択します。</block>
   <block id="f8a85ed4966ec4306b4e58f3bd439410" category="inline-link-macro">タグ</block>
@@ -2483,7 +2471,6 @@
   <block id="2dd4f685f001cb4e6c0149956ba4a997" category="section-title">2022年5月11日（バージョン1.12.1）</block>
   <block id="07de9e897e96f5f63e0778d691b62d59" category="section-title">2022年4月5日（バージョン1.11.1）</block>
   <block id="2d2a847fccc748834cee74d3441a948b" category="section-title">2022年3月15日（バージョン1.10.0）</block>
-  <block id="a6e2475f148e034250ac7cb66419f3f3" category="list-text">データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.11.xがインストールされている場合は、1.12.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
   <block id="fae289ef9204f7c3119e084615a6d53f" category="list-text">政府機関、またはインターネットにアクセスできないオンプレミスの場所（ダークサイトとも呼ばれます）にデータセンスを配置した場合、AIPラベル機能は使用できません。</block>
   <block id="49346bec66601a23d58acfc71f396d3f" category="list-text">Azure NetApp Files の場合は、スキャンするボリュームと同じ領域に配置する必要があります。</block>
   <block id="b39e81db6545fcc5e2567ec3c6930540" category="section-title">政府機関によるサポート</block>
@@ -2508,7 +2495,6 @@
   <block id="b0d05a288f1ee1691adac4ca34c54fca" category="inline-image-macro">作業環境内のすべてのボリュームに同じスキャン設定を行う方法を示すスクリーンショット。</block>
   <block id="12a2ab51f6d8555b1efcc9582dee655b" category="paragraph"><block ref="12a2ab51f6d8555b1efcc9582dee655b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6c47f43803aeca87b8119b45040e033c" category="section-title">リポジトリのスキャンの一時停止と再開</block>
-  <block id="73344c9ec25564b49b1fcd623ff60d92" category="paragraph">特定のコンテンツのスキャンを一時的に停止する場合は'リポジトリ上のスキャンを一時的に停止できますこれは、スキャンを「オフ」にするのとは異なります。スキャンをオフにすると、そのボリュームに関するすべてのインデックスと情報がシステムから削除されます。スキャンを一時停止すると、リポジトリに変更や追加があってもデータスキャンは実行されませんが、現在の結果はすべてシステムに表示されたままになります。</block>
   <block id="0f9fab6026fbdbed86f2befe8eae64e1" category="paragraph">スキャンはいつでも再開できます。</block>
   <block id="8b072c4e238b04c04c81cef3ed309703" category="list-text">スキャン設定ページで、一時停止ボタンをクリックしてボリュームのスキャンを一時停止するか、再開ボタンを押して以前に一時停止したボリュームのスキャンを再開します。</block>
   <block id="bc9b17eea5246a704bb26be367a3b35f" category="inline-image-macro">ボリューム上でスキャンを一時停止および再開する方法を示すスクリーンショット。</block>
@@ -2556,7 +2542,6 @@
   <block id="04843fa750ddea2d46823d2d06cf3063" category="paragraph">一部のデータソースでは、SharePointサイトで以下に示すように、メニューに[一時停止]および[再開]機能が用意されています。</block>
   <block id="fb575acbb63d1898a1021e2856b18b6e" category="inline-image-macro">SharePointサイトでスキャンを一時停止および再開する方法を示すスクリーンショット。</block>
   <block id="9e9d3c723f9f4d6ab1b9e783f2239e62" category="paragraph"><block ref="9e9d3c723f9f4d6ab1b9e783f2239e62" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="faa8551af182d75e7a3f5d7e7a6dc071" category="sidebar">スキャン設定を変更します</block>
   <block id="dd85b6e90159d1cdbde0d5badd022af0" category="paragraph">Cloud Data Sense は、データ内の特定の単語、文字列、パターン（ Regex ）を自動的に識別します。たとえば、個人識別情報（ PII ）、クレジットカード番号、社会保障番号、銀行口座番号、パスワード、 その他。 <block ref="3a25cef7ea1e79696c3eac86ef0a5a72" category="inline-link-macro-rx"></block>。データセンスは、個々のファイル、ディレクトリ（共有およびフォルダ）内のファイル、およびデータベーステーブル内のこのタイプの情報を識別します。</block>
   <block id="f4f50af532754b5670ea58ed6b969ba0" category="paragraph">以下の2つのスクリーンショットは、個々のファイルに保存されている個人データを示しています。これらのデータは、ディレクトリ（共有およびフォルダ）内のファイルに保存されています。[構造化*]タブを選択して、データベース内で検出された個人データを表示することもできます。</block>
   <block id="bfe1194df41f0cc26cfdf2f75931ac0d" category="inline-image-macro">[調査結果]をクリックした後にファイルで見つかった詳細情報のスクリーンショット。</block>
@@ -2693,18 +2678,67 @@
   <block id="3642b1a1448d1d503a8c583265c1f7fd" category="list-text">&lt;pattern name&gt;=データセンスUIに表示される名前です。正規表現で検索される内容が、名前で示されていることを確認します。名前にはアルファベットを1文字以上含める必要があります。最大文字数は70文字です。</block>
   <block id="c8cfff713fc98611eeae3f621ae6ce24" category="list-text">&lt;regular expression&gt;=任意の正規表現を指定できます。</block>
   <block id="c0860cd77b783ac8ccb3c6de19266e83" category="paragraph">新しい正規表現が多すぎるかどうかを毎回テストし、一致する値が多すぎるかどうかを確認します。その場合は、次のログメッセージが表示されます。</block>
-  <block id="bed821e4983e85758274701f4830fdce" category="paragraph">正規表現をData Senseに強制的に追加する場合は、コマンドラインの最後に*-f *を使用できます。</block>
   <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="section-title">例</block>
   <block id="1c247fabef1a02cfb25e0c5a09f1ce81" category="paragraph">製品IDは201で始まる12桁の数値であるため、正規表現は*\b201\d｛9｝\b *です。データセンスUIのテキストで、このパターンを*内部製品ID *として識別したいとします。</block>
   <block id="ce52796a17167ca6f97268ee7baaa0de" category="paragraph">すべてのファイルで内部製品IDが指定されている場所を確認するには、次のコマンドを入力します。</block>
   <block id="1e4b16d4f3c8faa8b0a90ebbeae0a0f7" category="paragraph">次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。</block>
   <block id="5e0b61460f50f9b62d95b060b2f3f8d2" category="inline-image-macro">［調査結果］ペインに表示される、カスタム正規表現の結果の例を示すスクリーンショット。</block>
   <block id="f0957a103fdf829c95e6748bbaec5b4a" category="paragraph"><block ref="f0957a103fdf829c95e6748bbaec5b4a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="568187b2e469a8406245645d5e1be158" category="section-title">カスタム正規表現を非アクティブにします</block>
-  <block id="94deabbbc24df00a97f5113a004850a1" category="paragraph">後で、正規表現として入力したカスタムパターンを識別するためにData senseが不要であると判断した場合は、次のコマンドを使用して各正規表現を削除します。</block>
   <block id="f1619aa0c5343971dffa315bb9524cc9" category="paragraph">たとえば、*内部製品ID * regexを削除するには、次のようにします。</block>
   <block id="8b4506c76e97dc4cbdfa92467d581a0a" category="section-title">これで、データの中でデータを識別するカスタムパターンを追加できるようになりました</block>
   <block id="cdb141fc7c1c0fc93208e7dbbad88e03" category="paragraph">カスタム正規表現（regex）を使用して、データ内の特定の情報を識別するためのパーソナルパターンを追加できます。正規表現は、すでにData Senseで使用されている既存の事前定義パターンに追加され、結果は［個人パターン］セクションに表示されます。<block ref="2190fe4edde1bb0ebe7888202a9ce641" category="inline-link-rx"></block>。</block>
   <block id="f11466d242ef66f0b539b785de1f046b" category="paragraph">データセンスをオンプレミスにインストールした場合は、ログファイルに直接移動できます。</block>
   <block id="cdd8fa6a73205d146405999abb5c86ec" category="admonition">Data Senseホスト・システムのIPアドレスは、インストール後は変更できません。</block>
+  <block id="766f0d81be7879628bc30bd7367309c3" category="paragraph">このコマンドはパス*/opt/NetApp/Datasense /*から実行します。</block>
+  <block id="4767339e389eb1fa075ecdec5d1ec320" category="paragraph">コマンドラインの末尾にある*-f *オプションを使用すると、たとえ過度に広範囲であっても、正規表現を強制的にData senseに追加できます。</block>
+  <block id="48532ffc6016c24d1207f39fecfcbbda" category="section-title">カスタム正規表現を非アクティブにします</block>
+  <block id="19f9f2c4f009c255e214b21dae526160" category="paragraph">後で、正規表現として入力したカスタムパターンを識別するためにData Senseが必要ない場合は、コマンドの* deactivate *オプションを使用して、各正規表現を削除します。</block>
+  <block id="331a3f3aa511b1c438e9c58674f70985" category="section-title">2022年9月6日（バージョン1.16）</block>
+  <block id="d59aefa3621ff4109ce747758711c46c" category="section-title">ファイルの変更を反映するために、リポジトリをすぐに再スキャンできます</block>
+  <block id="a6277013831bd0ba5dd8499592e6d67b" category="inline-link">ディレクトリを再スキャンする方法を参照してください</block>
+  <block id="45b58068004d744461935c2aae409c04" category="paragraph">変更がシステムに反映されるように特定のリポジトリをただちに再スキャンする必要がある場合は、リポジトリを選択して再スキャンします。これにより、特定のデータを再スキャンする際に、他のデータよりも優先順位を付けることができます。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
+  <block id="24a7d06e1fe90aca0c0301d12fadc686" category="section-title">[データ調査]ページの[データスキャン]ステータスの新しいフィルタ</block>
+  <block id="e2e0734ca474deb38b2c13f526832e06" category="paragraph">[分析ステータス]フィルタを使用すると、データセンススキャンの特定の段階にあるファイルを一覧表示できます。オプションを選択して、「*最初のスキャンを保留*」、「*完了*スキャン中」、「*再スキャンを保留中*」、または「スキャンに失敗*」のファイルのリストを表示できます。</block>
+  <block id="82f05abce805aa872acec563bbca9a1f" category="paragraph"><block ref="b263790debd0f3d5e5a31296d99293db" category="inline-link-rx"></block>。</block>
+  <block id="9d771bf7f3ed0f2d7cd7bbf827bab0a2" category="section-title">データ主体は、スキャンで見つかった「個人データ」の一部と見なされるようになりました</block>
+  <block id="76eab5fecba3164354032ddcdc0feb3d" category="paragraph">データセンスは、コンプライアンスダッシュボードに表示される個人結果の一部として、データ主体を認識するようになりました。また、［調査］ページで検索を実行するときに、［個人データ］の［データ主体］を選択して、データ主体を含むファイルのみを表示することもできます。</block>
+  <block id="6d3ab1cb3139d4416e111272db779d6d" category="section-title">データ検出ブレッドクラムファイルは、スキャンで検出された「カテゴリ」の一部と見なされるようになりました</block>
+  <block id="d6933caaf62074fc0c3e63f604181712" category="inline-link">ブレッドクラムファイルの作成方法の詳細については、こちらをご覧ください</block>
+  <block id="368538217a4a98d2d78bf94a224b8eb6" category="paragraph">データ検出では、階層リンクファイルがコンプライアンスダッシュボードに表示されるカテゴリの一部として認識されるようになりました。これらは、ソースの場所からNFS共有にファイルを移動するときにData Senseによって作成されるファイルです。<block ref="fd6931884959497f6c1600e29f97b838" category="inline-link-rx"></block>。</block>
+  <block id="636d406982c471ea6a3e9f3a5d5f7f1f" category="paragraph">また、[調査]ページで検索を実行するときに、[カテゴリ]の[データセンスパンくずリスト]を選択して、データセンスブレッドクラムファイルのみを表示することもできます。</block>
+  <block id="23e2985b503ea96a8cdf22916427a97d" category="summary">Cloud Data Senseを使用して、SharePoint Onlineアカウントのファイルのスキャンを開始するには、いくつかの手順を実行します。</block>
+  <block id="758462d66cb32533f49360d3b98e28c4" category="paragraph">以下の前提条件を確認して、SharePointアカウントでクラウドデータセンスをアクティブ化する準備ができていることを確認してください。</block>
+  <block id="19814c236f94ff3af850cb182f35add5" category="inline-link-macro">インターネットにアクセス可能なオンプレミスの場所にインストールされます</block>
+  <block id="1834f32ba8d3eab040f5ce5755a6ad8a" category="list-text">SharePoint Onlineの場合、データセンスはです <block ref="879c41e64fac303868428ba32472ed0b" category="inline-link-macro-rx"></block> または <block ref="1303820445af3a7c87be9fbd1bbc30ad" category="inline-link-macro-rx"></block>。</block>
+  <block id="8985dbaa7cbdc09c9a769e35fc86d4ad" category="paragraph">データセンスは、の場合もあります <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。ただし、SharePoint Onlineファイルをスキャンするには、いくつかの選択したエンドポイントへのインターネットアクセスを提供する必要があります。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
+  <block id="bb0d7568763639a86425eb506af0b273" category="paragraph">インターネットにアクセスできないサイトにData Senseがインストールされている場合は、Cloud Manager Connectorも同じサイトにインストールし、インターネットにアクセスできないようにする必要があります。<block ref="879ebf9ca74e8f08bfff336454f4ade3" category="inline-link-rx"></block>。</block>
+  <block id="88ce972549d8b67ad56bc9e681818ca2" category="section-title">SharePoint Onlineアカウントを追加する</block>
+  <block id="8b7071c98b3d8a3e43ecfa77bab75857" category="paragraph">ユーザーファイルが存在するSharePoint Onlineアカウントを追加します。</block>
+  <block id="c5545572ea4069cfaa50e205fd80e522" category="inline-image-macro">[SharePoint Onlineの追加]ボタンをクリックできる[構成]ページのスクリーンショット。</block>
+  <block id="500f464a497c67b1e8f3311a5a3f32dc" category="paragraph"><block ref="500f464a497c67b1e8f3311a5a3f32dc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c078bb07b1ad7af1cc0f5b29159fb618" category="paragraph">SharePoint Onlineアカウントが作業環境のリストに追加されます。</block>
+  <block id="ea790b7cfc239ef4ea62089738c6fcba" category="list-text">SharePoint Onlineアカウント</block>
+  <block id="7e48ad5341563470bfb17d87eb4abfc2" category="paragraph">この方法でインストールすると（「オフライン」または「ダーク」サイトと呼ばれることもあります）、データ検出でスキャンできるのは、オンプレミスサイトに対してもローカルなデータソースのデータのみです。現時点では、データセンスは次の*ローカル*データソースをスキャンできます。</block>
+  <block id="194dae59202982a0d0f86245341e5d21" category="paragraph">Cloud Managerを非常にセキュアにインストールする必要があるが、OneDriveアカウントまたはSharePoint Onlineアカウントからローカルデータをスキャンする場合は、Data Senseオフラインインストーラを使用して、選択したいくつかのエンドポイントへのインターネットアクセスを提供できます。を参照してください <block ref="4422d2d61ce862ef7035c7cbbfd3b606" category="inline-xref-macro-rx"></block> を参照してください。</block>
+  <block id="6b5e137e04da5c1898139a8a7f549614" category="paragraph">インターネットにアクセスできないサイトにCloud ManagerとData Senseを導入している場合は、SharePoint OnlineアカウントとOneDriveアカウントでファイルをスキャンできます。そのためには、一部のエンドポイントにインターネットアクセスを提供しています。</block>
+  <block id="6ac5fc2b8fd7793f54ecc4e08500a270" category="list-text">データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.14.xがインストールされている場合は、1.15.xにアップグレードすることはできませんいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
+  <block id="c6f85ba2c850ce9e6a70c3b08a6a69ce" category="cell">データ主体</block>
+  <block id="3b2d0e0dc31143e6f51b137fffa0f7a2" category="list-text">データ検出階層リンク</block>
+  <block id="638bc83a47f3636cf5b909804535902e" category="paragraph">特定のコンテンツのスキャンを一時的に停止する場合は'リポジトリ上のスキャンを一時的に停止できますこれは、スキャンを「オフ」にするのとは異なります。スキャンをオフにすると、そのボリュームに関するすべてのインデックスと情報がシステムから削除されます。スキャンを一時停止すると、データ検索ではリポジトリへの変更や追加のスキャンは実行されませんが、現在の結果はすべてシステムに表示されたままになります。</block>
+  <block id="f976bf2eff4504fae0fc49c0115018dc" category="section-title">既存のリポジトリのデータを再スキャンしています</block>
+  <block id="31708d59045759b74bc21fc59af3a403" category="paragraph">データ検出では、データを継続的にスキャンして、追加したリポジトリ内の増分変更を検出します。ただし、システムがすべての環境をスキャンするのに時間がかかり、スキャンするリポジトリの順序を制御する方法もありません。そのため、変更がシステムに反映されるように特定のリポジトリをただちに再スキャンする必要がある場合は、リポジトリを選択して再スキャンすることができます。これにより、特定のデータのスキャンに優先順位を付けてから、他のデータをスキャンすることができます。再スキャンアクションが完了すると、選択したリポジトリは通常のデータセンススケジュールでスキャンされている状態に戻ります。</block>
+  <block id="3f4d6d8bcb45a73e9e3df2c012ea6aac" category="admonition">現在、単一のディレクトリ（フォルダまたは共有）の再スキャンがサポートされています。今後のサポートには、追加のリポジトリタイプ（ファイル、データベースなど）の再スキャンが含まれます。</block>
+  <block id="62796d34bcb4d2217e01776ba00d5ea0" category="list-text">ディレクトリを再スキャンする場合、ディレクトリ内のすべてのファイルは再スキャンされますが、ディレクトリ内のサブフォルダは再スキャンされません。</block>
+  <block id="4e67a9dec79298e79d1abf05ea540fbc" category="list-text">共有を再スキャンする場合、共有のメタデータのみが再スキャンされます。</block>
+  <block id="d489d7f150167fe801b5b652633601a6" category="list-text">[データ調査結果]ペインで、再スキャンするフォルダまたは共有を選択し、[*再スキャン*]をクリックします。</block>
+  <block id="b8f66688483b508da89754659d7ca8fa" category="inline-image-macro">ディレクトリを選択して再スキャンする方法を示すスクリーンショット。</block>
+  <block id="47ee282369061686a925d31dfbc358ad" category="paragraph"><block ref="47ee282369061686a925d31dfbc358ad" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="df296aafcd928770ac9559dc3f65f303" category="list-text">_Rescan Directory_Dialogで、* Rescan *をクリックします。</block>
+  <block id="c2becc0894f125fd5331aafa1ee47cf8" category="paragraph">メタデータの詳細を表示するときに、個々のディレクトリを再スキャンすることもできます。[Rescan]をクリックします。</block>
+  <block id="64305177aa881c77aecfabbcc7100f17" category="inline-image-macro">単一のフォルダまたは共有の再スキャン方法を示すスクリーンショット。</block>
+  <block id="4f70b74049fac9e8f382a26a4f516f44" category="paragraph"><block ref="4f70b74049fac9e8f382a26a4f516f44" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d55969f99169fb1ccecedd45e530342d" category="cell">解析ステータス（Analysis Status）</block>
+  <block id="133617814b053dc465cdc57c432b1756" category="cell">オプションを選択して、[最初のスキャン保留中]、[スキャン完了]、[再スキャン保留中]、または[スキャンに失敗しました]のファイルのリストを表示します。</block>
+  <block id="78ed85a2b36b215d69761df3caf130df" category="cell">作業環境のタイプを選択します。OneDrive、SharePoint、Google Driveは、[アプリ]に分類されます。</block>
+  <block id="6195c7a1534de8abb0c4706e15d24a3c" category="sidebar">スキャン設定を変更します</block>
 </blocks>

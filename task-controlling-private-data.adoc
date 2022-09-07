@@ -225,6 +225,9 @@ image:screenshot_compliance_investigation_filtered.png["調査ページで結果
 | ポリシー | ポリシーを選択します。実行します link:task-org-private-data.html#controlling-your-data-using-policies["こちらをご覧ください"^] をクリックして、既存のポリシーのリストを表示し、独自のカスタムポリシーを作成します。 
 
 
+| 解析ステータス（Analysis Status） | オプションを選択して、[最初のスキャン保留中]、[スキャン完了]、[再スキャン保留中]、または[スキャンに失敗しました]のファイルのリストを表示します。 
+
+
 | [ アクセス許可 ] を開きます | データ内およびフォルダ/共有内の権限のタイプを選択します 
 
 
@@ -237,7 +240,7 @@ image:screenshot_compliance_investigation_filtered.png["調査ページで結果
 | ラベル | 選択するオプション link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP ラベル"] ファイルに割り当てられます 
 
 
-| 作業環境タイプ（ Working Environment Type ） | 作業環境のタイプを選択します。OneDrive、SharePoint、Google Driveは、「クラウドアプリ」に分類されています。 
+| 作業環境タイプ（ Working Environment Type ） | 作業環境のタイプを選択します。OneDrive、SharePoint、Google Driveは、[アプリ]に分類されます。 
 
 
 | 作業環境名 | 特定の作業環境を選択します 

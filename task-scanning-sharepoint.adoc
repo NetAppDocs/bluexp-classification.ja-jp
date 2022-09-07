@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-sharepoint.html 
-keywords: cloud compliance, enable cloud compliance, privacy, compliance, sharepoint, data sense 
-summary: Cloud Data Sense を使用して、 SharePoint アカウント内のファイルのスキャンを開始するには、いくつかの手順を実行します。 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, sharepoint, sharepoint online, sharepoint on-premises, data sense 
+summary: Cloud Data Senseを使用して、SharePoint Onlineアカウントのファイルのスキャンを開始するには、いくつかの手順を実行します。 
 ---
 = SharePoint アカウントをスキャンしています
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Data Sense を使用して、 SharePoint アカウント内のフ
 
 
 [role="lead"]
-Cloud Data Sense を使用して、 SharePoint アカウント内のファイルのスキャンを開始するには、いくつかの手順を実行します。
+Cloud Data Senseを使用して、SharePoint Onlineアカウントのファイルのスキャンを開始するには、いくつかの手順を実行します。
 
 
 
@@ -38,7 +38,7 @@ SharePoint アカウントでスキャンする SharePoint サイト URL のリ�
 
 == SharePoint の要件を確認する
 
-以下の前提条件を確認して、 SharePoint アカウントで Cloud Data Sense を有効にする準備ができていることを確認します。
+以下の前提条件を確認して、SharePointアカウントでクラウドデータセンスをアクティブ化する準備ができていることを確認してください。
 
 * すべての SharePoint サイトへの読み取りアクセスを提供する SharePoint アカウントの管理者ログインクレデンシャルが必要です。
 * スキャンするすべてのデータについて、 SharePoint サイトの URL の行区切りリストが必要です。
@@ -50,28 +50,32 @@ SharePoint アカウントでスキャンする SharePoint サイト URL のリ�
 
 導入済みのインスタンスがない場合は Cloud Data Sense を導入
 
-データセンスは、のいずれかです link:task-deploy-cloud-compliance.html["クラウドに導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^]。
+* SharePoint Onlineの場合、データセンスはです link:task-deploy-cloud-compliance.html["クラウドに導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセス可能なオンプレミスの場所にインストールされます"^]。
++
+データセンスは、の場合もあります link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスの場所に導入されている"^]。ただし、SharePoint Onlineファイルをスキャンするには、いくつかの選択したエンドポイントへのインターネットアクセスを提供する必要があります。 link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["必要なエンドポイントのリストを参照してください"]。
+
+
+
+インターネットにアクセスできないサイトにData Senseがインストールされている場合は、Cloud Manager Connectorも同じサイトにインストールし、インターネットにアクセスできないようにする必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["詳細はこちら。"^]。
 
 Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
 
-データセンスは、の場合もあります link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスの場所に導入されている"^]。ただし、ローカルの SharePoint ファイルをスキャンするには、いくつかの選択したエンドポイントへのインターネットアクセスを提供する必要があります。 link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["必要なエンドポイントのリストを参照してください"]。
 
 
+== SharePoint Onlineアカウントを追加する
 
-== SharePoint アカウントを追加しています
-
-ユーザーファイルが存在する SharePoint アカウントを追加します。
+ユーザーファイルが存在するSharePoint Onlineアカウントを追加します。
 
 .手順
 . [ 作業環境の構成 ] ページで、 [ * データソースの追加 *>* SharePoint Online アカウントの追加 * ] をクリックします。
 +
-image:screenshot_compliance_add_sharepoint_button.png["SharePoint の追加ボタンをクリックできる [ スキャン構成 ] ページのスクリーンショット。"]
+image:screenshot_compliance_add_sharepoint_button.png["[SharePoint Onlineの追加]ボタンをクリックできる[構成]ページのスクリーンショット。"]
 
 . [SharePoint Online アカウントの追加 ] ダイアログで、 [* SharePoint にサインインする * ] をクリックします。
 . 表示される Microsoft ページで、 SharePoint アカウントを選択し、必要な管理者ユーザーとパスワードを入力してから、 *Accept * をクリックして Cloud Data Sense がこのアカウントからデータを読み取ることを許可します。
 
 
-SharePoint アカウントが作業環境のリストに追加されます。
+SharePoint Onlineアカウントが作業環境のリストに追加されます。
 
 
 

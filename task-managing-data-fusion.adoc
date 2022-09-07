@@ -119,10 +119,12 @@ image:screenshot_compliance_delete_data_fusion.png["データ Fusion ソース�
 * <regular expression>=任意の正規表現を指定できます。
 
 
+このコマンドはパス*/opt/NetApp/Datasense /*から実行します。
+
 新しい正規表現が多すぎるかどうかを毎回テストし、一致する値が多すぎるかどうかを確認します。その場合は、次のログメッセージが表示されます。
 
  log v1.0 | 2022-08-17 07:24:19,585 | ERROR | ds_logger | custom_regex | 119 | 1 | None | custom_regex_119 | The regex has high risk to identify false positives. Please narrow the regular expression and try again. To add it anyway, use the force flag (-f) at the end
-正規表現をData Senseに強制的に追加する場合は、コマンドラインの最後に*-f *を使用できます。
+コマンドラインの末尾にある*-f *オプションを使用すると、たとえ過度に広範囲であっても、正規表現を強制的にData senseに追加できます。
 
 
 
@@ -149,13 +151,14 @@ image:screenshot_add_regex_result.png["［調査結果］ペインに表示さ�
 
 === カスタム正規表現を非アクティブにします
 
-後で、正規表現として入力したカスタムパターンを識別するためにData senseが不要であると判断した場合は、次のコマンドを使用して各正規表現を削除します。
+後で、正規表現として入力したカスタムパターンを識別するためにData Senseが必要ない場合は、コマンドの* deactivate *オプションを使用して、各正規表現を削除します。
 
  sudo bash tools/datascience/custom_regex/custom_regex.sh -s deactivate -n "<pattern name>"
 たとえば、*内部製品ID * regexを削除するには、次のようにします。
 
 [source, cli]
 ----
+[user ~]$ cd /opt/netapp/Datasense/
 [user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s deactivate -n "Internal Product ID"
 ----
  log v1.0 | 2022-08-17 09:13:15,431 | INFO | ds_logger | custom_regex | 31 | 1 | None | custom_regex_31 | A pattern named 'Internal Product ID' was deactivated successfully
