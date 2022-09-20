@@ -33,10 +33,10 @@ summary: ネットワーク内またはクラウド内でインターネット�
 また可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタをオンプレミスに導入"^] 自社ネットワーク内またはクラウド内の Linux ホスト
 
 [role="quick-margin-para"]
-環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、ポート 443 を介したコネクタとクラウドデータセンスの接続などが含まれます。 <<Verify Cloud Manager and Data Sense prerequisites,すべてのリストを参照してください>>。
+環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、ポート 443 を介したコネクタとクラウドデータセンスの接続などが含まれます。  Cloud Manager and Data Sense prerequisites,すべてのリストを参照してください。
 
 [role="quick-margin-para"]
-とを満たす Linux システムも必要です <<Prepare the Linux host system,次の要件があります>>。
+とを満たす Linux システムも必要です  the Linux host system,次の要件があります。
 
 [role="quick-margin-para"]
 ネットアップサポートサイトから Cloud Data Sense ソフトウェアをダウンロードし、使用する Linux ホストにインストーラファイルをコピーします。次に、インストールウィザードを起動し、プロンプトに従って Data Sense インスタンスを展開します。
@@ -132,7 +132,7 @@ Cloud Data Sense からのアウトバウンドインターネットアクセス
 | ¥ https://github.com/docker ¥ https://download.docker.com ¥ http://mirror.centos.org ¥ http://mirrorlist.centos.org ¥ http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | インストールの前提条件パッケージを提供します。 
 |===
 --
-Cloud Manager に必要な権限が割り当てられていることを確認します:: Cloud Manager に、リソースを導入する権限と、 Cloud Data Sense インスタンス用のセキュリティグループを作成する権限があることを確認します。最新の Cloud Manager 権限は、で確認できます https://mysupport.netapp.com/site/info/cloud-manager-policies["ネットアップが提供するポリシー"^]。
+Cloud Manager に必要な権限が割り当てられていることを確認します:: Cloud Manager に、リソースを導入する権限と、 Cloud Data Sense インスタンス用のセキュリティグループを作成する権限があることを確認します。最新の Cloud Manager 権限は、で確認できます https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["ネットアップが提供するポリシー"^]。
 Cloud Manager Connector が Cloud Data Sense にアクセスできることを確認する:: コネクタと Cloud Data Sense インスタンス間の接続を確認します。コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。
 +
 --
@@ -154,11 +154,15 @@ Web ブラウザから Cloud Data Sense への接続を確認する:: Cloud Data
 
 == オンプレミスにデータセンスを導入
 
-一般的な構成では、ソフトウェアを 1 台のホストシステムにインストールします。 <<Single-host installation for typical configurations,これらの手順を参照してください>>。
+一般的な構成では、ソフトウェアを 1 台のホストシステムにインストールします。  installation for typical configurations,これらの手順を参照してください。
 
-ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。 <<Multi-host installation for large configurations,これらの手順を参照してください>>。
+image:diagram_deploy_onprem_single_host_internet.png["インターネットにアクセスできるオンプレミスに導入された単一のデータセンスインスタンスを使用してスキャンできるデータソースの場所を示す図。"]
 
-を参照してください <<Prepare the Linux host system,Linux ホストシステムの準備>> および <<Verify Cloud Manager and Data Sense prerequisites,前提条件の確認>> Cloud Data Sense を導入する前に、要件の一覧を確認してください。
+ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。  installation for large configurations,これらの手順を参照してください。
+
+image:diagram_deploy_onprem_multi_host_internet.png["インターネットにアクセスできるオンプレミスに導入された複数のData Senseインスタンスを使用する場合に、スキャンできるデータソースの場所を示す図。"]
+
+を参照してください  the Linux host system,Linux ホストシステムの準備 および  Cloud Manager and Data Sense prerequisites,前提条件の確認 Cloud Data Sense を導入する前に、要件の一覧を確認してください。
 
 Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
 
@@ -172,11 +176,11 @@ NOTE: Cloud Data Sense は、ソフトウェアがオンプレミスにインス
 単一のオンプレミスホストに Data Sense ソフトウェアをインストールする場合は、次の手順を実行します。
 
 .必要なもの
-* Linux システムがを満たしていることを確認します <<Prepare the Linux host system,ホストの要件>>。
+* Linux システムがを満たしていることを確認します  the Linux host system,ホストの要件。
 * （オプション）システムに、前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。このソフトウェアがシステムにインストールされていない場合は、インストーラによってインストールされます。
 * Linux システムに対する root 権限があることを確認してください。
 * プロキシを使用していて、 TLS 代行受信を実行している場合は、 TLS CA 証明書が保存されている Data Sense Linux システム上のパスを確認する必要があります。
-* オフライン環境が要件を満たしていることを確認します <<Verify Cloud Manager and Data Sense prerequisites,権限と接続>>。
+* オフライン環境が要件を満たしていることを確認します  Cloud Manager and Data Sense prerequisites,権限と接続。
 
 
 .手順
@@ -252,10 +256,10 @@ Cloud Data Sense インストーラは、パッケージのインストール、
 複数のオンプレミスホストに Data Sense ソフトウェアをインストールする場合は、次の手順を実行します。
 
 .必要なもの
-* Manager ノードと Scanner ノードのすべての Linux システムが、を満たしていることを確認します <<Prepare the Linux host system,ホストの要件>>。
+* Manager ノードと Scanner ノードのすべての Linux システムが、を満たしていることを確認します  the Linux host system,ホストの要件。
 * （オプション）システムに、前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。このソフトウェアがシステムにインストールされていない場合は、インストーラによってインストールされます。
 * Linux システムに対する root 権限があることを確認してください。
-* 環境が要件を満たしていることを確認します <<Verify Cloud Manager and Data Sense prerequisites,権限と接続>>。
+* 環境が要件を満たしていることを確認します  Cloud Manager and Data Sense prerequisites,権限と接続。
 * 使用するスキャナノードホストの IP アドレスを確認しておく必要があります。
 * すべてのホストで次のポートとプロトコルを有効にする必要があります。
 +
@@ -284,7 +288,7 @@ Cloud Data Sense インストーラは、パッケージのインストール、
 
 
 .手順
-. の手順 1~7 を実行します <<Single-host installation for typical configurations,シングルホストインストール>> マネージャーノード。
+. の手順 1~7 を実行します  installation for typical configurations,シングルホストインストール マネージャーノード。
 . 手順 8 で示したように、インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、必要なパラメータをコマンドライン引数としてインストーラに指定することができます。
 +
 シングルホストのインストールで使用できる変数に加えて、新しいオプション * -n <Node_IP> * を使用してスキャナノードの IP アドレスを指定します。複数のスキャナノードの IP はカンマで区切って指定します。

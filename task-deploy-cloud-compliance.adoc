@@ -31,7 +31,7 @@ summary: クラウドデータセンスをクラウドに導入するには、�
 また可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタをオンプレミスに導入"^] 自社ネットワーク内またはクラウド内の Linux ホスト
 
 [role="quick-margin-para"]
-環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、ポート 443 を介したコネクタとクラウドデータセンスの接続などが含まれます。 <<Review prerequisites,すべてのリストを参照してください>>。
+環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、ポート 443 を介したコネクタとクラウドデータセンスの接続などが含まれます。  prerequisites,すべてのリストを参照してください。
 
 [role="quick-margin-para"]
 デフォルトの構成では、 Cloud Data Sense インスタンス用に 16 個の vCPU が必要です。を参照してください link:concept-cloud-compliance.html#the-cloud-data-sense-instance["インスタンスタイプの詳細"^]。

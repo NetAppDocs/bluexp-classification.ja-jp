@@ -23,7 +23,7 @@ Cloud Data Sense は、 Amazon S3 バケットをスキャンして、 S3 オブ
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
 [role="quick-margin-para"]
-IAM ロールの準備やデータセンスから S3 への接続の設定など、クラウド環境がクラウドデータセンスの要件を満たしていることを確認します。 <<Reviewing S3 prerequisites,すべてのリストを参照してください>>。
+IAM ロールの準備やデータセンスから S3 への接続の設定など、クラウド環境がクラウドデータセンスの要件を満たしていることを確認します。  S3 prerequisites,すべてのリストを参照してください。
 
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"^] インスタンスが展開されていない場合。
@@ -117,7 +117,7 @@ image:screenshot_s3_we.gif["Amazon S3 作業環境アイコンのスクリーン
 +
 image:screenshot_s3_enable_compliance.gif["サービスパネルからクラウドデータセンスサービスを有効にするスクリーンショット"]
 
-. プロンプトが表示されたら、を持つ Cloud Data Sense インスタンスに IAM ロールを割り当てます <<Reviewing S3 prerequisites,必要な権限>>。
+. プロンプトが表示されたら、を持つ Cloud Data Sense インスタンスに IAM ロールを割り当てます  S3 prerequisites,必要な権限。
 +
 image:screenshot_s3_compliance_iam_role.gif["クラウドデータセンス用の AWS IAM ロールを入力するスクリーンショット"]
 
@@ -137,7 +137,7 @@ Cloud Manager が Amazon S3 で Cloud Data Sense を有効にしたら、次の�
 
 スキャンする S3 バケットを含む AWS アカウントで Cloud Manager を実行している場合は、そのバケットが検出され、 Amazon S3 作業環境に表示されます。
 
-クラウドデータセンスも可能です <<Scanning buckets from additional AWS accounts,別々の AWS アカウントにある S3 バケットをスキャンします>>。
+クラウドデータセンスも可能です  buckets from additional AWS accounts,別々の AWS アカウントにある S3 バケットをスキャンします。
 
 .手順
 . Amazon S3 作業環境を選択します。

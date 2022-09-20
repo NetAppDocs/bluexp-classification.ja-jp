@@ -101,7 +101,7 @@ image:screenshot_fsx_scanning_activate.png["Cloud Data Sense インスタンス�
 ** すべてのボリュームをマップして分類するには、 * すべてのボリュームをマップして分類 * をクリックします。
 ** 各ボリュームのスキャンをカスタマイズするには、「 * 」をクリックするか、各ボリュームのスキャンタイプを選択してから、マッピングまたは分類するボリュームを選択します。
 +
-を参照してください <<Enabling and disabling compliance scans on volumes,ボリュームのコンプライアンススキャンの有効化と無効化>> を参照してください。
+を参照してください  and disabling compliance scans on volumes,ボリュームのコンプライアンススキャンの有効化と無効化 を参照してください。
 
 
 
@@ -214,7 +214,7 @@ image:screenshot_compliance_dp_cifs_volumes.png["CIFS のデータ保護ボリ�
 
 
 
-. スキャンする各 DP ボリュームをアクティブ化します <<Enabling and disabling compliance scans on volumes,他のボリュームも有効にした場合と同じです>>。
+. スキャンする各 DP ボリュームをアクティブ化します  and disabling compliance scans on volumes,他のボリュームも有効にした場合と同じです。
 
 
 有効にすると、スキャン対象としてアクティブ化された各 DP ボリュームから NFS 共有が作成されます。共有エクスポートポリシーでは、データセンスインスタンスからのアクセスのみが許可されます。

@@ -23,9 +23,9 @@ NOTE: このセクションで説明する機能は、データソースに対�
 
 image:screenshot_compliance_dashboard.png["クラウドデータセンスダッシュボードのスクリーンショット"]
 
-一部の作業環境のデータだけを表示する場合は、 <<Viewing Dashboard data for specific working environments,それらの作業環境を選択します>>。
+一部の作業環境のデータだけを表示する場合は、  Dashboard data for specific working environments,それらの作業環境を選択します。
 
-また、 [ データ調査 ] ページから結果をフィルタリングして、結果のレポートを CSV ファイルとしてダウンロードすることもできます。を参照してください <<Filtering data in the Data Investigation page,[ データ調査 ] ページでデータをフィルタリングします>> を参照してください。
+また、 [ データ調査 ] ページから結果をフィルタリングして、結果のレポートを CSV ファイルとしてダウンロードすることもできます。を参照してください  data in the Data Investigation page,[ データ調査 ] ページでデータをフィルタリングします を参照してください。
 
 
 

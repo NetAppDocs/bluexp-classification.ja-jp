@@ -352,7 +352,7 @@ image:screenshot_compliance_select_user_multi.png["[ データ調査 ] ページ
 
 ポリシーには次の機能があります。
 
-* <<List of predefined Policies,事前定義されたポリシー>> ユーザの要求に基づいて作成されます
+*  of predefined Policies,事前定義されたポリシー ユーザの要求に基づいて作成されます
 * 独自のカスタムポリシーを作成できます
 * ポリシーの結果を含む [ 調査 ] ページを起動します ワンクリックで
 * Cloud Manager ユーザに特定の重大度の E メールアラートを送信する ポリシーによって結果が返されるので、通知を取得して保護することができます データを

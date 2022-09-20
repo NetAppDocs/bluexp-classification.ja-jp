@@ -87,7 +87,7 @@ image:screenshot_cloud_compliance_anf_scan_config.png["Cloud Data Sense イン�
 ** すべてのボリュームをマップして分類するには、 * すべてのボリュームをマップして分類 * をクリックします。
 ** 各ボリュームのスキャンをカスタマイズするには、「 * 」をクリックするか、各ボリュームのスキャンタイプを選択してから、マッピングまたは分類するボリュームを選択します。
 +
-を参照してください <<Enabling and disabling compliance scans on volumes,ボリュームのコンプライアンススキャンの有効化と無効化>> を参照してください。
+を参照してください  and disabling compliance scans on volumes,ボリュームのコンプライアンススキャンの有効化と無効化 を参照してください。
 
 
 

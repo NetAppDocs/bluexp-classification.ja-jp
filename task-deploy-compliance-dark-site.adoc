@@ -30,7 +30,7 @@ summary: インターネットにアクセスできないオンプレミスサ�
 * Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージ
 
 
-Cloud Managerを非常にセキュアにインストールする必要があるが、OneDriveアカウントまたはSharePoint Onlineアカウントからローカルデータをスキャンする場合は、Data Senseオフラインインストーラを使用して、選択したいくつかのエンドポイントへのインターネットアクセスを提供できます。を参照してください <<SharePoint and OneDrive special requirements,SharePoint と OneDrive の特別な要件>> を参照してください。
+Cloud Managerを非常にセキュアにインストールする必要があるが、OneDriveアカウントまたはSharePoint Onlineアカウントからローカルデータをスキャンする場合は、Data Senseオフラインインストーラを使用して、選択したいくつかのエンドポイントへのインターネットアクセスを提供できます。を参照してください  and OneDrive special requirements,SharePoint と OneDrive の特別な要件 を参照してください。
 
 現在、データセンスがダークサイトに導入されている場合、Cloud Volumes ONTAP 、Azure NetApp Files 、ONTAP 用FSX、AWS S3、またはGoogleドライブのアカウントのスキャンはサポートされません。
 
@@ -47,7 +47,7 @@ Cloud Managerを非常にセキュアにインストールする必要がある�
 * ユーザからのフィードバックを受け取る
 * Cloud Manager からのソフトウェアの自動アップグレード
 +
-Cloud Manager Connector と Data Sense は、新しい機能を有効にするために、定期的な手動アップグレードを必要とします。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します <<Upgrade Data Sense software,データセンスソフトウェアをアップグレードします>>。
+Cloud Manager Connector と Data Sense は、新しい機能を有効にするために、定期的な手動アップグレードを必要とします。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します  Data Sense software,データセンスソフトウェアをアップグレードします。
 
 
 
@@ -61,7 +61,7 @@ Cloud Manager Connector と Data Sense は、新しい機能を有効にする�
 オフラインのオンプレミスサイトにコネクタがまだインストールされていない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["コネクタを配置します"^] Linux ホストの場合は、
 
 [role="quick-margin-para"]
-Linux システムがを満たしていることを確認します <<Prepare the Linux host system,ホストの要件>>必要なソフトウェアがすべてインストールされていること、およびオフライン環境が要件を満たしていることを確認します <<Verify Cloud Manager and Data Sense prerequisites,権限と接続>>。
+Linux システムがを満たしていることを確認します  the Linux host system,ホストの要件必要なソフトウェアがすべてインストールされていること、およびオフライン環境が要件を満たしていることを確認します  Cloud Manager and Data Sense prerequisites,権限と接続。
 
 [role="quick-margin-para"]
 ネットアップサポートサイトから Cloud Data Sense ソフトウェアをダウンロードし、使用する Linux ホストにインストーラファイルをコピーします。次に、インストールウィザードを起動し、プロンプトに従って Cloud Data Sense インスタンスを導入します。
@@ -155,7 +155,11 @@ _cloudmanager.cloud.netapp.com_ へのアクセスは、これらの外部サー
 
 一般的な構成では、ソフトウェアを 1 台のホストシステムにインストールします。 link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["これらの手順を参照してください"]。
 
+image:diagram_deploy_onprem_single_host_no_internet.png["インターネットにアクセスできない、オンプレミスに導入された単一のデータセンスインスタンスを使用してスキャンできるデータソースの場所を示す図。"]
+
 ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。 link:task-deploy-compliance-dark-site.html#multi-host-installation-for-large-configurations["これらの手順を参照してください"]。
+
+image:diagram_deploy_onprem_multi_host_no_internet.png["インターネットにアクセスせずにオンプレミスに導入された複数のData Senseインスタンスを使用してスキャンできるデータソースの場所を示す図。"]
 
 
 
@@ -164,10 +168,10 @@ _cloudmanager.cloud.netapp.com_ へのアクセスは、これらの外部サー
 オフライン環境で単一のオンプレミスホストに Data Sense ソフトウェアをインストールする場合は、次の手順を実行します。
 
 .必要なもの
-* Linux システムがを満たしていることを確認します <<Prepare the Linux host system,ホストの要件>>。
+* Linux システムがを満たしていることを確認します  the Linux host system,ホストの要件。
 * 前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。
 * Linux システムに対する root 権限があることを確認してください。
-* オフライン環境が要件を満たしていることを確認します <<Verify Cloud Manager and Data Sense prerequisites,権限と接続>>。
+* オフライン環境が要件を満たしていることを確認します  Cloud Manager and Data Sense prerequisites,権限と接続。
 
 
 .手順
@@ -245,10 +249,10 @@ Data Sense インストーラは、パッケージをインストールし、イ
 オフライン環境で複数のオンプレミスホストに Data Sense ソフトウェアをインストールする場合は、次の手順を実行します。
 
 .必要なもの
-* Manager ノードと Scanner ノードのすべての Linux システムが、を満たしていることを確認します <<Prepare the Linux host system,ホストの要件>>。
+* Manager ノードと Scanner ノードのすべての Linux システムが、を満たしていることを確認します  the Linux host system,ホストの要件。
 * 前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。
 * Linux システムに対する root 権限があることを確認してください。
-* オフライン環境が要件を満たしていることを確認します <<Verify Cloud Manager and Data Sense prerequisites,権限と接続>>。
+* オフライン環境が要件を満たしていることを確認します  Cloud Manager and Data Sense prerequisites,権限と接続。
 * 使用するスキャナノードホストの IP アドレスを確認しておく必要があります。
 * すべてのホストで次のポートとプロトコルを有効にする必要があります。
 +
