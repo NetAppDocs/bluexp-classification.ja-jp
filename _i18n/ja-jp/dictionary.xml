@@ -1744,8 +1744,6 @@
   <block id="f13aece6b768921832b7bb943cab9f19" category="list-text">ソース ONTAP システムで最初に NFS ボリュームとして作成されたボリュームが有効になります。</block>
   <block id="70397bc1b30df5af8cc61673df2f897d" category="list-text">ソース ONTAP システムで最初に CIFS ボリュームとして作成されたボリュームでは、それらの DP ボリュームをスキャンするために CIFS クレデンシャルを入力する必要があります。Cloud Data Sense で CIFS ボリュームをスキャンするためにすでに Active Directory のクレデンシャルを入力している場合は、それらのクレデンシャルを使用できます。また、別の管理クレデンシャルを指定することもできます。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
-  <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">Cloud Manager 3.9 に関する注意事項</block>
-  <block id="c069fcc68c5dfa73ccc99924c836cae9" category="list-text"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
   <block id="73f420c03909a74fdc36f2bebeb15d52" category="inline-link-macro">Cloud Data Sense の通知</block>
   <block id="ef4a4eef354631d5e99b3e1ea91d46d7" category="list-text"><block ref="ef4a4eef354631d5e99b3e1ea91d46d7" category="inline-link-macro-rx"></block></block>
   <block id="33b8c7d67d1544ae9cd892551b3430a1" category="summary">グローバル Active Directory をクラウドデータセンスと統合すると、ファイル所有者や、ファイルにアクセスできるユーザーやグループについてデータセンスがレポートする結果を高めることができます。</block>
@@ -2213,9 +2211,7 @@
   <block id="6c08c57e382a25a778455184cd9b1a4a" category="list-text">Cloud Manager で、 * Help &gt; Support * の順にクリックします。</block>
   <block id="f5052c65917d7341726235d4d4941461" category="list-text">テクニカルサポートで利用可能なオプションのいずれかを選択します。</block>
   <block id="eee50fc2c4ac06219bb486e05b8250f7" category="list-text">コネクタと Cloud Data Sense インスタンス間の接続を確認します。コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。この接続により、データセンスインスタンスの展開が可能になり、 [ コンプライアンス（ Compliance ） ] タブと [ ガバナンス（ Governance ） ] タブで情報を表示できます。Cloud Data Sense は、 AWS や Azure の政府機関でサポートされています。</block>
-  <block id="0b3c77caf569c338dc81a3ae8eb753d5" category="paragraph">AWS と AWS GovCloud を導入する場合は、追加のインバウンドおよびアウトバウンドのルールが必要です。を参照してください<block ref="174b2d5101f3b2591340f8b1c4108c15" category="inline-link-rx"></block> を参照してください。</block>
   <block id="b445de53411a165e9c56da6430c38d59" category="inline-link">Azure のコネクタのルール</block>
-  <block id="e271f92bb6a2f886e00883b1a5f3fe51" category="paragraph">Azure と Azure Government の環境には、追加のインバウンドルールとアウトバウンドルールが必要です。を参照してください<block ref="c90240cb0e2cbfac2997cad831e58ce0" category="inline-link-rx"></block> を参照してください。</block>
   <block id="c6bcf4a88b4c531d404128df1f1ad3a8" category="list-text">Googleドライブアカウント</block>
   <block id="c09551e40902e02251ee901bd86a597a" category="list-text">Cloud Data Senseを使用するには、Cloud Manager Connectorを導入しておく必要があります。多くの場合、 Cloud Manager で他のストレージとサービスを使用しているため、すでにコネクタが用意されています。Connector インスタンスを使用すると、導入先のクラウドプロバイダから料金が発生します。を参照してください<block ref="afb51f96ab234eaf32dde49b48eed419" category="inline-link-rx"></block>。コネクタをオンプレミスシステムにインストールしても、コストはかかりません。</block>
   <block id="dc3d679737d761f6e72564d962617ffa" category="paragraph">多くのユーザは、この機能を気に入っています。たとえば、より多くの調査が必要なデータソースをすばやくスキャンして特定したうえで、必要なデータソースやボリュームに対してのみ分類スキャンを有効にする必要があるからです。</block>
@@ -2770,4 +2766,8 @@
   <block id="f836b0a94f3f9f448c28b337ebd7f88d" category="inline-image-macro">インターネットにアクセスできるオンプレミスに導入された複数のData Senseインスタンスを使用する場合に、スキャンできるデータソースの場所を示す図。</block>
   <block id="9a996c7f10537ef7b705b42e701d4b6e" category="paragraph"><block ref="9a996c7f10537ef7b705b42e701d4b6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">Cloud Manager のすべてのドキュメント</block>
+  <block id="56d39ecb5bf4d2ec753c12fbb0e00108" category="paragraph">AWSおよびAWS GovCloud環境では、追加のインバウンドおよびアウトバウンドのセキュリティグループルールが必要です。を参照してください<block ref="74fb388667736bb2b34ea14720dd63e3" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="261826c213e3c9cbf53df120aaf0be3b" category="paragraph">AzureおよびAzure Government環境には、追加のインバウンドおよびアウトバウンドのセキュリティグループルールが必要です。を参照してください<block ref="e1893ebf6f9d2e927a13d052b78eec9f" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="d14a27b37d19411318313c75f11baf13" category="inline-link">Cloud Managerに関する通知</block>
+  <block id="8f4eecef1c8abf547a153a1486d48ab2" category="list-text"><block ref="8f4eecef1c8abf547a153a1486d48ab2" category="inline-link-rx"></block></block>
 </blocks>
