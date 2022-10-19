@@ -184,7 +184,7 @@ NOTE: Cloud Data Sense は、ソフトウェアがオンプレミスにインス
 
 
 .手順
-. から Cloud Data Sense ソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は * cc_onpm_installer_< バージョン >.tar.gz * です。
+. から Cloud Data Sense ソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は* DATASENSE-installer -<version> .tar.gz *です。
 . 使用する Linux ホストにインストーラファイルをコピーします (`cp またはその他の方法を使用 ) 。
 . Cloud Manager で、 * Data sense * をクリックします。
 . [ データセンスを活動化（ Activate Data sense ） ] をクリックし
@@ -203,7 +203,7 @@ image:screenshot_cloud_compliance_deploy_onprem.png["クラウドデータセン
 +
 [source, cli]
 ----
-tar -xzf cc_onprem_installer_1.14.0.tar.gz
+tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
 ----
 . インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、インストーラに必要なパラメータをコマンドライン引数として指定することができます。
 +
@@ -302,7 +302,7 @@ sudo ./node_install.sh -m 10.11.12.13-t ふぁいる EF-1u69m1-1s35212`
 
 . 各 * スキャナノードホストで：
 +
-.. データセンスインストーラファイル（ * cc_onpm_installer_< バージョン >.tar.gz * ）をホストマシンにコピーします（「 cp 」などの方法を使用）。
+.. データセンスインストーラファイル(*DATASENSE-installer -<version> .tar.gz*)をホストマシンにコピーします(scpなどの方法を使用)。
 .. インストーラファイルを解凍します。
 .. 手順 3 でコピーしたコマンドを貼り付けて実行します。
 +
