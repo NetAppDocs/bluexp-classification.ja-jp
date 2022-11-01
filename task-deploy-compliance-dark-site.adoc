@@ -30,7 +30,7 @@ summary: インターネットにアクセスできないオンプレミスサ�
 * Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージ
 
 
-Cloud Managerを非常にセキュアにインストールする必要があるが、OneDriveアカウントまたはSharePoint Onlineアカウントからローカルデータをスキャンする場合は、Data Senseオフラインインストーラを使用して、選択したいくつかのエンドポイントへのインターネットアクセスを提供できます。を参照してください  and OneDrive special requirements,SharePoint と OneDrive の特別な要件 を参照してください。
+非常に安全なBlueXPインストールが必要な特別な状況で、OneDriveアカウントまたはSharePoint Onlineアカウントからローカルデータをスキャンする場合は、データセンスオフラインインストーラを使用して、一部のエンドポイントへのインターネットアクセスを提供できます。を参照してください  and OneDrive special requirements,SharePoint と OneDrive の特別な要件 を参照してください。
 
 現在、データセンスがダークサイトに導入されている場合、Cloud Volumes ONTAP 、Azure NetApp Files 、ONTAP 用FSX、AWS S3、またはGoogleドライブのアカウントのスキャンはサポートされません。
 
@@ -41,13 +41,13 @@ Cloud Managerを非常にセキュアにインストールする必要がある�
 ほとんどのデータセンス機能は、インターネットにアクセスできないサイトに導入されている場合に機能します。ただし、インターネットアクセスを必要とする特定の機能はサポートされていません。たとえば、次のような機能があります。
 
 * Microsoft Azure Information Protection （ AIP ）ラベルの管理
-* 特定の重大ポリシーが結果を返すときに Cloud Manager ユーザに E メールアラートを送信する
-* さまざまなユーザに対する Cloud Manager ロールの設定（ Account Admin や Compliance Viewer など）
+* 特定の重要なポリシーの結果が返されたときに、BlueXPユーザーに電子メールアラートを送信する
+* 異なるユーザーのBlueXPロールの設定(アカウント管理者やCompliance Viewerなど)
 * Cloud Sync を使用したソースファイルのコピーと同期
 * ユーザからのフィードバックを受け取る
-* Cloud Manager からのソフトウェアの自動アップグレード
+* BlueXPからの自動ソフトウェアアップグレード
 +
-Cloud Manager Connector と Data Sense は、新しい機能を有効にするために、定期的な手動アップグレードを必要とします。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します  Data Sense software,データセンスソフトウェアをアップグレードします。
+BlueXPコネクタとデータセンスの両方で、新しい機能を有効にするには定期的に手動でアップグレードする必要があります。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します  Data Sense software,データセンスソフトウェアをアップグレードします。
 
 
 
@@ -61,19 +61,19 @@ Cloud Manager Connector と Data Sense は、新しい機能を有効にする�
 オフラインのオンプレミスサイトにコネクタがまだインストールされていない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["コネクタを配置します"^] Linux ホストの場合は、
 
 [role="quick-margin-para"]
-Linux システムがを満たしていることを確認します  the Linux host system,ホストの要件必要なソフトウェアがすべてインストールされていること、およびオフライン環境が要件を満たしていることを確認します  Cloud Manager and Data Sense prerequisites,権限と接続。
+Linux システムがを満たしていることを確認します  the Linux host system,ホストの要件必要なソフトウェアがすべてインストールされていること、およびオフライン環境が要件を満たしていることを確認します  BlueXP and Data Sense prerequisites,権限と接続。
 
 [role="quick-margin-para"]
 ネットアップサポートサイトから Cloud Data Sense ソフトウェアをダウンロードし、使用する Linux ホストにインストーラファイルをコピーします。次に、インストールウィザードを起動し、プロンプトに従って Cloud Data Sense インスタンスを導入します。
 
 [role="quick-margin-para"]
-Cloud Data Sense によってスキャンされる最初の 1TB のデータは、 Cloud Manager に無料で保存されています。そのあともデータのスキャンを続行するには、ネットアップの BYOL ライセンスが必要です。
+Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは無料です。そのあともデータのスキャンを続行するには、ネットアップの BYOL ライセンスが必要です。
 
 
 
-== Cloud Manager Connector をインストール
+== BlueXPコネクタを取り付けます
 
-オフラインのオンプレミスサイトに Cloud Manager Connector がインストールされていない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["コネクタを配置します"^] オフラインサイトの Linux ホスト
+オフラインのオンプレミスサイトにBlueXPコネクタがインストールされていない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["コネクタを配置します"^] オフラインサイトの Linux ホスト
 
 
 
@@ -112,22 +112,22 @@ NOTE: Data Senseホスト・システムのIPアドレスは、インストー�
 
 
 
-== Cloud Manager と Data Sense の前提条件を確認
+== BlueXPおよびData Senseの前提条件を確認します
 
 Cloud Data Sense を導入する前に、次の前提条件を確認し、サポートされている構成であることを確認してください。
 
-* Cloud Manager に、リソースを導入する権限と、 Cloud Data Sense インスタンス用のセキュリティグループを作成する権限があることを確認します。
-* Cloud Manager Connector がデータセンスインスタンスにアクセスできることを確認します。コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。
+* BlueXPに、クラウドデータセンスインスタンスのリソースを展開し、セキュリティグループを作成する権限があることを確認します。
+* BlueXPコネクタがData Senseインスタンスにアクセスできることを確認しますコネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。
 +
 この接続により、データセンスインスタンスの展開が可能になり、コンプライアンスとガバナンスの情報を表示できます。
 
 +
-Cloud Manager でインストールの進捗状況を確認できるように、ポート 8080 が開いていることを確認してください。
+ポート8080が開いていることを確認し、BlueXPでインストールの進行状況を確認します。
 
 * クラウドデータを常に運用しておく必要がありますデータを継続的にスキャンするには、 Cloud Data Sense インスタンスがオンのままになっている必要があります。
-* Web ブラウザから Cloud Data Sense への接続を確認するCloud Data Sense を有効にしたら、データセンスインスタンスに接続されているホストから Cloud Manager のインターフェイスにユーザがアクセスすることを確認する。
+* Web ブラウザから Cloud Data Sense への接続を確認するCloud Data Senseを有効にしたら、ユーザーがData Senseインスタンスに接続しているホストからBlueXPインターフェイスにアクセスすることを確認します。
 +
-データセンスインスタンスは、プライベート IP アドレスを使用して、インデックス付きデータが他のユーザーにアクセスできないようにします。そのため、 Cloud Manager へのアクセスに使用する Web ブラウザは、そのプライベート IP アドレスに接続する必要があります。この接続は、データセンスインスタンスと同じネットワーク内にあるホストから確立できます。
+データセンスインスタンスは、プライベート IP アドレスを使用して、インデックス付きデータが他のユーザーにアクセスできないようにします。そのため、BlueXPへのアクセスに使用するWebブラウザには、そのプライベートIPアドレスへの接続が必要です。この接続は、データセンスインスタンスと同じネットワーク内にあるホストから確立できます。
 
 
 
@@ -135,7 +135,7 @@ Cloud Manager でインストールの進捗状況を確認できるように、
 
 == SharePoint と OneDrive の特別な要件
 
-インターネットにアクセスできないサイトにCloud ManagerとData Senseを導入している場合は、SharePoint OnlineアカウントとOneDriveアカウントでファイルをスキャンできます。そのためには、一部のエンドポイントにインターネットアクセスを提供しています。
+インターネットにアクセスできないサイトにBlueXPとData Senseを展開すると、SharePoint OnlineアカウントとOneDriveアカウントでファイルをスキャンできます。これには、一部のエンドポイントへのインターネットアクセスが提供されます。
 
 [cols="50,50"]
 |===
@@ -145,7 +145,7 @@ Cloud Manager でインストールの進捗状況を確認できるように、
 | ¥ login.microsoft.com ¥ graph.microsoft.com | 選択したオンラインサービスにログインするための Microsoft サーバとの通信。 
 
 
-| \ https://cloudmanager.cloud.netapp.com | ネットアップアカウントを含む Cloud Manager サービスとの通信 
+| \ https://cloudmanager.cloud.netapp.com | ネットアップアカウントを含むBlueXPサービスとの通信 
 |===
 _cloudmanager.cloud.netapp.com_ へのアクセスは、これらの外部サービスへの初期接続時にのみ必要です。
 
@@ -171,7 +171,7 @@ image:diagram_deploy_onprem_multi_host_no_internet.png["インターネットに
 * Linux システムがを満たしていることを確認します  the Linux host system,ホストの要件。
 * 前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。
 * Linux システムに対する root 権限があることを確認してください。
-* オフライン環境が要件を満たしていることを確認します  Cloud Manager and Data Sense prerequisites,権限と接続。
+* オフライン環境が要件を満たしていることを確認します  BlueXP and Data Sense prerequisites,権限と接続。
 
 
 .手順
@@ -186,7 +186,7 @@ tar -xzf DataSense-offline-bundle-v1.16.1.tar.gz
 +
 これにより、必要なソフトウェアと実際のインストールファイル* DATASENSE-installer -V1.16.1.tar.gz*が抽出されます。
 
-. Cloud Manager を起動し、 * Data Sense * タブをクリックします。
+. BlueXPを起動し、「ガバナンス」＞「分類」と選択します。
 . [ データセンスを活動化（ Activate Data sense ） ] をクリックし
 +
 image:screenshot_cloud_compliance_deploy_start.png["Cloud Data Sense を有効にするボタンを選択するスクリーンショット。"]
@@ -215,7 +215,7 @@ tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
  a| 
 .. 手順 7 からコピーした情報を貼り付けます。 'UDO./ install.sh -a <account_id> -c <agent_id> -t <token> --darksite
 .. コネクタインスタンスからアクセスできるように、 Data Sense ホストマシンの IP アドレスまたはホスト名を入力します。
-.. Cloud Manager Connector ホストマシンの IP アドレスまたはホスト名を入力して、 Data Sense インスタンスからアクセスできるようにします。
+.. BlueXP ConnectorホストマシンのIPアドレスまたはホスト名を入力して、データセンスインスタンスからアクセスできるようにします。
 
 | また、必要なホストパラメータとして、「 sudo ./install.sh -a <account_id > -c <agent_id > -t <token> --host <DS_host> --manager-host <cm_host> --no-proxy --darksite 」を事前に指定して、コマンド全体を作成することもできます 
 |===
@@ -227,14 +227,14 @@ tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
 ** _agent_id _ = コネクタ ID
 ** _ctoken _ = JWT ユーザートークン
 ** _ds_host_ = Data Sense Linux システムの IP アドレスまたはホスト名
-** _cm_host_= Cloud Manager Connector システムの IP アドレスまたはホスト名。
+** _cm_host_= BlueXPコネクタシステムのIPアドレスまたはホスト名。
 
 
 
 
 Data Sense インストーラは、パッケージをインストールし、インストールを登録し、 Data Sense をインストールします。インストールには 10~20 分かかります。
 
-ホストマシンとコネクタインスタンス間のポート 8080 を介した接続がある場合、 Cloud Manager の Data sense タブにインストールの進行状況が表示されます。
+ホストマシンとコネクタインスタンスの間にポート8080を介した接続がある場合、インストールの進行状況はBlueXPのData Senseタブに表示されます。
 
 設定ページからローカルを選択できます link:task-getting-started-compliance.html["オンプレミスの ONTAP クラスタ"] および link:task-scanning-databases.html["データベース"] をスキャンします。
 
@@ -252,7 +252,7 @@ Data Sense インストーラは、パッケージをインストールし、イ
 * Manager ノードと Scanner ノードのすべての Linux システムが、を満たしていることを確認します  the Linux host system,ホストの要件。
 * 前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。
 * Linux システムに対する root 権限があることを確認してください。
-* オフライン環境が要件を満たしていることを確認します  Cloud Manager and Data Sense prerequisites,権限と接続。
+* オフライン環境が要件を満たしていることを確認します  BlueXP and Data Sense prerequisites,権限と接続。
 * 使用するスキャナノードホストの IP アドレスを確認しておく必要があります。
 * すべてのホストで次のポートとプロトコルを有効にする必要があります。
 +

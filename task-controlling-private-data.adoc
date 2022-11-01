@@ -38,7 +38,7 @@ Cloud Data Sense は、データ内の特定の単語、文字列、パターン
 一部のタイプの個人データについては、データセンスは _ 近接性検証 _ を使用してその結果を検証します。検証は、見つかった個人データに近接した 1 つまたは複数の定義済みキーワードを検索することによって行われます。たとえば、データセンスは米国を識別しますソーシャルセキュリティ番号（ SSN ）は、 IT の横に近接語（ _SSN_or_social security_ など）が表示されている場合、 SSN として表示されます。 link:reference-private-data-categories.html#types-of-personal-data["個人データのテーブル"^] データセンスがプロキシミティ検証を使用する場合に表示されます
 
 .手順
-. Cloud Managerの左側のナビゲーションメニューで、* Data Sense *をクリックし、* Compliance *タブをクリックします。
+. BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックし、* Compliance *タブをクリックします。
 . すべての個人データの詳細を調査するには、個人データの割合の横にあるアイコンをクリックします。
 +
 image:screenshot_compliance_personal.gif["個人データの割合を選択するスクリーンショット。"]
@@ -73,7 +73,7 @@ Cloud Data Sense は、人工知能（ AI ）、自然言語処理（ NLP ）、
 NOTE: 機密性の高い個人データをスキャンする場合は、英語のみがサポートされます。言語のサポートは、あとで追加されます。
 
 .手順
-. Cloud Managerの左側のナビゲーションメニューで、* Data Sense *をクリックし、* Compliance *タブをクリックします。
+. BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックし、* Compliance *タブをクリックします。
 . 機密性の高い個人データの詳細を調べるには、個人データの割合の横にあるアイコンをクリックします。
 +
 image:screenshot_compliance_sensitive_personal.gif["機密性の高い個人データの割合を選択するためのスクリーンショット。"]
@@ -97,7 +97,7 @@ Cloud Data Sense は、スキャンしたデータをさまざまなタイプの
 NOTE: 英語、ドイツ語、およびスペイン語は、カテゴリでサポートされています。言語のサポートは、あとで追加されます。
 
 .手順
-. Cloud Managerの左側のナビゲーションメニューで、* Data Sense *をクリックし、* Compliance *タブをクリックします。
+. BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックし、* Compliance *タブをクリックします。
 . メイン画面から上位 4 つのカテゴリのいずれかの * 調査結果 * アイコンを直接クリックするか、 * すべて表示 * をクリックして、いずれかのカテゴリのアイコンをクリックします。
 +
 image:screenshot_categories.gif["カテゴリダイアログボックスのスクリーンショット。カテゴリの横にある調査結果アイコンをクリックできます。"]
@@ -114,7 +114,7 @@ Cloud Data Sense は、スキャンしたデータをファイルタイプ別に
 たとえば ' 組織に関する非常に機密性の高い情報を含む CAD ファイルを保存する場合がありますセキュリティで保護されていない場合は、権限を制限するか、ファイルを別の場所に移動することで、機密データを制御できます。
 
 .手順
-. Cloud Managerの左側のナビゲーションメニューで、* Data Sense *をクリックし、* Compliance *タブをクリックします。
+. BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックし、* Compliance *タブをクリックします。
 . メイン画面で上位 4 つのファイルタイプのうちの 1 つに対応する * 調査結果 * アイコンをクリックするか、 * すべて表示 * をクリックして、任意のファイルタイプのアイコンをクリックします。
 +
 image:screenshot_file_types.gif["ファイルタイプダイアログボックスのスクリーンショットで、ファイルタイプの横にある調査結果アイコンをクリックできます。"]
@@ -139,7 +139,7 @@ image:screenshot_compliance_file_details.png["[ データ調査 ] ページの�
 * ファイルは任意の NFS 共有に移動またはコピーできます。を参照してください link:task-managing-highlights.html#moving-source-files-to-an-nfs-share["ソースファイルを NFS 共有に移動しています"] および link:task-managing-highlights.html#copying-source-files["ソースファイルを NFS 共有にコピーしています"] を参照してください。
 * ファイルを削除できます。を参照してください link:task-managing-highlights.html#deleting-source-files["ソースファイルを削除しています"] を参照してください。
 * ファイルに特定のステータスを割り当てることができます。を参照してください link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["タグの適用"] を参照してください。
-* ファイルに対して実行する必要があるフォローアップアクションを担当するファイルを Cloud Manager ユーザに割り当てることができます。を参照してください link:task-org-private-data.html#assigning-users-to-manage-certain-files["ファイルへのユーザの割り当て"] を参照してください。
+* このファイルをBlueXPユーザーに割り当てることで、ファイルに対して実行する必要があるフォローアップアクションを実行できます。を参照してください link:task-org-private-data.html#assigning-users-to-manage-certain-files["ファイルへのユーザの割り当て"] を参照してください。
 * AIP ラベルを Cloud Data Sense と統合している場合は、このファイルにラベルを割り当てるか、すでに存在する場合は別のラベルに変更できます。を参照してください link:task-org-private-data.html#assigning-aip-labels-manually["AIP ラベルを手動で割り当てる"] を参照してください。
 
 

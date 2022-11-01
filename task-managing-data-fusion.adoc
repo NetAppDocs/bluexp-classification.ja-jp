@@ -92,15 +92,15 @@ image:screenshot_compliance_delete_data_fusion.png["データ Fusion ソース�
 
 データセンスをオンプレミスにインストールした場合は、コマンドラインに直接アクセスできます。
 
-データセンスをクラウドに導入した場合、データセンスインスタンスにSSHで接続できます。システムにSSHするには、ユーザとパスワードを入力するか、Cloud Manager Connectorのインストール時に指定したSSHキーを使用します。SSHコマンドは次のとおりです。
+データセンスをクラウドに導入した場合、データセンスインスタンスにSSHで接続できます。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。
 
  ssh -i <path to the ssh key> <machine user>@<datasense ip>
 * <path to the ssh key>= ssh認証キーの場所
 * <マシンユーザー>：
 +
 ** AWSの場合：<ec2-user>を使用します
-** Azureの場合：Cloud Managerインスタンス用に作成したユーザを使用します
-** GCPの場合：Cloud Managerインスタンス用に作成されたユーザを使用します
+** Azureの場合：BlueXPインスタンス用に作成したユーザを使用します
+** GCPの場合：BlueXPインスタンス用に作成されたユーザーを使用します
 
 
 * <datasense IP>は仮想マシンインスタンスのIPアドレスです

@@ -43,7 +43,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS Elastic 
 FSX で ONTAP ボリュームをスキャンする前に、 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["ボリュームが設定された FSX 作業環境が必要です"^]。
 
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Cloud Manager に Cloud Data Sense を導入"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXPにクラウドデータセンスを導入します"^] インスタンスが展開されていない場合。
 
 [role="quick-margin-para"]
 [ * データセンス * ] をクリックし、 [ * 構成 * ] タブを選択して、特定の作業環境でボリュームのコンプライアンススキャンを有効にします。
@@ -69,9 +69,9 @@ Cloud Data Sense が有効になったので、すべてのボリュームにア
 
 == スキャンする ONTAP ファイルシステムの FSX を検出します
 
-スキャンする FSX for ONTAP ファイルシステムが作業環境としてまだ Cloud Manager にない場合は、この時点でキャンバスに追加できます。
+スキャンするFSX for ONTAP ファイルシステムが作業環境としてまだBlueXPにない場合は、この時点でキャンバスに追加できます。
 
-https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["Cloud Manager で ONTAP ファイルシステムの FSX を検出または作成する方法については、を参照してください"^]。
+https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["BlueXPでONTAP ファイルシステムのFSXを検出または作成する方法を参照してください"^]。
 
 
 
@@ -91,7 +91,7 @@ Data Sense ソフトウェアへのアップグレードは、インスタンス
 
 ONTAP ボリュームの FSX に対してクラウドデータセンスを有効にすることができます。
 
-. Cloud Managerの左側のナビゲーションメニューで、* Data Sense *をクリックし、* Configuration *タブを選択します。
+. BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックし、* Configuration *タブを選択します。
 +
 image:screenshot_fsx_scanning_activate.png["Cloud Data Sense インスタンスを展開した直後の [ 構成 ] タブのスクリーンショット。"]
 
@@ -129,7 +129,7 @@ image:screenshot_fsx_scanning_no_network_error.png["データセンスとボリ�
 . クラウドデータセンスインスタンスと各ネットワークの間に、 FSX for ONTAP のボリュームを含むネットワーク接続があることを確認します。
 +
 
-NOTE: FSX for ONTAP の場合、 Cloud Data Sense は Cloud Manager と同じリージョンのボリュームのみをスキャンできます。
+NOTE: FSX for ONTAP の場合、Cloud Data SenseはBlueXPと同じリージョンのボリュームのみをスキャンできます。
 
 . 次のポートがデータセンスインスタンスに対して開いていることを確認します。
 +
@@ -140,8 +140,7 @@ NOTE: FSX for ONTAP の場合、 Cloud Data Sense は Cloud Manager と同じリ
 . NFS ボリュームのエクスポートポリシーに Data Sense インスタンスの IP アドレスが含まれていて、各ボリュームのデータにアクセスできることを確認します。
 . CIFS を使用する場合は、 CIFS ボリュームをスキャンできるように、 Active Directory クレデンシャルを使用したデータセンスを設定します。
 +
-.. Cloud Manager の上部で、 * Data Sense * をクリックします。
-.. [* 構成 *] タブをクリックします。
+.. BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックし、* Configuration *タブを選択します。
 .. 各作業環境について、 * CIFS 資格情報の編集 * をクリックし、システム上の CIFS ボリュームにアクセスするために必要なユーザー名とパスワードを入力します。
 +
 クレデンシャルは読み取り専用ですが、管理者のクレデンシャルを指定することで、データセンスは昇格された権限が必要なデータを読み取ることができます。クレデンシャルは Cloud Data Sense インスタンスに保存されます。

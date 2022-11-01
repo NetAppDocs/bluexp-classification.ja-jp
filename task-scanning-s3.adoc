@@ -41,7 +41,7 @@ Amazon S3 作業環境を選択し、 * Enable * をクリックして、必要�
 S3 バケットのスキャンに固有の要件を次に示します。
 
 [[policy-requirements]]
-Cloud Data Sense インスタンス用の IAM ロールを設定する:: Cloud Data Sense では、アカウント内の S3 バケットに接続してスキャンするための権限が必要です。以下の権限を含む IAM ロールを設定します。Amazon S3 作業環境でデータの意味を有効にすると、 Cloud Manager から IAM ロールを選択するよう求められます。
+Cloud Data Sense インスタンス用の IAM ロールを設定する:: Cloud Data Sense では、アカウント内の S3 バケットに接続してスキャンするための権限が必要です。以下の権限を含む IAM ロールを設定します。Amazon S3作業環境でデータセンスを有効にすると、IAMロールを選択するように求めるメッセージが表示されます。
 +
 --
 [source, json]
@@ -93,9 +93,9 @@ NOTE: インターネット経由で S3 にアクセスするためにプロキ�
 
 == Cloud Data Sense インスタンスの導入
 
-link:task-deploy-cloud-compliance.html["Cloud Manager に Cloud Data Sense を導入"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXPにクラウドデータセンスを導入します"^] インスタンスが展開されていない場合。
 
-AWS に導入されているコネクタを使用してインスタンスを導入する必要があります。これにより、 Cloud Manager はこの AWS アカウント内の S3 バケットを自動的に検出し、 Amazon S3 作業環境に表示します。
+AWSに導入されているコネクタを使用してインスタンスを導入する必要があります。これにより、BlueXPはこのAWSアカウント内のS3バケットを自動的に検出し、Amazon S3作業環境に表示します。
 
 * 注： * クラウドデータセンスをオンプレミスの場所に導入することは、現在 S3 バケットのスキャンではサポートされていません。
 
@@ -108,7 +108,7 @@ Data Sense ソフトウェアへのアップグレードは、インスタンス
 前提条件を確認したら、 Amazon S3 で Cloud Data Sense を有効にします。
 
 .手順
-. Cloud Managerの左ナビゲーションメニューから、* Canvas *をクリックします。
+. BlueXPの左ナビゲーションメニューから、*Storage > Canvas *をクリックします。
 . Amazon S3 作業環境を選択します。
 +
 image:screenshot_s3_we.gif["Amazon S3 作業環境アイコンのスクリーンショット"]
@@ -127,15 +127,15 @@ image:screenshot_s3_compliance_iam_role.gif["クラウドデータセンス用�
 
 TIP: また、作業環境のコンプライアンススキャンを有効にすることもできます Configuration ページでをクリックします image:screenshot_gallery_options.gif[""] ボタンを押して、 [ データセンスを活動化（ Activate Data Sense ） ] を選択
 
-Cloud Manager によって、インスタンスに IAM ロールが割り当てられます。
+BlueXPは、インスタンスにIAMロールを割り当てます。
 
 
 
 == S3 バケットでの準拠スキャンの有効化と無効化
 
-Cloud Manager が Amazon S3 で Cloud Data Sense を有効にしたら、次の手順でスキャンするバケットを設定します。
+BlueXPがAmazon S3でCloud Data Senseを有効にしたら、次の手順でスキャンするバケットを設定します。
 
-スキャンする S3 バケットを含む AWS アカウントで Cloud Manager を実行している場合は、そのバケットが検出され、 Amazon S3 作業環境に表示されます。
+スキャンするS3バケットを含むAWSアカウントでBlueXPを実行している場合、そのバケットが検出され、Amazon S3作業環境で表示されます。
 
 クラウドデータセンスも可能です  buckets from additional AWS accounts,別々の AWS アカウントにある S3 バケットをスキャンします。
 

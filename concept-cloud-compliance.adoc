@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-cloud-compliance.html 
 keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, data sense, privacy control, classification, optimization 
-summary: Cloud Data Sense は、社内のオンプレミスデータソースやクラウドデータソースをスキャンしてデータをマッピング、分類し、プライベート情報を特定する、 Cloud Manager のデータガバナンスサービスです。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減し、データ移行プロジェクトを支援できます。 
+summary: Cloud Data Senseは、BlueXP向けのデータガバナンスサービスです。企業のオンプレミスデータソースやクラウドデータソースをスキャンして、データをマッピングして分類し、個人情報を特定します。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減し、データ移行プロジェクトを支援できます。 
 ---
 = クラウドデータの意味をご確認ください
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Data Sense は、社内のオンプレミスデータソースや
 
 
 [role="lead"]
-Cloud Data Sense は、社内のオンプレミスデータソースやクラウドデータソースをスキャンしてデータをマッピング、分類し、プライベート情報を特定する、 Cloud Manager のデータガバナンスサービスです。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減し、データ移行プロジェクトを支援できます。
+Cloud Data Senseは、BlueXP（旧Cloud Manager）向けのデータガバナンスサービスです。社内のオンプレミスデータソースやクラウドデータソースをスキャンして、データをマッピングして分類し、プライベート情報を特定します。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減し、データ移行プロジェクトを支援できます。
 
 https://cloud.netapp.com/netapp-cloud-data-sense["Cloud Data Sense のユースケースについて説明します"^]。
 
@@ -34,7 +34,7 @@ Cloud Data Senseは、人工知能（AI）、自然言語処理（NLP）、機�
 * GDPR、CCPA、PCI、HIPAAの各プライバシー規制の要件に応じて、機密性の高い個人情報の範囲を特定します。
 * 名前または電子メールアドレスに基づいてデータサブジェクトアクセス要求（dsar）に応答します。
 * データベースから一意の識別子が他のリポジトリ内のファイルにあるかどうかを確認します。基本的に、データ検出スキャンで識別される「個人データ」のリストを独自に作成します。
-* ファイルに特定のが含まれている場合は、 Cloud Manager ユーザに E メールで通知します PII （この基準は、を使用して定義します link:task-org-private-data.html#controlling-your-data-using-policies["ポリシー"^]）では、アクションプランを決定することができます。
+* ファイルに特定のPIIが含まれている場合は、BlueXPユーザーに電子メールで通知します(この条件は、を使用して定義します) link:task-org-private-data.html#controlling-your-data-using-policies["ポリシー"^]）では、アクションプランを決定することができます。
 
 
 
@@ -47,7 +47,7 @@ Cloud Data Senseは、人工知能（AI）、自然言語処理（NLP）、機�
 * 初期の専用の場所以外に存在する機密データを特定します。
 * データ保持ポリシーに準拠
 * 新しいセキュリティ問題をセキュリティスタッフに自動的に通知して、ただちに対処できるようにするには、_Policies_を使用します。
-* ファイルにカスタムタグを追加し（「移動が必要」など）、Cloud Managerユーザを割り当てて、ユーザがファイルの更新を所有できるようにします。
+* カスタムタグをファイルに追加し（「移動が必要」など）、BlueXPユーザーを割り当てて、ユーザーがファイルの更新を所有できるようにします。
 * 表示と変更 link:https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection （ AIP ）ラベル"^] ファイルに保存できます。
 
 
@@ -124,12 +124,12 @@ Data Sense は、 NFS バージョン 3.x 、 4.0 、 4.1 、および CIFS バ�
 
 == コスト
 
-* クラウドデータセンスの使用コストは、スキャンするデータの量によって異なります。データをスキャンする、 Cloud Manager ワークスペース内の最初の 1TB のデータは無料です。これには、すべての作業環境とデータソースのすべてのデータが含まれます。この時点以降もデータのスキャンを続行するには、 AWS 、 Azure 、 GCP Marketplace 、またはネットアップの BYOL ライセンスのサブスクリプションが必要です。を参照してください https://cloud.netapp.com/netapp-cloud-data-sense["価格設定"^] を参照してください。
+* クラウドデータセンスの使用コストは、スキャンするデータの量によって異なります。BlueXPワークスペースでデータ検出によってスキャンされた最初の1 TBのデータは無料です。これには、すべての作業環境とデータソースのすべてのデータが含まれます。この時点以降もデータのスキャンを続行するには、 AWS 、 Azure 、 GCP Marketplace 、またはネットアップの BYOL ライセンスのサブスクリプションが必要です。を参照してください https://cloud.netapp.com/netapp-cloud-data-sense["価格設定"^] を参照してください。
 +
 link:task-licensing-datasense.html["Cloud Data Sense のライセンスを取得する方法について説明します"^]。
 
 * クラウドにクラウドデータセンスをインストールするには、クラウドインスタンスを導入する必要があります。その場合、クラウドインスタンスが導入されているクラウドプロバイダから料金が発生します。を参照してください  Cloud Data Sense instance,各クラウドに導入されるインスタンスのタイプ プロバイダ。データセンスをオンプレミスシステムにインストールしても、コストはかかりません。
-* Cloud Data Senseを使用するには、Cloud Manager Connectorを導入しておく必要があります。多くの場合、 Cloud Manager で他のストレージとサービスを使用しているため、すでにコネクタが用意されています。Connector インスタンスを使用すると、導入先のクラウドプロバイダから料金が発生します。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["クラウドプロバイダごとに導入されるインスタンスのタイプ"^]。コネクタをオンプレミスシステムにインストールしても、コストはかかりません。
+* クラウドデータセンスを使用するには、BlueXPコネクタを導入している必要があります。多くの場合、BlueXPで使用している他のストレージとサービスのためにコネクタが既に存在します。Connector インスタンスを使用すると、導入先のクラウドプロバイダから料金が発生します。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["クラウドプロバイダごとに導入されるインスタンスのタイプ"^]。コネクタをオンプレミスシステムにインストールしても、コストはかかりません。
 
 
 
@@ -147,12 +147,12 @@ link:task-licensing-datasense.html["Cloud Data Sense のライセンスを取得
 
 == Cloud Data Sense インスタンス
 
-クラウドにデータセンスを導入すると、 Cloud Manager はコネクタと同じサブネットにインスタンスを導入します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタの詳細については、こちらをご覧ください。"^]
+クラウドにデータセンスを展開すると、BlueXPはコネクタと同じサブネットにインスタンスを展開します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタの詳細については、こちらをご覧ください。"^]
 
 
 NOTE: コネクタがオンプレミスにインストールされている場合は、要求内の最初の Cloud Volumes ONTAP システムと同じ VPC または VNet にクラウドデータセンスインスタンスを導入します。データセンスはオンプレミスにもインストールできます。
 
-image:diagram_cloud_compliance_instance.png["クラウドプロバイダで実行されている Cloud Manager インスタンスと Cloud Data Sense インスタンスを示す図。"]
+image:diagram_cloud_compliance_instance.png["クラウドプロバイダで実行されているBlueXPインスタンスとCloud Data Senseインスタンスを示す図。"]
 
 デフォルトのインスタンスについては、次の点に注意してください。
 
@@ -202,7 +202,7 @@ CPU の数と RAM の数が少ないシステムには Data Sense を導入で�
 
 Cloud Data Sense の概要は次のようになります。
 
-. Cloud Manager でデータセンスのインスタンスを導入します。
+. BlueXPでデータセンスのインスタンスを展開します。
 . 1つ以上のデータソースで、概要レベルのマッピングまたは詳細レベルのスキャンを有効にします。
 . データセンスは、 AI 学習プロセスを使用してデータをスキャンします。
 . 提供されているダッシュボードとレポートツールを使用して、コンプライアンスとガバナンスの取り組みを支援します。
@@ -216,7 +216,7 @@ Cloud Data Sense を有効にして、スキャンするボリューム、バケ
 
 データセンスは、 NFS ボリュームと CIFS ボリュームをマウントすることで、他のクライアントと同様にデータに接続します。NFS ボリュームには読み取り専用で自動的にアクセスされますが、 CIFS ボリュームをスキャンするためには Active Directory のクレデンシャルを指定する必要があります。
 
-image:diagram_cloud_compliance_scan.png["クラウドプロバイダで実行されている Cloud Manager インスタンスと Cloud Data Sense インスタンスを示す図。データセンスインスタンスは、 NFS ボリュームと CIFS ボリューム、 S3 バケット、 OneDrive アカウント、データベースに接続してスキャンします。"]
+image:diagram_cloud_compliance_scan.png["クラウドプロバイダで実行されているBlueXPインスタンスとCloud Data Senseインスタンスを示す図。データセンスインスタンスは、 NFS ボリュームと CIFS ボリューム、 S3 バケット、 OneDrive アカウント、データベースに接続してスキャンします。"]
 
 初回スキャン後は、データを継続的にスキャンして、増分変更を検出します（そのため、インスタンスの実行を維持することが重要です）。
 
@@ -287,9 +287,9 @@ Cloud Data Senseを使用すると、選択したデータソースに対して�
 
 == ネットワークの概要
 
-Cloud Manager は、コネクタインスタンスからのインバウンド HTTP 接続を可能にするセキュリティグループを使用して、 Cloud Data Sense インスタンスを導入します。
+BlueXPは、コネクタインスタンスからの着信HTTP接続を有効にするセキュリティグループを使用して、Cloud Data Senseインスタンスを展開します。
 
-SaaS モードで Cloud Manager を使用する場合は、 Cloud Manager への接続に HTTPS が使用され、ブラウザと Data Sense インスタンス間で送信されるプライベートデータはエンドツーエンドの暗号化で保護されます。つまり、ネットアップとサードパーティがこのデータを読み取ることはできません。
+BlueXPをSaaSモードで使用する場合、BlueXPへの接続はHTTPS経由で行われ、ブラウザとData Senseインスタンス間で送信されるプライベートデータはエンドツーエンドの暗号化によって保護されるため、ネットアップとサードパーティが読み取ることはできません。
 
 アウトバウンドルールは完全にオープンです。データセンスソフトウェアをインストールしてアップグレードし、使用率指標を送信するには、インターネットアクセスが必要です。
 
@@ -299,11 +299,11 @@ SaaS モードで Cloud Manager を使用する場合は、 Cloud Manager への
 
 == コンプライアンス情報へのユーザアクセス
 
-各ユーザには、 Cloud Manager 内と Cloud Data Sense 内で異なる機能が割り当てられています。
+各ユーザーに割り当てられた役割は、BlueXPおよびCloud Data Sense内で異なる機能を提供します。
 
 * * アカウント管理者 * は、コンプライアンス設定を管理し、すべての作業環境のコンプライアンス情報を表示できます。
-* * ワークスペース管理者 * は、アクセス権を持つシステムについてのみ、コンプライアンス設定を管理し、コンプライアンス情報を表示できます。ワークスペース管理者が Cloud Manager の作業環境にアクセスできない場合は、 [ データセンス ] タブに作業環境のコンプライアンス情報が表示されません。
+* * ワークスペース管理者 * は、アクセス権を持つシステムについてのみ、コンプライアンス設定を管理し、コンプライアンス情報を表示できます。ワークスペース管理者がBlueXPの作業環境にアクセスできない場合、[データセンス]タブには作業環境のコンプライアンス情報が表示されません。
 * コンプライアンスビューア * の役割を持つユーザーは、アクセス権を持つシステムのコンプライアンス情報を表示し、レポートを生成することのみができます。これらのユーザは、ボリューム、バケット、またはデータベーススキーマのスキャンを有効または無効にすることはできません。これらのユーザーは、ファイルのコピー、移動、または削除もできません。
 
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["Cloud Manager のロールに関する詳細情報"^] そして方法 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-netapp-accounts.html#adding-users["特定のロールのユーザを追加します"^]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["BlueXPの役割の詳細をご覧ください"^] そして方法 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-netapp-accounts.html#adding-users["特定のロールのユーザを追加します"^]。

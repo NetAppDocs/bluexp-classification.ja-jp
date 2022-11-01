@@ -40,13 +40,13 @@ summary: クラウドデータセンスをクラウドに導入するには、�
 インストールウィザードを起動して、クラウドに Cloud Data Sense インスタンスを導入します。
 
 [role="quick-margin-para"]
-Cloud Data Sense によってスキャンされる最初の 1TB のデータは、 Cloud Manager に無料で保存されています。そのあともデータのスキャンを続行するには、クラウドプロバイダ Marketplace での Cloud Manager のサブスクリプション、または NetApp からの BYOL ライセンスが必要です。
+Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは無料です。そのあともデータのスキャンを続行するには、クラウドプロバイダ Marketplace での Cloud Manager のサブスクリプション、または NetApp からの BYOL ライセンスが必要です。
 
 
 
 == コネクタを作成します
 
-コネクタがない場合は、クラウドプロバイダでコネクタを作成します。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS でコネクタを作成する"^] または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["GCP でコネクタを作成する"^]。ほとんどの場合、 Cloud Data Sense を有効にする前にコネクタをセットアップしておくことができます https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Cloud Manager の機能にはコネクタが必要です"]ただし、ここで設定する必要がある場合もあります。
+コネクタがない場合は、クラウドプロバイダでコネクタを作成します。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS でコネクタを作成する"^] または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["GCP でコネクタを作成する"^]。ほとんどの場合、 Cloud Data Sense を有効にする前にコネクタをセットアップしておくことができます https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["BlueXPの機能にはコネクタが必要です"]ただし、ここで設定する必要がある場合もあります。
 
 特定のクラウドプロバイダに導入されているコネクタを使用する必要がある場合は、次のような状況があります。
 
@@ -93,10 +93,10 @@ AWS 、 Azure 、 GCP のいずれに Cloud Data Sense を導入しているか�
 | エンドポイント | 目的 
 
 
-| \ https://cloudmanager.cloud.netapp.com | ネットアップアカウントを含む Cloud Manager サービスとの通信 
+| \ https://cloudmanager.cloud.netapp.com | ネットアップアカウントを含むBlueXPサービスとの通信 
 
 
-| ¥ https://netapp-cloud-account.auth0.com ¥ https://auth0.com | NetApp Cloud Central との通信により、ユーザ認証を一元的に行うことができます。 
+| ¥ https://netapp-cloud-account.auth0.com ¥ https://auth0.com | BlueXP Webサイトとの通信により、ユーザ認証を一元化。 
 
 
 | https://cloud-compliance-support-netapp.s3.us-west-2.amazonaws.com \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | ソフトウェアイメージ、マニフェスト、およびテンプレートにアクセスできます。 
@@ -114,10 +114,10 @@ AWS 、 Azure 、 GCP のいずれに Cloud Data Sense を導入しているか�
 | エンドポイント | 目的 
 
 
-| \ https://cloudmanager.cloud.netapp.com | ネットアップアカウントを含む Cloud Manager サービスとの通信 
+| \ https://cloudmanager.cloud.netapp.com | ネットアップアカウントを含むBlueXPサービスとの通信 
 
 
-| ¥ https://netapp-cloud-account.auth0.com ¥ https://auth0.com | NetApp Cloud Central との通信により、ユーザ認証を一元的に行うことができます。 
+| ¥ https://netapp-cloud-account.auth0.com ¥ https://auth0.com | BlueXP Webサイトとの通信により、ユーザ認証を一元化。 
 
 
 | https://support.compliance.cloudmanager.cloud.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | ソフトウェアイメージ、マニフェスト、テンプレートへのアクセス、およびログとメトリックの送信を提供します。 
@@ -126,8 +126,8 @@ AWS 、 Azure 、 GCP のいずれに Cloud Data Sense を導入しているか�
 | \ https://support.compliance.cloudmanager.cloud.netapp.com/ | ネットアップが監査レコードからデータをストリーミングできるようにします。 
 |===
 --
-Cloud Manager に必要な権限が割り当てられていることを確認します:: Cloud Manager に、リソースを導入する権限と、 Cloud Data Sense インスタンス用のセキュリティグループを作成する権限があることを確認します。最新の Cloud Manager 権限は、で確認できます https://mysupport.netapp.com/site/info/cloud-manager-policies["ネットアップが提供するポリシー"^]。
-vCPU の制限を確認してください:: クラウドプロバイダの vCPU 制限によって、 16 コアのインスタンスの導入が許可されていることを確認してください。Cloud Manager が実行されているリージョン内の関連するインスタンスファミリーの vCPU 制限を確認する必要があります。 link:concept-cloud-compliance.html#the-cloud-data-sense-instance["必要なインスタンスタイプを参照してください"]。
+BlueXPに必要な権限があることを確認します:: BlueXPに、クラウドデータセンスインスタンスのリソースを展開し、セキュリティグループを作成する権限があることを確認します。BlueXPの最新の権限は、で確認できます https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["ネットアップが提供するポリシー"^]。
+vCPU の制限を確認してください:: クラウドプロバイダの vCPU 制限によって、 16 コアのインスタンスの導入が許可されていることを確認してください。BlueXPを実行している地域の関連するインスタンスファミリのvCPU制限を確認する必要があります。 link:concept-cloud-compliance.html#the-cloud-data-sense-instance["必要なインスタンスタイプを参照してください"]。
 +
 --
 vCPU の制限の詳細については、次のリンクを参照してください。
@@ -141,7 +141,7 @@ CPU 数と RAM 容量が少ないシステムには Data Sense を導入でき�
 
 
 --
-Cloud Manager Connector が Cloud Data Sense にアクセスできることを確認する:: コネクタと Cloud Data Sense インスタンス間の接続を確認します。コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。この接続により、データセンスインスタンスの展開が可能になり、 [ コンプライアンス（ Compliance ） ] タブと [ ガバナンス（ Governance ） ] タブで情報を表示できます。Cloud Data Sense は、 AWS や Azure の政府機関でサポートされています。
+BlueXPコネクタがCloud Data Senseにアクセスできることを確認します:: コネクタと Cloud Data Sense インスタンス間の接続を確認します。コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。この接続により、データセンスインスタンスの展開が可能になり、 [ コンプライアンス（ Compliance ） ] タブと [ ガバナンス（ Governance ） ] タブで情報を表示できます。Cloud Data Sense は、 AWS や Azure の政府機関でサポートされています。
 +
 --
 AWSおよびAWS GovCloud環境では、追加のインバウンドおよびアウトバウンドのセキュリティグループルールが必要です。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWS のコネクタのルール"^] を参照してください。
@@ -150,10 +150,10 @@ AzureおよびAzure Government環境には、追加のインバウンドおよ�
 
 --
 クラウドデータを常に運用しておく必要があります:: データを継続的にスキャンするには、 Cloud Data Sense インスタンスがオンのままになっている必要があります。
-Web ブラウザから Cloud Data Sense への接続を確認する:: Cloud Data Sense を有効にしたら、データセンスインスタンスに接続されているホストから Cloud Manager のインターフェイスにユーザがアクセスすることを確認する。
+Web ブラウザから Cloud Data Sense への接続を確認する:: Cloud Data Senseを有効にしたら、ユーザーがData Senseインスタンスに接続しているホストからBlueXPインターフェイスにアクセスすることを確認します。
 +
 --
-データセンスインスタンスは、プライベート IP アドレスを使用して、インデックス付きデータがインターネットにアクセスできないようにします。そのため、 Cloud Manager へのアクセスに使用する Web ブラウザは、そのプライベート IP アドレスに接続する必要があります。この接続は、クラウドプロバイダ（ VPN など）への直接接続、またはデータセンスインスタンスと同じネットワーク内にあるホストから行うことができます。
+データセンスインスタンスは、プライベート IP アドレスを使用して、インデックス付きデータがインターネットにアクセスできないようにします。そのため、BlueXPへのアクセスに使用するWebブラウザには、そのプライベートIPアドレスへの接続が必要です。この接続は、クラウドプロバイダ（ VPN など）への直接接続、またはデータセンスインスタンスと同じネットワーク内にあるホストから行うことができます。
 
 --
 
@@ -165,7 +165,7 @@ Web ブラウザから Cloud Data Sense への接続を確認する:: Cloud Data
 クラウドデータセンスのインスタンスをクラウドに導入するには、次の手順を実行します。
 
 .手順
-. Cloud Managerの左側のナビゲーションメニューで、* Data sense *をクリックします。
+. BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックします。
 . [ データセンスを活動化（ Activate Data sense ） ] をクリックし
 +
 image:screenshot_cloud_compliance_deploy_start.png["Cloud Data Sense を有効にするボタンを選択するスクリーンショット。"]
@@ -181,7 +181,7 @@ image:screenshot_cloud_compliance_wizard_start.png["新しいインスタンス�
 . インスタンスが配備されたら、 * 設定に進む * をクリックして _Configuration_page に移動します。
 
 
-Cloud Manager によってクラウドデータ検出インスタンスがクラウドプロバイダに導入されます。
+BlueXPはクラウドデータセンスインスタンスをクラウドプロバイダに導入します。
 
 設定ページで、スキャンするデータソースを選択できます。
 

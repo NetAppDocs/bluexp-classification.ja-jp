@@ -181,7 +181,7 @@ image:screenshot_compliance_sync_files_dialog.png["[ ファイルのコピー ] 
 
 . 選択したファイルを保存先に同期してもよい場合は、「 * OK * 」をクリックします。
 +
-Cloud Sync UI が Cloud Manager で開きます。
+Cloud Sync UIがBlueXPで開きます
 
 +
 同期関係を定義するよう求められます。ソースシステムは、データセンスで選択したリポジトリとファイルに基づいてあらかじめ設定されています。

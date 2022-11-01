@@ -23,10 +23,10 @@ Cloud Data Sense を使用して、 Cloud Volumes ONTAP とオンプレミスの
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
 [role="quick-margin-para"]
-ボリュームをスキャンする前に、 Cloud Manager でシステムを作業環境として追加する必要があります。
+ボリュームをスキャンする前に、システムをBlueXPの作業環境として追加する必要があります。
 
-* Cloud Volumes ONTAP システムの場合、これらの作業環境はすでに Cloud Manager で使用可能になっている必要があります
-* オンプレミスの ONTAP システムでは、 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["ONTAP クラスタは Cloud Manager で検出する必要があります"^]
+* Cloud Volumes ONTAP システムでは、これらの作業環境はBlueXPですでに使用可能になっています
+* オンプレミスの ONTAP システムでは、 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["BlueXPはONTAP クラスタを検出する必要があります"^]
 
 
 [role="quick-margin-para"]
@@ -60,9 +60,9 @@ Cloud Data Sense が有効になったので、すべてのボリュームにア
 
 == スキャンするデータソースを検出しています
 
-スキャンするデータソースがまだ Cloud Manager 環境にない場合は、ここでキャンバスに追加できます。
+スキャンするデータソースがまだBlueXP環境にない場合は、この時点でキャンバスに追加できます。
 
-Cloud Volumes ONTAP システムは、 Cloud Manager のキャンバスですでに使用できるようになっている必要があります。オンプレミスの ONTAP システムには、が必要です https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["これらのクラスタは Cloud Manager で検出されます"^]。
+お使いのCloud Volumes ONTAP システムは、BlueXPのキャンバスですでに使用できるはずです。オンプレミスの ONTAP システムには、が必要です https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["これらのクラスタはBlueXPで検出されます"^]。
 
 
 
@@ -72,7 +72,7 @@ Cloud Volumes ONTAP システムは、 Cloud Manager のキャンバスですで
 
 インターネット経由でアクセス可能な Cloud Volumes ONTAP およびオンプレミス ONTAP システムをスキャンする場合は、を実行します link:task-deploy-cloud-compliance.html["クラウドにクラウドデータセンスを導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^]。
 
-インターネットにアクセスできないダークサイトにインストールされているオンプレミスの ONTAP システムをスキャンする場合は、を実行する必要があります link:task-deploy-compliance-dark-site.html["クラウドデータセンスは、インターネットにアクセスできないオンプレミス環境に導入できます"^]。そのため、 Cloud Manager Connector をオンプレミスと同じ場所に導入する必要があります。
+インターネットにアクセスできないダークサイトにインストールされているオンプレミスの ONTAP システムをスキャンする場合は、を実行する必要があります link:task-deploy-compliance-dark-site.html["クラウドデータセンスは、インターネットにアクセスできないオンプレミス環境に導入できます"^]。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。
 
 Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
 
@@ -82,7 +82,7 @@ Data Sense ソフトウェアへのアップグレードは、インスタンス
 
 クラウドデータセンスは、サポートされている任意のクラウドプロバイダのCloud Volumes ONTAP システム、およびオンプレミスのONTAP クラスタで有効にすることができます。
 
-. Cloud Managerの左側のナビゲーションメニューで、* Data Sense *をクリックし、* Configuration *タブを選択します。
+. BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックし、* Configuration *タブを選択します。
 +
 image:screenshot_cloud_compliance_we_scan_config.png["Cloud Data Sense インスタンスを展開した直後の [ 構成 ] タブのスクリーンショット。"]
 
@@ -122,8 +122,7 @@ Cloud Data Sense により、作業環境で選択したボリュームのスキ
 . NFS ボリュームのエクスポートポリシーに、各ボリュームのデータにアクセスできるように Data sense インスタンスの IP アドレスが含まれていることを確認します。
 . CIFS を使用する場合は、 CIFS ボリュームをスキャンできるように、 Active Directory クレデンシャルを使用したデータセンスを設定します。
 +
-.. Cloud Manager の上部で、 * Data Sense * をクリックします。
-.. [* 構成 *] タブをクリックします。
+.. BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックし、* Configuration *タブを選択します。
 +
 image:screenshot_cifs_credentials.gif["コンテンツペインの右上にある [ スキャンステータス ] ボタンを示す [ 遵守 ] タブのスクリーンショット。"]
 

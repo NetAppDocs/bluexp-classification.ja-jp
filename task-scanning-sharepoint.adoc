@@ -56,7 +56,7 @@ SharePoint アカウントでスキャンする SharePoint サイト URL のリ�
 
 
 
-インターネットにアクセスできないサイトにData Senseがインストールされている場合は、Cloud Manager Connectorも同じサイトにインストールし、インターネットにアクセスできないようにする必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["詳細はこちら。"^]。
+インターネットにアクセスできないサイトにデータセンスをインストールする場合は、インターネットにアクセスできないサイトにBlueXPコネクタもインストールする必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["詳細はこちら。"^]。
 
 Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
 

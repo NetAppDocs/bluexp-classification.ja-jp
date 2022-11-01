@@ -33,7 +33,7 @@ summary: ネットワーク内またはクラウド内でインターネット�
 また可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタをオンプレミスに導入"^] 自社ネットワーク内またはクラウド内の Linux ホスト
 
 [role="quick-margin-para"]
-環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、ポート 443 を介したコネクタとクラウドデータセンスの接続などが含まれます。  Cloud Manager and Data Sense prerequisites,すべてのリストを参照してください。
+環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、ポート 443 を介したコネクタとクラウドデータセンスの接続などが含まれます。  BlueXP and Data Sense prerequisites,すべてのリストを参照してください。
 
 [role="quick-margin-para"]
 とを満たす Linux システムも必要です  the Linux host system,次の要件があります。
@@ -42,13 +42,13 @@ summary: ネットワーク内またはクラウド内でインターネット�
 ネットアップサポートサイトから Cloud Data Sense ソフトウェアをダウンロードし、使用する Linux ホストにインストーラファイルをコピーします。次に、インストールウィザードを起動し、プロンプトに従って Data Sense インスタンスを展開します。
 
 [role="quick-margin-para"]
-Cloud Data Sense によってスキャンされる最初の 1TB のデータは、 Cloud Manager に無料で保存されています。そのあともデータのスキャンを続行するには、クラウドプロバイダ Marketplace またはネットアップの BYOL ライセンスのサブスクリプションが必要です。
+Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは無料です。そのあともデータのスキャンを続行するには、クラウドプロバイダ Marketplace またはネットアップの BYOL ライセンスのサブスクリプションが必要です。
 
 
 
 == コネクタを作成します
 
-コネクタがない場合は、クラウドプロバイダでコネクタを作成します。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS でコネクタを作成する"^] または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["GCP でコネクタを作成する"^]。ほとんどの場合、 Cloud Data Sense を有効にする前にコネクタをセットアップしておくことができます https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Cloud Manager の機能にはコネクタが必要です"]ただし、ここで設定する必要がある場合もあります。
+コネクタがない場合は、クラウドプロバイダでコネクタを作成します。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS でコネクタを作成する"^] または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["GCP でコネクタを作成する"^]。ほとんどの場合、 Cloud Data Sense を有効にする前にコネクタをセットアップしておくことができます https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["BlueXPの機能にはコネクタが必要です"]ただし、ここで設定する必要がある場合もあります。
 
 特定のクラウドプロバイダに導入されているコネクタを使用する必要がある場合は、次のような状況があります。
 
@@ -105,7 +105,7 @@ NOTE: Data Senseホスト・システムのIPアドレスは、インストー�
 
 
 
-== Cloud Manager と Data Sense の前提条件を確認
+== BlueXPおよびData Senseの前提条件を確認します
 
 Linux システムに Cloud Data Sense を導入する前に、次の前提条件を確認し、サポートされている構成であることを確認してください。
 
@@ -117,10 +117,10 @@ Cloud Data Sense からのアウトバウンドインターネットアクセス
 | エンドポイント | 目的 
 
 
-| \ https://cloudmanager.cloud.netapp.com | ネットアップアカウントを含む Cloud Manager サービスとの通信 
+| \ https://cloudmanager.cloud.netapp.com | ネットアップアカウントを含むBlueXPサービスとの通信 
 
 
-| ¥ https://netapp-cloud-account.auth0.com ¥ https://auth0.com | NetApp Cloud Central との通信により、ユーザ認証を一元的に行うことができます。 
+| ¥ https://netapp-cloud-account.auth0.com ¥ https://auth0.com | BlueXP Webサイトとの通信により、ユーザ認証を一元化。 
 
 
 | https://support.compliance.cloudmanager.cloud.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | ソフトウェアイメージ、マニフェスト、テンプレートへのアクセス、およびログとメトリックの送信を提供します。 
@@ -132,20 +132,20 @@ Cloud Data Sense からのアウトバウンドインターネットアクセス
 | ¥ https://github.com/docker ¥ https://download.docker.com ¥ http://mirror.centos.org ¥ http://mirrorlist.centos.org ¥ http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | インストールの前提条件パッケージを提供します。 
 |===
 --
-Cloud Manager に必要な権限が割り当てられていることを確認します:: Cloud Manager に、リソースを導入する権限と、 Cloud Data Sense インスタンス用のセキュリティグループを作成する権限があることを確認します。最新の Cloud Manager 権限は、で確認できます https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["ネットアップが提供するポリシー"^]。
-Cloud Manager Connector が Cloud Data Sense にアクセスできることを確認する:: コネクタと Cloud Data Sense インスタンス間の接続を確認します。コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。
+BlueXPに必要な権限があることを確認します:: BlueXPに、クラウドデータセンスインスタンスのリソースを展開し、セキュリティグループを作成する権限があることを確認します。BlueXPの最新の権限は、で確認できます https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["ネットアップが提供するポリシー"^]。
+BlueXPコネクタがCloud Data Senseにアクセスできることを確認します:: コネクタと Cloud Data Sense インスタンス間の接続を確認します。コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。
 +
 --
 この接続により、データセンスインスタンスの展開が可能になり、 [ コンプライアンス（ Compliance ） ] タブと [ ガバナンス（ Governance ） ] タブで情報を表示できます。
 
-Cloud Manager でインストールの進捗状況を確認できるように、ポート 8080 が開いていることを確認してください。
+ポート8080が開いていることを確認し、BlueXPでインストールの進行状況を確認します。
 
 --
 クラウドデータを常に運用しておく必要があります:: データを継続的にスキャンするには、 Cloud Data Sense インスタンスがオンのままになっている必要があります。
-Web ブラウザから Cloud Data Sense への接続を確認する:: Cloud Data Sense を有効にしたら、データセンスインスタンスに接続されているホストから Cloud Manager のインターフェイスにユーザがアクセスすることを確認する。
+Web ブラウザから Cloud Data Sense への接続を確認する:: Cloud Data Senseを有効にしたら、ユーザーがData Senseインスタンスに接続しているホストからBlueXPインターフェイスにアクセスすることを確認します。
 +
 --
-データセンスインスタンスは、プライベート IP アドレスを使用して、インデックス付きデータがインターネットにアクセスできないようにします。そのため、 Cloud Manager へのアクセスに使用する Web ブラウザは、そのプライベート IP アドレスに接続する必要があります。この接続は、クラウドプロバイダ（ VPN など）への直接接続、またはデータセンスインスタンスと同じネットワーク内にあるホストから行うことができます。
+データセンスインスタンスは、プライベート IP アドレスを使用して、インデックス付きデータがインターネットにアクセスできないようにします。そのため、BlueXPへのアクセスに使用するWebブラウザには、そのプライベートIPアドレスへの接続が必要です。この接続は、クラウドプロバイダ（ VPN など）への直接接続、またはデータセンスインスタンスと同じネットワーク内にあるホストから行うことができます。
 
 --
 
@@ -162,7 +162,7 @@ image:diagram_deploy_onprem_single_host_internet.png["インターネットに�
 
 image:diagram_deploy_onprem_multi_host_internet.png["インターネットにアクセスできるオンプレミスに導入された複数のData Senseインスタンスを使用する場合に、スキャンできるデータソースの場所を示す図。"]
 
-を参照してください  the Linux host system,Linux ホストシステムの準備 および  Cloud Manager and Data Sense prerequisites,前提条件の確認 Cloud Data Sense を導入する前に、要件の一覧を確認してください。
+を参照してください  the Linux host system,Linux ホストシステムの準備 および  BlueXP and Data Sense prerequisites,前提条件の確認 Cloud Data Sense を導入する前に、要件の一覧を確認してください。
 
 Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
 
@@ -180,13 +180,13 @@ NOTE: Cloud Data Sense は、ソフトウェアがオンプレミスにインス
 * （オプション）システムに、前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。このソフトウェアがシステムにインストールされていない場合は、インストーラによってインストールされます。
 * Linux システムに対する root 権限があることを確認してください。
 * プロキシを使用していて、 TLS 代行受信を実行している場合は、 TLS CA 証明書が保存されている Data Sense Linux システム上のパスを確認する必要があります。
-* オフライン環境が要件を満たしていることを確認します  Cloud Manager and Data Sense prerequisites,権限と接続。
+* オフライン環境が要件を満たしていることを確認します  BlueXP and Data Sense prerequisites,権限と接続。
 
 
 .手順
 . から Cloud Data Sense ソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は* DATASENSE-installer -<version> .tar.gz *です。
 . 使用する Linux ホストにインストーラファイルをコピーします (`cp またはその他の方法を使用 ) 。
-. Cloud Manager で、 * Data sense * をクリックします。
+. BlueXPでは、* Governance > Classification *を選択します。
 . [ データセンスを活動化（ Activate Data sense ） ] をクリックし
 +
 image:screenshot_cloud_compliance_deploy_start.png["Cloud Data Sense を有効にするボタンを選択するスクリーンショット。"]
@@ -215,8 +215,8 @@ tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
  a| 
 .. 手順 6 からコピーした情報を貼り付けます。 'UDO./install.sh -a <account_id>-c <agent_id>-t<token>`
 .. コネクタインスタンスからアクセスできるように、 Data Sense ホストマシンの IP アドレスまたはホスト名を入力します。
-.. Cloud Manager Connector ホストマシンの IP アドレスまたはホスト名を入力して、 Data Sense インスタンスからアクセスできるようにします。
-.. プロンプトが表示されたら、プロキシの詳細を入力Cloud Manager ですでにプロキシが使用されている場合は、 Cloud Manager が使用するプロキシが Data Sense で自動的に使用されるため、ここでもう一度入力する必要はありません。
+.. BlueXP ConnectorホストマシンのIPアドレスまたはホスト名を入力して、データセンスインスタンスからアクセスできるようにします。
+.. プロンプトが表示されたら、プロキシの詳細を入力BlueXPコネクタが既にプロキシを使用している場合は、この情報を再度入力する必要はありません。これは、コネクタが使用するプロキシが自動的に使用されるためです。
 
 | また、必要なホストパラメータとプロキシパラメータを指定して、コマンド全体を事前に作成することもできます。 sudo ./install.sh -a <account_id > -c <agent_id> -t <token> -host <ds_host> --proxy-host <cm_host> --proxy-host <proxy_host> -proxy-port <proxy-dir password> -proxy-password-dir <proxy-password> 
 |===
@@ -228,7 +228,7 @@ tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
 ** _agent_id _ = コネクタ ID
 ** _ctoken _ = JWT ユーザートークン
 ** _ds_host_ = Data Sense Linux システムの IP アドレスまたはホスト名
-** _cm_host_= Cloud Manager Connector システムの IP アドレスまたはホスト名。
+** _cm_host_= BlueXPコネクタシステムのIPアドレスまたはホスト名。
 ** _proxy_host_ = ホストがプロキシサーバの背後にある場合は、プロキシサーバの IP 名またはホスト名。
 ** _proxy_port_= プロキシサーバに接続するポート（デフォルトは 80 ）です。
 ** _proxy_scheme_= 接続方式： https または http （デフォルト http ）。
@@ -241,7 +241,7 @@ tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
 
 Cloud Data Sense インストーラは、パッケージのインストール、 Docker のインストール、インストールの登録、および Data Sense のインストールを行います。インストールには 10~20 分かかります。
 
-ホストマシンとコネクタインスタンス間のポート 8080 を介した接続がある場合、 Cloud Manager の Data sense タブにインストールの進行状況が表示されます。
+ホストマシンとコネクタインスタンスの間にポート8080を介した接続がある場合、インストールの進行状況はBlueXPのData Senseタブに表示されます。
 
 設定ページで、スキャンするデータソースを選択できます。
 
@@ -259,7 +259,7 @@ Cloud Data Sense インストーラは、パッケージのインストール、
 * Manager ノードと Scanner ノードのすべての Linux システムが、を満たしていることを確認します  the Linux host system,ホストの要件。
 * （オプション）システムに、前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。このソフトウェアがシステムにインストールされていない場合は、インストーラによってインストールされます。
 * Linux システムに対する root 権限があることを確認してください。
-* 環境が要件を満たしていることを確認します  Cloud Manager and Data Sense prerequisites,権限と接続。
+* 環境が要件を満たしていることを確認します  BlueXP and Data Sense prerequisites,権限と接続。
 * 使用するスキャナノードホストの IP アドレスを確認しておく必要があります。
 * すべてのホストで次のポートとプロトコルを有効にする必要があります。
 +

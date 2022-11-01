@@ -23,10 +23,10 @@ Azure NetApp Files 向けクラウドデータセンスの導入を開始する�
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
 [role="quick-margin-para"]
-Azure NetApp Files ボリュームをスキャンする前に、 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["構成を検出するには、 Cloud Manager が設定されている必要があります"^]。
+Azure NetApp Files ボリュームをスキャンする前に、 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["構成を検出するには、BlueXPを設定する必要があります"^]。
 
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Cloud Manager に Cloud Data Sense を導入"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXPにクラウドデータセンスを導入します"^] インスタンスが展開されていない場合。
 
 [role="quick-margin-para"]
 コンプライアンス * をクリックし、 * 構成 * タブを選択して、特定の作業環境でボリュームのコンプライアンススキャンを有効にします。
@@ -55,9 +55,9 @@ Cloud Data Sense が有効になったので、すべてのボリュームにア
 
 == スキャンする Azure NetApp Files システムを検出しています
 
-スキャンする Azure NetApp Files システムがまだ作業環境として Cloud Manager にない場合は、この時点でキャンバスに追加できます。
+スキャンするAzure NetApp Files システムが作業環境としてまだBlueXPにない場合は、この時点でキャンバスに追加できます。
 
-https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Cloud Manager で Azure NetApp Files システムを検出する方法をご覧ください"^]。
+https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["BlueXPでAzure NetApp Files システムを検出する方法を参照してください"^]。
 
 
 
@@ -77,7 +77,7 @@ Data Sense ソフトウェアへのアップグレードは、インスタンス
 
 Azure NetApp Files ボリュームでクラウドデータセンスを有効にすることができます。
 
-. Cloud Managerの左側のナビゲーションメニューで、* Data Sense *をクリックし、* Configuration *タブを選択します。
+. BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックし、* Configuration *タブを選択します。
 +
 image:screenshot_cloud_compliance_anf_scan_config.png["Cloud Data Sense インスタンスを展開した直後の [ 構成 ] タブのスクリーンショット。"]
 
@@ -106,7 +106,7 @@ Cloud Data Sense により、作業環境で選択したボリュームのスキ
 . クラウドデータセンスインスタンスと、 Azure NetApp Files 用のボリュームを含む各ネットワークの間にネットワーク接続が確立されていることを確認します。
 +
 
-NOTE: Azure NetApp Files の場合、 Cloud Data Sense は Cloud Manager と同じリージョンにあるボリュームのみをスキャンできます。
+NOTE: Azure NetApp Files の場合、Cloud Data Senseは、BlueXPと同じ領域にあるボリュームのみをスキャンできます。
 
 . 次のポートがデータセンスインスタンスに対して開いていることを確認します。
 +
@@ -117,8 +117,7 @@ NOTE: Azure NetApp Files の場合、 Cloud Data Sense は Cloud Manager と同�
 . NFS ボリュームのエクスポートポリシーに、各ボリュームのデータにアクセスできるように Data sense インスタンスの IP アドレスが含まれていることを確認します。
 . CIFS を使用する場合は、 CIFS ボリュームをスキャンできるように、 Active Directory クレデンシャルを使用したデータセンスを設定します。
 +
-.. Cloud Manager の上部で、 * Data Sense * をクリックします。
-.. [* 構成 *] タブをクリックします。
+.. BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックし、* Configuration *タブを選択します。
 +
 image:screenshot_cifs_credentials.gif["コンテンツペインの右上にある [ スキャンステータス ] ボタンを示す [ 遵守 ] タブのスクリーンショット。"]
 
