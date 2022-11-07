@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-scanning-sharepoint.html 
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, sharepoint, sharepoint online, sharepoint on-premises, data sense 
-summary: Cloud Data Senseを使用して、SharePoint Onlineアカウントのファイルのスキャンを開始するには、いくつかの手順を実行します。 
+summary: いくつかの手順を実行して、Cloud Data Senseを使用したSharePoint OnlineおよびSharePoint On-Premiseアカウントのファイルのスキャンを開始します。 
 ---
 = SharePoint アカウントをスキャンしています
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Data Senseを使用して、SharePoint Onlineアカウントの�
 
 
 [role="lead"]
-Cloud Data Senseを使用して、SharePoint Onlineアカウントのファイルのスキャンを開始するには、いくつかの手順を実行します。
+いくつかの手順を実行して、Cloud Data Senseを使用したSharePoint OnlineおよびSharePoint On-Premiseアカウントのファイルのスキャンを開始します。
 
 
 
@@ -41,6 +41,7 @@ SharePoint アカウントでスキャンする SharePoint サイト URL のリ�
 以下の前提条件を確認して、SharePointアカウントでクラウドデータセンスをアクティブ化する準備ができていることを確認してください。
 
 * すべての SharePoint サイトへの読み取りアクセスを提供する SharePoint アカウントの管理者ログインクレデンシャルが必要です。
+* SharePoint On-Premiseについては、SharePoint ServerのURLも必要です。
 * スキャンするすべてのデータについて、 SharePoint サイトの URL の行区切りリストが必要です。
 
 
@@ -54,6 +55,7 @@ SharePoint アカウントでスキャンする SharePoint サイト URL のリ�
 +
 データセンスは、の場合もあります link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスの場所に導入されている"^]。ただし、SharePoint Onlineファイルをスキャンするには、いくつかの選択したエンドポイントへのインターネットアクセスを提供する必要があります。 link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["必要なエンドポイントのリストを参照してください"]。
 
+* オンプレミスのSharePointの場合、データセンスをインストールできます link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^] または link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスの場所"^]。
 
 
 インターネットにアクセスできないサイトにデータセンスをインストールする場合は、インターネットにアクセスできないサイトにBlueXPコネクタもインストールする必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["詳細はこちら。"^]。
@@ -79,9 +81,34 @@ SharePoint Onlineアカウントが作業環境のリストに追加されます
 
 
 
+== SharePointオンプレミスアカウントを追加する
+
+ユーザーファイルが存在するSharePointオンプレミスアカウントを追加します。
+
+.手順
+. [作業環境の構成]ページで、[*データソースの追加*>* SharePointオンプレミスアカウントの追加*]をクリックします。
++
+image:screenshot_compliance_add_sharepoint_onprem_button.png["[SharePointをオンプレミスに追加]ボタンをクリックできる[構成]ページのスクリーンショット。"]
+
+. [SharePoint On-Premise Server]ダイアログで、次の情報を入力します。
++
+** 「domain/user」または「user@domain」の形式の管理ユーザとadminパスワード
+** SharePoint ServerのURL
++
+image:screenshot_compliance_sharepoint_onprem.png["SharePointオンプレミスアカウントのログイン情報を示すスクリーンショット。"]
+
+
+
+. [ 接続 ] をクリックします。
+
+
+SharePointのオンプレミスアカウントが作業環境のリストに追加されます。
+
+
+
 == SharePoint サイトをコンプライアンススキャンに追加する
 
-個々の SharePoint サイト、またはアカウント内のすべての SharePoint サイトを追加して、関連するファイルが Cloud Data Sense によってスキャンされるようにすることができます。
+個々の SharePoint サイト、またはアカウント内のすべての SharePoint サイトを追加して、関連するファイルが Cloud Data Sense によってスキャンされるようにすることができます。手順は、SharePoint OnlineまたはSharePointのオンプレミスサイトを追加する場合と同じです。
 
 .手順
 . [_Configuration_] ページで、 SharePoint アカウントの [*Configuration*] ボタンをクリックします。

@@ -26,6 +26,7 @@ summary: インターネットにアクセスできないオンプレミスサ�
 
 * オンプレミスの ONTAP システム
 * データベーススキーマ
+* SharePointオンプレミスアカウント(SharePoint Server)
 * ネットアップ以外の NFS または CIFS ファイル共有
 * Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージ
 
@@ -136,6 +137,8 @@ Cloud Data Sense を導入する前に、次の前提条件を確認し、サポ
 == SharePoint と OneDrive の特別な要件
 
 インターネットにアクセスできないサイトにBlueXPとData Senseを展開すると、SharePoint OnlineアカウントとOneDriveアカウントでファイルをスキャンできます。これには、一部のエンドポイントへのインターネットアクセスが提供されます。
+
+SharePointオンプレミスアカウントは、インターネットにアクセスしなくてもスキャンできます。
 
 [cols="50,50"]
 |===

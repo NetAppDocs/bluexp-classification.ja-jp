@@ -233,7 +233,7 @@ Cloud Data Senseでは、BlueXP Canvasに追加した作業環境や、データ
 * オブジェクトストレージ（ S3 プロトコルを使用）
 * データベース（Amazon RDS、MongoDB、MySQL、Oracle、PostgreSQL、 SAP HANA、SQL Serverなど）
 * OneDrive アカウント
-* SharePoint Onlineアカウント
+* SharePoint Onlineアカウントとオンプレミスアカウント
 * Googleドライブアカウント
 
 

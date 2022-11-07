@@ -104,6 +104,7 @@ Cloud Data Senseは、次のタイプのデータソースから構造化デー�
 * Google クラウドストレージ
 * OneDrive
 * SharePoint Online
+* SharePointオンプレミス（SharePoint Server）
 * Googleドライブ
 
 
