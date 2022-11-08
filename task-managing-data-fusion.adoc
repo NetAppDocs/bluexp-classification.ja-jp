@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-data-fusion.html 
 keywords: data identifiers, personal data, sensitive personal data, compliance, data fusion, data sense 
-summary: データセンスには、将来のスキャンで特定される「個人データ」のカスタムリストを追加する方法が2つあります。このリストを使用すると、機密データが存在するすべての組織のファイルの場所に関する全体像を把握できます。 
+summary: データセンスは、将来のスキャンで特定される「個人データ」のカスタムリストを追加するためのさまざまな方法を提供します。これにより、機密データがすべての組織のファイル内に存在する場所に関する全体像を把握できます。 
 ---
 = 個人データ識別子をデータセンススキャンに追加する
 :hardbreaks:
@@ -14,9 +14,10 @@ summary: データセンスには、将来のスキャンで特定される「�
 
 
 [role="lead"]
-データセンスには、将来のスキャンで特定される「個人データ」のカスタムリストを追加する方法が2つあります。このリストを使用すると、機密データが置かれている可能性のある場所に関する全体像を_all_your Organizationsのファイルに表示できます。
+データセンスは、将来のスキャンで特定される「個人データ」のカスタムリストを追加するためのさまざまな方法を提供します。これにより、機密データが存在する可能性のある場所に関する全体像を_all_your Organizationsのファイルに表示できます。
 
 * スキャンするデータベース内の特定の列に基づいて一意の識別子を追加できます。
+* テキストファイルからカスタムキーワードを追加できます。これらの単語はデータ内で識別されます。
 * 正規表現（regex）を使用してパーソナルパターンを追加できます。既存の定義済みパターンに正規表現が追加されます。
 
 
@@ -25,17 +26,17 @@ NOTE: このセクションで説明する機能は、データソースに対�
 
 
 
-== データベースからカスタムの個人データ識別子を作成する
+== データベースからカスタムの個人データ識別子を追加します
 
-Data Fusion _という機能を使用すると、組織のデータをスキャンして、データベースからの一意の識別子がファイルまたは他のデータベースにあるかどうかを識別できます。データベーステーブルで特定の列を選択することにより、クラウドデータセンスがスキャンで検索する追加の識別子を選択できます。たとえば、次の図は、データ Fusion を使用してボリューム、バケット、およびデータベースをスキャンし、 Oracle データベースからすべての顧客 ID が出現する状況を示しています。
+Data Fusion _という機能を使用すると、組織のデータをスキャンして、データベースからの一意の識別子が他のいずれかのデータソースに存在するかどうかを確認できます。データベーステーブルで特定の列を選択することにより、データ検出で検索される追加の識別子をスキャンで選択できます。たとえば、次の図は、データ Fusion を使用してボリューム、バケット、およびデータベースをスキャンし、 Oracle データベースからすべての顧客 ID が出現する状況を示しています。
 
 image:diagram_compliance_data_fusion.png["データベースのコンテンツをソースとして使用して、同じデータを含むファイルを識別する方法を示す図。"]
 
 このように、 2 つのボリュームと 1 つの S3 バケットにそれぞれ一意の顧客 ID が見つかりました。データベーステーブル内の一致も識別されます。
 
-独自のデータベースをスキャンするので、データが保存されている言語に関係なく、将来のCloud Data Senseスキャンでデータを識別するために使用されることに注意してください。
+独自のデータベースをスキャンするので、データが保存されているどの言語でも、将来のデータ検出スキャンでデータを識別するために使用されることに注意してください。
 
-が必要です link:task-scanning-databases.html#adding-the-database-server["データベースサーバを少なくとも 1 つ追加しました"^] データ Fusion ソースを追加する前にクラウドデータを検出
+が必要です link:task-scanning-databases.html#adding-the-database-server["データベースサーバを少なくとも 1 つ追加しました"^] データFusion ソースを追加する前にデータを検出する必要があります。
 
 . [ 構成 ] ページで、ソースデータが存在するデータベースの [ データ Fusion の管理 ] をクリックします。
 +
@@ -57,7 +58,7 @@ image:screenshot_compliance_add_data_fusion.png["データ Fusion ソースの�
 
 . [Add Data Fusion Source*] をクリックします。
 +
-Data Fusion インベントリページには、クラウドデータセンスでスキャンするように設定したデータベースソース列が表示されます。
+Data Fusion インベントリページには、スキャンするようにData Senseを設定したデータベースソース列が表示されます。
 
 +
 image:screenshot_compliance_data_fusion_list.png["Data Fusion で設定したすべてのデータソース参照のスクリーンショット。"]
@@ -70,7 +71,7 @@ image:screenshot_add_data_fusion_result.png["［調査結果］ペインに表�
 
 
 
-=== Data Fusion ソースの削除
+=== Data Fusion ソースを削除します
 
 特定の Data Fusion ソースを使用してファイルをスキャンしない場合は、 Data Fusion インベントリページからソース行を選択し、 ［ * データ Fusion ソースの削除 * ］ をクリックします。
 
@@ -78,45 +79,136 @@ image:screenshot_compliance_delete_data_fusion.png["データ Fusion ソース�
 
 
 
-== 正規表現を使用したカスタムの個人データ識別子の作成
+== テキストファイルからカスタムキーワードを追加します
 
-カスタム正規表現（regex）を使用して、データ内の特定の情報を識別するためのパーソナルパターンを追加できます。正規表現は、すでにData Senseで使用されている既存の事前定義パターンに追加され、結果は[personal patterns（個人パターン）]セクションに表示されます。
+データ内の特定の情報を識別できるように、データセンスにカスタムキーワードを追加できます。定義したテキストファイルからキーワードを追加します。キーワードは、データセンスが既に使用している既存の定義済みキーワードに追加され、結果は[個人パターン]セクションに表示されます。
 
-たとえば、すべてのファイルで内部製品IDが記載されている場所を確認できます。製品IDに明確な構造が含まれている場合、たとえば、201で始まる12桁の数値であれば、カスタム正規表現機能を使用してファイル内で検索できます。
+たとえば、すべてのファイルで内部製品名が言及されている場所を確認して、これらの名前が安全でない場所でアクセスできないようにすることができます。
+
+カスタムキーワードを更新すると、データセンスはすべてのデータソースのスキャンを再開します。スキャンが完了すると、新しい結果がデータセンスで表示されます。
+
+データセンスシステムの次の場所にカスタムキーワードを含むテキストファイルを追加または作成する必要があります。
+
+ /opt/netapp/Datasense/tools/datascience/custom_keywords/keywords_sets
+複数のキーワードを含む単一のファイルを作成することも、それぞれに特定のキーワードを含む多数のファイルを追加することもできます。ファイルの形式は、各行に1つの単語が表示されます。次に例を示します。
+
+_internal_product_names.txt_
+
+....
+barred
+barn
+horned
+snowy
+screech
+....
+これらの項目のデータ検出検索では、大文字と小文字は区別されません。
 
 
 
 === コマンドラインへのアクセス
 
-正規表現を追加するコマンドを開始するには、Data Senseシステムにアクセスする必要があります。
+カスタムキーワードを追加するコマンドを開始するには、データセンスシステムにアクセスする必要があります。
 
 データセンスをオンプレミスにインストールした場合は、コマンドラインに直接アクセスできます。
 
 データセンスをクラウドに導入した場合、データセンスインスタンスにSSHで接続できます。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。
 
- ssh -i <path to the ssh key> <machine user>@<datasense ip>
-* <path to the ssh key>= ssh認証キーの場所
-* <マシンユーザー>：
+ ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
+* <path-to_The _ssh_key>= SSH認証キーの場所
+* <machine_user>：
 +
 ** AWSの場合：<ec2-user>を使用します
 ** Azureの場合：BlueXPインスタンス用に作成したユーザを使用します
 ** GCPの場合：BlueXPインスタンス用に作成されたユーザーを使用します
 
 
-* <datasense IP>は仮想マシンインスタンスのIPアドレスです
+* <datasension_IP>=仮想マシンインスタンスのIPアドレス
 
 
-システムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#ports-and-security-groups["ポートおよびセキュリティグループ"^] を参照してください。
+システムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。詳細については、以下を参照してください。
+
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWSのセキュリティグループのルール"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azureのセキュリティグループルール"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Google Cloudのファイアウォールルール"^]
+
+
+
+
+=== カスタムキーワードを追加するコマンド構文
+
+ファイルからカスタムキーワードを追加するコマンド構文は次のとおりです。
+
+ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s activate -f <file_name>.txt
+* <file_name>=キーワードを含むファイルの名前です。
+
+
+このコマンドはパス*/opt/NetApp/Datasense /*から実行します。
+
+カスタムキーワードを含むファイルを多数作成した場合は、次のコマンドを使用して、すべてのファイルからキーワードを一度に追加できます。
+
+ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s activate
+次の要件に注意してください。
+
+* ファイル名に数字を使用することはできません。
+* 各ファイルには、最大100,000語を含めることができます。単語数が多い場合は、最初の100,000だけが追加されます。
+* 各単語は3文字以上である必要があります。短い単語は無視されます。
+* 重複する単語は一度だけ追加されます。
+
+
+
+
+=== 例
+
+貴社の内部製品名は、上記のような種類の製品に基づいています。
+
+すべてのファイルで、内部製品名が記載されている場所を確認するには、次のコマンドを入力します。
+
+[source, cli]
+----
+[user ~]$ cd /opt/netapp/Datasense/
+[user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s activate -f internal_product_names.txt
+----
+ log v1.0 | 2022-08-24 08:16:25,332 | INFO | ds_logger | upload_custom_keywords | 126 | 1 | None | upload_custom_keywords_126 | All legal keywords were successfully inserted
+次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。
+
+image:screenshot_add_keywords_result.png["[調査結果]ペインにカスタムキーワードの結果の例を示すスクリーンショット。"]
+
+
+
+=== カスタムキーワードを無効にします
+
+以前に追加した特定のカスタムキーワードを識別するためにデータセンスが必要ない場合は、コマンドの* deactivate *オプションを使用して、テキストファイルに定義されているキーワードを削除します。
+
+ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f <file_name>.txt
+たとえば、ファイル* internal_product_names *に定義されているキーワードパターンを削除するには、次のようにします。
+
+[source, cli]
+----
+[user ~]$ cd /opt/netapp/Datasense/
+[user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f internal_product_names
+----
+ log v1.0 | 2022-08-24 08:16:25,332 | INFO | ds_logger | upload_custom_keywords | 87 | 1 | None | upload_custom_keywords_87 | Deactivated keyword pattern from internal_product_names.txt successfully
+
+
+== 正規表現を使用してカスタムの個人データ識別子を追加する
+
+カスタム正規表現（regex）を使用して、データ内の特定の情報を識別するためのパーソナルパターンを追加できます。正規表現は、すでにData Senseで使用されている既存の事前定義パターンに追加され、結果は[personal patterns（個人パターン）]セクションに表示されます。
+
+たとえば、すべてのファイルで内部製品IDが記載されている場所を確認できます。製品IDに明確な構造が含まれている場合、たとえば、201で始まる12桁の数値であれば、カスタム正規表現機能を使用してファイル内で検索できます。
+
+正規表現を追加すると、データセンスはすべてのデータソースのスキャンを再開します。スキャンが完了すると、新しい結果がData senseで表示されます。
 
 
 
 === 正規表現を追加するコマンド構文
 
+カスタムキーワードパターンを含むファイルを追加し、コマンドを開始してカスタムキーワードを追加するには、データセンスシステムにアクセスする必要があります。  the command line,コマンドラインへのアクセス方法については、を参照してください データをオンプレミスにインストールしたか、クラウドに導入したかにかかわらず、
+
 カスタム正規表現を追加するコマンドの構文は次のとおりです。
 
- sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "<pattern name>" -r "<regular expression>"
-* <pattern name>=データセンスUIに表示される名前です。正規表現で検索される内容が、名前で示されていることを確認します。名前にはアルファベットを1文字以上含める必要があります。最大文字数は70文字です。
-* <regular expression>=任意の正規表現を指定できます。
+ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "<pattern_name>" -r "<regular_expression>"
+* <pattery_name>=データセンスUIに表示される名前です。正規表現で検索される内容が、名前で示されていることを確認します。名前にはアルファベットを1文字以上含める必要があります。最大文字数は70文字です。
+* <regular_expression>=任意の正規表現を指定できます。
 
 
 このコマンドはパス*/opt/NetApp/Datasense /*から実行します。

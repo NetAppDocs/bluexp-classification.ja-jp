@@ -26,7 +26,7 @@ summary: この FAQ は、質問に対する簡単な回答を探している場
 
 === クラウドデータの意味
 
-クラウドデータセンスは、人工知能（AI）ベースのテクノロジを使用して、データの状況を把握し、ストレージシステム全体で機密データを特定するクラウドサービスです。システムは、BlueXP Canvasに追加した作業環境や、データがネットワーク上でアクセスできる多くの種類のデータソースになります。  sources of data can be scanned with Data Sense,以下の一覧を参照してください。
+クラウドデータセンスは、人工知能（AI）ベースのテクノロジを使用して、データの状況を把握し、ストレージシステム全体で機密データを特定するクラウドサービスです。システムは、BlueXP Canvasに追加した作業環境や、データがネットワーク上でアクセスできる多くの種類のデータソースになります。 link:faq-cloud-compliance.html#what-sources-of-data-can-be-scanned-with-data-sense["以下の一覧を参照してください"]。
 
 Cloud Data Sense は、事前定義されたパラメータ（機密情報の種類やカテゴリなど）を提供し、 GDPR 、 CCPA 、 HIPAA などのデータプライバシーと機密性に関する新しいデータコンプライアンス規制に対応します。
 
@@ -50,7 +50,7 @@ link:concept-cloud-compliance.html["Cloud Data Sense の仕組みの詳細はこ
 * データ保持ポリシーに準拠
 
 
-https://cloud.netapp.com/cloud-compliance["Cloud Data Sense のユースケースについて詳しくは、こちらをご覧ください"^]。
+https://cloud.netapp.com/netapp-cloud-data-sense["Cloud Data Sense のユースケースについて詳しくは、こちらをご覧ください"^]。
 
 
 
@@ -90,7 +90,7 @@ BlueXPは、サービスのREST API機能をサポートしています。BlueXP
 
 link:concept-cloud-compliance.html#how-scans-work["スキャンの仕組みを説明します"]。
 
-データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響が非常に小さい場合でも、低速スキャンを実行するようにデータセンスを設定できます。 link:task-managing-compliance.html#reducing-the-data-sense-scan-speed["スキャン速度を下げる方法を参照してください"]。
+データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響が非常に小さい場合でも、低速スキャンを実行するようにデータセンスを設定できます。 link:task-reduce-scan-speed.html["スキャン速度を下げる方法を参照してください"]。
 
 
 
@@ -162,9 +162,14 @@ NOTE: クラウドデータセンスインスタンスを完全に削除する�
 
 Cloud Data Sense は、すぐに使用できる分析情報をデータに提供します。これらの分析情報を抽出して、組織のニーズに活用できます。
 
-また、「 * Data Fusion * 」機能を使用すると、スキャンしているデータベース内の特定の列にある条件に基づいて、すべてのデータをデータセンススキャンできます。基本的には、独自のカスタム個人データ型を作成できます。
+さらに、データセンスは、スキャンで特定される「個人データ」のカスタムリストを追加する方法も多数用意されています。これにより、機密データが存在する可能性のある場所に関する全体像を、_ALL_組織のファイルに表示できます。
 
-link:task-managing-data-fusion.html#creating-custom-personal-data-identifiers-from-your-databases["詳細はこちら。"^]。
+* スキャンするデータベースの特定の列に基づいて一意の識別子を追加できます。この* Data Fusion *を呼び出します。
+* テキストファイルからカスタムキーワードを追加できます。
+* カスタムパターンは、正規表現（regex）を使用して追加できます。
+
+
+link:task-managing-data-fusion.html["詳細はこちら。"^]。
 
 
 
@@ -257,6 +262,7 @@ Data Sense は、 NFS バージョン 3.x 、 4.0 、 4.1 、および CIFS バ�
 
 * オンプレミスの ONTAP システム
 * データベーススキーマ
+* SharePointオンプレミスアカウント(SharePoint Server)
 * ネットアップ以外の NFS または CIFS ファイル共有
 * Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージ
 
@@ -351,7 +357,7 @@ Connectorは、クラウドアカウントまたはオンプレミスのいず�
 
 === インターネットにアクセスできないセキュアなサイトはどうでしょうか。
 
-はい、サポートされています。可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["インターネットにアクセスできないオンプレミスのLinuxホストにコネクタを導入します"]。その上で、オンプレミスのONTAP クラスタやその他のローカルデータソースを検出し、データセンスを使用してデータをスキャンすることができます。
+はい、サポートされています。可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["インターネットにアクセスできないオンプレミスのLinuxホストにコネクタを導入します"^]。その上で、オンプレミスのONTAP クラスタやその他のローカルデータソースを検出し、データセンスを使用してデータをスキャンすることができます。
 
 
 

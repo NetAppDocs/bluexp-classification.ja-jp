@@ -811,7 +811,6 @@
   <block id="6858b5f69ec006bf6e2de7960deffea9" category="list-text">個人識別情報（ PII ）を識別します。</block>
   <block id="75561c13a7f1550c1d376b995ed2e83f" category="list-text">データプライバシーに関する新しい規制や今後の規制に対応できます。</block>
   <block id="f352cd4e6c6b4737822722679f9fb9eb" category="inline-link">Cloud Data Sense のユースケースについて詳しくは、こちらをご覧ください</block>
-  <block id="d824a36535436f47cdb45562372579a9" category="paragraph"><block ref="a3797b949ad4ca122a2891cd0995ed6e" category="inline-link-rx"></block>。</block>
   <block id="cb1df3001d7e0d737bf8af8bf621fee0" category="inline-link-macro">スキャンの仕組みを説明します</block>
   <block id="37f3de5c9ae041a1644d4b78c54dcf40" category="section-title">サポートされているクラウドプロバイダを教えてください。</block>
   <block id="0139d044fd0b961e3b07aa66f52b5e57" category="section-title">クラウドデータはどのように動作するのでしょうか。</block>
@@ -829,7 +828,6 @@
   <block id="9504bf4697695cdeb232f8ceb18c09c6" category="section-title">Cloud Data Sense はどのくらいの頻度でデータをスキャンしますか？</block>
   <block id="681be99f122d2951a2c8370626fa6637" category="paragraph">データが頻繁に変更されるため、 Cloud Data Sense は、データに影響を与えることなくデータを継続的にスキャンします。データの初回スキャンには時間がかかる場合がありますが、その後のスキャンでは差分変更のみがスキャンされるため、システムのスキャン時間が短縮されます。</block>
   <block id="a577dc74a01118296df38bec260c945a" category="inline-link-macro">スキャン速度を下げる方法を参照してください</block>
-  <block id="48e4169c479861f2d03d44869de5a342" category="paragraph">データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響が非常に小さい場合でも、低速スキャンを実行するようにデータセンスを設定できます。 <block ref="5557fc40765f42f5191ab2e5a0e219b3" category="inline-link-macro-rx"></block>。</block>
   <block id="c28a9031bf06c99071258d18b345a7d4" category="section-title">Cloud Data Sense はレポートを提供していますか？</block>
   <block id="1243186ecf08fa3beb624fdea23033c7" category="list-text">プライバシーリスクアセスメントレポート</block>
   <block id="3a3337f232548d40f54052862077499b" category="list-text">Data Subject Access Request レポート</block>
@@ -857,8 +855,6 @@
   <block id="0a351d661588dd9301518a85a687c4dc" category="paragraph">また、 [ ガバナンス ] ページと [ 調査 ] ページからステータスレポートをダウンロードして、組織内で共有することもできます。</block>
   <block id="dd742fd59ea51a52070d76e5deb35cf8" category="section-title">組織のニーズに合わせてサービスをカスタマイズできますか。</block>
   <block id="eab4d10a40c49ac7fa1a3daf5756345e" category="paragraph">Cloud Data Sense は、すぐに使用できる分析情報をデータに提供します。これらの分析情報を抽出して、組織のニーズに活用できます。</block>
-  <block id="db62d7f7e6df5f5231c6e3d999b9cfe6" category="paragraph">また、「 * Data Fusion * 」機能を使用すると、スキャンしているデータベース内の特定の列にある条件に基づいて、すべてのデータをデータセンススキャンできます。基本的には、独自のカスタム個人データ型を作成できます。</block>
-  <block id="7947d7ee00b32e755150ea6f0d409959" category="paragraph"><block ref="e55bea358255ff3e05b3ddeee458196f" category="inline-link-macro-rx"></block>。</block>
   <block id="2a19be2b476a8e80b3ee67f3237bdef2" category="section-title">ファイルに埋め込まれた AIP ラベルを使用して Cloud Data Sense を実行できますか。</block>
   <block id="2a03ec9e7d9aaa65371a523434cb5fb5" category="inline-link-macro">Azure 情報保護（ AIP ）</block>
   <block id="170074f761e651b98302125c2a5a72c1" category="paragraph">はい。加入している場合、 Cloud Data Sense がスキャンしているファイルで AIP ラベルを管理できます <block ref="2366c206354427dcda3be6923339236d" category="inline-link-macro-rx"></block>。既にファイルに割り当てられているラベルを表示したり、ファイルにラベルを追加したり、既存のラベルを変更したりできます。</block>
@@ -1528,12 +1524,10 @@
   <block id="604e7f8b88690e4a7309154d6c507dbe" category="paragraph">を参照してください <block ref="0016b6cca33bb771b0fdf7e717a8f0f9" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="fb91597bc7333ab092ccda3e2c38ed9f" category="paragraph">Azure Information Protection （ AIP ）に加入している場合は、コンテンツにラベルを適用することで、ドキュメントとファイルを分類して保護できます。ファイルに割り当てられている最も使用されている AIP ラベルを確認すると、ファイルで最も使用されているラベルを確認できます。</block>
   <block id="de1409a5455f1de6df444c6a03e3b4a6" category="paragraph">を参照してください <block ref="8376771def5b60bb1cfdd0dc180ae5cc" category="inline-link-macro-rx"></block> を参照してください。</block>
-  <block id="244003d4d8e2dcd15f9ddca59dc7ae12" category="section-title">データベースからカスタムの個人データ識別子を作成する</block>
   <block id="dac05618fc69864a6bb4607d758eba4b" category="inline-image-macro">データベースのコンテンツをソースとして使用して、同じデータを含むファイルを識別する方法を示す図。</block>
   <block id="272d016d013ea6f34fea95eb2490c955" category="paragraph"><block ref="272d016d013ea6f34fea95eb2490c955" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9e069456015ebd506621d5c53645d136" category="paragraph">このように、 2 つのボリュームと 1 つの S3 バケットにそれぞれ一意の顧客 ID が見つかりました。データベーステーブル内の一致も識別されます。</block>
   <block id="8818463c2c4de2a61c4ea7325d870cc5" category="inline-link-macro">データベースサーバを少なくとも 1 つ追加しました</block>
-  <block id="4a69c14a4fe3767c371e2f7e172bfdf6" category="paragraph">が必要です <block ref="4ec8c7ffee3077e2fe1a50f122f89322" category="inline-link-macro-rx"></block> データ Fusion ソースを追加する前にクラウドデータを検出</block>
   <block id="85191d4618061c6df61888ae81a1fb5d" category="list-text">[ 構成 ] ページで、ソースデータが存在するデータベースの [ データ Fusion の管理 ] をクリックします。</block>
   <block id="992ec9ca2bd36716163b216808c50d96" category="inline-image-macro">ソース列を追加する [ データの管理（ Manage Data Fusion ） ] ボタンを選択するスクリーンショット。</block>
   <block id="c6d506455215e48dc0395821cd52ccc5" category="paragraph"><block ref="c6d506455215e48dc0395821cd52ccc5" category="inline-image-macro-rx" type="image"></block></block>
@@ -1546,10 +1540,8 @@
   <block id="c9a7a5ee1d925cf7211c023effa8addf" category="inline-image-macro">データ Fusion ソースのスキーマ、テーブル、および列を識別するスクリーンショット。</block>
   <block id="677be753f506220f82488725cee69e75" category="paragraph"><block ref="677be753f506220f82488725cee69e75" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e5cd5228fe86626caa6a2e7406e1831e" category="list-text">[Add Data Fusion Source*] をクリックします。</block>
-  <block id="4a9b54285d12a82c7bff15db48a6a8ce" category="paragraph">Data Fusion インベントリページには、クラウドデータセンスでスキャンするように設定したデータベースソース列が表示されます。</block>
   <block id="939d952696a5f27e3fc9052eb844e683" category="inline-image-macro">Data Fusion で設定したすべてのデータソース参照のスクリーンショット。</block>
   <block id="4faff730b8cd795afc52204e2d0ebab0" category="paragraph"><block ref="4faff730b8cd795afc52204e2d0ebab0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="18a5501aea8a20fe6f4f9c4f2d605cc6" category="section-title">Data Fusion ソースの削除</block>
   <block id="7da8f2d897e75578043e0f01e245c1a7" category="paragraph">特定の Data Fusion ソースを使用してファイルをスキャンしない場合は、 Data Fusion インベントリページからソース行を選択し、 ［ * データ Fusion ソースの削除 * ］ をクリックします。</block>
   <block id="9008a71f5aaebece0844ad9fc3bb64a7" category="inline-image-macro">データ Fusion ソースを削除する方法を示すスクリーンショット。</block>
   <block id="b889af7f2e1d8844037173064a2494e2" category="paragraph"><block ref="b889af7f2e1d8844037173064a2494e2" category="inline-image-macro-rx" type="image"></block></block>
@@ -2429,7 +2421,6 @@
   <block id="992e3ca84c2944a0dbcaf7e99231a50e" category="inline-link-macro">マッピングスキャンと分類スキャンの違いを参照してください</block>
   <block id="def0998b91888f6c8913daf5857514fe" category="paragraph">新しいデータソースを最初に追加するときに、「分類」のフルスキャンではなく「マッピング」スキャンのみを実行するように選択することもできます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。 <block ref="51b8d4ed20a0bce6d8202eb3e674faa5" category="inline-link-macro-rx"></block>。</block>
   <block id="30cedf267127066ad1ae6900fcd4efd6" category="paragraph">標準プロトコルを使用したデータ検出スキャンと、環境全体での読み取り専用アクセス許可。一部のファイルは、ビジネスに関連する機密データ、プライベート情報、ランサムウェアに関連する問題の有無をチェックして開きます。</block>
-  <block id="726caa59a84bb2953cc18c8dfd2aa4ea" category="paragraph">はい、サポートされています。可能です<block ref="4fae73c4748f58a56669baba6ceab594" category="inline-link-rx"></block>。その上で、オンプレミスのONTAP クラスタやその他のローカルデータソースを検出し、データセンスを使用してデータをスキャンすることができます。</block>
   <block id="6d221b0532f183c43399fe3cf826487d" category="paragraph">はい、サポートされています。可能です <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 完全にセキュアなサイトに。</block>
   <block id="861f912bdc60a9b71f6f643f31234fb5" category="paragraph">Cloud Data Senseは、人工知能（AI）、自然言語処理（NLP）、機械学習（ML）を使用して、エンティティを抽出し、それに応じてコンテンツを分類するためにスキャンするコンテンツを理解します。これにより、データセンスは次の機能領域を提供できます。</block>
   <block id="5e27c5cc9f66f543d963585b42d1709d" category="section-title">コンプライアンスを維持</block>
@@ -2472,28 +2463,20 @@
   <block id="9bde88aed1efa84fb1b1fb5319a7e561" category="paragraph">*データベース：*</block>
   <block id="93527746a0aabc74aefe0ff55c837bc7" category="list-text">1つ以上のデータソースで、概要レベルのマッピングまたは詳細レベルのスキャンを有効にします。</block>
   <block id="c62db9834fbc6b314856a0fe8ff0acfc" category="paragraph">Cloud Data Senseを使用すると、選択したデータソースに対して全般的な「マッピング」スキャンを実行できます。マッピングではデータの概要のみが示され、分類ではデータの詳細なスキャンが提供されます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。</block>
-  <block id="0828cc8e3ba101d02a7cc044ad32527c" category="summary">データセンスには、将来のスキャンで特定される「個人データ」のカスタムリストを追加する方法が2つあります。このリストを使用すると、機密データが存在するすべての組織のファイルの場所に関する全体像を把握できます。</block>
   <block id="e2deda6096556446feb95e28efdf93c1" category="doc">個人データ識別子をデータセンススキャンに追加する</block>
-  <block id="4b04c6153c3b89c90e2e102a04fb7087" category="paragraph">データセンスには、将来のスキャンで特定される「個人データ」のカスタムリストを追加する方法が2つあります。このリストを使用すると、機密データが置かれている可能性のある場所に関する全体像を_all_your Organizationsのファイルに表示できます。</block>
   <block id="c442f433b878bcb44759d46bd9921901" category="list-text">スキャンするデータベース内の特定の列に基づいて一意の識別子を追加できます。</block>
   <block id="68bd9fa0417b646f5dcd316727b11be1" category="list-text">正規表現（regex）を使用してパーソナルパターンを追加できます。既存の定義済みパターンに正規表現が追加されます。</block>
-  <block id="4cacfa4cf6eddb7a5248c05308700dfa" category="paragraph">Data Fusion _という機能を使用すると、組織のデータをスキャンして、データベースからの一意の識別子がファイルまたは他のデータベースにあるかどうかを識別できます。データベーステーブルで特定の列を選択することにより、クラウドデータセンスがスキャンで検索する追加の識別子を選択できます。たとえば、次の図は、データ Fusion を使用してボリューム、バケット、およびデータベースをスキャンし、 Oracle データベースからすべての顧客 ID が出現する状況を示しています。</block>
-  <block id="85471b66f915c85383697af665def62b" category="paragraph">独自のデータベースをスキャンするので、データが保存されている言語に関係なく、将来のCloud Data Senseスキャンでデータを識別するために使用されることに注意してください。</block>
   <block id="7a4f785c9bf1b41e9eb899da0e988d27" category="paragraph">次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。追加した各ソース列は、「Table.Column」という形式でフィルタリストに表示されます。たとえば、「customers.CustomerID」のようになります。</block>
   <block id="86776d2aca02c16f7beb228e9112d324" category="inline-image-macro">［調査結果］ペインに表示されるData Fusion の結果の例を示すスクリーンショット。</block>
   <block id="4275c0ed3233cbea8a2f0bc0d2c33395" category="paragraph"><block ref="4275c0ed3233cbea8a2f0bc0d2c33395" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a5080acb08990b0179f7eb9dd96ab1f0" category="section-title">正規表現を使用したカスタムの個人データ識別子の作成</block>
   <block id="b43de279c258dd5031c6bdedf5d1ae80" category="paragraph">カスタム正規表現（regex）を使用して、データ内の特定の情報を識別するためのパーソナルパターンを追加できます。正規表現は、すでにData Senseで使用されている既存の事前定義パターンに追加され、結果は[personal patterns（個人パターン）]セクションに表示されます。</block>
   <block id="8765349da42fc731215c94441efae48f" category="paragraph">たとえば、すべてのファイルで内部製品IDが記載されている場所を確認できます。製品IDに明確な構造が含まれている場合、たとえば、201で始まる12桁の数値であれば、カスタム正規表現機能を使用してファイル内で検索できます。</block>
   <block id="a947d2f1730c470833c4544effbb7bc1" category="section-title">コマンドラインへのアクセス</block>
-  <block id="803d83ea746be3fe4b4b6e473104c84d" category="paragraph">正規表現を追加するコマンドを開始するには、Data Senseシステムにアクセスする必要があります。</block>
   <block id="936f32b71b96ea5785d6a11d0da86d15" category="paragraph">データセンスをオンプレミスにインストールした場合は、コマンドラインに直接アクセスできます。</block>
   <block id="0bac9ec0256a9fd2858c7836245c9025" category="list-text">AWSの場合：&lt;ec2-user&gt;を使用します</block>
   <block id="0ea3b9210848690cf51475dbc0b23bea" category="list-text">&lt;datasense IP&gt;は仮想マシンインスタンスのIPアドレスです</block>
   <block id="2ca1f3bad4fcb2aea6222d64aeb6ee20" category="section-title">正規表現を追加するコマンド構文</block>
   <block id="0b674f6afef562ef0fec5869730d7efe" category="paragraph">カスタム正規表現を追加するコマンドの構文は次のとおりです。</block>
-  <block id="3642b1a1448d1d503a8c583265c1f7fd" category="list-text">&lt;pattern name&gt;=データセンスUIに表示される名前です。正規表現で検索される内容が、名前で示されていることを確認します。名前にはアルファベットを1文字以上含める必要があります。最大文字数は70文字です。</block>
-  <block id="c8cfff713fc98611eeae3f621ae6ce24" category="list-text">&lt;regular expression&gt;=任意の正規表現を指定できます。</block>
   <block id="c0860cd77b783ac8ccb3c6de19266e83" category="paragraph">新しい正規表現が多すぎるかどうかを毎回テストし、一致する値が多すぎるかどうかを確認します。その場合は、次のログメッセージが表示されます。</block>
   <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="section-title">例</block>
   <block id="1c247fabef1a02cfb25e0c5a09f1ce81" category="paragraph">製品IDは201で始まる12桁の数値であるため、正規表現は*\b201\d｛9｝\b *です。データセンスUIのテキストで、このパターンを*内部製品ID *として識別したいとします。</block>
@@ -2508,7 +2491,6 @@
   <block id="cdd8fa6a73205d146405999abb5c86ec" category="admonition">Data Senseホスト・システムのIPアドレスは、インストール後は変更できません。</block>
   <block id="766f0d81be7879628bc30bd7367309c3" category="paragraph">このコマンドはパス*/opt/NetApp/Datasense /*から実行します。</block>
   <block id="4767339e389eb1fa075ecdec5d1ec320" category="paragraph">コマンドラインの末尾にある*-f *オプションを使用すると、たとえ過度に広範囲であっても、正規表現を強制的にData senseに追加できます。</block>
-  <block id="48532ffc6016c24d1207f39fecfcbbda" category="section-title">カスタム正規表現を非アクティブにします</block>
   <block id="19f9f2c4f009c255e214b21dae526160" category="paragraph">後で、正規表現として入力したカスタムパターンを識別するためにData Senseが必要ない場合は、コマンドの* deactivate *オプションを使用して、各正規表現を削除します。</block>
   <block id="331a3f3aa511b1c438e9c58674f70985" category="section-title">2022年9月6日（バージョン1.16）</block>
   <block id="d59aefa3621ff4109ce747758711c46c" category="section-title">ファイルの変更を反映するために、リポジトリをすぐに再スキャンできます</block>
@@ -2690,7 +2672,6 @@
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Service*:問題 が関連付けられているサービスを選択します。たとえば、サービス内のワークフローまたは機能を備えたテクニカルサポート問題 に固有のBlueXPなどです。</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">作業環境のリストは、サービスの上部バナーで選択したBlueXPアカウント、ワークスペース、コネクタの範囲内にあります。</block>
   <block id="fa6b601b2fb4e3e5c7b466ecb8bd70ac" category="paragraph">このエラーは、NSSアカウントとそれに関連付けられているレコードの会社が、BlueXPアカウントのシリアル番号(例960xxxx）または動作環境のシリアル番号。[ケースの作成]フォームの上部にあるNSSアカウントの一覧を確認して、適切な一致を見つけることができます。または、次のいずれかのオプションを使用してサポートを依頼することもできます。</block>
-  <block id="ce69d97d248a0ceffeb8b42c7913c23c" category="paragraph">クラウドデータセンスは、人工知能（AI）ベースのテクノロジを使用して、データの状況を把握し、ストレージシステム全体で機密データを特定するクラウドサービスです。システムは、BlueXP Canvasに追加した作業環境や、データがネットワーク上でアクセスできる多くの種類のデータソースになります。 <block ref="baabd945a4a07a6a42dc21a2d03105c4" category="inline-xref-macro-rx"></block>。</block>
   <block id="fbfd2fbbd4f85dce01ccde33810c06c4" category="paragraph">Cloud Data Senseは、BlueXPシステムとストレージシステムに加えて、もう1つの人工知能レイヤを導入します。次に、ボリューム、バケット、データベース、その他のストレージアカウントのデータをスキャンして、見つかったデータ分析のインデックスを作成します。データセンスは、正規表現やパターンマッチングを中心に構築される代替ソリューションとは対照的に、人工知能と自然言語処理の両方を活用します。Cloud Data Senseは、AIを使用してデータをコンテキストに基づいて把握し、正確な検出と分類を行います。AIは、最新のデータタイプと拡張性を考慮して設計されているため、この目的はAIによって推進されます。また、データコンテキストを理解して、強力で正確な検出と分類を提供します。</block>
   <block id="da201fda9b2353c11c65e6451333259b" category="paragraph">Cloud Data Senseは、BlueXPの一部として動作し、AWS、Azure、GCPをサポートします。これにより、異なるクラウドプロバイダ間で統一されたプライバシー可視性を実現できます。</block>
   <block id="b75d6d4905807d9feeb30793683fb25c" category="paragraph">BlueXPは、サービスのREST API機能をサポートしています。BlueXPが管理の優先ポイントでない場合は、Cloud Data SenseなどのサービスをREST API経由で使用することもできます。すべてのユーザアクションには、サードパーティのシステムと統合できるREST APIがあります。</block>
@@ -2904,4 +2885,64 @@
   <block id="c6cc179979c3b50e9f274669a7debb6f" category="paragraph">データ検出機能をオンプレミス環境にインストールしている場合、データソースをスキャンするためにスキャン処理能力を高める必要があるときは、「スキャナ」ノードをさらに追加することができます。マネージャノードをインストールした直後にスキャナノードを追加することも、後でスキャナノードを追加することもできます。たとえば、1つのデータソースのデータ量が1年後に3倍になったことがわかった場合は、データスキャンを支援する新しいスキャナノードを追加できます。</block>
   <block id="920d0a192fcf42107e363c75e934277b" category="paragraph">必要に応じて、スキャンするデータソースに物理的に近いホストシステムにスキャナノードをインストールできます。スキャナノードがデータに近いほど、データのスキャン時のネットワークレイテンシができるだけ低減されるため、データの読み取り速度が向上します。</block>
   <block id="cbcceb43df0c94c9cc9e38ba4b9389c1" category="paragraph">ファイルまたはディレクトリへのアクセス権を持つすべてのユーザーまたはグループのリスト、およびそれらが持っているアクセス権のタイプを表示するには、*すべてのアクセス権を表示*をクリックします。このボタンは、CIFS共有、SharePoint Online、SharePoint On-Premise、OneDriveのデータに対してのみ使用できます。</block>
+  <block id="808cffec2f45e3cd0fe5a90bfcca1530" category="summary">データセンスは、将来のスキャンで特定される「個人データ」のカスタムリストを追加するためのさまざまな方法を提供します。これにより、機密データがすべての組織のファイル内に存在する場所に関する全体像を把握できます。</block>
+  <block id="779142c3c6196fad0d5a73d9c046a65d" category="paragraph">データセンスは、将来のスキャンで特定される「個人データ」のカスタムリストを追加するためのさまざまな方法を提供します。これにより、機密データが存在する可能性のある場所に関する全体像を_all_your Organizationsのファイルに表示できます。</block>
+  <block id="aadddcc55c6a2a76a433b97a4366f53f" category="list-text">テキストファイルからカスタムキーワードを追加できます。これらの単語はデータ内で識別されます。</block>
+  <block id="a2c1b5d018e20e258024bece4a2d254e" category="section-title">データベースからカスタムの個人データ識別子を追加します</block>
+  <block id="9af453e3940756efb85a55ad42e64c80" category="paragraph">Data Fusion _という機能を使用すると、組織のデータをスキャンして、データベースからの一意の識別子が他のいずれかのデータソースに存在するかどうかを確認できます。データベーステーブルで特定の列を選択することにより、データ検出で検索される追加の識別子をスキャンで選択できます。たとえば、次の図は、データ Fusion を使用してボリューム、バケット、およびデータベースをスキャンし、 Oracle データベースからすべての顧客 ID が出現する状況を示しています。</block>
+  <block id="833918f262a2ff7634e2f7606ea896a6" category="paragraph">独自のデータベースをスキャンするので、データが保存されているどの言語でも、将来のデータ検出スキャンでデータを識別するために使用されることに注意してください。</block>
+  <block id="2af88522df8219c02b648f709d0d7441" category="paragraph">が必要です <block ref="4ec8c7ffee3077e2fe1a50f122f89322" category="inline-link-macro-rx"></block> データFusion ソースを追加する前にデータを検出する必要があります。</block>
+  <block id="b5a32f0d4fed8751d01bab34f7653e1c" category="paragraph">Data Fusion インベントリページには、スキャンするようにData Senseを設定したデータベースソース列が表示されます。</block>
+  <block id="6df200d9da4a502fdf5eb4ced7a8d488" category="section-title">Data Fusion ソースを削除します</block>
+  <block id="beda883b97aef8f3ae5362485c7c7b8e" category="section-title">テキストファイルからカスタムキーワードを追加します</block>
+  <block id="ffe939b4a901f36963b6915c952e5eda" category="paragraph">データ内の特定の情報を識別できるように、データセンスにカスタムキーワードを追加できます。定義したテキストファイルからキーワードを追加します。キーワードは、データセンスが既に使用している既存の定義済みキーワードに追加され、結果は[個人パターン]セクションに表示されます。</block>
+  <block id="4db39af2f2c8dd1ae93885d357ea7d87" category="paragraph">たとえば、すべてのファイルで内部製品名が言及されている場所を確認して、これらの名前が安全でない場所でアクセスできないようにすることができます。</block>
+  <block id="e86b773e33290ca180bab4702f6221dc" category="paragraph">カスタムキーワードを更新すると、データセンスはすべてのデータソースのスキャンを再開します。スキャンが完了すると、新しい結果がデータセンスで表示されます。</block>
+  <block id="a022f59f73d13dba25886111bbcbfbe7" category="paragraph">データセンスシステムの次の場所にカスタムキーワードを含むテキストファイルを追加または作成する必要があります。</block>
+  <block id="3620f1bf4e7a238eac5d685f61925409" category="paragraph">複数のキーワードを含む単一のファイルを作成することも、それぞれに特定のキーワードを含む多数のファイルを追加することもできます。ファイルの形式は、各行に1つの単語が表示されます。次に例を示します。</block>
+  <block id="9e5355e710468619132238aa9a8b9c22" category="paragraph">_internal_product_names.txt_</block>
+  <block id="3dc7d5f9e5fd1366a21d3d3a927df1f0" category="paragraph">これらの項目のデータ検出検索では、大文字と小文字は区別されません。</block>
+  <block id="057d52aa1154035622f873117dc92349" category="paragraph">カスタムキーワードを追加するコマンドを開始するには、データセンスシステムにアクセスする必要があります。</block>
+  <block id="5279036835630164e29f9d285f1f8ac5" category="list-text">&lt;path-to_The _ssh_key&gt;= SSH認証キーの場所</block>
+  <block id="84bcb800c1d5099ce2ac32d1e7b6680f" category="list-text">&lt;machine_user&gt;：</block>
+  <block id="7ba7a32a873386de0e3b4747ceb28558" category="list-text">&lt;datasension_IP&gt;=仮想マシンインスタンスのIPアドレス</block>
+  <block id="b53091894711b26877d3fa2f1589b745" category="paragraph">システムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。詳細については、以下を参照してください。</block>
+  <block id="60f0453bf0393ab630be6aa37dc20180" category="inline-link">AWSのセキュリティグループのルール</block>
+  <block id="f2ad0eeffca4d67e7eb677593c90d5bf" category="list-text"><block ref="f2ad0eeffca4d67e7eb677593c90d5bf" category="inline-link-rx"></block></block>
+  <block id="569fe31933e5918613ae1efa70e82d16" category="inline-link">Azureのセキュリティグループルール</block>
+  <block id="c3122c19fb459588f8438e668beb5f88" category="list-text"><block ref="c3122c19fb459588f8438e668beb5f88" category="inline-link-rx"></block></block>
+  <block id="e22a4abc98b47ca148e0dfda7e259162" category="inline-link">Google Cloudのファイアウォールルール</block>
+  <block id="2cfdb7ae537da608249744d8e40289a8" category="list-text"><block ref="2cfdb7ae537da608249744d8e40289a8" category="inline-link-rx"></block></block>
+  <block id="64eaf133adcf35171f2b21d53ac1d51f" category="section-title">カスタムキーワードを追加するコマンド構文</block>
+  <block id="cc6ab41a96e05bf1a4e537962c380442" category="paragraph">ファイルからカスタムキーワードを追加するコマンド構文は次のとおりです。</block>
+  <block id="c279e8e722787c40c4b102abaedc66b2" category="list-text">&lt;file_name&gt;=キーワードを含むファイルの名前です。</block>
+  <block id="7479128473e97401c8fbc1525c2dd799" category="paragraph">カスタムキーワードを含むファイルを多数作成した場合は、次のコマンドを使用して、すべてのファイルからキーワードを一度に追加できます。</block>
+  <block id="c4e448abb596b34945911578eb3b4e45" category="paragraph">次の要件に注意してください。</block>
+  <block id="32b446525f2a4b6a6e34ba346b55fea6" category="list-text">ファイル名に数字を使用することはできません。</block>
+  <block id="c781b817668135b2a7800b19a53b3351" category="list-text">各ファイルには、最大100,000語を含めることができます。単語数が多い場合は、最初の100,000だけが追加されます。</block>
+  <block id="c84a723bb8343259efcc07b5d335a94d" category="list-text">各単語は3文字以上である必要があります。短い単語は無視されます。</block>
+  <block id="9b2456bacc9d094f1cd53f784d659a37" category="list-text">重複する単語は一度だけ追加されます。</block>
+  <block id="cb2e6437be1870e1a8e326d4a56e424f" category="paragraph">貴社の内部製品名は、上記のような種類の製品に基づいています。</block>
+  <block id="a05f2f2af09092d7732c02cc3039dad9" category="paragraph">すべてのファイルで、内部製品名が記載されている場所を確認するには、次のコマンドを入力します。</block>
+  <block id="d1cae4639086ce5de29473a5d53747c7" category="inline-image-macro">[調査結果]ペインにカスタムキーワードの結果の例を示すスクリーンショット。</block>
+  <block id="7b739c51b4a511be3459afe942a8ef3c" category="paragraph"><block ref="7b739c51b4a511be3459afe942a8ef3c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="10e08b10c8ba5b9b6646011e823e86ed" category="section-title">カスタムキーワードを無効にします</block>
+  <block id="c67491a05b3eada8d8830f7e24dff0b6" category="paragraph">以前に追加した特定のカスタムキーワードを識別するためにデータセンスが必要ない場合は、コマンドの* deactivate *オプションを使用して、テキストファイルに定義されているキーワードを削除します。</block>
+  <block id="db39532b182f8c442eaf4ad879aa65cb" category="paragraph">たとえば、ファイル* internal_product_names *に定義されているキーワードパターンを削除するには、次のようにします。</block>
+  <block id="9c0bd48717ec950ad656ee0c5cbe1bd7" category="section-title">正規表現を使用してカスタムの個人データ識別子を追加する</block>
+  <block id="ffbc9fd66cec345d48b984868ac86075" category="paragraph">正規表現を追加すると、データセンスはすべてのデータソースのスキャンを再開します。スキャンが完了すると、新しい結果がData senseで表示されます。</block>
+  <block id="9db0ea676fac4ef1398c2560f02af1c0" category="inline-xref">コマンドラインへのアクセス方法については、を参照してください</block>
+  <block id="b1599e902d95235efbbcb43349f65a6e" category="paragraph">カスタムキーワードパターンを含むファイルを追加し、コマンドを開始してカスタムキーワードを追加するには、データセンスシステムにアクセスする必要があります。 <block ref="909a3758711ef5bc4a197043a3e5bc79" category="inline-xref-macro-rx"></block> データをオンプレミスにインストールしたか、クラウドに導入したかにかかわらず、</block>
+  <block id="0b395d802cf1edb9750015b9c8375c64" category="list-text">&lt;pattery_name&gt;=データセンスUIに表示される名前です。正規表現で検索される内容が、名前で示されていることを確認します。名前にはアルファベットを1文字以上含める必要があります。最大文字数は70文字です。</block>
+  <block id="91199f34eda51a07db5d7713309a5577" category="list-text">&lt;regular_expression&gt;=任意の正規表現を指定できます。</block>
+  <block id="4a1b46e59340d0ab426f731ad1064b0e" category="section-title">カスタム正規表現を非アクティブにします</block>
+  <block id="a47191a447cfd30eaac5f91623a8e2e1" category="paragraph">クラウドデータセンスは、人工知能（AI）ベースのテクノロジを使用して、データの状況を把握し、ストレージシステム全体で機密データを特定するクラウドサービスです。システムは、BlueXP Canvasに追加した作業環境や、データがネットワーク上でアクセスできる多くの種類のデータソースになります。 <block ref="098fc5cd7fc00ea7f0929a4918ac3fdc" category="inline-link-macro-rx"></block>。</block>
+  <block id="09b72be567d4d0b6d75339233ebebd98" category="paragraph"><block ref="ca11d50dea199339753f4f92cb2c903a" category="inline-link-rx"></block>。</block>
+  <block id="f93db149bc3a1616f1fc0abae89a8cb4" category="paragraph">データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響が非常に小さい場合でも、低速スキャンを実行するようにデータセンスを設定できます。 <block ref="c0297b8a85bd81fc39a6444d8d1b6586" category="inline-link-macro-rx"></block>。</block>
+  <block id="9b56b6585b58c04286323169a1091805" category="paragraph">さらに、データセンスは、スキャンで特定される「個人データ」のカスタムリストを追加する方法も多数用意されています。これにより、機密データが存在する可能性のある場所に関する全体像を、_ALL_組織のファイルに表示できます。</block>
+  <block id="4bffcf343de88a6b5edf887e57a5c59e" category="list-text">スキャンするデータベースの特定の列に基づいて一意の識別子を追加できます。この* Data Fusion *を呼び出します。</block>
+  <block id="db40121770270b95c73895598e6343b2" category="list-text">テキストファイルからカスタムキーワードを追加できます。</block>
+  <block id="d2e9b58709e185388c14e9b7f7c876b8" category="list-text">カスタムパターンは、正規表現（regex）を使用して追加できます。</block>
+  <block id="6b0cdbce1552e1685f4b4095276b6078" category="paragraph"><block ref="4a5fd31f8eed80e720a59ea6d295b8eb" category="inline-link-macro-rx"></block>。</block>
+  <block id="38e7bc8a7a291a40814b17be24e4bf0a" category="paragraph">はい、サポートされています。可能です<block ref="a2148d757b5c89b9d02648070bc0f277" category="inline-link-rx"></block>。その上で、オンプレミスのONTAP クラスタやその他のローカルデータソースを検出し、データセンスを使用してデータをスキャンすることができます。</block>
 </blocks>
