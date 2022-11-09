@@ -18,6 +18,8 @@ summary: データセンスは、データをスキャンするすべての作�
 
 たとえば、発行された要求、要求の時刻、ファイルが削除された場合のソースの場所、ファイルが移動された場合のソースとデスティネーションの場所などの詳細を確認できます。
 
+監査ログのローテーションは毎日実行されます。
+
 
 
 == ログファイルの内容
@@ -45,29 +47,34 @@ summary: データセンスは、データをスキャンするすべての作�
 たとえば、ログファイルの次の行は、コピー処理が成功し、コピー処理が失敗した場合を示しています。
 
 ....
-2022-06-06 15:23:08,910 | INFO | datasense_audit_logger | es_scanned_file | 237 | 49 | Copy file /idanCIFS_share/data/dop1/random_positives.tsv from device 172.31.133.183 (type: SMB_SHARE) to device 172.31.130.133:/export_reports (NFS_SHARE) – SUCCESS
-2022-06-06 15:23:08,968 | WARNING | datasense_audit_logger | es_scanned_file | 239 | 153 | Copy file /idanCIFS_share/data/compliance-netapp.tar.gz from device 172.31.133.183 (type: SMB_SHARE) to device 172.31.130.133:/export_reports (NFS_SHARE) - FAILURE
+2022-06-06 15:23:08,910 | INFO | datasense_audit_logger | es_scanned_file | 237 | 49 | Copy file /CIFS_share/data/dop1/random_positives.tsv from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) – SUCCESS
+2022-06-06 15:23:08,968 | WARNING | datasense_audit_logger | es_scanned_file | 239 | 153 | Copy file /CIFS_share/data/compliance-netapp.tar.gz from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - FAILURE
 ....
 
 
 == ログファイルへのアクセス
 
-監査ログは、Data Senseマシンの「/opt/NetApp/audit_logs/<date>/DataSense _audit_log_<date>_<process_name>.log」に保存されています
+監査ログは、データセンスマシンの次の場所にあります。 `/opt/netapp/audit_logs/DataSense_audit.log`
 
 データセンスをオンプレミスにインストールした場合は、ログファイルに直接移動できます。
 
 データセンスをクラウドに導入した場合、データセンスインスタンスにSSHで接続できます。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。
 
- ssh -i <path to the ssh key> <machine user>@<datasense ip>
-* <path to the ssh key>= ssh認証キーの場所
-* <マシンユーザー>：
+ ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
+* <path-to_The _ssh_key>= SSH認証キーの場所
+* <machine_user>：
 +
 ** AWSの場合：<ec2-user>を使用します
 ** Azureの場合：BlueXPインスタンス用に作成したユーザを使用します
 ** GCPの場合：BlueXPインスタンス用に作成されたユーザーを使用します
 
 
-* <datasense IP>は仮想マシンインスタンスのIPアドレスです
+* <datasension_IP>=仮想マシンインスタンスのIPアドレス
 
 
-システムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#ports-and-security-groups["ポートおよびセキュリティグループ"^] を参照してください。
+システムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。詳細については、以下を参照してください。
+
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWSのセキュリティグループのルール"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azureのセキュリティグループルール"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Google Cloudのファイアウォールルール"^]
+

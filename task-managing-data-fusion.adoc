@@ -90,7 +90,7 @@ image:screenshot_compliance_delete_data_fusion.png["データ Fusion ソース�
 データセンスシステムの次の場所にカスタムキーワードを含むテキストファイルを追加または作成する必要があります。
 
  /opt/netapp/Datasense/tools/datascience/custom_keywords/keywords_sets
-複数のキーワードを含む単一のファイルを作成することも、それぞれに特定のキーワードを含む多数のファイルを追加することもできます。ファイルの形式は、各行に1つの単語が表示されます。次に例を示します。
+複数のキーワードを含む単一のファイルを作成することも、それぞれに特定のキーワードを含む多数のファイルを追加することもできます。ファイルの形式は1行に1語ずつあります。たとえば、次のような種類のowlsがある内部製品名を入力します。
 
 _internal_product_names.txt_
 
@@ -102,6 +102,14 @@ snowy
 screech
 ....
 これらの項目のデータ検出検索では、大文字と小文字は区別されません。
+
+次の要件に注意してください。
+
+* ファイル名に数字を使用することはできません。
+* 各ファイルには、最大100,000語を含めることができます。単語数が多い場合は、最初の100,000だけが追加されます。
+* 各単語は3文字以上である必要があります。短い単語は無視されます。
+* 重複する単語は一度だけ追加されます。
+
 
 
 
@@ -147,19 +155,9 @@ screech
 カスタムキーワードを含むファイルを多数作成した場合は、次のコマンドを使用して、すべてのファイルからキーワードを一度に追加できます。
 
  sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s activate
-次の要件に注意してください。
-
-* ファイル名に数字を使用することはできません。
-* 各ファイルには、最大100,000語を含めることができます。単語数が多い場合は、最初の100,000だけが追加されます。
-* 各単語は3文字以上である必要があります。短い単語は無視されます。
-* 重複する単語は一度だけ追加されます。
-
-
 
 
 === 例
-
-貴社の内部製品名は、上記のような種類の製品に基づいています。
 
 すべてのファイルで、内部製品名が記載されている場所を確認するには、次のコマンドを入力します。
 
@@ -173,6 +171,8 @@ screech
 
 image:screenshot_add_keywords_result.png["[調査結果]ペインにカスタムキーワードの結果の例を示すスクリーンショット。"]
 
+ご覧のように、テキストファイルの名前は個人結果パネルで名前として使用されます。このようにして、異なるテキストファイルからキーワードをアクティブ化し、キーワードのタイプごとに結果を表示できます。
+
 
 
 === カスタムキーワードを無効にします
@@ -180,12 +180,12 @@ image:screenshot_add_keywords_result.png["[調査結果]ペインにカスタム
 以前に追加した特定のカスタムキーワードを識別するためにデータセンスが必要ない場合は、コマンドの* deactivate *オプションを使用して、テキストファイルに定義されているキーワードを削除します。
 
  sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f <file_name>.txt
-たとえば、ファイル* internal_product_names *に定義されているキーワードパターンを削除するには、次のようにします。
+たとえば、ファイル* internal_product_names.txt *に定義されているキーワードを削除するには、次のようにします。
 
 [source, cli]
 ----
 [user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f internal_product_names
+[user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f internal_product_names.txt
 ----
  log v1.0 | 2022-08-24 08:16:25,332 | INFO | ds_logger | upload_custom_keywords | 87 | 1 | None | upload_custom_keywords_87 | Deactivated keyword pattern from internal_product_names.txt successfully
 
