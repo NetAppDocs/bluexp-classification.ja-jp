@@ -2250,17 +2250,12 @@
   <block id="f4d44f4e933c52507fc1f60eb487d44a" category="section-title">ログファイルの内容</block>
   <block id="787cbeccb975d71260f61cb0fbe84553" category="paragraph">監査ログの各行には、次の形式で情報が表示されます。</block>
   <block id="727fb114deba541b53a0b54311e03930" category="paragraph">`&lt;full date&gt;|&lt;status&gt;| datasense_audit_logger |&lt;module&gt;| 0 | 0 | File &lt;full file path&gt; deleted from device &lt;device path&gt;-&lt;result&gt;</block>
-  <block id="5e6b85294dad6f04a041aa32199d996d" category="list-text">日付と時刻–イベントの完全なタイムスタンプ</block>
   <block id="79480e26f983c197c4338ae916966c93" category="list-text">Status -情報、警告</block>
   <block id="8c5560001ce7d874ad9b883caee72f9c" category="list-text">アクションタイプ（削除、コピー、移動、ポリシーの作成、ポリシーの更新、 JSONレポートなどをダウンロード可能）</block>
   <block id="eee2e3db044c9200dc614ed87a9c8fde" category="list-text">ファイル名（ファイルに関連するアクションの場合）</block>
-  <block id="b5afb88a144b5f1d8fef11e9d449b1ed" category="list-text">アクションの詳細–何が行われたか：アクションによって異なります</block>
   <block id="cca60f73053d584e7caacfd33a8f046e" category="list-text">ポリシー名</block>
   <block id="3c14ec40364ae096849c696c3497ff60" category="list-text">移動元と移動先のデータ用</block>
   <block id="c02ceb243337f566ebb5a2984a4d72eb" category="list-text">コピー元およびコピー先の場合</block>
-  <block id="9291a80cf17849a4539e082f526f27ad" category="list-text">タグの場合：タグ名</block>
-  <block id="f23528dfcdf994100f2eae046bc926bb" category="list-text">をクリックします</block>
-  <block id="a9092ee7bb29e06d9e8627660b37d08b" category="list-text">Eメールアラートの場合–Eメールアドレス/アカウント</block>
   <block id="e701a25b99aca57280ba389dd0e551c6" category="paragraph">たとえば、ログファイルの次の行は、コピー処理が成功し、コピー処理が失敗した場合を示しています。</block>
   <block id="4892afff6c12a31702739804f9402dd2" category="section-title">ログファイルへのアクセス</block>
   <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">たとえば、 100 個のファイルを削除するなど、多くのファイルで ［ 調査結果 ］ ペインからアクションを実行すると、プロセスに時間がかかることがあります。アクションステータスペインでこれらの非同期アクションのステータスを監視して、すべてのファイルにいつ適用されたかを確認できます。</block>
@@ -2480,7 +2475,6 @@
   <block id="f0957a103fdf829c95e6748bbaec5b4a" category="paragraph"><block ref="f0957a103fdf829c95e6748bbaec5b4a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f1619aa0c5343971dffa315bb9524cc9" category="paragraph">たとえば、*内部製品ID * regexを削除するには、次のようにします。</block>
   <block id="8b4506c76e97dc4cbdfa92467d581a0a" category="section-title">これで、データの中でデータを識別するカスタムパターンを追加できるようになりました</block>
-  <block id="cdb141fc7c1c0fc93208e7dbbad88e03" category="paragraph">カスタム正規表現（regex）を使用して、データ内の特定の情報を識別するためのパーソナルパターンを追加できます。正規表現は、すでにData Senseで使用されている既存の事前定義パターンに追加され、結果は［個人パターン］セクションに表示されます。<block ref="2190fe4edde1bb0ebe7888202a9ce641" category="inline-link-rx"></block>。</block>
   <block id="cdd8fa6a73205d146405999abb5c86ec" category="admonition">Data Senseホスト・システムのIPアドレスは、インストール後は変更できません。</block>
   <block id="766f0d81be7879628bc30bd7367309c3" category="paragraph">このコマンドはパス*/opt/NetApp/Datasense /*から実行します。</block>
   <block id="4767339e389eb1fa075ecdec5d1ec320" category="paragraph">コマンドラインの末尾にある*-f *オプションを使用すると、たとえ過度に広範囲であっても、正規表現を強制的にData senseに追加できます。</block>
@@ -2632,7 +2626,6 @@
   <block id="8beb1a28cedad4a62270cd87cb0fb73f" category="list-text">必要に応じて、BlueXPユーザーに通知メールを送信する場合はチェックボックスをオンにし、メールの送信間隔を選択します。の詳細を確認してください <block ref="aa3b63c453483f75d4311c7c0137128e" category="inline-link-macro-rx"></block>。</block>
   <block id="07a798a9ca59b7a89db396e7fb102645" category="paragraph">Cloud Data Senseは、特定の重要なポリシーが結果を返すときに、BlueXPユーザーに電子メールアラートを送信して、データを保護するための通知を受け取ることができます。E メール通知は、日単位、週単位、または月単位で送信することができます。</block>
   <block id="aa9fdbbe260aeca6e8e9574845857dc1" category="list-text">[ポリシーの編集]ページで、通知メールをBlueXPユーザーに送信する場合にチェックボックスをオンにし、電子メールの送信間隔を選択します(たとえば、[毎週*Week*])。</block>
-  <block id="b767f2b9a2e948e4c282ba767400ea33" category="paragraph">データセンスをクラウドに導入した場合、データセンスインスタンスにSSHで接続できます。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。</block>
   <block id="99a08830cf6f1972806c695ac18e69bc" category="list-text">Azureの場合：BlueXPインスタンス用に作成したユーザを使用します</block>
   <block id="a5b37e45ed042a9bf7c09bfcc25c3211" category="list-text">GCPの場合：BlueXPインスタンス用に作成されたユーザーを使用します</block>
   <block id="23c0e03df230b1dfa0e16b9d275b80ea" category="list-text">BlueXPの左ナビゲーションメニューで、* Governance &gt; Classification *をクリックします。</block>
@@ -2873,7 +2866,6 @@
   <block id="5f78811b5a7bfd9355b114563c862fc9" category="paragraph">これで、複数のディレクトリ（フォルダまたは共有）をただちに再スキャンして、変更がシステムに反映されるようになります。これにより、特定のデータを再スキャンする際に、他のデータよりも優先順位を付けることができます。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
   <block id="feec7c47e3e7cb8ab71bbb29acd13ee0" category="section-title">オンプレミスの「スキャナ」ノードを追加して、特定のデータソースをスキャンする機能</block>
   <block id="c6cc179979c3b50e9f274669a7debb6f" category="paragraph">データ検出機能をオンプレミス環境にインストールしている場合、データソースをスキャンするためにスキャン処理能力を高める必要があるときは、「スキャナ」ノードをさらに追加することができます。マネージャノードをインストールした直後にスキャナノードを追加することも、後でスキャナノードを追加することもできます。たとえば、1つのデータソースのデータ量が1年後に3倍になったことがわかった場合は、データスキャンを支援する新しいスキャナノードを追加できます。</block>
-  <block id="920d0a192fcf42107e363c75e934277b" category="paragraph">必要に応じて、スキャンするデータソースに物理的に近いホストシステムにスキャナノードをインストールできます。スキャナノードがデータに近いほど、データのスキャン時のネットワークレイテンシができるだけ低減されるため、データの読み取り速度が向上します。</block>
   <block id="cbcceb43df0c94c9cc9e38ba4b9389c1" category="paragraph">ファイルまたはディレクトリへのアクセス権を持つすべてのユーザーまたはグループのリスト、およびそれらが持っているアクセス権のタイプを表示するには、*すべてのアクセス権を表示*をクリックします。このボタンは、CIFS共有、SharePoint Online、SharePoint On-Premise、OneDriveのデータに対してのみ使用できます。</block>
   <block id="808cffec2f45e3cd0fe5a90bfcca1530" category="summary">データセンスは、将来のスキャンで特定される「個人データ」のカスタムリストを追加するためのさまざまな方法を提供します。これにより、機密データがすべての組織のファイル内に存在する場所に関する全体像を把握できます。</block>
   <block id="779142c3c6196fad0d5a73d9c046a65d" category="paragraph">データセンスは、将来のスキャンで特定される「個人データ」のカスタムリストを追加するためのさまざまな方法を提供します。これにより、機密データが存在する可能性のある場所に関する全体像を_all_your Organizationsのファイルに表示できます。</block>
@@ -2895,7 +2887,6 @@
   <block id="5279036835630164e29f9d285f1f8ac5" category="list-text">&lt;path-to_The _ssh_key&gt;= SSH認証キーの場所</block>
   <block id="84bcb800c1d5099ce2ac32d1e7b6680f" category="list-text">&lt;machine_user&gt;：</block>
   <block id="7ba7a32a873386de0e3b4747ceb28558" category="list-text">&lt;datasension_IP&gt;=仮想マシンインスタンスのIPアドレス</block>
-  <block id="b53091894711b26877d3fa2f1589b745" category="paragraph">システムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。詳細については、以下を参照してください。</block>
   <block id="60f0453bf0393ab630be6aa37dc20180" category="inline-link">AWSのセキュリティグループのルール</block>
   <block id="f2ad0eeffca4d67e7eb677593c90d5bf" category="list-text"><block ref="f2ad0eeffca4d67e7eb677593c90d5bf" category="inline-link-rx"></block></block>
   <block id="569fe31933e5918613ae1efa70e82d16" category="inline-link">Azureのセキュリティグループルール</block>
@@ -2935,10 +2926,23 @@
   <block id="6e356675279ce269e55ffefd9397769c" category="paragraph">複数のキーワードを含む単一のファイルを作成することも、それぞれに特定のキーワードを含む多数のファイルを追加することもできます。ファイルの形式は1行に1語ずつあります。たとえば、次のような種類のowlsがある内部製品名を入力します。</block>
   <block id="8b78d80928f7b4e5ede92c922915ec73" category="paragraph">ご覧のように、テキストファイルの名前は個人結果パネルで名前として使用されます。このようにして、異なるテキストファイルからキーワードをアクティブ化し、キーワードのタイプごとに結果を表示できます。</block>
   <block id="6d09a2eb7ddd06e7afb4f4e0f4b6f0a8" category="paragraph">たとえば、ファイル* internal_product_names.txt *に定義されているキーワードを削除するには、次のようにします。</block>
-  <block id="855f2bccb1380ed5e79ffd60f06d8209" category="paragraph">監査ログのローテーションは毎日実行されます。</block>
-  <block id="e583d0bb2649633981a5bcb08138c87e" category="paragraph">監査ログは、データセンスマシンの次の場所にあります。<block ref="ffd8f753eb106227f8d629727e8f83b2" prefix=" " category="inline-code"></block></block>
   <block id="162bd73d17dd13a664718503fff639fc" category="paragraph">データセンスをオンプレミスにインストールした場合は、ログファイルに直接移動できます。</block>
   <block id="69aeb258470eedf7afb44d66a993f4d8" category="paragraph">スキャナノードがデータソースに物理的に近いデータソースでスキャンするデータソースがある場合は、スキャナノードまたはスキャナノードのグループを定義して、特定のデータソースまたはデータソースのグループをスキャンできます。次の図では、1つのマネージャーノードと3つのスキャナーノードがあります。</block>
   <block id="4ab1272ad311bec96f677d25b0901105" category="list-text">スキャナノードを「スキャナグループ」に追加する場合は、パラメータ*-r &lt;scanner_group_name&gt;*をコマンドに追加します。それ以外の場合は、スキャナノードが「デフォルト」グループに追加されます。</block>
   <block id="f76b6e3dc68f5a15976b3f64aae23646" category="paragraph">リストに追加されていない作業環境は、「デフォルト」グループによってスキャンされます。「デフォルト」グループには、少なくとも1つのマネージャまたはスキャナノードが必要です。</block>
+  <block id="37861c699e1fb7b716f29da056f3ddc5" category="paragraph">データセンスをクラウドに導入した場合は、データセンスインスタンスにSSH接続する必要があります。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。</block>
+  <block id="9580ea03756206f0f5eba6a03bb42d83" category="paragraph">クラウド上のシステムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。詳細については、以下を参照してください。</block>
+  <block id="5cd360d496831478b3f9cbc92cce8b43" category="list-text">日付と時刻-イベントの完全なタイムスタンプ</block>
+  <block id="01183a42bef9f9a5314d435065cfc49d" category="list-text">アクションの詳細-何が行われたか：アクションによって異なります</block>
+  <block id="8022db3692364177695fce2a133b526b" category="list-text">tag-tag nameを指定します</block>
+  <block id="91f93253b1daa7f572477e6f8dc4f163" category="list-text">をクリックします</block>
+  <block id="00fde4d5ca4e0124dccf8017bb92fc4e" category="list-text">Eメールアラートの場合- Eメールアドレス/アカウント</block>
+  <block id="b5fcd19ce1eac6e10e82176168a38b4d" category="paragraph">監査ログファイルは、データセンスマシンの次の場所にあります。<block ref="737f0a89396f6d78b87820109de683eb" prefix=" " category="inline-code"></block></block>
+  <block id="8cc577dbce4245d15abad6f3b1dfc995" category="paragraph">各ログファイルのサイズは最大で10MBです。この制限に達すると、新しいログファイルが開始されます。ログファイルの名前は「DataSense _ audit.log」、「DataSense _ audit.log.1」、「DataSense _ audit.log.2」などです。最大数の100個のログファイルがシステムの古いログファイルに保持されている場合、最大数に達すると自動的に削除されます。</block>
+  <block id="fbda64f06352e44a4e6523dbdd6b039e" category="paragraph">クラウドのシステムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。詳細については、以下を参照してください。</block>
+  <block id="c490178f4142a4c06caeff7c04e922f8" category="inline-link">スキャナノードをインストールして他のデータソースをスキャンする方法を参照してください</block>
+  <block id="232acd7f039f2650674c20301305634d" category="paragraph">必要に応じて、スキャンするデータソースに物理的に近いホストシステムにスキャナノードをインストールできます。スキャナノードがデータに近いほど、データのスキャン時のネットワークレイテンシができるだけ低減されるため、データの読み取り速度が向上します。<block ref="1527b8cf69e6865de2ec8736eea9f338" category="inline-link-rx"></block>。</block>
+  <block id="095466eeefcbabc811ab5e2a672ee877" category="paragraph">将来のスキャンでデータセンスが識別するカスタムの「個人データ」を追加するには、2つの方法があります。これにより、機密性の高いデータがすべての組織のファイル内に存在する場所に関する全体像を確認できます。</block>
+  <block id="3fb1605dea41a1022e020f895acc727f" category="list-text">正規表現（regex）を使用してパーソナルパターンを追加できます。</block>
+  <block id="a7110ffc746d511f3031ce3693e9c099" category="paragraph">これらのキーワードとパターンは、データ検出ですでに使用されている既存の定義済みパターンに追加され、結果は[個人パターン]セクションに表示されます。<block ref="ba4b576d22723dd9b7b37b67a884a8d7" category="inline-link-rx"></block>。</block>
 </blocks>

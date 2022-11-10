@@ -119,7 +119,7 @@ screech
 
 データセンスをオンプレミスにインストールした場合は、コマンドラインに直接アクセスできます。
 
-データセンスをクラウドに導入した場合、データセンスインスタンスにSSHで接続できます。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。
+データセンスをクラウドに導入した場合は、データセンスインスタンスにSSH接続する必要があります。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。
 
  ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
 * <path-to_The _ssh_key>= SSH認証キーの場所
@@ -133,7 +133,7 @@ screech
 * <datasension_IP>=仮想マシンインスタンスのIPアドレス
 
 
-システムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。詳細については、以下を参照してください。
+クラウド上のシステムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。詳細については、以下を参照してください。
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWSのセキュリティグループのルール"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azureのセキュリティグループルール"^]
