@@ -40,7 +40,7 @@ summary: クラウドデータセンスをクラウドに導入するには、�
 インストールウィザードを起動して、クラウドに Cloud Data Sense インスタンスを導入します。
 
 [role="quick-margin-para"]
-Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは無料です。そのあともデータのスキャンを続行するには、クラウドプロバイダ Marketplace での Cloud Manager のサブスクリプション、または NetApp からの BYOL ライセンスが必要です。
+Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは無料です。その時点以降もデータのスキャンを続行するには、クラウドプロバイダMarketplaceまたはネットアップのBYOLライセンスを通じてBlueXPサブスクリプションが必要です。
 
 
 

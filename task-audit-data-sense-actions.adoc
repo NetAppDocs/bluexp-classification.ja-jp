@@ -24,11 +24,11 @@ summary: データセンスは、データをスキャンするすべての作�
 
 監査ログの各行には、次の形式で情報が表示されます。
 
-`<full date>|<status>| datasense_audit_logger |<module>| 0 | 0 | File <full file path> deleted from device <device path>-<result>
+`<full date> | <status> | ds_audit_logger | <module> | 0 | 0 | File <full file path> deleted from device <device path> - <result>`
 
 * 日付と時刻-イベントの完全なタイムスタンプ
 * Status -情報、警告
-* アクションタイプ（削除、コピー、移動、ポリシーの作成、ポリシーの更新、 JSONレポートなどをダウンロード可能）
+* アクションタイプ（削除、コピー、移動、ポリシーの作成、ポリシーの更新、 ファイルの再スキャン、JSONレポートのダウンロードなど）
 * ファイル名（ファイルに関連するアクションの場合）
 * アクションの詳細-何が行われたか：アクションによって異なります
 +
@@ -45,8 +45,8 @@ summary: データセンスは、データをスキャンするすべての作�
 たとえば、ログファイルの次の行は、コピー処理が成功し、コピー処理が失敗した場合を示しています。
 
 ....
-2022-06-06 15:23:08,910 | INFO | datasense_audit_logger | es_scanned_file | 237 | 49 | Copy file /CIFS_share/data/dop1/random_positives.tsv from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - SUCCESS
-2022-06-06 15:23:08,968 | WARNING | datasense_audit_logger | es_scanned_file | 239 | 153 | Copy file /CIFS_share/data/compliance-netapp.tar.gz from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - FAILURE
+2022-06-06 15:23:08,910 | INFO | ds_audit_logger | es_scanned_file | 237 | 49 | Copy file /CIFS_share/data/dop1/random_positives.tsv from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - SUCCESS
+2022-06-06 15:23:08,968 | WARNING | ds_audit_logger | es_scanned_file | 239 | 153 | Copy file /CIFS_share/data/compliance-netapp.tar.gz from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - FAILURE
 ....
 
 

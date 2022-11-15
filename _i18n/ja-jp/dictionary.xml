@@ -147,7 +147,6 @@
   <block id="7b895b198aba9634ffec5e0ec9a3aff4" category="section-title">ネットワークの概要</block>
   <block id="6134fb19f2424f157bd88b36e40dcf10" category="paragraph">アウトバウンドルールは完全にオープンです。データセンスソフトウェアをインストールしてアップグレードし、使用率指標を送信するには、インターネットアクセスが必要です。</block>
   <block id="12d39974306420354fffe75c7f15e621" category="inline-link-macro">Cloud Data が接触するエンドポイントについて説明します</block>
-  <block id="56de08dfb4f78c8968cdc6b05d0014af" category="paragraph">ネットワーク要件が厳しい場合は、 <block ref="34785efa2a38488608f222d4a2795abf" category="inline-link-macro-rx"></block>。</block>
   <block id="d359ba9662c22ff5e27bf861300c6bbf" category="section-title">コンプライアンス情報へのユーザアクセス</block>
   <block id="7e576e4144e56e656ad24bb096e2e6fe" category="list-text">* アカウント管理者 * は、コンプライアンス設定を管理し、すべての作業環境のコンプライアンス情報を表示できます。</block>
   <block id="e84e463a5d50d51ba24671ea703ccd3a" category="list-text">コンプライアンスビューア * の役割を持つユーザーは、アクセス権を持つシステムのコンプライアンス情報を表示し、レポートを生成することのみができます。これらのユーザは、ボリューム、バケット、またはデータベーススキーマのスキャンを有効または無効にすることはできません。これらのユーザーは、ファイルのコピー、移動、または削除もできません。</block>
@@ -203,7 +202,6 @@
   <block id="9fadb22715a72b9017d3b43a7b3177e2" category="paragraph"><block ref="9fadb22715a72b9017d3b43a7b3177e2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0ed0a0ad5aadf8f8ef3ea382b8f4a106" category="doc">クラウドデータセンスのライセンスをセットアップする</block>
   <block id="80186f1230af2267e2c2e4d2ab8c030e" category="paragraph">さらに読む前に、いくつかのメモを記入してください。</block>
-  <block id="67dc5872edad6cc97bdb69ec8f4447f2" category="list-text">クラウドプロバイダのマーケットプレイスで Cloud Manager の従量課金制（ PAYGO ）サブスクリプションにすでに登録している場合は、 Cloud Data Sense も自動的にサブスクライブされます。再度登録する必要はありません。</block>
   <block id="e2efd47bd42c53cc1253f29754c3836a" category="list-text">Cloud Data Sense Bring Your Own License （ BYOL ；お客様所有のライセンス）は、スキャンを計画しているワークスペース内のすべての作業環境およびデータソースで使用できるフローティングライセンスです。Digital Wallet にアクティブなサブスクリプションが表示されます。</block>
   <block id="4bc0671413757c3b06269c6869b1c24d" category="inline-link-macro">Cloud Data Sense に関連するライセンスとコストの詳細については、こちらをご覧ください</block>
   <block id="dcba253c1898878efeea1f106871ba52" category="paragraph"><block ref="32c4fb91a406f3c38311c8b665707774" category="inline-link-macro-rx"></block>。</block>
@@ -215,7 +213,6 @@
   <block id="b2f44b30cb7b59e6531b838d2b079d16" category="paragraph">これらの手順は、 _Account Admin_role 権限を持つユーザが実行する必要があります。</block>
   <block id="bea1f499527daa402d9417b6befca37e" category="list-text">AWS インスタンスプロファイル、 Azure Managed Service Identity 、 Google Project のクレデンシャルを検索します。</block>
   <block id="8071861b8e3a5d88d5457ddd1596427a" category="paragraph">サブスクリプションは、インスタンスプロファイル、マネージドサービス ID 、または Google プロジェクトに追加する必要があります。充電ができない。</block>
-  <block id="c5a48d7441653b12c714ba7f9509be09" category="paragraph">すでにサブスクリプション（ AWS の場合は以下を参照）をお持ちの場合、設定はすべて済みです。他に必要な機能はありません。</block>
   <block id="62e5878faab04822cdc1e0afde654b25" category="inline-image-macro">アクティブなサブスクリプションを持つインスタンスプロファイルを示す資格情報ページのスクリーンショット。</block>
   <block id="960eb5524321a41f4a846cf6d41aa4ba" category="paragraph"><block ref="960eb5524321a41f4a846cf6d41aa4ba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a1127f6d49115a82bf6a8108eed8e2e9" category="list-text">まだサブスクリプションをお持ちでない場合は、資格情報の上にカーソルを置いてアクションメニューをクリックし、 * サブスクリプションの関連付け * をクリックします。</block>
@@ -591,7 +588,6 @@
   <block id="4932ec0144d6d1640460f5cfee326e0f" category="inline-link-macro">Cloud Manager の GCP Marketplace サブスクリプション</block>
   <block id="c066aa13effff0bea79252a20699074b" category="paragraph">たとえば、 50 個のファイルを削除するなど、多くのファイルで [ 調査結果 ] ペインからアクションを実行する場合、プロセスには時間がかかることがあります。これらの非同期アクションのステータスを監視できるようになり、すべてのファイルにいつ適用されたかを確認できます。</block>
   <block id="7fc4a6242ce76e0415a989d1dbc8b9d4" category="inline-link-macro">継続的なコンプライアンスアクションのステータスを表示する方法をご確認ください</block>
-  <block id="0a8b229d21efe889c341133fa43bc3f7" category="paragraph"><block ref="b64e3c30f28dd83a2184563dc44ee1de" category="inline-link-macro-rx"></block>。</block>
   <block id="6241446e1383ab0c8cc0cebdfbb90484" category="inline-link-macro">スキャンで検出されたすべての個人データタイプのリストを表示します</block>
   <block id="2164b22cc8c41bee72c53771bd025c07" category="paragraph">データセンスは、個人データの種類「 British Passport 」と「 National Health Service （ NHS ） Number 」をファイルで見つけることができるようになりました。 <block ref="ce74ef267e6a0fa015475f7a67f6924a" category="inline-link-macro-rx"></block>。</block>
   <block id="9a67fa9362671e5cfd7881e63183490e" category="paragraph">[ データ調査 ] ページでデータをフィルタリングするときに、 [ 作業環境タイプ ] の新しいフィルタが追加されました。これにより、 Cloud Volumes ONTAP システムの結果、 ONTAP システムの FSX 、オンプレミスの ONTAP システムなどをフィルタリングできます。</block>
@@ -630,21 +626,7 @@
   <block id="cf3f2cc15d62c716232f57e1283f8347" category="inline-link-macro">これらの制限事項を最初に確認してください</block>
   <block id="60ee57016f16f38febc0431619eaa4bb" category="paragraph">スキャン要件が小さいユーザの中には、より小さいクラウドデータセンスインスタンスを使用できるようにする必要のあるユーザもいます。できるようになりました。これらの小規模なインスタンスを使用する場合は、いくつかの制限事項があります <block ref="2721bef887c25ebcb5745416e289e70e" category="inline-link-macro-rx"></block>。</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link-macro">方法を参照してください</block>
-  <block id="5eea29ff6cc3dad991a8789d591533a9" category="paragraph">データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響が非常に小さい場合でも、「低速」スキャンを実行するように Data Sense を設定できます。 <block ref="be5ca65137ce848c8d09c371939d6748" category="inline-link-macro-rx"></block>。</block>
   <block id="34549c51a038d2c00ade5270b233fb1c" category="paragraph">[ ファイルの詳細 ] ページとレポートに [ 最終アクセス日時 ] の値が追加され、 CSV 形式で出力されます。これにより、ユーザーがファイルに最後にアクセスしたときを確認できます。</block>
-  <block id="945fb8f32f58d1cc36cb9f1e9e4c6fe5" category="section-title">2021 年 6 月 7 日</block>
-  <block id="6561d0dbae2df54bbe8349c518489172" category="section-title">Cloud Compliance の名前が「 Cloud Data Sense 」に変更されました。</block>
-  <block id="d3c761a2e0f04b6d5a3de0a1d64ba674" category="paragraph">Cloud Compliance の名称は、今回のリリースから「 Cloud Data Sense * 」に変更されました。製品に含まれている新しいガバナンスやその他の機能を活用することで、コンプライアンスの名称は機能の完全なセットを促進するものではありませんでした。</block>
-  <block id="b1c097baa7655613db39bdfee4aa9834" category="paragraph">ガバナンスダッシュボードから新しい _ フルデータマッピング _ レポートを使用して、企業のデータソースに保存されているデータの概要を表示し、移行、バックアップ、セキュリティ、コンプライアンスの各プロセスの決定を支援します。</block>
-  <block id="e4769dc6302d1988b2db369ee09d08df" category="inline-link-macro">ここに移動します</block>
-  <block id="e49617bb2d098bc9411a20ab9cc7800e" category="paragraph">このレポートには、すべての作業環境とデータソースをまとめた概要ページが表示され、それぞれの作業環境の内訳が表示されます。 <block ref="69c5d3a80c29cb6ecc9dff8619a99bf7" category="inline-link-macro-rx"></block> 詳細：</block>
-  <block id="7a75a1cb539ce717ffb70a6f45b1183c" category="inline-link-macro">すべての重複ファイルを表示する方法を参照してください</block>
-  <block id="49088960be4d8db4c1a11ba7678fee3f" category="paragraph">Data Investigation ページの新しいフィルタを使用すると、ストレージシステム間で複製されているすべてのファイルのリストを表示できます。これは、ストレージスペースを節約できる領域を特定したり、特定の権限または機密情報を持つファイルを特定したりするのに役立ちます。これらのファイルには、ストレージ間で複製しない領域が含まれます。 <block ref="9b932b7183a8b1eae080a32497be2440" category="inline-link-macro-rx"></block>。</block>
-  <block id="3bef072dfa864da4aa8559c03c7d0ca8" category="inline-link-macro">ファイルにタグを適用して表示する方法を参照してください</block>
-  <block id="cf5c65a6d69d1529a0f0cd6dd86b5edb" category="paragraph">データセンスがスキャンしているファイルにカスタムタグを追加できます。AIP ラベルが追加されるのと同じ方法で、タグがファイルに追加されません。タグは Cloud Manager ユーザに表示されるばかりなので、ファイルを削除する必要があるかどうか、何らかの理由で確認する必要があるかどうかを指定できます。 <block ref="7a35795d2be1b40763c1be0abb286f6d" category="inline-link-macro-rx"></block>。</block>
-  <block id="6e30bf5f27ef24f35407940f36e6664a" category="paragraph">[ 調査 ] ページの新しいフィルタを使用すると、タグが割り当てられているすべてのファイルを簡単に表示できます。</block>
-  <block id="34872f144eacfe5c837131480f6e243a" category="paragraph">クラウドデータセンスは、 .dcm と .dicom の 2 種類の追加ファイルで個人識別情報（ PII ）をスキャンできます。</block>
-  <block id="fc15edce938be94b7835bbbb16d686b4" category="paragraph">CSV 形式で出力するレポートには、 [ ファイルサイズ ] 、 [ 作成日 ] 、および [ 最終変更日 ] の値が追加されています。作成日は、調査ページの検索結果を絞り込むために使用できる新しいフィルタでもあります。</block>
   <block id="74585f658544c691c6f6afb583a9dc61" category="inline-link-macro">S3 プロトコルを使用するオブジェクトストレージをスキャンしています</block>
   <block id="6988ee4ea30eb643c68d53327c6b1220" category="inline-link">MinIO サービス</block>
   <block id="93f515959ce6187b986c42fa6959168b" category="doc">プライベートデータのカテゴリ</block>
@@ -1948,7 +1930,6 @@
   <block id="be27a8dc9dfba1897217ecee5823bd4e" category="list-text">健常性情報がファイルにどのように分散されているかを確認できます。 <block ref="1ce675538fc85bf3b1ef6fa4ab26346c" category="inline-link-macro-rx"></block>。</block>
   <block id="e6d68873555c37c43798e1e7f7b8513e" category="list-text">必要に応じて、このチェックボックスをオンにすると、ポリシーのパラメータに一致するファイルが自動的に削除されます。の詳細を確認してください <block ref="30e6ed97d290e57f0e75d9e6322eb503" category="inline-link-macro-rx"></block>。</block>
   <block id="58293f799492274c3df075305508ade4" category="paragraph">データがスキャンしているソースファイルを、サポートされていない非構造化データソースから特定のターゲットの場所にあるディレクトリにコピーできます <block ref="ebb58758e77d05976efcc1ccd5134262" category="inline-link-rx"></block>）。最初のコピー後、ファイル内で変更されたデータは、設定したスケジュールに基づいて同期されます。</block>
-  <block id="77129c83b2501b2eb47ff0a1fa67f801" category="list-text">Cloud Sync サービスをアクティブ化し、少なくとも 1 つのデータブローカーを構成して、ソースシステムとターゲットシステム間でファイルを転送できるようにする必要があります。から、 Cloud Sync の要件を確認します <block ref="b962387ad67b92b5132f148579512908" category="inline-link-macro-rx"></block>。</block>
   <block id="82ad1ea6a2070297147f61890ad6c8ae" category="list-text">ターゲットシステムを選択し、使用するデータブローカーを選択（または作成）する必要があります。から、 Cloud Sync の要件を確認します <block ref="5abefb1df304535da49e476c753377a4" category="inline-link-macro-rx"></block>。</block>
   <block id="1512503c318779a183367c2326a24f21" category="list-text">オンプレミスコネクタソフトウェアが最新バージョンにアップグレードされていることを確認します。<block ref="ce22b55d293a0e07097135e6515924b6" category="inline-link-rx"></block>。</block>
   <block id="f49cd49d999d1390260fa896a1a3ceec" category="paragraph">をクリックします <block ref="4860dd37562d5a245a69a17be60d42e2" category="inline-link-macro-rx"></block> ポリシーの詳細については、を参照してください。</block>
@@ -1994,11 +1975,6 @@
   <block id="bddd2179a36dc08b8bb7be3660c8fed4" category="section-title">より小さいクラウドデータセンスインスタンスを使用できます</block>
   <block id="a37544bc609cd0b6c2d725d27d13ab21" category="section-title">低速スキャンを実行する機能</block>
   <block id="f1c9a9425a145e1b1614fa251d393989" category="section-title">データセンスは、ファイルが最後にアクセスされた時刻を追跡します</block>
-  <block id="763a569da43c025c1d54060a2ef2efbe" category="section-title">新しい「フルデータマッピング」レポートは、 Governance Dashboard から入手できます</block>
-  <block id="08684668c10e9c17789be7934ef88e51" category="section-title">重複しているすべてのファイルを表示するには、 ［ 調査 ］ ページの新しいフィルタを使用します</block>
-  <block id="8152326061d8b3d329ba2607a09b0fa1" category="section-title">データセンスは、組織のファイルにカスタムタグを追加できます</block>
-  <block id="c832a419d50a23d5a24e8b88cb7b1f44" category="section-title">.dcm および .dicom ファイルのスキャン機能</block>
-  <block id="831cb0c03277fa9f02db351f7b681988" category="section-title">データセンスは、ファイルの追加属性を追跡するようになりました</block>
   <block id="5d7ec019a090d19805ff8b8708516943" category="paragraph">データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。データセンスは、他のアプリケーションと共有されるホストではサポートされません。ホストは専用のホストである必要があります。</block>
   <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">/tmp 上で 5 GiB</block>
   <block id="7d3786abf2ebb473a5ba70b680734525" category="section-title">BYOL ライセンスに関する考慮事項</block>
@@ -2083,7 +2059,6 @@
   <block id="e6955249e6953613536ae08a88475a81" category="paragraph">フルスキャンの後にデータに適用できるデータ検出機能が多数あります。たとえば、[データ調査]ページでのデータの表示とリファイン、ファイル内での名前の検索、ソースファイルのコピー、移動、削除などです。</block>
   <block id="1a068d00fba0764fe495dfcb9428ba33" category="section-title">ライセンスとコスト</block>
   <block id="efd4a405d0fc94dd44dd46314145b533" category="paragraph">Cloud Data Senseを使用するためのライセンスとコストに関する質問を次に示します。</block>
-  <block id="d28d4f6cb9334067ba763d5205ef3408" category="list-text">クラウドプロバイダまたはからCloud Manager Marketplaceに登録するためのサブスクリプション</block>
   <block id="4aaa082eb5a6a6d38594fed7ac9dfc5c" category="list-text">ネットアップが提供するお客様所有のライセンス（BYOL）</block>
   <block id="d593d438e7fbece83184e3d6d94b77d8" category="paragraph">を参照してください<block ref="6bbe1a830896033f3d42bc42c545c572" category="inline-link-rx"></block> を参照してください。</block>
   <block id="df633ebdc2836fc65b2b5c8df3071fad" category="section-title">BYOLの容量制限に達した場合はどうなりますか？</block>
@@ -2208,7 +2183,6 @@
   <block id="a630192bda7a95f4930b54f41701fc66" category="section-title">これで、作成した既存のポリシーを編集できるようになります</block>
   <block id="61e409921fe798c5667689af4656a112" category="inline-link">ポリシーの編集方法については、を参照してください</block>
   <block id="dccade93a4eb5827c9c662378d30957d" category="paragraph">以前に作成したカスタムポリシーに変更を加える必要がある場合は、新しいポリシーを作成する代わりにポリシーを編集できるようになりました。<block ref="9b2d4d6793839e9e21c2eaa1cfc45637" category="inline-link-rx"></block>。</block>
-  <block id="1f50cc006f0a9aa5fa08f3f58b10bf1d" category="paragraph">インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンできるようになりました。 <block ref="8c0c83431a0c54e3e158fb0a6b366a6d" category="inline-link-macro-rx"></block></block>
   <block id="fbbd4044d95d7d79fb98ebd8d7daf546" category="summary">必要に応じて、1つ以上の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、Google Driveアカウント、 またはSharePointアカウント。</block>
   <block id="a80767bb4322f81d8b7bd0b15673f6ab" category="summary">Data Senseソフトウェアをアンインストールして、問題のトラブルシューティングを行ったり、ソフトウェアをホストから完全に削除したりできます。インスタンスを削除すると、インデックス付きデータが存在する関連ディスクも削除されます。データセンスがスキャンされたすべての情報は完全に削除されます。</block>
   <block id="9cd2794f7afcdacb42a1ab6334e60324" category="doc">Cloud Data Senseをアンインストールしています</block>
@@ -2249,9 +2223,7 @@
   <block id="f8563669b8d53fea23814d12a98674cd" category="paragraph">たとえば、発行された要求、要求の時刻、ファイルが削除された場合のソースの場所、ファイルが移動された場合のソースとデスティネーションの場所などの詳細を確認できます。</block>
   <block id="f4d44f4e933c52507fc1f60eb487d44a" category="section-title">ログファイルの内容</block>
   <block id="787cbeccb975d71260f61cb0fbe84553" category="paragraph">監査ログの各行には、次の形式で情報が表示されます。</block>
-  <block id="727fb114deba541b53a0b54311e03930" category="paragraph">`&lt;full date&gt;|&lt;status&gt;| datasense_audit_logger |&lt;module&gt;| 0 | 0 | File &lt;full file path&gt; deleted from device &lt;device path&gt;-&lt;result&gt;</block>
   <block id="79480e26f983c197c4338ae916966c93" category="list-text">Status -情報、警告</block>
-  <block id="8c5560001ce7d874ad9b883caee72f9c" category="list-text">アクションタイプ（削除、コピー、移動、ポリシーの作成、ポリシーの更新、 JSONレポートなどをダウンロード可能）</block>
   <block id="eee2e3db044c9200dc614ed87a9c8fde" category="list-text">ファイル名（ファイルに関連するアクションの場合）</block>
   <block id="cca60f73053d584e7caacfd33a8f046e" category="list-text">ポリシー名</block>
   <block id="3c14ec40364ae096849c696c3497ff60" category="list-text">移動元と移動先のデータ用</block>
@@ -2268,7 +2240,6 @@
   <block id="0b0eacf696b45d65c53ff1b5473edb39" category="paragraph"><block ref="0b0eacf696b45d65c53ff1b5473edb39" category="inline-image-macro-rx" type="image"></block></block>
   <block id="baa6537e5347accba4142c762df4cdf0" category="paragraph">JSONレポートを選択するときは、レポートをダウンロードするNFS共有の名前を「&lt;host_name&gt;：/&lt;share_path&gt;`」の形式で入力します。</block>
   <block id="c7fa83e1836cada62d287dfbba3779c2" category="paragraph">レポートをダウンロード中であることを示すメッセージがダイアログに表示されます。</block>
-  <block id="2bbb59657134248b81caacac241c5f02" category="paragraph">JSONレポートの生成の進捗状況は、で確認できます <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
   <block id="8cb8a6e0c4d4366f74cd4f0b6f61a0f6" category="paragraph">非構造化ディレクトリデータレポート*には、フォルダおよびファイル共有に関する次の情報が含まれています。</block>
   <block id="76cbd87b5322b897c255d541785ad658" category="list-text">ストレージリポジトリ（フォルダ、ファイル共有など）</block>
   <block id="45fe1c24aae6844389ce04f26df40a13" category="list-text">ファイルパス（ディレクトリ名）</block>
@@ -2371,7 +2342,6 @@
   <block id="69c5667893c99e5a388e892cc9784e66" category="paragraph"><block ref="69c5667893c99e5a388e892cc9784e66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecc7450cf52e0d0d89139603b07ea706" category="paragraph">_Scan Status_columnのグラフにカーソルを合わせると、各リポジトリ（この例ではbucket）でマッピングまたは分類されたファイルの数を確認できます。</block>
   <block id="1a8f03950c641e2ffffb33146f70ef55" category="admonition">データベースをマッピング専用スキャンに設定することはできません。データベーススキャンはオフまたはオンにできます。ここで、OnはMap &amp; Classifyと同じです。</block>
-  <block id="9db1ab99c3f7640c000fdc19054af26c" category="list-text">オペレーティングシステム：Red Hat Enterprise LinuxまたはCentOSバージョン8.0~8.4</block>
   <block id="ce12cca419124f32a01c6fec5a3be62f" category="list-text">バージョン7.8または7.9を使用できますが、Linuxカーネルバージョンは4.0以降である必要があります</block>
   <block id="9308bcab83008e639f95b088d89b11c4" category="cell">オーストラリア運転免許証</block>
   <block id="1ce92447664cc42f3e2c04aaf8570862" category="cell">ニュージーランド銀行口座</block>
@@ -2698,7 +2668,6 @@
   <block id="b857453947413e0fa339869d22d4c786" category="paragraph"><block ref="0f3b3f14a152082b591c2061f55976b1" category="inline-link-rx"></block>。</block>
   <block id="79212600af75dc48b9f7e59a9927a88e" category="list-text">BlueXPの左ナビゲーションメニューで、* Governance &gt; Classification *をクリックし、* Configuration *タブを選択します。</block>
   <block id="623d17b9d36b70bf9a4a775a9d346f58" category="admonition">Azure NetApp Files の場合、Cloud Data Senseは、BlueXPと同じ領域にあるボリュームのみをスキャンできます。</block>
-  <block id="4479e460b4d47f38dc9336cba866cce4" category="paragraph">Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは無料です。そのあともデータのスキャンを続行するには、クラウドプロバイダ Marketplace での Cloud Manager のサブスクリプション、または NetApp からの BYOL ライセンスが必要です。</block>
   <block id="16f6b76e35946d0224b05a1466e556f0" category="inline-link">BlueXPの機能にはコネクタが必要です</block>
   <block id="b4af24a1096b735934691c65956c7d7a" category="paragraph">コネクタがない場合は、クラウドプロバイダでコネクタを作成します。を参照してください<block ref="e291ebc6db7a8ec08d333384efa4743e" category="inline-link-rx"></block> または<block ref="3f9648a8e8f665af7b23c050702c5c95" category="inline-link-rx"></block>または<block ref="2559e3f18112d727f751d3574900096c" category="inline-link-rx"></block>。ほとんどの場合、 Cloud Data Sense を有効にする前にコネクタをセットアップしておくことができます<block ref="d18edc1f87b2c25c3b9a75b33d4a162f" category="inline-link-rx"></block>ただし、ここで設定する必要がある場合もあります。</block>
   <block id="7d0e3dd93f2549f8ce0be2f0454b12b2" category="cell">BlueXP Webサイトとの通信により、ユーザ認証を一元化。</block>
@@ -2859,13 +2828,11 @@
   <block id="b77072323352dd1724df6d20002eb9f2" category="list-text">次のスクリプトを実行して、このマッピング情報をすべてのスキャナノードに登録します。<block ref="f484d7848213083a72fafef02f452b57" prefix=" " category="inline-code"></block></block>
   <block id="a147b656a2355ffcebd357dcfbb4b53f" category="paragraph">データセンスは、ManagerノードとScannerノードで設定され、すべてのデータソースをスキャンします。</block>
   <block id="1d4c3c5a59e200a8cf6bd280a00b8b39" category="paragraph">設定ページで、スキャンするデータソースを選択できます（まだ選択していない場合）。スキャナグループを作成した場合は、各データソースがそれぞれのグループのスキャナノードによってスキャンされます。</block>
-  <block id="0fd7cab37419c3f9fdd225020324c7dc" category="section-title">2022年11月7日（バージョン1.17）</block>
   <block id="0198cdca4033ab7a459e75dac29fa28e" category="section-title">オンプレミスのSharePointアカウントのスキャンがサポートされます</block>
   <block id="576988db8c435aebbdd8f982f33f8ac5" category="paragraph">データセンスで、SharePoint OnlineアカウントとSharePointオンプレミスアカウント(SharePoint Server)の両方をスキャンできるようになりました。SharePointを自分のサーバー、またはインターネットにアクセスできないサイトにインストールする必要がある場合は、これらのアカウントのユーザーファイルをデータ検出でスキャンできるようになりました。<block ref="8036d15ae032ce99e20eb0ee5791bf65" category="inline-link-rx"></block>。</block>
   <block id="9793f1d7484adebeb64fb621258edfaf" category="section-title">複数のディレクトリ（フォルダまたは共有）を再スキャンする機能</block>
   <block id="5f78811b5a7bfd9355b114563c862fc9" category="paragraph">これで、複数のディレクトリ（フォルダまたは共有）をただちに再スキャンして、変更がシステムに反映されるようになります。これにより、特定のデータを再スキャンする際に、他のデータよりも優先順位を付けることができます。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
   <block id="feec7c47e3e7cb8ab71bbb29acd13ee0" category="section-title">オンプレミスの「スキャナ」ノードを追加して、特定のデータソースをスキャンする機能</block>
-  <block id="c6cc179979c3b50e9f274669a7debb6f" category="paragraph">データ検出機能をオンプレミス環境にインストールしている場合、データソースをスキャンするためにスキャン処理能力を高める必要があるときは、「スキャナ」ノードをさらに追加することができます。マネージャノードをインストールした直後にスキャナノードを追加することも、後でスキャナノードを追加することもできます。たとえば、1つのデータソースのデータ量が1年後に3倍になったことがわかった場合は、データスキャンを支援する新しいスキャナノードを追加できます。</block>
   <block id="cbcceb43df0c94c9cc9e38ba4b9389c1" category="paragraph">ファイルまたはディレクトリへのアクセス権を持つすべてのユーザーまたはグループのリスト、およびそれらが持っているアクセス権のタイプを表示するには、*すべてのアクセス権を表示*をクリックします。このボタンは、CIFS共有、SharePoint Online、SharePoint On-Premise、OneDriveのデータに対してのみ使用できます。</block>
   <block id="808cffec2f45e3cd0fe5a90bfcca1530" category="summary">データセンスは、将来のスキャンで特定される「個人データ」のカスタムリストを追加するためのさまざまな方法を提供します。これにより、機密データがすべての組織のファイル内に存在する場所に関する全体像を把握できます。</block>
   <block id="779142c3c6196fad0d5a73d9c046a65d" category="paragraph">データセンスは、将来のスキャンで特定される「個人データ」のカスタムリストを追加するためのさまざまな方法を提供します。これにより、機密データが存在する可能性のある場所に関する全体像を_all_your Organizationsのファイルに表示できます。</block>
@@ -2945,4 +2912,24 @@
   <block id="095466eeefcbabc811ab5e2a672ee877" category="paragraph">将来のスキャンでデータセンスが識別するカスタムの「個人データ」を追加するには、2つの方法があります。これにより、機密性の高いデータがすべての組織のファイル内に存在する場所に関する全体像を確認できます。</block>
   <block id="3fb1605dea41a1022e020f895acc727f" category="list-text">正規表現（regex）を使用してパーソナルパターンを追加できます。</block>
   <block id="a7110ffc746d511f3031ce3693e9c099" category="paragraph">これらのキーワードとパターンは、データ検出ですでに使用されている既存の定義済みパターンに追加され、結果は[個人パターン]セクションに表示されます。<block ref="ba4b576d22723dd9b7b37b67a884a8d7" category="inline-link-rx"></block>。</block>
+  <block id="415d8b1f8ef7e8bc1bca29c92bbffb9b" category="list-text">オペレーティングシステム：Red Hat Enterprise LinuxまたはCentOSのバージョン8.0~8.6</block>
+  <block id="3c73fb515a637be4a1083e3e061099f9" category="paragraph">インストールを正常に完了するには、インストーラによって事前チェックが実行され、システムとネットワークの要件が満たされていることが確認されます。</block>
+  <block id="0cf39354f7edfa15dd84075131e27804" category="list-text">クラウドプロバイダからのBlueXP Marketplaceへのサブスクリプション、または</block>
+  <block id="10d127f1d0ce294ce4f4f8e7ebf6106b" category="paragraph">ネットワーク要件が厳しい場合は、 <block ref="8ee644766673e1cde7b0c260d7a4e2e0" category="inline-link-macro-rx"></block>。</block>
+  <block id="21315205ba34163a83853c5526e534c1" category="list-text">一度に最大1、000個のアイテムを再スキャンできます。</block>
+  <block id="8ec215ce3c88ae58412a2c9d13f5d15b" category="paragraph">Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは無料です。その時点以降もデータのスキャンを続行するには、クラウドプロバイダMarketplaceまたはネットアップのBYOLライセンスを通じてBlueXPサブスクリプションが必要です。</block>
+  <block id="a8c256c3bc4f2ab999fee3056f7bebab" category="paragraph"><block ref="5d86a8971ca34d1c831cc0be7e11109d" prefix="" category="inline-code"></block></block>
+  <block id="79bd49250e598bf53655f50c83b04044" category="list-text">アクションタイプ（削除、コピー、移動、ポリシーの作成、ポリシーの更新、 ファイルの再スキャン、JSONレポートのダウンロードなど）</block>
+  <block id="9d282ec5c19d83f47fc9504e4ff50325" category="list-text">クラウドプロバイダの市場でBlueXPの従量課金制（PAYGO）サブスクリプションにすでに登録している場合は、Cloud Data Senseにも自動的に登録されます。再度登録する必要はありません。</block>
+  <block id="f6d56db241e1b67ea15f2bcfc6d58cee" category="paragraph">BlueXPサブスクリプションをすでにお持ちの場合(AWSの場合は以下を参照)、設定はすべて済みです。必要な操作は他にありません。</block>
+  <block id="8a19b447bcd4da037940f31306b703f2" category="list-text">Cloud Sync サービスをアクティブ化し、少なくとも 1 つのデータブローカーを構成して、ソースシステムとターゲットシステム間でファイルを転送できるようにする必要があります。から、 Cloud Sync の要件を確認します<block ref="e51d588768ce18b65058ca75b02bbb45" category="inline-link-rx"></block>。</block>
+  <block id="24a56762deabf31ff2c2a9b817d1ffbe" category="paragraph">JSONレポートの生成の進捗状況は、で確認できます <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
+  <block id="0527c3c624cc9c38c92e3f9b20bd744d" category="list-text">インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、インストーラに必要なパラメータをコマンドライン引数として指定することができます。</block>
+  <block id="bd975c5b95d2c7b6d2e124201b98445c" category="section-title">2022年11月13日（バージョン1.17）</block>
+  <block id="5e5b753fd04f1adde694471a50221a49" category="paragraph">データセンスをオンプレミス環境にインストールしている場合、特定のデータソースをスキャンするためにスキャン処理能力がさらに必要になることがわかったときは、「スキャナ」ノードを追加して、それらのデータソースをスキャンするように割り当てることができます。マネージャノードをインストールした直後にスキャナノードを追加することも、後でスキャナノードを追加することもできます。</block>
+  <block id="b76fbb180664dd4ccd169f21a4abcfa6" category="section-title">オンプレミスのインストーラが、インストールを開始する前に事前チェックを実行できるようになりました</block>
+  <block id="8ac32533918ec230d2ec5bb2821a3378" category="paragraph">LinuxシステムにData Senseをインストールする場合、実際のインストールを開始する前に、システムが必要な要件（CPU、RAM、容量、ネットワークなど）をすべて満たしているかどうかを確認します。これにより、インストールに時間を費やす前に*問題をキャッチできます。</block>
+  <block id="9d2608b0b15c6604020ef66ba698a70d" category="paragraph">インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンできるようになりました。 <block ref="1b9c05db061e84ae6eca6f68bdd32c9b" category="inline-link-macro-rx"></block></block>
+  <block id="80ca59a22e157477c940f080c9cf1223" category="paragraph"><block ref="b1c06333aab3fa5206e44a440f888650" category="inline-link-macro-rx"></block>。</block>
+  <block id="fa18750d3909d8a2d2d0a22c1611a692" category="paragraph">データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響が非常に小さい場合でも、「低速」スキャンを実行するように Data Sense を設定できます。 <block ref="50748b3ac35725f5f9be1dab9c684e55" category="inline-link-macro-rx"></block>。</block>
 </blocks>

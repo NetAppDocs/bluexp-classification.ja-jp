@@ -226,7 +226,7 @@ JSONレポートを選択するときは、レポートをダウンロードす�
 
 レポートをダウンロード中であることを示すメッセージがダイアログに表示されます。
 
-JSONレポートの生成の進捗状況は、で確認できます  the status of your compliance actions,[ アクションステータス（ Actions Status ） ] パネル。
+JSONレポートの生成の進捗状況は、で確認できます link:task-view-compliance-actions.html["[ アクションステータス（ Actions Status ） ] パネル"]。
 
 
 

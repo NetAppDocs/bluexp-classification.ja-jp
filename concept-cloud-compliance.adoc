@@ -294,7 +294,7 @@ BlueXPをSaaSモードで使用する場合、BlueXPへの接続はHTTPS経由�
 
 アウトバウンドルールは完全にオープンです。データセンスソフトウェアをインストールしてアップグレードし、使用率指標を送信するには、インターネットアクセスが必要です。
 
-ネットワーク要件が厳しい場合は、 link:task-deploy-cloud-compliance.html#reviewing-prerequisites["Cloud Data が接触するエンドポイントについて説明します"^]。
+ネットワーク要件が厳しい場合は、 link:task-deploy-cloud-compliance.html#review-prerequisites["Cloud Data が接触するエンドポイントについて説明します"^]。
 
 
 

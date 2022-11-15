@@ -157,7 +157,7 @@ TIP: データベース、 OneDrive アカウント、 SharePoint アカウン�
 .要件
 * ファイルをコピーして同期するには、アカウント管理者またはワークスペース管理者の役割が必要です。
 * 選択したファイルはすべて、同じソースリポジトリ（ ONTAP ボリューム、 S3 バケット、 NFS 共有、 CIFS 共有など）にある必要があります。
-* Cloud Sync サービスをアクティブ化し、少なくとも 1 つのデータブローカーを構成して、ソースシステムとターゲットシステム間でファイルを転送できるようにする必要があります。から、 Cloud Sync の要件を確認します link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["Quick Start 概要 の略"^]。
+* Cloud Sync サービスをアクティブ化し、少なくとも 1 つのデータブローカーを構成して、ソースシステムとターゲットシステム間でファイルを転送できるようにする必要があります。から、 Cloud Sync の要件を確認します https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["Quick Start 概要 の略"^]。
 +
 Cloud Sync サービスでは同期関係のサービス料金が別途請求されるため、データブローカーをクラウドに導入するとリソース料金が発生することに注意してください。
 
