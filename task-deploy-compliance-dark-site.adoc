@@ -31,7 +31,7 @@ summary: インターネットにアクセスできないオンプレミスサ�
 * Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージ
 
 
-非常に安全なBlueXPインストールが必要な特別な状況で、OneDriveアカウントまたはSharePoint Onlineアカウントからローカルデータをスキャンする場合は、データセンスオフラインインストーラを使用して、一部のエンドポイントへのインターネットアクセスを提供できます。を参照してください  and OneDrive special requirements,SharePoint と OneDrive の特別な要件 を参照してください。
+非常に安全なBlueXPインストールが必要な特別な状況で、OneDriveアカウントまたはSharePoint Onlineアカウントからローカルデータをスキャンする場合は、データセンスオフラインインストーラを使用して、一部のエンドポイントへのインターネットアクセスを提供できます。を参照してください <<SharePoint と OneDrive の特別な要件,SharePoint と OneDrive の特別な要件>> を参照してください。
 
 現在、データセンスがダークサイトに導入されている場合、Cloud Volumes ONTAP 、Azure NetApp Files 、ONTAP 用FSX、AWS S3、またはGoogleドライブのアカウントのスキャンはサポートされません。
 
@@ -48,7 +48,7 @@ summary: インターネットにアクセスできないオンプレミスサ�
 * ユーザからのフィードバックを受け取る
 * BlueXPからの自動ソフトウェアアップグレード
 +
-BlueXPコネクタとデータセンスの両方で、新しい機能を有効にするには定期的に手動でアップグレードする必要があります。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します  Data Sense software,データセンスソフトウェアをアップグレードします。
+BlueXPコネクタとデータセンスの両方で、新しい機能を有効にするには定期的に手動でアップグレードする必要があります。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します <<Data Sense ソフトウェアをアップグレードする,データセンスソフトウェアをアップグレードします>>。
 
 
 
@@ -58,15 +58,19 @@ BlueXPコネクタとデータセンスの両方で、新しい機能を有効�
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] BlueXPコネクタを取り付けます
 [role="quick-margin-para"]
 オフラインのオンプレミスサイトにコネクタがまだインストールされていない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["コネクタを配置します"^] Linux ホストの場合は、
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] データセンスの前提条件を確認します
 [role="quick-margin-para"]
-Linux システムがを満たしていることを確認します  the Linux host system,ホストの要件必要なソフトウェアがすべてインストールされていること、およびオフライン環境が要件を満たしていることを確認します  BlueXP and Data Sense prerequisites,権限と接続。
+Linux システムがを満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>必要なソフトウェアがすべてインストールされていること、およびオフライン環境が要件を満たしていることを確認します <<BlueXPおよびData Senseの前提条件を確認します,権限と接続>>。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] データセンスのダウンロードと導入
 [role="quick-margin-para"]
 ネットアップサポートサイトから Cloud Data Sense ソフトウェアをダウンロードし、使用する Linux ホストにインストーラファイルをコピーします。次に、インストールウィザードを起動し、プロンプトに従って Cloud Data Sense インスタンスを導入します。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] Cloud Data Sense サービスに登録する
 [role="quick-margin-para"]
 Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは無料です。そのあともデータのスキャンを続行するには、ネットアップの BYOL ライセンスが必要です。
 
@@ -82,30 +86,46 @@ Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは無料
 
 データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。データセンスは、他のアプリケーションと共有されるホストではサポートされません。ホストは専用のホストである必要があります。
 
-* オペレーティングシステム：Red Hat Enterprise LinuxまたはCentOSのバージョン8.0~8.6
+* *オペレーティング・システム*：Red Hat Enterprise LinuxまたはCentOSバージョン8.0~8.6
 +
 ** バージョン7.8または7.9を使用できますが、Linuxカーネルバージョンは4.0以降である必要があります
-** OS が Docker Engine をインストールできる必要があります（必要に応じて、 _firewalld_service を無効にするなど）。
+** OSがDocker Engineをインストールできる必要があります
 
 
-* Disk ： 500GiB の SSD を / 、またはで使用できます
+* *ディスク*：500 GiBのSSDを、/、またはで使用できます
 +
 ** 100 GiB は /opt で利用できます
 ** /var で 400GiB の可用性を確保
 ** /tmp 上で 5 GiB
 
 
-* RAM ： 64GB （ホストでスワップメモリを無効にする必要があります）
-* CPU ： 16 コア
+* *RAM*:64 GB (ホストでスワップメモリを無効にする必要があります)
+* * CPU *：16コア
 +
 CPU 数と RAM 容量が少ないシステムには Data Sense を導入できますが、これらのシステムの使用には制限があります。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
 
+* *追加ソフトウェア*：Data Senseをインストールする前に、次のソフトウェアをホストにインストールする必要があります。
++
+** Docker Engine バージョン 19 以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
+** Python 3 バージョン 3.6 以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
 
 
-Data Sense をインストールする前に、次のソフトウェアをホストにインストールする必要があります。
+* *ファイアウォールの考慮事項*:使用を計画している場合 `firewalld`では、データセンスをインストールする前に有効にすることをお勧めします。次のコマンドを実行して設定します `firewalld` データセンスとの互換性を確保するために、次のようにします。
++
+....
+firewall-cmd --permanent --add-service=http
+firewall-cmd --permanent --add-service=https
+firewall-cmd --permanent --add-service=mysql
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --permanent --add-port=8080/tcp
+firewall-cmd --permanent --add-port=443/tcp
+firewall-cmd --permanent --add-port=555/tcp
+firewall-cmd --permanent --add-port=3306/tcp
+firewall-cmd --reload
+....
++
+を有効にした場合 `firewalld` Data Senseをインストールしたら、Dockerを再起動する必要があります。
 
-* Docker Engine バージョン 19 以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
-* Python 3 バージョン 3.6 以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
 
 
 
@@ -117,14 +137,7 @@ NOTE: Data Senseホスト・システムのIPアドレスは、インストー�
 
 Cloud Data Sense を導入する前に、次の前提条件を確認し、サポートされている構成であることを確認してください。
 
-* BlueXPに、クラウドデータセンスインスタンスのリソースを展開し、セキュリティグループを作成する権限があることを確認します。
-* BlueXPコネクタがData Senseインスタンスにアクセスできることを確認しますコネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。
-+
-この接続により、データセンスインスタンスの展開が可能になり、コンプライアンスとガバナンスの情報を表示できます。
-
-+
-ポート8080が開いていることを確認し、BlueXPでインストールの進行状況を確認します。
-
+* Connectorにリソースを導入する権限があることを確認し、Cloud Data Senseインスタンス用のセキュリティグループを作成します。BlueXPの最新の権限は、で確認できます https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["ネットアップが提供するポリシー"^]。
 * クラウドデータを常に運用しておく必要がありますデータを継続的にスキャンするには、 Cloud Data Sense インスタンスがオンのままになっている必要があります。
 * Web ブラウザから Cloud Data Sense への接続を確認するCloud Data Senseを有効にしたら、ユーザーがData Senseインスタンスに接続しているホストからBlueXPインターフェイスにアクセスすることを確認します。
 +
@@ -134,11 +147,66 @@ Cloud Data Sense を導入する前に、次の前提条件を確認し、サポ
 
 
 
+== 必要なすべてのポートが有効になっていることを確認します
+
+コネクタ、データセンス、Active Directory、およびデータソース間の通信に必要なすべてのポートが開いていることを確認する必要があります。
+
+[cols="25,25,50"]
+|===
+| 接続タイプ | ポート | 説明 
+
+
+| コネクタ<>データ検出 | 8080（TCP）、443（TCP）、および80 | コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。ポート8080が開いていることを確認し、BlueXPでインストールの進行状況を確認します。 
+
+
+| Connector <> ONTAP cluster（NAS） | 443（TCP）  a| 
+BlueXPはHTTPSを使用してONTAP クラスタを検出しましたカスタムファイアウォールポリシーを使用する場合は、次の要件を満たす必要があります。
+
+* コネクタホストが、ポート 443 経由のアウトバウンド HTTPS アクセスを許可する必要があります。コネクタがクラウドにある場合、すべてのアウトバウンド通信は事前定義されたセキュリティグループによって許可されます。
+* ONTAP クラスタでは、ポート 443 を介した着信 HTTPS アクセスが許可されている必要があります。デフォルトの「 mgmt 」ファイアウォールポリシーでは、すべての IP アドレスからの着信 HTTPS アクセスが許可されます。このデフォルトポリシーを変更した場合、または独自のファイアウォールポリシーを作成した場合は、 HTTPS プロトコルをそのポリシーに関連付けて、 Connector ホストからのアクセスを有効にする必要があります。
+
+
+
+
+| データセンスONTAP クラスタ  a| 
+* nfs-111（TCP \ UDP）および2049（TCP \ UDP）の場合
+* CIFS - 139（TCP / UDP）および445（TCP / UDP）の場合
+
+ a| 
+データセンスには、各Cloud Volumes ONTAP サブネットまたはオンプレミスのONTAP システムへのネットワーク接続が必要です。Cloud Volumes ONTAP のセキュリティグループは、データセンスインスタンスからのインバウンド接続を許可する必要があります。
+
+これらのポートが Data Sense インスタンスに対して開いていることを確認します。
+
+* nfs-111と2049の場合は同じです
+* CIFS/139および445の場合
+
+
+NFS ボリュームエクスポートポリシーで、データセンスインスタンスからのアクセスを許可する必要があります。
+
+
+
+| データセンス<> Active Directory | 389（TCPおよびUDP）、636（TCP）、3268（TCP）、および3269（TCP）  a| 
+社内のユーザに対して Active Directory がすでに設定されている必要があります。また、CIFSボリュームをスキャンするには、Active Directoryのクレデンシャルが必要です。
+
+Active Directory の次の情報が必要です。
+
+* DNS サーバの IP アドレス、または複数の IP アドレス
+* サーバーのユーザー名とパスワード
+* ドメイン名（ Active Directory 名）
+* セキュアな LDAP （ LDAPS ）を使用しているかどうか
+* LDAP サーバポート（通常は LDAP では 389 、セキュア LDAP では 636 ）
+
+
+|===
+複数のData Senseホストを使用してデータソースをスキャンする場合は、追加のポートやプロトコルを有効にする必要があります。 link:task-deploy-compliance-dark-site.html#multi-host-installation-for-large-configurations["追加のポート要件を参照してください"]。
+
+
+
 == SharePoint と OneDrive の特別な要件
 
 インターネットにアクセスできないサイトにBlueXPとData Senseを展開すると、SharePoint OnlineアカウントとOneDriveアカウントでファイルをスキャンできます。これには、一部のエンドポイントへのインターネットアクセスが提供されます。
 
-SharePointオンプレミスアカウントは、インターネットにアクセスしなくてもスキャンできます。
+ローカルにインストールされたSharePointオンプレミスアカウントは、インターネットにアクセスしなくてもスキャンできます。
 
 [cols="50,50"]
 |===
@@ -148,9 +216,9 @@ SharePointオンプレミスアカウントは、インターネットにアク�
 | ¥ login.microsoft.com ¥ graph.microsoft.com | 選択したオンラインサービスにログインするための Microsoft サーバとの通信。 
 
 
-| \ https://cloudmanager.cloud.netapp.com | ネットアップアカウントを含むBlueXPサービスとの通信 
+| \ https://api.bluexp.netapp.com | ネットアップアカウントを含むBlueXPサービスとの通信 
 |===
-_cloudmanager.cloud.netapp.com_ へのアクセスは、これらの外部サービスへの初期接続時にのみ必要です。
+_api.bluexp.netapp.com_へのアクセスは、これらの外部サービスへの初期接続時にのみ必要です。
 
 
 
@@ -171,10 +239,10 @@ image:diagram_deploy_onprem_multi_host_no_internet.png["インターネットに
 オフライン環境で単一のオンプレミスホストに Data Sense ソフトウェアをインストールする場合は、次の手順を実行します。
 
 .必要なもの
-* Linux システムがを満たしていることを確認します  the Linux host system,ホストの要件。
+* Linux システムがを満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
 * 前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。
 * Linux システムに対する root 権限があることを確認してください。
-* オフライン環境が要件を満たしていることを確認します  BlueXP and Data Sense prerequisites,権限と接続。
+* オフライン環境が要件を満たしていることを確認します <<BlueXPおよびData Senseの前提条件を確認します,権限と接続>>。
 
 
 .手順
@@ -238,10 +306,12 @@ tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
 
 
 
+.結果
 Data Sense インストーラは、パッケージをインストールし、インストールを登録し、 Data Sense をインストールします。インストールには 10~20 分かかります。
 
 ホストマシンとコネクタインスタンスの間にポート8080を介した接続がある場合、インストールの進行状況はBlueXPのData Senseタブに表示されます。
 
+.次のステップ
 設定ページからローカルを選択できます link:task-getting-started-compliance.html["オンプレミスの ONTAP クラスタ"] および link:task-scanning-databases.html["データベース"] をスキャンします。
 
 また可能です link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["クラウドデータセンスを使用する BYOL ライセンスをセットアップする"] 現時点では、デジタルウォレットのページから入手できます。データ量が 1TB を超えるまでは料金は発生しません。
@@ -255,10 +325,10 @@ Data Sense インストーラは、パッケージをインストールし、イ
 オフライン環境で複数のオンプレミスホストに Data Sense ソフトウェアをインストールする場合は、次の手順を実行します。
 
 .必要なもの
-* Manager ノードと Scanner ノードのすべての Linux システムが、を満たしていることを確認します  the Linux host system,ホストの要件。
+* Manager ノードと Scanner ノードのすべての Linux システムが、を満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
 * 前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。
 * Linux システムに対する root 権限があることを確認してください。
-* オフライン環境が要件を満たしていることを確認します  BlueXP and Data Sense prerequisites,権限と接続。
+* オフライン環境が要件を満たしていることを確認します <<BlueXPおよびData Senseの前提条件を確認します,権限と接続>>。
 * 使用するスキャナノードホストの IP アドレスを確認しておく必要があります。
 * すべてのホストで次のポートとプロトコルを有効にする必要があります。
 +
@@ -311,8 +381,10 @@ sudo ./node_install.sh -m 10.11.12.13-t ふぁいる EF-1u69m1-1s35212`
 
 
 
+.結果
 Cloud Data Sense インストーラがパッケージのインストールを完了し、インストールを登録します。インストールには 15 ～ 25 分かかる場合があります。
 
+.次のステップ
 設定ページからローカルを選択できます link:task-getting-started-compliance.html["オンプレミスの ONTAP クラスタ"] および local です link:task-scanning-databases.html["データベース"] をスキャンします。
 
 また可能です link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["クラウドデータセンスを使用する BYOL ライセンスをセットアップする"] 現時点では、デジタルウォレットのページから入手できます。データ量が 1TB を超えるまでは料金は発生しません。
@@ -357,6 +429,7 @@ start_darksite_upgrade.sh
 ----
 
 
+.結果
 データセンスソフトウェアはホスト上でアップグレードされます。更新には 5 ～ 10 分かかる場合があります。
 
 非常に大規模な構成のスキャン用に複数のホストシステムに Data Sense を導入している場合は、スキャナノードをアップグレードする必要はありません。

@@ -39,18 +39,23 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS Elastic 
 
 以下の手順を実行してすぐに作業を開始するか、下にスクロールして詳細を確認してください。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] スキャンするONTAP ファイルシステムのFSXを検出します
 [role="quick-margin-para"]
 FSX で ONTAP ボリュームをスキャンする前に、 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["ボリュームが設定された FSX 作業環境が必要です"^]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Cloud Data Sense インスタンスを導入する
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["BlueXPにクラウドデータセンスを導入します"^] インスタンスが展開されていない場合。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] Cloud Data Sense を有効にして、スキャンするボリュームを選択します
 [role="quick-margin-para"]
 [ * データセンス * ] をクリックし、 [ * 構成 * ] タブを選択して、特定の作業環境でボリュームのコンプライアンススキャンを有効にします。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] ボリュームへのアクセスを確認
 [role="quick-margin-para"]
 Cloud Data Sense が有効になったので、すべてのボリュームにアクセスできることを確認します。
 
+[role="quick-margin-list"]
 * クラウドデータセンスインスタンスには、 ONTAP サブネットの各 FSX へのネットワーク接続が必要です。
 * 次のポートがデータセンスインスタンスに対して開いていることを確認します。
 +
@@ -62,6 +67,7 @@ Cloud Data Sense が有効になったので、すべてのボリュームにア
 * CIFS ボリュームをスキャンするには、 Active Directory クレデンシャルが必要です。+ コンプライアンス * > * 構成 * > * CIFS クレデンシャルの編集 * をクリックし、クレデンシャルを入力します。
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"] スキャンするボリュームを管理します
 [role="quick-margin-para"]
 スキャンするボリュームを選択または選択解除すると、 Cloud Data Sense でスキャンが開始または停止します。
 
@@ -101,13 +107,14 @@ image:screenshot_fsx_scanning_activate.png["Cloud Data Sense インスタンス�
 ** すべてのボリュームをマップして分類するには、 * すべてのボリュームをマップして分類 * をクリックします。
 ** 各ボリュームのスキャンをカスタマイズするには、「 * 」をクリックするか、各ボリュームのスキャンタイプを選択してから、マッピングまたは分類するボリュームを選択します。
 +
-を参照してください  and disabling compliance scans on volumes,ボリュームのコンプライアンススキャンの有効化と無効化 を参照してください。
+を参照してください <<ボリュームのコンプライアンススキャンの有効化と無効化,ボリュームのコンプライアンススキャンの有効化と無効化>> を参照してください。
 
 
 
 . 確認ダイアログボックスで、 [* 承認 ] をクリックして、ボリュームのスキャンを開始するデータセンスを設定します。
 
 
+.結果
 Cloud Data Sense により、作業環境で選択したボリュームのスキャンが開始されます。結果は、 Cloud Data Sense が最初のスキャンを完了するとすぐに Compliance ダッシュボードに表示されます。所要時間はデータ量によって異なります。数分から数時間かかる場合もあります。
 
 
@@ -201,6 +208,7 @@ NOTE: 作業環境に追加された新しいボリュームは、見出し領�
 
 image:screenshot_cloud_compliance_dp_volumes.png["DP ボリュームへのアクセスを有効にするボタンを示すスクリーンショット。データ保護ボリュームをスキャンするように選択できます。"]
 
+.手順
 これらのデータ保護ボリュームをスキャンする場合は、次の手順を実行します。
 
 . ページ上部の * DP ボリュームへのアクセスを有効にする * をクリックします。
@@ -213,9 +221,10 @@ image:screenshot_compliance_dp_cifs_volumes.png["CIFS のデータ保護ボリ�
 
 
 
-. スキャンする各 DP ボリュームをアクティブ化します  and disabling compliance scans on volumes,他のボリュームも有効にした場合と同じです。
+. スキャンする各 DP ボリュームをアクティブ化します <<ボリュームのコンプライアンススキャンの有効化と無効化,他のボリュームも有効にした場合と同じです>>。
 
 
+.結果
 有効にすると、スキャン対象としてアクティブ化された各 DP ボリュームから NFS 共有が作成されます。共有エクスポートポリシーでは、データセンスインスタンスからのアクセスのみが許可されます。
 
 * 注： DP ボリュームへのアクセスを最初に有効にしたときに CIFS データ保護ボリュームがない場合は、あとで追加しても、 CIFS DP の有効化ボタン * が設定ページの上部に表示されます。このボタンをクリックして、 CIFS DP ボリュームへのアクセスを有効にする CIFS クレデンシャルを追加します。

@@ -137,6 +137,7 @@ image:screenshot_compliance_clone_files_dialog.png["ソースボリュームか�
 
 
 
+.結果
 新しいクローンボリュームは、ソースボリュームと同じアグリゲート内に作成されます。
 
 クローニング処理の進捗状況はで確認できます link:task-view-compliance-actions.html["[ アクションステータス（ Actions Status ） ] パネル"]。
@@ -189,6 +190,7 @@ Cloud Sync UIがBlueXPで開きます
 . ターゲットシステムを選択し、使用するデータブローカーを選択（または作成）する必要があります。から、 Cloud Sync の要件を確認します link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html.html["Quick Start 概要 の略"^]。
 
 
+.結果
 ファイルはターゲットシステムにコピーされ、定義したスケジュールに基づいて同期されます。1 回限りの同期を選択した場合、ファイルは 1 回だけコピーされ、同期されます。定期的な同期を選択した場合は、スケジュールに基づいてファイルが同期されます。フィルタを使用して作成したクエリに一致する新しいファイルがソースシステムによって追加されると、これらの _new_files がコピー先にコピーされ、後で同期されることに注意してください。
 
 通常の Cloud Sync 操作の一部は、 Data Sense から呼び出されたときに無効になっている点に注意してください。
@@ -315,6 +317,7 @@ image:screenshot_compliance_delete_files_using_policies.png["ポリシーを設�
 
 
 
+.結果
 [ ポリシー ] タブに新しいポリシーが表示されます。ポリシーに一致するファイルは、ポリシーの実行時に 1 日に 1 回削除されます。
 
 で削除されたファイルのリストを確認できます link:task-view-compliance-actions.html["[ アクションステータス（ Actions Status ） ] パネル"]。

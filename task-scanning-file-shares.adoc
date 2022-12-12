@@ -22,15 +22,19 @@ NetApp 以外の NFS または CIFS ファイル共有を Cloud Data Sense で�
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] ファイル共有の前提条件を確認する
 [role="quick-margin-para"]
 CIFS （ SMB ）共有の場合は、共有にアクセスするためのクレデンシャルがあることを確認しておきます。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Cloud Data Sense インスタンスを導入する
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"^] インスタンスが展開されていない場合。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ファイル共有を保持するグループを作成します
 [role="quick-margin-para"]
 このグループは、スキャンするファイル共有のコンテナであり、これらのファイル共有の作業環境名として使用されます。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] ファイル共有を追加し、スキャンする共有を選択します
 [role="quick-margin-para"]
 スキャンするファイル共有のリストを追加し、スキャンのタイプを選択します。一度に最大 100 個のファイル共有を追加できます。
 
@@ -140,6 +144,7 @@ image:screenshot_compliance_fileshares_add_file_shares.png["［ ファイル共�
 |===
 
 
+.結果
 Cloud Data Sense によって、追加したファイル共有内のファイルのスキャンが開始され、その結果がダッシュボードやその他の場所に表示されます。
 
 

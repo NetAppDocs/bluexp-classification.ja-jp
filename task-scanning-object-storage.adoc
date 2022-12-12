@@ -22,18 +22,22 @@ Cloud Data Sense で、オブジェクトストレージ内のデータのスキ
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] オブジェクトストレージの前提条件を確認する
 [role="quick-margin-para"]
 オブジェクトストレージサービスに接続するには、エンドポイント URL が必要です。
 
 [role="quick-margin-para"]
 Cloud Data Sense でバケットにアクセスできるように、オブジェクトストレージプロバイダからアクセスキーとシークレットキーを入手する必要があります。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Cloud Data Sense インスタンスを導入する
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"^] インスタンスが展開されていない場合。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] オブジェクトストレージサービスを追加します
 [role="quick-margin-para"]
 オブジェクトストレージサービスをクラウドデータセンスに追加します。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] スキャンするバケットを選択します
 [role="quick-margin-para"]
 スキャンするバケットを選択すると、 Cloud Data Sense によってスキャンが開始されます。
 
@@ -83,6 +87,7 @@ image:screenshot_compliance_add_object_storage.png["オブジェクトストレ�
 
 
 
+.結果
 新しいオブジェクトストレージサービスが作業環境のリストに追加されます。
 
 
@@ -116,4 +121,5 @@ image:screenshot_compliance_object_storage_select_buckets.png["スキャンす�
 |===
 
 
+.結果
 Cloud Data Sense は、有効にしたバケットのスキャンを開始します。エラーが発生した場合は、エラーを修正するために必要なアクションとともに、 [ ステータス ] 列に表示されます。

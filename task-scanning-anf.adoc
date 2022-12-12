@@ -22,18 +22,23 @@ Azure NetApp Files 向けクラウドデータセンスの導入を開始する�
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] スキャンするAzure NetApp Files システムを検出します
 [role="quick-margin-para"]
 Azure NetApp Files ボリュームをスキャンする前に、 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["構成を検出するには、BlueXPを設定する必要があります"^]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Cloud Data Sense インスタンスを導入する
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["BlueXPにクラウドデータセンスを導入します"^] インスタンスが展開されていない場合。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] Cloud Data Sense を有効にして、スキャンするボリュームを選択します
 [role="quick-margin-para"]
 コンプライアンス * をクリックし、 * 構成 * タブを選択して、特定の作業環境でボリュームのコンプライアンススキャンを有効にします。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] ボリュームへのアクセスを確認
 [role="quick-margin-para"]
 Cloud Data Sense が有効になったので、すべてのボリュームにアクセスできることを確認します。
 
+[role="quick-margin-list"]
 * クラウドデータセンスインスタンスには、各 Azure NetApp Files サブネットへのネットワーク接続が必要です。
 * これらのポートが Data Sense インスタンスに対して開いていることを確認します。
 +
@@ -48,6 +53,7 @@ Cloud Data Sense が有効になったので、すべてのボリュームにア
 
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"] スキャンするボリュームを管理します
 [role="quick-margin-para"]
 スキャンするボリュームを選択または選択解除すると、 Cloud Data Sense でスキャンが開始または停止します。
 
@@ -87,13 +93,14 @@ image:screenshot_cloud_compliance_anf_scan_config.png["Cloud Data Sense イン�
 ** すべてのボリュームをマップして分類するには、 * すべてのボリュームをマップして分類 * をクリックします。
 ** 各ボリュームのスキャンをカスタマイズするには、「 * 」をクリックするか、各ボリュームのスキャンタイプを選択してから、マッピングまたは分類するボリュームを選択します。
 +
-を参照してください  and disabling compliance scans on volumes,ボリュームのコンプライアンススキャンの有効化と無効化 を参照してください。
+を参照してください <<ボリュームのコンプライアンススキャンの有効化と無効化,ボリュームのコンプライアンススキャンの有効化と無効化>> を参照してください。
 
 
 
 . 確認ダイアログボックスで、 [* 承認 ] をクリックして、ボリュームのスキャンを開始するデータセンスを設定します。
 
 
+.結果
 Cloud Data Sense により、作業環境で選択したボリュームのスキャンが開始されます。結果は、 Cloud Data Sense が最初のスキャンを完了するとすぐに Compliance ダッシュボードに表示されます。所要時間はデータ量によって異なります。数分から数時間かかる場合もあります。
 
 

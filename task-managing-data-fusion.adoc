@@ -36,6 +36,7 @@ image:diagram_compliance_data_fusion.png["データベースのコンテンツ�
 
 独自のデータベースをスキャンするので、データが保存されているどの言語でも、将来のデータ検出スキャンでデータを識別するために使用されることに注意してください。
 
+.手順
 が必要です link:task-scanning-databases.html#adding-the-database-server["データベースサーバを少なくとも 1 つ追加しました"^] データFusion ソースを追加する前にデータを検出する必要があります。
 
 . [ 構成 ] ページで、ソースデータが存在するデータベースの [ データ Fusion の管理 ] をクリックします。
@@ -65,6 +66,7 @@ image:screenshot_compliance_data_fusion_list.png["Data Fusion で設定したす
 
 
 
+.結果
 次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。追加した各ソース列は、「Table.Column」という形式でフィルタリストに表示されます。たとえば、「customers.CustomerID」のようになります。
 
 image:screenshot_add_data_fusion_result.png["［調査結果］ペインに表示されるData Fusion の結果の例を示すスクリーンショット。"]
@@ -167,6 +169,7 @@ screech
 [user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s activate -f internal_product_names.txt
 ----
  log v1.0 | 2022-08-24 08:16:25,332 | INFO | ds_logger | upload_custom_keywords | 126 | 1 | None | upload_custom_keywords_126 | All legal keywords were successfully inserted
+.結果
 次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。
 
 image:screenshot_add_keywords_result.png["[調査結果]ペインにカスタムキーワードの結果の例を示すスクリーンショット。"]
@@ -202,7 +205,7 @@ image:screenshot_add_keywords_result.png["[調査結果]ペインにカスタム
 
 === 正規表現を追加するコマンド構文
 
-カスタムキーワードパターンを含むファイルを追加し、コマンドを開始してカスタムキーワードを追加するには、データセンスシステムにアクセスする必要があります。  the command line,コマンドラインへのアクセス方法については、を参照してください データをオンプレミスにインストールしたか、クラウドに導入したかにかかわらず、
+カスタムキーワードパターンを含むファイルを追加し、コマンドを開始してカスタムキーワードを追加するには、データセンスシステムにアクセスする必要があります。 <<コマンドラインへのアクセス,コマンドラインへのアクセス方法については、を参照してください>> データをオンプレミスにインストールしたか、クラウドに導入したかにかかわらず、
 
 カスタム正規表現を追加するコマンドの構文は次のとおりです。
 
@@ -235,6 +238,7 @@ image:screenshot_add_keywords_result.png["[調査結果]ペインにカスタム
 [+] Adding Custom Regex to Data Sense
 log v1.0 | 2022-08-23 13:19:01,476 | INFO | ds_logger | custom_regex | 154 | 1 | None | custom_regex_154 | A pattern named 'Internal Product ID' was added successfully to Data Sense
 ....
+.結果
 次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。
 
 image:screenshot_add_regex_result.png["［調査結果］ペインに表示される、カスタム正規表現の結果の例を示すスクリーンショット。"]

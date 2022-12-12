@@ -22,15 +22,19 @@ Cloud Data Sense でデータベーススキーマのスキャンを開始する
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] データベースの前提条件を確認する
 [role="quick-margin-para"]
 データベースがサポートされていること、およびデータベースへの接続に必要な情報があることを確認します。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Cloud Data Sense インスタンスを導入する
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"^] インスタンスが展開されていない場合。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] データベースサーバを追加します
 [role="quick-margin-para"]
 アクセスするデータベースサーバを追加します。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] スキーマを選択します
 [role="quick-margin-para"]
 スキャンするスキーマを選択します。
 
@@ -132,4 +136,5 @@ image:screenshot_compliance_select_schemas.png["スキャンするスキーマ�
 
 
 
+.結果
 Cloud Data Sense は、有効にしたデータベーススキーマのスキャンを開始します。エラーが発生した場合は、エラーを修正するために必要なアクションとともに、 [ ステータス ] 列に表示されます。

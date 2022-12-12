@@ -22,15 +22,19 @@ summary: いくつかの手順を実行して、Cloud Data Senseを使用したS
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] SharePointの前提条件を確認する
 [role="quick-margin-para"]
 SharePoint アカウントにログインするための管理者資格情報があり、スキャンする SharePoint サイトの URL があることを確認します。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Cloud Data Sense インスタンスを導入する
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"^] インスタンスが展開されていない場合。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] SharePointアカウントにログインします
 [role="quick-margin-para"]
 管理者ユーザーの資格情報を使用して、アクセスする SharePoint アカウントにログインし、新しいデータソース / 作業環境として追加します。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] スキャンするSharePointサイトのURLを追加します
 [role="quick-margin-para"]
 SharePoint アカウントでスキャンする SharePoint サイト URL のリストを追加し、スキャンの種類を選択します。一度に最大 100 個の URL を追加できます。
 
@@ -152,6 +156,7 @@ image:screenshot_compliance_sharepoint_add_site.png["スキャン対象のサイ
 |===
 
 
+.結果
 Cloud Data Sense によって、追加した SharePoint サイトのファイルのスキャンが開始され、結果がダッシュボードやその他の場所に表示されます。
 
 
