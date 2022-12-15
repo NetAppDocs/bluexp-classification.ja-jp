@@ -150,9 +150,6 @@ link:task-licensing-datasense.html["Cloud Data Sense のライセンスを取得
 
 クラウドにデータセンスを展開すると、BlueXPはコネクタと同じサブネットにインスタンスを展開します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタの詳細については、こちらをご覧ください。"^]
 
-
-NOTE: コネクタがオンプレミスにインストールされている場合は、要求内の最初の Cloud Volumes ONTAP システムと同じ VPC または VNet にクラウドデータセンスインスタンスを導入します。データセンスはオンプレミスにもインストールできます。
-
 image:diagram_cloud_compliance_instance.png["クラウドプロバイダで実行されているBlueXPインスタンスとCloud Data Senseインスタンスを示す図。"]
 
 デフォルトのインスタンスについては、次の点に注意してください。

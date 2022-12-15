@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
-summary: ネットワーク内またはクラウド内でインターネットにアクセスできる Linux ホストに Cloud Data Sense を導入するには、いくつかの手順を実行します。 
+summary: ネットワーク内のLinuxホストまたはクラウド内のLinuxホストでインターネットにアクセスできる場合は、いくつかの手順を実行してCloud Data Senseを導入します。 
 ---
 = インターネットにアクセス可能な Linux ホストに Cloud Data Sense を導入する
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: ネットワーク内またはクラウド内でインターネット�
 
 
 [role="lead"]
-ネットワーク内またはクラウド内でインターネットにアクセスできる Linux ホストに Cloud Data Sense を導入するには、いくつかの手順を実行します。
+ネットワーク内のLinuxホストまたはクラウド内のLinuxホストでインターネットにアクセスできる場合は、いくつかの手順を実行してCloud Data Senseを導入します。
 
 オンプレミスにあるデータセンスインスタンスを使用してオンプレミスの ONTAP システムをスキャンする場合は、オンプレミスインストールを選択することをお勧めします。ただしこれは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。
 
@@ -86,6 +86,8 @@ Azure NetApp Files の場合は、スキャンするボリュームと同じ領�
 
 データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。Linuxホストは、自社ネットワークまたはクラウドに配置できます。データセンスは、他のアプリケーションと共有されるホストではサポートされません。ホストは専用のホストである必要があります。
 
+クラウドデータを常に運用しておく必要がありますデータを継続的にスキャンするには、Cloud Data Senseマシンをオンのままにしておく必要があります。
+
 * *オペレーティング・システム*：Red Hat Enterprise LinuxまたはCentOSバージョン8.0~8.6
 +
 ** バージョン7.8または7.9を使用できますが、Linuxカーネルバージョンは4.0以降である必要があります
@@ -127,8 +129,8 @@ firewall-cmd --reload
 +
 ....
 firewall-cmd --permanent --add-port=2377/tcp
-firewall-cmd --permanent --add-port=7496/udp
-firewall-cmd --permanent --add-port=7496/tcp
+firewall-cmd --permanent --add-port=7946/udp
+firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 ....
 +
@@ -141,13 +143,10 @@ NOTE: Data Senseホスト・システムのIPアドレスは、インストー�
 
 
 
-== BlueXPおよびData Senseの前提条件を確認します
+== Cloud Data Sense からのアウトバウンドインターネットアクセスを有効にする
 
-Linux システムに Cloud Data Sense を導入する前に、次の前提条件を確認し、サポートされている構成であることを確認してください。
+Cloud Data Sense では、アウトバウンドのインターネットアクセスが必要。仮想ネットワークまたは物理ネットワークでインターネットアクセスにプロキシサーバを使用している場合は、 Data sense インスタンスにアウトバウンドのインターネットアクセスがあり、次のエンドポイントに接続できることを確認します。
 
-Cloud Data Sense からのアウトバウンドインターネットアクセスを有効にする:: Cloud Data Sense では、アウトバウンドのインターネットアクセスが必要。仮想ネットワークまたは物理ネットワークでインターネットアクセスにプロキシサーバを使用している場合は、 Data sense インスタンスにアウトバウンドのインターネットアクセスがあり、次のエンドポイントに接続できることを確認します。
-+
---
 [cols="43,57"]
 |===
 | エンドポイント | 目的 
@@ -167,17 +166,6 @@ Cloud Data Sense からのアウトバウンドインターネットアクセス
 
 | ¥ https://github.com/docker ¥ https://download.docker.com ¥ http://mirror.centos.org ¥ http://mirrorlist.centos.org ¥ http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | インストールの前提条件パッケージを提供します。 
 |===
---
-BlueXP Connectorに必要な権限があることを確認します:: Connectorにリソースを導入する権限があることを確認し、Cloud Data Senseインスタンス用のセキュリティグループを作成します。BlueXPの最新の権限は、で確認できます https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["ネットアップが提供するポリシー"^]。
-クラウドデータを常に運用しておく必要があります:: データを継続的にスキャンするには、Cloud Data Senseマシンをオンのままにしておく必要があります。
-Web ブラウザから Cloud Data Sense への接続を確認する:: Cloud Data Senseを有効にしたら、ユーザーがData Senseインスタンスに接続しているホストからBlueXPインターフェイスにアクセスすることを確認します。
-+
---
-データセンスインスタンスは、プライベート IP アドレスを使用して、インデックス付きデータがインターネットにアクセスできないようにします。そのため、BlueXPへのアクセスに使用するWebブラウザには、そのプライベートIPアドレスへの接続が必要です。この接続は、クラウドプロバイダ（ VPN など）への直接接続、またはデータセンスインスタンスと同じネットワーク内にあるホストから行うことができます。
-
---
-
-
 
 
 == 必要なすべてのポートが有効になっていることを確認します
@@ -189,13 +177,13 @@ Web ブラウザから Cloud Data Sense への接続を確認する:: Cloud Data
 | 接続タイプ | ポート | 説明 
 
 
-| コネクタ<>データ検出 | 8080（TCP）、443（TCP）、および80 | コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。ポート8080が開いていることを確認し、BlueXPでインストールの進行状況を確認します。 
+| コネクタ<>データ検出 | 8080（TCP）、443（TCP）、および80 | コネクタのファイアウォールまたはルーティングルールで、ポート443からデータセンスインスタンスへのインバウンドおよびアウトバウンドトラフィックを許可する必要があります。ポート8080が開いていることを確認し、BlueXPでインストールの進行状況を確認します。 
 
 
 | Connector <> ONTAP cluster（NAS） | 443（TCP）  a| 
 BlueXPはHTTPSを使用してONTAP クラスタを検出しましたカスタムファイアウォールポリシーを使用する場合は、次の要件を満たす必要があります。
 
-* コネクタホストが、ポート 443 経由のアウトバウンド HTTPS アクセスを許可する必要があります。コネクタがクラウドにある場合、すべてのアウトバウンド通信は事前定義されたセキュリティグループによって許可されます。
+* コネクタホストが、ポート 443 経由のアウトバウンド HTTPS アクセスを許可する必要があります。コネクタがクラウド内にある場合、すべてのアウトバウンド通信は、事前定義されたファイアウォールまたはルーティングルールによって許可されます。
 * ONTAP クラスタでは、ポート 443 を介した着信 HTTPS アクセスが許可されている必要があります。デフォルトの「 mgmt 」ファイアウォールポリシーでは、すべての IP アドレスからの着信 HTTPS アクセスが許可されます。このデフォルトポリシーを変更した場合、または独自のファイアウォールポリシーを作成した場合は、 HTTPS プロトコルをそのポリシーに関連付けて、 Connector ホストからのアクセスを有効にする必要があります。
 
 
@@ -206,7 +194,7 @@ BlueXPはHTTPSを使用してONTAP クラスタを検出しましたカスタム
 * CIFS - 139（TCP / UDP）および445（TCP / UDP）の場合
 
  a| 
-データセンスには、各Cloud Volumes ONTAP サブネットまたはオンプレミスのONTAP システムへのネットワーク接続が必要です。Cloud Volumes ONTAP のセキュリティグループは、データセンスインスタンスからのインバウンド接続を許可する必要があります。
+データセンスには、各Cloud Volumes ONTAP サブネットまたはオンプレミスのONTAP システムへのネットワーク接続が必要です。Cloud Volumes ONTAP のファイアウォールまたはルーティングルールでは、データセンスインスタンスからのインバウンド接続を許可する必要があります。
 
 これらのポートが Data Sense インスタンスに対して開いていることを確認します。
 
@@ -245,7 +233,7 @@ image:diagram_deploy_onprem_single_host_internet.png["インターネットに�
 
 image:diagram_deploy_onprem_multi_host_internet.png["インターネットにアクセスできるオンプレミスに導入された複数のData Senseインスタンスを使用する場合に、スキャンできるデータソースの場所を示す図。"]
 
-を参照してください <<Linux ホストシステムを準備,Linux ホストシステムの準備>> および <<BlueXPおよびData Senseの前提条件を確認します,前提条件の確認>> Cloud Data Sense を導入する前に、要件の一覧を確認してください。
+を参照してください <<Linux ホストシステムを準備,Linux ホストシステムの準備>> および <<Cloud Data Sense からのアウトバウンドインターネットアクセスを有効にする,前提条件の確認>> Cloud Data Sense を導入する前に、要件の一覧を確認してください。
 
 Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
 
@@ -263,7 +251,7 @@ NOTE: Cloud Data Sense は、ソフトウェアがオンプレミスにインス
 * （オプション）システムに、前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。このソフトウェアがシステムにインストールされていない場合は、インストーラによってインストールされます。
 * Linux システムに対する root 権限があることを確認してください。
 * プロキシを使用していて、TLS代行受信を実行している場合は、TLS CA証明書が保存されているData Sense Linuxシステム上のパスを確認する必要があります。
-* オフライン環境が要件を満たしていることを確認します <<BlueXPおよびData Senseの前提条件を確認します,権限と接続>>。
+* オフライン環境が要件を満たしていることを確認します <<Cloud Data Sense からのアウトバウンドインターネットアクセスを有効にする,権限と接続>>。
 
 
 .手順
@@ -382,7 +370,7 @@ image:diagram_onprem_scanner_groups.png["異なるスキャナグループに割
 * スキャナノードのすべてのLinuxシステムがを満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
 * （オプション）システムに、前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。このソフトウェアがシステムにインストールされていない場合は、インストーラによってインストールされます。
 * Linux システムに対する root 権限があることを確認してください。
-* 環境が要件を満たしていることを確認します <<BlueXPおよびData Senseの前提条件を確認します,権限と接続>>。
+* 環境が要件を満たしていることを確認します <<Cloud Data Sense からのアウトバウンドインターネットアクセスを有効にする,権限と接続>>。
 * 追加するスキャナノードホストのIPアドレスを確認しておく必要があります。
 * Data Sense ManagerノードホストシステムのIPアドレスが必要です
 * コネクタシステムのIPアドレスまたはホスト名、ネットアップアカウントID、コネクタクライアントID、およびユーザアクセストークンが必要です。スキャナグループを使用する場合は、アカウントの各データソースの作業環境IDを確認しておく必要があります。この情報を取得するには、次の_前提条件ステップ_を参照してください。
@@ -419,8 +407,8 @@ firewall-cmd --permanent --add-port=80/tcp
 firewall-cmd --permanent --add-port=8080/tcp
 firewall-cmd --permanent --add-port=443/tcp
 firewall-cmd --permanent --add-port=2377/tcp
-firewall-cmd --permanent --add-port=7496/udp
-firewall-cmd --permanent --add-port=7496/tcp
+firewall-cmd --permanent --add-port=7946/udp
+firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 firewall-cmd --reload
 ....
@@ -487,7 +475,7 @@ image:screenshot_client_access_token.png["APIドキュメントページのス�
 
 . スキャナグループにスキャナノードを追加した場合は、マネージャノードに戻り、次の2つのタスクを実行します。
 +
-.. 「/opt/netapp/Datasense/working _environment_To-scanner _group_config.yml」ファイルを開き、スキャナグループが特定の作業環境をスキャンするためのマッピングを入力します。データソースごとに_Working Environment ID_が必要になります。たとえば、次のエントリは、2つの作業環境を2つのスキャナグループに追加します。
+.. 「/opt/netapp/Datasense/working _environment_To-scanner _group_config.yml」ファイルを開き、スキャナグループが特定の作業環境をスキャンするためのマッピングを入力します。データソースごとに_Working Environment ID_が必要になります。たとえば、次のエントリでは、2つの作業環境を「ヨーロッパ」スキャナグループに、2つを「United States」スキャナグループに追加します。
 +
 ....
 scanner group:
@@ -511,9 +499,17 @@ scanner group:
 データセンスは、ManagerノードとScannerノードで設定され、すべてのデータソースをスキャンします。
 
 .次のステップ
-設定ページで、スキャンするデータソースを選択できます（まだ選択していない場合）。スキャナグループを作成した場合は、各データソースがそれぞれのグループのスキャナノードによってスキャンされます。各作業環境のスキャナグループ名は、設定ページに表示されます。
+設定ページで、スキャンするデータソースを選択できます（まだ選択していない場合）。スキャナグループを作成した場合は、各データソースがそれぞれのグループのスキャナノードによってスキャンされます。
 
-また可能です link:task-licensing-datasense.html["クラウドデータセンスのライセンスをセットアップする"] 現時点では、データ量が 1TB を超えるまでは料金は発生しません。
+各作業環境のスキャナグループ名は、設定ページに表示されます。
+
+image:screenshot_work_env_id.png["Data Sense ConfigurationページのWorking Environment IDのスクリーンショット。"]
+
+また、すべてのスキャナグループのリスト、および[設定]ページの下部にあるグループ内の各スキャナノードのIPアドレスとステータスを表示することもできます。
+
+image:screenshot_scanner_groups.png["すべてのスキャナグループと、グループ内の各スキャナノードのIPアドレスを示すスクリーンショット。"]
+
+可能です link:task-licensing-datasense.html["クラウドデータセンスのライセンスをセットアップする"] 現時点では、データ量が 1TB を超えるまでは料金は発生しません。
 
 
 
@@ -527,7 +523,7 @@ scanner group:
 * Manager ノードと Scanner ノードのすべての Linux システムが、を満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
 * （オプション）システムに、前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。このソフトウェアがシステムにインストールされていない場合は、インストーラによってインストールされます。
 * Linux システムに対する root 権限があることを確認してください。
-* 環境が要件を満たしていることを確認します <<BlueXPおよびData Senseの前提条件を確認します,権限と接続>>。
+* 環境が要件を満たしていることを確認します <<Cloud Data Sense からのアウトバウンドインターネットアクセスを有効にする,権限と接続>>。
 * 使用するスキャナノードホストの IP アドレスを確認しておく必要があります。
 * すべてのホストで次のポートとプロトコルを有効にする必要があります。
 +
