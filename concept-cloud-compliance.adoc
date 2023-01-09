@@ -34,7 +34,7 @@ Cloud Data Senseは、人工知能（AI）、自然言語処理（NLP）、機�
 * GDPR、CCPA、PCI、HIPAAの各プライバシー規制の要件に応じて、機密性の高い個人情報の範囲を特定します。
 * 名前または電子メールアドレスに基づいてデータサブジェクトアクセス要求（dsar）に応答します。
 * データベースから一意の識別子が他のリポジトリ内のファイルにあるかどうかを確認します。基本的に、データ検出スキャンで識別される「個人データ」のリストを独自に作成します。
-* ファイルに特定のPIIが含まれている場合は、BlueXPユーザーに電子メールで通知します(この条件は、を使用して定義します) link:task-org-private-data.html#controlling-your-data-using-policies["ポリシー"^]）では、アクションプランを決定することができます。
+* ファイルに特定のPIIが含まれている場合は、電子メールで特定のユーザーに通知します（を使用してこの基準を定義します link:task-org-private-data.html#controlling-your-data-using-policies["ポリシー"^]）では、アクションプランを決定することができます。
 
 
 
@@ -59,7 +59,7 @@ Cloud Data Senseは、人工知能（AI）、自然言語処理（NLP）、機�
 
 * 重複データやビジネス以外のデータを特定することで、ストレージ効率を向上させます。この情報を使用して、特定のファイルを移動するか削除するかを決定できます。
 * 安全でないようであるか、ストレージシステムに残すのにリスクが高すぎるファイル、または重複として識別されたファイルを削除してください。_Policies_を使用すると'特定の条件に一致するファイルを自動的に削除できます
-* アクセス頻度の低いデータを低コストのオブジェクトストレージに階層化できるため、ストレージコストを削減できます。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["階層化の詳細を確認してください"^]。
+* アクセス頻度の低いデータを低コストのオブジェクトストレージに階層化できるため、ストレージコストを削減できます。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["Cloud Volumes ONTAP システムからの階層化の詳細については、こちらをご覧ください"^]。 https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html["オンプレミスのONTAP システムからの階層化の詳細については、こちらをご覧ください"^]。
 
 
 

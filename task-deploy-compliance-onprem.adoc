@@ -88,7 +88,7 @@ Azure NetApp Files の場合は、スキャンするボリュームと同じ領�
 
 クラウドデータを常に運用しておく必要がありますデータを継続的にスキャンするには、Cloud Data Senseマシンをオンのままにしておく必要があります。
 
-* *オペレーティング・システム*：Red Hat Enterprise LinuxまたはCentOSバージョン8.0~8.6
+* *オペレーティング・システム*：Red Hat Enterprise LinuxまたはCentOSバージョン8.0~8.7
 +
 ** バージョン7.8または7.9を使用できますが、Linuxカーネルバージョンは4.0以降である必要があります
 ** OSにDockerエンジンがインストールされている必要があります
@@ -107,7 +107,7 @@ Azure NetApp Files の場合は、スキャンするボリュームと同じ領�
 CPU 数と RAM 容量が少ないシステムには Data Sense を導入できますが、これらのシステムの使用には制限があります。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
 
 * * Red Hat Subscription Management *：Red Hat Enterprise LinuxシステムをRed Hat Subscription Managementに登録する必要があります。登録されていないと、インストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
-* *追加ソフトウェア*：次のソフトウェアをホストにインストールする必要があります。ホストにソフトウェアがまだ存在しない場合は、インストーラによってソフトウェアがインストールされます。
+* *追加ソフトウェア*：Data Senseをインストールする前に、次のソフトウェアをホストにインストールする必要があります。
 +
 ** Docker Engine バージョン 19 以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
 ** Python 3 バージョン 3.6 以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
@@ -248,7 +248,7 @@ NOTE: Cloud Data Sense は、ソフトウェアがオンプレミスにインス
 
 .必要なもの
 * Linux システムがを満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
-* （オプション）システムに、前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。このソフトウェアがシステムにインストールされていない場合は、インストーラによってインストールされます。
+* システムに、前提条件となる2つのソフトウェアパッケージ（Docker EngineとPython 3）がインストールされていることを確認します。
 * Linux システムに対する root 権限があることを確認してください。
 * プロキシを使用していて、TLS代行受信を実行している場合は、TLS CA証明書が保存されているData Sense Linuxシステム上のパスを確認する必要があります。
 * オフライン環境が要件を満たしていることを確認します <<Cloud Data Sense からのアウトバウンドインターネットアクセスを有効にする,権限と接続>>。
@@ -368,7 +368,7 @@ image:diagram_onprem_scanner_groups.png["異なるスキャナグループに割
 
 .必要なもの
 * スキャナノードのすべてのLinuxシステムがを満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
-* （オプション）システムに、前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。このソフトウェアがシステムにインストールされていない場合は、インストーラによってインストールされます。
+* システムに、前提条件となる2つのソフトウェアパッケージ（Docker EngineとPython 3）がインストールされていることを確認します。
 * Linux システムに対する root 権限があることを確認してください。
 * 環境が要件を満たしていることを確認します <<Cloud Data Sense からのアウトバウンドインターネットアクセスを有効にする,権限と接続>>。
 * 追加するスキャナノードホストのIPアドレスを確認しておく必要があります。
@@ -478,13 +478,15 @@ image:screenshot_client_access_token.png["APIドキュメントページのス�
 .. 「/opt/netapp/Datasense/working _environment_To-scanner _group_config.yml」ファイルを開き、スキャナグループが特定の作業環境をスキャンするためのマッピングを入力します。データソースごとに_Working Environment ID_が必要になります。たとえば、次のエントリでは、2つの作業環境を「ヨーロッパ」スキャナグループに、2つを「United States」スキャナグループに追加します。
 +
 ....
-scanner group:
+scanner_groups:
  europe:
-   - "working_environment_id1"
-   - "working_environment_id2"
+   working_environments:
+     - "working_environment_id1"
+     - "working_environment_id2"
  united_states:
-   - "working_environment_id3"
-   - "working_environment_id4"
+   working_environments:
+     - "working_environment_id3"
+     - "working_environment_id4"
 ....
 +
 リストに追加されていない作業環境は、「デフォルト」グループによってスキャンされます。「デフォルト」グループには、少なくとも1つのマネージャまたはスキャナノードが必要です。
@@ -521,7 +523,7 @@ image:screenshot_scanner_groups.png["すべてのスキャナグループと、�
 
 .必要なもの
 * Manager ノードと Scanner ノードのすべての Linux システムが、を満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
-* （オプション）システムに、前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。このソフトウェアがシステムにインストールされていない場合は、インストーラによってインストールされます。
+* システムに、前提条件となる2つのソフトウェアパッケージ（Docker EngineとPython 3）がインストールされていることを確認します。
 * Linux システムに対する root 権限があることを確認してください。
 * 環境が要件を満たしていることを確認します <<Cloud Data Sense からのアウトバウンドインターネットアクセスを有効にする,権限と接続>>。
 * 使用するスキャナノードホストの IP アドレスを確認しておく必要があります。

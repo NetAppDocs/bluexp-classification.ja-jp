@@ -209,9 +209,10 @@ image:screenshot_add_keywords_result.png["[調査結果]ペインにカスタム
 
 カスタム正規表現を追加するコマンドの構文は次のとおりです。
 
- sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "<pattern_name>" -r "<regular_expression>"
+ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "<pattern_name>" -r "<regular_expression>" -p "<proximity_words>"
 * <pattery_name>=データセンスUIに表示される名前です。正規表現で検索される内容が、名前で示されていることを確認します。名前にはアルファベットを1文字以上含める必要があります。最大文字数は70文字です。
 * <regular_expression>=任意の正規表現を指定できます。
+* <proximity_words> =検索するパターンの300文字以内の単語（検出されたパターンの前または後）。検索結果の精度を高めるために役立ちます。各単語はカンマ(,)で区切ります。
 
 
 このコマンドはパス*/opt/NetApp/Datasense /*から実行します。
@@ -219,21 +220,23 @@ image:screenshot_add_keywords_result.png["[調査結果]ペインにカスタム
 新しい正規表現が多すぎるかどうかを毎回テストし、一致する値が多すぎるかどうかを確認します。その場合は、次のログメッセージが表示されます。
 
  log v1.0 | 2022-08-17 07:24:19,585 | ERROR | ds_logger | custom_regex | 119 | 1 | None | custom_regex_119 | The regex has high risk to identify false positives. Please narrow the regular expression and try again. To add it anyway, use the force flag (-f) at the end
-コマンドラインの末尾にある*-f *オプションを使用すると、たとえ過度に広範囲であっても、正規表現を強制的にData senseに追加できます。
+コマンドラインの末尾にある*-f *オプションを使用すると、たとえ過度に広範囲であっても、正規表現を強制的にData senseに追加できます。または、「-p」オプションを使用して、検索結果を絞り込むこともできます。
 
 
 
 === 例
 
-製品IDは201で始まる12桁の数値であるため、正規表現は*\b201\d｛9｝\b *です。データセンスUIのテキストで、このパターンを*内部製品ID *として識別したいとします。
+製品IDは、201で始まる12桁の番号です。たとえば、「201123456789」です。したがって、正規表現は*\b201\d｛9｝\b *になります。データセンスUIのテキストで、このパターンを*内部製品ID *として識別したいとします。近接文字「product id」と「identifier」を追加します。
 
 すべてのファイルで内部製品IDが指定されている場所を確認するには、次のコマンドを入力します。
 
 [source, cli]
 ----
 [user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "Internal Product ID" -r "\b201\d{9}\b"
+[user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "Internal Product ID" -r "\b201\d{9}\b" -p "product id,identifier"
 ----
+このコマンドの出力は次のとおりです。
+
 ....
 [+] Adding Custom Regex to Data Sense
 log v1.0 | 2022-08-23 13:19:01,476 | INFO | ds_logger | custom_regex | 154 | 1 | None | custom_regex_154 | A pattern named 'Internal Product ID' was added successfully to Data Sense
