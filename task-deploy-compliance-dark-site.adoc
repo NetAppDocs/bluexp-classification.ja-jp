@@ -72,7 +72,7 @@ Linux システムがを満たしていることを確認します <<Linux ホ�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] Cloud Data Sense サービスに登録する
 [role="quick-margin-para"]
-Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは無料です。そのあともデータのスキャンを続行するには、ネットアップの BYOL ライセンスが必要です。
+Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは30日間無料です。そのあともデータのスキャンを続行するには、ネットアップの BYOL ライセンスが必要です。
 
 
 
@@ -314,7 +314,7 @@ Data Sense インストーラは、パッケージをインストールし、イ
 .次のステップ
 設定ページからローカルを選択できます link:task-getting-started-compliance.html["オンプレミスの ONTAP クラスタ"] および link:task-scanning-databases.html["データベース"] をスキャンします。
 
-また可能です link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["クラウドデータセンスを使用する BYOL ライセンスをセットアップする"] 現時点では、デジタルウォレットのページから入手できます。データ量が 1TB を超えるまでは料金は発生しません。
+また可能です link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["クラウドデータセンスを使用する BYOL ライセンスをセットアップする"] 現時点では、デジタルウォレットのページから入手できます。30日間の無料トライアルが終了するまで、料金はかかりません。
 
 
 
@@ -387,7 +387,7 @@ Cloud Data Sense インストーラがパッケージのインストールを完
 .次のステップ
 設定ページからローカルを選択できます link:task-getting-started-compliance.html["オンプレミスの ONTAP クラスタ"] および local です link:task-scanning-databases.html["データベース"] をスキャンします。
 
-また可能です link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["クラウドデータセンスを使用する BYOL ライセンスをセットアップする"] 現時点では、デジタルウォレットのページから入手できます。データ量が 1TB を超えるまでは料金は発生しません。
+また可能です link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["クラウドデータセンスを使用する BYOL ライセンスをセットアップする"] 現時点では、デジタルウォレットのページから入手できます。30日間の無料トライアルが終了するまで、料金はかかりません。
 
 
 

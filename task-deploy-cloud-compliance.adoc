@@ -44,7 +44,7 @@ summary: クラウドデータセンスをクラウドに導入するには、�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] Cloud Data Sense サービスに登録する
 [role="quick-margin-para"]
-Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは無料です。その時点以降もデータのスキャンを続行するには、クラウドプロバイダMarketplaceまたはネットアップのBYOLライセンスを通じてBlueXPサブスクリプションが必要です。
+Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは30日間無料です。その時点以降もデータのスキャンを続行するには、クラウドプロバイダMarketplaceまたはネットアップのBYOLライセンスを通じてBlueXPサブスクリプションが必要です。
 
 
 
@@ -191,4 +191,4 @@ BlueXPはクラウドデータセンスインスタンスをクラウドプロ�
 .次のステップ
 設定ページで、スキャンするデータソースを選択できます。
 
-また可能です link:task-licensing-datasense.html["クラウドデータセンスのライセンスをセットアップする"] 現時点では、データ量が 1TB を超えるまでは料金は発生しません。
+また可能です link:task-licensing-datasense.html["クラウドデータセンスのライセンスをセットアップする"] 現時点では、30日間の無料トライアルが終了するまで、料金はかかりません。

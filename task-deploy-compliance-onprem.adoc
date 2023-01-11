@@ -52,7 +52,7 @@ image:diagram_deploy_onprem_overview.png["必要なBlueXPとネットワーク�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] Cloud Data Sense サービスに登録する
 [role="quick-margin-para"]
-Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは無料です。そのあともデータのスキャンを続行するには、クラウドプロバイダ Marketplace またはネットアップの BYOL ライセンスのサブスクリプションが必要です。
+Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは30日間無料です。そのあともデータのスキャンを続行するには、クラウドプロバイダ Marketplace またはネットアップの BYOL ライセンスのサブスクリプションが必要です。
 
 
 
@@ -321,7 +321,7 @@ Cloud Data Sense インストーラは、パッケージのインストール、
 .次のステップ
 設定ページで、スキャンするデータソースを選択できます。
 
-また可能です link:task-licensing-datasense.html["クラウドデータセンスのライセンスをセットアップする"] 現時点では、データ量が 1TB を超えるまでは料金は発生しません。
+また可能です link:task-licensing-datasense.html["クラウドデータセンスのライセンスをセットアップする"] 現時点では、30日間の無料トライアルが終了するまで、料金はかかりません。
 
 
 
@@ -511,7 +511,7 @@ image:screenshot_work_env_id.png["Data Sense ConfigurationページのWorking En
 
 image:screenshot_scanner_groups.png["すべてのスキャナグループと、グループ内の各スキャナノードのIPアドレスを示すスクリーンショット。"]
 
-可能です link:task-licensing-datasense.html["クラウドデータセンスのライセンスをセットアップする"] 現時点では、データ量が 1TB を超えるまでは料金は発生しません。
+可能です link:task-licensing-datasense.html["クラウドデータセンスのライセンスをセットアップする"] 現時点では、30日間の無料トライアルが終了するまで、料金はかかりません。
 
 
 
@@ -584,4 +584,4 @@ Cloud Data Sense インストーラがパッケージ、 Docker のインスト�
 .次のステップ
 設定ページで、スキャンするデータソースを選択できます。
 
-また可能です link:task-licensing-datasense.html["クラウドデータセンスのライセンスをセットアップする"] 現時点では、データ量が 1TB を超えるまでは料金は発生しません。
+また可能です link:task-licensing-datasense.html["クラウドデータセンスのライセンスをセットアップする"] 現時点では、30日間の無料トライアルが終了するまで、料金はかかりません。
