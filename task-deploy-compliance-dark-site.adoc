@@ -255,7 +255,7 @@ image:diagram_deploy_onprem_multi_host_no_internet.png["インターネットに
 tar -xzf DataSense-offline-bundle-v1.16.1.tar.gz
 ----
 +
-これにより、必要なソフトウェアと実際のインストールファイル* DATASENSE-installer -V1.16.1.tar.gz*が抽出されます。
+これにより、必要なソフトウェアと実際のインストールファイル* cc_onpm_installer.tar.gz *が抽出されます。
 
 . BlueXPを起動し、「ガバナンス」＞「分類」と選択します。
 . [ データセンスを活動化（ Activate Data sense ） ] をクリックし
@@ -274,7 +274,7 @@ image:screenshot_cloud_compliance_deploy_darksite.png["クラウドデータセ�
 +
 [source, cli]
 ----
-tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
+tar -xzf cc_onprem_installer.tar.gz
 ----
 . インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、インストーラに必要なパラメータをコマンドライン引数として指定することができます。
 +
@@ -371,7 +371,7 @@ sudo ./node_install.sh -m 10.11.12.13-t ふぁいる EF-1u69m1-1s35212`
 
 . 各 * スキャナノードホストで：
 +
-.. データセンスインストーラファイル（* DATASENSE-installer -<version> .tar.gz *）をホストマシンにコピーします。
+.. データセンスインストーラファイル（* cc_onpm_installer.tar.gz *）をホストマシンにコピーします。
 .. インストーラファイルを解凍します。
 .. 手順 3 でコピーしたコマンドを貼り付けて実行します。
 +
@@ -410,13 +410,13 @@ Cloud Data Sense インストーラがパッケージのインストールを完
 tar -xvf DataSense-offline-bundle-v1.16.1.tar.gz
 ----
 +
-これにより、インストールファイル*DATASENSE-installer -V1.16.1.tar.gz*が抽出されます。
+これにより、インストールファイル* cc_onpm_installer.tar.gz *が抽出されます。
 
 . ホストマシンでインストールファイルを解凍します。次に例を示します。
 +
 [source, cli]
 ----
-tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
+tar -xzf cc_onprem_installer.tar.gz
 ----
 +
 これにより、アップグレードスクリプト * START_ダーク site_upgrade.sh * および必要なサードパーティ製ソフトウェアが抽出されます。

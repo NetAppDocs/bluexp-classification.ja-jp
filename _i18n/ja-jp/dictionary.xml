@@ -2418,10 +2418,7 @@
   <block id="9a996c7f10537ef7b705b42e701d4b6e" category="paragraph"><block ref="9a996c7f10537ef7b705b42e701d4b6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="56d39ecb5bf4d2ec753c12fbb0e00108" category="paragraph">AWSおよびAWS GovCloud環境では、追加のインバウンドおよびアウトバウンドのセキュリティグループルールが必要です。を参照してください<block ref="74fb388667736bb2b34ea14720dd63e3" category="inline-link-rx"></block> を参照してください。</block>
   <block id="261826c213e3c9cbf53df120aaf0be3b" category="paragraph">AzureおよびAzure Government環境には、追加のインバウンドおよびアウトバウンドのセキュリティグループルールが必要です。を参照してください<block ref="e1893ebf6f9d2e927a13d052b78eec9f" category="inline-link-rx"></block> を参照してください。</block>
-  <block id="2152258e1def6997a945ef8261b66bcc" category="paragraph">これにより、必要なソフトウェアと実際のインストールファイル* DATASENSE-installer -V1.16.1.tar.gz*が抽出されます。</block>
-  <block id="7dcbe0be3e8e2a9fd658d871499bd050" category="list-text">データセンスインストーラファイル（* DATASENSE-installer -&lt;version&gt; .tar.gz *）をホストマシンにコピーします。</block>
   <block id="4866a563c343528540aa5c3529f908ca" category="list-text">データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.15.xがインストールされている場合は、1.16.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
-  <block id="eb2cb5912ef10d2dcff7761bde0a5ace" category="paragraph">これにより、インストールファイル*DATASENSE-installer -V1.16.1.tar.gz*が抽出されます。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">サポート登録の概要</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">サポート資格を有効にする登録には、次の2つの形式があります。</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">クラウドプロバイダのマーケットプレイスでのサブスクリプションに関連付けられているCloud Volumes ONTAP のシリアル番号を登録している（909201xxxxxxxxのシリアル番号）。</block>
@@ -3044,4 +3041,7 @@
   <block id="d16229fe4c13eabaf4888e33502b9f43" category="paragraph">また可能です <block ref="f05debecbc76a97697e3cf4388733167" category="inline-link-macro-rx"></block> 現時点では、30日間の無料トライアルが終了するまで、料金はかかりません。</block>
   <block id="68b93206d7f113e3a7eb3b6c41df6f6e" category="paragraph">可能です <block ref="f05debecbc76a97697e3cf4388733167" category="inline-link-macro-rx"></block> 現時点では、30日間の無料トライアルが終了するまで、料金はかかりません。</block>
   <block id="4836df02e5a10e2b5f7369a02cc815e2" category="paragraph">Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは30日間無料です。その時点以降もデータのスキャンを続行するには、クラウドプロバイダMarketplaceまたはネットアップのBYOLライセンスを通じてBlueXPサブスクリプションが必要です。</block>
+  <block id="8b3b2b670034ec0279cb937c145f257a" category="paragraph">これにより、必要なソフトウェアと実際のインストールファイル* cc_onpm_installer.tar.gz *が抽出されます。</block>
+  <block id="6cc29d8f722610f8a1e880227931a300" category="list-text">データセンスインストーラファイル（* cc_onpm_installer.tar.gz *）をホストマシンにコピーします。</block>
+  <block id="7b8f90ccd6fc9dda39797ae84ca7f14d" category="paragraph">これにより、インストールファイル* cc_onpm_installer.tar.gz *が抽出されます。</block>
 </blocks>
