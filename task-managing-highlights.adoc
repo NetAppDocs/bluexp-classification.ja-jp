@@ -17,8 +17,8 @@ summary: Cloud Data Sense は、プライベートデータを管理するため
 Cloud Data Sense は、プライベートデータを管理するためのさまざまな方法を提供します。一部の機能を使用すると、データの移行準備が簡単になります。また、他の機能を使用してデータを変更することもできます。
 
 * 特定のデータのコピーを作成して別の NFS の場所に移動する場合は、デスティネーションの NFS 共有にファイルをコピーできます。
-* ONTAP ボリュームを新しいボリュームにクローニングしたり、選択したファイルだけをソースボリュームから新しいクローンボリュームに含めたりできます。これは、データを移行しているときに、元のボリュームから特定のファイルを除外する場合に便利です。
-* ソースリポジトリから特定の保存先にあるディレクトリにファイルをコピーして同期できます。これは、ソースファイルに最終的なアクティビティが残っている間に、あるソースシステムから別のソースシステムにデータを移行する場合に便利です。
+* ONTAP ボリュームを新しいボリュームにクローニングしたり、選択したファイルだけをソースボリュームから新しいクローンボリュームに含めたりできます。これは、データを移行する際に元のボリュームから特定のファイルを除外する場合に便利です。
+* ソースリポジトリから特定の保存先にあるディレクトリにファイルをコピーして同期できます。これは、ソースファイルに対して何らかの最終的なアクティビティが行われている間に、あるソースシステムから別のソースシステムにデータを移行する場合に便利です。
 * データがスキャンしているソースファイルを任意の NFS 共有に移動できます。
 * 安全でないようであるか危険すぎると思われるファイルを削除して、ストレージシステムに残すことも、重複として識別したファイルを削除することもできます。
 
@@ -42,7 +42,7 @@ Cloud Data Sense は、プライベートデータを管理するためのさま
 
 * * ONTAP ボリュームのクローンを同じアグリゲート内の新しいボリュームに作成します。新しいクローンボリュームには、ソースボリュームから選択されたファイルのみを含めます。
 +
-これは、データを移行する際に元のボリュームから特定のファイルを除外する場合に便利です。このアクションではを使用します link:https://docs.netapp.com/us-en/ontap/volumes/flexclone-efficient-copies-concept.html["NetApp FlexClone"^] ボリュームをすばやく複製し、 * 選択しなかったファイルを削除する機能。
+これは、データを移行する際に元のボリュームから特定のファイルを除外する場合に便利です。このアクションではを使用します https://docs.netapp.com/us-en/ontap/volumes/flexclone-efficient-copies-concept.html["NetApp FlexClone"^] ボリュームをすばやく複製し、 * 選択しなかったファイルを削除する機能。
 
 * * 単一のソースリポジトリ（ ONTAP ボリューム、 S3 バケット、 NFS 共有など）から特定のデスティネーション（ターゲット）にあるディレクトリにファイルをコピーして同期します。
 +
@@ -73,7 +73,7 @@ image:screenshot_compliance_copy_multi_files.png["[ データ調査 ] ページ�
 +
 ** 個々のファイルを選択するには、各ファイル（image:button_backup_1_volume.png[""]）。
 ** 現在のページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）。
-** すべてのページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）をクリックし、ポップアップメッセージにと入力します image:screenshot_select_all_items.png[""]をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。
+** すべてのページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）をクリックし、ポップアップメッセージにと入力します image:screenshot_select_all_items.png["すべてのファイルの選択について"]をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。
 
 
 . _ ファイルのコピー _ ダイアログで * 標準コピー * タブを選択します。
@@ -124,7 +124,7 @@ image:screenshot_compliance_copy_multi_files.png["[ データ調査 ] ページ�
 +
 ** 個々のファイルを選択するには、各ファイル（image:button_backup_1_volume.png[""]）。
 ** 現在のページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）。
-** すべてのページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）をクリックし、ポップアップメッセージにと入力します image:screenshot_select_all_items.png[""]をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。
+** すべてのページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）をクリックし、ポップアップメッセージにと入力します image:screenshot_select_all_items.png["すべてのファイルの選択について"]をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。
 
 
 . _ ファイルのコピー _ ダイアログで * FlexClone * タブを選択します。このページには、ボリュームからクローニングされるファイル（選択したファイル）の総数と、クローンボリュームに含まれている / 削除されていないファイル（選択しなかったファイル）の数が表示されます。
@@ -172,7 +172,7 @@ image:screenshot_compliance_filter_1_repo.png["単一の作業環境内の単一
 +
 他のフィルタを適用して、コピー先システムに同期するファイルだけが表示されるようにします。
 
-. [ 調査結果 ] ウィンドウ枠で、タイトル行のボックスをオンにして、すべてのページのすべてのファイルを選択します（image:button_select_all_files.png[""]）をクリックし、ポップアップメッセージに入力します image:screenshot_select_all_items.png[""] [ リスト内のすべての項目を選択（ * xxx 項目） ] をクリックし、 [ * コピー * ] をクリックします。
+. [ 調査結果 ] ウィンドウ枠で、タイトル行のボックスをオンにして、すべてのページのすべてのファイルを選択します（image:button_select_all_files.png[""]）をクリックし、ポップアップメッセージに入力します image:screenshot_select_all_items.png["すべてのファイルの選択について"] [ リスト内のすべての項目を選択（ * xxx 項目） ] をクリックし、 [ * コピー * ] をクリックします。
 +
 image:screenshot_compliance_sync_multi_files.png["[ データ調査 ] ページからコピーするファイルを選択する方法と、 [ コピー ] ボタンを示すスクリーンショット。"]
 
@@ -187,7 +187,7 @@ Cloud Sync UIがBlueXPで開きます
 +
 同期関係を定義するよう求められます。ソースシステムは、データセンスで選択したリポジトリとファイルに基づいてあらかじめ設定されています。
 
-. ターゲットシステムを選択し、使用するデータブローカーを選択（または作成）する必要があります。から、 Cloud Sync の要件を確認します link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html.html["Quick Start 概要 の略"^]。
+. ターゲットシステムを選択し、使用するデータブローカーを選択（または作成）する必要があります。から、 Cloud Sync の要件を確認します link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["Quick Start 概要 の略"^]。
 
 
 .結果
@@ -227,7 +227,7 @@ image:screenshot_compliance_move_multi_files.png["移動するファイルを選
 +
 ** 個々のファイルを選択するには、各ファイル（image:button_backup_1_volume.png[""]）。
 ** 現在のページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）。
-** すべてのページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）をクリックし、ポップアップメッセージにと入力します image:screenshot_select_all_items.png[""]をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。
+** すべてのページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）をクリックし、ポップアップメッセージにと入力します image:screenshot_select_all_items.png["すべてのファイルの選択について"]をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。
 
 
 . ボタンバーで、 * 移動 * をクリックします。
@@ -278,7 +278,7 @@ image:screenshot_compliance_delete_multi_files.png["削除するファイルを�
 +
 ** 個々のファイルを選択するには、各ファイル（image:button_backup_1_volume.png[""]）。
 ** 現在のページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）。
-** すべてのページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）をクリックし、ポップアップメッセージにと入力します image:screenshot_select_all_items.png[""]をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。
+** すべてのページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）をクリックし、ポップアップメッセージにと入力します image:screenshot_select_all_items.png["すべてのファイルの選択について"]をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。
 
 
 . ボタンバーで、 * 削除 * をクリックします。

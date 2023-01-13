@@ -151,13 +151,10 @@
   <block id="2ef77a3845de73c82db787233e991d0c" category="doc">SharePoint アカウントをスキャンしています</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="section-title">クイックスタート</block>
   <block id="91e06e9a9ef97681b798e2e5e007ba97" category="paragraph">これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。</block>
-  <block id="040e5e5b0b4e3b56e337960cee1ba171" category="paragraph">SharePoint アカウントにログインするための管理者資格情報があり、スキャンする SharePoint サイトの URL があることを確認します。</block>
   <block id="74bb7a594eb368027d02fe1a3688d1d5" category="inline-link-macro">クラウドデータの導入センス</block>
   <block id="e8533f7b037610ff8d390f3287ddb129" category="paragraph"><block ref="82045b529e00dc6553b9711a4c4e6861" category="inline-link-macro-rx"></block> インスタンスが展開されていない場合。</block>
-  <block id="0fd354f4598b432146c03a6c1b496e25" category="paragraph">管理者ユーザーの資格情報を使用して、アクセスする SharePoint アカウントにログインし、新しいデータソース / 作業環境として追加します。</block>
   <block id="a8c0024f4de7eafbcc79573f90579f5f" category="paragraph">SharePoint アカウントでスキャンする SharePoint サイト URL のリストを追加し、スキャンの種類を選択します。一度に最大 100 個の URL を追加できます。</block>
   <block id="2b4e0126afcd89267252cefaf503c414" category="section-title">SharePoint の要件を確認する</block>
-  <block id="e1f7c840b56984612690abc476c04c51" category="list-text">すべての SharePoint サイトへの読み取りアクセスを提供する SharePoint アカウントの管理者ログインクレデンシャルが必要です。</block>
   <block id="f86df9b5b428fe5b37c14bd1162bc107" category="list-text">スキャンするすべてのデータについて、 SharePoint サイトの URL の行区切りリストが必要です。</block>
   <block id="923e0e9139b80b545817bb342c8afa44" category="section-title">Cloud Data Sense インスタンスの導入</block>
   <block id="f1ac9839669a6dbca87204adecc06943" category="paragraph">導入済みのインスタンスがない場合は Cloud Data Sense を導入</block>
@@ -167,7 +164,6 @@
   <block id="151eca0a4859a8fbf17435fcbaa0001e" category="paragraph">Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。</block>
   <block id="cb49e9afef4bc3127fbf2d354d00fd54" category="list-text">[ 作業環境の構成 ] ページで、 [ * データソースの追加 *&gt;* SharePoint Online アカウントの追加 * ] をクリックします。</block>
   <block id="ea56ecd454d4962a21bd35be41237229" category="list-text">[SharePoint Online アカウントの追加 ] ダイアログで、 [* SharePoint にサインインする * ] をクリックします。</block>
-  <block id="e61b097ecbac4c8e2db9675d4c9f64cb" category="list-text">表示される Microsoft ページで、 SharePoint アカウントを選択し、必要な管理者ユーザーとパスワードを入力してから、 *Accept * をクリックして Cloud Data Sense がこのアカウントからデータを読み取ることを許可します。</block>
   <block id="88f6018b4c4004a32e426fcb13381212" category="section-title">SharePoint サイトをコンプライアンススキャンに追加する</block>
   <block id="32d4436877412c0a858739daddb125a4" category="list-text">[_Configuration_] ページで、 SharePoint アカウントの [*Configuration*] ボタンをクリックします。</block>
   <block id="eeca65dd888a9508e6e72469e53273ff" category="inline-image-macro">設定ボタンを選択できるスキャン設定ページのスクリーンショット。</block>
@@ -320,7 +316,6 @@
   <block id="9965e5c3b37cecfca0bb5cbb1e086c48" category="list-text">ヘルス参照パターン</block>
   <block id="53155f0c534ef44d114eeae0b0f2e638" category="list-text">ICD-10-CM 医療コード</block>
   <block id="f1d3fc4a48ee497faf58426c477a8bd3" category="list-text">ICD-9-CM 医療コード</block>
-  <block id="73d3d4a3c512af892bcba03ccfb7e0a3" category="list-text">HR –健全性カテゴリ</block>
   <block id="8948f9f8b6a6a046dfc8b73ef1fa8c51" category="list-text">ヘルスアプリケーションデータカテゴリ</block>
   <block id="889fccf2502dc396b9b9c66885b6a093" category="paragraph">このレポートには次の情報が含まれます。</block>
   <block id="8e73880b563de5164876f6e85029b66a" category="list-text">ヘルス情報が含まれているファイルの数と、作業環境。</block>
@@ -629,7 +624,6 @@
   <block id="664f12aee95db5001901ada82a66a117" category="inline-link-macro">近接性検証</block>
   <block id="9ad88770f453f002d943e75f7bc6c007" category="paragraph">このカテゴリの項目は、どの言語でも認識できます。</block>
   <block id="8060d07e3adbf13c278991613997a8b6" category="inline-link-macro">Data Fusion を使用して個人データ識別子を追加する</block>
-  <block id="6ea5e530965ed45d43a0385246e6a51b" category="paragraph">データベースサーバーをスキャンする場合は、ファイル内にある個人データのリストに追加できます。Data Fusion 機能を使用すると、データベーステーブルの列を選択して、クラウドデータ検出でスキャンで検索する追加の識別子を選択できます。を参照してください <block ref="e5fd618a95839b26abd9eb3c166b6d5a" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">を入力します</block>
   <block id="29ee5d1ebcc033234938a5234f1f2075" category="cell">識別子</block>
   <block id="ed82815cd7c9b16e760f312718a9a3d3" category="cell">近接性検証：</block>
@@ -1167,8 +1161,6 @@
   <block id="ddd83696bfecd5c4f7b1fd6fd308c800" category="summary">Cloud Data Sense は、プライベートデータを管理するためのさまざまな方法を提供します。一部の機能を使用すると、データの移行準備が簡単になります。また、他の機能を使用してデータを変更することもできます。</block>
   <block id="4264ca6efffa4cf6fdf127440dfdd525" category="doc">プライベートデータの管理</block>
   <block id="681a30d34dc88519fc9d3b5f02853ef5" category="list-text">特定のデータのコピーを作成して別の NFS の場所に移動する場合は、デスティネーションの NFS 共有にファイルをコピーできます。</block>
-  <block id="34413ef9a2fa02e162300410e4578dc8" category="list-text">ONTAP ボリュームを新しいボリュームにクローニングしたり、選択したファイルだけをソースボリュームから新しいクローンボリュームに含めたりできます。これは、データを移行しているときに、元のボリュームから特定のファイルを除外する場合に便利です。</block>
-  <block id="d230e126c453ad22ad5fcc3f4415075f" category="list-text">ソースリポジトリから特定の保存先にあるディレクトリにファイルをコピーして同期できます。これは、ソースファイルに最終的なアクティビティが残っている間に、あるソースシステムから別のソースシステムにデータを移行する場合に便利です。</block>
   <block id="13aa22f4ea4821e274ae149a6821fb68" category="list-text">データがスキャンしているソースファイルを任意の NFS 共有に移動できます。</block>
   <block id="8cd71862f8a8c010084d3687780ba841" category="list-text">安全でないようであるか危険すぎると思われるファイルを削除して、ストレージシステムに残すことも、重複として識別したファイルを削除することもできます。</block>
   <block id="e1ceec320e11017e93f764dd05d20aa0" category="section-title">ソースファイルをコピーしています</block>
@@ -1177,7 +1169,6 @@
   <block id="73d4c457b0f8ca0f7be75dc85bba7f0f" category="paragraph">これは、特定のデータのコピーを作成して別の NFS の場所に移動する場合に便利です。</block>
   <block id="d5c3d70f964953312816ce98d2f4f5d1" category="list-text">* ONTAP ボリュームのクローンを同じアグリゲート内の新しいボリュームに作成します。新しいクローンボリュームには、ソースボリュームから選択されたファイルのみを含めます。</block>
   <block id="2c727edaa875c00494a86714e286c25d" category="inline-link-macro">NetApp FlexClone</block>
-  <block id="ec086256431805bc6e71317d95f6f6a8" category="paragraph">これは、データを移行する際に元のボリュームから特定のファイルを除外する場合に便利です。このアクションではを使用します <block ref="92039e8ff3437cbcef178dbc4c5e027b" category="inline-link-macro-rx"></block> ボリュームをすばやく複製し、 * 選択しなかったファイルを削除する機能。</block>
   <block id="cacf80b84fb78c42b4f9ad4c81a37286" category="list-text">* 単一のソースリポジトリ（ ONTAP ボリューム、 S3 バケット、 NFS 共有など）から特定のデスティネーション（ターゲット）にあるディレクトリにファイルをコピーして同期します。</block>
   <block id="6e9116627887d2ff2f373f0cac2792f4" category="paragraph">これは、あるソースシステムから別のシステムにデータを移行する場合に便利です。最初のコピーの後、設定したスケジュールに基づいて変更されたデータが同期されます。このアクションではを使用します<block ref="a370f691ddfd2ad7b716b2db4ad021a1" category="inline-link-rx"></block> データをソースからターゲットにコピーおよび同期する機能。</block>
   <block id="eebe70a774ce96bd8417ce353c5f5bfb" category="paragraph">データがスキャンしているソースファイルを任意の NFS 共有にコピーできます。NFS 共有をデータセンスと統合する必要はありません。選択したすべてのファイルが「 &lt;host_name&gt; ： /&lt;share_path&gt;` 」の形式でコピーされる NFS 共有の名前を知っておく必要があります。</block>
@@ -1188,7 +1179,6 @@
   <block id="07fc1f9bea8dc1060003a2fea5aa3598" category="list-text">[ データ調査結果 ] ペインで、コピーするファイルを選択し、 [ * コピー ] をクリックします。</block>
   <block id="e78ae78fac1620efb2c4db4938844274" category="inline-image-macro">[ データ調査 ] ページからコピーするファイルを選択する方法と、 [ コピー ] ボタンを示すスクリーンショット。</block>
   <block id="cb1cacc23b0ae330cc87e78659350142" category="paragraph"><block ref="cb1cacc23b0ae330cc87e78659350142" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="954c8e4a2fef11c0a6762941ba9d8127" category="list-text">すべてのページのすべてのファイルを選択するには、タイトル行（<block ref="131fceed6fc7a6aedc494491ecbfa63c" category="inline-image-macro-rx" type="image"></block>）をクリックし、ポップアップメッセージにと入力します <block ref="59f58c07f404f0ac69cc91cb0db7e0be" category="inline-image-macro-rx" type="image"></block>をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。</block>
   <block id="62a136d0cb137d3728e47722538ef521" category="list-text">_ ファイルのコピー _ ダイアログで * 標準コピー * タブを選択します。</block>
   <block id="ce317c87ce4844ca643177409a988555" category="inline-image-macro">選択したすべてのファイルのコピー先となる NFS 共有の名前を指定できる、ファイルのコピーダイアログを示すスクリーンショット。</block>
   <block id="29119fd663ff44c4494107f1f7eaca94" category="paragraph"><block ref="29119fd663ff44c4494107f1f7eaca94" category="inline-image-macro-rx" type="image"></block></block>
@@ -1228,7 +1218,6 @@
   <block id="627bf959aabe96a1a08aad7eaf1ab97a" category="paragraph">Cloud Sync サービスでは同期関係のサービス料金が別途請求されるため、データブローカーをクラウドに導入するとリソース料金が発生することに注意してください。</block>
   <block id="ff0485cd041399c074cb840a8d93eafb" category="list-text">[ データの調査 ] ペインで、 1 つの * 作業環境 * と 1 つの * ストレージリポジトリ * を選択してフィルタを作成し、すべてのファイルが同じリポジトリにあることを確認します。</block>
   <block id="6b063a37c6525c913c2ebc03bba94e6e" category="paragraph">他のフィルタを適用して、コピー先システムに同期するファイルだけが表示されるようにします。</block>
-  <block id="ec9e1d0eb5ba32bb2965598b3dbf2b63" category="list-text">[ 調査結果 ] ウィンドウ枠で、タイトル行のボックスをオンにして、すべてのページのすべてのファイルを選択します（<block ref="131fceed6fc7a6aedc494491ecbfa63c" category="inline-image-macro-rx" type="image"></block>）をクリックし、ポップアップメッセージに入力します <block ref="59f58c07f404f0ac69cc91cb0db7e0be" category="inline-image-macro-rx" type="image"></block> [ リスト内のすべての項目を選択（ * xxx 項目） ] をクリックし、 [ * コピー * ] をクリックします。</block>
   <block id="57b19a0c98df2d7d9398a909c1eae2e5" category="paragraph"><block ref="57b19a0c98df2d7d9398a909c1eae2e5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8431faf03ecbbded4ece2797b0f5e558" category="list-text">_ ファイルのコピー _ ダイアログで * 同期 * タブを選択します。</block>
   <block id="0c6b55cfd6cc79430c7e6b4984da814c" category="inline-image-macro">[ ファイルのコピー ] ダイアログを示すスクリーンショットで、 [ 同期 ] オプションを選択できます。</block>
@@ -1381,7 +1370,6 @@
   <block id="edcc6720ea7c450bc260e04210895e7c" category="cell">ホスト間でファイルを共有するための NFS サーバ（各スキャナノードからマネージャノードに必要）</block>
   <block id="06b1338ba02add2b5d2da67663b19ebe" category="cell">2049</block>
   <block id="26285ebf37a162fef382f275814886c9" category="inline-link-macro">シングルホストインストール</block>
-  <block id="a34d1a701917dbbb1735e81c6c612bc0" category="list-text">から手順 1~8 を実行します <block ref="80550799407a84f7dd8a18bd5786e6be" category="inline-link-macro-rx"></block> マネージャーノード。</block>
   <block id="5e2f5642806d5ddc2868631f2e508d3d" category="paragraph">シングルホストのインストールで使用できる変数に加えて、新しいオプション * -n &lt;Node_IP&gt; * を使用してスキャナノードの IP アドレスを指定します。複数のノードの IP をカンマで区切って指定します。</block>
   <block id="743663a45dfd2f9237dfcf266bf499a6" category="list-text">マネージャノードのインストールが完了する前に、スキャナノードに必要なインストールコマンドがダイアログに表示されます。コマンドをコピーし、テキストファイルに保存します。例：</block>
   <block id="bb70d223e1e51328f09038d97ad81b07" category="paragraph">sudo ./node_install.sh -m 10.11.12.13-t ふぁいる EF-1u69m1-1s35212`</block>
@@ -1403,7 +1391,6 @@
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">ヘルプを表示します</block>
   <block id="a1244561bd1d271f7f6a76554fae2cde" category="summary">組織のストレージリソース上のデータに関連するコストを管理できます。Cloud Data Sense は、古いデータ、ビジネス以外のデータ、重複するファイル、および非常に大きなファイルをシステム内で特定するため、一部のファイルを削除するか、低コストのオブジェクトストレージに階層化するかを判断できます。</block>
   <block id="16ace13e9030ba8b43b8bf469be3ffff" category="doc">組織に保存されているデータに関するガバナンスの詳細を表示する</block>
-  <block id="8e907bbc7c59c56a9ea9a3660e214fb9" category="paragraph">また、オンプレミスの場所からクラウドにデータを移行する予定の場合は、移動前にデータのサイズと、機密情報が含まれているデータの有無を確認できます。</block>
   <block id="f7b090ae0361a33be68398c938094aa6" category="section-title">Governance ダッシュボード</block>
   <block id="e5295f0dcd9974bcca40c2b38f856a76" category="paragraph">Governance ダッシュボードには情報が表示されるため、ストレージリソースに保存されているデータの効率性を高め、コストを管理できます。</block>
   <block id="275752eff701cbf90c07d1beb3ef4a06" category="inline-image-macro">クラウドデータセンスガバナンスダッシュボードのスクリーンショット。</block>
@@ -1416,18 +1403,13 @@
   <block id="dc6d9a4419750aae3db17878ffe18e5c" category="inline-link-macro">表示される重複ファイルの種類を確認します</block>
   <block id="af3ebdfa0de82f4ebf264444127ceba9" category="list-text">* 重複ファイル * - スキャンしているデータソース内の他の場所に複製されているファイル。 <block ref="aed0fa6f561bb8f0cefd5cb21d93e1cf" category="inline-link-macro-rx"></block>。</block>
   <block id="2b4d8a4ffe486173d89394fc3d6ccdb3" category="section-title">検索結果が最も多いポリシーです</block>
-  <block id="a7a23c7ed8e3b4d314ee2c49d88b93c6" category="paragraph">_Policy_area でポリシーの名前をクリックすると、その結果が [ 調査 ] ページに表示されます。[ すべて表示 *] をクリックして、使用可能なすべてのポリシーのリストを表示します。</block>
   <block id="b70528883a2d1dce278c3b16e0f8c608" category="section-title">データの概要</block>
-  <block id="0a9145dde57003fa4c977f908ffbd528" category="paragraph">スキャンされているすべてのデータの概要。ボタンをクリックして、すべての作業環境とデータソースの使用容量、データの使用年数、データのサイズ、ファイルタイプを含む完全なデータマッピングレポートをダウンロードします。を参照してください <block ref="5efa252e20225abbecfacf56f2ab906a" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="5054e48efbd7d7a23b39d5c48f13943f" category="section-title">データの機密性に基づいて上位のデータリポジトリが表示されます</block>
-  <block id="021e89108a720478560938c05dd763cf" category="paragraph">_Top Data Repositories by Sensitivity Level_ 領域には、最も機密性の高い項目を含む上位 4 つのデータリポジトリ（作業環境およびデータソース）が表示されます。各作業環境の棒グラフは、次のように分割されています。</block>
-  <block id="149c82afeb3e94deb5ab558ddbbfbfcb" category="list-text">非個人データ</block>
   <block id="0f0be2946f647a34d438bb34323fd30e" category="list-text">機密性の高い個人データ</block>
   <block id="43ec9a8f95b41a9a8648d4df5db2c7f1" category="paragraph">各セクションにカーソルを合わせると、各カテゴリの項目の総数を確認できます。</block>
   <block id="9f3ca55177a9cff0208b29196f6a269a" category="paragraph">各領域をクリックすると、 [ 調査 ] ページにフィルタリングされた結果が表示され、詳細を調査できます。</block>
   <block id="645e4f0b71c92a4a3810668742adff95" category="section-title">オープンアクセス権のタイプ別に一覧表示されるデータ</block>
   <block id="140692ffca26cf04b2ffe208e40614b6" category="paragraph">_Open Permissions_ 領域には、スキャンされるすべてのファイルに存在する各タイプの権限の割合が表示されます。このチャートには、次の種類の権限が表示されます。</block>
-  <block id="5eef11b580781f577a31fd66fb5e92bc" category="list-text">オープンアクセスがありません</block>
   <block id="a1803d6c124292f91b3806ee4c46b406" category="list-text">組織に開く（ Open to Organization ）</block>
   <block id="8c8bc01ad66acc46ad4db72461de09d9" category="list-text">[ パブリック ] に移動します</block>
   <block id="77660481bdb77bcf47202315fe7e0d51" category="list-text">不明なアクセスです</block>
@@ -1440,7 +1422,6 @@
   <block id="adb18f5fb34b742716a832a865f1d8e2" category="section-title">最も識別されているデータ分類</block>
   <block id="65da47b6ef0adda3d4c4ed54dfde4494" category="inline-link-macro">ファイルの種類</block>
   <block id="02ac28e6aac96ae29edd75daf4e929ad" category="inline-link-macro">AIP ラベル</block>
-  <block id="439fa70484344162e488c2f6e8d7f52c" category="paragraph">カテゴリを使用すると、保有している情報の種類を表示して、データの状況を把握することができます。たとえば、「履歴書」や「従業員契約書」などのカテゴリには機密データを含めることができます。結果を調査すると、従業員契約が安全でない場所に保存されていることがわかります。その後、その問題を修正できます。</block>
   <block id="659056cf2678e420a1509bbcc731edcf" category="paragraph">を参照してください <block ref="21094466ac939ca1953a7d6cc6a49a1d" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="cb45e879b815142e4e2cd0d22e5c6dd9" category="paragraph">ファイルタイプを確認すると、特定のファイルタイプが正しく保存されない可能性があるため、機密データを制御するのに役立ちます。</block>
   <block id="5e8739b0bd7e602b7f492e7398e41425" category="inline-link-macro">ファイルタイプを表示しています</block>
@@ -1856,7 +1837,6 @@
   <block id="be27a8dc9dfba1897217ecee5823bd4e" category="list-text">健常性情報がファイルにどのように分散されているかを確認できます。 <block ref="1ce675538fc85bf3b1ef6fa4ab26346c" category="inline-link-macro-rx"></block>。</block>
   <block id="e6d68873555c37c43798e1e7f7b8513e" category="list-text">必要に応じて、このチェックボックスをオンにすると、ポリシーのパラメータに一致するファイルが自動的に削除されます。の詳細を確認してください <block ref="30e6ed97d290e57f0e75d9e6322eb503" category="inline-link-macro-rx"></block>。</block>
   <block id="58293f799492274c3df075305508ade4" category="paragraph">データがスキャンしているソースファイルを、サポートされていない非構造化データソースから特定のターゲットの場所にあるディレクトリにコピーできます <block ref="ebb58758e77d05976efcc1ccd5134262" category="inline-link-rx"></block>）。最初のコピー後、ファイル内で変更されたデータは、設定したスケジュールに基づいて同期されます。</block>
-  <block id="82ad1ea6a2070297147f61890ad6c8ae" category="list-text">ターゲットシステムを選択し、使用するデータブローカーを選択（または作成）する必要があります。から、 Cloud Sync の要件を確認します <block ref="5abefb1df304535da49e476c753377a4" category="inline-link-macro-rx"></block>。</block>
   <block id="1512503c318779a183367c2326a24f21" category="list-text">オンプレミスコネクタソフトウェアが最新バージョンにアップグレードされていることを確認します。<block ref="ce22b55d293a0e07097135e6515924b6" category="inline-link-rx"></block>。</block>
   <block id="f49cd49d999d1390260fa896a1a3ceec" category="paragraph">をクリックします <block ref="4860dd37562d5a245a69a17be60d42e2" category="inline-link-macro-rx"></block> ポリシーの詳細については、を参照してください。</block>
   <block id="f887e54f519cc35b4741120230ac9d1a" category="paragraph">_Classification_area には ' 最も識別されたリストが表示されます <block ref="b823fa31d5dec268aaa19a8828bf34fe" category="inline-link-macro-rx"></block>、 <block ref="336d27c782a82199a3380deae5570591" category="inline-link-macro-rx"></block>および <block ref="8376771def5b60bb1cfdd0dc180ae5cc" category="inline-link-macro-rx"></block> をスキャンしたデータに保存します。</block>
@@ -2017,7 +1997,6 @@
   <block id="3fedcf7612eed43efc90d19f42d43f9a" category="paragraph">データセンス権限機能の一部として、ファイルにアクセスできるユーザとグループのリストを表示できるようになりました。各グループを展開すると、グループ内のユーザのリストが表示されます。<block ref="978ddb309e10f2b48cc0f4a959fbca42" category="inline-link-rx"></block>。</block>
   <block id="96ab93ed4512cdb4dd07828ed738b502" category="section-title">2つの新しいフィルタが[データ調査]ページに追加されました</block>
   <block id="9e4e3d73f23809aabccd30c3abe0f99f" category="list-text">「ディレクトリタイプ」フィルタを使用すると、フォルダまたは共有のみを表示するようにデータを絞り込むことができます。結果は新しい*ディレクトリ*タブに表示されます。</block>
-  <block id="7613f02556e4a651db53f06b87b1b460" category="list-text">「ユーザ/グループの権限」フィルタを使用すると、特定のユーザまたはグループに対する読み取り/書き込み権限があるファイル、フォルダ、および共有を表示できます。複数のユーザまたはグループの名前を選択するか、名前の一部を入力できます。t</block>
   <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">データの調査に使用できるすべてのフィルタのリストを確認します</block>
   <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
   <block id="fca7f51b54fee8b38e01607def214d88" category="paragraph">「ユーザ / グループの権限」という新しいフィルタが追加され、特定のユーザまたはグループの読み取り / 書き込み権限を持つファイルを一覧表示できるようになりました。1つ以上のユーザ名またはグループ名を選択するか、または名前の一部を入力できます。この機能は、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files 、 Amazon FSX for ONTAP 、およびファイル共有のボリュームで使用できます。</block>
@@ -2214,7 +2193,6 @@
   <block id="7d96313dbf4a19b7144c3ff41f415250" category="section-title">データセンスでは、一度に最大100,000個のファイルを移動できます</block>
   <block id="3e0c53bc3881ac60b7e7165fda5915c1" category="inline-link">データセンスを使用してファイルを移動する方法をご覧ください</block>
   <block id="83a532ebc867c79287dd4586ca124d5c" category="paragraph">スキャンしたデータソースからNFS共有へのファイル移動にData Senseを使用する場合は、ファイルの最大数が100、000ファイルに増加しています。<block ref="09dde0c065d21cccd7a9b4c85001931c" category="inline-link-rx"></block>。</block>
-  <block id="b71c8f6fc8800b6bd7a829954617c2fb" category="paragraph">データセンスでは、オーストラリア TFN ( 税ファイル番号 ) 、オーストラリア運転免許証番号、オーストラリア医薬品番号、オーストラリアパスポート番号を含むファイルを識別し、分類することができます。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
   <block id="c761b545ddd43d078ae7ea86495182db" category="paragraph">Data Sense と統合するグローバル Active Directory サーバは、以前にサポートされていた DNS サーバに加えて、 LDAP サーバにすることができます。 <block ref="de464dfb9c55e9818cd55e6911bff3a5" category="inline-link-macro-rx"></block>。</block>
   <block id="7d3fd85c1133d516ea08b3afb6e176b0" category="list-text">を参照してください <block ref="48c020a7f60397cfd78a107333e0da79" category="inline-link-macro-rx"></block> [すべてのアクセス許可の表示]ボタンをクリックしたときに、各ファイルおよびディレクトリについて、</block>
   <block id="dfb9b838b2fdca41edadb04c9ebbb240" category="list-text">ネットアップ以外のCIFSファイル共有（NFSファイル共有は除く）</block>
@@ -2418,7 +2396,6 @@
   <block id="9a996c7f10537ef7b705b42e701d4b6e" category="paragraph"><block ref="9a996c7f10537ef7b705b42e701d4b6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="56d39ecb5bf4d2ec753c12fbb0e00108" category="paragraph">AWSおよびAWS GovCloud環境では、追加のインバウンドおよびアウトバウンドのセキュリティグループルールが必要です。を参照してください<block ref="74fb388667736bb2b34ea14720dd63e3" category="inline-link-rx"></block> を参照してください。</block>
   <block id="261826c213e3c9cbf53df120aaf0be3b" category="paragraph">AzureおよびAzure Government環境には、追加のインバウンドおよびアウトバウンドのセキュリティグループルールが必要です。を参照してください<block ref="e1893ebf6f9d2e927a13d052b78eec9f" category="inline-link-rx"></block> を参照してください。</block>
-  <block id="4866a563c343528540aa5c3529f908ca" category="list-text">データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.15.xがインストールされている場合は、1.16.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">サポート登録の概要</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">サポート資格を有効にする登録には、次の2つの形式があります。</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">クラウドプロバイダのマーケットプレイスでのサブスクリプションに関連付けられているCloud Volumes ONTAP のシリアル番号を登録している（909201xxxxxxxxのシリアル番号）。</block>
@@ -2605,7 +2582,6 @@
   <block id="f0d07e71c0ad5ba2b297c19c3e9347e0" category="inline-link">これらのクラスタはBlueXPで検出されます</block>
   <block id="51fb345d59b3adb8f0060afb63071c67" category="paragraph">お使いのCloud Volumes ONTAP システムは、BlueXPのキャンバスですでに使用できるはずです。オンプレミスの ONTAP システムには、が必要です<block ref="0ea86f15e08471a3866cbc09dd9a2bd4" category="inline-link-rx"></block>。</block>
   <block id="0718fb096056f1b13075e60b653a79cf" category="paragraph">インターネットにアクセスできないダークサイトにインストールされているオンプレミスの ONTAP システムをスキャンする場合は、を実行する必要があります <block ref="ecc0eddec0bd55859619b2c1bb3475b2" category="inline-link-macro-rx"></block>。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。</block>
-  <block id="37bd317738b255170eae4641d8d07b07" category="paragraph">環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、ポート 443 を介したコネクタとクラウドデータセンスの接続などが含まれます。 <block ref="d9771ea7e072ff16d9d579f1908bd406" category="inline-xref-macro-rx"></block>。</block>
   <block id="213c26a534506d1ae60070296a0343e1" category="list-text">BlueXPでは、* Governance &gt; Classification *を選択します。</block>
   <block id="b14547d13e4545e40f6cf3e9a06dd4ab" category="list-text">プロンプトが表示されたら、プロキシの詳細を入力BlueXPコネクタが既にプロキシを使用している場合は、この情報を再度入力する必要はありません。これは、コネクタが使用するプロキシが自動的に使用されるためです。</block>
   <block id="a7daee29c59d5c1bd111c784f878f35b" category="paragraph">インターネットにアクセスできないダークサイトにインストールされているネットアップ以外の NFS または CIFS ファイル共有をスキャンする場合は、が必要です <block ref="ecc0eddec0bd55859619b2c1bb3475b2" category="inline-link-macro-rx"></block>。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。</block>
@@ -2796,7 +2772,6 @@
   <block id="5e5b753fd04f1adde694471a50221a49" category="paragraph">データセンスをオンプレミス環境にインストールしている場合、特定のデータソースをスキャンするためにスキャン処理能力がさらに必要になることがわかったときは、「スキャナ」ノードを追加して、それらのデータソースをスキャンするように割り当てることができます。マネージャノードをインストールした直後にスキャナノードを追加することも、後でスキャナノードを追加することもできます。</block>
   <block id="b76fbb180664dd4ccd169f21a4abcfa6" category="section-title">オンプレミスのインストーラが、インストールを開始する前に事前チェックを実行できるようになりました</block>
   <block id="8ac32533918ec230d2ec5bb2821a3378" category="paragraph">LinuxシステムにData Senseをインストールする場合、実際のインストールを開始する前に、システムが必要な要件（CPU、RAM、容量、ネットワークなど）をすべて満たしているかどうかを確認します。これにより、インストールに時間を費やす前に*問題をキャッチできます。</block>
-  <block id="9d2608b0b15c6604020ef66ba698a70d" category="paragraph">インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンできるようになりました。 <block ref="1b9c05db061e84ae6eca6f68bdd32c9b" category="inline-link-macro-rx"></block></block>
   <block id="80ca59a22e157477c940f080c9cf1223" category="paragraph"><block ref="b1c06333aab3fa5206e44a440f888650" category="inline-link-macro-rx"></block>。</block>
   <block id="fa18750d3909d8a2d2d0a22c1611a692" category="paragraph">データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響が非常に小さい場合でも、「低速」スキャンを実行するように Data Sense を設定できます。 <block ref="50748b3ac35725f5f9be1dab9c684e55" category="inline-link-macro-rx"></block>。</block>
   <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、BlueXPで使用できます。</block>
@@ -3035,7 +3010,6 @@
   <block id="4b013f5657095f9d6af00100e52bc1bf" category="paragraph">クラウドデータセンスの使用コストは、スキャンするデータの量によって異なります。BlueXPワークスペースでデータ検出によってスキャンされた最初の1 TBのデータは、30日間無料です。いずれかの制限に達すると、データのスキャンを続行するために次のいずれかが必要になります。</block>
   <block id="47a431ede9d263c65258e5be6ff6b2c1" category="paragraph">プライバシーリスクアセスメントレポートには、GDPRやCCPAなどのプライバシー規制に必要な、組織のプライバシーリスクステータスの概要が記載されています。このレポートには次の情報が含まれます。</block>
   <block id="77c511801e7a90a6a31b53c3c33b5397" category="paragraph">Health Insurance Portability and Accountability Act （ HIPAA ：医療保険の携行性と責任に関する法律）レポートは、健康に関する情報を含むファイルを特定するのに役立ちます。HIPAAデータプライバシー法を遵守するという組織の要件を支援するように設計されています。Cloud Data Sense が探している情報には、次のものがあります。</block>
-  <block id="af4b0162529178f9269843c02de9011a" category="paragraph">レポートの最初のページに表示される会社名は、[データセンス]ページの上部にあるをクリックしてカスタマイズできます <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> [会社名の変更]をクリックします。</block>
   <block id="e9ebebe267d1d822cab67a314b8df765" category="section-title">各データ調査レポートに含まれる情報</block>
   <block id="507eb1b330c9b9c53f787e32eb212a8c" category="paragraph">Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは30日間無料です。そのあともデータのスキャンを続行するには、クラウドプロバイダ Marketplace またはネットアップの BYOL ライセンスのサブスクリプションが必要です。</block>
   <block id="d16229fe4c13eabaf4888e33502b9f43" category="paragraph">また可能です <block ref="f05debecbc76a97697e3cf4388733167" category="inline-link-macro-rx"></block> 現時点では、30日間の無料トライアルが終了するまで、料金はかかりません。</block>
@@ -3044,4 +3018,49 @@
   <block id="8b3b2b670034ec0279cb937c145f257a" category="paragraph">これにより、必要なソフトウェアと実際のインストールファイル* cc_onpm_installer.tar.gz *が抽出されます。</block>
   <block id="6cc29d8f722610f8a1e880227931a300" category="list-text">データセンスインストーラファイル（* cc_onpm_installer.tar.gz *）をホストマシンにコピーします。</block>
   <block id="7b8f90ccd6fc9dda39797ae84ca7f14d" category="paragraph">これにより、インストールファイル* cc_onpm_installer.tar.gz *が抽出されます。</block>
+  <block id="09e1ed363a7252c16bbc8ca0ad3a7d25" category="list-text">ONTAP ボリュームを新しいボリュームにクローニングしたり、選択したファイルだけをソースボリュームから新しいクローンボリュームに含めたりできます。これは、データを移行する際に元のボリュームから特定のファイルを除外する場合に便利です。</block>
+  <block id="8a830392b0909b9d61d8e815dedd9fdf" category="list-text">ソースリポジトリから特定の保存先にあるディレクトリにファイルをコピーして同期できます。これは、ソースファイルに対して何らかの最終的なアクティビティが行われている間に、あるソースシステムから別のソースシステムにデータを移行する場合に便利です。</block>
+  <block id="b458a6221660c2545d4e63150fc30774" category="paragraph">これは、データを移行する際に元のボリュームから特定のファイルを除外する場合に便利です。このアクションではを使用します<block ref="95dabe3aae7c23d92fe2946a33d7431b" category="inline-link-rx"></block> ボリュームをすばやく複製し、 * 選択しなかったファイルを削除する機能。</block>
+  <block id="eb5af0227fcd1de16ca060308646450a" category="list-text">個々のファイルを選択するには、各ファイル（<block ref="27922440534843fc73bbce66b8385327" category="inline-image-macro-rx" type="image"></block>）。</block>
+  <block id="96b986b243d8224bb69f4a0238f93c7f" category="list-text">現在のページのすべてのファイルを選択するには、タイトル行（<block ref="240ed779654c3f6cf32843800cecc801" category="inline-image-macro-rx" type="image"></block>）。</block>
+  <block id="657428712375fa5789abe7c6de9782a7" category="inline-image-macro">すべてのファイルの選択について</block>
+  <block id="f4b007384ec89845c9935758ba0063c6" category="list-text">すべてのページのすべてのファイルを選択するには、タイトル行（<block ref="240ed779654c3f6cf32843800cecc801" category="inline-image-macro-rx" type="image"></block>）をクリックし、ポップアップメッセージにと入力します <block ref="a340f0047d2dd8cefeca9fd0bc9a1c6d" category="inline-image-macro-rx" type="image"></block>をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。</block>
+  <block id="78f57849bdbd66782ef9877d36177fcb" category="list-text">[ 調査結果 ] ウィンドウ枠で、タイトル行のボックスをオンにして、すべてのページのすべてのファイルを選択します（<block ref="240ed779654c3f6cf32843800cecc801" category="inline-image-macro-rx" type="image"></block>）をクリックし、ポップアップメッセージに入力します <block ref="a340f0047d2dd8cefeca9fd0bc9a1c6d" category="inline-image-macro-rx" type="image"></block> [ リスト内のすべての項目を選択（ * xxx 項目） ] をクリックし、 [ * コピー * ] をクリックします。</block>
+  <block id="a93d7894db2eb1a8c67a7153c6ef02fd" category="list-text">ターゲットシステムを選択し、使用するデータブローカーを選択（または作成）する必要があります。から、 Cloud Sync の要件を確認します <block ref="b962387ad67b92b5132f148579512908" category="inline-link-macro-rx"></block>。</block>
+  <block id="17dca911bcce42574615a9d04b2c26cd" category="paragraph">さらに、オンプレミスの場所からクラウドにデータを移行する予定の場合は、データのサイズと、データを移動する前に機密情報が含まれているかどうかを確認できます。</block>
+  <block id="8eb1fec334dabbaf8e8ce1c5c57d9629" category="paragraph">[_Policies]領域では、結果の数が最も多いポリシーがリストの先頭に表示されます。[調査]ページに結果を表示するには、ポリシーの名前をクリックします。[ すべて表示 *] をクリックして、使用可能なすべてのポリシーのリストを表示します。</block>
+  <block id="078f2282264732bc04d57f7f04fa0205" category="paragraph">Data Overview_Sectionには、スキャンされるすべてのデータの概要が表示されます。ボタンをクリックして、使用容量、経過時間、データサイズ、すべての作業環境およびデータソースのファイルタイプを含むデータマッピングレポートをダウンロードします。を参照してください <block ref="90964462e03b814a1facf08c0124716b" category="inline-link-macro-rx"></block> 詳細については、を参照してください。</block>
+  <block id="c84e7df5fd818e5aa11d03239984b3bd" category="paragraph">_Top Data Repositories by Sensitivity Level_領域には、最も機密性の高い項目を含む上位4つのデータリポジトリ（作業環境およびデータソース）が表示されます。各作業環境の棒グラフは、次のように分割されています。</block>
+  <block id="c2587967478c7df25fe839d6f619f443" category="list-text">機密性のないデータ</block>
+  <block id="f5423605d721232bdd43a55550c3e489" category="section-title">機密性と幅広い権限に基づいてリストされたデータ</block>
+  <block id="ae9f83336e41be79c7921c9f6c692b67" category="paragraph">_Sensitive DataおよびWide Permissions_領域には、機密データ（機密性の高い個人データと機密性の高い個人データの両方を含む）が含まれ、過度に許容されるファイルのヒートマップが表示されます。これにより、機密データを含むリスクがある場所を確認できます。</block>
+  <block id="e0247fb281ffe9cb88e8d27a1d7db85b" category="paragraph">ファイルは、X軸（最小から最大）上のファイルへのアクセス権を持つユーザの数、およびY軸（最小から最大）上のファイル内の機密識別子の数に基づいて評価されます。ブロックは、X軸とY軸のアイテムに一致するファイルの数を表します。明るい色のブロックは適切で、ファイルにアクセスできるユーザーが少なく、ファイルごとの機密識別子が少なくなります。濃いブロックは、調査する項目です。たとえば、下の画面には、濃い青色のブロックのマウスオーバーテキストが表示されます。751-100ユーザがアクセスできるファイルが1、500個あり、ファイルごとに501-100の機密識別子があることが示されています。</block>
+  <block id="baf19cb0f888989db2710471a613fbd9" category="inline-image-macro">このパネル内の要素にカーソルを合わせると表示されるデータを示すスクリーンショット。</block>
+  <block id="84bb65a316fae3e8d82ea950dc220467" category="paragraph"><block ref="84bb65a316fae3e8d82ea950dc220467" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c09a51a41728880502cacff404ad64e8" category="paragraph">[調査]ページで、影響を受けるファイルのフィルタリングされた結果を表示するには、対象となるブロックをクリックします。これにより、詳細な調査が可能になります。</block>
+  <block id="f4200d6b39c6bf611267284ca071fd8b" category="inline-link-macro">Active Directoryサービスをデータと統合する方法をご覧ください</block>
+  <block id="87fae032ed5605e45b8ed104db07d51d" category="paragraph">IDサービスをデータセンスで統合していない場合、このパネルにはデータは表示されません。 <block ref="ab23cf884d322a71ba54be70f25499ab" category="inline-link-macro-rx"></block>。</block>
+  <block id="fc6931051107a02ba34edee1230d2510" category="admonition">このパネルでは、CIFS共有、OneDrive、SharePointのデータソースのファイルをサポートしています。現在、データベース、Google Drive、Amazon S3、汎用オブジェクトストレージはサポートされていません。</block>
+  <block id="4f7b4b702c17bca954d2d186aaea71c0" category="list-text">オープンアクセス権がありません</block>
+  <block id="e5ffd57c8ceca007705d9700419ab52a" category="paragraph">カテゴリを使用すると、保有している情報の種類を表示して、データの状況を把握することができます。たとえば、「履歴書」や「従業員契約書」などのカテゴリには機密データを含めることができます。結果を調査すると、従業員契約が安全でない場所に保存されていることがわかります。その後、その問題を修正できます。</block>
+  <block id="13e71bc7a750dcb909f7b6e859dba7aa" category="paragraph">SharePointアカウントにログインするための資格を持つ資格情報があり、スキャンするSharePointサイトのURLがあることを確認します。</block>
+  <block id="6d3bb929d06fa3023ab7239f4567ed1a" category="paragraph">資格のあるユーザクレデンシャルを使用して、アクセスするSharePointアカウントにログインし、新しいデータソース/作業環境として追加します。</block>
+  <block id="7a8c400460fcd57ab61e646f8f7222ff" category="list-text">すべてのSharePointサイトへの読み取りアクセスを提供するSharePointアカウントの管理者ユーザーのログイン資格情報が必要です。</block>
+  <block id="fbd2a3d3a2a95ffb088fd8e0ccf6b67d" category="list-text">SharePoint Onlineの場合、管理者以外のアカウントを使用できますが、スキャンするすべてのSharePointサイトにアクセスするには、そのユーザーに権限が必要です。</block>
+  <block id="bd483f6f02b237b48ea9d830b65ef4c2" category="list-text">表示されるMicrosoftページで、SharePointアカウントを選択し、ユーザーとパスワード（管理者ユーザーまたはSharePointサイトへのアクセス権を持つ他のユーザー）を入力し、*同意する*をクリックして、Cloud Data Senseがこのアカウントからデータを読み取ることを許可します。</block>
+  <block id="5e6d4a84337eb1e0ff5a019edf3a15d6" category="section-title">機密データが含まれ、過度に許容されるファイルのグラフを表示する機能</block>
+  <block id="d9b195efc41ceb51899b712eb2c0c583" category="paragraph">Governanceダッシュボードには、機密データ（機密性の高い個人データと機密性の高い個人データの両方を含む）を含むファイルのヒートマップを提供するnew_sensitive DataおよびWide Permissive_areaが追加されています。これにより、機密データを含むリスクがある場所を確認できます。<block ref="315faeb2b0e6f27dd87bce24f0b16dd0" category="inline-link-rx"></block>。</block>
+  <block id="39042f4c3554377e7367f85ef5edf207" category="section-title">データセンスは日本語の個人番号を識別できます</block>
+  <block id="21e575de9b2cf958293bb22c657eba7b" category="paragraph">データセンスでは、日本語の個人番号（My Number）を含むファイルを識別して分類できます。これには、個人用電話番号と会社用電話番号の両方が含まれます。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
+  <block id="ee7392d2316f5d3dd66a6f38dfd1dbfb" category="list-text">「ユーザ/グループの権限」フィルタを使用すると、特定のユーザまたはグループに対する読み取り/書き込み権限があるファイル、フォルダ、および共有を表示できます。複数のユーザまたはグループの名前を選択するか、名前の一部を入力できます。</block>
+  <block id="d03ac14c4e429af55c127e304518d56e" category="paragraph">データセンスは、オーストラリアTFN (税ファイル番号)、オーストラリア運転免許証番号、オーストラリア医薬品番号、オーストラリアパスポート番号を含むファイルを識別し、分類することができます。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
+  <block id="765a37e7c0d57c675f5f9b8438aa0b27" category="paragraph">インターネットにアクセスできないオンプレミスサイトのホストにCloud Data Senseを導入した場合は、OneDriveアカウントまたはSharePointアカウントからローカルデータをスキャンできるようになりました。 <block ref="1b9c05db061e84ae6eca6f68bdd32c9b" category="inline-link-macro-rx"></block></block>
+  <block id="0e91e4dc71e9acf8654f7179d48b5ccd" category="paragraph">ファイル内にある個人データのリストに追加できます。データベース・サーバをスキャンする場合'_Data Fusion 機能を使用すると'データベース・テーブルのカラムを選択して'スキャンでクラウド・データが検索する追加の識別子を選択できますまた、カスタムキーワードをテキストファイルから追加したり、正規表現を使用してカスタムパターンを追加したりすることもできます。を参照してください <block ref="2871b8c2613a3da825be1a942ca6c1d2" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="3631ca73c04d0e5a0d6b08517f6f049f" category="cell">日本の個人識別番号（個人および会社）</block>
+  <block id="35c134848f5f2aeab535e7e525874a02" category="paragraph">環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、ポート 443 を介したコネクタとクラウドデータセンスの接続などが含まれます。 <block ref="41431224cdc0c634efe8819b91420afe" category="inline-xref-macro-rx"></block>。</block>
+  <block id="21e0d61d9e797a17767287de32bd7bef" category="list-text">HR -健全性カテゴリ</block>
+  <block id="46bd1bd2277d77e6f044cdb7a6983fc6" category="inline-image-macro">[詳細]ボタン</block>
+  <block id="d9453653a677951287ccfb3413d6baff" category="paragraph">レポートの最初のページに表示される会社名は、[データセンス]ページの上部にあるをクリックしてカスタマイズできます <block ref="205cf72ce215a0005a3d486daae4dd1a" category="inline-image-macro-rx" type="image"></block> [会社名の変更]をクリックします。次回レポートを生成するときに、新しい名前が含まれます。</block>
+  <block id="9098e762df6423155c77747444ce3402" category="list-text">から手順 1~8 を実行します <block ref="6197de1d9d65c234b52f370ea2ee31e4" category="inline-link-macro-rx"></block> マネージャーノード。</block>
+  <block id="63ceb32b6f9962bbdcea6fcd1a87c47e" category="list-text">データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.17.xがインストールされている場合は、1.18.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
 </blocks>

@@ -142,7 +142,7 @@ Health Insurance Portability and Accountability Act （ HIPAA ：医療保険の
 * ヘルス参照パターン
 * ICD-10-CM 医療コード
 * ICD-9-CM 医療コード
-* HR –健全性カテゴリ
+* HR -健全性カテゴリ
 * ヘルスアプリケーションデータカテゴリ
 
 
@@ -203,7 +203,7 @@ image:screenshot_compliance_data_mapping_report_button.png["データマッピ�
 .結果
 Cloud Data Sense は、必要に応じて他のグループにレビューして送信できる PDF レポートを生成します。
 
-レポートの最初のページに表示される会社名は、[データセンス]ページの上部にあるをクリックしてカスタマイズできます image:screenshot_gallery_options.gif["[ 詳細 ] ボタン"] [会社名の変更]をクリックします。
+レポートの最初のページに表示される会社名は、[データセンス]ページの上部にあるをクリックしてカスタマイズできます image:screenshot_gallery_options.gif["[詳細]ボタン"] [会社名の変更]をクリックします。次回レポートを生成するときに、新しい名前が含まれます。
 
 
 

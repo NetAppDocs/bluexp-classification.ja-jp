@@ -24,7 +24,7 @@ summary: いくつかの手順を実行して、Cloud Data Senseを使用したS
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] SharePointの前提条件を確認する
 [role="quick-margin-para"]
-SharePoint アカウントにログインするための管理者資格情報があり、スキャンする SharePoint サイトの URL があることを確認します。
+SharePointアカウントにログインするための資格を持つ資格情報があり、スキャンするSharePointサイトのURLがあることを確認します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Cloud Data Sense インスタンスを導入する
 [role="quick-margin-para"]
@@ -32,7 +32,7 @@ link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] SharePointアカウントにログインします
 [role="quick-margin-para"]
-管理者ユーザーの資格情報を使用して、アクセスする SharePoint アカウントにログインし、新しいデータソース / 作業環境として追加します。
+資格のあるユーザクレデンシャルを使用して、アクセスするSharePointアカウントにログインし、新しいデータソース/作業環境として追加します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] スキャンするSharePointサイトのURLを追加します
 [role="quick-margin-para"]
@@ -44,7 +44,11 @@ SharePoint アカウントでスキャンする SharePoint サイト URL のリ�
 
 以下の前提条件を確認して、SharePointアカウントでクラウドデータセンスをアクティブ化する準備ができていることを確認してください。
 
-* すべての SharePoint サイトへの読み取りアクセスを提供する SharePoint アカウントの管理者ログインクレデンシャルが必要です。
+* すべてのSharePointサイトへの読み取りアクセスを提供するSharePointアカウントの管理者ユーザーのログイン資格情報が必要です。
++
+** SharePoint Onlineの場合、管理者以外のアカウントを使用できますが、スキャンするすべてのSharePointサイトにアクセスするには、そのユーザーに権限が必要です。
+
+
 * SharePoint On-Premiseについては、SharePoint ServerのURLも必要です。
 * スキャンするすべてのデータについて、 SharePoint サイトの URL の行区切りリストが必要です。
 
@@ -78,7 +82,7 @@ Data Sense ソフトウェアへのアップグレードは、インスタンス
 image:screenshot_compliance_add_sharepoint_button.png["[SharePoint Onlineの追加]ボタンをクリックできる[構成]ページのスクリーンショット。"]
 
 . [SharePoint Online アカウントの追加 ] ダイアログで、 [* SharePoint にサインインする * ] をクリックします。
-. 表示される Microsoft ページで、 SharePoint アカウントを選択し、必要な管理者ユーザーとパスワードを入力してから、 *Accept * をクリックして Cloud Data Sense がこのアカウントからデータを読み取ることを許可します。
+. 表示されるMicrosoftページで、SharePointアカウントを選択し、ユーザーとパスワード（管理者ユーザーまたはSharePointサイトへのアクセス権を持つ他のユーザー）を入力し、*同意する*をクリックして、Cloud Data Senseがこのアカウントからデータを読み取ることを許可します。
 
 
 SharePoint Onlineアカウントが作業環境のリストに追加されます。
