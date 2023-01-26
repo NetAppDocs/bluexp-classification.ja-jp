@@ -74,7 +74,6 @@
   <block id="f62345014eb3b94916730d5fa4eb623f" category="inline-link-macro">N2-standard-16 VM</block>
   <block id="6c5ebc6dfed433f5cfd2cbc9f155a4d4" category="paragraph">n2-dstandard-16 を使用できない地域では、データセンスは n2D-standard-16 または n1-standard-16 VM で実行されます。</block>
   <block id="3fad8aded3d84039416c1bf00afe09d2" category="list-text">コネクタごとに展開されるデータセンスインスタンスは 1 つだけです。</block>
-  <block id="96087d5776ba4bf8ffcadbc67f69905c" category="list-text">データセンスソフトウェアのアップグレードは、インスタンスがインターネットにアクセスできるかぎり自動化されます。</block>
   <block id="37b7293831ce40b655b7cce97556550c" category="admonition">Cloud Data Sense がデータを継続的にスキャンするため、インスタンスは常時実行している必要があります。</block>
   <block id="5da9cb7e92b520a48c2475de5ec9958c" category="section-title">小さいインスタンスタイプを使用しています</block>
   <block id="5bce28fa8820f7bebc8473b0aaa42f72" category="paragraph">CPU の数と RAM の数が少ないシステムには Data Sense を導入できますが、このような低パフォーマンスのシステムを使用する場合はいくつかの制限事項があります。</block>
@@ -140,7 +139,6 @@
   <block id="a596c8a5fca6f5403662e33b92d475a7" category="list-text">Cloud Data Sense は、スキャンしたデータをファイルタイプ別に分類します。 <block ref="7a0e9af4a23944c56398184b71788414" category="inline-link-macro-rx"></block>。</block>
   <block id="999ab1f0dcc560a0944b54ec5ef461c0" category="list-text">名前エンティティ認識</block>
   <block id="13d0a191166a1a3dc29ebcd8e3aae81f" category="inline-link-macro">データ主体のアクセスリクエストへの対応について説明します</block>
-  <block id="9816543e530fddede751b52325d3679a" category="list-text">Cloud Data Sense は、 AI を使用して、ドキュメントから自然な人物の名前を抽出します。 <block ref="7dd684ea66077256bb820673a1d9b83b" category="inline-link-macro-rx"></block>。</block>
   <block id="7b895b198aba9634ffec5e0ec9a3aff4" category="section-title">ネットワークの概要</block>
   <block id="6134fb19f2424f157bd88b36e40dcf10" category="paragraph">アウトバウンドルールは完全にオープンです。データセンスソフトウェアをインストールしてアップグレードし、使用率指標を送信するには、インターネットアクセスが必要です。</block>
   <block id="12d39974306420354fffe75c7f15e621" category="inline-link-macro">Cloud Data が接触するエンドポイントについて説明します</block>
@@ -622,7 +620,6 @@
   <block id="5fb27f475a6e9a151878bcedcee62656" category="admonition">その他の国の ID 番号や医療機関の ID など、プライベートデータの種類を識別するためにクラウドデータセンスが必要な場合は、 ng-contact-data-sense@netapp.com にリクエストを送信してください。</block>
   <block id="10ff4e7c2ffc1fd426aa6f784a05da66" category="section-title">個人データの種類</block>
   <block id="664f12aee95db5001901ada82a66a117" category="inline-link-macro">近接性検証</block>
-  <block id="9ad88770f453f002d943e75f7bc6c007" category="paragraph">このカテゴリの項目は、どの言語でも認識できます。</block>
   <block id="8060d07e3adbf13c278991613997a8b6" category="inline-link-macro">Data Fusion を使用して個人データ識別子を追加する</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">を入力します</block>
   <block id="29ee5d1ebcc033234938a5234f1f2075" category="cell">識別子</block>
@@ -673,7 +670,6 @@
   <block id="3b5f87032b5dd0beea89f73c7f8f64c0" category="cell">英国ID （ニーノ）</block>
   <block id="f5817b4cc67ee41de01a4a19fc33ef7d" category="cell">米国社会保障番号（ SSN ）</block>
   <block id="0ff635b15f7fdd9403b351ffc3d0c2a1" category="section-title">機密性の高い個人データのタイプ</block>
-  <block id="b14a1801297548a365efb89c7bd8874b" category="paragraph">Cloud Data Sense がファイル内で検出できる機密性の高い個人データには、次のリストが含まれています。このカテゴリの項目は、現時点では英語でのみ認識されます。</block>
   <block id="98d51623eb7c03f43fa0678301f5efd4" category="list-text">刑事手続きの参照</block>
   <block id="369810982fcd806bbde0147f11c0364d" category="list-text">『民族リファレンス』を参照してください</block>
   <block id="4d0838c277b16e4c72ecafbaf587b10f" category="list-text">健全性リファレンス</block>
@@ -685,7 +681,6 @@
   <block id="9c816fac79e497eaa62bbb4a3adddfc1" category="list-text">宗教的信条参照</block>
   <block id="1126ae684e7f83d7ad03320e3339f2e4" category="list-text">性別生命または方向の参照</block>
   <block id="3b59f947bb18be76ff03ca45ee9db241" category="section-title">カテゴリのタイプ</block>
-  <block id="82355eab158a61a75b39fa1ecb5f9d01" category="paragraph">Cloud Data Sense は、次のようにデータを分類します。これらのカテゴリのほとんどは、英語、ドイツ語、スペイン語で認識されます。</block>
   <block id="3adbdb3ac060038aa0e6e6c138ef9873" category="cell">カテゴリ</block>
   <block id="78463a384a5aa4fad5fa73e2f506ecfc" category="cell">英語</block>
   <block id="86bc3115eb4e9873ac96904a4a68e19e" category="cell">ドイツ語</block>
@@ -1830,7 +1825,6 @@
   <block id="74e5e01600beec43894e96e22ac9f5eb" category="list-text">プロンプトが表示されたら、を持つ Cloud Data Sense インスタンスに IAM ロールを割り当てます <block ref="27b52f38738d689881a76b49c98ec7ec" category="inline-xref-macro-rx"></block>。</block>
   <block id="b7f2b0e45c51391324aebf221531b036" category="paragraph">FSX で ONTAP ボリュームをスキャンする前に、<block ref="68e9cbaf33b2641a589dc87867e4bfec" category="inline-link-rx"></block>。</block>
   <block id="f72dc999895eb17e77093f9ecff4180c" category="paragraph">これは、データを移行していて、ファイルに加えられた最後の変更を確認する場合に役立ちます。このアクションではを使用します<block ref="a370f691ddfd2ad7b716b2db4ad021a1" category="inline-link-rx"></block> データをソースからターゲットにコピーおよび同期する機能。</block>
-  <block id="f380f59dbabc3f03bd073f2248216ea2" category="paragraph">ファイルに含まれる個人データは、一般的な個人データまたは国 ID です。3 番目の列は、 Cloud Data Sense で使用されているかどうかを示します <block ref="a9db31e17b18ff2d62fd6f2133dfbfce" category="inline-link-macro-rx"></block> 識別子の調査結果を検証します。</block>
   <block id="bbd1b36ab0dbd0c17e60ec752bb02a55" category="paragraph"><block ref="b1e4fd148d344599f4a25922d8155dd9" category="inline-link-macro-rx"></block>。</block>
   <block id="91aef07a29d8068140e7dca06bec6d9d" category="list-text">データからプライバシーに関する情報を収集し、プライバシーリスクスコアを取得します。 <block ref="890a798f73fe571345d1ff7c58a08844" category="inline-link-macro-rx"></block>。</block>
   <block id="39630dece802514e5f7336bcbbf0ac6f" category="list-text">クレジットカード情報のファイルへの配布を識別するのに役立ちます。 <block ref="ef3bace538be6eee30a3e48516637cf7" category="inline-link-macro-rx"></block>。</block>
@@ -2277,7 +2271,6 @@
   <block id="7aa9c47f42013735e3c5573eb7004a9d" category="list-text">組織全体またはパブリックに公開されているオープンな権限を持つすべてのファイルとディレクトリ（共有およびフォルダ）を特定します。</block>
   <block id="5e27afd1e1e5a71e7aff888767d3214a" category="list-text">初期の専用の場所以外に存在する機密データを特定します。</block>
   <block id="2f548b9a1e6e69aa1914a6a893db7f50" category="list-text">新しいセキュリティ問題をセキュリティスタッフに自動的に通知して、ただちに対処できるようにするには、_Policies_を使用します。</block>
-  <block id="1d6cf8f9413aa74ccb67dc25a0cd30f6" category="list-text">表示と変更 <block ref="d0f9730625a218e637a0d6df3df12f2b" category="inline-link-macro-rx"></block> ファイルに保存できます。</block>
   <block id="c5f92f73b9ea92063c2fc24f82a835d2" category="section-title">ストレージ使用量を最適化</block>
   <block id="5df73f30ee77990aa89c16d3484cbec4" category="paragraph">データセンスは、ストレージの総所有コスト（TCO）に役立つツールを提供します。データセンスを使用すると、次のことができます。</block>
   <block id="17e4f6fc55d9d61a5481011f4bc71a46" category="list-text">重複データやビジネス以外のデータを特定することで、ストレージ効率を向上させます。この情報を使用して、特定のファイルを移動するか削除するかを決定できます。</block>
@@ -2512,7 +2505,6 @@
   <block id="004a6e22e05156a8504de44d04937337" category="inline-image-macro">クラウドプロバイダで実行されているBlueXPインスタンスとCloud Data Senseインスタンスを示す図。データセンスインスタンスは、 NFS ボリュームと CIFS ボリューム、 S3 バケット、 OneDrive アカウント、データベースに接続してスキャンします。</block>
   <block id="e24936cd2f763a15070324e06686d5c5" category="paragraph"><block ref="e24936cd2f763a15070324e06686d5c5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7b8407f88948038fa5832e4ef1655ec3" category="paragraph">BlueXPは、コネクタインスタンスからの着信HTTP接続を有効にするセキュリティグループを使用して、Cloud Data Senseインスタンスを展開します。</block>
-  <block id="7f60df85905efef37e6ae9a727f03e7a" category="paragraph">BlueXPをSaaSモードで使用する場合、BlueXPへの接続はHTTPS経由で行われ、ブラウザとData Senseインスタンス間で送信されるプライベートデータはエンドツーエンドの暗号化によって保護されるため、ネットアップとサードパーティが読み取ることはできません。</block>
   <block id="b665e2a24b5ee1b15d4e77131925e0bb" category="paragraph">各ユーザーに割り当てられた役割は、BlueXPおよびCloud Data Sense内で異なる機能を提供します。</block>
   <block id="2ccf8faa066b22b32e97c83d5372f44b" category="list-text">* ワークスペース管理者 * は、アクセス権を持つシステムについてのみ、コンプライアンス設定を管理し、コンプライアンス情報を表示できます。ワークスペース管理者がBlueXPの作業環境にアクセスできない場合、[データセンス]タブには作業環境のコンプライアンス情報が表示されません。</block>
   <block id="78e53b124783e106b07d5599c5ff16c3" category="inline-link">BlueXPの役割の詳細をご覧ください</block>
@@ -3055,7 +3047,6 @@
   <block id="ee7392d2316f5d3dd66a6f38dfd1dbfb" category="list-text">「ユーザ/グループの権限」フィルタを使用すると、特定のユーザまたはグループに対する読み取り/書き込み権限があるファイル、フォルダ、および共有を表示できます。複数のユーザまたはグループの名前を選択するか、名前の一部を入力できます。</block>
   <block id="d03ac14c4e429af55c127e304518d56e" category="paragraph">データセンスは、オーストラリアTFN (税ファイル番号)、オーストラリア運転免許証番号、オーストラリア医薬品番号、オーストラリアパスポート番号を含むファイルを識別し、分類することができます。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
   <block id="765a37e7c0d57c675f5f9b8438aa0b27" category="paragraph">インターネットにアクセスできないオンプレミスサイトのホストにCloud Data Senseを導入した場合は、OneDriveアカウントまたはSharePointアカウントからローカルデータをスキャンできるようになりました。 <block ref="1b9c05db061e84ae6eca6f68bdd32c9b" category="inline-link-macro-rx"></block></block>
-  <block id="0e91e4dc71e9acf8654f7179d48b5ccd" category="paragraph">ファイル内にある個人データのリストに追加できます。データベース・サーバをスキャンする場合'_Data Fusion 機能を使用すると'データベース・テーブルのカラムを選択して'スキャンでクラウド・データが検索する追加の識別子を選択できますまた、カスタムキーワードをテキストファイルから追加したり、正規表現を使用してカスタムパターンを追加したりすることもできます。を参照してください <block ref="2871b8c2613a3da825be1a942ca6c1d2" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="3631ca73c04d0e5a0d6b08517f6f049f" category="cell">日本の個人識別番号（個人および会社）</block>
   <block id="35c134848f5f2aeab535e7e525874a02" category="paragraph">環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、ポート 443 を介したコネクタとクラウドデータセンスの接続などが含まれます。 <block ref="41431224cdc0c634efe8819b91420afe" category="inline-xref-macro-rx"></block>。</block>
   <block id="21e0d61d9e797a17767287de32bd7bef" category="list-text">HR -健全性カテゴリ</block>
@@ -3063,4 +3054,27 @@
   <block id="d9453653a677951287ccfb3413d6baff" category="paragraph">レポートの最初のページに表示される会社名は、[データセンス]ページの上部にあるをクリックしてカスタマイズできます <block ref="205cf72ce215a0005a3d486daae4dd1a" category="inline-image-macro-rx" type="image"></block> [会社名の変更]をクリックします。次回レポートを生成するときに、新しい名前が含まれます。</block>
   <block id="9098e762df6423155c77747444ce3402" category="list-text">から手順 1~8 を実行します <block ref="6197de1d9d65c234b52f370ea2ee31e4" category="inline-link-macro-rx"></block> マネージャーノード。</block>
   <block id="63ceb32b6f9962bbdcea6fcd1a87c47e" category="list-text">データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.17.xがインストールされている場合は、1.18.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
+  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">クラウドプロバイダソリューションのサポート</block>
+  <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">BlueXPに統合した次のクラウドプロバイダソリューションのテクニカルサポートについては、その製品のBlueXPマニュアルの「困ったときは」を参照してください。</block>
+  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
+  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
+  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
+  <block id="0b95409e38fd76ec71d03e3e14b83763" category="paragraph">カスタムスキャン条件を追加するこれらのメカニズムはすべて、すべての言語でサポートされています。</block>
+  <block id="966065b551c0c5d33146e32380dffc54" category="paragraph">ファイルに含まれる個人データは、一般的な個人データまたは国 ID です。次の表の3番目の列は、Cloud Data Senseで使用されているかどうかを示しています <block ref="a9db31e17b18ff2d62fd6f2133dfbfce" category="inline-link-macro-rx"></block> 識別子の調査結果を検証します。</block>
+  <block id="e1a196cfa9a98106e5ba102887a0c95d" category="paragraph">これらの項目を認識できる言語が表に示されています。</block>
+  <block id="7a8c2ce1750465ec6bf270edb025f14f" category="paragraph">ファイル内にある個人データのリストに追加できます。データベース・サーバをスキャンする場合'_Data Fusion 機能を使用すると'データベース・テーブルのカラムを選択して'スキャンでクラウド・データが検索する追加の識別子を選択できますまた、カスタムキーワードをテキストファイルから追加したり、正規表現を使用してカスタムパターンを追加したりすることもできます。を参照してください <block ref="2871b8c2613a3da825be1a942ca6c1d2" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="ad225f707802ba118c22987186dd38e8" category="cell">フランス語</block>
+  <block id="f32ced6a9ba164c4b3c047fd1d7c882e" category="cell">日本語</block>
+  <block id="4ef37c8218042a526e063ddcb7f99e4e" category="paragraph">Cloud Data Sense がファイル内で検出できる機密性の高い個人データには、次のリストが含まれています。</block>
+  <block id="3b3e3761409ec91318d55527674759e3" category="paragraph">このカテゴリの項目は、現時点では英語でのみ認識されます。</block>
+  <block id="d28ebbcb60fdecb8e44508f82867ad79" category="paragraph">Cloud Data Sense は、次のようにデータを分類します。</block>
+  <block id="5ad8ae17298ed454e6b4639368851b62" category="paragraph">これらのカテゴリのほとんどは、英語、ドイツ語、スペイン語で認識されます。</block>
+  <block id="db58ba41843c3976a8e9932df76277ec" category="list-text">表示と変更<block ref="59692f28ce49bb83d818eeb4f17b5a14" category="inline-link-rx"></block> ファイルに保存できます。</block>
+  <block id="afdc492e219eada4c9eca232defb9ab7" category="paragraph">また、自社運用のLinuxホストや、任意のクラウドプロバイダのホストにデータセンスを導入することもできます。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。データセンスソフトウェアのアップグレードは、インスタンスがインターネットにアクセスできるかぎり自動化されます。</block>
+  <block id="dc59914806276092072d36ab9d88436a" category="section-title">データ検出スキャンデータの速さ</block>
+  <block id="de07b97b8f1edf6b3a5e144748a45572" category="paragraph">データセンスでは、スキャナノードごとに15-40 TBのデータをスキャンできます。スキャン速度は、ネットワークレイテンシ、ディスクレイテンシ、ネットワーク帯域幅、環境のサイズ、およびファイル配信サイズによって左右されます。</block>
+  <block id="e56c626eb62df6bf64f545a2d416aa7c" category="inline-link-macro">データをスキャンするための複数のスキャナノードの導入の詳細については、こちらをご覧ください</block>
+  <block id="fb3ba22f3eff98ea203090bc210752be" category="paragraph"><block ref="eefbdd7e2d2119a699d2995aece8c9f3" category="inline-link-macro-rx"></block>。</block>
+  <block id="d5e0083566ed8d85ca68105bf8cfd38e" category="list-text">Cloud Data Senseは、AIを使用して、自然な人物の名前をドキュメントから抽出します。 <block ref="7dd684ea66077256bb820673a1d9b83b" category="inline-link-macro-rx"></block>。</block>
+  <block id="008c6840e9f624b9435a7c107d8afaff" category="paragraph">BlueXPをSaaSモードで使用している場合、BlueXPへの接続はHTTPS経由で行われ、ブラウザとData Senseインスタンス間で送信されるプライベートデータはエンドツーエンドの暗号化で保護されます。これにより、ネットアップとサードパーティが読み取ることができなくなります。</block>
 </blocks>

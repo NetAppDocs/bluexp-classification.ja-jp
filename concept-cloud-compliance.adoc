@@ -48,7 +48,7 @@ Cloud Data Senseは、人工知能（AI）、自然言語処理（NLP）、機�
 * データ保持ポリシーに準拠
 * 新しいセキュリティ問題をセキュリティスタッフに自動的に通知して、ただちに対処できるようにするには、_Policies_を使用します。
 * カスタムタグをファイルに追加し（「移動が必要」など）、BlueXPユーザーを割り当てて、ユーザーがファイルの更新を所有できるようにします。
-* 表示と変更 link:https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection （ AIP ）ラベル"^] ファイルに保存できます。
+* 表示と変更 https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection （ AIP ）ラベル"^] ファイルに保存できます。
 
 
 
@@ -165,8 +165,9 @@ n2-dstandard-16 を使用できない地域では、データセンスは n2D-st
 
 * インスタンスの名前は _CloudCompliancy_with で、生成されたハッシュ（ UUID ）を連結しています。例： _CloudCompliion-16bb6564-38ad-40802-9a92-36f5fd2f71c7_
 * コネクタごとに展開されるデータセンスインスタンスは 1 つだけです。
-* データセンスソフトウェアのアップグレードは、インスタンスがインターネットにアクセスできるかぎり自動化されます。
 
+
+また、自社運用のLinuxホストや、任意のクラウドプロバイダのホストにデータセンスを導入することもできます。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。データセンスソフトウェアのアップグレードは、インスタンスがインターネットにアクセスできるかぎり自動化されます。
 
 
 TIP: Cloud Data Sense がデータを継続的にスキャンするため、インスタンスは常時実行している必要があります。
@@ -269,6 +270,14 @@ Cloud Data Senseを使用すると、選択したデータソースに対して�
 |===
 
 
+=== データ検出スキャンデータの速さ
+
+データセンスでは、スキャナノードごとに15-40 TBのデータをスキャンできます。スキャン速度は、ネットワークレイテンシ、ディスクレイテンシ、ネットワーク帯域幅、環境のサイズ、およびファイル配信サイズによって左右されます。
+
+link:task-deploy-compliance-onprem.html#deploy-data-sense-on-premises["データをスキャンするための複数のスキャナノードの導入の詳細については、こちらをご覧ください"^]。
+
+
+
 == Cloud Data がインデックス化する情報
 
 データセンスは、カテゴリを収集してインデックスを作成し、データ（ファイル）に割り当てます。データセンスインデックスには、次のデータが含まれます。
@@ -278,7 +287,7 @@ Cloud Data Senseを使用すると、選択したデータソースに対して�
 機密性の高い個人データ:: GDPR やその他のプライバシー規制で定義されている、健康データ、民族的起源、政治的見解などの機密情報の特殊な種類。 link:task-controlling-private-data.html#viewing-files-that-contain-sensitive-personal-data["機密性の高い個人データの詳細をご覧ください"^]。
 カテゴリ:: Cloud Data Sense は、スキャンしたデータをさまざまなタイプのカテゴリに分割します。カテゴリは、各ファイルのコンテンツとメタデータの AI 分析に基づくトピックです。 link:task-controlling-private-data.html#viewing-files-by-categories["カテゴリの詳細については、こちらをご覧ください"^]。
 タイプ（ Types ）:: Cloud Data Sense は、スキャンしたデータをファイルタイプ別に分類します。 link:task-controlling-private-data.html#viewing-files-by-file-types["タイプの詳細については、こちらをご覧ください"^]。
-名前エンティティ認識:: Cloud Data Sense は、 AI を使用して、ドキュメントから自然な人物の名前を抽出します。 link:task-responding-to-dsar.html["データ主体のアクセスリクエストへの対応について説明します"^]。
+名前エンティティ認識:: Cloud Data Senseは、AIを使用して、自然な人物の名前をドキュメントから抽出します。 link:task-responding-to-dsar.html["データ主体のアクセスリクエストへの対応について説明します"^]。
 
 
 
@@ -287,7 +296,7 @@ Cloud Data Senseを使用すると、選択したデータソースに対して�
 
 BlueXPは、コネクタインスタンスからの着信HTTP接続を有効にするセキュリティグループを使用して、Cloud Data Senseインスタンスを展開します。
 
-BlueXPをSaaSモードで使用する場合、BlueXPへの接続はHTTPS経由で行われ、ブラウザとData Senseインスタンス間で送信されるプライベートデータはエンドツーエンドの暗号化によって保護されるため、ネットアップとサードパーティが読み取ることはできません。
+BlueXPをSaaSモードで使用している場合、BlueXPへの接続はHTTPS経由で行われ、ブラウザとData Senseインスタンス間で送信されるプライベートデータはエンドツーエンドの暗号化で保護されます。これにより、ネットアップとサードパーティが読み取ることができなくなります。
 
 アウトバウンドルールは完全にオープンです。データセンスソフトウェアをインストールしてアップグレードし、使用率指標を送信するには、インターネットアクセスが必要です。
 
