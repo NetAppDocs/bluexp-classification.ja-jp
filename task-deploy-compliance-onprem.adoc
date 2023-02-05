@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
-summary: ネットワーク内のLinuxホストまたはクラウド内のLinuxホストでインターネットにアクセスできる場合は、いくつかの手順を実行してCloud Data Senseを導入します。 
+summary: ネットワーク内のLinuxホストまたはクラウド内のLinuxホストに、インターネットにアクセスできるCloud Data Senseを導入するには、いくつかの手順を実行します。 
 ---
 = インターネットにアクセス可能な Linux ホストに Cloud Data Sense を導入する
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: ネットワーク内のLinuxホストまたはクラウド内のLinux�
 
 
 [role="lead"]
-ネットワーク内のLinuxホストまたはクラウド内のLinuxホストでインターネットにアクセスできる場合は、いくつかの手順を実行してCloud Data Senseを導入します。
+ネットワーク内のLinuxホストまたはクラウド内のLinuxホストに、インターネットにアクセスできるCloud Data Senseを導入するには、いくつかの手順を実行します。
 
 オンプレミスにあるデータセンスインスタンスを使用してオンプレミスの ONTAP システムをスキャンする場合は、オンプレミスインストールを選択することをお勧めします。ただしこれは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。
 
@@ -22,7 +22,7 @@ summary: ネットワーク内のLinuxホストまたはクラウド内のLinux�
 
 image:diagram_deploy_onprem_overview.png["必要なBlueXPとネットワークコンポーネント、および関連する接続の図。"]
 
-ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。複数のホストシステムを使用する場合、プライマリシステムはManagerノードと呼ばれ、処理能力を追加するシステムはスキャナノードと呼ばれます。
+ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。複数のホストシステムを使用する場合、プライマリシステムは_Manager node_と呼ばれ、追加の処理能力を提供する追加システムは_Scanner Node_と 呼ばれます。
 
 また、次のことも可能です link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスサイトにデータセンスを導入する"] 完全にセキュアなサイトに。
 
@@ -34,7 +34,7 @@ image:diagram_deploy_onprem_overview.png["必要なBlueXPとネットワーク�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] コネクタを作成します
 [role="quick-margin-para"]
-コネクタがない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタをオンプレミスに導入"^] 自社ネットワーク内またはクラウド内の Linux ホスト
+コネクタがない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタをオンプレミスに導入"^] ネットワーク内のLinuxホスト、またはクラウド内のLinuxホスト。
 
 [role="quick-margin-para"]
 クラウドプロバイダを使用してコネクタを作成することもできます。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS でコネクタを作成する"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["GCP でコネクタを作成する"^]。
@@ -88,28 +88,31 @@ Azure NetApp Files の場合は、スキャンするボリュームと同じ領�
 
 クラウドデータを常に運用しておく必要がありますデータを継続的にスキャンするには、Cloud Data Senseマシンをオンのままにしておく必要があります。
 
+* * CPU *：16コア
+* *RAM*:64 GB (ホストでスワップメモリを無効にする必要があります)
+* *ディスク*：500 GiBのSSDを、/、またはで使用できます
++
+** 100 GiB は /opt で利用できます
+** /var で 400GiB の可用性を確保
+** /tmp 上で 5 GiB
++
+CPU 数と RAM 容量が少ないシステムには Data Sense を導入できますが、これらのシステムの使用には制限があります。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
+
+
+
+* * AWS EC2 instance type *：上記のCPUおよびRAMの要件を満たすインスタンスタイプ。お勧めします https://aws.amazon.com/ec2/instance-types/m5/["m5.mc"^]。
+* * Azure VMのサイズ*：上記のCPUとRAMの要件を満たすインスタンスタイプ。お勧めします https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^]。
+* * GCPマシンタイプ*：上記のCPUとRAMの要件を満たすインスタンスタイプ。お勧めします https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["N2-standard-16"^]。
 * *オペレーティング・システム*：Red Hat Enterprise LinuxまたはCentOSバージョン8.0~8.7
 +
 ** バージョン7.8または7.9を使用できますが、Linuxカーネルバージョンは4.0以降である必要があります
 ** OSにDockerエンジンがインストールされている必要があります
 
 
-* *ディスク*：500 GiBのSSDを、/、またはで使用できます
-+
-** 100 GiB は /opt で利用できます
-** /var で 400GiB の可用性を確保
-** /tmp 上で 5 GiB
-
-
-* *RAM*:64 GB (ホストでスワップメモリを無効にする必要があります)
-* * CPU *：16コア
-+
-CPU 数と RAM 容量が少ないシステムには Data Sense を導入できますが、これらのシステムの使用には制限があります。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
-
 * * Red Hat Subscription Management *：Red Hat Enterprise LinuxシステムをRed Hat Subscription Managementに登録する必要があります。登録されていないと、インストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
 * *追加ソフトウェア*：Data Senseをインストールする前に、次のソフトウェアをホストにインストールする必要があります。
 +
-** Docker Engine バージョン 19 以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
+** Docker Engineバージョン19.3.1以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
 ** Python 3 バージョン 3.6 以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
 
 
@@ -124,7 +127,7 @@ firewall-cmd --permanent --add-port=443/tcp
 firewall-cmd --reload
 ....
 +
-追加のData Senseホストを使用する場合は、この時点で、次のルールをプライマリ・システムに追加します。
+スキャナノードとしてData Senseホストを追加する場合は、この時点で、次のルールをプライマリシステムに追加します。
 
 +
 ....
@@ -262,11 +265,11 @@ NOTE: Cloud Data Sense は、ソフトウェアがオンプレミスにインス
 +
 image:screenshot_cloud_compliance_deploy_start.png["Cloud Data Sense を有効にするボタンを選択するスクリーンショット。"]
 
-. Activate Data Sense * をクリックして、オンプレミス導入ウィザードを開始します。
+. クラウド内のインスタンスに導入するか、オンプレミスのインスタンスに導入するかに応じて、適切な* Deploy *ボタンをクリックしてデータセンス導入ウィザードを開始します。
 +
-image:screenshot_cloud_compliance_deploy_onprem.png["クラウドデータセンスをオンプレミスに導入するボタンを選択するスクリーンショット。"]
+image:screenshot_cloud_compliance_deploy_onprem.png["クラウドまたはオンプレミスのマシンにクラウドデータセンスを導入するボタンを選択するスクリーンショット。"]
 
-. _Deploy Data Sense on Premises _ Dialog で、提供されたコマンドをコピーしてテキストファイルに貼り付け、後で使用できるようにして、 * Close * をクリックします。例：
+. 「_Deploy Data Sense on Premises」ダイアログが表示されます。提供されたコマンドをコピーしてテキストファイルに貼り付け、後で使用できるようにして、*閉じる*をクリックします。例：
 +
 「 sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq 」と入力します
 
@@ -314,9 +317,9 @@ tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
 
 
 .結果
-Cloud Data Sense インストーラは、パッケージのインストール、 Docker のインストール、インストールの登録、および Data Sense のインストールを行います。インストールには 10~20 分かかります。
+Cloud Data Senseインストーラは、パッケージのインストール、インストールの登録、およびData Senseのインストールを行います。インストールには 10~20 分かかります。
 
-ホストマシンとコネクタインスタンスの間にポート8080を介した接続がある場合、インストールの進行状況はBlueXPのData Senseタブに表示されます。
+ホストマシンとコネクタインスタンスの間にポート8080を介した接続がある場合は、BlueXPのData Senseタブにインストールの進行状況が表示されます。
 
 .次のステップ
 設定ページで、スキャンするデータソースを選択できます。
@@ -332,7 +335,7 @@ Cloud Data Sense インストーラは、パッケージのインストール、
 スキャナノードを追加するには、次の2つの方法があります。
 
 * すべてのデータソースのスキャンに使用するノードを追加します
-* 特定のデータソース、または特定のデータソースのグループのスキャンに使用するノードを追加します
+* 特定のデータソース、または特定のデータソースグループ（通常は場所に基づく）のスキャンに役立つノードを追加する
 
 
 デフォルトでは、追加した新しいスキャナノードはすべて、スキャンリソースの一般的なプールに追加されます。これを「デフォルトスキャナグループ」と呼びます。次の図では、6つすべてのデータソースからすべてのデータをスキャンする「デフォルト」グループに、1つのManagerノードと3つのスキャナノードがあります。
@@ -373,7 +376,7 @@ image:diagram_onprem_scanner_groups.png["異なるスキャナグループに割
 * 環境が要件を満たしていることを確認します <<Cloud Data Sense からのアウトバウンドインターネットアクセスを有効にする,権限と接続>>。
 * 追加するスキャナノードホストのIPアドレスを確認しておく必要があります。
 * Data Sense ManagerノードホストシステムのIPアドレスが必要です
-* コネクタシステムのIPアドレスまたはホスト名、ネットアップアカウントID、コネクタクライアントID、およびユーザアクセストークンが必要です。スキャナグループを使用する場合は、アカウントの各データソースの作業環境IDを確認しておく必要があります。この情報を取得するには、次の_前提条件ステップ_を参照してください。
+* コネクタシステムのIPアドレスまたはホスト名、ネットアップアカウントID、コネクタクライアントID、およびユーザアクセストークンが必要です。スキャナグループを使用する場合は、アカウントの各データソースの作業環境IDを確認しておく必要があります。この情報を取得するには、以下の*_必要条件ステップ_*を参照してください。
 * すべてのホストで次のポートとプロトコルを有効にする必要があります。
 +
 [cols="15,20,55"]
@@ -519,7 +522,7 @@ image:screenshot_scanner_groups.png["すべてのスキャナグループと、�
 
 ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。複数のホストシステムを使用する場合、プライマリシステムは _Managernode_name と呼ばれ、追加の処理能力を提供する追加システムは _Scanner Node_と 呼ばれます。
 
-複数のオンプレミスホストに Data Sense ソフトウェアをインストールする場合は、次の手順を実行します。
+複数のオンプレミスホストに同時にData Senseソフトウェアをインストールする場合は、次の手順を実行します。この方法で複数のホストを導入する場合、「スキャナグループ」は使用できません。
 
 .必要なもの
 * Manager ノードと Scanner ノードのすべての Linux システムが、を満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
@@ -579,7 +582,7 @@ sudo ./node_install.sh -m 10.11.12.13-t ふぁいる EF-1u69m1-1s35212`
 
 
 .結果
-Cloud Data Sense インストーラがパッケージ、 Docker のインストールを完了し、インストールを登録します。インストールには 10~20 分かかります。
+Cloud Data Sense インストーラがパッケージのインストールを完了し、インストールを登録します。インストールには 10~20 分かかります。
 
 .次のステップ
 設定ページで、スキャンするデータソースを選択できます。

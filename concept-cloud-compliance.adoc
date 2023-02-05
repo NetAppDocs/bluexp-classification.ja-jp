@@ -159,7 +159,7 @@ image:diagram_cloud_compliance_instance.png["クラウドプロバイダで実�
 m5.mcd を使用できない領域では、代わりに m4.mcd インスタンスに対してデータセンスを実行します。
 
 * Azure では、 Cloud Data Sense はで実行されます link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] 512 GB ディスクオペレーティングシステムのイメージは CentOS 7.8 です。
-* GCP では、 Cloud Data Sense はで実行されます link:https://cloud.google.com/compute/docs/machine-types#recommendations_for_machine_types["N2-standard-16 VM"^] 512 GB の標準パーシステントディスクオペレーティングシステムイメージは CentOS 7.9 です。
+* GCP では、 Cloud Data Sense はで実行されます link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["N2-standard-16 VM"^] 512 GB の標準パーシステントディスクオペレーティングシステムイメージは CentOS 7.9 です。
 +
 n2-dstandard-16 を使用できない地域では、データセンスは n2D-standard-16 または n1-standard-16 VM で実行されます。
 
@@ -272,7 +272,7 @@ Cloud Data Senseを使用すると、選択したデータソースに対して�
 
 === データ検出スキャンデータの速さ
 
-データセンスでは、スキャナノードごとに15-40 TBのデータをスキャンできます。スキャン速度は、ネットワークレイテンシ、ディスクレイテンシ、ネットワーク帯域幅、環境のサイズ、およびファイル配信サイズによって左右されます。
+データセンスでは、スキャナノードごとに1日あたり15～40個のTiBのデータをスキャンできます。スキャン速度は、ネットワークレイテンシ、ディスクレイテンシ、ネットワーク帯域幅、環境のサイズ、およびファイル配信サイズによって左右されます。
 
 link:task-deploy-compliance-onprem.html#deploy-data-sense-on-premises["データをスキャンするための複数のスキャナノードの導入の詳細については、こちらをご覧ください"^]。
 

@@ -83,6 +83,72 @@ image:screenshot_compliance_delete_data_fusion.png["データ Fusion ソース�
 
 
 
+== 正規表現を使用してカスタムの個人データ識別子を追加する
+
+カスタム正規表現（regex）を使用して、データ内の特定の情報を識別するためのパーソナルパターンを追加できます。これにより、新しいカスタム正規表現を作成して、システムにまだ存在しない新しい個人情報要素を特定できます。正規表現は、すでにData Senseで使用されている既存の事前定義パターンに追加され、結果は[personal patterns（個人パターン）]セクションに表示されます。
+
+たとえば、すべてのファイルで内部製品IDが記載されている場所を確認できます。製品IDに明確な構造が含まれている場合、たとえば、201で始まる12桁の数値であれば、カスタム正規表現機能を使用してファイル内で検索できます。この例の正規表現は*\b201\d｛9｝\b *です。
+
+正規表現を追加すると、すべてのデータソースのスキャンが再開されます。スキャンが完了すると、新しい結果は、［個人の結果］セクションの［データセンスコンプライアンスダッシュボード］および［個人データ］フィルタの［調査］ページに表示されます。
+
+.手順
+. _Custom Classifier_tabで、* Add New Classifier*をクリックして、_ Add Custom Classifier_wizardを起動します。
++
+image:screenshot_compliance_add_classifier_button.png["カスタム分類子の追加ウィザードの起動方法を示すスクリーンショット。"]
+
+. [タイプの選択]ページで、分類子の名前を入力し、短い概要 を入力して、[*Personal identifier*]を選択し、[次へ*]をクリックします。
++
+入力した名前は、分類子要件に一致するスキャン済みファイルの見出しとして、データセンスUIに表示されます。また、「システムで検出された結果をマスク」のチェックボックスをオンにして、UIに完全な結果が表示されないようにすることもできます。たとえば、クレジットカード番号全体または類似の個人データを非表示にする場合などです。
+
++
+image:screenshot_select_classifier_type.png["分類子の名前を指定し、分類子のタイプを選択する方法を示すスクリーンショット。"]
+
+. [データ分析ツールの選択]ページで、分類子の定義に使用するメソッドとして[カスタム正規表現*]を選択し、[次へ*]をクリックします。
++
+image:screenshot_select_classifier_tool.png["パターンの作成に使用するツールとしてカスタム正規表現を選択したことを示すスクリーンショット。"]
+
+. Create Logic_pageで、正規表現と近接文字を入力し、* Done *をクリックします。
++
+.. 正規表現は任意に入力できます。[*Validate]ボタンをクリックして、データを検証し、正規表現が有効であること、およびこの正規表現があまり広いとは限らないことを確認します。つまり、結果が多すぎることを意味します。
+.. 必要に応じて、近接キーワードを入力して結果の精度を高めることができます。検索対象のパターンの300文字以内（検出されたパターンの前または後）に検索されるのが一般的な単語です。単語またはフレーズをそれぞれ別の行に入力します。
++
+image:screenshot_select_classifier_create_logic.png["顧客分類子のregexおよびproximity wordsを入力するスクリーンショット。"]
+
+
+
+
+
+.結果
+クラシファイアが追加され、データセンスがすべてのデータソースの再スキャンを開始します。カスタム分類子ページに戻り'新しい分類子に一致するファイルの数を確認できますすべてのデータソースをスキャンした結果は、スキャンする必要があるファイルの数によってはしばらく時間がかかります。
+
+image:screenshot_personal_info_regex_added.png["スキャンを実行中の新しい正規表現分類子がシステムに追加された結果を示すスクリーンショット。"]
+
+
+
+=== カスタム分類子の結果を表示します
+
+コンプライアンスダッシュボードおよび［調査］ページで、任意のカスタム分類子の結果を表示できます。たとえば、このスクリーンショットは、「個人の結果」セクションの下のコンプライアンスダッシュボードに表示されている、一致した情報を示しています。
+
+image:screenshot_add_regex_result.png["［調査結果］ペインに表示される、カスタム正規表現の結果の例を示すスクリーンショット。"]
+
+をクリックします image:button_arrow_investigate.png["矢印の付いた円"] ボタンをクリックすると、詳細な結果が[調査]ページに表示されます。
+
+さらに、カスタム分類子の結果はすべて[カスタム分類子]タブに表示され、上位6つのカスタム分類子の結果が[コンプライアンスダッシュボード]に表示されます。
+
+image:screenshot_custom_classifier_top_5.png["返された結果に基づいて上位3つのカスタム分類子を示すスクリーンショット。"]
+
+
+
+=== カスタム分類子を管理します
+
+作成したカスタム分類子は、*Edit Classifier*ボタンを使用して変更できます。
+
+後で、追加したカスタムパターンを識別するためにデータセンスが必要ない場合は、「*分類子を削除*」ボタンを使用して各項目を削除できます。
+
+image:screenshot_custom_classifiers_manage.png["分類子を編集および削除するためのボタンを含む[カスタム分類子]ページのスクリーンショット。"]
+
+
+
 == テキストファイルからカスタムキーワードを追加します
 
 データ内の特定の情報を識別できるように、データセンスにカスタムキーワードを追加できます。定義したテキストファイルからキーワードを追加します。キーワードは、データセンスが既に使用している既存の定義済みキーワードに追加され、結果は[個人パターン]セクションに表示されます。
@@ -117,7 +183,7 @@ screech
 
 
 
-=== コマンドラインへのアクセス
+=== コマンドラインにアクセスします
 
 カスタムキーワードを追加するコマンドを開始するには、データセンスシステムにアクセスする必要があります。
 
@@ -193,73 +259,3 @@ image:screenshot_add_keywords_result.png["[調査結果]ペインにカスタム
 [user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f internal_product_names.txt
 ----
  log v1.0 | 2022-08-24 08:16:25,332 | INFO | ds_logger | upload_custom_keywords | 87 | 1 | None | upload_custom_keywords_87 | Deactivated keyword pattern from internal_product_names.txt successfully
-
-
-== 正規表現を使用してカスタムの個人データ識別子を追加する
-
-カスタム正規表現（regex）を使用して、データ内の特定の情報を識別するためのパーソナルパターンを追加できます。正規表現は、すでにData Senseで使用されている既存の事前定義パターンに追加され、結果は[personal patterns（個人パターン）]セクションに表示されます。
-
-たとえば、すべてのファイルで内部製品IDが記載されている場所を確認できます。製品IDに明確な構造が含まれている場合、たとえば、201で始まる12桁の数値であれば、カスタム正規表現機能を使用してファイル内で検索できます。
-
-正規表現を追加すると、データセンスはすべてのデータソースのスキャンを再開します。スキャンが完了すると、新しい結果がData senseで表示されます。
-
-
-
-=== 正規表現を追加するコマンド構文
-
-カスタムキーワードパターンを含むファイルを追加し、コマンドを開始してカスタムキーワードを追加するには、データセンスシステムにアクセスする必要があります。 <<コマンドラインへのアクセス,コマンドラインへのアクセス方法については、を参照してください>> データをオンプレミスにインストールしたか、クラウドに導入したかにかかわらず、
-
-カスタム正規表現を追加するコマンドの構文は次のとおりです。
-
- sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "<pattern_name>" -r "<regular_expression>" -p "<proximity_words>"
-* <pattery_name>=データセンスUIに表示される名前です。正規表現で検索される内容が、名前で示されていることを確認します。名前にはアルファベットを1文字以上含める必要があります。最大文字数は70文字です。
-* <regular_expression>=任意の正規表現を指定できます。
-* <proximity_words> =検索するパターンの300文字以内の単語（検出されたパターンの前または後）。検索結果の精度を高めるために役立ちます。各単語はカンマ(,)で区切ります。
-
-
-このコマンドはパス*/opt/NetApp/Datasense /*から実行します。
-
-新しい正規表現が多すぎるかどうかを毎回テストし、一致する値が多すぎるかどうかを確認します。その場合は、次のログメッセージが表示されます。
-
- log v1.0 | 2022-08-17 07:24:19,585 | ERROR | ds_logger | custom_regex | 119 | 1 | None | custom_regex_119 | The regex has high risk to identify false positives. Please narrow the regular expression and try again. To add it anyway, use the force flag (-f) at the end
-コマンドラインの末尾にある*-f *オプションを使用すると、たとえ過度に広範囲であっても、正規表現を強制的にData senseに追加できます。または、「-p」オプションを使用して、検索結果を絞り込むこともできます。
-
-
-
-=== 例
-
-製品IDは、201で始まる12桁の番号です。たとえば、「201123456789」です。したがって、正規表現は*\b201\d｛9｝\b *になります。データセンスUIのテキストで、このパターンを*内部製品ID *として識別したいとします。近接文字「product id」と「identifier」を追加します。
-
-すべてのファイルで内部製品IDが指定されている場所を確認するには、次のコマンドを入力します。
-
-[source, cli]
-----
-[user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "Internal Product ID" -r "\b201\d{9}\b" -p "product id,identifier"
-----
-このコマンドの出力は次のとおりです。
-
-....
-[+] Adding Custom Regex to Data Sense
-log v1.0 | 2022-08-23 13:19:01,476 | INFO | ds_logger | custom_regex | 154 | 1 | None | custom_regex_154 | A pattern named 'Internal Product ID' was added successfully to Data Sense
-....
-.結果
-次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。
-
-image:screenshot_add_regex_result.png["［調査結果］ペインに表示される、カスタム正規表現の結果の例を示すスクリーンショット。"]
-
-
-
-=== カスタム正規表現を非アクティブにします
-
-後で、正規表現として入力したカスタムパターンを識別するためにData Senseが必要ない場合は、コマンドの* deactivate *オプションを使用して、各正規表現を削除します。
-
- sudo bash tools/datascience/custom_regex/custom_regex.sh -s deactivate -n "<pattern name>"
-たとえば、*内部製品ID * regexを削除するには、次のようにします。
-
-[source, cli]
-----
-[user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s deactivate -n "Internal Product ID"
-----
- log v1.0 | 2022-08-17 09:13:15,431 | INFO | ds_logger | custom_regex | 31 | 1 | None | custom_regex_31 | A pattern named 'Internal Product ID' was deactivated successfully

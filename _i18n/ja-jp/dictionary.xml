@@ -815,7 +815,6 @@
   <block id="70e4204451ab8b7224b342245071bd70" category="paragraph"><block ref="8b78b4503f012c98d9a7bad6859a8875" category="inline-link-macro-rx"></block>。</block>
   <block id="7ffd1bb560f33a5347a7a153f2a393a8" category="summary">Cloud Data Sense は、プライベートデータを管理、整理するためのさまざまな方法を提供します。これにより、最も重要なデータを簡単に確認できます。</block>
   <block id="82e6e10597cf7de906fad4f53b7deab7" category="doc">プライベートデータを整理する</block>
-  <block id="80c5486fc069bc1a8b8e27abdddc0b7e" category="list-text">に登録している場合は <block ref="2366c206354427dcda3be6923339236d" category="inline-link-macro-rx"></block> ファイルを分類して保護するには、 Cloud Data Sense を使用して AIP ラベルを管理します。</block>
   <block id="892f73595a08cb4eef7c3e6319b7f807" category="list-text">組織または特定の種類のフォローアップのためにマークするファイルにタグを追加できます。</block>
   <block id="f9f3ed5f443ba769e31426ba3b322b22" category="list-text">「ポリシー」機能を使用すると、 1 つのボタンをクリックして簡単に結果を表示できるように、独自のカスタム検索クエリを作成できます。</block>
   <block id="6dd2018793ec98bc5468877b15393d0a" category="admonition">このセクションで説明する機能は、データソースに対して完全な分類スキャンを実行することを選択した場合にのみ使用できます。マッピングのみのスキャンを実行したデータソースでは、ファイルレベルの詳細は表示されません。</block>
@@ -833,7 +832,6 @@
   <block id="9bd315267ebba0738f6713698f565ca4" category="cell">ファイルを読み取ることができる他のシステムでは、ラベルを確認できます。このラベルは、自動化のために使用できます。</block>
   <block id="aedd3229a38d6b05f0995fcc5999e0bb" category="cell">ファイルにタグが設定されているかどうかを確認するために使用される API 呼び出しは 1 つだけです。</block>
   <block id="2b275eaee13cb00a92bf6cca3d87498e" category="section-title">AIP ラベルを使用してデータを分類する</block>
-  <block id="297d1b6c4f0dca560e7de55a7695e6b4" category="paragraph">加入している場合、 Cloud Data Sense がスキャンしているファイルで AIP ラベルを管理できます <block ref="2366c206354427dcda3be6923339236d" category="inline-link-macro-rx"></block>。AIP を使用すると、コンテンツにラベルを適用することで、ドキュメントやファイルを分類して保護できます。データセンスを使用すると、既にファイルに割り当てられているラベルを表示したり、ファイルにラベルを追加したり、ラベルが既に存在する場合にラベルを変更したりできます。</block>
   <block id="2473b4a68e8fb944fa5afe552e508d00" category="paragraph">クラウドデータセンスは、 .DOC 、 .DOCX 、 .pdf 、 .PPTX 、 .XLS 、 .xlsx 。</block>
   <block id="96238d4f93a120c69c563c428e826a69" category="section-title">ワークスペースへの AIP ラベルの統合</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="list-title">要件</block>
@@ -868,8 +866,6 @@
   <block id="f26e9a93fd90f2481bfff0f8c4517da6" category="list-text">[ データ調査結果 ] ペインで、ラベル付けするファイルを選択します。</block>
   <block id="4547ea9eb340b9b3af947472b935464f" category="inline-image-macro">ラベル付けするファイルの選択方法を示すスクリーンショットと、 [ データ調査 ] ページの [ ラベル ] ボタン。</block>
   <block id="82f4c85e0490488ae85ec5e3e8910f40" category="paragraph"><block ref="82f4c85e0490488ae85ec5e3e8910f40" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="63f4e8adfa1a6014d7ff86e7b15978c5" category="list-text">個々のファイルを選択するには、各ファイル（<block ref="f3b0afa317fb06ade03449dd632d08e0" category="inline-image-macro-rx" type="image"></block>）。</block>
-  <block id="b0f4e8ead1dc66c7d18f047b7bbb0ecb" category="list-text">現在のページのすべてのファイルを選択するには、タイトル行（<block ref="131fceed6fc7a6aedc494491ecbfa63c" category="inline-image-macro-rx" type="image"></block>）。</block>
   <block id="28335f4213b9388560c3776b64b9d6e1" category="list-text">ボタンバーの * Label * をクリックし、 AIP ラベルを選択します。</block>
   <block id="7ddc7d6d8dbb2dc5a17135fab81b47cf" category="inline-image-macro">データ調査ページで AIP ラベルを複数のファイルに割り当てる方法を示すスクリーンショット。</block>
   <block id="cdeb776dc578fceef2300eedbf8c9aca" category="paragraph"><block ref="cdeb776dc578fceef2300eedbf8c9aca" category="inline-image-macro-rx" type="image"></block></block>
@@ -1261,11 +1257,6 @@
   <block id="b7f492f36c4defa8b0e4d929c63c51cc" category="paragraph">[ ポリシー ] タブに新しいポリシーが表示されます。ポリシーに一致するファイルは、ポリシーの実行時に 1 日に 1 回削除されます。</block>
   <block id="43ed2558da29e111d7b394e516d927d4" category="section-title">コンプライアンスアクションのステータスを表示します</block>
   <block id="402bab7d605cd8ea629df214c4351f69" category="paragraph">ステータスは次のいずれかになります。</block>
-  <block id="8f3d10eb21bd36347c258679eba9e92b" category="list-text">完了しました</block>
-  <block id="c9413dd7682a45da9ecc9efa8cea47d7" category="list-text">実行中です</block>
-  <block id="7b2f31b90fe1c2cc33a52233c1925df3" category="list-text">キューに登録され</block>
-  <block id="0e22fe7d45f8e5632a4abf369b24e29c" category="list-text">キャンセルされました</block>
-  <block id="d7c8c85bf79bbe1b7188497c32c3b0ca" category="list-text">失敗しました</block>
   <block id="5cbd1d911aa6ea79882837fdb136a33c" category="paragraph">ステータスが「 Queued 」または「 In Progress 」のアクションはすべてキャンセルできます。</block>
   <block id="9a7529e65ab13e43836bc3139078b642" category="list-text">データセンス UI の右下には、 * アクションステータス * ボタンが表示されます <block ref="c07560f34c0ecfb5f7779d5b126be9c2" category="inline-image-macro-rx" type="image"></block>。</block>
   <block id="b39cf2037c78736a4277e9a0bce85338" category="list-text">このボタンをクリックすると、最新の 20 件のアクションが表示されます。</block>
@@ -1294,7 +1285,6 @@
   <block id="feb0221200046a709566079a3cbc3e5f" category="list-text">100 GiB は /opt で利用できます</block>
   <block id="f12d2902352feb2353dd1667f55dc293" category="list-text">/var で 400GiB の可用性を確保</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">インストール手順を確認します</block>
-  <block id="978609569f7aa2ebd2e50aa2d7c3f2da" category="list-text">Docker Engine バージョン 19 以降。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>。</block>
   <block id="c0ffa5845aefb5e4bb0fa6089bcc513d" category="list-text">Python 3 バージョン 3.6 以降。<block ref="f67fc9f0c7d8aa701884bad21356a242" category="inline-link-rx"></block>。</block>
   <block id="73b95f9cb4d6b028a07c08d4d8325338" category="paragraph">Cloud Data Sense を導入する前に、次の前提条件を確認し、サポートされている構成であることを確認してください。</block>
   <block id="75913c473742502800ae1c0a9a5a93df" category="list-text">クラウドデータを常に運用しておく必要がありますデータを継続的にスキャンするには、 Cloud Data Sense インスタンスがオンのままになっている必要があります。</block>
@@ -1318,7 +1308,6 @@
   <block id="56aed921ec3e492e9095e626c14396cb" category="list-text">[Deploy *] をクリックして、オンプレミス展開ウィザードを開始します。</block>
   <block id="48e13f41d0a6dd2616f2ecf0c9e1eaa6" category="inline-image-macro">クラウドデータセンスをオンプレミスに導入するボタンを選択するスクリーンショット。</block>
   <block id="d81a8cbca4762be44dc0845220ba9dcf" category="paragraph"><block ref="d81a8cbca4762be44dc0845220ba9dcf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5ef86f30d02c8c5fb29b6604da109d51" category="list-text">_Deploy Data Sense on Premises _ Dialog で、提供されたコマンドをコピーしてテキストファイルに貼り付け、後で使用できるようにして、 * Close * をクリックします。例：</block>
   <block id="de228a79f2490bf5b3308e91ce0e8426" category="paragraph">「 sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq -- darksite</block>
   <block id="6b0f70e5c18db6f7f252ec60af1fdda0" category="list-text">ホストマシンでインストールファイルを解凍します。次に例を示します。</block>
   <block id="7811f7ac7277273963aaa041e6dee561" category="cell">プロンプトに従ってパラメータを入力します。</block>
@@ -1444,10 +1433,8 @@
   <block id="7da8f2d897e75578043e0f01e245c1a7" category="paragraph">特定の Data Fusion ソースを使用してファイルをスキャンしない場合は、 Data Fusion インベントリページからソース行を選択し、 ［ * データ Fusion ソースの削除 * ］ をクリックします。</block>
   <block id="9008a71f5aaebece0844ad9fc3bb64a7" category="inline-image-macro">データ Fusion ソースを削除する方法を示すスクリーンショット。</block>
   <block id="b889af7f2e1d8844037173064a2494e2" category="paragraph"><block ref="b889af7f2e1d8844037173064a2494e2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3124f9fc5c0ee682e84684a0754afa9c" category="summary">クラウドデータセンスをクラウドに導入するには、いくつかの手順を実行します。</block>
   <block id="638b36e7b559bbb7ff5161d7a8fa8bf5" category="doc">クラウドにクラウドデータセンスを導入</block>
   <block id="f1b417d70cc0826ea97b7fb76ba27c7a" category="inline-link-macro">インターネットにアクセスできる Linux ホストに Data Sense を導入する</block>
-  <block id="527f4dc6979a6bceb94b6378a706d6c4" category="paragraph">また、次のことも可能です <block ref="645115e66496a0ec0a40c4c3811246be" category="inline-link-macro-rx"></block>。オンプレミスの ONTAP システムもオンプレミスにある Data Sense インスタンスを使用してオンプレミスの システムをスキャンする場合は、インストールのタイプを選択することをお勧めしますが、これは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。</block>
   <block id="211751cb447d335f31ff23a277ab83a3" category="inline-link">AWS でコネクタを作成する</block>
   <block id="b51a9186f236269e0e1206fe364d56ee" category="inline-link">Azure でコネクタを作成する</block>
   <block id="24f7d339e21b63b3cef99a7c8f1236fe" category="inline-link">GCP でコネクタを作成する</block>
@@ -1497,7 +1484,6 @@
   <block id="ed5df84ba8d573f10f9a94f52964d60b" category="list-text">Web ブラウザから Cloud Data Sense への接続を確認する</block>
   <block id="e9f6a58ca17526d9b23e21bdb6e1e1a3" category="section-title">クラウドにデータを導入するメリット</block>
   <block id="61d6c95614544202e2196461438ec5da" category="paragraph">クラウドデータセンスのインスタンスをクラウドに導入するには、次の手順を実行します。</block>
-  <block id="20ea9e481dc37e821240322a0c348206" category="list-text">Activate Data Sense * をクリックして、クラウド導入ウィザードを開始します。</block>
   <block id="978bfd93f7201230cb0a2871b8d1ef56" category="inline-image-macro">クラウドにクラウドデータセンスを導入するボタンを選択するスクリーンショット。</block>
   <block id="9290a44c7c623c5d84b6b9d511e6e5b5" category="paragraph"><block ref="9290a44c7c623c5d84b6b9d511e6e5b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="df809117058eb7bb06c8ed0aff661ac1" category="list-text">導入手順が完了すると、ウィザードに進捗状況が表示されます。問題が発生すると停止し、入力を求められます。</block>
@@ -1725,23 +1711,17 @@
   <block id="42d1c021036734670ca245849e323735" category="admonition">Cloud Data Sense は、ソフトウェアがオンプレミスにインストールされている場合、現在 S3 バケット、 Azure NetApp Files 、または FSX for ONTAP をスキャンできない。このような場合は、クラウドとに別のコネクタとデータセンスのインスタンスを導入する必要があります<block ref="7ef29812cbbbb10ee35427be73d0c671" category="inline-link-rx"></block> データソースごとに異なる。</block>
   <block id="34dc49ad79c5d0ec1f3c661ca216a2a5" category="paragraph">単一のオンプレミスホストに Data Sense ソフトウェアをインストールする場合は、次の手順を実行します。</block>
   <block id="bbdb5f5f026c712f36de4a68700316f5" category="list-text">使用する Linux ホストにインストーラファイルをコピーします (`cp またはその他の方法を使用 ) 。</block>
-  <block id="a7f360748435372720f8441cac0e45c8" category="list-text">Activate Data Sense * をクリックして、オンプレミス導入ウィザードを開始します。</block>
-  <block id="202436dc011fc7327435fdc5f118df63" category="paragraph"><block ref="202436dc011fc7327435fdc5f118df63" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f7fe0f4c5bd3dd34e31c9eae80732a01" category="paragraph">「 sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq 」と入力します</block>
   <block id="65a0409250bc34ad7aed301586de5abc" category="list-text">ホストマシンでインストーラファイルを解凍します。次に例を示します。</block>
   <block id="0c3e94a9670a26d481343fe02b9df002" category="list-text">手順 6 からコピーした情報を貼り付けます。 'UDO./install.sh -a &lt;account_id&gt;-c &lt;agent_id&gt;-t&lt;token&gt;`</block>
-  <block id="92950fbc35dd1c9fdc3896ffb51749bc" category="paragraph">Cloud Data Sense インストーラは、パッケージのインストール、 Docker のインストール、インストールの登録、および Data Sense のインストールを行います。インストールには 10~20 分かかります。</block>
-  <block id="2c340191b330c641363a55766c89b4bf" category="paragraph">複数のオンプレミスホストに Data Sense ソフトウェアをインストールする場合は、次の手順を実行します。</block>
   <block id="2f22ab4135a481a1450cf28cb5f05c26" category="list-text">の手順 1~7 を実行します <block ref="ca10c193ae29117fbfb6ce9e3e248e8b" category="inline-xref-macro-rx"></block> マネージャーノード。</block>
   <block id="8b1cdcd166f0c70f7233d0d11c7bddf2" category="paragraph">シングルホストのインストールで使用できる変数に加えて、新しいオプション * -n &lt;Node_IP&gt; * を使用してスキャナノードの IP アドレスを指定します。複数のスキャナノードの IP はカンマで区切って指定します。</block>
   <block id="3f0a4de61ad13ce65d1a7332a726eb8d" category="list-text">手順 3 でコピーしたコマンドを貼り付けて実行します。</block>
-  <block id="338bab1be2b874ad2e6906e8c71283d5" category="paragraph">Cloud Data Sense インストーラがパッケージ、 Docker のインストールを完了し、インストールを登録します。インストールには 10~20 分かかります。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">サポートに登録します</block>
   <block id="1a3dd42e7f140871b4724418e36e52fb" category="sidebar">Cloud Data Sense ドキュメント</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
   <block id="ce5d6bd317f10e98c0ed8cd1d8a5eb77" category="sidebar">クラウドに導入</block>
-  <block id="f0c64cbfc0e796643acefe15ae67ec5e" category="sidebar">オンプレミスにインターネットアクセスで導入できます</block>
   <block id="88b8e638dc99736099049254e46001f8" category="sidebar">オンプレミスでインターネットにアクセスせずに導入できます</block>
   <block id="77cb6eb12b1c27e0f1e04f0f158eb184" category="sidebar">データソースでスキャンをアクティブ化します</block>
   <block id="8c7729e22a223978ef26b521fa9ee122" category="sidebar">Cloud Volumes ONTAP とオンプレミス ONTAP</block>
@@ -1761,8 +1741,6 @@
   <block id="940f7fa149e5c7150bed31bd5a2f9785" category="sidebar">dsar に応答します</block>
   <block id="f8b28f56cf385c66a4a0078795b69320" category="sidebar">データセンスからデータソースを削除します</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
-  <block id="5fef629b836b60819e0c0ce49cd2b9d7" category="sidebar">新機能</block>
-  <block id="d54b405acf85b9b88edbf9454cd1e219" category="sidebar">インターネットでオンプレミスにデータセンスを導入</block>
   <block id="1cdcdefa74c2914f109f17dbba9e6f8f" category="sidebar">インターネットを使用せずにオンプレミスにデータセンスを導入</block>
   <block id="7a1ecd84a5a121cd176d1d7c8945c20b" category="sidebar">Cloud Volumes ONTAP ボリューム</block>
   <block id="8d097e38d6920ece5917d57da5699e5c" category="sidebar">オンプレミスの ONTAP ボリューム</block>
@@ -1821,7 +1799,6 @@
   <block id="6b356fe759d450cad6ec9f478a17a524" category="paragraph">たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'sudo ./install.sh -a &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;token&gt; --host &lt;ds_host&gt; --manager-host &lt;cm_host&gt; * -n &lt;node-ip1&gt; 、 &lt;node-ip2&gt; 、 &lt;node-ip3&gt;*-proxy-proxy-proxy-host-pproxy-pxe-password&lt;/password&gt;</block>
   <block id="8622d1cd96d6ec0930cec4d27426b259" category="list-text">AWS では、 Cloud Data Sense はで実行されます <block ref="862a215d1ef85127ef00037fb3b30ed4" category="inline-link-macro-rx"></block> 500 GB の gp2 ディスクです。オペレーティングシステムイメージは Amazon Linux 2 （ Red Hat 7.3.1 ）です。</block>
   <block id="8031d67afa3b05713e70ceb139df71f1" category="list-text">Azure では、 Cloud Data Sense はで実行されます <block ref="258fa0e906df18ccf945022280cc0721" category="inline-link-macro-rx"></block> 512 GB ディスクオペレーティングシステムのイメージは CentOS 7.8 です。</block>
-  <block id="3cdcaf097c9b8ea42f0deb57a3418969" category="list-text">GCP では、 Cloud Data Sense はで実行されます <block ref="a90d99a5d867795ab41880f273d24bc2" category="inline-link-macro-rx"></block> 512 GB の標準パーシステントディスクオペレーティングシステムイメージは CentOS 7.9 です。</block>
   <block id="74e5e01600beec43894e96e22ac9f5eb" category="list-text">プロンプトが表示されたら、を持つ Cloud Data Sense インスタンスに IAM ロールを割り当てます <block ref="27b52f38738d689881a76b49c98ec7ec" category="inline-xref-macro-rx"></block>。</block>
   <block id="b7f2b0e45c51391324aebf221531b036" category="paragraph">FSX で ONTAP ボリュームをスキャンする前に、<block ref="68e9cbaf33b2641a589dc87867e4bfec" category="inline-link-rx"></block>。</block>
   <block id="f72dc999895eb17e77093f9ecff4180c" category="paragraph">これは、データを移行していて、ファイルに加えられた最後の変更を確認する場合に役立ちます。このアクションではを使用します<block ref="a370f691ddfd2ad7b716b2db4ad021a1" category="inline-link-rx"></block> データをソースからターゲットにコピーおよび同期する機能。</block>
@@ -2119,7 +2096,6 @@
   <block id="e701a25b99aca57280ba389dd0e551c6" category="paragraph">たとえば、ログファイルの次の行は、コピー処理が成功し、コピー処理が失敗した場合を示しています。</block>
   <block id="4892afff6c12a31702739804f9402dd2" category="section-title">ログファイルへのアクセス</block>
   <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">たとえば、 100 個のファイルを削除するなど、多くのファイルで ［ 調査結果 ］ ペインからアクションを実行すると、プロセスに時間がかかることがあります。アクションステータスペインでこれらの非同期アクションのステータスを監視して、すべてのファイルにいつ適用されたかを確認できます。</block>
-  <block id="70669aa10fb7138a5de7f7526f548131" category="paragraph">たとえば、 100 個のファイルを削除するなど、多くのファイルで ［ 調査結果 ］ ペインからアクションを実行すると、プロセスに時間がかかることがあります。これらの非同期アクションのステータスは、 _Action Status_Pane で監視できるので、すべてのファイルにいつ適用されたかを知ることができます。</block>
   <block id="a5129dfbdf0dc4588d520f42de3004dd" category="paragraph">これにより、正常に完了した操作、現在実行中の操作、および失敗した操作を確認できるため、問題を診断して修正できます。</block>
   <block id="0b11e28340112432b7a51a8bf0bb5fbf" category="paragraph">レポートは、.csvファイル（最大5、000行のデータを含めることができます）、またはNFS共有にエクスポートする.jsonファイル（無制限の行数を含めることができます）としてローカルマシンに保存できます。ファイル（非構造化データ）、ディレクトリ（フォルダおよびファイル共有）、またはデータベース（構造化データ）をスキャンする場合、レポートファイルは最大3つダウンロードされます。</block>
   <block id="1f48130430181607c67c25cf69b5768e" category="paragraph">ファイル共有にエクスポートするときは、データセンスにエクスポートアクセスのための正しい権限があることを確認してください。</block>
@@ -2197,7 +2173,6 @@
   <block id="9816532bdb11b99d3175be528e41c5b6" category="cell">Texas Driver's License</block>
   <block id="89b56b1e048dcf0ec285e29a05d6d029" category="paragraph">同じ名前のファイルがコピー先に存在する場合、そのファイルは移動されません。</block>
   <block id="f466f17a82f9ca3b39b50be85ceb8395" category="list-text">ファイルを移動するには、NFS共有でデータセンスインスタンスのIPアドレスからのアクセスが許可されている必要があります。</block>
-  <block id="32e8c942a25aad00e497d3bf394f59d4" category="list-text">一度に移動できるファイルの最大数は100、000です。</block>
   <block id="e6860b78555fc79d4429acb5534cf51b" category="paragraph">組織固有の検索結果を提供する独自のカスタムポリシーを作成できます。検索条件に一致するすべてのファイルとディレクトリ（共有とフォルダ）の結果が返されます。</block>
   <block id="5587c065d5a62295455b157389cd71e5" category="paragraph">データを削除し、ポリシーの結果に基づいてAIPラベルを割り当てるアクションは、ファイルに対してのみ有効です。検索条件に一致するディレクトリは、自動的に削除することも、AIPラベルを割り当てることもできません。</block>
   <block id="90915c385560094095567649cbd732aa" category="section-title">ファイルおよびディレクトリの権限を表示する</block>
@@ -2304,24 +2279,15 @@
   <block id="7a4f785c9bf1b41e9eb899da0e988d27" category="paragraph">次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。追加した各ソース列は、「Table.Column」という形式でフィルタリストに表示されます。たとえば、「customers.CustomerID」のようになります。</block>
   <block id="86776d2aca02c16f7beb228e9112d324" category="inline-image-macro">［調査結果］ペインに表示されるData Fusion の結果の例を示すスクリーンショット。</block>
   <block id="4275c0ed3233cbea8a2f0bc0d2c33395" category="paragraph"><block ref="4275c0ed3233cbea8a2f0bc0d2c33395" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b43de279c258dd5031c6bdedf5d1ae80" category="paragraph">カスタム正規表現（regex）を使用して、データ内の特定の情報を識別するためのパーソナルパターンを追加できます。正規表現は、すでにData Senseで使用されている既存の事前定義パターンに追加され、結果は[personal patterns（個人パターン）]セクションに表示されます。</block>
-  <block id="8765349da42fc731215c94441efae48f" category="paragraph">たとえば、すべてのファイルで内部製品IDが記載されている場所を確認できます。製品IDに明確な構造が含まれている場合、たとえば、201で始まる12桁の数値であれば、カスタム正規表現機能を使用してファイル内で検索できます。</block>
-  <block id="a947d2f1730c470833c4544effbb7bc1" category="section-title">コマンドラインへのアクセス</block>
   <block id="936f32b71b96ea5785d6a11d0da86d15" category="paragraph">データセンスをオンプレミスにインストールした場合は、コマンドラインに直接アクセスできます。</block>
   <block id="0bac9ec0256a9fd2858c7836245c9025" category="list-text">AWSの場合：&lt;ec2-user&gt;を使用します</block>
-  <block id="2ca1f3bad4fcb2aea6222d64aeb6ee20" category="section-title">正規表現を追加するコマンド構文</block>
-  <block id="0b674f6afef562ef0fec5869730d7efe" category="paragraph">カスタム正規表現を追加するコマンドの構文は次のとおりです。</block>
-  <block id="c0860cd77b783ac8ccb3c6de19266e83" category="paragraph">新しい正規表現が多すぎるかどうかを毎回テストし、一致する値が多すぎるかどうかを確認します。その場合は、次のログメッセージが表示されます。</block>
   <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="section-title">例</block>
-  <block id="ce52796a17167ca6f97268ee7baaa0de" category="paragraph">すべてのファイルで内部製品IDが指定されている場所を確認するには、次のコマンドを入力します。</block>
   <block id="1e4b16d4f3c8faa8b0a90ebbeae0a0f7" category="paragraph">次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。</block>
   <block id="5e0b61460f50f9b62d95b060b2f3f8d2" category="inline-image-macro">［調査結果］ペインに表示される、カスタム正規表現の結果の例を示すスクリーンショット。</block>
   <block id="f0957a103fdf829c95e6748bbaec5b4a" category="paragraph"><block ref="f0957a103fdf829c95e6748bbaec5b4a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f1619aa0c5343971dffa315bb9524cc9" category="paragraph">たとえば、*内部製品ID * regexを削除するには、次のようにします。</block>
   <block id="8b4506c76e97dc4cbdfa92467d581a0a" category="section-title">これで、データの中でデータを識別するカスタムパターンを追加できるようになりました</block>
   <block id="cdd8fa6a73205d146405999abb5c86ec" category="admonition">Data Senseホスト・システムのIPアドレスは、インストール後は変更できません。</block>
   <block id="766f0d81be7879628bc30bd7367309c3" category="paragraph">このコマンドはパス*/opt/NetApp/Datasense /*から実行します。</block>
-  <block id="19f9f2c4f009c255e214b21dae526160" category="paragraph">後で、正規表現として入力したカスタムパターンを識別するためにData Senseが必要ない場合は、コマンドの* deactivate *オプションを使用して、各正規表現を削除します。</block>
   <block id="331a3f3aa511b1c438e9c58674f70985" category="section-title">2022年9月6日（バージョン1.16）</block>
   <block id="d59aefa3621ff4109ce747758711c46c" category="section-title">ファイルの変更を反映するために、リポジトリをすぐに再スキャンできます</block>
   <block id="a6277013831bd0ba5dd8499592e6d67b" category="inline-link">ディレクトリを再スキャンする方法を参照してください</block>
@@ -2445,13 +2411,11 @@
   <block id="99bc31b68f8a295277219d11cfd94709" category="list-text">BlueXPを起動し、「ガバナンス」＞「分類」と選択します。</block>
   <block id="55ab41ac1ef27256d456ef28aaa4b180" category="list-text">BlueXP ConnectorホストマシンのIPアドレスまたはホスト名を入力して、データセンスインスタンスからアクセスできるようにします。</block>
   <block id="e1b1b617543f2b58f77159919d102775" category="list-text">_cm_host_= BlueXPコネクタシステムのIPアドレスまたはホスト名。</block>
-  <block id="1fb26fce06486e786dfd1a1f7db4dd91" category="paragraph">ホストマシンとコネクタインスタンスの間にポート8080を介した接続がある場合、インストールの進行状況はBlueXPのData Senseタブに表示されます。</block>
   <block id="4641554e9ff0ab6b08e16160ca0cf9af" category="list-text">BlueXPユーザーを特定のファイルまたは複数のファイルに割り当てることで、ユーザーがファイルの管理を担当できるようになります。</block>
   <block id="63b7beb8f794c45da0a0cefd2daaa890" category="paragraph">AIP ラベルを管理するには、既存の Azure アカウントにサインインして AIP ラベル機能をクラウドデータセンスに統合する必要があります。有効にすると、すべてのファイルの AIP ラベルを管理できます <block ref="590012ab10bd1b63820c3ad5e15aed82" category="inline-link-macro-rx"></block> を選択します。</block>
   <block id="f649bee14ac2bfc4bdf680a6c4d7f933" category="paragraph">AIP ラベルがファイルメタデータの一部であるのと同じ方法で、タグがファイルに追加されないことに注意してください。このタグは、BlueXPユーザーがCloud Data Senseを使用して確認したところにあります。このため、ファイルを削除する必要があるのか、何らかの種類のフォローアップを確認する必要があるのかを確認できます。</block>
   <block id="c38adf84c9ff1f07a9abdc6fc5abfc96" category="paragraph">BlueXPユーザーを特定のファイルまたは複数のファイルに割り当てることができるため、ユーザーはファイルに対して実行する必要があるフォローアップアクションを実行できます。この機能は、多くの場合、カスタムステータスタグをファイルに追加する機能で使用されます。</block>
   <block id="53d075953a933a24d0e4c29b6a87ee6e" category="paragraph">ユーザ名はファイルメタデータの一部としてファイルに追加されません。これは、Cloud Data Senseを使用している場合にBlueXPユーザに表示されるだけです。</block>
-  <block id="022976657937301218e21398ba9fa972" category="list-text">特定の重要なポリシーの結果が返されたときに、BlueXPユーザーに電子メールアラートを送信して、データを保護するための通知を受け取ることができます</block>
   <block id="99a08830cf6f1972806c695ac18e69bc" category="list-text">Azureの場合：BlueXPインスタンス用に作成したユーザを使用します</block>
   <block id="a5b37e45ed042a9bf7c09bfcc25c3211" category="list-text">GCPの場合：BlueXPインスタンス用に作成されたユーザーを使用します</block>
   <block id="23c0e03df230b1dfa0e16b9d275b80ea" category="list-text">BlueXPの左ナビゲーションメニューで、* Governance &gt; Classification *をクリックします。</block>
@@ -2581,7 +2545,6 @@
   <block id="acdc619c23bd4363ccec733a2e8a38ae" category="list-text">このファイルをBlueXPユーザーに割り当てることで、ファイルに対して実行する必要があるフォローアップアクションを実行できます。を参照してください <block ref="aae7319c920bbcb541f7fa3a1a1db120" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXPに関する注意事項</block>
   <block id="e8a6d0f19a957eac14b9917a6c92899b" category="list-text"><block ref="e8a6d0f19a957eac14b9917a6c92899b" category="inline-link-rx"></block></block>
-  <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">BlueXPのユースケース</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXPブログ</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
   <block id="cd02721523de57441e385fc64cc693cc" category="list-text">SharePointオンプレミスアカウント(SharePoint Server)</block>
@@ -2617,7 +2580,6 @@
   <block id="0a4316eaec4759a96358821b3d6d871e" category="paragraph">データソースのスキャンに必要なスキャン処理能力が増えた場合は、スキャナノードを追加することができます。マネージャノードをインストールした直後にスキャナノードを追加することも、後でスキャナノードを追加することもできます。たとえば、1つのデータソースのデータ量が6カ月後に2倍または3倍になったことがわかった場合は、データスキャンに役立つ新しいスキャナノードを追加できます。</block>
   <block id="f114439eeb05a82baaead56da0d70a54" category="paragraph">スキャナノードを追加するには、次の2つの方法があります。</block>
   <block id="5df28ba528c6160d29730e9d7fc50471" category="list-text">すべてのデータソースのスキャンに使用するノードを追加します</block>
-  <block id="fa1e8da616696722350d1aa06d5a273e" category="list-text">特定のデータソース、または特定のデータソースのグループのスキャンに使用するノードを追加します</block>
   <block id="0047b4042b118692c1d7c579abdeaefe" category="paragraph">デフォルトでは、追加した新しいスキャナノードはすべて、スキャンリソースの一般的なプールに追加されます。これを「デフォルトスキャナグループ」と呼びます。次の図では、6つすべてのデータソースからすべてのデータをスキャンする「デフォルト」グループに、1つのManagerノードと3つのスキャナノードがあります。</block>
   <block id="d414af5a3d730e6b3c5c5e5fbf1791e5" category="inline-image-macro">デフォルトのスキャナグループに含まれている場合、データセンススキャナがデータソースをスキャンする方法を示す図。</block>
   <block id="12c492323fc8337000638fc92adb63ed" category="paragraph"><block ref="12c492323fc8337000638fc92adb63ed" category="inline-image-macro-rx" type="image"></block></block>
@@ -2712,12 +2674,6 @@
   <block id="10e08b10c8ba5b9b6646011e823e86ed" category="section-title">カスタムキーワードを無効にします</block>
   <block id="c67491a05b3eada8d8830f7e24dff0b6" category="paragraph">以前に追加した特定のカスタムキーワードを識別するためにデータセンスが必要ない場合は、コマンドの* deactivate *オプションを使用して、テキストファイルに定義されているキーワードを削除します。</block>
   <block id="9c0bd48717ec950ad656ee0c5cbe1bd7" category="section-title">正規表現を使用してカスタムの個人データ識別子を追加する</block>
-  <block id="ffbc9fd66cec345d48b984868ac86075" category="paragraph">正規表現を追加すると、データセンスはすべてのデータソースのスキャンを再開します。スキャンが完了すると、新しい結果がData senseで表示されます。</block>
-  <block id="9db0ea676fac4ef1398c2560f02af1c0" category="inline-xref">コマンドラインへのアクセス方法については、を参照してください</block>
-  <block id="b1599e902d95235efbbcb43349f65a6e" category="paragraph">カスタムキーワードパターンを含むファイルを追加し、コマンドを開始してカスタムキーワードを追加するには、データセンスシステムにアクセスする必要があります。 <block ref="909a3758711ef5bc4a197043a3e5bc79" category="inline-xref-macro-rx"></block> データをオンプレミスにインストールしたか、クラウドに導入したかにかかわらず、</block>
-  <block id="0b395d802cf1edb9750015b9c8375c64" category="list-text">&lt;pattery_name&gt;=データセンスUIに表示される名前です。正規表現で検索される内容が、名前で示されていることを確認します。名前にはアルファベットを1文字以上含める必要があります。最大文字数は70文字です。</block>
-  <block id="91199f34eda51a07db5d7713309a5577" category="list-text">&lt;regular_expression&gt;=任意の正規表現を指定できます。</block>
-  <block id="4a1b46e59340d0ab426f731ad1064b0e" category="section-title">カスタム正規表現を非アクティブにします</block>
   <block id="a47191a447cfd30eaac5f91623a8e2e1" category="paragraph">クラウドデータセンスは、人工知能（AI）ベースのテクノロジを使用して、データの状況を把握し、ストレージシステム全体で機密データを特定するクラウドサービスです。システムは、BlueXP Canvasに追加した作業環境や、データがネットワーク上でアクセスできる多くの種類のデータソースになります。 <block ref="098fc5cd7fc00ea7f0929a4918ac3fdc" category="inline-link-macro-rx"></block>。</block>
   <block id="09b72be567d4d0b6d75339233ebebd98" category="paragraph"><block ref="ca11d50dea199339753f4f92cb2c903a" category="inline-link-rx"></block>。</block>
   <block id="f93db149bc3a1616f1fc0abae89a8cb4" category="paragraph">データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響が非常に小さい場合でも、低速スキャンを実行するようにデータセンスを設定できます。 <block ref="c0297b8a85bd81fc39a6444d8d1b6586" category="inline-link-macro-rx"></block>。</block>
@@ -2867,8 +2823,6 @@
   <block id="9abb28e2822a3af34f9b1e46c458bec4" category="paragraph">標準的なオンプレミス環境には、次のコンポーネントと接続があります。</block>
   <block id="f1250c9b73cd8f5ef391e449f0b5dcb4" category="inline-image-macro">必要なBlueXPとネットワークコンポーネント、および関連する接続の図。</block>
   <block id="0b0f1899ec6aba7470224b92502a86ac" category="paragraph"><block ref="0b0f1899ec6aba7470224b92502a86ac" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="396121a53646ba01890701d692ca845f" category="paragraph">ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。複数のホストシステムを使用する場合、プライマリシステムはManagerノードと呼ばれ、処理能力を追加するシステムはスキャナノードと呼ばれます。</block>
-  <block id="d2ff672ff3253780b01cf63f61afcc7b" category="paragraph">コネクタがない場合は、<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 自社ネットワーク内またはクラウド内の Linux ホスト</block>
   <block id="7253a7683e98218c221f39d0f0ad5f29" category="paragraph">クラウドプロバイダを使用してコネクタを作成することもできます。を参照してください<block ref="e291ebc6db7a8ec08d333384efa4743e" category="inline-link-rx"></block>、<block ref="3f9648a8e8f665af7b23c050702c5c95" category="inline-link-rx"></block>または<block ref="2559e3f18112d727f751d3574900096c" category="inline-link-rx"></block>。</block>
   <block id="d555b3c4f5c30360fbf950950d34991e" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Cloud Data Senseをダウンロードして導入</block>
   <block id="e33a78c333a2d3b8efa0e2ba89103793" category="paragraph">データセンスをインストールして使用するには、BlueXPコネクタが必要です。ほとんどの場合、Cloud Data Senseを有効にする前にコネクタがセットアップされていると考えられます<block ref="d18edc1f87b2c25c3b9a75b33d4a162f" category="inline-link-rx"></block>ただし、ここで設定する必要がある場合もあります。</block>
@@ -2876,12 +2830,10 @@
   <block id="04e234c985524a78187de245502e592b" category="paragraph">データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。Linuxホストは、自社ネットワークまたはクラウドに配置できます。データセンスは、他のアプリケーションと共有されるホストではサポートされません。ホストは専用のホストである必要があります。</block>
   <block id="5b028b19d86301024ced75afef69e66d" category="list-text">OSにDockerエンジンがインストールされている必要があります</block>
   <block id="1c92a0c0cd35f6a2ac3eae778656a791" category="list-text">* Red Hat Subscription Management *：Red Hat Enterprise LinuxシステムをRed Hat Subscription Managementに登録する必要があります。登録されていないと、インストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。</block>
-  <block id="f24b544287fed82f5888fff45246cb27" category="paragraph">追加のData Senseホストを使用する場合は、この時点で、次のルールをプライマリ・システムに追加します。</block>
   <block id="7e9d35e7187b767f275e31d6a5cf324c" category="paragraph">複数のData Senseホストを使用してデータソースをスキャンする場合は、追加のポートやプロトコルを有効にする必要があります。 <block ref="3be03acda87575f8178f170dc170b26c" category="inline-link-macro-rx"></block>。</block>
   <block id="3ce88af879db89d6da43dca91e5ac2a6" category="list-text">プロキシを使用していて、TLS代行受信を実行している場合は、TLS CA証明書が保存されているData Sense Linuxシステム上のパスを確認する必要があります。</block>
   <block id="b2fe6e75aa67d3e83769c7fce0162b2e" category="list-text">次の手順に従って、スキャナノードにソフトウェアを展開します（また、特定のスキャナノードに対してオプションで「スキャナグループ」を定義します）。</block>
   <block id="23dcbd39a65a485d50a0307dbfaed624" category="list-text">次のスクリプトを実行して、このマッピング情報をすべてのスキャナノードに登録します。<block ref="095075046e7ff767d3fd56d02f6fdfdb" prefix=" " category="inline-code"></block></block>
-  <block id="463edc84b77ce25b2bdd37762148629e" category="list-text">コネクタシステムのIPアドレスまたはホスト名、ネットアップアカウントID、コネクタクライアントID、およびユーザアクセストークンが必要です。スキャナグループを使用する場合は、アカウントの各データソースの作業環境IDを確認しておく必要があります。この情報を取得するには、次の_前提条件ステップ_を参照してください。</block>
   <block id="868d9ff1d3a68b958d1cfc9f569a6cd9" category="list-text">使用するポート<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> データセンスマシンでは、データセンスをインストールする前に有効にすることをお勧めします。次のコマンドを実行して設定します<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> データセンスとの互換性を確保するために、次のようにします。</block>
   <block id="a27db93614949e38a138b99356391903" category="paragraph-title">事前に必要な手順</block>
   <block id="3cdc63cef0cf27689a17ead11a3df89d" category="list-text">スキャナグループを使用する場合は、[データセンス構成]タブで、スキャナグループに追加する作業環境ごとに作業環境IDをコピーします。</block>
@@ -2891,7 +2843,6 @@
   <block id="cb12d258a5a14064728e8b458c732c1e" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> S3 作業環境でデータセンスをアクティブ化</block>
   <block id="c73eb1c0478b9ea7f0699ac7b64d4214" category="list-text">の十分なスペースをテストします<block ref="2e1a4e3f55001820560b237188c70bc3" prefix=" " category="inline-code"></block>、<block ref="d42b9c57d24cf5db3bd8d332dc35437f" prefix=" " category="inline-code"></block>および<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block></block>
   <block id="da8fda88af08dfa86e6c1895e629a7a5" category="list-text">また、設定ページの新しいセクションには、設定したスキャナグループと各グループにあるスキャナノードが表示されます。</block>
-  <block id="919549d40619a284b1ae8b2aae243e50" category="summary">ネットワーク内のLinuxホストまたはクラウド内のLinuxホストでインターネットにアクセスできる場合は、いくつかの手順を実行してCloud Data Senseを導入します。</block>
   <block id="26d60e714b69b4b4ee28affb21b41152" category="paragraph">クラウドデータを常に運用しておく必要がありますデータを継続的にスキャンするには、Cloud Data Senseマシンをオンのままにしておく必要があります。</block>
   <block id="6f7f246150baec90c92a193be137fc8e" category="cell">コネクタのファイアウォールまたはルーティングルールで、ポート443からデータセンスインスタンスへのインバウンドおよびアウトバウンドトラフィックを許可する必要があります。ポート8080が開いていることを確認し、BlueXPでインストールの進行状況を確認します。</block>
   <block id="a0bc8fee488c4982eb9cac7b4cd30c5d" category="list-text">コネクタホストが、ポート 443 経由のアウトバウンド HTTPS アクセスを許可する必要があります。コネクタがクラウド内にある場合、すべてのアウトバウンド通信は、事前定義されたファイアウォールまたはルーティングルールによって許可されます。</block>
@@ -2935,10 +2886,6 @@
   <block id="fdd455d725fb278b4fe9d43c83722f88" category="cell">選択するオプション <block ref="d459f7b3039eb26458088e9c5f84d9e6" category="inline-link-macro-rx"></block> ファイルに割り当てられます。</block>
   <block id="396e873f2847657ab91854cd3443d47e" category="cell">ファイルが割り当てられているユーザーの名前を選択します。</block>
   <block id="fdf2788bf7f989d9f8956d46160abea0" category="list-text">*オペレーティング・システム*：Red Hat Enterprise LinuxまたはCentOSバージョン8.0~8.7</block>
-  <block id="e57c13b9d9d82321ef540f00ada2dc8c" category="list-text">&lt;proximity_words&gt; =検索するパターンの300文字以内の単語（検出されたパターンの前または後）。検索結果の精度を高めるために役立ちます。各単語はカンマ(,)で区切ります。</block>
-  <block id="df20dd9030c6ddada288b6ad4c67a8ef" category="paragraph">コマンドラインの末尾にある*-f *オプションを使用すると、たとえ過度に広範囲であっても、正規表現を強制的にData senseに追加できます。または、「-p」オプションを使用して、検索結果を絞り込むこともできます。</block>
-  <block id="7b364c1840c2eff35e06ff4fa4503e36" category="paragraph">製品IDは、201で始まる12桁の番号です。たとえば、「201123456789」です。したがって、正規表現は*\b201\d｛9｝\b *になります。データセンスUIのテキストで、このパターンを*内部製品ID *として識別したいとします。近接文字「product id」と「identifier」を追加します。</block>
-  <block id="ef566437fd42a378331d4f798dff6f8a" category="paragraph">このコマンドの出力は次のとおりです。</block>
   <block id="542947c94dac5ea97aa3f3323ad86f25" category="cell">オーストラリア運転免許証</block>
   <block id="15ed3f23837f7e98eb87015b76063af1" category="cell">ニュージーランド・ドライバー・ライセンス</block>
   <block id="6e7f259c1c7d110bc303264a6e6061a8" category="cell">ニュージーランドNHI（National Health Index）番号</block>
@@ -2967,7 +2914,6 @@
   <block id="042d6a5acaf1a16f91ab258697afa46c" category="list-text">特定の重要なポリシーの結果が返された場合は、BlueXPユーザーまたはその他の電子メールアドレスに電子メールアラートを送信できます。</block>
   <block id="dd5495a2a1bd2c271297d93d4feec5f0" category="list-text">AIPに存在しないラベルがファイルにある場合、Cloud Data Senseはラベルのないファイルと見なします。</block>
   <block id="77b468348f66c4ec44fb9f239b70f78f" category="list-text">必要に応じて、アカウントのBlueXPユーザーに通知メールを送信する場合は、このチェックボックスをオンにして、メールの送信間隔を選択します。の詳細を確認してください <block ref="aa3b63c453483f75d4311c7c0137128e" category="inline-link-macro-rx"></block>。</block>
-  <block id="719c5f27c509dcbb26618669f0941757" category="paragraph">Cloud Data Senseは、特定の重要なポリシーが結果を返すときに、アカウントのBlueXPユーザーに電子メールアラートを送信して、データを保護するための通知を受け取ることができます。E メール通知は、日単位、週単位、または月単位で送信することができます。</block>
   <block id="0f45f5e9392cad0f6f0647364c3255a6" category="list-text">Edit Policyページで、次の手順を実行します。</block>
   <block id="8e77c496ba7cea76c0e1e5ce3797b5fd" category="list-text">BlueXPアカウントのユーザーに通知メールを送信する場合は、[このアカウントのすべてのユーザーに電子メールを送信する]チェックボックスをオンにし、電子メールの送信間隔を選択します(たとえば、*Every Day*)。</block>
   <block id="096cbc59642308b2b360d46b2fe32336" category="cell">S3公開プライベートデータ</block>
@@ -3053,7 +2999,6 @@
   <block id="46bd1bd2277d77e6f044cdb7a6983fc6" category="inline-image-macro">[詳細]ボタン</block>
   <block id="d9453653a677951287ccfb3413d6baff" category="paragraph">レポートの最初のページに表示される会社名は、[データセンス]ページの上部にあるをクリックしてカスタマイズできます <block ref="205cf72ce215a0005a3d486daae4dd1a" category="inline-image-macro-rx" type="image"></block> [会社名の変更]をクリックします。次回レポートを生成するときに、新しい名前が含まれます。</block>
   <block id="9098e762df6423155c77747444ce3402" category="list-text">から手順 1~8 を実行します <block ref="6197de1d9d65c234b52f370ea2ee31e4" category="inline-link-macro-rx"></block> マネージャーノード。</block>
-  <block id="63ceb32b6f9962bbdcea6fcd1a87c47e" category="list-text">データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.17.xがインストールされている場合は、1.18.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
   <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">クラウドプロバイダソリューションのサポート</block>
   <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">BlueXPに統合した次のクラウドプロバイダソリューションのテクニカルサポートについては、その製品のBlueXPマニュアルの「困ったときは」を参照してください。</block>
   <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
@@ -3072,9 +3017,104 @@
   <block id="db58ba41843c3976a8e9932df76277ec" category="list-text">表示と変更<block ref="59692f28ce49bb83d818eeb4f17b5a14" category="inline-link-rx"></block> ファイルに保存できます。</block>
   <block id="afdc492e219eada4c9eca232defb9ab7" category="paragraph">また、自社運用のLinuxホストや、任意のクラウドプロバイダのホストにデータセンスを導入することもできます。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。データセンスソフトウェアのアップグレードは、インスタンスがインターネットにアクセスできるかぎり自動化されます。</block>
   <block id="dc59914806276092072d36ab9d88436a" category="section-title">データ検出スキャンデータの速さ</block>
-  <block id="de07b97b8f1edf6b3a5e144748a45572" category="paragraph">データセンスでは、スキャナノードごとに15-40 TBのデータをスキャンできます。スキャン速度は、ネットワークレイテンシ、ディスクレイテンシ、ネットワーク帯域幅、環境のサイズ、およびファイル配信サイズによって左右されます。</block>
   <block id="e56c626eb62df6bf64f545a2d416aa7c" category="inline-link-macro">データをスキャンするための複数のスキャナノードの導入の詳細については、こちらをご覧ください</block>
   <block id="fb3ba22f3eff98ea203090bc210752be" category="paragraph"><block ref="eefbdd7e2d2119a699d2995aece8c9f3" category="inline-link-macro-rx"></block>。</block>
   <block id="d5e0083566ed8d85ca68105bf8cfd38e" category="list-text">Cloud Data Senseは、AIを使用して、自然な人物の名前をドキュメントから抽出します。 <block ref="7dd684ea66077256bb820673a1d9b83b" category="inline-link-macro-rx"></block>。</block>
   <block id="008c6840e9f624b9435a7c107d8afaff" category="paragraph">BlueXPをSaaSモードで使用している場合、BlueXPへの接続はHTTPS経由で行われ、ブラウザとData Senseインスタンス間で送信されるプライベートデータはエンドツーエンドの暗号化で保護されます。これにより、ネットアップとサードパーティが読み取ることができなくなります。</block>
+  <block id="c06ccfe24df0bff683583f82911916e0" category="paragraph">100個のファイルの移動や削除など、多くのファイルで［調査結果］ペインから非同期アクションを実行する場合は、このプロセスに時間がかかることがあります。これらのアクションのステータスは、_Action Status_Paneで監視できるので、すべてのファイルにいつ適用されたかを知ることができます。</block>
+  <block id="10b276faf6d38414fa314b1a97e5e144" category="list-text">Success -データセンスアクションが完了し、すべての項目が成功しました。</block>
+  <block id="17c9d09b932b8275773953e455d2a174" category="list-text">部分的成功-データセンスアクションが完了し、一部の項目が失敗し、一部が成功しました。</block>
+  <block id="2321683eea87dd63e45ad309c2129a95" category="list-text">In Progress -処理はまだ実行中です。</block>
+  <block id="0a37a76b7450239595d8f310c8743f8b" category="list-text">Queued -処理が開始されていません。</block>
+  <block id="90162838794b14cbe52dc5fe9cecddda" category="list-text">Cancelled -処理はキャンセルされました。</block>
+  <block id="33c651a086608e99af14bf531797800b" category="list-text">failed -処理に失敗しました。</block>
+  <block id="da932f7eef3a2768f6b53d366221c254" category="paragraph">カスタム正規表現（regex）を使用して、データ内の特定の情報を識別するためのパーソナルパターンを追加できます。これにより、新しいカスタム正規表現を作成して、システムにまだ存在しない新しい個人情報要素を特定できます。正規表現は、すでにData Senseで使用されている既存の事前定義パターンに追加され、結果は[personal patterns（個人パターン）]セクションに表示されます。</block>
+  <block id="18faf11e669e669b541338888d9bea32" category="paragraph">たとえば、すべてのファイルで内部製品IDが記載されている場所を確認できます。製品IDに明確な構造が含まれている場合、たとえば、201で始まる12桁の数値であれば、カスタム正規表現機能を使用してファイル内で検索できます。この例の正規表現は*\b201\d｛9｝\b *です。</block>
+  <block id="f63c6623f7c373abcfcd168f9cda13ac" category="paragraph">正規表現を追加すると、すべてのデータソースのスキャンが再開されます。スキャンが完了すると、新しい結果は、［個人の結果］セクションの［データセンスコンプライアンスダッシュボード］および［個人データ］フィルタの［調査］ページに表示されます。</block>
+  <block id="168c8e32a1b235d5e5a3bd5630708081" category="list-text">_Custom Classifier_tabで、* Add New Classifier*をクリックして、_ Add Custom Classifier_wizardを起動します。</block>
+  <block id="03a9ab83293882634c4137aa0d2b8963" category="inline-image-macro">カスタム分類子の追加ウィザードの起動方法を示すスクリーンショット。</block>
+  <block id="6111b89fea1527ae77c65d4a19404b4a" category="paragraph"><block ref="6111b89fea1527ae77c65d4a19404b4a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41980f6e23a56df37090697fb6ee5802" category="list-text">[タイプの選択]ページで、分類子の名前を入力し、短い概要 を入力して、[*Personal identifier*]を選択し、[次へ*]をクリックします。</block>
+  <block id="b31f9f55ba118bd096e2a282557a1563" category="paragraph">入力した名前は、分類子要件に一致するスキャン済みファイルの見出しとして、データセンスUIに表示されます。また、「システムで検出された結果をマスク」のチェックボックスをオンにして、UIに完全な結果が表示されないようにすることもできます。たとえば、クレジットカード番号全体または類似の個人データを非表示にする場合などです。</block>
+  <block id="fb654467306a9ed74856249c6ac9b2f6" category="inline-image-macro">分類子の名前を指定し、分類子のタイプを選択する方法を示すスクリーンショット。</block>
+  <block id="0931f142421f2e217723300078e3b8b7" category="paragraph"><block ref="0931f142421f2e217723300078e3b8b7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dfc0ae4804b6b33aec281efa7221c9f8" category="list-text">[データ分析ツールの選択]ページで、分類子の定義に使用するメソッドとして[カスタム正規表現*]を選択し、[次へ*]をクリックします。</block>
+  <block id="3b5f1855b99662101364184845ff3510" category="inline-image-macro">パターンの作成に使用するツールとしてカスタム正規表現を選択したことを示すスクリーンショット。</block>
+  <block id="ea39dbbdddfb0a782dc4b45c751fe258" category="paragraph"><block ref="ea39dbbdddfb0a782dc4b45c751fe258" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a9569396e69f952ac709738236397e87" category="list-text">Create Logic_pageで、正規表現と近接文字を入力し、* Done *をクリックします。</block>
+  <block id="edd69077eb39ecaa79c200e2aa35e84a" category="list-text">正規表現は任意に入力できます。[*Validate]ボタンをクリックして、データを検証し、正規表現が有効であること、およびこの正規表現があまり広いとは限らないことを確認します。つまり、結果が多すぎることを意味します。</block>
+  <block id="13ba2d1d9a0f00239a30b9470cb310b7" category="list-text">必要に応じて、近接キーワードを入力して結果の精度を高めることができます。検索対象のパターンの300文字以内（検出されたパターンの前または後）に検索されるのが一般的な単語です。単語またはフレーズをそれぞれ別の行に入力します。</block>
+  <block id="1e7880d19e1061f1e0be8da511ed88eb" category="inline-image-macro">顧客分類子のregexおよびproximity wordsを入力するスクリーンショット。</block>
+  <block id="7084b45a6d0c1162ac3d5f6b215cc0f1" category="paragraph"><block ref="7084b45a6d0c1162ac3d5f6b215cc0f1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2a475d0ea29a27140d6f6bc03695803c" category="paragraph">クラシファイアが追加され、データセンスがすべてのデータソースの再スキャンを開始します。カスタム分類子ページに戻り'新しい分類子に一致するファイルの数を確認できますすべてのデータソースをスキャンした結果は、スキャンする必要があるファイルの数によってはしばらく時間がかかります。</block>
+  <block id="8925d45313a1840fbda58900234b9850" category="inline-image-macro">スキャンを実行中の新しい正規表現分類子がシステムに追加された結果を示すスクリーンショット。</block>
+  <block id="a70eb09ec7232b2b5daa5a4ed1191637" category="paragraph"><block ref="a70eb09ec7232b2b5daa5a4ed1191637" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="271475eb7f78f9d2e008af17381b1de6" category="section-title">カスタム分類子の結果を表示します</block>
+  <block id="1bf53a8a380b840074054ac0a2ce6047" category="paragraph">コンプライアンスダッシュボードおよび［調査］ページで、任意のカスタム分類子の結果を表示できます。たとえば、このスクリーンショットは、「個人の結果」セクションの下のコンプライアンスダッシュボードに表示されている、一致した情報を示しています。</block>
+  <block id="1c183644e70a788fe2551b5b972441dd" category="inline-image-macro">矢印の付いた円</block>
+  <block id="b845a820b4463450183b477b882d1814" category="paragraph">をクリックします <block ref="41bf2f1bb7aff781db273f2e82988cae" category="inline-image-macro-rx" type="image"></block> ボタンをクリックすると、詳細な結果が[調査]ページに表示されます。</block>
+  <block id="1d2e2fe4f6abb61eade532c666cd967e" category="paragraph">さらに、カスタム分類子の結果はすべて[カスタム分類子]タブに表示され、上位6つのカスタム分類子の結果が[コンプライアンスダッシュボード]に表示されます。</block>
+  <block id="7a9e40e822da40e7c97002c9260f7c19" category="inline-image-macro">返された結果に基づいて上位3つのカスタム分類子を示すスクリーンショット。</block>
+  <block id="65ff6e09a6619e034644af9f2246c36b" category="paragraph"><block ref="65ff6e09a6619e034644af9f2246c36b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1ad80e73ea9dcdf1fc96f0e77161559f" category="section-title">カスタム分類子を管理します</block>
+  <block id="a315a3a18e07665e5d98dc24a64a921f" category="paragraph">作成したカスタム分類子は、*Edit Classifier*ボタンを使用して変更できます。</block>
+  <block id="8dc803e9e2ed886e283db4b174d14ab1" category="paragraph">後で、追加したカスタムパターンを識別するためにデータセンスが必要ない場合は、「*分類子を削除*」ボタンを使用して各項目を削除できます。</block>
+  <block id="6c4af53d01a0fd2f4b9e2d860002e476" category="inline-image-macro">分類子を編集および削除するためのボタンを含む[カスタム分類子]ページのスクリーンショット。</block>
+  <block id="ba3a038a97b620898e33b9e09db66632" category="paragraph"><block ref="ba3a038a97b620898e33b9e09db66632" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cbcbb4eb39088cc429c550b8a7b20858" category="section-title">コマンドラインにアクセスします</block>
+  <block id="969665117064b959d3c660b43611f713" category="list-text">Docker Engineバージョン19.3.1以降。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>。</block>
+  <block id="666bbf651dbf568f97e37372014cde9a" category="list-text">「_Deploy Data Sense on Premises」ダイアログが表示されます。提供されたコマンドをコピーしてテキストファイルに貼り付け、後で使用できるようにして、*閉じる*をクリックします。例：</block>
+  <block id="bef424c97f7f20957409f086ca8ff3db" category="paragraph">ホストマシンとコネクタインスタンスの間にポート8080を介した接続がある場合は、BlueXPのData Senseタブにインストールの進行状況が表示されます。</block>
+  <block id="ed8c7ad82b3b6c68d52e7468a26cf5a7" category="list-text">データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.18.xがインストールされている場合は、1.19.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
+  <block id="49bb7289b8abc33c271f634fc8149b1e" category="list-text">一度に移動できるファイルの最大数は1、500万です。</block>
+  <block id="c92960c8f2e94d1653cffccc72067124" category="summary">クラウドデータセンスをクラウドに導入するには、いくつかの手順を実行します。データセンスインスタンスは、BlueXPコネクタと同じクラウドプロバイダネットワークに展開されます。</block>
+  <block id="34bce1a775347f02f4865a45804d2e40" category="paragraph">また、次のことも可能です <block ref="645115e66496a0ec0a40c4c3811246be" category="inline-link-macro-rx"></block>。このようなインストールは、オンプレミスにあるデータセンスインスタンスを使用してオンプレミスのONTAP システムをスキャンする場合に適しています。ただしこれは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。</block>
+  <block id="a09a5c1c3cb0d27dbac4cfa3c73c0ec8" category="list-text">[* Deploy*]をクリックして、クラウド導入ウィザードを開始します。</block>
+  <block id="5c19ef53902ef56ea5c8f554cccb9ad8" category="section-title">2023年2月5日（バージョン1.20）</block>
+  <block id="f0da8cded20db5ee6dce9c1c4da7bcd8" category="section-title">任意のEメールアドレスにポリシーベースの通知Eメールを送信できます</block>
+  <block id="01bfbdebf8836af0160f70e1bacc3787" category="paragraph">以前のバージョンのCloud Data Senseでは、特定の重要なポリシーの結果が返されたときに、アカウントのBlueXPユーザーに電子メールアラートを送信できました。この機能を使用すると、オンラインでないときにデータを保護するための通知を受け取ることができます。また、ポリシーから、BlueXPアカウントに登録されていない最大20個の電子メールアドレスを持つ他のユーザーに電子メールアラートを送信することもできます。</block>
+  <block id="01111213f34b03537871696a29c018fa" category="inline-link">ポリシーの結果に基づいて電子メールアラートを送信する方法については、こちらをご覧ください</block>
+  <block id="78f271269524c3df01d3ea41bb6702bb" category="paragraph"><block ref="d67cffea398d88e5b23de3d6e657ce99" category="inline-link-rx"></block>。</block>
+  <block id="58c8b31479a452f2c02b4c4beb2b8e6f" category="section-title">これで、UIからData Senseによって識別される個人パターンを追加できるようになりました</block>
+  <block id="bbc056ffe85cbc0784df7b39d5fac941" category="paragraph">データセンスには、将来のスキャンでデータセンスが特定できるカスタムの「個人データ」を追加する機能がありました。ただし、データセンスLinuxホストにログインし、コマンドラインを使用してカスタムパターンを追加する必要がありました。今回のリリースでは、データセンスUIに正規表現を使用してパターンを追加できるため、カスタムパターンの追加や編集が非常に簡単になりました。</block>
+  <block id="e743c1cea3cca118a07bf2fd9a21ec39" category="inline-link">データセンスUIからカスタムパターンを追加する方法については、こちらをご覧ください</block>
+  <block id="6f3ebec91d6086cea205504bdbc3fd37" category="paragraph"><block ref="8eedc9e36b5a6054f1f5d8b4937ba068" category="inline-link-rx"></block>。</block>
+  <block id="84c8adf32e115baa72ae8b3a8f822476" category="section-title">データセンスを使用して1、500万個のファイルを移動できます</block>
+  <block id="ce5fbe7b662ddb049a74e9f53fbb248d" category="inline-link">データセンスを使用したソースファイルの移動の詳細については、こちらをご覧ください</block>
+  <block id="ba15bcd4f08736ac348b497a16e4692c" category="paragraph">これまでは、任意のNFS共有に対して、データセンス・ムーブで最大100、000個のソース・ファイルを移動できました。一度に最大1,500万個のファイルを移動できるようになりました。<block ref="40c227e71c831207540f496880532db6" category="inline-link-rx"></block>。</block>
+  <block id="e25a297a27416e76c1a8e01af56d07ed" category="section-title">SharePoint Onlineファイルへのアクセス権を持つユーザーの数を表示する機能</block>
+  <block id="6e0f24b07c077e6e557a1d0fac76b6c1" category="paragraph">フィルタ「アクセス権を持つユーザー数」で、SharePoint Onlineリポジトリに保存されているファイルがサポートされるようになりました。これまでは、CIFS共有上のファイルのみがサポートされていました。現時点では、Active DirectoryベースでないSharePointグループはこのフィルタにカウントされません。</block>
+  <block id="cab6c5a0928827eecbe652fb21944075" category="section-title">新しい「部分的成功」ステータスがアクションステータスパネルに追加されました</block>
+  <block id="d889002fb629aff0cd2d82543e5f378b" category="inline-link">アクションステータスパネルの表示方法を参照してください</block>
+  <block id="8c01977ad1276f1ec21ee04cc193f1e3" category="paragraph">新しい「部分的成功」ステータスは、データセンスアクションが完了し、一部の項目が失敗し、たとえば100個のファイルを移動または削除するときに一部の項目が成功したことを示します。さらに、「終了」ステータスが「成功」に変更されました。以前は、「終了」ステータスに成功した処理と失敗した処理が表示されることがありました。現在、「Success」ステータスは、すべての項目に対するすべてのアクションが成功したことを意味します。<block ref="fcc1d764ae2299a747d914333deb15cf" category="inline-link-rx"></block>。</block>
+  <block id="3ab2df6871ca20dcee1d44061626c34d" category="list-text">に登録している場合は<block ref="dc81bb027ada9d4ecc15bb9933242e3a" category="inline-link-rx"></block> ファイルを分類して保護するには、 Cloud Data Sense を使用して AIP ラベルを管理します。</block>
+  <block id="4fa467a8f28f273fccaf2f493a3f89cb" category="paragraph">加入している場合、 Cloud Data Sense がスキャンしているファイルで AIP ラベルを管理できます<block ref="dc81bb027ada9d4ecc15bb9933242e3a" category="inline-link-rx"></block>。AIP を使用すると、コンテンツにラベルを適用することで、ドキュメントやファイルを分類して保護できます。データセンスを使用すると、既にファイルに割り当てられているラベルを表示したり、ファイルにラベルを追加したり、ラベルが既に存在する場合にラベルを変更したりできます。</block>
+  <block id="20f57a97183edf732383774b2acf377f" category="list-text">特定の重要なポリシーが結果を返すときに、BlueXPユーザーやその他の電子メールアドレスに電子メールアラートを送信して、データを保護するための通知を受け取ることができます</block>
+  <block id="0629976487dc6cc7f0d343d4d336a4ac" category="list-text">必要に応じて、他のユーザに通知Eメールを送信する場合はチェックボックスをオンにし、Eメールアドレスを20個まで入力して、Eメールの送信間隔を選択します。</block>
+  <block id="208609a972f6a4981e2c9511fc7d0063" category="paragraph">Cloud Data Senseは、特定の重要なポリシーが結果を返すときに、アカウントのBlueXPユーザーに電子メールアラートを送信して、データを保護するための通知を受け取ることができます。E メール通知は、日単位、週単位、または月単位で送信することができます。また、BlueXPアカウントではなく、最大20個のメールアドレスに電子メールアラートを送信することもできます。</block>
+  <block id="abf0f7e6ece371db4b19fea5e49a4de2" category="list-text">他のユーザに通知メールを送信する場合は、[電子メールの送信]チェックボックスをオンにし、電子メールを送信する間隔を選択して、最大20個の電子メールアドレスを入力します。</block>
+  <block id="590f4e9626c88a785e5743f04a242c0f" category="list-text">GCP では、 Cloud Data Sense はで実行されます <block ref="f47e4641d38801bee7cf28563a438093" category="inline-link-macro-rx"></block> 512 GB の標準パーシステントディスクオペレーティングシステムイメージは CentOS 7.9 です。</block>
+  <block id="26df3e5e7b26e595d072c333153272c1" category="paragraph">データセンスでは、スキャナノードごとに1日あたり15～40個のTiBのデータをスキャンできます。スキャン速度は、ネットワークレイテンシ、ディスクレイテンシ、ネットワーク帯域幅、環境のサイズ、およびファイル配信サイズによって左右されます。</block>
+  <block id="6cdf48342be8a4ae3df3303f43e83b16" category="summary">ネットワーク内のLinuxホストまたはクラウド内のLinuxホストに、インターネットにアクセスできるCloud Data Senseを導入するには、いくつかの手順を実行します。</block>
+  <block id="4bd0feba4f0658e9db32d120e7e95926" category="paragraph">ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。複数のホストシステムを使用する場合、プライマリシステムは_Manager node_と呼ばれ、追加の処理能力を提供する追加システムは_Scanner Node_と 呼ばれます。</block>
+  <block id="a76b68d7e44fa22f2d4b5107c0729fa7" category="paragraph">コネクタがない場合は、<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> ネットワーク内のLinuxホスト、またはクラウド内のLinuxホスト。</block>
+  <block id="6124944413e19a98a7cefa988e91f90e" category="inline-link">m5.mc</block>
+  <block id="753c2f384183a67171ec75bbf3c5b35d" category="list-text">* AWS EC2 instance type *：上記のCPUおよびRAMの要件を満たすインスタンスタイプ。お勧めします<block ref="07a75e0a9170a24a8b798a3f0ad5bd4c" category="inline-link-rx"></block>。</block>
+  <block id="dab82bd5fdaa1e12c8086bb3cfa494cb" category="inline-link">Standard_D16s_v3</block>
+  <block id="969592102786dd0b770b754b3220159f" category="list-text">* Azure VMのサイズ*：上記のCPUとRAMの要件を満たすインスタンスタイプ。お勧めします<block ref="b0e0081ceddb227f6d73954b69522e52" category="inline-link-rx"></block>。</block>
+  <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="inline-link">N2-standard-16</block>
+  <block id="73731a154d429f05332addb49f2ec537" category="list-text">* GCPマシンタイプ*：上記のCPUとRAMの要件を満たすインスタンスタイプ。お勧めします<block ref="bb9e331217b48a311c7947c404f21f76" category="inline-link-rx"></block>。</block>
+  <block id="2b27dbdd91cbe22f05c819e1be37f3ad" category="paragraph">スキャナノードとしてData Senseホストを追加する場合は、この時点で、次のルールをプライマリシステムに追加します。</block>
+  <block id="63dd0b4f2d962679267fa85d05e72c92" category="list-text">クラウド内のインスタンスに導入するか、オンプレミスのインスタンスに導入するかに応じて、適切な* Deploy *ボタンをクリックしてデータセンス導入ウィザードを開始します。</block>
+  <block id="80341b8c2d424b4008a1d168ff76c6a9" category="inline-image-macro">クラウドまたはオンプレミスのマシンにクラウドデータセンスを導入するボタンを選択するスクリーンショット。</block>
+  <block id="df6d41b53ad1938e7b8934fc6ffdf147" category="paragraph"><block ref="df6d41b53ad1938e7b8934fc6ffdf147" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a8e0047562d617c82a4034cce03ff08a" category="paragraph">Cloud Data Senseインストーラは、パッケージのインストール、インストールの登録、およびData Senseのインストールを行います。インストールには 10~20 分かかります。</block>
+  <block id="610e28574a4dbf2d34e497e3ed7bd822" category="list-text">特定のデータソース、または特定のデータソースグループ（通常は場所に基づく）のスキャンに役立つノードを追加する</block>
+  <block id="3fe624f4914417740fe3cf68a4327554" category="list-text">コネクタシステムのIPアドレスまたはホスト名、ネットアップアカウントID、コネクタクライアントID、およびユーザアクセストークンが必要です。スキャナグループを使用する場合は、アカウントの各データソースの作業環境IDを確認しておく必要があります。この情報を取得するには、以下の*_必要条件ステップ_*を参照してください。</block>
+  <block id="a566366d665bafe53c9d0a82a6befd65" category="paragraph">複数のオンプレミスホストに同時にData Senseソフトウェアをインストールする場合は、次の手順を実行します。この方法で複数のホストを導入する場合、「スキャナグループ」は使用できません。</block>
+  <block id="65c70fcd12b102e4a08b42a41a2e7de8" category="paragraph">Cloud Data Sense インストーラがパッケージのインストールを完了し、インストールを登録します。インストールには 10~20 分かかります。</block>
+  <block id="5512cd55404b66757fcb9aa5273c9b47" category="sidebar">インターネットにアクセスできるLinuxホストに導入します</block>
+  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新機能</block>
+  <block id="f8f0bde9e4fc1fbeefb41437010577d4" category="sidebar">インターネットを使用したLinuxホストにデータセンスを導入する</block>
+  <block id="83d2b5781b150dc742697f6275e740ca" category="sidebar">データセンスのユースケース</block>
 </blocks>
