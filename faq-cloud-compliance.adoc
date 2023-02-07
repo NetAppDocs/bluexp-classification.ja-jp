@@ -52,7 +52,7 @@ link:concept-cloud-compliance.html["Cloud Data Sense の仕組みの詳細はこ
 * データ保持ポリシーに準拠
 
 
-https://cloud.netapp.com/netapp-cloud-data-sense["Cloud Data Sense のユースケースについて詳しくは、こちらをご覧ください"^]。
+https://bluexp.netapp.com/netapp-cloud-data-sense["Cloud Data Sense のユースケースについて詳しくは、こちらをご覧ください"^]。
 
 
 
@@ -115,10 +115,10 @@ Cloud Data Senseは、接続されているすべてのソースで特定のフ�
 はい。Cloud Data Sense が提供する情報は、組織内の他の関係者にも関係があるため、レポートを作成して分析情報を共有することができます。Data Sense で使用できるレポートは次のとおりです。
 
 プライバシーリスクアセスメントレポート:: データからプライバシーに関する情報を収集し、プライバシーリスクスコアを取得します。 link:task-generating-compliance-reports.html#privacy-risk-assessment-report["詳細はこちら。"^]。
-Data Subject Access Request レポート:: データ主体の特定の名前または個人IDに関する情報を含むすべてのファイルのレポートを抽出できます link:task-responding-to-dsar.html["詳細はこちら。"^]。
+Data Subject Access Request レポート:: データ主体の特定の名前または個人IDに関する情報を含むすべてのファイルのレポートを抽出できます link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["詳細はこちら。"^]。
 PCI DSS レポート:: クレジットカード情報のファイルへの配布を識別するのに役立ちます。 link:task-generating-compliance-reports.html#pci-dss-report["詳細はこちら。"^]。
 HIPAA レポート:: 健常性情報がファイルにどのように分散されているかを確認できます。 link:task-generating-compliance-reports.html#hipaa-report["詳細はこちら。"^]。
-データマッピングレポート:: 作業環境内のファイルのサイズと数について説明します。これには、使用容量、データの経過時間、データのサイズ、ファイルタイプが含まれます。 link:task-generating-compliance-reports.html#data-mapping-report["詳細はこちら。"^]。
+データマッピングレポート:: 作業環境内のファイルのサイズと数について説明します。これには、使用容量、データの経過時間、データのサイズ、ファイルタイプが含まれます。 link:task-controlling-governance-data.html#data-mapping-report["詳細はこちら。"^]。
 特定の情報タイプに関するレポート:: 個人データや機密性の高い個人データを含む、特定されたファイルの詳細を含むレポートを利用できます。カテゴリおよびファイルタイプ別に分類されたファイルを表示することもできます。 link:task-controlling-private-data.html["詳細はこちら。"^]。
 
 
@@ -201,7 +201,7 @@ link:concept-cloud-compliance.html#user-access-to-compliance-information["詳細
 
 === Cloud Data Sense は、自分の組織に通知を送信できますか？
 
-はい。ポリシー機能と組み合わせることで、BlueXPユーザー(毎日、毎週、または毎月)、またはポリシーが結果を返したときに電子メールアラートを送信して、データを保護するための通知を受け取ることができます。の詳細を確認してください link:task-org-private-data.html#controlling-your-data-using-policies["ポリシー"^]。
+はい。ポリシー機能と組み合わせることで、BlueXPユーザー(毎日、毎週、または毎月)、またはポリシーが結果を返したときに電子メールアラートを送信して、データを保護するための通知を受け取ることができます。の詳細を確認してください link:task-using-policies.html["ポリシー"^]。
 
 また、 [ ガバナンス ] ページと [ 調査 ] ページからステータスレポートをダウンロードして、組織内で共有することもできます。
 
@@ -317,7 +317,7 @@ Cloud Data Senseを使用するためのライセンスとコストに関する�
 * ネットアップが提供するお客様所有のライセンス（BYOL）
 
 
-を参照してください https://cloud.netapp.com/netapp-cloud-data-sense#Pricing["価格設定"^] を参照してください。
+を参照してください https://bluexp.netapp.com/pricing["価格設定"^] を参照してください。
 
 
 

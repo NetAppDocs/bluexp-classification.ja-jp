@@ -20,8 +20,8 @@ summary: グローバル Active Directory をクラウドデータセンスと�
 
 この統合により、データセンスの良い場所で追加情報 を利用できるようになります。
 
-* 「ファイル所有者」を使用できます。 link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["フィルタ"] [ 調査 ] ペインで、ファイルのメタデータの結果を確認できます。SID （セキュリティ ID ）を含むファイル所有者ではなく、実際のユーザ名が入力されます。
-* を参照してください link:task-controlling-private-data.html#viewing-permissions-for-files-and-directories["フルファイル権限"] [すべてのアクセス許可の表示]ボタンをクリックしたときに、各ファイルおよびディレクトリについて、
+* 「ファイル所有者」を使用できます。 link:task-investigate-data.html#filtering-data-in-the-data-investigation-page["フィルタ"] [調査]ペインで、ファイルのメタデータの結果を確認できます。SID （セキュリティ ID ）を含むファイル所有者ではなく、実際のユーザ名が入力されます。
+* を参照してください link:task-investigate-data.html#viewing-permissions-for-files-and-directories["フルファイル権限"] [すべてのアクセス許可の表示]ボタンをクリックしたときに、各ファイルおよびディレクトリについて、
 * を参照してください link:task-controlling-governance-data.html["ガバナンスダッシュボード"]を選択すると、 [ アクセス許可 ] パネルに、データに関するより詳細な情報が表示されます。
 
 

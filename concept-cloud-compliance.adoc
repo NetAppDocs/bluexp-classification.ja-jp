@@ -16,7 +16,7 @@ summary: Cloud Data Senseは、BlueXP向けのデータガバナンスサービ�
 [role="lead"]
 Cloud Data Senseは、BlueXP（旧Cloud Manager）向けのデータガバナンスサービスです。社内のオンプレミスデータソースやクラウドデータソースをスキャンして、データをマッピングして分類し、プライベート情報を特定します。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減し、データ移行プロジェクトを支援できます。
 
-https://cloud.netapp.com/netapp-cloud-data-sense["Cloud Data Sense のユースケースについて説明します"^]。
+https://bluexp.netapp.com/netapp-cloud-data-sense["Cloud Data Sense のユースケースについて説明します"^]。
 
 
 
@@ -34,7 +34,7 @@ Cloud Data Senseは、人工知能（AI）、自然言語処理（NLP）、機�
 * GDPR、CCPA、PCI、HIPAAの各プライバシー規制の要件に応じて、機密性の高い個人情報の範囲を特定します。
 * 名前または電子メールアドレスに基づいてデータサブジェクトアクセス要求（dsar）に応答します。
 * データベースから一意の識別子が他のリポジトリ内のファイルにあるかどうかを確認します。基本的に、データ検出スキャンで識別される「個人データ」のリストを独自に作成します。
-* ファイルに特定のPIIが含まれている場合は、電子メールで特定のユーザーに通知します（を使用してこの基準を定義します link:task-org-private-data.html#controlling-your-data-using-policies["ポリシー"^]）では、アクションプランを決定することができます。
+* ファイルに特定のPIIが含まれている場合は、電子メールで特定のユーザーに通知します（を使用してこの基準を定義します link:task-using-policies.html["ポリシー"^]）では、アクションプランを決定することができます。
 
 
 
@@ -125,7 +125,7 @@ Data Sense は、 NFS バージョン 3.x 、 4.0 、 4.1 、および CIFS バ�
 
 == コスト
 
-* クラウドデータセンスの使用コストは、スキャンするデータの量によって異なります。BlueXPワークスペースでデータ検出によってスキャンされた最初の1 TBのデータは、30日間無料です。これには、すべての作業環境とデータソースのすべてのデータが含まれます。この時点以降もデータのスキャンを続行するには、 AWS 、 Azure 、 GCP Marketplace 、またはネットアップの BYOL ライセンスのサブスクリプションが必要です。を参照してください https://cloud.netapp.com/netapp-cloud-data-sense["価格設定"^] を参照してください。
+* クラウドデータセンスの使用コストは、スキャンするデータの量によって異なります。BlueXPワークスペースでデータ検出によってスキャンされた最初の1 TBのデータは、30日間無料です。これには、すべての作業環境とデータソースのすべてのデータが含まれます。この時点以降もデータのスキャンを続行するには、 AWS 、 Azure 、 GCP Marketplace 、またはネットアップの BYOL ライセンスのサブスクリプションが必要です。を参照してください https://bluexp.netapp.com/netapp-cloud-data-sense["価格設定"^] を参照してください。
 +
 link:task-licensing-datasense.html["Cloud Data Sense のライセンスを取得する方法について説明します"^]。
 
@@ -189,7 +189,7 @@ CPU の数と RAM の数が少ないシステムには Data Sense を導入で�
 | 中 | CPU × 8 、 32GB RAM 、 200GB SSD | スキャンに時間がかかり、スキャンできるファイルは最大 100 万個です。 
 
 
-| 小規模 | CPU × 8 、 16GB RAM 、 100GB SSD | 「中」と同じ制限に加えて、特定する機能 link:task-responding-to-dsar.html["データ主体名"] 内部ファイルは無効です。 
+| 小規模 | CPU × 8 、 16GB RAM 、 100GB SSD | 「中」と同じ制限に加えて、特定する機能 link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["データ主体名"] 内部ファイルは無効です。 
 |===
 クラウドにデータセンスを導入する場合は、 ng-contact-data-sense@netapp.com に電子メールを送信して、これらの小規模なシステムのいずれかを使用する場合のサポートを依頼してください。これらの小規模なクラウド構成を導入するには、弊社と協力する必要があります。
 
@@ -248,7 +248,7 @@ Cloud Data Senseを使用すると、選択したデータソースに対して�
 | ファイルの経過時間とサイズ | はい。 | はい。 
 
 
-| を実行する機能 link:task-generating-compliance-reports.html#data-mapping-report["データマッピングレポート"] | はい。 | はい。 
+| を実行する機能 link:task-controlling-governance-data.html#data-mapping-report["データマッピングレポート"] | はい。 | はい。 
 
 
 | [ データ調査 ] ページでファイルの詳細を確認します | はい。 | いいえ 
@@ -257,7 +257,7 @@ Cloud Data Senseを使用すると、選択したデータソースに対して�
 | ファイル内の名前を検索します | はい。 | いいえ 
 
 
-| 作成 link:task-org-private-data.html#controlling-your-data-using-policies["ポリシー"] カスタムの検索結果が表示されます | はい。 | いいえ 
+| 作成 link:task-using-policies.html["ポリシー"] カスタムの検索結果が表示されます | はい。 | いいえ 
 
 
 | AIP ラベルおよびステータスタグを使用してデータを分類します | はい。 | いいえ 
@@ -272,7 +272,11 @@ Cloud Data Senseを使用すると、選択したデータソースに対して�
 
 === データ検出スキャンデータの速さ
 
-データセンスでは、スキャナノードごとに1日あたり15～40個のTiBのデータをスキャンできます。スキャン速度は、ネットワークレイテンシ、ディスクレイテンシ、ネットワーク帯域幅、環境のサイズ、およびファイル配信サイズによって左右されます。
+スキャン速度は、ネットワークレイテンシ、ディスクレイテンシ、ネットワーク帯域幅、環境のサイズ、およびファイル配信サイズによって左右されます。
+
+* マッピングスキャンを実行する場合、データセンスは、スキャナノードごとに1日あたり100～150個のTiBのデータをスキャンできます。
+* 分類スキャンを実行する場合、データセンスはスキャナノードごとに1日あたり15～40個のTiBのデータをスキャンできます。
+
 
 link:task-deploy-compliance-onprem.html#deploy-data-sense-on-premises["データをスキャンするための複数のスキャナノードの導入の詳細については、こちらをご覧ください"^]。
 
@@ -287,7 +291,7 @@ link:task-deploy-compliance-onprem.html#deploy-data-sense-on-premises["データ
 機密性の高い個人データ:: GDPR やその他のプライバシー規制で定義されている、健康データ、民族的起源、政治的見解などの機密情報の特殊な種類。 link:task-controlling-private-data.html#viewing-files-that-contain-sensitive-personal-data["機密性の高い個人データの詳細をご覧ください"^]。
 カテゴリ:: Cloud Data Sense は、スキャンしたデータをさまざまなタイプのカテゴリに分割します。カテゴリは、各ファイルのコンテンツとメタデータの AI 分析に基づくトピックです。 link:task-controlling-private-data.html#viewing-files-by-categories["カテゴリの詳細については、こちらをご覧ください"^]。
 タイプ（ Types ）:: Cloud Data Sense は、スキャンしたデータをファイルタイプ別に分類します。 link:task-controlling-private-data.html#viewing-files-by-file-types["タイプの詳細については、こちらをご覧ください"^]。
-名前エンティティ認識:: Cloud Data Senseは、AIを使用して、自然な人物の名前をドキュメントから抽出します。 link:task-responding-to-dsar.html["データ主体のアクセスリクエストへの対応について説明します"^]。
+名前エンティティ認識:: Cloud Data Senseは、AIを使用して、自然な人物の名前をドキュメントから抽出します。 link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["データ主体のアクセスリクエストへの対応について説明します"^]。
 
 
 

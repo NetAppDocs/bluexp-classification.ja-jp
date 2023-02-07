@@ -61,18 +61,20 @@ sidebar:
       url: "/task-controlling-governance-data.html"
     - title: データのコンプライアンスの詳細を表示します
       url: "/task-controlling-private-data.html"
+    - title: プライベートデータのカテゴリ
+      url: "/reference-private-data-categories.html"
+    - title: データを調査します
+      url: "/task-investigate-data.html"
     - title: プライベートデータを整理します
       url: "/task-org-private-data.html"
+    - title: データにポリシーを割り当てます
+      url: "/task-using-policies.html"
     - title: プライベートデータを管理
       url: "/task-managing-highlights.html"
     - title: スキャン設定を変更します
       url: task-managing-repo-scanning.html
     - title: レポートを生成します
       url: "/task-generating-compliance-reports.html"
-    - title: dsar に応答します
-      url: "/task-responding-to-dsar.html"
-    - title: プライベートデータのカテゴリ
-      url: "/reference-private-data-categories.html"
   - title: クラウドデータの管理
     entries:
     - title: カスタムの個人データ識別子を追加します
@@ -87,6 +89,10 @@ sidebar:
       url: "/task-managing-compliance.html"
     - title: データセンスをアンインストールします
       url: "/task-uninstall-data-sense.html"
+  - title: 参照
+    entries:
+    - title: データソースから収集されたメタデータ
+      url: "/reference-collected-metadata.html"
   - title: 知識とサポート
     entries:
     - title: サポートに登録します
@@ -144,11 +150,11 @@ homepage:
     - title: プライベート情報を含むファイルを表示します
       url: task-controlling-private-data.html
     - title: ストレージに複製されているファイルを表示します
-      url: task-controlling-private-data.html#checking-for-duplicate-files-in-your-storage-systems
+      url: task-investigate-data.html#checking-for-duplicate-files-in-your-storage-systems
     - title: データをフィルタして、特定のファイルを表示します
-      url: task-controlling-private-data.html#filtering-data-in-the-data-investigation-page
+      url: task-investigate-data.html
     - title: 上位検索を表示するポリシーを作成します
-      url: task-org-private-data.html#controlling-your-data-using-policies
+      url: task-using-policies.html
     - title: コンプライアンスレポートを生成します
       url: task-generating-compliance-reports.html
   - title: プライベートデータを整理します
@@ -168,9 +174,9 @@ homepage:
     - title: ソースファイルを削除します
       url: task-managing-highlights.html#deleting-source-files
     - title: 準拠していないデータが見つかった場合にアラートを E メールで送信
-      url: task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found
+      url: task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found
     - title: データサブジェクトのアクセス要求に応答します
-      url: task-responding-to-dsar.html
+      url: task-generating-compliance-reports.html#searching-for-data-subjects-and-downloading-reports
   - title: ブログコミュニティ
     links:
     - title: ネットアップコミュニティ

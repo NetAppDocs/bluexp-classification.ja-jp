@@ -83,7 +83,7 @@ Cloud Data Sense から Amazon S3 への接続を提供する:: Cloud Data Sense
 --
 VPC エンドポイントを作成するときは、 Cloud Data Sense インスタンスに対応するリージョン、 VPC 、およびルーティングテーブルを選択してください。S3 エンドポイントへのトラフィックを有効にする発信 HTTPS ルールを追加するには、セキュリティグループも変更する必要があります。そうしないと、データセンスで S3 サービスに接続できません。
 
-問題が発生した場合は、を参照してください https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS のサポートナレッジセンター：ゲートウェイ VPC エンドポイントを使用して S3 バケットに接続できないのはなぜですか。"^]
+問題が発生した場合は、を参照してください https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWSのサポートナレッジセンター：ゲートウェイVPCエンドポイントを使用してS3バケットに接続できないのはなぜですか。"^]
 
 別の方法として、 NAT ゲートウェイを使用して接続を提供する方法があります。
 
@@ -182,7 +182,7 @@ Cloud Data Sense は、有効にした S3 バケットのスキャンを開始�
 .手順
 . S3 バケットをスキャンするターゲット AWS アカウントに移動し、 * 別の AWS アカウント * を選択して IAM ロールを作成します。
 +
-image:screenshot_iam_create_role.gif[""]
+image:screenshot_iam_create_role.gif["IAMロールを作成するためのAWSページのスクリーンショット。"]
 
 +
 必ず次の手順を実行してください。
@@ -247,7 +247,7 @@ Cloud Data Sense インスタンスプロファイルアカウントが追加の
 
 
 
-. Amazon S3 Configuration * ページに移動し、新しい AWS アカウントが表示されます。Cloud Data Sense が新しいアカウントの作業環境を同期し、この情報を表示するまでに数分かかる場合があります。
+. Amazon S3 Configuration * ページに移動し、新しい AWS アカウントが表示されます。Cloud Data Senseで新しいアカウントの作業環境が同期され、この情報が表示されるまでに数分かかることがあります。
 +
 image:screenshot_activate_and_select_buckets.png["データセンスをアクティブ化する方法を示すスクリーンショット。"]
 
