@@ -73,7 +73,7 @@ sidebar:
       url: "/task-managing-highlights.html"
     - title: スキャン設定を変更します
       url: task-managing-repo-scanning.html
-    - title: レポートを生成します
+    - title: コンプライアンスレポートを生成します
       url: "/task-generating-compliance-reports.html"
   - title: クラウドデータの管理
     entries:
