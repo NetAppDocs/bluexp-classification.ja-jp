@@ -1094,7 +1094,6 @@
   <block id="6ca416dc347d5360ab86e69583f4b2b0" category="admonition">データベースに存在するファイルはコピーできません。</block>
   <block id="61d4fcc3c026e16853fc4a4c3af3238e" category="list-text">ファイルをコピーするには、アカウント管理者またはワークスペース管理者の役割が必要です。</block>
   <block id="ac4f9b37895857d8a8b18cb025880f5a" category="list-text">ファイルをコピーするには、デスティネーションの NFS 共有でデータセンスインスタンスからのアクセスが許可されている必要があります。</block>
-  <block id="31273f8f624a6f2a292d5dfa6bf047a8" category="list-text">一度にコピーできるファイルの最大数は 100 、 000 です。</block>
   <block id="07fc1f9bea8dc1060003a2fea5aa3598" category="list-text">[ データ調査結果 ] ペインで、コピーするファイルを選択し、 [ * コピー ] をクリックします。</block>
   <block id="e78ae78fac1620efb2c4db4938844274" category="inline-image-macro">[ データ調査 ] ページからコピーするファイルを選択する方法と、 [ コピー ] ボタンを示すスクリーンショット。</block>
   <block id="cb1cacc23b0ae330cc87e78659350142" category="paragraph"><block ref="cb1cacc23b0ae330cc87e78659350142" category="inline-image-macro-rx" type="image"></block></block>
@@ -3136,7 +3135,6 @@
   <block id="2976d8218e5021d7d1f5cbbae070157d" category="paragraph">BlueXPコネクタとデータセンスの両方で、新しい機能を有効にするには定期的に手動でアップグレードする必要があります。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します<block ref="179f3f01544c50dcde464960dc0c66ec" category="inline-link-rx"></block> および <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
   <block id="e6226abfed55ff05d6368103074cf171" category="paragraph">+ Data Senseの分類スキャンによってファイルの「最終アクセス時刻」が変更されていないことを確認するには、CIFSの場合はWrite Attributes権限、NFSの場合はwrite権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。</block>
   <block id="b59c5194f3c88dc07265c30dac8a84fe" category="cell">ファイルまたはディレクトリ（CIFSまたはNFSのみ）が最後にアクセスされた時間範囲を選択します。カスタムの期間を指定して、検索結果をさらに絞り込むこともできます。データがスキャンするファイルのタイプの場合、これは最後にデータ検出がファイルをスキャンしたときです。</block>
-  <block id="cb9bf9f33de1a01b95ec2d7471fee706" category="cell">クエリに含めるか除外するパスの一部または全部を20個まで入力します。インクルードパスと除外パスの両方を入力すると、まず含まれているパス内のすべてのファイルが検出され、除外されているパスからファイルが削除され、結果が表示されます。このフィルタに「*」を含めても効果はありません。フルパスを使用して特定のファイルやサブフォルダを検索する必要があります。</block>
   <block id="42942f3489af451c9c0c8a2e6cc0b756" category="cell">スキャン分析イベント</block>
   <block id="86c0d22c969df97ab506580c91428045" category="cell">Data Senseが最終アクセス時刻を元に戻すことができなかったために分類されなかったファイルを表示するか、またはData Senseが最終アクセス時刻を元に戻すことができなかったにもかかわらず分類されたファイルを表示するかを選択します。</block>
   <block id="0f609c3035a725a4b4c05c34c154b6a8" category="inline-link-macro">「最終アクセス時刻」のタイムスタンプの詳細を参照してください</block>
@@ -3182,4 +3180,7 @@
   <block id="6d59c0bcfa7b74d31dfcf319aed7bc81" category="paragraph"><block ref="6d59c0bcfa7b74d31dfcf319aed7bc81" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c9ba77685f066f05e419c9ad4b812035" category="list-text">右側の[Services]ペインで、*[Configure Buckets]*をクリックします。</block>
   <block id="49f6b32e47bb10336cfb6d4d9edbb52b" category="paragraph"><block ref="49f6b32e47bb10336cfb6d4d9edbb52b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="11f3580c4a3b779649df6d1a5c193fdf" category="list-text">一度に1～100,000個のファイルをコピーできます。</block>
+  <block id="5a8d6a8cd28258257694d106e58f4816" category="list-text">少なくとも20個のファイルを選択する必要があります。</block>
+  <block id="bd336cd1948dc2bbe990a0988a5e5e9e" category="cell">クエリに含めるか除外するパスの一部または全部を20個まで入力します。インクルードパスと除外パスの両方を入力すると、まず含まれているパス内のすべてのファイルが検出され、除外されているパスからファイルが削除され、結果が表示されます。このフィルタで「*」を使用しても効果はなく、特定のフォルダをスキャンから除外することはできません。設定された共有の下にあるすべてのディレクトリとファイルがスキャンされます。</block>
 </blocks>
