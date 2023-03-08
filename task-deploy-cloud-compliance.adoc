@@ -188,6 +188,8 @@ image:screenshot_cloud_compliance_wizard_start.png["新しいインスタンス�
 .結果
 BlueXPはクラウドデータセンスインスタンスをクラウドプロバイダに導入します。
 
+BlueXP ConnectorとData Senseソフトウェアのアップグレードは、インスタンスがインターネットに接続されていれば自動で実行されます。
+
 .次のステップ
 設定ページで、スキャンするデータソースを選択できます。
 

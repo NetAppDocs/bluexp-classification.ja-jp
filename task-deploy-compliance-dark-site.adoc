@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-dark-site.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade 
-summary: インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入するには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。 
+summary: インターネットにアクセスできないオンプレミスサイトのホストにCloud Data Senseを導入するには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。 
 ---
-= クラウドデータをオンプレミスに導入しても、インターネットアクセスは不要
+= インターネットアクセスのないホストにCloud Data Senseを導入
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: インターネットにアクセスできないオンプレミスサ�
 
 
 [role="lead"]
-インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入するには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。
+インターネットにアクセスできないオンプレミスサイトのホストにCloud Data Senseを導入するには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。
 
 また、次のことも可能です link:task-deploy-compliance-onprem.html["インターネットにアクセス可能なオンプレミスサイトにデータセンスを導入"]。
 
@@ -48,7 +48,7 @@ summary: インターネットにアクセスできないオンプレミスサ�
 * ユーザからのフィードバックを受け取る
 * BlueXPからの自動ソフトウェアアップグレード
 +
-BlueXPコネクタとデータセンスの両方で、新しい機能を有効にするには定期的に手動でアップグレードする必要があります。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します <<Data Sense ソフトウェアをアップグレードする,データセンスソフトウェアをアップグレードします>>。
+BlueXPコネクタとデータセンスの両方で、新しい機能を有効にするには定期的に手動でアップグレードする必要があります。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["BlueXP Connectorをアップグレードします"^] および <<Data Sense ソフトウェアをアップグレードする,データセンスソフトウェアをアップグレードします>>。
 
 
 
@@ -88,6 +88,7 @@ Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは30日�
 
 * *オペレーティング・システム*：Red Hat Enterprise LinuxまたはCentOSバージョン8.0~8.7
 +
+** CentOS Stream 8もサポートされています
 ** バージョン7.8または7.9を使用できますが、Linuxカーネルバージョンは4.0以降である必要があります
 ** OSがDocker Engineをインストールできる必要があります
 
@@ -252,7 +253,7 @@ image:diagram_deploy_onprem_multi_host_no_internet.png["インターネットに
 +
 [source, cli]
 ----
-tar -xzf DataSense-offline-bundle-v1.16.1.tar.gz
+tar -xzf DataSense-offline-bundle-v1.21.0.tar.gz
 ----
 +
 これにより、必要なソフトウェアと実際のインストールファイル* cc_onpm_installer.tar.gz *が抽出されます。
@@ -407,7 +408,7 @@ Cloud Data Sense インストーラがパッケージのインストールを完
 +
 [source, cli]
 ----
-tar -xvf DataSense-offline-bundle-v1.19.1.tar.gz
+tar -xvf DataSense-offline-bundle-v1.21.0.tar.gz
 ----
 +
 これにより、インストールファイル* cc_onpm_installer.tar.gz *が抽出されます。

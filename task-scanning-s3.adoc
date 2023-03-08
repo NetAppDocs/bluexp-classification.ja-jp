@@ -117,13 +117,13 @@ Data Sense ソフトウェアへのアップグレードは、インスタンス
 +
 image:screenshot_s3_we.gif["Amazon S3 作業環境アイコンのスクリーンショット"]
 
-. 右側の [ データセンス ] ペインで、 [*Enable*] をクリックします。
+. 右側の[サービス]ペインで、[分類]の横にある*[有効化]*をクリックします。
 +
-image:screenshot_s3_enable_compliance.gif["サービスパネルからクラウドデータセンスサービスを有効にするスクリーンショット"]
+image:screenshot_s3_enable_compliance.png["サービスパネルからクラウドデータセンスサービスを有効にするスクリーンショット"]
 
 . プロンプトが表示されたら、を持つ Cloud Data Sense インスタンスに IAM ロールを割り当てます <<S3 の前提条件の確認,必要な権限>>。
 +
-image:screenshot_s3_compliance_iam_role.gif["クラウドデータセンス用の AWS IAM ロールを入力するスクリーンショット"]
+image:screenshot_s3_compliance_iam_role.png["クラウドデータセンス用の AWS IAM ロールを入力するスクリーンショット"]
 
 . [*Enable*] をクリックします。
 
@@ -146,9 +146,9 @@ BlueXPがAmazon S3でCloud Data Senseを有効にしたら、次の手順でス�
 
 .手順
 . Amazon S3 作業環境を選択します。
-. 右側のペインで、 * バケットの設定 * をクリックします。
+. 右側の[Services]ペインで、*[Configure Buckets]*をクリックします。
 +
-image:screenshot_s3_configure_buckets.gif["S3 を選択するためにバケットの設定をクリックするスクリーンショット スキャンするバケット"]
+image:screenshot_s3_configure_buckets.png["S3 を選択するためにバケットの設定をクリックするスクリーンショット スキャンするバケット"]
 
 . バケットでマッピング専用スキャン、またはマッピングスキャンと分類スキャンを有効にします。
 +

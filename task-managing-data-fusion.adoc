@@ -19,6 +19,7 @@ summary: データセンスは、将来のスキャンで特定される「個�
 * スキャンするデータベース内の特定の列に基づいて一意の識別子を追加できます。
 * テキストファイルからカスタムキーワードを追加できます。これらの単語はデータ内で識別されます。
 * 正規表現（regex）を使用してパーソナルパターンを追加できます。既存の定義済みパターンに正規表現が追加されます。
+* カスタムカテゴリを追加して、データ内の特定のカテゴリの情報を特定できます。
 
 
 カスタムスキャン条件を追加するこれらのメカニズムはすべて、すべての言語でサポートされています。
@@ -83,6 +84,52 @@ image:screenshot_compliance_delete_data_fusion.png["データ Fusion ソース�
 
 
 
+== 単語のリストからカスタムキーワードを追加します
+
+Data Senseにカスタムキーワードを追加して、その情報がデータ内のどこにあるかを識別することができます。キーワードを追加するには、Data Senseで認識する各単語を入力します。キーワードは、データセンスが既に使用している既存の定義済みキーワードに追加され、結果は[個人パターン]セクションに表示されます。
+
+たとえば、すべてのファイルで内部製品名が言及されている場所を確認して、これらの名前が安全でない場所でアクセスできないようにすることができます。
+
+カスタムキーワードを更新すると、Data Senseはすべてのデータソースのスキャンを再開します。スキャンが完了すると、新しい結果は、［個人の結果］セクションの［データセンスコンプライアンスダッシュボード］および［個人データ］フィルタの［調査］ページに表示されます。
+
+.手順
+. [_Classification settings]タブで*[Add New Classifier]*をクリックし、_Add Custom Classifier_wizardを起動します。
++
+image:screenshot_compliance_add_classifier_button.png["カスタム分類子の追加ウィザードの起動方法を示すスクリーンショット。"]
+
+. [タイプの選択]ページで、分類子の名前を入力し、短い概要 を入力して、[*Personal identifier*]を選択し、[次へ*]をクリックします。
++
+入力した名前は、分類子の要件に一致するスキャン済みファイルの見出しとしてData Sense UIに表示され、[Investigation]ページにフィルタの名前として表示されます。
+
++
+また、「システムで検出された結果をマスク」のチェックボックスをオンにして、UIに完全な結果が表示されないようにすることもできます。たとえば、クレジットカード番号や類似の個人データを完全に非表示にする場合があります(マスクは次のようにUIに表示されます:"pass:[****]pass:[***]pass:[***]" 3434 )。
+
++
+image:screenshot_select_classifier_type2.png["分類子の名前を指定し、分類子のタイプを選択する方法を示すスクリーンショット。"]
+
+. [データ分析ツールの選択]ページで、分類子の定義に使用する方法として*[カスタムキーワード]*を選択し、*[次へ]*をクリックします。
++
+image:screenshot_select_classifier_tool_keywords.png["Data Senseがパターンの作成に使用するツールとしてカスタムキーワードを選択したスクリーンショット。"]
+
+. [_Create Logic_]ページで、認識するキーワード（各単語を別 々 の行に入力）を入力し、*[Validate]*をクリックします。
++
+下のスクリーンショットは、内部の製品名(さまざまな種類のフクロウ)を示しています。これらの項目のデータ検出検索では、大文字と小文字は区別されません。
+
++
+image:screenshot_select_classifier_create_logic_keyword.png["顧客分類子のキーワードを入力したスクリーンショット。"]
+
+. [完了]*をクリックすると、Data Senseがデータの再スキャンを開始します。
+
+
+.結果
+スキャンが完了すると、コンプライアンスダッシュボードの[個人結果]セクションと[個人データ]フィルタの[調査]ページに、この新しい情報が結果に含まれます。
+
+image:screenshot_add_keywords_result.png["[調査結果]ペインにカスタムキーワードの結果の例を示すスクリーンショット。"]
+
+ご覧のように、分類子の名前が個人結果パネルの名前として使用されます。このようにして、さまざまなキーワードグループをアクティブ化し、各グループの結果を表示できます。
+
+
+
 == 正規表現を使用してカスタムの個人データ識別子を追加する
 
 カスタム正規表現（regex）を使用して、データ内の特定の情報を識別するためのパーソナルパターンを追加できます。これにより、新しいカスタム正規表現を作成して、システムにまだ存在しない新しい個人情報要素を特定できます。正規表現は、すでにData Senseで使用されている既存の事前定義パターンに追加され、結果は[personal patterns（個人パターン）]セクションに表示されます。
@@ -91,28 +138,30 @@ image:screenshot_compliance_delete_data_fusion.png["データ Fusion ソース�
 
 正規表現を追加すると、すべてのデータソースのスキャンが再開されます。スキャンが完了すると、新しい結果は、［個人の結果］セクションの［データセンスコンプライアンスダッシュボード］および［個人データ］フィルタの［調査］ページに表示されます。
 
+を参照してください https://regex101.com/[] 正規表現の作成にサポートが必要な場合は、
+
 .手順
-. _Custom Classifier_tabで、* Add New Classifier*をクリックして、_ Add Custom Classifier_wizardを起動します。
+. [_Classification settings]タブで*[Add New Classifier]*をクリックし、_Add Custom Classifier_wizardを起動します。
 +
 image:screenshot_compliance_add_classifier_button.png["カスタム分類子の追加ウィザードの起動方法を示すスクリーンショット。"]
 
 . [タイプの選択]ページで、分類子の名前を入力し、短い概要 を入力して、[*Personal identifier*]を選択し、[次へ*]をクリックします。
 +
-入力した名前は、分類子要件に一致するスキャン済みファイルの見出しとして、データセンスUIに表示されます。また、「システムで検出された結果をマスク」のチェックボックスをオンにして、UIに完全な結果が表示されないようにすることもできます。たとえば、クレジットカード番号全体または類似の個人データを非表示にする場合などです。
+入力した名前は、分類子の要件に一致するスキャン済みファイルの見出しとしてData Sense UIに表示され、[Investigation]ページにフィルタの名前として表示されます。また、「システムで検出された結果をマスク」のチェックボックスをオンにして、UIに完全な結果が表示されないようにすることもできます。たとえば、クレジットカード番号全体または類似の個人データを非表示にする場合などです。
 
 +
 image:screenshot_select_classifier_type.png["分類子の名前を指定し、分類子のタイプを選択する方法を示すスクリーンショット。"]
 
 . [データ分析ツールの選択]ページで、分類子の定義に使用するメソッドとして[カスタム正規表現*]を選択し、[次へ*]をクリックします。
 +
-image:screenshot_select_classifier_tool.png["パターンの作成に使用するツールとしてカスタム正規表現を選択したことを示すスクリーンショット。"]
+image:screenshot_select_classifier_tool_regex.png["パターンの作成に使用するツールとしてカスタム正規表現を選択したことを示すスクリーンショット。"]
 
 . Create Logic_pageで、正規表現と近接文字を入力し、* Done *をクリックします。
 +
 .. 正規表現は任意に入力できます。[*Validate]ボタンをクリックして、データを検証し、正規表現が有効であること、およびこの正規表現があまり広いとは限らないことを確認します。つまり、結果が多すぎることを意味します。
 .. 必要に応じて、近接キーワードを入力して結果の精度を高めることができます。検索対象のパターンの300文字以内（検出されたパターンの前または後）に検索されるのが一般的な単語です。単語またはフレーズをそれぞれ別の行に入力します。
 +
-image:screenshot_select_classifier_create_logic.png["顧客分類子のregexおよびproximity wordsを入力するスクリーンショット。"]
+image:screenshot_select_classifier_create_logic_regex.png["顧客分類子のregexおよびproximity wordsを入力するスクリーンショット。"]
 
 
 
@@ -125,7 +174,57 @@ image:screenshot_personal_info_regex_added.png["スキャンを実行中の新�
 
 
 
-=== カスタム分類子の結果を表示します
+== カスタムカテゴリを追加します
+
+Data Senseは、スキャンしたデータをさまざまなカテゴリに分類します。カテゴリは、各ファイルのコンテンツとメタデータの人工知能分析に基づくトピックです。 link:reference-private-data-categories.html#types-of-categories["事前定義されたカテゴリのリストを参照してください"]。
+
+カテゴリを使用すると、保有している情報の種類を表示して、データの状況を把握することができます。たとえば、_resumes_or_employee contracts_のようなカテゴリには、機密データが含まれている場合があります。結果を調査すると、従業員契約が安全でない場所に保存されていることがわかります。その後、その問題を修正できます。
+
+Data Senseにカスタムカテゴリを追加すると、データ資産に固有の情報カテゴリがデータ内のどこにあるかを特定できます。各カテゴリを追加するには、識別するデータのカテゴリを含む「トレーニング」ファイルを作成し、Data SenseでそれらのファイルをスキャンしてAIで「学習」し、データソース内のデータを識別できるようにします。カテゴリは、Data Senseによってすでに識別されている既存の事前定義されたカテゴリに追加され、結果は[カテゴリ]セクションに表示されます。
+
+たとえば、必要に応じて削除できるように、.gz形式の圧縮インストールファイルがファイル内のどこにあるかを確認することができます。
+
+カスタムカテゴリを更新すると、Data Senseはすべてのデータソースのスキャンを再開します。スキャンが完了すると、[Data Sense Compliance Dashboard]の[Categories]セクションと[Category]フィルタの[Investigation]ページに新しい結果が表示されます。 link:task-controlling-private-data.html#viewing-files-by-categories["カテゴリ別にファイルを表示する方法を参照してください"]。
+
+.必要なもの
+Data Senseで認識するデータのカテゴリのサンプルを含む、最低25個のトレーニングファイルを作成する必要があります。次のファイルタイプがサポートされています。
+
+`+.CSV, .DOC, .DOCX, .GZ, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
+
+ファイルは100バイト以上である必要があり、Data Senseからアクセス可能なフォルダに配置する必要があります。
+
+.手順
+. [_Classification settings]タブで*[Add New Classifier]*をクリックし、_Add Custom Classifier_wizardを起動します。
++
+image:screenshot_compliance_add_classifier_button.png["カスタム分類子の追加ウィザードの起動方法を示すスクリーンショット。"]
+
+. [_Select type_]ページで、分類子の名前を入力し、簡単な概要 を入力して*[Category]*を選択し、*[Next]*をクリックします。
++
+入力した名前は、定義しているデータのカテゴリに一致するスキャン済みファイルの見出しとしてData Sense UIに表示され、[Investigation]ページのフィルタ名として表示されます。
+
++
+image:screenshot_select_classifier_category.png["分類子の名前を指定し、分類子のタイプを選択する方法を示すスクリーンショット。"]
+
+. [_Create Logic_]ページで、学習ファイルが準備されていることを確認し、*[ファイルの選択]*をクリックします。
++
+image:screenshot_category_create_logic.png["Data Senseで学習するデータを含むファイルを追加する[Create Logic]ページのスクリーンショット。"]
+
+. ボリュームのIPアドレスとトレーニングファイルが格納されているパスを入力し、*[追加]*をクリックします。
++
+image:screenshot_category_add_files.png["トレーニングファイルの場所を入力する方法を示すスクリーンショット。"]
+
+. トレーニングファイルがData Senseで認識されていることを確認します。要件を満たしていないトレーニングファイルを削除するには、* x *をクリックします。[完了]*をクリックします。
++
+image:screenshot_category_files_added.png["Data Senseが新しいカテゴリを定義するトレーニングファイルとして使用するファイルを示すスクリーンショット。"]
+
+
+
+.結果
+新しいカテゴリは、トレーニングファイルの定義に従って作成され、Data Senseに追加されます。その後、Data Senseはすべてのデータソースの再スキャンを開始し、この新しいカテゴリに該当するファイルを特定します。[Custom Classifiers]ページに戻り、新しいカテゴリに一致するファイルの数を確認できます。すべてのデータソースをスキャンした結果は、スキャンする必要があるファイルの数によってはしばらく時間がかかります。
+
+
+
+== カスタム分類子の結果を表示します
 
 コンプライアンスダッシュボードおよび［調査］ページで、任意のカスタム分類子の結果を表示できます。たとえば、このスクリーンショットは、「個人の結果」セクションの下のコンプライアンスダッシュボードに表示されている、一致した情報を示しています。
 
@@ -139,123 +238,10 @@ image:screenshot_custom_classifier_top_5.png["返された結果に基づいて�
 
 
 
-=== カスタム分類子を管理します
+== カスタム分類子を管理します
 
 作成したカスタム分類子は、*Edit Classifier*ボタンを使用して変更できます。
 
 後で、追加したカスタムパターンを識別するためにデータセンスが必要ない場合は、「*分類子を削除*」ボタンを使用して各項目を削除できます。
 
 image:screenshot_custom_classifiers_manage.png["分類子を編集および削除するためのボタンを含む[カスタム分類子]ページのスクリーンショット。"]
-
-
-
-== テキストファイルからカスタムキーワードを追加します
-
-データ内の特定の情報を識別できるように、データセンスにカスタムキーワードを追加できます。定義したテキストファイルからキーワードを追加します。キーワードは、データセンスが既に使用している既存の定義済みキーワードに追加され、結果は[個人パターン]セクションに表示されます。
-
-たとえば、すべてのファイルで内部製品名が言及されている場所を確認して、これらの名前が安全でない場所でアクセスできないようにすることができます。
-
-カスタムキーワードを更新すると、データセンスはすべてのデータソースのスキャンを再開します。スキャンが完了すると、新しい結果がデータセンスで表示されます。
-
-データセンスシステムの次の場所にカスタムキーワードを含むテキストファイルを追加または作成する必要があります。
-
- /opt/netapp/Datasense/tools/datascience/custom_keywords/keywords_sets
-複数のキーワードを含む単一のファイルを作成することも、それぞれに特定のキーワードを含む多数のファイルを追加することもできます。ファイルの形式は1行に1語ずつあります。たとえば、次のような種類のowlsがある内部製品名を入力します。
-
-_internal_product_names.txt_
-
-....
-barred
-barn
-horned
-snowy
-screech
-....
-これらの項目のデータ検出検索では、大文字と小文字は区別されません。
-
-次の要件に注意してください。
-
-* ファイル名に数字を使用することはできません。
-* 各ファイルには、最大100,000語を含めることができます。単語数が多い場合は、最初の100,000だけが追加されます。
-* 各単語は3文字以上である必要があります。短い単語は無視されます。
-* 重複する単語は一度だけ追加されます。
-
-
-
-
-=== コマンドラインにアクセスします
-
-カスタムキーワードを追加するコマンドを開始するには、データセンスシステムにアクセスする必要があります。
-
-データセンスをオンプレミスにインストールした場合は、コマンドラインに直接アクセスできます。
-
-データセンスをクラウドに導入した場合は、データセンスインスタンスにSSH接続する必要があります。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。
-
- ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
-* <path-to_The _ssh_key>= SSH認証キーの場所
-* <machine_user>：
-+
-** AWSの場合：<ec2-user>を使用します
-** Azureの場合：BlueXPインスタンス用に作成したユーザを使用します
-** GCPの場合：BlueXPインスタンス用に作成されたユーザーを使用します
-
-
-* <datasension_IP>=仮想マシンインスタンスのIPアドレス
-
-
-クラウド上のシステムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。詳細については、以下を参照してください。
-
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWSのセキュリティグループのルール"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azureのセキュリティグループルール"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Google Cloudのファイアウォールルール"^]
-
-
-
-
-=== カスタムキーワードを追加するコマンド構文
-
-ファイルからカスタムキーワードを追加するコマンド構文は次のとおりです。
-
- sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s activate -f <file_name>.txt
-* <file_name>=キーワードを含むファイルの名前です。
-
-
-このコマンドはパス*/opt/NetApp/Datasense /*から実行します。
-
-カスタムキーワードを含むファイルを多数作成した場合は、次のコマンドを使用して、すべてのファイルからキーワードを一度に追加できます。
-
- sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s activate
-
-
-=== 例
-
-すべてのファイルで、内部製品名が記載されている場所を確認するには、次のコマンドを入力します。
-
-[source, cli]
-----
-[user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s activate -f internal_product_names.txt
-----
- log v1.0 | 2022-08-24 08:16:25,332 | INFO | ds_logger | upload_custom_keywords | 126 | 1 | None | upload_custom_keywords_126 | All legal keywords were successfully inserted
-.結果
-次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。
-
-image:screenshot_add_keywords_result.png["[調査結果]ペインにカスタムキーワードの結果の例を示すスクリーンショット。"]
-
-ご覧のように、テキストファイルの名前は個人結果パネルで名前として使用されます。このようにして、異なるテキストファイルからキーワードをアクティブ化し、キーワードのタイプごとに結果を表示できます。
-
-
-
-=== カスタムキーワードを無効にします
-
-以前に追加した特定のカスタムキーワードを識別するためにデータセンスが必要ない場合は、コマンドの* deactivate *オプションを使用して、テキストファイルに定義されているキーワードを削除します。
-
- sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f <file_name>.txt
-たとえば、ファイル* internal_product_names.txt *に定義されているキーワードを削除するには、次のようにします。
-
-[source, cli]
-----
-[user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f internal_product_names.txt
-----
- log v1.0 | 2022-08-24 08:16:25,332 | INFO | ds_logger | upload_custom_keywords | 87 | 1 | None | upload_custom_keywords_87 | Deactivated keyword pattern from internal_product_names.txt successfully
