@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-cloud-compliance.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance 
-summary: クラウドデータセンスをクラウドに導入するには、いくつかの手順を実行します。データセンスインスタンスは、BlueXPコネクタと同じクラウドプロバイダネットワークに展開されます。 
+summary: クラウドデータセンスをクラウドに導入するには、いくつかの手順を実行します。BlueXPは、BlueXPコネクタと同じクラウドプロバイダネットワークにData Senseインスタンスを導入します。 
 ---
-= クラウドにクラウドデータセンスを導入
+= BlueXPを使用してCloud Data Senseをクラウドに導入
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: クラウドデータセンスをクラウドに導入するには、�
 
 
 [role="lead"]
-クラウドデータセンスをクラウドに導入するには、いくつかの手順を実行します。データセンスインスタンスは、BlueXPコネクタと同じクラウドプロバイダネットワークに展開されます。
+クラウドデータセンスをクラウドに導入するには、いくつかの手順を実行します。BlueXPは、BlueXPコネクタと同じクラウドプロバイダネットワークにData Senseインスタンスを導入します。
 
-また、次のことも可能です link:task-deploy-compliance-onprem.html["インターネットにアクセスできる Linux ホストに Data Sense を導入する"]。このようなインストールは、オンプレミスにあるデータセンスインスタンスを使用してオンプレミスのONTAP システムをスキャンする場合に適しています。ただしこれは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。
+また、次のことも可能です link:task-deploy-compliance-onprem.html["インターネットにアクセスできるLinuxホストにData Senseをインストールします"]。このようなインストールは、オンプレミスにあるデータセンスインスタンスを使用してオンプレミスのONTAP システムをスキャンする場合に適しています。ただしこれは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。
 
 
 

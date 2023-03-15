@@ -1214,7 +1214,6 @@
   <block id="75913c473742502800ae1c0a9a5a93df" category="list-text">クラウドデータを常に運用しておく必要がありますデータを継続的にスキャンするには、 Cloud Data Sense インスタンスがオンのままになっている必要があります。</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">エンドポイント</block>
   <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
-  <block id="8a344d9380d42668324bc0e5df589f1a" category="section-title">データセンスの導入</block>
   <block id="92aadc02d249003db0a3c659eb74f06b" category="inline-link-macro">これらの手順を参照してください</block>
   <block id="2e7ee80a6e4d40bc409d4f4893e290bb" category="paragraph">一般的な構成では、ソフトウェアを 1 台のホストシステムにインストールします。 <block ref="a4f6f244c9fb5caddddb02072a431c59" category="inline-link-macro-rx"></block>。</block>
   <block id="49110f631362d4a9865d9c280368ebb1" category="paragraph">ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。 <block ref="31dc1b3eda8e489f4f5ca469c6f3d2e1" category="inline-link-macro-rx"></block>。</block>
@@ -1229,14 +1228,11 @@
   <block id="cce26d229722c6ca9257990a7091d9c0" category="list-text">[ データセンスを活動化（ Activate Data sense ） ] をクリックし</block>
   <block id="af9d594fa710dc13ae352e89ff99e6a8" category="inline-image-macro">Cloud Data Sense を有効にするボタンを選択するスクリーンショット。</block>
   <block id="2ee561fe4cbc55aa0245c40198b23955" category="paragraph"><block ref="2ee561fe4cbc55aa0245c40198b23955" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="56aed921ec3e492e9095e626c14396cb" category="list-text">[Deploy *] をクリックして、オンプレミス展開ウィザードを開始します。</block>
   <block id="48e13f41d0a6dd2616f2ecf0c9e1eaa6" category="inline-image-macro">クラウドデータセンスをオンプレミスに導入するボタンを選択するスクリーンショット。</block>
   <block id="d81a8cbca4762be44dc0845220ba9dcf" category="paragraph"><block ref="d81a8cbca4762be44dc0845220ba9dcf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="de228a79f2490bf5b3308e91ce0e8426" category="paragraph">「 sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq -- darksite</block>
   <block id="6b0f70e5c18db6f7f252ec60af1fdda0" category="list-text">ホストマシンでインストールファイルを解凍します。次に例を示します。</block>
   <block id="7811f7ac7277273963aaa041e6dee561" category="cell">プロンプトに従ってパラメータを入力します。</block>
   <block id="92a8de5d873f4ac3a57f4d866c8ed98c" category="cell">完全なコマンドを入力します。</block>
-  <block id="ad9960c224b334ea469591738244827c" category="list-text">手順 7 からコピーした情報を貼り付けます。 'UDO./ install.sh -a &lt;account_id&gt; -c &lt;agent_id&gt; -t &lt;token&gt; --darksite</block>
   <block id="dde575296d7c18c713a24acdec3bb7b6" category="list-text">コネクタインスタンスからアクセスできるように、 Data Sense ホストマシンの IP アドレスまたはホスト名を入力します。</block>
   <block id="99a5b8fe9eadd5739e3e760584c579fc" category="paragraph">変数値：</block>
   <block id="82fbba9871c4c69830c0ea5c2c6fa6f8" category="list-text">_account_id _ = ネットアップアカウント ID</block>
@@ -1279,8 +1275,6 @@
   <block id="06b1338ba02add2b5d2da67663b19ebe" category="cell">2049</block>
   <block id="26285ebf37a162fef382f275814886c9" category="inline-link-macro">シングルホストインストール</block>
   <block id="5e2f5642806d5ddc2868631f2e508d3d" category="paragraph">シングルホストのインストールで使用できる変数に加えて、新しいオプション * -n &lt;Node_IP&gt; * を使用してスキャナノードの IP アドレスを指定します。複数のノードの IP をカンマで区切って指定します。</block>
-  <block id="743663a45dfd2f9237dfcf266bf499a6" category="list-text">マネージャノードのインストールが完了する前に、スキャナノードに必要なインストールコマンドがダイアログに表示されます。コマンドをコピーし、テキストファイルに保存します。例：</block>
-  <block id="bb70d223e1e51328f09038d97ad81b07" category="paragraph">sudo ./node_install.sh -m 10.11.12.13-t ふぁいる EF-1u69m1-1s35212`</block>
   <block id="611c763bf4c9dbb7098d6afa814b754f" category="list-text">各 * スキャナノードホストで：</block>
   <block id="d3d41a6c99806d8a969b69a369935644" category="list-text">インストーラファイルを解凍します。</block>
   <block id="05c158c3674b19417f2abea1a13ea2f3" category="list-text">手順 3 でコピーしたコマンドを貼り付けて実行します。</block>
@@ -1356,8 +1350,6 @@
   <block id="7da8f2d897e75578043e0f01e245c1a7" category="paragraph">特定の Data Fusion ソースを使用してファイルをスキャンしない場合は、 Data Fusion インベントリページからソース行を選択し、 ［ * データ Fusion ソースの削除 * ］ をクリックします。</block>
   <block id="9008a71f5aaebece0844ad9fc3bb64a7" category="inline-image-macro">データ Fusion ソースを削除する方法を示すスクリーンショット。</block>
   <block id="b889af7f2e1d8844037173064a2494e2" category="paragraph"><block ref="b889af7f2e1d8844037173064a2494e2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="638b36e7b559bbb7ff5161d7a8fa8bf5" category="doc">クラウドにクラウドデータセンスを導入</block>
-  <block id="f1b417d70cc0826ea97b7fb76ba27c7a" category="inline-link-macro">インターネットにアクセスできる Linux ホストに Data Sense を導入する</block>
   <block id="211751cb447d335f31ff23a277ab83a3" category="inline-link">AWS でコネクタを作成する</block>
   <block id="b51a9186f236269e0e1206fe364d56ee" category="inline-link">Azure でコネクタを作成する</block>
   <block id="24f7d339e21b63b3cef99a7c8f1236fe" category="inline-link">GCP でコネクタを作成する</block>
@@ -1611,7 +1603,6 @@
   <block id="90777a343fd7f5c83c97f473d59a2af2" category="inline-image-macro">単一のファイル共有をスキャン対象から削除する方法を示すスクリーンショット。</block>
   <block id="c8716632d7055f530ad579b6f751cf3a" category="paragraph"><block ref="c8716632d7055f530ad579b6f751cf3a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="edc5cb08ed944714ebae42cfa6a8ba4c" category="paragraph">オンプレミスにあるデータセンスインスタンスを使用してオンプレミスの ONTAP システムをスキャンする場合は、オンプレミスインストールを選択することをお勧めします。ただしこれは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。</block>
-  <block id="ad2930ccaf67236b6ce95ac2d7f536c3" category="paragraph">また、次のことも可能です <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 完全にセキュアなサイトに。</block>
   <block id="e780ba1dc1fa7caee58066eebb1037f9" category="inline-xref">次の要件があります</block>
   <block id="0c2ece8552f22362671f28b71520f912" category="paragraph">とを満たす Linux システムも必要です <block ref="a2ec304d11350e1ba44149ab8f817c68" category="inline-xref-macro-rx"></block>。</block>
   <block id="c77d213688bea929060b009132bd92bb" category="paragraph">ネットアップサポートサイトから Cloud Data Sense ソフトウェアをダウンロードし、使用する Linux ホストにインストーラファイルをコピーします。次に、インストールウィザードを起動し、プロンプトに従って Data Sense インスタンスを展開します。</block>
@@ -1619,7 +1610,6 @@
   <block id="9c43d511337ac0c672bf80907225f82e" category="list-text">Cloud Data Sense では、アウトバウンドのインターネットアクセスが必要。仮想ネットワークまたは物理ネットワークでインターネットアクセスにプロキシサーバを使用している場合は、 Data sense インスタンスにアウトバウンドのインターネットアクセスがあり、次のエンドポイントに接続できることを確認します。</block>
   <block id="f132f9796727cdfbd850e6d1f0af2208" category="cell">¥ https://github.com/docker ¥ https://download.docker.com ¥ http://mirror.centos.org ¥ http://mirrorlist.centos.org ¥ http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm</block>
   <block id="c82303c6d5888ba9f147a501b8fe7f29" category="cell">インストールの前提条件パッケージを提供します。</block>
-  <block id="a2ed9b99c4cd06a57cbda6cfbd6772c3" category="section-title">オンプレミスにデータセンスを導入</block>
   <block id="cdcaeff13fccb06b7b310f6f966ada4f" category="paragraph">一般的な構成では、ソフトウェアを 1 台のホストシステムにインストールします。 <block ref="b071f364f4daf7049825f5b1c726d17b" category="inline-xref-macro-rx"></block>。</block>
   <block id="446f633ae412e24a0a66d9d154552c63" category="paragraph">ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。 <block ref="72f8bc610961b8d2bc734f2ce5e89019" category="inline-xref-macro-rx"></block>。</block>
   <block id="ab6f827b404fc74a3d59a176e44dce54" category="inline-xref">Linux ホストシステムの準備</block>
@@ -1627,9 +1617,7 @@
   <block id="42d1c021036734670ca245849e323735" category="admonition">Cloud Data Sense は、ソフトウェアがオンプレミスにインストールされている場合、現在 S3 バケット、 Azure NetApp Files 、または FSX for ONTAP をスキャンできない。このような場合は、クラウドとに別のコネクタとデータセンスのインスタンスを導入する必要があります<block ref="7ef29812cbbbb10ee35427be73d0c671" category="inline-link-rx"></block> データソースごとに異なる。</block>
   <block id="34dc49ad79c5d0ec1f3c661ca216a2a5" category="paragraph">単一のオンプレミスホストに Data Sense ソフトウェアをインストールする場合は、次の手順を実行します。</block>
   <block id="bbdb5f5f026c712f36de4a68700316f5" category="list-text">使用する Linux ホストにインストーラファイルをコピーします (`cp またはその他の方法を使用 ) 。</block>
-  <block id="f7fe0f4c5bd3dd34e31c9eae80732a01" category="paragraph">「 sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq 」と入力します</block>
   <block id="65a0409250bc34ad7aed301586de5abc" category="list-text">ホストマシンでインストーラファイルを解凍します。次に例を示します。</block>
-  <block id="0c3e94a9670a26d481343fe02b9df002" category="list-text">手順 6 からコピーした情報を貼り付けます。 'UDO./install.sh -a &lt;account_id&gt;-c &lt;agent_id&gt;-t&lt;token&gt;`</block>
   <block id="2f22ab4135a481a1450cf28cb5f05c26" category="list-text">の手順 1~7 を実行します <block ref="ca10c193ae29117fbfb6ce9e3e248e8b" category="inline-xref-macro-rx"></block> マネージャーノード。</block>
   <block id="8b1cdcd166f0c70f7233d0d11c7bddf2" category="paragraph">シングルホストのインストールで使用できる変数に加えて、新しいオプション * -n &lt;Node_IP&gt; * を使用してスキャナノードの IP アドレスを指定します。複数のスキャナノードの IP はカンマで区切って指定します。</block>
   <block id="3f0a4de61ad13ce65d1a7332a726eb8d" category="list-text">手順 3 でコピーしたコマンドを貼り付けて実行します。</block>
@@ -1637,8 +1625,6 @@
   <block id="1a3dd42e7f140871b4724418e36e52fb" category="sidebar">Cloud Data Sense ドキュメント</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
-  <block id="ce5d6bd317f10e98c0ed8cd1d8a5eb77" category="sidebar">クラウドに導入</block>
-  <block id="88b8e638dc99736099049254e46001f8" category="sidebar">オンプレミスでインターネットにアクセスせずに導入できます</block>
   <block id="77cb6eb12b1c27e0f1e04f0f158eb184" category="sidebar">データソースでスキャンをアクティブ化します</block>
   <block id="8c7729e22a223978ef26b521fa9ee122" category="sidebar">Cloud Volumes ONTAP とオンプレミス ONTAP</block>
   <block id="6b7cef11406f2fff58dcc619a2b7e482" category="sidebar">Amazon S3 バケット</block>
@@ -1689,7 +1675,6 @@
   <block id="bba082dd43baad5296b00863b2fd871e" category="cell">オーストラリアパスポート番号</block>
   <block id="17dca5bf3d125aa4d0f3309727923bc6" category="list-text">AIP ラベルを Cloud Data Sense と統合している場合は、このファイルにラベルを割り当てるか、すでに存在する場合は別のラベルに変更できます。を参照してください <block ref="1d610d8b86b5e1441346aa765100c237" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="d65636c48d5eaaa2a0f018e8b2c9b456" category="paragraph">重複ファイルのリストをダウンロードし、ストレージ管理者に送信して、削除可能なファイルをユーザが判別できるようにします。または <block ref="e6aba68fcf17e4e39481e0dfc445e973" category="inline-link-macro-rx"></block> 特定のバージョンのファイルが不要であることが確信できる場合は、自分自身で実行します。</block>
-  <block id="44913217828f63e33072c448b10eb218" category="list-text">インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、インストーラに必要なパラメータをコマンドライン引数として指定することができます。</block>
   <block id="d34764ccb2a6879e5ef576e7ea2fb550" category="cell">また、必要なホストパラメータとして、「 sudo ./install.sh -a &lt;account_id &gt; -c &lt;agent_id &gt; -t &lt;token&gt; --host &lt;DS_host&gt; --manager-host &lt;cm_host&gt; --no-proxy --darksite 」を事前に指定して、コマンド全体を作成することもできます</block>
   <block id="cfc66ec017142ce1f8420ffb8db2e3cd" category="list-text">手順 9 に示すように、インストーラからプロンプトが表示されたら、一連のプロンプトで必要な値を入力するか、必要なパラメータをコマンドライン引数としてインストーラに指定することができます。</block>
   <block id="5fa878295b23e50238df7f7395042d79" category="paragraph">たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'sudo ./install.sh -a &lt;account_id &gt; -c &lt;agent_id&gt; -t &lt;token&gt; --host &lt;DS_host&gt; --manager-host &lt;cm_host&gt; * -n &lt;node-ip1&gt; 、 &lt;node-ip2&gt; 、 &lt;node-dark3&gt;*-no-proxy-site</block>
@@ -1755,7 +1740,6 @@
   <block id="e9b6d5f264bba809d5461558e8379d9e" category="paragraph">データセンスは、の場合もあります <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。ただし、ローカルの OneDrive ファイルをスキャンするには、いくつかの一部のエンドポイントへのインターネットアクセスを提供する必要があります。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
   <block id="9aa68bac48e77ad847d7e57a68f08944" category="paragraph">このステータスは、デジタルウォレットにも表示されます。</block>
   <block id="06314d3359f0409e52f485d16ab0c81f" category="paragraph">Cloud Data Sense ライセンスは、期限が切れる前に更新できるため、スキャンしたデータへのアクセスが中断されることはありません。</block>
-  <block id="fb319f290355569f99ed376ce5d98c05" category="paragraph">ライセンスの有効期限が切れてもデータセンスは実行されますが、ダッシュボードへのアクセスはブロックされるため、スキャンしたデータに関する情報を表示できません。スキャンするボリューム数を減らして容量の使用量をライセンスの上限までにする場合は、 _Configuration_page だけを使用できます。</block>
   <block id="becde272662faf1aa4393e2cd5fbf2f7" category="admonition">使用しているアカウントに BYOL ライセンスと PAYGO の両方のサブスクリプションがある場合、 BYOL ライセンスの期限が切れたときに Data Sense _ が PAYGO サブスクリプションに移行することはありません。BYOL ライセンスを更新する必要があります。</block>
   <block id="14aeecf5ef82e6232639978162b42963" category="paragraph">データ転送のコストは設定によって異なります。Cloud Data Sense インスタンスとデータソースが同じアベイラビリティゾーンとリージョンにある場合は、データ転送コストは発生しない。ただし、 Cloud Volumes ONTAP システムや S3 バケットなどのデータソースが _different _Availability Zone またはリージョンにある場合は、クラウドプロバイダにデータ転送コストが請求されます。詳細については、次のリンクを参照してください。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです</block>
@@ -2476,8 +2460,6 @@
   <block id="48e3dc371ee5116828a05b4a97621caa" category="list-text">_ds_manager_ip_= Data Sense ManagerノードシステムのプライベートIPアドレス</block>
   <block id="f58e80ea5a832fe99f930893c4ae0376" category="list-text">_Node_private_IP_= Data Sense ScannerノードシステムのIPアドレス（複数のスキャナノードのIPはカンマで区切ります）</block>
   <block id="33b07d0ffb66d0a6cd8a0162e20adca4" category="list-text">_user_token_= JWTユーザーアクセストークン</block>
-  <block id="285b492c7171f599200c3fe3d4f808d6" category="list-text">add_scanner_nodeスクリプトが完了する前に、スキャナノードに必要なインストールコマンドを示すダイアログが表示されます。コマンドをコピーし、テキストファイルに保存します。例：</block>
-  <block id="58e40c834f3acaaccc3823bbd917e6d7" category="paragraph"><block ref="7c95eda18e13e25941273928f0d149ba" prefix="" category="inline-code"></block></block>
   <block id="b0c80b9aebe2393782fd3bb0680a791b" category="list-text">手順2でコピーしたコマンドを貼り付けて実行します。</block>
   <block id="8dd42ed78b27180f93de7913ecab156f" category="paragraph">すべてのスキャナノードでインストールが完了し、それらのノードがマネージャノードに参加したら、「add_scanner_node.sh」スクリプトも終了します。インストールには10~20分かかることがあります。</block>
   <block id="ced90f42fe9747f4578603471ea454a3" category="list-text">スキャナグループにスキャナノードを追加した場合は、マネージャノードに戻り、次の2つのタスクを実行します。</block>
@@ -2541,11 +2523,9 @@
   <block id="21315205ba34163a83853c5526e534c1" category="list-text">一度に最大1、000個のアイテムを再スキャンできます。</block>
   <block id="a8c256c3bc4f2ab999fee3056f7bebab" category="paragraph"><block ref="5d86a8971ca34d1c831cc0be7e11109d" prefix="" category="inline-code"></block></block>
   <block id="79bd49250e598bf53655f50c83b04044" category="list-text">アクションタイプ（削除、コピー、移動、ポリシーの作成、ポリシーの更新、 ファイルの再スキャン、JSONレポートのダウンロードなど）</block>
-  <block id="9d282ec5c19d83f47fc9504e4ff50325" category="list-text">クラウドプロバイダの市場でBlueXPの従量課金制（PAYGO）サブスクリプションにすでに登録している場合は、Cloud Data Senseにも自動的に登録されます。再度登録する必要はありません。</block>
   <block id="f6d56db241e1b67ea15f2bcfc6d58cee" category="paragraph">BlueXPサブスクリプションをすでにお持ちの場合(AWSの場合は以下を参照)、設定はすべて済みです。必要な操作は他にありません。</block>
   <block id="8a19b447bcd4da037940f31306b703f2" category="list-text">Cloud Sync サービスをアクティブ化し、少なくとも 1 つのデータブローカーを構成して、ソースシステムとターゲットシステム間でファイルを転送できるようにする必要があります。から、 Cloud Sync の要件を確認します<block ref="e51d588768ce18b65058ca75b02bbb45" category="inline-link-rx"></block>。</block>
   <block id="24a56762deabf31ff2c2a9b817d1ffbe" category="paragraph">JSONレポートの生成の進捗状況は、で確認できます <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
-  <block id="0527c3c624cc9c38c92e3f9b20bd744d" category="list-text">インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、インストーラに必要なパラメータをコマンドライン引数として指定することができます。</block>
   <block id="bd975c5b95d2c7b6d2e124201b98445c" category="section-title">2022年11月13日（バージョン1.17）</block>
   <block id="5e5b753fd04f1adde694471a50221a49" category="paragraph">データセンスをオンプレミス環境にインストールしている場合、特定のデータソースをスキャンするためにスキャン処理能力がさらに必要になることがわかったときは、「スキャナ」ノードを追加して、それらのデータソースをスキャンするように割り当てることができます。マネージャノードをインストールした直後にスキャナノードを追加することも、後でスキャナノードを追加することもできます。</block>
   <block id="b76fbb180664dd4ccd169f21a4abcfa6" category="section-title">オンプレミスのインストーラが、インストールを開始する前に事前チェックを実行できるようになりました</block>
@@ -2648,7 +2628,6 @@
   <block id="9c2468c732c2a3c37f5718ed3927f188" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> オブジェクトストレージの前提条件を確認する</block>
   <block id="fadb1720cdd8a007cefc0f21747a7236" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> オブジェクトストレージサービスを追加します</block>
   <block id="0cf30da5b3284b65f1bd1464a838ef7e" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> スキャンするバケットを選択します</block>
-  <block id="9abb28e2822a3af34f9b1e46c458bec4" category="paragraph">標準的なオンプレミス環境には、次のコンポーネントと接続があります。</block>
   <block id="f1250c9b73cd8f5ef391e449f0b5dcb4" category="inline-image-macro">必要なBlueXPとネットワークコンポーネント、および関連する接続の図。</block>
   <block id="0b0f1899ec6aba7470224b92502a86ac" category="paragraph"><block ref="0b0f1899ec6aba7470224b92502a86ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7253a7683e98218c221f39d0f0ad5f29" category="paragraph">クラウドプロバイダを使用してコネクタを作成することもできます。を参照してください<block ref="e291ebc6db7a8ec08d333384efa4743e" category="inline-link-rx"></block>、<block ref="3f9648a8e8f665af7b23c050702c5c95" category="inline-link-rx"></block>または<block ref="2559e3f18112d727f751d3574900096c" category="inline-link-rx"></block>。</block>
@@ -2877,12 +2856,9 @@
   <block id="6c4af53d01a0fd2f4b9e2d860002e476" category="inline-image-macro">分類子を編集および削除するためのボタンを含む[カスタム分類子]ページのスクリーンショット。</block>
   <block id="ba3a038a97b620898e33b9e09db66632" category="paragraph"><block ref="ba3a038a97b620898e33b9e09db66632" category="inline-image-macro-rx" type="image"></block></block>
   <block id="969665117064b959d3c660b43611f713" category="list-text">Docker Engineバージョン19.3.1以降。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>。</block>
-  <block id="666bbf651dbf568f97e37372014cde9a" category="list-text">「_Deploy Data Sense on Premises」ダイアログが表示されます。提供されたコマンドをコピーしてテキストファイルに貼り付け、後で使用できるようにして、*閉じる*をクリックします。例：</block>
   <block id="bef424c97f7f20957409f086ca8ff3db" category="paragraph">ホストマシンとコネクタインスタンスの間にポート8080を介した接続がある場合は、BlueXPのData Senseタブにインストールの進行状況が表示されます。</block>
   <block id="ed8c7ad82b3b6c68d52e7468a26cf5a7" category="list-text">データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.18.xがインストールされている場合は、1.19.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
   <block id="49bb7289b8abc33c271f634fc8149b1e" category="list-text">一度に移動できるファイルの最大数は1、500万です。</block>
-  <block id="c92960c8f2e94d1653cffccc72067124" category="summary">クラウドデータセンスをクラウドに導入するには、いくつかの手順を実行します。データセンスインスタンスは、BlueXPコネクタと同じクラウドプロバイダネットワークに展開されます。</block>
-  <block id="34bce1a775347f02f4865a45804d2e40" category="paragraph">また、次のことも可能です <block ref="645115e66496a0ec0a40c4c3811246be" category="inline-link-macro-rx"></block>。このようなインストールは、オンプレミスにあるデータセンスインスタンスを使用してオンプレミスのONTAP システムをスキャンする場合に適しています。ただしこれは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。</block>
   <block id="a09a5c1c3cb0d27dbac4cfa3c73c0ec8" category="list-text">[* Deploy*]をクリックして、クラウド導入ウィザードを開始します。</block>
   <block id="5c19ef53902ef56ea5c8f554cccb9ad8" category="section-title">2023年2月5日（バージョン1.20）</block>
   <block id="f0da8cded20db5ee6dce9c1c4da7bcd8" category="section-title">任意のEメールアドレスにポリシーベースの通知Eメールを送信できます</block>
@@ -2906,7 +2882,6 @@
   <block id="208609a972f6a4981e2c9511fc7d0063" category="paragraph">Cloud Data Senseは、特定の重要なポリシーが結果を返すときに、アカウントのBlueXPユーザーに電子メールアラートを送信して、データを保護するための通知を受け取ることができます。E メール通知は、日単位、週単位、または月単位で送信することができます。また、BlueXPアカウントではなく、最大20個のメールアドレスに電子メールアラートを送信することもできます。</block>
   <block id="abf0f7e6ece371db4b19fea5e49a4de2" category="list-text">他のユーザに通知メールを送信する場合は、[電子メールの送信]チェックボックスをオンにし、電子メールを送信する間隔を選択して、最大20個の電子メールアドレスを入力します。</block>
   <block id="590f4e9626c88a785e5743f04a242c0f" category="list-text">GCP では、 Cloud Data Sense はで実行されます <block ref="f47e4641d38801bee7cf28563a438093" category="inline-link-macro-rx"></block> 512 GB の標準パーシステントディスクオペレーティングシステムイメージは CentOS 7.9 です。</block>
-  <block id="6cdf48342be8a4ae3df3303f43e83b16" category="summary">ネットワーク内のLinuxホストまたはクラウド内のLinuxホストに、インターネットにアクセスできるCloud Data Senseを導入するには、いくつかの手順を実行します。</block>
   <block id="4bd0feba4f0658e9db32d120e7e95926" category="paragraph">ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。複数のホストシステムを使用する場合、プライマリシステムは_Manager node_と呼ばれ、追加の処理能力を提供する追加システムは_Scanner Node_と 呼ばれます。</block>
   <block id="a76b68d7e44fa22f2d4b5107c0729fa7" category="paragraph">コネクタがない場合は、<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> ネットワーク内のLinuxホスト、またはクラウド内のLinuxホスト。</block>
   <block id="6124944413e19a98a7cefa988e91f90e" category="inline-link">m5.mc</block>
@@ -2916,7 +2891,6 @@
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="inline-link">N2-standard-16</block>
   <block id="73731a154d429f05332addb49f2ec537" category="list-text">* GCPマシンタイプ*：上記のCPUとRAMの要件を満たすインスタンスタイプ。お勧めします<block ref="bb9e331217b48a311c7947c404f21f76" category="inline-link-rx"></block>。</block>
   <block id="2b27dbdd91cbe22f05c819e1be37f3ad" category="paragraph">スキャナノードとしてData Senseホストを追加する場合は、この時点で、次のルールをプライマリシステムに追加します。</block>
-  <block id="63dd0b4f2d962679267fa85d05e72c92" category="list-text">クラウド内のインスタンスに導入するか、オンプレミスのインスタンスに導入するかに応じて、適切な* Deploy *ボタンをクリックしてデータセンス導入ウィザードを開始します。</block>
   <block id="80341b8c2d424b4008a1d168ff76c6a9" category="inline-image-macro">クラウドまたはオンプレミスのマシンにクラウドデータセンスを導入するボタンを選択するスクリーンショット。</block>
   <block id="df6d41b53ad1938e7b8934fc6ffdf147" category="paragraph"><block ref="df6d41b53ad1938e7b8934fc6ffdf147" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a8e0047562d617c82a4034cce03ff08a" category="paragraph">Cloud Data Senseインストーラは、パッケージのインストール、インストールの登録、およびData Senseのインストールを行います。インストールには 10~20 分かかります。</block>
@@ -2924,7 +2898,6 @@
   <block id="3fe624f4914417740fe3cf68a4327554" category="list-text">コネクタシステムのIPアドレスまたはホスト名、ネットアップアカウントID、コネクタクライアントID、およびユーザアクセストークンが必要です。スキャナグループを使用する場合は、アカウントの各データソースの作業環境IDを確認しておく必要があります。この情報を取得するには、以下の*_必要条件ステップ_*を参照してください。</block>
   <block id="a566366d665bafe53c9d0a82a6befd65" category="paragraph">複数のオンプレミスホストに同時にData Senseソフトウェアをインストールする場合は、次の手順を実行します。この方法で複数のホストを導入する場合、「スキャナグループ」は使用できません。</block>
   <block id="65c70fcd12b102e4a08b42a41a2e7de8" category="paragraph">Cloud Data Sense インストーラがパッケージのインストールを完了し、インストールを登録します。インストールには 10~20 分かかります。</block>
-  <block id="5512cd55404b66757fcb9aa5273c9b47" category="sidebar">インターネットにアクセスできるLinuxホストに導入します</block>
   <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新機能</block>
   <block id="f8f0bde9e4fc1fbeefb41437010577d4" category="sidebar">インターネットを使用したLinuxホストにデータセンスを導入する</block>
   <block id="83d2b5781b150dc742697f6275e740ca" category="sidebar">データセンスのユースケース</block>
@@ -3075,7 +3048,6 @@
   <block id="529e58159a0567a96e1265aa7c80760b" category="inline-link">詳細については、データ調査レポートを参照してください</block>
   <block id="1519214436b24573d7996e8c310f57e7" category="paragraph">必要に応じて、これらの結果をレポートにエクスポートして、権限が原因でスキャンされているファイル、またはスキャンされていないファイルを確認できます。<block ref="55841a629b143f31cba7cbe4e8dd8d86" category="inline-link-rx"></block>。</block>
   <block id="b70232fe808c101066f1d5f669f6a6cd" category="paragraph"><block ref="b70232fe808c101066f1d5f669f6a6cd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e320df9c865260fc39e7beb28a2b5885" category="doc">インターネットにアクセスできるホストにCloud Data Senseを導入する</block>
   <block id="5dd68ea8038a218beb217f08f4009e7f" category="list-text">CentOS Stream 8もサポートされています</block>
   <block id="e47ea30e34a3a076c6a7779b8a54db7c" category="cell">ボツワナIDカード（Omang）番号</block>
   <block id="2d3ad991cc78b072cf48ad8db3fb43e0" category="cell">ボツワナパスポート番号</block>
@@ -3130,7 +3102,6 @@
   <block id="8160c3db5ceaeec9f21f500ad90a16ee" category="paragraph"><block ref="8160c3db5ceaeec9f21f500ad90a16ee" category="inline-image-macro-rx" type="image"></block></block>
   <block id="233a7e974842d65dd39122b575514270" category="paragraph">新しいカテゴリは、トレーニングファイルの定義に従って作成され、Data Senseに追加されます。その後、Data Senseはすべてのデータソースの再スキャンを開始し、この新しいカテゴリに該当するファイルを特定します。[Custom Classifiers]ページに戻り、新しいカテゴリに一致するファイルの数を確認できます。すべてのデータソースをスキャンした結果は、スキャンする必要があるファイルの数によってはしばらく時間がかかります。</block>
   <block id="0fd05b1c9e0bcfc288b3cb64182f45d8" category="summary">インターネットにアクセスできないオンプレミスサイトのホストにCloud Data Senseを導入するには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。</block>
-  <block id="dd8d54cd536de1780b72a7a05a4b8f65" category="doc">インターネットアクセスのないホストにCloud Data Senseを導入</block>
   <block id="24986a3fd86695b55b23be0d07a0d801" category="inline-link">BlueXP Connectorをアップグレードします</block>
   <block id="2976d8218e5021d7d1f5cbbae070157d" category="paragraph">BlueXPコネクタとデータセンスの両方で、新しい機能を有効にするには定期的に手動でアップグレードする必要があります。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します<block ref="179f3f01544c50dcde464960dc0c66ec" category="inline-link-rx"></block> および <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
   <block id="e6226abfed55ff05d6368103074cf171" category="paragraph">+ Data Senseの分類スキャンによってファイルの「最終アクセス時刻」が変更されていないことを確認するには、CIFSの場合はWrite Attributes権限、NFSの場合はwrite権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。</block>
@@ -3183,4 +3154,34 @@
   <block id="11f3580c4a3b779649df6d1a5c193fdf" category="list-text">一度に1～100,000個のファイルをコピーできます。</block>
   <block id="5a8d6a8cd28258257694d106e58f4816" category="list-text">少なくとも20個のファイルを選択する必要があります。</block>
   <block id="bd336cd1948dc2bbe990a0988a5e5e9e" category="cell">クエリに含めるか除外するパスの一部または全部を20個まで入力します。インクルードパスと除外パスの両方を入力すると、まず含まれているパス内のすべてのファイルが検出され、除外されているパスからファイルが削除され、結果が表示されます。このフィルタで「*」を使用しても効果はなく、特定のフォルダをスキャンから除外することはできません。設定された共有の下にあるすべてのディレクトリとファイルがスキャンされます。</block>
+  <block id="791d01e2ffeb344fb72ea0c9c72960db" category="doc">インターネットにアクセスできないホストにData Senseをインストールします</block>
+  <block id="1889f0657e0c433d173ded88a1a3a24f" category="section-title">Data SenseをオンプレミスのLinuxホストにインストールします</block>
+  <block id="497d508053af04935d2eb62e219372c8" category="list-text">[Deploy]*をクリックしてオンプレミスのインストールを開始します。</block>
+  <block id="7bde2d7cf6c722c1135ccccea2a76b1a" category="list-text">「_Deploy Data Sense on Premises」ダイアログが表示されます。提供されたコマンドをコピーします（例：<block ref="4041549bf21d4c7bed0bfcbf52842063" prefix=" " category="inline-code"></block>）をクリックし、後で使用できるようにテキストファイルに貼り付けます。次に*[閉じる]*をクリックしてダイアログを閉じます。</block>
+  <block id="9c219f00fda547ddab566c43975acd6b" category="list-text">ホストマシンで、コピーしたコマンドを入力して一連のプロンプトに従います。または、必要なすべてのパラメータをコマンドライン引数として指定することもできます。</block>
+  <block id="2817a1d472ecfcca8fe861c57ec6f447" category="list-text">手順8でコピーした情報を貼り付けます。<block ref="feca0af1809ee364465c858e41f4ada4" prefix=" " category="inline-code"></block></block>
+  <block id="ce99bf86c57675420203e054ffc86a6d" category="list-text">マネージャノードのインストールが完了する前に、スキャナノードに必要なインストールコマンドがダイアログに表示されます。コマンドをコピーします（例：<block ref="2478484d96d8c17b7752fd15d3b26f12" prefix=" " category="inline-code"></block>）を入力し、テキストファイルに保存します。</block>
+  <block id="b056211dff1fc57845bf9cbcca6028fb" category="summary">クラウドデータセンスをクラウドに導入するには、いくつかの手順を実行します。BlueXPは、BlueXPコネクタと同じクラウドプロバイダネットワークにData Senseインスタンスを導入します。</block>
+  <block id="68e2c37bd2867239a02b30abd4095416" category="doc">BlueXPを使用してCloud Data Senseをクラウドに導入</block>
+  <block id="3d8ecdf8f23b00fcd443553659989a15" category="inline-link-macro">インターネットにアクセスできるLinuxホストにData Senseをインストールします</block>
+  <block id="79db9e590c357a77fc5430f2dc1f8f69" category="paragraph">また、次のことも可能です <block ref="05339bd093ad6200c6b8b4293a577733" category="inline-link-macro-rx"></block>。このようなインストールは、オンプレミスにあるデータセンスインスタンスを使用してオンプレミスのONTAP システムをスキャンする場合に適しています。ただしこれは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。</block>
+  <block id="193ff08e362b0135a9b658cb11ea2cca" category="summary">いくつかの手順を実行して、ネットワーク内のLinuxホスト、またはインターネットにアクセスできるクラウド内のLinuxホストにData Senseを導入します。</block>
+  <block id="884b0821c52542ca3e3aa10a26f92b31" category="doc">インターネットにアクセスできるホストにData Senseをインストールします</block>
+  <block id="6ee85eb402345aafdbfbb8895e9ee104" category="paragraph">社内のLinuxホストへの一般的なインストールには、次のコンポーネントと接続があります。</block>
+  <block id="248161764b5ff5f54888ebefe222f3e4" category="paragraph">クラウド内のLinuxホストへの一般的なインストールには、次のコンポーネントと接続があります。</block>
+  <block id="19c8d978817f5ad2c7d566851ddf6e4e" category="paragraph"><block ref="19c8d978817f5ad2c7d566851ddf6e4e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cf484cfb7fc7fb235ee523a43dbe1c32" category="inline-link-macro">インターネットにアクセスできないオンプレミスサイトにData Senseをインストールします</block>
+  <block id="d8ab1de8b00d809182655fd215e4c838" category="paragraph">また、次のことも可能です <block ref="740ddda1a4e327959c966d3a6913fb51" category="inline-link-macro-rx"></block> 完全にセキュアなサイトに。</block>
+  <block id="115b1db268bc8066a2a6f9174de75f96" category="section-title">LinuxホストにData Senseをインストールします</block>
+  <block id="983f3e7e80ab153851d8f5302ab019d5" category="list-text">Data Senseをクラウドで準備したインスタンスにインストールするか、オンプレミスで準備したインスタンスにインストールするかに応じて、該当する*[Deploy]*ボタンをクリックしてData Senseのインストールを開始します。</block>
+  <block id="bda678b1fb683a403f093f2555da8faf" category="list-text">「_Deploy Data Sense on Premises」ダイアログが表示されます。提供されたコマンドをコピーします（例：<block ref="a402a6c8a10b4c24d7596599c6dfb7db" prefix=" " category="inline-code"></block>）をクリックし、後で使用できるようにテキストファイルに貼り付けます。次に*[閉じる]*をクリックしてダイアログを閉じます。</block>
+  <block id="e342bb199ba04c6458bcb1b1464f1d00" category="list-text">手順7でコピーした情報を貼り付けます。<block ref="924ff0749b2ad085d56d695be970e489" prefix=" " category="inline-code"></block></block>
+  <block id="3aa548170d376264933f54bb0d2c3ad6" category="list-text">add_scanner_nodeスクリプトが完了する前に、スキャナノードに必要なインストールコマンドを示すダイアログが表示されます。コマンドをコピーします（例：<block ref="7c95eda18e13e25941273928f0d149ba" prefix=" " category="inline-code"></block>）を入力し、テキストファイルに保存します。</block>
+  <block id="8e477b6128906752f1b086a48c07fef7" category="list-text">マネージャノードのインストールが完了する前に、スキャナノードに必要なインストールコマンドがダイアログに表示されます。コマンドをコピーします（例：<block ref="2478484d96d8c17b7752fd15d3b26f12" prefix=" " category="inline-code"></block>）を入力し、テキストファイルに保存します。</block>
+  <block id="027400835e3f9c8cdefc405a8ee10cdf" category="list-text">クラウドプロバイダの市場でBlueXPの従量課金制（PAYGO）サブスクリプションにすでに登録している場合は、Cloud Data Senseにも自動的に登録されます。再度サブスクライブする必要はありません。</block>
+  <block id="3fab6a2d0465498818a33336e6028494" category="paragraph">ライセンスの期限が切れた場合、またはBYOLの上限に達した場合、Data Senseは引き続き実行されますが、スキャンしたデータに関する情報を表示できないように、ダッシュボードへのアクセスはブロックされます。スキャンするボリューム数を減らして容量の使用量をライセンスの上限までにする場合は、 _Configuration_page だけを使用できます。</block>
+  <block id="20aa1bbdb0fac9cadb849e6ab2887670" category="sidebar">BlueXPを使用してクラウドに導入</block>
+  <block id="7c454725651fa93e75c3603da01e3ae2" category="sidebar">インターネットにアクセスできるLinuxホストにインストールします</block>
+  <block id="34c631136a1ff65c0e2a718e56622097" category="sidebar">インターネットにアクセスせずにオンプレミスにインストール</block>
+  <block id="86d55936ff74c558250b6d6c3c3440fe" category="sidebar">Data Senseをクラウドに自動的に導入</block>
 </blocks>

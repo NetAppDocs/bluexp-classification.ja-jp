@@ -21,11 +21,11 @@ sidebar:
       url: "/concept-cloud-compliance.html"
     - title: クラウドデータの導入センス
       entries:
-      - title: クラウドに導入
+      - title: BlueXPを使用してクラウドに導入
         url: "/task-deploy-cloud-compliance.html"
-      - title: インターネットにアクセスできるLinuxホストに導入します
+      - title: インターネットにアクセスできるLinuxホストにインストールします
         url: "/task-deploy-compliance-onprem.html"
-      - title: オンプレミスでインターネットにアクセスせずに導入できます
+      - title: インターネットにアクセスせずにオンプレミスにインストール
         url: "/task-deploy-compliance-dark-site.html"
     - title: データソースでスキャンをアクティブ化します
       entries:
@@ -109,7 +109,7 @@ homepage:
       url: concept-cloud-compliance.html
     - title: 新機能
       url: whats-new.html
-    - title: クラウドにデータを導入するメリット
+    - title: Data Senseをクラウドに自動的に導入
       url: task-deploy-cloud-compliance.html
     - title: インターネットを使用したLinuxホストにデータセンスを導入する
       url: task-deploy-compliance-onprem.html

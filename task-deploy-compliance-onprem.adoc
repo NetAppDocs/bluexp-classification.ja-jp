@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
-summary: ネットワーク内のLinuxホストまたはクラウド内のLinuxホストに、インターネットにアクセスできるCloud Data Senseを導入するには、いくつかの手順を実行します。 
+summary: いくつかの手順を実行して、ネットワーク内のLinuxホスト、またはインターネットにアクセスできるクラウド内のLinuxホストにData Senseを導入します。 
 ---
-= インターネットにアクセスできるホストにCloud Data Senseを導入する
+= インターネットにアクセスできるホストにData Senseをインストールします
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,17 +14,21 @@ summary: ネットワーク内のLinuxホストまたはクラウド内のLinux�
 
 
 [role="lead"]
-ネットワーク内のLinuxホストまたはクラウド内のLinuxホストに、インターネットにアクセスできるCloud Data Senseを導入するには、いくつかの手順を実行します。
+いくつかの手順を実行して、ネットワーク内のLinuxホスト、またはインターネットにアクセスできるクラウド内のLinuxホストにData Senseを導入します。
 
 オンプレミスにあるデータセンスインスタンスを使用してオンプレミスの ONTAP システムをスキャンする場合は、オンプレミスインストールを選択することをお勧めします。ただしこれは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。
 
-標準的なオンプレミス環境には、次のコンポーネントと接続があります。
+社内のLinuxホストへの一般的なインストールには、次のコンポーネントと接続があります。
 
 image:diagram_deploy_onprem_overview.png["必要なBlueXPとネットワークコンポーネント、および関連する接続の図。"]
 
+クラウド内のLinuxホストへの一般的なインストールには、次のコンポーネントと接続があります。
+
+image:diagram_deploy_onprem_cloud_instance.png["必要なBlueXPとネットワークコンポーネント、および関連する接続の図。"]
+
 ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。複数のホストシステムを使用する場合、プライマリシステムは_Manager node_と呼ばれ、追加の処理能力を提供する追加システムは_Scanner Node_と 呼ばれます。
 
-また、次のことも可能です link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスサイトにデータセンスを導入する"] 完全にセキュアなサイトに。
+また、次のことも可能です link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスサイトにData Senseをインストールします"] 完全にセキュアなサイトに。
 
 
 
@@ -97,6 +101,8 @@ Azure NetApp Files の場合は、スキャンするボリュームと同じ領�
 ** /tmp 上で 5 GiB
 +
 CPU 数と RAM 容量が少ないシステムには Data Sense を導入できますが、これらのシステムの使用には制限があります。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
+
+
 
 
 
@@ -227,7 +233,7 @@ Active Directory の次の情報が必要です。
 
 
 
-== オンプレミスにデータセンスを導入
+== LinuxホストにData Senseをインストールします
 
 一般的な構成では、ソフトウェアを 1 台のホストシステムにインストールします。 <<一般的な構成でのシングルホストインストール,これらの手順を参照してください>>。
 
@@ -261,26 +267,23 @@ NOTE: Cloud Data Sense は、ソフトウェアがオンプレミスにインス
 .手順
 . から Cloud Data Sense ソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は* DATASENSE-installer -<version> .tar.gz *です。
 . 使用する Linux ホストにインストーラファイルをコピーします (`cp またはその他の方法を使用 ) 。
-. BlueXPでは、* Governance > Classification *を選択します。
-. [ データセンスを活動化（ Activate Data sense ） ] をクリックし
-+
-image:screenshot_cloud_compliance_deploy_start.png["Cloud Data Sense を有効にするボタンを選択するスクリーンショット。"]
-
-. クラウド内のインスタンスに導入するか、オンプレミスのインスタンスに導入するかに応じて、適切な* Deploy *ボタンをクリックしてデータセンス導入ウィザードを開始します。
-+
-image:screenshot_cloud_compliance_deploy_onprem.png["クラウドまたはオンプレミスのマシンにクラウドデータセンスを導入するボタンを選択するスクリーンショット。"]
-
-. 「_Deploy Data Sense on Premises」ダイアログが表示されます。提供されたコマンドをコピーしてテキストファイルに貼り付け、後で使用できるようにして、*閉じる*をクリックします。例：
-+
-「 sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq 」と入力します
-
 . ホストマシンでインストーラファイルを解凍します。次に例を示します。
 +
 [source, cli]
 ----
 tar -xzf DATASENSE-INSTALLER-V1.21.0.tar.gz
 ----
-. インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、インストーラに必要なパラメータをコマンドライン引数として指定することができます。
+. BlueXPでは、* Governance > Classification *を選択します。
+. [ データセンスを活動化（ Activate Data sense ） ] をクリックし
++
+image:screenshot_cloud_compliance_deploy_start.png["Cloud Data Sense を有効にするボタンを選択するスクリーンショット。"]
+
+. Data Senseをクラウドで準備したインスタンスにインストールするか、オンプレミスで準備したインスタンスにインストールするかに応じて、該当する*[Deploy]*ボタンをクリックしてData Senseのインストールを開始します。
++
+image:screenshot_cloud_compliance_deploy_onprem.png["クラウドまたはオンプレミスのマシンにクラウドデータセンスを導入するボタンを選択するスクリーンショット。"]
+
+. 「_Deploy Data Sense on Premises」ダイアログが表示されます。提供されたコマンドをコピーします（例： `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq`）をクリックし、後で使用できるようにテキストファイルに貼り付けます。次に*[閉じる]*をクリックしてダイアログを閉じます。
+. ホストマシンで、コピーしたコマンドを入力して一連のプロンプトに従います。または、必要なすべてのパラメータをコマンドライン引数として指定することもできます。
 +
 インストールを正常に完了するには、インストーラによって事前チェックが実行され、システムとネットワークの要件が満たされていることが確認されます。
 
@@ -291,7 +294,8 @@ tar -xzf DATASENSE-INSTALLER-V1.21.0.tar.gz
 
 
  a| 
-.. 手順 6 からコピーした情報を貼り付けます。 'UDO./install.sh -a <account_id>-c <agent_id>-t<token>`
+.. 手順7でコピーした情報を貼り付けます。
+`sudo ./install.sh -a <account_id> -c <agent_id> -t <token>`
 .. コネクタインスタンスからアクセスできるように、 Data Sense ホストマシンの IP アドレスまたはホスト名を入力します。
 .. BlueXP ConnectorホストマシンのIPアドレスまたはホスト名を入力して、データセンスインスタンスからアクセスできるようにします。
 .. プロンプトが表示されたら、プロキシの詳細を入力BlueXPコネクタが既にプロキシを使用している場合は、この情報を再度入力する必要はありません。これは、コネクタが使用するプロキシが自動的に使用されるためです。
@@ -462,10 +466,7 @@ image:screenshot_client_access_token.png["APIドキュメントページのス�
 ** _user_token_= JWTユーザーアクセストークン
 
 
-. add_scanner_nodeスクリプトが完了する前に、スキャナノードに必要なインストールコマンドを示すダイアログが表示されます。コマンドをコピーし、テキストファイルに保存します。例：
-+
-`sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF1s35212 -u red95467j`
-
+. add_scanner_nodeスクリプトが完了する前に、スキャナノードに必要なインストールコマンドを示すダイアログが表示されます。コマンドをコピーします（例： `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF1s35212 -u red95467j`）を入力し、テキストファイルに保存します。
 . 各 * スキャナノードホストで：
 +
 .. データセンスインストーラファイル(*DATASENSE-installer -<version> .tar.gz*)をホストマシンにコピーします(scpなどの方法を使用)。
@@ -566,10 +567,7 @@ image:screenshot_scanner_groups.png["すべてのスキャナグループと、�
 +
 たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'sudo ./install.sh -a <account_id>-c <agent_id>-t <token> --host <ds_host> --manager-host <cm_host> * -n <node-ip1> 、 <node-ip2> 、 <node-ip3>*-proxy-proxy-proxy-host-pproxy-pxe-password</password>
 
-. マネージャノードのインストールが完了する前に、スキャナノードに必要なインストールコマンドがダイアログに表示されます。コマンドをコピーし、テキストファイルに保存します。例：
-+
-sudo ./node_install.sh -m 10.11.12.13-t ふぁいる EF-1u69m1-1s35212`
-
+. マネージャノードのインストールが完了する前に、スキャナノードに必要なインストールコマンドがダイアログに表示されます。コマンドをコピーします（例： `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`）を入力し、テキストファイルに保存します。
 . 各 * スキャナノードホストで：
 +
 .. データセンスインストーラファイル(*DATASENSE-installer -<version> .tar.gz*)をホストマシンにコピーします(scpなどの方法を使用)。

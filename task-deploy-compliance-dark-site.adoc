@@ -4,7 +4,7 @@ permalink: task-deploy-compliance-dark-site.html
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade 
 summary: インターネットにアクセスできないオンプレミスサイトのホストにCloud Data Senseを導入するには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。 
 ---
-= インターネットアクセスのないホストにCloud Data Senseを導入
+= インターネットにアクセスできないホストにData Senseをインストールします
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -223,7 +223,7 @@ _api.bluexp.netapp.com_へのアクセスは、これらの外部サービスへ
 
 
 
-== データセンスの導入
+== Data SenseをオンプレミスのLinuxホストにインストールします
 
 一般的な構成では、ソフトウェアを 1 台のホストシステムにインストールします。 link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["これらの手順を参照してください"]。
 
@@ -258,26 +258,23 @@ tar -xzf DataSense-offline-bundle-v1.21.0.tar.gz
 +
 これにより、必要なソフトウェアと実際のインストールファイル* cc_onpm_installer.tar.gz *が抽出されます。
 
-. BlueXPを起動し、「ガバナンス」＞「分類」と選択します。
-. [ データセンスを活動化（ Activate Data sense ） ] をクリックし
-+
-image:screenshot_cloud_compliance_deploy_start.png["Cloud Data Sense を有効にするボタンを選択するスクリーンショット。"]
-
-. [Deploy *] をクリックして、オンプレミス展開ウィザードを開始します。
-+
-image:screenshot_cloud_compliance_deploy_darksite.png["クラウドデータセンスをオンプレミスに導入するボタンを選択するスクリーンショット。"]
-
-. 「_Deploy Data Sense on Premises」ダイアログが表示されます。提供されたコマンドをコピーしてテキストファイルに貼り付け、後で使用できるようにして、*閉じる*をクリックします。例：
-+
-「 sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq -- darksite
-
 . ホストマシンでインストールファイルを解凍します。次に例を示します。
 +
 [source, cli]
 ----
 tar -xzf cc_onprem_installer.tar.gz
 ----
-. インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、インストーラに必要なパラメータをコマンドライン引数として指定することができます。
+. BlueXPを起動し、「ガバナンス」＞「分類」と選択します。
+. [ データセンスを活動化（ Activate Data sense ） ] をクリックし
++
+image:screenshot_cloud_compliance_deploy_start.png["Cloud Data Sense を有効にするボタンを選択するスクリーンショット。"]
+
+. [Deploy]*をクリックしてオンプレミスのインストールを開始します。
++
+image:screenshot_cloud_compliance_deploy_darksite.png["クラウドデータセンスをオンプレミスに導入するボタンを選択するスクリーンショット。"]
+
+. 「_Deploy Data Sense on Premises」ダイアログが表示されます。提供されたコマンドをコピーします（例： `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq --darksite`）をクリックし、後で使用できるようにテキストファイルに貼り付けます。次に*[閉じる]*をクリックしてダイアログを閉じます。
+. ホストマシンで、コピーしたコマンドを入力して一連のプロンプトに従います。または、必要なすべてのパラメータをコマンドライン引数として指定することもできます。
 +
 インストールを正常に完了するには、インストーラによって事前チェックが実行され、システムとネットワークの要件が満たされていることが確認されます。
 
@@ -288,7 +285,8 @@ tar -xzf cc_onprem_installer.tar.gz
 
 
  a| 
-.. 手順 7 からコピーした情報を貼り付けます。 'UDO./ install.sh -a <account_id> -c <agent_id> -t <token> --darksite
+.. 手順8でコピーした情報を貼り付けます。
+`sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --darksite`
 .. コネクタインスタンスからアクセスできるように、 Data Sense ホストマシンの IP アドレスまたはホスト名を入力します。
 .. BlueXP ConnectorホストマシンのIPアドレスまたはホスト名を入力して、データセンスインスタンスからアクセスできるようにします。
 
@@ -366,10 +364,7 @@ Data Sense インストーラは、パッケージをインストールし、イ
 +
 たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'sudo ./install.sh -a <account_id > -c <agent_id> -t <token> --host <DS_host> --manager-host <cm_host> * -n <node-ip1> 、 <node-ip2> 、 <node-dark3>*-no-proxy-site
 
-. マネージャノードのインストールが完了する前に、スキャナノードに必要なインストールコマンドがダイアログに表示されます。コマンドをコピーし、テキストファイルに保存します。例：
-+
-sudo ./node_install.sh -m 10.11.12.13-t ふぁいる EF-1u69m1-1s35212`
-
+. マネージャノードのインストールが完了する前に、スキャナノードに必要なインストールコマンドがダイアログに表示されます。コマンドをコピーします（例： `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`）を入力し、テキストファイルに保存します。
 . 各 * スキャナノードホストで：
 +
 .. データセンスインストーラファイル（* cc_onpm_installer.tar.gz *）をホストマシンにコピーします。
