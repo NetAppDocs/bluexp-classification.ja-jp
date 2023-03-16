@@ -92,19 +92,23 @@ Azure NetApp Files の場合は、スキャンするボリュームと同じ領�
 
 クラウドデータを常に運用しておく必要がありますデータを継続的にスキャンするには、Cloud Data Senseマシンをオンのままにしておく必要があります。
 
-* * CPU *：16コア
-* *RAM*:64 GB (ホストでスワップメモリを無効にする必要があります)
-* *ディスク*：500 GiBのSSDを、/、またはで使用できます
+* スキャンするデータセットのサイズに応じて、ホストシステムは3つのサイズで指定できます。
 +
-** 100 GiB は /opt で利用できます
-** /var で 400GiB の可用性を確保
-** /tmp 上で 5 GiB
+[cols="18,18,26,30"]
+|===
+| システムサイズ | CPU | RAM（スワップメモリを無効にする必要があります） | ディスク 
+
+
+| 大規模 | 16 CPU | 64GBのRAM | 500 GB SSDオン/または*オプションで100 GB利用可能*/varで395 GB */tmpで5 GB利用可能 
+
+
+| 中 | 8 CPU | 32GBのRAM | 200 GB SSDオン/または* 50 GB (/opt)* 145 GB (/var)* 5 GB (/tmp 
+
+
+| 小規模 | 8 CPU | 16GB の RAM | 100 GB SSDオン/または* 50 GB（オプション）* 45 GB（/var * 5 GB（/tmp 
+|===
 +
-CPU 数と RAM 容量が少ないシステムには Data Sense を導入できますが、これらのシステムの使用には制限があります。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
-
-
-
-
+これらの小さいシステムを使用する場合は制限があることに注意してください。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
 
 * * AWS EC2 instance type *：上記のCPUおよびRAMの要件を満たすインスタンスタイプ。お勧めします https://aws.amazon.com/ec2/instance-types/m5/["m5.mc"^]。
 * * Azure VMのサイズ*：上記のCPUとRAMの要件を満たすインスタンスタイプ。お勧めします https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^]。
@@ -260,7 +264,12 @@ NOTE: Cloud Data Sense は、ソフトウェアがオンプレミスにインス
 * Linux システムがを満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
 * システムに、前提条件となる2つのソフトウェアパッケージ（Docker EngineとPython 3）がインストールされていることを確認します。
 * Linux システムに対する root 権限があることを確認してください。
-* プロキシを使用していて、TLS代行受信を実行している場合は、TLS CA証明書が保存されているData Sense Linuxシステム上のパスを確認する必要があります。
+* インターネットへのアクセスにプロキシを使用している場合：
++
+** プロキシサーバー情報(IPアドレスまたはホスト名、接続ポート、接続スキーム: httpsまたはhttp、ユーザー名とパスワード)が必要です。
+** プロキシがTLS代行受信を実行している場合は、TLS CA証明書が格納されているData Sense Linuxシステムのパスを把握しておく必要があります。
+
+
 * オフライン環境が要件を満たしていることを確認します <<Cloud Data Sense からのアウトバウンドインターネットアクセスを有効にする,権限と接続>>。
 
 

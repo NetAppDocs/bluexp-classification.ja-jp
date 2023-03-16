@@ -1206,8 +1206,6 @@
   <block id="532b2291afa0585aed0b7f83e343086f" category="inline-xref">権限と接続</block>
   <block id="915bca96e4db936d4227065b020aa1cf" category="paragraph">ネットアップサポートサイトから Cloud Data Sense ソフトウェアをダウンロードし、使用する Linux ホストにインストーラファイルをコピーします。次に、インストールウィザードを起動し、プロンプトに従って Cloud Data Sense インスタンスを導入します。</block>
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">Linux ホストシステムを準備</block>
-  <block id="feb0221200046a709566079a3cbc3e5f" category="list-text">100 GiB は /opt で利用できます</block>
-  <block id="f12d2902352feb2353dd1667f55dc293" category="list-text">/var で 400GiB の可用性を確保</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">インストール手順を確認します</block>
   <block id="c0ffa5845aefb5e4bb0fa6089bcc513d" category="list-text">Python 3 バージョン 3.6 以降。<block ref="f67fc9f0c7d8aa701884bad21356a242" category="inline-link-rx"></block>。</block>
   <block id="73b95f9cb4d6b028a07c08d4d8325338" category="paragraph">Cloud Data Sense を導入する前に、次の前提条件を確認し、サポートされている構成であることを確認してください。</block>
@@ -1721,7 +1719,6 @@
   <block id="39ad63f56fe19489716d253d535f6033" category="section-title">グローバル Active Directory を統合して、ファイルの所有者と権限を識別する機能</block>
   <block id="ed02f2ad98646d05140c6f62857791cb" category="section-title">データセンスの「ポリシー」を使用してファイルを削除できるようになりました</block>
   <block id="5d7ec019a090d19805ff8b8708516943" category="paragraph">データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。データセンスは、他のアプリケーションと共有されるホストではサポートされません。ホストは専用のホストである必要があります。</block>
-  <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">/tmp 上で 5 GiB</block>
   <block id="7d3786abf2ebb473a5ba70b680734525" category="section-title">BYOL ライセンスに関する考慮事項</block>
   <block id="e95058755e821bf6cb439e37f1f068d7" category="list-text">スキャンするデータ量がライセンスで許可された容量の 80% に達したとき、および制限に達したときに再度スキャンします</block>
   <block id="d8ea74d0bc0e6f3c5be22312a953d7fb" category="list-text">ライセンスの有効期限が切れる 30 日前と、ライセンスの有効期限が切れたあとに再度有効になります</block>
@@ -2560,9 +2557,6 @@
   <block id="5145a29bff9f5d1e0a1fc1ca423ecea3" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> データセンスのダウンロードと導入</block>
   <block id="dc557754b902711b46f03bde4f8cd281" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Cloud Data Sense サービスに登録する</block>
   <block id="369bb58f2fbc4fcfb60a188e89ca29e3" category="list-text">OSがDocker Engineをインストールできる必要があります</block>
-  <block id="792c9336a56fa746327b500536c3ac74" category="list-text">*ディスク*：500 GiBのSSDを、/、またはで使用できます</block>
-  <block id="f1c885ee2358fbb418dfe35e68a4002a" category="list-text">*RAM*:64 GB (ホストでスワップメモリを無効にする必要があります)</block>
-  <block id="1f810cefd66fa5d8c5990d6c051c53a7" category="list-text">* CPU *：16コア</block>
   <block id="7962e6ebf5c099feb974a40aed988873" category="list-text">*追加ソフトウェア*：Data Senseをインストールする前に、次のソフトウェアをホストにインストールする必要があります。</block>
   <block id="72334fae14a444a21b5a6f8b702612c3" category="list-text">*ファイアウォールの考慮事項*:使用を計画している場合<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block>では、データセンスをインストールする前に有効にすることをお勧めします。次のコマンドを実行して設定します<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> データセンスとの互換性を確保するために、次のようにします。</block>
   <block id="c353e72a0df04595cb1fda2b9283bd9e" category="paragraph">を有効にした場合<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> Data Senseをインストールしたら、Dockerを再起動する必要があります。</block>
@@ -2638,7 +2632,6 @@
   <block id="5b028b19d86301024ced75afef69e66d" category="list-text">OSにDockerエンジンがインストールされている必要があります</block>
   <block id="1c92a0c0cd35f6a2ac3eae778656a791" category="list-text">* Red Hat Subscription Management *：Red Hat Enterprise LinuxシステムをRed Hat Subscription Managementに登録する必要があります。登録されていないと、インストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。</block>
   <block id="7e9d35e7187b767f275e31d6a5cf324c" category="paragraph">複数のData Senseホストを使用してデータソースをスキャンする場合は、追加のポートやプロトコルを有効にする必要があります。 <block ref="3be03acda87575f8178f170dc170b26c" category="inline-link-macro-rx"></block>。</block>
-  <block id="3ce88af879db89d6da43dca91e5ac2a6" category="list-text">プロキシを使用していて、TLS代行受信を実行している場合は、TLS CA証明書が保存されているData Sense Linuxシステム上のパスを確認する必要があります。</block>
   <block id="b2fe6e75aa67d3e83769c7fce0162b2e" category="list-text">次の手順に従って、スキャナノードにソフトウェアを展開します（また、特定のスキャナノードに対してオプションで「スキャナグループ」を定義します）。</block>
   <block id="23dcbd39a65a485d50a0307dbfaed624" category="list-text">次のスクリプトを実行して、このマッピング情報をすべてのスキャナノードに登録します。<block ref="095075046e7ff767d3fd56d02f6fdfdb" prefix=" " category="inline-code"></block></block>
   <block id="868d9ff1d3a68b958d1cfc9f569a6cd9" category="list-text">使用するポート<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> データセンスマシンでは、データセンスをインストールする前に有効にすることをお勧めします。次のコマンドを実行して設定します<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> データセンスとの互換性を確保するために、次のようにします。</block>
@@ -3184,4 +3177,21 @@
   <block id="7c454725651fa93e75c3603da01e3ae2" category="sidebar">インターネットにアクセスできるLinuxホストにインストールします</block>
   <block id="34c631136a1ff65c0e2a718e56622097" category="sidebar">インターネットにアクセスせずにオンプレミスにインストール</block>
   <block id="86d55936ff74c558250b6d6c3c3440fe" category="sidebar">Data Senseをクラウドに自動的に導入</block>
+  <block id="1b829a0b2a17806376d7530e7c1aa7d0" category="list-text">スキャンするデータセットのサイズに応じて、ホストシステムは3つのサイズで指定できます。</block>
+  <block id="2b55387dd066c5bac646ac61543d152d" category="cell">CPU</block>
+  <block id="05289cee10f1f9057410b216de0d7e36" category="cell">RAM（スワップメモリを無効にする必要があります）</block>
+  <block id="380dbc8d9d2c8a17f6ebb0b2c62d3e85" category="cell">ディスク</block>
+  <block id="3a69b34ce86dacb205936a8094f6c743" category="cell">大規模</block>
+  <block id="dc8179e6e72156a5578bf35cf9574540" category="cell">16 CPU</block>
+  <block id="5a1fdf37d5cd85436f7504641d78b95f" category="cell">64GBのRAM</block>
+  <block id="d1dfcf68dd28742f6e8c1a149039f317" category="cell">500 GB SSDオン/または*オプションで100 GB利用可能*/varで395 GB */tmpで5 GB利用可能</block>
+  <block id="bef6aed074693bd02885fa89c8b418f0" category="cell">8 CPU</block>
+  <block id="70eb72cfa1dbdb5556e79344f161d62a" category="cell">32GBのRAM</block>
+  <block id="03c4b3e038e1f3312ead503649c43953" category="cell">200 GB SSDオン/または* 50 GB (/opt)* 145 GB (/var)* 5 GB (/tmp</block>
+  <block id="e706090ac76b3e56523819912497e0f6" category="cell">16GB の RAM</block>
+  <block id="ed04b9cefc3e8c7791055ad71b874777" category="cell">100 GB SSDオン/または* 50 GB（オプション）* 45 GB（/var * 5 GB（/tmp</block>
+  <block id="a0b7a7641d24b4614381b2d6a615f220" category="paragraph">これらの小さいシステムを使用する場合は制限があることに注意してください。を参照してください <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="3080c7bbf6707274907b8ec2e97fb7a8" category="list-text">インターネットへのアクセスにプロキシを使用している場合：</block>
+  <block id="872a9ee7c158e8dd5094c5c93dcffc57" category="list-text">プロキシサーバー情報(IPアドレスまたはホスト名、接続ポート、接続スキーム: httpsまたはhttp、ユーザー名とパスワード)が必要です。</block>
+  <block id="566740fad5c1ec59669bd6641875006e" category="list-text">プロキシがTLS代行受信を実行している場合は、TLS CA証明書が格納されているData Sense Linuxシステムのパスを把握しておく必要があります。</block>
 </blocks>
