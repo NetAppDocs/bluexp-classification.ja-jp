@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
-summary: いくつかの手順を実行して、ネットワーク内のLinuxホスト、またはインターネットにアクセスできるクラウド内のLinuxホストにData Senseを導入します。 
+summary: いくつかの手順を実行して、ネットワーク内のLinuxホスト、またはインターネットにアクセスできるクラウド内のLinuxホストにData Senseをインストールします。このインストールの一環として、Linuxホストをネットワークまたはクラウドに手動で導入する必要があります。 
 ---
 = インターネットにアクセスできるホストにData Senseをインストールします
 :hardbreaks:
@@ -14,15 +14,15 @@ summary: いくつかの手順を実行して、ネットワーク内のLinuxホ
 
 
 [role="lead"]
-いくつかの手順を実行して、ネットワーク内のLinuxホスト、またはインターネットにアクセスできるクラウド内のLinuxホストにData Senseを導入します。
+いくつかの手順を実行して、ネットワーク内のLinuxホスト、またはインターネットにアクセスできるクラウド内のLinuxホストにData Senseをインストールします。このインストールの一環として、Linuxホストをネットワークまたはクラウドに手動で導入する必要があります。
 
 オンプレミスにあるデータセンスインスタンスを使用してオンプレミスの ONTAP システムをスキャンする場合は、オンプレミスインストールを選択することをお勧めします。ただしこれは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。
 
-社内のLinuxホストへの一般的なインストールには、次のコンポーネントと接続があります。
+社内_のLinuxホスト_への一般的なインストールには、次のコンポーネントと接続があります。
 
 image:diagram_deploy_onprem_overview.png["必要なBlueXPとネットワークコンポーネント、および関連する接続の図。"]
 
-クラウド内のLinuxホストへの一般的なインストールには、次のコンポーネントと接続があります。
+cloud_内のLinuxホストへの一般的なインストールには、次のコンポーネントと接続があります。
 
 image:diagram_deploy_onprem_cloud_instance.png["必要なBlueXPとネットワークコンポーネント、および関連する接続の図。"]
 

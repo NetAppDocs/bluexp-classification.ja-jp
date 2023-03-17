@@ -545,10 +545,6 @@
   <block id="b7be70b4ae08b5c8540e95fbe14dcfa6" category="paragraph">データ主体の名前を検索して Data Subject Access Request （ dsar ）レポートを作成するときに、ドイツ語とスペイン語がサポートされるようになりました。このレポートは、企業が GDPR または同様のデータプライバシー法を遵守する必要がある場合に役立つように作成されています。</block>
   <block id="da848e916ac29d03235a007036cf77ca" category="inline-link-macro">データがスキャンで識別するすべての個人データタイプのリストを表示します</block>
   <block id="2e38fe6622e02d0346ffbd31c4347739" category="paragraph">Cloud Manager Connector のセキュリティグループでは、セキュリティを強化するために、データセンスインスタンスとの間のインバウンドトラフィックとアウトバウンドトラフィックにポート 80 ではなくポート 443 が使用されます。この時点では両方のポートは開いたままなので、問題はありませんが、将来のリリースではポート 80 が廃止される予定であるため、以前のどの環境でもセキュリティグループを更新する必要があります。</block>
-  <block id="586301717819197e24001cac47efdaaa" category="section-title">2022 年 1 月 2 日</block>
-  <block id="e4a822ae3bd5d19b76fea8306ce5774c" category="paragraph">グローバル Active Directory を Cloud Data Sense と統合することで、ファイル所有者や、ファイルにアクセスできるユーザーやグループについてデータセンスがレポートする結果を高めることができます。</block>
-  <block id="f8add8b46019d8016befb6aebc941e84" category="inline-link-macro">グローバル Active Directory の設定方法を参照してください</block>
-  <block id="4fdca8fbbd2a76d7345e79fb0e7fd3fc" category="inline-link-macro">カスタムポリシーの作成方法については、を参照してください</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">詳細はこちら。</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link-macro">方法を参照してください</block>
   <block id="74585f658544c691c6f6afb583a9dc61" category="inline-link-macro">S3 プロトコルを使用するオブジェクトストレージをスキャンしています</block>
@@ -1716,8 +1712,6 @@
   <block id="622db54d0a7d9c01c841d932e3988937" category="section-title">dsar レポートの新しい言語サポート</block>
   <block id="8cdccfd2e3c1390208fa5892348c4108" category="section-title">追加の 3 種類の個人データは、データセンスで識別できます</block>
   <block id="2da79a92d5bb1f1f77ab993c07c12703" category="section-title">コネクタへのデータセンス通信のためにセキュリティグループポートが変更されました</block>
-  <block id="39ad63f56fe19489716d253d535f6033" category="section-title">グローバル Active Directory を統合して、ファイルの所有者と権限を識別する機能</block>
-  <block id="ed02f2ad98646d05140c6f62857791cb" category="section-title">データセンスの「ポリシー」を使用してファイルを削除できるようになりました</block>
   <block id="5d7ec019a090d19805ff8b8708516943" category="paragraph">データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。データセンスは、他のアプリケーションと共有されるホストではサポートされません。ホストは専用のホストである必要があります。</block>
   <block id="7d3786abf2ebb473a5ba70b680734525" category="section-title">BYOL ライセンスに関する考慮事項</block>
   <block id="e95058755e821bf6cb439e37f1f068d7" category="list-text">スキャンするデータ量がライセンスで許可された容量の 80% に達したとき、および制限に達したときに再度スキャンします</block>
@@ -1831,8 +1825,6 @@
   <block id="659d1ffa40af561d84c53558562c1ec0" category="paragraph">SharePoint サイトからドキュメントやファイルをスキャンするために、 SharePoint オンラインアカウントをデータセンスに追加できるようになりました。 <block ref="7eefe10c1c468dca4cd0e6b3eed1adc0" category="inline-link-macro-rx"></block>。</block>
   <block id="77a75568e8846a1bf685d1ee50c690cf" category="paragraph"><block ref="6cdda3320a1281c9d4957b83cba366de" category="inline-link-macro-rx"></block>。</block>
   <block id="d55b3233b82d41486408c8252b8ebafb" category="paragraph">データセンスでは、ファイル内にフランス語のソーシャルセキュリティ番号、フランス語の ID 、フランス語のドライバーライセンス番号が表示されるようになりました。 <block ref="685a6d4b5536628189414cd84011e60e" category="inline-link-macro-rx"></block>。</block>
-  <block id="eed42314c8425f21a986d3b70cb05658" category="paragraph">Data Sense で特定のデータソースから CIFS ボリュームをスキャンできるように入力する Active Directory クレデンシャルに加えて、この新しい統合によって他のユーザやシステムも統合されるようになります。データセンスは、統合されたすべての Active Directory でユーザと権限の詳細を確認します。 <block ref="64cba81c60533194508987e16994b8d7" category="inline-link-macro-rx"></block>。</block>
-  <block id="aa46c786779de0fbd3280d592901e64f" category="paragraph">データセンスでは、ポリシーで定義したクエリに一致するファイルを自動的に削除できます。 <block ref="68f7176f15fa3737e845d858e7820489" category="inline-link-macro-rx"></block>。</block>
   <block id="9f2913099fea83e0f323c9eaa2647551" category="inline-link-macro">SharePointアカウント全体をデータセンスから削除します</block>
   <block id="22653e7e1ce41c78cecfefd77069565b" category="paragraph">できることに注意してください <block ref="b445b66eb7994fc8803d57fcbaaa50f1" category="inline-link-macro-rx"></block> SharePointアカウントからユーザーデータをスキャンする必要がなくなった場合。</block>
   <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">現在、 30MB を超えるファイルのラベルは変更できません。OneDrive、SharePoint、Google Driveアカウントの場合、最大ファイルサイズは4 MBです。</block>
@@ -2810,7 +2802,6 @@
   <block id="afdc492e219eada4c9eca232defb9ab7" category="paragraph">また、自社運用のLinuxホストや、任意のクラウドプロバイダのホストにデータセンスを導入することもできます。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。データセンスソフトウェアのアップグレードは、インスタンスがインターネットにアクセスできるかぎり自動化されます。</block>
   <block id="dc59914806276092072d36ab9d88436a" category="section-title">データ検出スキャンデータの速さ</block>
   <block id="e56c626eb62df6bf64f545a2d416aa7c" category="inline-link-macro">データをスキャンするための複数のスキャナノードの導入の詳細については、こちらをご覧ください</block>
-  <block id="fb3ba22f3eff98ea203090bc210752be" category="paragraph"><block ref="eefbdd7e2d2119a699d2995aece8c9f3" category="inline-link-macro-rx"></block>。</block>
   <block id="008c6840e9f624b9435a7c107d8afaff" category="paragraph">BlueXPをSaaSモードで使用している場合、BlueXPへの接続はHTTPS経由で行われ、ブラウザとData Senseインスタンス間で送信されるプライベートデータはエンドツーエンドの暗号化で保護されます。これにより、ネットアップとサードパーティが読み取ることができなくなります。</block>
   <block id="c06ccfe24df0bff683583f82911916e0" category="paragraph">100個のファイルの移動や削除など、多くのファイルで［調査結果］ペインから非同期アクションを実行する場合は、このプロセスに時間がかかることがあります。これらのアクションのステータスは、_Action Status_Paneで監視できるので、すべてのファイルにいつ適用されたかを知ることができます。</block>
   <block id="10b276faf6d38414fa314b1a97e5e144" category="list-text">Success -データセンスアクションが完了し、すべての項目が成功しました。</block>
@@ -3094,7 +3085,6 @@
   <block id="55ef1b0dcac87ba2d1e533045a15de28" category="inline-image-macro">Data Senseが新しいカテゴリを定義するトレーニングファイルとして使用するファイルを示すスクリーンショット。</block>
   <block id="8160c3db5ceaeec9f21f500ad90a16ee" category="paragraph"><block ref="8160c3db5ceaeec9f21f500ad90a16ee" category="inline-image-macro-rx" type="image"></block></block>
   <block id="233a7e974842d65dd39122b575514270" category="paragraph">新しいカテゴリは、トレーニングファイルの定義に従って作成され、Data Senseに追加されます。その後、Data Senseはすべてのデータソースの再スキャンを開始し、この新しいカテゴリに該当するファイルを特定します。[Custom Classifiers]ページに戻り、新しいカテゴリに一致するファイルの数を確認できます。すべてのデータソースをスキャンした結果は、スキャンする必要があるファイルの数によってはしばらく時間がかかります。</block>
-  <block id="0fd05b1c9e0bcfc288b3cb64182f45d8" category="summary">インターネットにアクセスできないオンプレミスサイトのホストにCloud Data Senseを導入するには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。</block>
   <block id="24986a3fd86695b55b23be0d07a0d801" category="inline-link">BlueXP Connectorをアップグレードします</block>
   <block id="2976d8218e5021d7d1f5cbbae070157d" category="paragraph">BlueXPコネクタとデータセンスの両方で、新しい機能を有効にするには定期的に手動でアップグレードする必要があります。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します<block ref="179f3f01544c50dcde464960dc0c66ec" category="inline-link-rx"></block> および <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
   <block id="e6226abfed55ff05d6368103074cf171" category="paragraph">+ Data Senseの分類スキャンによってファイルの「最終アクセス時刻」が変更されていないことを確認するには、CIFSの場合はWrite Attributes権限、NFSの場合はwrite権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。</block>
@@ -3158,10 +3148,7 @@
   <block id="68e2c37bd2867239a02b30abd4095416" category="doc">BlueXPを使用してCloud Data Senseをクラウドに導入</block>
   <block id="3d8ecdf8f23b00fcd443553659989a15" category="inline-link-macro">インターネットにアクセスできるLinuxホストにData Senseをインストールします</block>
   <block id="79db9e590c357a77fc5430f2dc1f8f69" category="paragraph">また、次のことも可能です <block ref="05339bd093ad6200c6b8b4293a577733" category="inline-link-macro-rx"></block>。このようなインストールは、オンプレミスにあるデータセンスインスタンスを使用してオンプレミスのONTAP システムをスキャンする場合に適しています。ただしこれは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。</block>
-  <block id="193ff08e362b0135a9b658cb11ea2cca" category="summary">いくつかの手順を実行して、ネットワーク内のLinuxホスト、またはインターネットにアクセスできるクラウド内のLinuxホストにData Senseを導入します。</block>
   <block id="884b0821c52542ca3e3aa10a26f92b31" category="doc">インターネットにアクセスできるホストにData Senseをインストールします</block>
-  <block id="6ee85eb402345aafdbfbb8895e9ee104" category="paragraph">社内のLinuxホストへの一般的なインストールには、次のコンポーネントと接続があります。</block>
-  <block id="248161764b5ff5f54888ebefe222f3e4" category="paragraph">クラウド内のLinuxホストへの一般的なインストールには、次のコンポーネントと接続があります。</block>
   <block id="19c8d978817f5ad2c7d566851ddf6e4e" category="paragraph"><block ref="19c8d978817f5ad2c7d566851ddf6e4e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cf484cfb7fc7fb235ee523a43dbe1c32" category="inline-link-macro">インターネットにアクセスできないオンプレミスサイトにData Senseをインストールします</block>
   <block id="d8ab1de8b00d809182655fd215e4c838" category="paragraph">また、次のことも可能です <block ref="740ddda1a4e327959c966d3a6913fb51" category="inline-link-macro-rx"></block> 完全にセキュアなサイトに。</block>
@@ -3194,4 +3181,9 @@
   <block id="3080c7bbf6707274907b8ec2e97fb7a8" category="list-text">インターネットへのアクセスにプロキシを使用している場合：</block>
   <block id="872a9ee7c158e8dd5094c5c93dcffc57" category="list-text">プロキシサーバー情報(IPアドレスまたはホスト名、接続ポート、接続スキーム: httpsまたはhttp、ユーザー名とパスワード)が必要です。</block>
   <block id="566740fad5c1ec59669bd6641875006e" category="list-text">プロキシがTLS代行受信を実行している場合は、TLS CA証明書が格納されているData Sense Linuxシステムのパスを把握しておく必要があります。</block>
+  <block id="bb239f614886950a8a7955eb804ef8d4" category="summary">インターネットにアクセスできないオンプレミスサイトのLinuxホストにData Senseをインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。</block>
+  <block id="82e8ecf7e928e70a97d21b2cd773dec7" category="paragraph"><block ref="c12a8f0104732399e0f36d3f90295943" category="inline-link-macro-rx"></block>。</block>
+  <block id="3ba3230839f950166b5b123c0bb22ee3" category="summary">いくつかの手順を実行して、ネットワーク内のLinuxホスト、またはインターネットにアクセスできるクラウド内のLinuxホストにData Senseをインストールします。このインストールの一環として、Linuxホストをネットワークまたはクラウドに手動で導入する必要があります。</block>
+  <block id="829124a47242d374aed9d0704a781736" category="paragraph">社内_のLinuxホスト_への一般的なインストールには、次のコンポーネントと接続があります。</block>
+  <block id="f6e3ad4e2f1393513d919f090b15ac68" category="paragraph">cloud_内のLinuxホストへの一般的なインストールには、次のコンポーネントと接続があります。</block>
 </blocks>

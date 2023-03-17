@@ -278,7 +278,7 @@ Cloud Data Senseを使用すると、選択したデータソースに対して�
 * 分類スキャンを実行する場合、データセンスはスキャナノードごとに1日あたり15～40個のTiBのデータをスキャンできます。
 
 
-link:task-deploy-compliance-onprem.html#deploy-data-sense-on-premises["データをスキャンするための複数のスキャナノードの導入の詳細については、こちらをご覧ください"^]。
+link:task-deploy-compliance-onprem.html#install-data-sense-on-the-linux-host["データをスキャンするための複数のスキャナノードの導入の詳細については、こちらをご覧ください"^]。
 
 
 

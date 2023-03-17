@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-dark-site.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade 
-summary: インターネットにアクセスできないオンプレミスサイトのホストにCloud Data Senseを導入するには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。 
+summary: インターネットにアクセスできないオンプレミスサイトのLinuxホストにData Senseをインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。 
 ---
 = インターネットにアクセスできないホストにData Senseをインストールします
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: インターネットにアクセスできないオンプレミスサ�
 
 
 [role="lead"]
-インターネットにアクセスできないオンプレミスサイトのホストにCloud Data Senseを導入するには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。
+インターネットにアクセスできないオンプレミスサイトのLinuxホストにData Senseをインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。
 
 また、次のことも可能です link:task-deploy-compliance-onprem.html["インターネットにアクセス可能なオンプレミスサイトにデータセンスを導入"]。
 

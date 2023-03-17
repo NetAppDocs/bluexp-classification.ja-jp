@@ -467,21 +467,3 @@ link:task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-t
 === コネクタへのデータセンス通信のためにセキュリティグループポートが変更されました
 
 Cloud Manager Connector のセキュリティグループでは、セキュリティを強化するために、データセンスインスタンスとの間のインバウンドトラフィックとアウトバウンドトラフィックにポート 80 ではなくポート 443 が使用されます。この時点では両方のポートは開いたままなので、問題はありませんが、将来のリリースではポート 80 が廃止される予定であるため、以前のどの環境でもセキュリティグループを更新する必要があります。
-
-
-
-== 2022 年 1 月 2 日
-
-
-
-=== グローバル Active Directory を統合して、ファイルの所有者と権限を識別する機能
-
-グローバル Active Directory を Cloud Data Sense と統合することで、ファイル所有者や、ファイルにアクセスできるユーザーやグループについてデータセンスがレポートする結果を高めることができます。
-
-Data Sense で特定のデータソースから CIFS ボリュームをスキャンできるように入力する Active Directory クレデンシャルに加えて、この新しい統合によって他のユーザやシステムも統合されるようになります。データセンスは、統合されたすべての Active Directory でユーザと権限の詳細を確認します。 link:task-add-active-directory-datasense.html["グローバル Active Directory の設定方法を参照してください"]。
-
-
-
-=== データセンスの「ポリシー」を使用してファイルを削除できるようになりました
-
-データセンスでは、ポリシーで定義したクエリに一致するファイルを自動的に削除できます。 link:task-managing-highlights.html#deleting-source-files-automatically-using-policies["カスタムポリシーの作成方法については、を参照してください"]。
