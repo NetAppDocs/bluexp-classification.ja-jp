@@ -16,7 +16,7 @@ summary: インターネットにアクセスできないオンプレミスサ�
 [role="lead"]
 インターネットにアクセスできないオンプレミスサイトのLinuxホストにData Senseをインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。
 
-また、次のことも可能です link:task-deploy-compliance-onprem.html["インターネットにアクセス可能なオンプレミスサイトにデータセンスを導入"]。
+また、次のことも可能です link:task-quick-start-connector-on-prem.html["インターネットにアクセス可能なオンプレミスサイトにデータセンスを導入"]。
 
 Data Senseインストールスクリプトは、システムと環境が必要な前提条件を満たしているかどうかを確認することから開始されます。前提条件がすべて満たされている場合は、インストールが開始されます。Data Senseのインストールとは別に前提条件を確認する場合は、前提条件のテストのみを行う別のソフトウェアパッケージをダウンロードできます。 link:task-test-linux-system.html["LinuxホストでData Senseをインストールする準備ができているかどうかを確認する方法を参照してください"]。
 
@@ -33,9 +33,7 @@ Data Senseインストールスクリプトは、システムと環境が必要�
 * Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージ
 
 
-非常に安全なBlueXPインストールが必要な特別な状況で、OneDriveアカウントまたはSharePoint Onlineアカウントからローカルデータをスキャンする場合は、データセンスオフラインインストーラを使用して、一部のエンドポイントへのインターネットアクセスを提供できます。を参照してください <<SharePoint と OneDrive の特別な要件,SharePoint と OneDrive の特別な要件>> を参照してください。
-
-現在、データセンスがダークサイトに導入されている場合、Cloud Volumes ONTAP 、Azure NetApp Files 、ONTAP 用FSX、AWS S3、またはGoogleドライブのアカウントのスキャンはサポートされません。
+現在、Cloud Volumes ONTAP 、Azure NetApp Files 、FSx for ONTAP 、AWS S3、Googleドライブのスキャンはサポートされていません。 Data Senseがダークサイトに導入されている場合は、OneDrive（SharePoint Online）アカウントが作成されます。
 
 
 
@@ -50,7 +48,7 @@ Data Senseインストールスクリプトは、システムと環境が必要�
 * ユーザからのフィードバックを受け取る
 * BlueXPからの自動ソフトウェアアップグレード
 +
-BlueXPコネクタとデータセンスの両方で、新しい機能を有効にするには定期的に手動でアップグレードする必要があります。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-in-a-location-without-internet-access["BlueXP Connectorをアップグレードします"^] および <<Data Sense ソフトウェアをアップグレードする,データセンスソフトウェアをアップグレードします>>。
+BlueXPコネクタとデータセンスの両方で、新しい機能を有効にするには定期的に手動でアップグレードする必要があります。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["BlueXP Connectorをアップグレードします"^] および <<Data Sense ソフトウェアをアップグレードする,データセンスソフトウェアをアップグレードします>>。
 
 
 
@@ -207,26 +205,6 @@ Active Directory の次の情報が必要です。
 
 |===
 複数のData Senseホストを使用してデータソースをスキャンする場合は、追加のポートやプロトコルを有効にする必要があります。 link:task-deploy-compliance-dark-site.html#multi-host-installation-for-large-configurations["追加のポート要件を参照してください"]。
-
-
-
-== SharePoint と OneDrive の特別な要件
-
-インターネットにアクセスできないサイトにBlueXPとData Senseを展開すると、SharePoint OnlineアカウントとOneDriveアカウントでファイルをスキャンできます。これには、一部のエンドポイントへのインターネットアクセスが提供されます。
-
-ローカルにインストールされたSharePointオンプレミスアカウントは、インターネットにアクセスしなくてもスキャンできます。
-
-[cols="50,50"]
-|===
-| エンドポイント | 目的 
-
-
-| ¥ login.microsoft.com ¥ graph.microsoft.com | 選択したオンラインサービスにログインするための Microsoft サーバとの通信。 
-
-
-| \ https://api.bluexp.netapp.com | ネットアップアカウントを含むBlueXPサービスとの通信 
-|===
-_api.bluexp.netapp.com_へのアクセスは、これらの外部サービスへの初期接続時にのみ必要です。
 
 
 
