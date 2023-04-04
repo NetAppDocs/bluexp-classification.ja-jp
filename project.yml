@@ -27,6 +27,8 @@ sidebar:
         url: "/task-deploy-compliance-onprem.html"
       - title: インターネットにアクセスせずにオンプレミスにインストール
         url: "/task-deploy-compliance-dark-site.html"
+      - title: LinuxホストでData Senseをインストールできる状態になっていることを確認します
+        url: "/task-test-linux-system.html"
     - title: データソースでスキャンをアクティブ化します
       entries:
       - title: Cloud Volumes ONTAP とオンプレミス ONTAP
@@ -91,6 +93,8 @@ sidebar:
       url: "/task-uninstall-data-sense.html"
   - title: 参照
     entries:
+    - title: サポートされるData Senseインスタンスタイプ
+      url: "/reference-instance-types.html"
     - title: データソースから収集されたメタデータ
       url: "/reference-collected-metadata.html"
   - title: 知識とサポート
@@ -109,11 +113,11 @@ homepage:
       url: concept-cloud-compliance.html
     - title: 新機能
       url: whats-new.html
-    - title: Data Senseをクラウドに自動的に導入
+    - title: BlueXPを使用してData Senseをクラウドに導入
       url: task-deploy-cloud-compliance.html
-    - title: インターネットを使用したLinuxホストにデータセンスを導入する
+    - title: インターネットを使用するLinuxホストにData Senseをインストールします
       url: task-deploy-compliance-onprem.html
-    - title: インターネットを使用せずにオンプレミスにデータセンスを導入
+    - title: インターネットを使用せずに、Data Senseをオンプレミスにインストールします
       url: task-deploy-compliance-dark-site.html
     - title: Active Directory を統合します
       url: task-add-active-directory-datasense.html

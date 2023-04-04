@@ -1,0 +1,157 @@
+---
+sidebar: sidebar 
+permalink: task-manage-file-access-events.html 
+keywords: compliance, actions, view progress, audit, logs, installation 
+summary: Data Senseでは、スキャン対象のファイルのいずれかがアクセスまたは変更されたときにイベントをファイルに記録するように設定できます。次に、このファイル（ファイルアクセス監査ログ）の内容を表示するか、ファイルをダウンロードして、どのファイル変更が行われたか、誰によって行われたかを確認できます。 
+---
+= ファイルアクセスイベントを監視および管理します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Data Senseでは、スキャン対象のファイルのいずれかがアクセスまたは変更されたときにイベントをファイルに記録するように設定できます。次に、このファイル（ファイルアクセス監査ログ）の内容を表示するか、ファイルをダウンロードして、どのファイル変更が行われたか、誰によって行われたかを確認できます。
+
+たとえば、機密性の高い人事ファイルまたは給与ファイルに変更が加えられたタイミングを追跡する場合は、これらのファイルが存在するボリュームでこの機能を有効にすることができます。次に、ファイルアクセス監査ログを表示して、これらのファイルが変更されているかどうかを確認できます。変更されている場合は、変更を行ったユーザーの名前と変更がいつ行われたかを確認できます。
+
+この機能は、ONTAP 作業環境内の重要なボリュームで有効にすることができます。ボリュームで有効にすると、ボリューム内のすべてのファイルおよびディレクトリについてファイルアクセスイベントが追跡されます。この機能はに基づいています https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy機能"^] ONTAP システムから、Data SenseシステムをFPolicyサーバとして使用してONTAP から通知メッセージ（イベント）を受信します。
+
+Data Senseは現在、ファイルおよびディレクトリに対する次のアクションのイベントをキャプチャします。
+
+* 作成
+* 読み取り
+* 書き込み
+* 名前を変更する
+* 削除
+* 所有者/権限を変更します
+* SACL/DACLの変更（アクセス制御リスト（ACL）の変更）
+
+
+「Account Admin」または「Workspace Admin」ロールを持つBlueXPユーザは、ファイルアクセス監査ログ用にボリュームを設定し、監査ログの表示とダウンロードを行うことができます。「Compliance Viewer」ロールを持つユーザは、監査ログの表示とダウンロードのみを実行できます。
+
+
+
+== サポートされているデータソース
+
+Data Senseでは、次のデータソースにあるファイルのファイルアクセスイベントをログに記録できます。
+
+* オンプレミスのONTAP
+* Cloud Volumes ONTAP
+* Azure NetApp Files の特長
+* FSX for ONTAP の略
+
+
+Data Senseがファイルにアクセスしたユーザの名前を識別できるように、これらのデータソース用にActive Directoryを設定しておく必要があります。
+
+
+
+== ファイルアクセス監査ログ用にボリュームを設定します
+
+個 々 のボリュームでファイルアクセス監査ログを有効にして、ファイルおよびディレクトリの変更を追跡できます。
+
+ヒント:: この時点で、各ONTAP システム上の最大5個のボリュームについてファイルアクセス監査を設定できます。
+
+
+.手順
+. データソースの_Scan Configuration_pageで、をクリックします image:screenshot_horizontal_more_button.gif["[ 詳細 ] アイコン"] を選択し、*[ファイルアクセス監査の設定]*を選択します。
++
+image:screenshot_compliance_file_access_audit_button.png["ファイルアクセスログを有効にするボリュームを選択するスクリーンショット。"]
+
+. [ファイルアクセス監査の設定]ダイアログで、*[ファイルアクセスイベントのロギングを有効にする]*のチェックボックスをクリックし、*[保存]*をクリックします。
++
+現時点では、すべての潜在的なロギングアクションがデフォルトで選択されていることに注意してください。これらのアクションは編集できません。
+
++
+image:screenshot_compliance_file_access_audit_dialog.png["ボリュームのロギングを有効または無効にしたり、ログに記録する処理を選択したりするためのダイアログのスクリーンショット。"]
+
+. ボリュームのファイルアクセス監査が有効になっていることを確認します。
++
+image:screenshot_compliance_file_access_audit_done.png["特定のボリュームでファイルアクセス監査ログが有効になっていることを示すスクリーンショット。"]
+
+
+
+.結果
+有効なボリューム上のファイルに対して生成されたファイルアクセスイベントはすべてログファイルに追加されます。受信したイベントのタイプをログファイルで確認してください。
+
+
+
+== ログファイルの内容
+
+ファイルアクセスイベントを追跡するように設定した各ボリュームについて、ログファイルが作成されます。監査ログの各行には、次の形式で情報が表示されます。
+
+`<timestamp> | <volume_name> | <event_type> | <file_name> | <user_name> | <action_result> | <action_details>`
+
+* timestamp -イベントの日時
+* Volume name -ボリュームの名前
+* イベントタイプ-作成、読み取り、書き込み、名前変更、削除、 所有者/権限を変更し、SACL/DACLを変更します
+* File name -フルパスとファイル名
+* ユーザー名（またはID）-アクションを実行したユーザーの名前またはID
+* アクション結果-アクションが成功したか失敗したか、および成功/失敗の理由
+* アクションの詳細-何が行われたか:アクションによって異なります
+
+
+たとえば、ログファイルの次の行は、コピー処理が成功し、コピー処理が失敗した場合を示しています。
+
+....
+2022-06-06 15:23:08,910 | INFO | ds_audit_logger | es_scanned_file | 237 | 49 | Copy file /CIFS_share/data/dop1/random_positives.tsv from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - SUCCESS
+2022-06-06 15:23:08,968 | WARNING | ds_audit_logger | es_scanned_file | 239 | 153 | Copy file /CIFS_share/data/compliance-netapp.tar.gz from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - FAILURE
+....
+
+
+== ファイルアクセス監査ログファイルにアクセスします
+
+ファイルアクセス監査ログファイルは、Data Senseマシンの次の場所にあります。 `/opt/netapp/audit_logs/`
+
+ログファイルの名前は「File_Access_Audit_MedicalData_20230205092321.log <volume_name> 」のように「File_Access_Audit_MedicalData_20230205092321.log <timestamp> 」になります。<timestamp> は、Data Senseが最初のログをファイルに書き込んだ時刻です。各ファイルには、デフォルトで最大50、000件のイベントが格納されるように設定されています。 <<ファイルアクセス監査ログを設定します,この値は、[File Access Audit Log Configuration]ページでカスタマイズできます。>> この最大数に達すると、そのボリュームの新しいログファイルが作成されます。新しいファイルのタイムスタンプは新しくなります。
+
+ディレクトリ内のすべてのログファイルの合計サイズは、デフォルト値の50GBに設定されています。 <<ファイルアクセス監査ログを設定します,この値は、[File Access Audit Log Configuration]ページでカスタマイズできます。>> この制限に達すると、最も古いログファイルが自動的に削除されます。
+
+Data SenseがオンプレミスのLinuxマシン、またはクラウドに導入したLinuxマシンにインストールされている場合は、ログファイルに直接移動できます。
+
+Data Senseをクラウドに導入する場合は、Data SenseインスタンスにSSHで接続する必要があります。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。
+
+ ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
+* <path-to_The _ssh_key>= SSH認証キーの場所
+* <machine_user>：
++
+** AWSの場合：<ec2-user>を使用します
+** Azureの場合：BlueXPインスタンス用に作成したユーザを使用します
+** GCPの場合：BlueXPインスタンス用に作成されたユーザーを使用します
+
+
+* <datasension_IP>=仮想マシンインスタンスのIPアドレス
+
+
+クラウドのシステムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。詳細については、以下を参照してください。
+
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWSのセキュリティグループのルール"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azureのセキュリティグループルール"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Google Cloudのファイアウォールルール"^]
+
+
+
+
+== ファイルアクセス監査ログを設定します
+
+ファイルアクセス監査ファイルログには3つのオプションを設定できます。これらの設定は、このData Senseインスタンスでファイルアクセス監査ログを設定しているすべてのデータソースに適用されます。これらの設定は、Data Sense_Configuration_pageの_File Access Audit Log_セクションで行います。
+
+image:screenshot_compliance_file_access_audit_config.png["[Data Sense Configuration]ページの監査ログの設定を示すスクリーンショット。"]
+
+[cols="30,50"]
+|===
+| [監査ログ]オプション | 説明 
+
+
+| ログファイルの場所 | 現在の場所は、ログファイルを書き込むためにハードコーディングされています `/opt/netapp/audit_logs/` 
+
+
+| 監査ログの最大ストレージ割り当て | ディレクトリ内のすべてのログファイルの合計サイズは、現在デフォルト値の50GBにハードコードされています。この制限に達すると、最も古いログファイルが自動的に削除されます。 
+
+
+| 監査ファイルあたりの監査イベントの最大数 | 現在、各ファイルには最大50、000個のイベントが格納されるようにハードコーディングされています。この最大数に達すると、そのボリュームの新しいログファイルが作成されます。新しいファイルのタイムスタンプは新しくなります。 
+|===
+これらの設定は現在、デフォルト設定にハードコードされています。変更することはできません。

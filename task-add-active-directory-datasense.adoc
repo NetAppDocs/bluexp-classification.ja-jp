@@ -39,9 +39,11 @@ Active Directory と Cloud Data Sense との統合により、次のデータソ
 * Azure NetApp Files の特長
 * FSX for ONTAP の略
 * ネットアップ以外のCIFSファイル共有（NFSファイル共有は除く）
+* OneDrive アカウント
+* SharePoint アカウント
 
 
-データベーススキーマ、OneDriveアカウント、SharePointアカウント、Googleドライブアカウント、Amazon S3アカウント、 または、Simple Storage Service（S3）プロトコルを使用するObject Storageの略。
+データベーススキーマ、Googleドライブアカウント、Amazon S3アカウント、またはSimple Storage Service（S3）プロトコルを使用するオブジェクトストレージからユーザと権限の情報を識別することはできません。
 
 
 

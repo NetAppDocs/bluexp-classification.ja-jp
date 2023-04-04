@@ -18,6 +18,8 @@ summary: インターネットにアクセスできないオンプレミスサ�
 
 また、次のことも可能です link:task-deploy-compliance-onprem.html["インターネットにアクセス可能なオンプレミスサイトにデータセンスを導入"]。
 
+Data Senseインストールスクリプトは、システムと環境が必要な前提条件を満たしているかどうかを確認することから開始されます。前提条件がすべて満たされている場合は、インストールが開始されます。Data Senseのインストールとは別に前提条件を確認する場合は、前提条件のテストのみを行う別のソフトウェアパッケージをダウンロードできます。 link:task-test-linux-system.html["LinuxホストでData Senseをインストールする準備ができているかどうかを確認する方法を参照してください"]。
+
 
 
 == サポートされているデータソース
@@ -48,7 +50,7 @@ summary: インターネットにアクセスできないオンプレミスサ�
 * ユーザからのフィードバックを受け取る
 * BlueXPからの自動ソフトウェアアップグレード
 +
-BlueXPコネクタとデータセンスの両方で、新しい機能を有効にするには定期的に手動でアップグレードする必要があります。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["BlueXP Connectorをアップグレードします"^] および <<Data Sense ソフトウェアをアップグレードする,データセンスソフトウェアをアップグレードします>>。
+BlueXPコネクタとデータセンスの両方で、新しい機能を有効にするには定期的に手動でアップグレードする必要があります。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-in-a-location-without-internet-access["BlueXP Connectorをアップグレードします"^] および <<Data Sense ソフトウェアをアップグレードする,データセンスソフトウェアをアップグレードします>>。
 
 
 
@@ -60,7 +62,7 @@ BlueXPコネクタとデータセンスの両方で、新しい機能を有効�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] BlueXPコネクタを取り付けます
 [role="quick-margin-para"]
-オフラインのオンプレミスサイトにコネクタがまだインストールされていない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["コネクタを配置します"^] Linux ホストの場合は、
+オフラインのオンプレミスサイトにコネクタがまだインストールされていない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["コネクタを配置します"^] Linux ホストの場合は、
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] データセンスの前提条件を確認します
 [role="quick-margin-para"]
@@ -78,7 +80,7 @@ Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは30日�
 
 == BlueXPコネクタを取り付けます
 
-オフラインのオンプレミスサイトにBlueXPコネクタがインストールされていない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["コネクタを配置します"^] オフラインサイトの Linux ホスト
+オフラインのオンプレミスサイトにBlueXPコネクタがインストールされていない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["コネクタを配置します"^] オフラインサイトの Linux ホスト
 
 
 
@@ -93,13 +95,15 @@ Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは30日�
 | システムサイズ | CPU | RAM（スワップメモリを無効にする必要があります） | ディスク 
 
 
-| 大規模 | 16 CPU | 64GBのRAM | 500 GB SSDオン/または*オプションで100 GB利用可能*/varで395 GB */tmpで5 GB利用可能 
+ a| 
+*大きい*
+| 16 CPU | 64GBのRAM | 500GiB SSDオン/、または* 100GiBオン/opt * 395GiBオン/var * 5GiBオン/tmp 
 
 
-| 中 | 8 CPU | 32GBのRAM | 200 GB SSDオン/または* 50 GB (/opt)* 145 GB (/var)* 5 GB (/tmp 
+| *中* | 8 CPU | 32GBのRAM | SSDが200GiB、または-50GiBが/opt-145GiBが/var-5GiBが/tmpにある 
 
 
-| 小規模 | 8 CPU | 16GB の RAM | 100 GB SSDオン/または* 50 GB（オプション）* 45 GB（/var * 5 GB（/tmp 
+| *小さい* | 8 CPU | 16GB の RAM | 100GiB SSDオン/または-50GiBオン/opt-45GiBオン/var-5GiBオン/tmp 
 |===
 +
 これらの小さいシステムを使用する場合は制限があることに注意してください。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
@@ -122,12 +126,9 @@ Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは30日�
 ....
 firewall-cmd --permanent --add-service=http
 firewall-cmd --permanent --add-service=https
-firewall-cmd --permanent --add-service=mysql
 firewall-cmd --permanent --add-port=80/tcp
 firewall-cmd --permanent --add-port=8080/tcp
 firewall-cmd --permanent --add-port=443/tcp
-firewall-cmd --permanent --add-port=555/tcp
-firewall-cmd --permanent --add-port=3306/tcp
 firewall-cmd --reload
 ....
 +
@@ -398,8 +399,8 @@ Cloud Data Sense インストーラがパッケージのインストールを完
 データセンスソフトウェアは定期的に新しい機能で更新されるため、定期的に新しいバージョンをチェックして最新のソフトウェアや機能を使用していることを確認する必要があります。自動的にアップグレードを実行するためのインターネット接続がないため、 Data Sense ソフトウェアを手動でアップグレードする必要があります。
 
 .作業を開始する前に
-* データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.18.xがインストールされている場合は、1.19.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。
-* オンプレミスコネクタソフトウェアが最新バージョンにアップグレードされていることを確認します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["コネクタのアップグレード手順を参照してください"^]。
+* データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.20.xがインストールされている場合は、1.21.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。
+* オンプレミスコネクタソフトウェアが最新バージョンにアップグレードされていることを確認します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-in-a-location-without-internet-access["コネクタのアップグレード手順を参照してください"^]。
 
 
 .手順

@@ -119,6 +119,7 @@ Data Subject Access Request レポート:: データ主体の特定の名前ま�
 PCI DSS レポート:: クレジットカード情報のファイルへの配布を識別するのに役立ちます。 link:task-generating-compliance-reports.html#pci-dss-report["詳細はこちら。"^]。
 HIPAA レポート:: 健常性情報がファイルにどのように分散されているかを確認できます。 link:task-generating-compliance-reports.html#hipaa-report["詳細はこちら。"^]。
 データマッピングレポート:: 作業環境内のファイルのサイズと数について説明します。これには、使用容量、データの経過時間、データのサイズ、ファイルタイプが含まれます。 link:task-controlling-governance-data.html#data-mapping-report["詳細はこちら。"^]。
+Data Discovery Assessmentレポート:: スキャンされた環境の高度な分析を行い、システムの調査結果を強調し、懸念すべき領域と潜在的な修復手順を示します。 link:task-controlling-governance-data.html#data-discovery-assessment-report["学習モード"^]。
 特定の情報タイプに関するレポート:: 個人データや機密性の高い個人データを含む、特定されたファイルの詳細を含むレポートを利用できます。カテゴリおよびファイルタイプ別に分類されたファイルを表示することもできます。 link:task-controlling-private-data.html["詳細はこちら。"^]。
 
 
@@ -353,7 +354,7 @@ Connectorは、クラウドアカウントまたはオンプレミスのいず�
 
 === コネクタを自分のホストに導入できますか。
 
-はい。可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタをオンプレミスに導入"^] 自社ネットワーク内またはクラウド内の Linux ホストオンプレミスにデータセンスを導入する場合は、オンプレミスにもコネクタをインストールできますが、必須ではありません。
+はい。可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタをオンプレミスに導入"^] ネットワーク内のLinuxホストまたはクラウド内のホスト。オンプレミスにデータセンスを導入する場合は、オンプレミスにもコネクタをインストールできますが、必須ではありません。
 
 
 
@@ -379,9 +380,9 @@ BlueXPを使用すると、オンプレミス、クラウド、ハイブリッ�
 
 いつ link:task-deploy-cloud-compliance.html["クラウドに導入"]：
 
-* AWS では、 Cloud Data Sense は、 500 GB の gp2 ディスクを使用する m5.-m構築 インスタンスで実行されます。
-* Azure では、 Cloud Data Sense は、 512 GB のディスクを搭載した Standard_D16s_v3 VM で実行されます。
-* GCP では、クラウドデータセンスは、 512 GB の標準永続ディスクを搭載した n2 標準の -16 VM で実行されます。
+* AWSでは、Cloud Data Senseは、500GiBのgp2ディスクを含むm6i.4xlargeインスタンスで実行されます。導入時に小さいインスタンスタイプを選択できます。
+* Azureでは、Cloud Data Senseは、ディスクが500GiBのStandard_D16s_v3 VMで実行されます。
+* GCPでは、Cloud Data Senseがn2-standard-16 VMと500GiB Standard永続ディスクで実行されます。
 
 
 CPU 数と RAM 容量が少ないシステムには Data Sense を導入できますが、これらのシステムの使用には制限があります。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。

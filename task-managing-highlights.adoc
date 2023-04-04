@@ -254,7 +254,7 @@ image:screenshot_compliance_move_file.png["[ データ調査 ] ページのフ�
 ［調査］ペインから手動でファイルを削除することも、手動でファイルを削除することもできます link:task-using-policies.html#deleting-source-files-automatically-using-policies["ポリシーを使用して自動的に作成"^]。
 
 
-TIP: データベースに存在するファイルは削除できません。
+TIP: データベースに存在するファイルは削除できません。その他のすべてのデータソースがサポートされます。
 
 ファイルを削除するには、次の権限が必要です。
 

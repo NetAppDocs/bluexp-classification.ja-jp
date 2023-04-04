@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: reference-instance-types.html 
+keywords: data sense, installation, deployment, instance, virtual machine, cpu, ram, memory, disk, capacity 
+summary: データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。Data Senseをクラウドに導入する場合は、完全な機能を実現するために、「大」な特性を持つシステムを使用することをお勧めします。 
+---
+= サポートされるData Senseインスタンスタイプ
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。Data Senseをクラウドに導入する場合は、完全な機能を実現するために、「大」な特性を持つシステムを使用することをお勧めします。
+
+CPU の数と RAM の数が少ないシステムには Data Sense を導入できますが、このような低パフォーマンスのシステムを使用する場合はいくつかの制限事項があります。 link:concept-cloud-compliance.html#using-a-smaller-instance-type["これらの制限事項について説明します"^]。
+
+次の表では、Data Senseをインストールする地域で「Default」とマークされたシステムが使用できない場合、テーブル内の次のシステムがデプロイされます。
+
+
+
+== AWSインスタンスタイプ
+
+[cols="20,30,25"]
+|===
+| システムサイズ | 仕様 | インスタンスタイプ 
+
+
+| 大規模 | CPU×16、64GB RAM、500GiB SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlarge"^] （デフォルト）M6A.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
+
+
+| 中 | CPU×8、32GB RAM、200GiB SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.2xlarge"^] （デフォルト）M6A.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge 
+
+
+| 小規模 | CPU×8、16GB RAM、100GiB SSD | https://aws.amazon.com/ec2/instance-types/c6a/["c6a.2xlarge"^] （デフォルト）C5a.2xlarge c5.2xlarge c4.2xlarge 
+|===
+
+
+== Azureインスタンスタイプ
+
+[cols="20,30,25"]
+|===
+| システムサイズ | 仕様 | インスタンスタイプ 
+
+
+| 大規模 | CPU×16、64GB RAM、500GiB SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^] （デフォルト） 
+|===
+
+
+== GCPインスタンスタイプ
+
+[cols="20,30,25"]
+|===
+| システムサイズ | 仕様 | インスタンスタイプ 
+
+
+| 大規模 | CPU×16、64GB RAM、500GiB SSD | https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["N2-standard-16"^] （デフォルト）n2d-standard-16 n1-standard-16 
+|===

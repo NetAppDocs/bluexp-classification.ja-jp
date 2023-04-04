@@ -67,11 +67,8 @@
   <block id="b2cb0dfc268db5acb28e7fc82122b4ef" category="section-title">Cloud Data Sense インスタンス</block>
   <block id="a2307e61704d7f90e208909df7acf926" category="inline-link">コネクタの詳細については、こちらをご覧ください。</block>
   <block id="0fcbb838b28fe6620124c2e3523d9aec" category="paragraph">デフォルトのインスタンスについては、次の点に注意してください。</block>
-  <block id="80d772d8784b88bad9910cdc30032f74" category="inline-link-macro">m5.mc2[ インスタンス</block>
-  <block id="7f434e51611909e5eb5af33f1a0f0292" category="paragraph">m5.mcd を使用できない領域では、代わりに m4.mcd インスタンスに対してデータセンスを実行します。</block>
   <block id="d4167e5918d44a2511d9c29b74d9811f" category="inline-link-macro">Standard_D16s_v3 VM</block>
   <block id="f62345014eb3b94916730d5fa4eb623f" category="inline-link-macro">N2-standard-16 VM</block>
-  <block id="6c5ebc6dfed433f5cfd2cbc9f155a4d4" category="paragraph">n2-dstandard-16 を使用できない地域では、データセンスは n2D-standard-16 または n1-standard-16 VM で実行されます。</block>
   <block id="3fad8aded3d84039416c1bf00afe09d2" category="list-text">コネクタごとに展開されるデータセンスインスタンスは 1 つだけです。</block>
   <block id="37b7293831ce40b655b7cce97556550c" category="admonition">Cloud Data Sense がデータを継続的にスキャンするため、インスタンスは常時実行している必要があります。</block>
   <block id="5da9cb7e92b520a48c2475de5ec9958c" category="section-title">小さいインスタンスタイプを使用しています</block>
@@ -79,15 +76,11 @@
   <block id="8c270421a057347baf727ea386f58d8f" category="cell">システムサイズ</block>
   <block id="360d214e899b88b8fe54a260668c2f48" category="cell">仕様</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="cell">制限</block>
-  <block id="22fad480ac9ff79ef7e253e26c1bafb9" category="cell">CPU × 16 、 64GB RAM 、 500GB SSD</block>
   <block id="6adf97f83acf6453d4a6a4b1070f3754" category="cell">なし</block>
   <block id="87f8a6ab85c9ced3702b4ea641ad4bb5" category="cell">中</block>
-  <block id="b7b3586dae0f6b8a79d8a9922a9dc1c8" category="cell">CPU × 8 、 32GB RAM 、 200GB SSD</block>
   <block id="67c7201d970ee76fdf5320231dbc0367" category="cell">スキャンに時間がかかり、スキャンできるファイルは最大 100 万個です。</block>
   <block id="2660064e68655415da2628c2ae2f7592" category="cell">小規模</block>
-  <block id="67500e825f15efcb73b5097b9deed9de" category="cell">CPU × 8 、 16GB RAM 、 100GB SSD</block>
   <block id="49ca56879094b0664574fba79a043f6b" category="inline-link-macro">データ主体名</block>
-  <block id="b61f68880abe82c6d663336d713d59d8" category="paragraph">クラウドにデータセンスを導入する場合は、 ng-contact-data-sense@netapp.com に電子メールを送信して、これらの小規模なシステムのいずれかを使用する場合のサポートを依頼してください。これらの小規模なクラウド構成を導入するには、弊社と協力する必要があります。</block>
   <block id="84d93659eb6a270802011bcf6d41163c" category="paragraph">データセンスをオンプレミスで導入する場合は、小さい仕様の Linux ホストを使用するだけです。ネットアップにお問い合わせいただく必要はありません。</block>
   <block id="8aa646444b52d32991c2599985610fda" category="section-title">Cloud Data Sense の仕組み</block>
   <block id="f2e9b9e6e80191061cb53d43527fddfb" category="paragraph">Cloud Data Sense の概要は次のようになります。</block>
@@ -319,7 +312,6 @@
   <block id="8f8c34ce8b2510cd1c1e29b5a17cd92e" category="list-text">健常性の情報が見つかった作業環境、および暗号化とランサムウェアによる保護が有効になっているかどうか。</block>
   <block id="bdb2200dccd3bf8bccbda3121ec3619d" category="section-title">HIPAA レポートの生成</block>
   <block id="f6bcba6045f642cc0b7c93a339fe0eb7" category="list-text">[*Compliance] をクリックし、 [*Reports*] の下にある [*HIPAA Report*] の横にあるダウンロードアイコンをクリックします。</block>
-  <block id="7e43e51cb3c53b57ebe1d356fa9ce0d3" category="paragraph">データマッピングレポートには、企業データソースに保存されているデータの概要が表示され、移行、バックアップ、セキュリティ、コンプライアンスの各プロセスの決定に役立ちます。最初に、すべての作業環境とデータソースをまとめた概要レポートが表示され、それぞれの作業環境の内訳が表示されます。</block>
   <block id="03841f26d25c8d7aef0d271b79a05859" category="list-text">使用容量</block>
   <block id="660bfa8882061d8f060790c38df904d6" category="list-text">すべての作業環境：各作業環境のファイル数と使用済み容量が表示されます。単一の作業環境の場合：容量が最も多いファイルが表示されます。</block>
   <block id="aa414adba4c4fe0e85f670431eeaa7a2" category="list-text">データの経過時間</block>
@@ -329,7 +321,6 @@
   <block id="f12b42eece54a56ffab836a42eb37488" category="list-text">ファイルの種類</block>
   <block id="7d8121f1bc518fb0e6e184fba09d6b2b" category="list-text">作業環境に保存されているファイルタイプごとのファイルの総数と使用容量が表示されます。</block>
   <block id="e880ed205f16cce0e493e65a4bcedcf6" category="section-title">データマッピングレポートの生成</block>
-  <block id="618cc1d8fab41cc033780366f37dfbf9" category="list-text">[* Governance （ガバナンス） ] をクリックし、 [Governance Dashboard] から [* Full Data Mapping Overview Report] ボタンをクリックします。</block>
   <block id="20e8135f6b31b5442360d1284197abb8" category="section-title">レポートの作業環境を選択する</block>
   <block id="26b847443fa0cba1e0e89bc161a96dc4" category="paragraph">Cloud Data Sense Compliance ダッシュボードの内容をフィルタリングして、すべての作業環境とデータベース、または特定の作業環境のコンプライアンスデータを表示できます。</block>
   <block id="a579d8ff87b6bc74884198778880b790" category="paragraph">ダッシュボードをフィルタすると、 Data Sense によって、選択した作業環境だけにコンプライアンスデータとレポートがスコープされます。</block>
@@ -706,9 +697,6 @@
   <block id="507eddf0133d6696604714a129b07a0a" category="section-title">クラウドデータのコストはどれくらいですか？</block>
   <block id="96e962ef0775cfff1c6fd6a71c485c8e" category="section-title">クラウドデータセンスにはどのようなタイプのインスタンスまたは VM が必要ですか。</block>
   <block id="3cf31c18e1b66993cf63511a5ea327f3" category="paragraph">いつ <block ref="63b25124667f9a48140e6efc7dc1fd70" category="inline-link-macro-rx"></block>：</block>
-  <block id="ef56cc072a6aac56c9a359e54f9bf51e" category="list-text">AWS では、 Cloud Data Sense は、 500 GB の gp2 ディスクを使用する m5.-m構築 インスタンスで実行されます。</block>
-  <block id="c50ed3e22a4bfeee9406b38e0c990d7d" category="list-text">Azure では、 Cloud Data Sense は、 512 GB のディスクを搭載した Standard_D16s_v3 VM で実行されます。</block>
-  <block id="0dcadc6850a080e0aaf098b94efc849b" category="list-text">GCP では、クラウドデータセンスは、 512 GB の標準永続ディスクを搭載した n2 標準の -16 VM で実行されます。</block>
   <block id="316f1a7bec809a19ab21b47d40188af1" category="inline-link-macro">クラウドデータセンスをオンプレミスに導入</block>
   <block id="cefd0b228a5747e3f0cab5061078bb59" category="inline-link-macro">インターネットにアクセスできないオンプレミスサイトにデータセンスを導入する</block>
   <block id="7e3d41c2a56c6d626cd7bcbb65667f41" category="paragraph">CPU 数と RAM 容量が少ないシステムには Data Sense を導入できますが、これらのシステムの使用には制限があります。を参照してください <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> を参照してください。</block>
@@ -1156,7 +1144,6 @@
   <block id="652c33068cfd81ee8751b1f84d12e4a0" category="inline-image-macro">[ データ調査 ] ページのファイルのメタデータ詳細から [ ファイルの移動 ] ボタンを選択したことを示すスクリーンショット。</block>
   <block id="aea50b39bf674599cf913ca73fc8eeb2" category="paragraph"><block ref="aea50b39bf674599cf913ca73fc8eeb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f00d1d6da069b57d87e693fce6b2fc27" category="paragraph">ストレージ・システムに残すのに安全でない ' またはリスクが高すぎるソース・ファイルを完全に削除したり ' 重複として識別したソース・ファイルを削除したりすることができますこの操作は永続的であり、元に戻すことも復元することもできません。</block>
-  <block id="59e754650981360e03b49e1eab4a76eb" category="admonition">データベースに存在するファイルは削除できません。</block>
   <block id="5415e45b4bcc0ac609070c6e72408406" category="paragraph">ファイルを削除するには、次の権限が必要です。</block>
   <block id="e9d85b8e3ea5257d3468eb6f787a1fcd" category="list-text">S3 データの場合 - IAM ロールに次の権限を含める必要があります。「 3 ： DeleteObject 」</block>
   <block id="6a73b2e7e212b654de2a1932805f983e" category="section-title">ソースファイルを手動で削除しています</block>
@@ -1197,7 +1184,6 @@
   <block id="bcf35880f7965059f014c3f42b15db3d" category="inline-link-macro">Cloud Data Sense リリースノート</block>
   <block id="14840f2c01874b7a01eecfd86794b6d5" category="inline-xref">データセンスソフトウェアをアップグレードします</block>
   <block id="b2ddcf19cd8b44eb7a130f3b9f666f56" category="inline-link">コネクタを配置します</block>
-  <block id="ae1d335322e61ad9be15599df78220db" category="paragraph">オフラインのオンプレミスサイトにコネクタがまだインストールされていない場合は、<block ref="b3b935401d776406adc004ee5c72bf0e" category="inline-link-rx"></block> Linux ホストの場合は、</block>
   <block id="5462103113dfca7582cf43f266db09a2" category="inline-xref">ホストの要件</block>
   <block id="532b2291afa0585aed0b7f83e343086f" category="inline-xref">権限と接続</block>
   <block id="915bca96e4db936d4227065b020aa1cf" category="paragraph">ネットアップサポートサイトから Cloud Data Sense ソフトウェアをダウンロードし、使用する Linux ホストにインストーラファイルをコピーします。次に、インストールウィザードを起動し、プロンプトに従って Cloud Data Sense インスタンスを導入します。</block>
@@ -1349,25 +1335,19 @@
   <block id="24f7d339e21b63b3cef99a7c8f1236fe" category="inline-link">GCP でコネクタを作成する</block>
   <block id="5c57e099e3c98ea1983b433c3aa4eab8" category="paragraph">コネクタがない場合は、ここでコネクタを作成します。を参照してください<block ref="e291ebc6db7a8ec08d333384efa4743e" category="inline-link-rx"></block>、<block ref="3f9648a8e8f665af7b23c050702c5c95" category="inline-link-rx"></block>または<block ref="2559e3f18112d727f751d3574900096c" category="inline-link-rx"></block>。</block>
   <block id="a54d3bccf6c646c46c072ad1fc403cb6" category="inline-link">コネクタをオンプレミスに導入</block>
-  <block id="9aecc463471d89bd7531307416b1777f" category="paragraph">また可能です<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 自社ネットワーク内またはクラウド内の Linux ホスト</block>
   <block id="b0b5e56bc6683eeb5bd66d725ffbf72f" category="paragraph">環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、ポート 443 を介したコネクタとクラウドデータセンスの接続などが含まれます。 <block ref="25e4901d8a209a1b27bffd328e6e2ea6" category="inline-xref-macro-rx"></block>。</block>
-  <block id="6d825a7ca5971b261275e11619e3fbec" category="inline-link-macro">インスタンスタイプの詳細</block>
-  <block id="e1971d5a96b591faa37eb213beeb5c4b" category="paragraph">デフォルトの構成では、 Cloud Data Sense インスタンス用に 16 個の vCPU が必要です。を参照してください <block ref="894b8b0ef449df10be00d1f928be0d44" category="inline-link-macro-rx"></block>。</block>
   <block id="376a2280a9f9a3916780ea2443250281" category="paragraph">インストールウィザードを起動して、クラウドに Cloud Data Sense インスタンスを導入します。</block>
   <block id="94ee7072c2750da1997438a715efb7d4" category="section-title">コネクタを作成します</block>
   <block id="ee9e25ed53166b2db3af20cf43c4404e" category="paragraph">特定のクラウドプロバイダに導入されているコネクタを使用する必要がある場合は、次のような状況があります。</block>
   <block id="bd36c37245d1af16de2a713e0208a229" category="list-text">AWS 、 Amazon FSX for ONTAP 、または AWS S3 バケット内の Cloud Volumes ONTAP のデータをスキャンするときは、 AWS のコネクタを使用します。</block>
   <block id="f19eaef4d9d109ffcf1717f49dd5d48b" category="list-text">Azure または Azure NetApp Files で Cloud Volumes ONTAP 内のデータをスキャンする場合は、 Azure のコネクタを使用します。</block>
   <block id="51604d985a41a8e2115db8de3eb4b40f" category="list-text">GCP の Cloud Volumes ONTAP でデータをスキャンする場合は、 GCP のコネクタを使用します。</block>
-  <block id="7ccfda55457e583d1d8c584d8a9ed7f6" category="paragraph">また、次のことも可能です<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 自社ネットワーク内またはクラウド内の Linux ホストデータセンスをオンプレミスにインストールする予定のユーザによっては、 Connector をオンプレミスにインストールすることもできます。</block>
   <block id="267b476717c1665614f57e91725c67ff" category="inline-link">複数のコネクタ</block>
-  <block id="8e952431e2e27533e34593f63c959513" category="paragraph">ご覧のように、を使用する必要がある状況もあります<block ref="61272ee1a17c9c174cf490124a0940a3" category="inline-link-rx"></block>。</block>
   <block id="5de07b40dee2a8b07f30a0fd66bd33fa" category="section-title">前提条件を確認する</block>
   <block id="14689ae888aa02beef451d07d59a62a7" category="paragraph">クラウドに Cloud Data Sense を導入する前に、以下の前提条件を確認し、サポートされている構成であることを確認してください。</block>
   <block id="e8b81a3fe00f3db6bf029fe691d52b19" category="list-text">Cloud Data Sense からのアウトバウンドインターネットアクセスを有効にする</block>
   <block id="7fbe83e94a33e2a73ded0ecf455885e3" category="list-text">Cloud Data Sense では、アウトバウンドのインターネットアクセスが必要。仮想ネットワークまたは物理ネットワークでインターネットアクセスにプロキシサーバを使用している場合は、 Data sense インスタンスにアウトバウンドのインターネットアクセスがあり、次のエンドポイントに接続できることを確認します。クラウドにデータセンスを導入すると、コネクタと同じサブネットに配置されます。</block>
   <block id="8f9580a7f7e490b3e30cd0867114d454" category="paragraph">AWS 、 Azure 、 GCP のいずれに Cloud Data Sense を導入しているかに応じて、次の表を参照してください。</block>
-  <block id="2c6143d299be9e69b55b0e68a8597431" category="paragraph">* AWS 環境に必要なエンドポイント： *</block>
   <block id="739c84d599ed76e9cac5ee121e899564" category="cell">¥ https://netapp-cloud-account.auth0.com ¥ https://auth0.com</block>
   <block id="8defcf671c42bd722586709d04272d38" category="cell">https://cloud-compliance-support-netapp.s3.us-west-2.amazonaws.com \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/</block>
   <block id="0f7fc0e257736da2b0e583e49778bf2f" category="cell">ソフトウェアイメージ、マニフェスト、およびテンプレートにアクセスできます。</block>
@@ -1375,7 +1355,6 @@
   <block id="3414f3bd5331c7e91fdcac0502875dcb" category="cell">ネットアップが監査レコードからデータをストリーミングできるようにします。</block>
   <block id="9f95203b9ac2e9ce54061e42c78f9259" category="cell">¥ https://cognito-idp.us-east-1.amazonaws.com ¥ https://cognito-identity.us-east-1.amazonaws.com ¥ https://user-feedback-store-prod.s3.us-west-2.amazonaws.com ¥ https://customer-data-production.s3.us-west-2.amazonaws.com</block>
   <block id="879c5c0005fb4ccd4c0bfb1e4b2fa5d1" category="cell">Cloud Data Sense を使用して、マニフェストやテンプレートにアクセスしてダウンロードしたり、ログや指標を送信したりできます。</block>
-  <block id="68aa91879d1edd6e2d295cced958491d" category="paragraph">* Azure と GCP の導入に必要なエンドポイント： *</block>
   <block id="5147b0c617e7ed1d50e337cd63b46209" category="cell">ソフトウェアイメージ、マニフェスト、テンプレートへのアクセス、およびログとメトリックの送信を提供します。</block>
   <block id="9edd86f763fc6d21418429b5c63134af" category="inline-link">ネットアップが提供するポリシー</block>
   <block id="1e4d2fe4f612f57b44ef8e5cef94c206" category="list-text">vCPU の制限を確認してください</block>
@@ -1392,13 +1371,6 @@
   <block id="8412fae8dddba4e0747379264d31e177" category="list-text">データを継続的にスキャンするには、 Cloud Data Sense インスタンスがオンのままになっている必要があります。</block>
   <block id="ed5df84ba8d573f10f9a94f52964d60b" category="list-text">Web ブラウザから Cloud Data Sense への接続を確認する</block>
   <block id="e9f6a58ca17526d9b23e21bdb6e1e1a3" category="section-title">クラウドにデータを導入するメリット</block>
-  <block id="61d6c95614544202e2196461438ec5da" category="paragraph">クラウドデータセンスのインスタンスをクラウドに導入するには、次の手順を実行します。</block>
-  <block id="978bfd93f7201230cb0a2871b8d1ef56" category="inline-image-macro">クラウドにクラウドデータセンスを導入するボタンを選択するスクリーンショット。</block>
-  <block id="9290a44c7c623c5d84b6b9d511e6e5b5" category="paragraph"><block ref="9290a44c7c623c5d84b6b9d511e6e5b5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="df809117058eb7bb06c8ed0aff661ac1" category="list-text">導入手順が完了すると、ウィザードに進捗状況が表示されます。問題が発生すると停止し、入力を求められます。</block>
-  <block id="ba59d91b4164f4b1e6d170356ffa889a" category="inline-image-macro">新しいインスタンスを導入するための Cloud Data Sense ウィザードのスクリーンショット。</block>
-  <block id="1f64a34a5eddd1d02ccf74d6bee2fdc3" category="paragraph"><block ref="1f64a34a5eddd1d02ccf74d6bee2fdc3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b6537529e2ca7a01f194a6653cce5a42" category="list-text">インスタンスが配備されたら、 * 設定に進む * をクリックして _Configuration_page に移動します。</block>
   <block id="9b305ee4bd352f956f4cb24478769e42" category="paragraph">設定ページで、スキャンするデータソースを選択できます。</block>
   <block id="90fcbce9bfec3d7a472c7ee2962c602f" category="inline-link-macro">クラウドデータセンスのライセンスをセットアップする</block>
   <block id="d117f1960f80fb3c03967f2cd00addba" category="summary">Cloud Data Sense を使用して、 Cloud Volumes ONTAP とオンプレミスの ONTAP ボリュームのスキャンを開始するには、いくつかの手順を実行します。</block>
@@ -1608,7 +1580,6 @@
   <block id="446f633ae412e24a0a66d9d154552c63" category="paragraph">ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。 <block ref="72f8bc610961b8d2bc734f2ce5e89019" category="inline-xref-macro-rx"></block>。</block>
   <block id="ab6f827b404fc74a3d59a176e44dce54" category="inline-xref">Linux ホストシステムの準備</block>
   <block id="ae8f9609c5884d9f4db4d05e14862cd4" category="inline-link">コネクタを切り替えます</block>
-  <block id="42d1c021036734670ca245849e323735" category="admonition">Cloud Data Sense は、ソフトウェアがオンプレミスにインストールされている場合、現在 S3 バケット、 Azure NetApp Files 、または FSX for ONTAP をスキャンできない。このような場合は、クラウドとに別のコネクタとデータセンスのインスタンスを導入する必要があります<block ref="7ef29812cbbbb10ee35427be73d0c671" category="inline-link-rx"></block> データソースごとに異なる。</block>
   <block id="34dc49ad79c5d0ec1f3c661ca216a2a5" category="paragraph">単一のオンプレミスホストに Data Sense ソフトウェアをインストールする場合は、次の手順を実行します。</block>
   <block id="bbdb5f5f026c712f36de4a68700316f5" category="list-text">使用する Linux ホストにインストーラファイルをコピーします (`cp またはその他の方法を使用 ) 。</block>
   <block id="65a0409250bc34ad7aed301586de5abc" category="list-text">ホストマシンでインストーラファイルを解凍します。次に例を示します。</block>
@@ -1635,7 +1606,6 @@
   <block id="b243b08794c870ea91d13357c677102f" category="sidebar">カスタムの個人データ識別子を追加します</block>
   <block id="f8b28f56cf385c66a4a0078795b69320" category="sidebar">データセンスからデータソースを削除します</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
-  <block id="1cdcdefa74c2914f109f17dbba9e6f8f" category="sidebar">インターネットを使用せずにオンプレミスにデータセンスを導入</block>
   <block id="7a1ecd84a5a121cd176d1d7c8945c20b" category="sidebar">Cloud Volumes ONTAP ボリューム</block>
   <block id="8d097e38d6920ece5917d57da5699e5c" category="sidebar">オンプレミスの ONTAP ボリューム</block>
   <block id="c7596ffa8d20a8a14d1f631c94185f72" category="sidebar">Azure NetApp Files ボリューム</block>
@@ -1689,8 +1659,6 @@
   <block id="0a6dc77d8aa2ba619cb18a788482f78a" category="list-text">_ca_cert_dir_= 追加の TLS CA 証明書バンドルを含む Data Sense Linux システム上のパス。プロキシが TLS 代行受信を実行している場合にのみ必要です。</block>
   <block id="48e1e343989571ace6bf404a680635d8" category="list-text">手順 8 で示したように、インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、必要なパラメータをコマンドライン引数としてインストーラに指定することができます。</block>
   <block id="6b356fe759d450cad6ec9f478a17a524" category="paragraph">たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'sudo ./install.sh -a &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;token&gt; --host &lt;ds_host&gt; --manager-host &lt;cm_host&gt; * -n &lt;node-ip1&gt; 、 &lt;node-ip2&gt; 、 &lt;node-ip3&gt;*-proxy-proxy-proxy-host-pproxy-pxe-password&lt;/password&gt;</block>
-  <block id="8622d1cd96d6ec0930cec4d27426b259" category="list-text">AWS では、 Cloud Data Sense はで実行されます <block ref="862a215d1ef85127ef00037fb3b30ed4" category="inline-link-macro-rx"></block> 500 GB の gp2 ディスクです。オペレーティングシステムイメージは Amazon Linux 2 （ Red Hat 7.3.1 ）です。</block>
-  <block id="8031d67afa3b05713e70ceb139df71f1" category="list-text">Azure では、 Cloud Data Sense はで実行されます <block ref="258fa0e906df18ccf945022280cc0721" category="inline-link-macro-rx"></block> 512 GB ディスクオペレーティングシステムのイメージは CentOS 7.8 です。</block>
   <block id="74e5e01600beec43894e96e22ac9f5eb" category="list-text">プロンプトが表示されたら、を持つ Cloud Data Sense インスタンスに IAM ロールを割り当てます <block ref="27b52f38738d689881a76b49c98ec7ec" category="inline-xref-macro-rx"></block>。</block>
   <block id="b7f2b0e45c51391324aebf221531b036" category="paragraph">FSX で ONTAP ボリュームをスキャンする前に、<block ref="68e9cbaf33b2641a589dc87867e4bfec" category="inline-link-rx"></block>。</block>
   <block id="f72dc999895eb17e77093f9ecff4180c" category="paragraph">これは、データを移行していて、ファイルに加えられた最後の変更を確認する場合に役立ちます。このアクションではを使用します<block ref="a370f691ddfd2ad7b716b2db4ad021a1" category="inline-link-rx"></block> データをソースからターゲットにコピーおよび同期する機能。</block>
@@ -1699,7 +1667,6 @@
   <block id="39630dece802514e5f7336bcbbf0ac6f" category="list-text">クレジットカード情報のファイルへの配布を識別するのに役立ちます。 <block ref="ef3bace538be6eee30a3e48516637cf7" category="inline-link-macro-rx"></block>。</block>
   <block id="be27a8dc9dfba1897217ecee5823bd4e" category="list-text">健常性情報がファイルにどのように分散されているかを確認できます。 <block ref="1ce675538fc85bf3b1ef6fa4ab26346c" category="inline-link-macro-rx"></block>。</block>
   <block id="58293f799492274c3df075305508ade4" category="paragraph">データがスキャンしているソースファイルを、サポートされていない非構造化データソースから特定のターゲットの場所にあるディレクトリにコピーできます <block ref="ebb58758e77d05976efcc1ccd5134262" category="inline-link-rx"></block>）。最初のコピー後、ファイル内で変更されたデータは、設定したスケジュールに基づいて同期されます。</block>
-  <block id="1512503c318779a183367c2326a24f21" category="list-text">オンプレミスコネクタソフトウェアが最新バージョンにアップグレードされていることを確認します。<block ref="ce22b55d293a0e07097135e6515924b6" category="inline-link-rx"></block>。</block>
   <block id="f887e54f519cc35b4741120230ac9d1a" category="paragraph">_Classification_area には ' 最も識別されたリストが表示されます <block ref="b823fa31d5dec268aaa19a8828bf34fe" category="inline-link-macro-rx"></block>、 <block ref="336d27c782a82199a3380deae5570591" category="inline-link-macro-rx"></block>および <block ref="8376771def5b60bb1cfdd0dc180ae5cc" category="inline-link-macro-rx"></block> をスキャンしたデータに保存します。</block>
   <block id="e661d5c04d5948d390d622ba88bdcc6b" category="section-title">オーストラリアの個人データは、データセンスで新たに 4 種類識別できます</block>
   <block id="0387123627dfe002c7435c0101983f19" category="section-title">グローバル Active Directory サーバを LDAP サーバとして使用できるようになりました</block>
@@ -1796,7 +1763,6 @@
   <block id="417cf0f3678f81efde443c4a85c2acb8" category="section-title">コネクタはどこに取り付ける必要がありますか？</block>
   <block id="f4fb039a49b8c7eb94cbf1c2e74a625f" category="list-text">オンプレミスのONTAP システム、ネットアップ以外のファイル共有、汎用のS3オブジェクトストレージ、データベース、OneDriveフォルダ、SharePointアカウント、Google Driveアカウント内のデータをスキャンする場合、これらのクラウド環境ではコネクタを使用できます。</block>
   <block id="0908d2929b9ac231d6e9a69ca517b2e3" category="section-title">コネクタを自分のホストに導入できますか。</block>
-  <block id="45c9d2d43a741ab63e518aa05e11fa70" category="paragraph">はい。可能です<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 自社ネットワーク内またはクラウド内の Linux ホストオンプレミスにデータセンスを導入する場合は、オンプレミスにもコネクタをインストールできますが、必須ではありません。</block>
   <block id="729ba1cfab33ecb7cda6d642c21b247d" category="section-title">インターネットにアクセスできないセキュアなサイトはどうでしょうか。</block>
   <block id="20ddf180d77766369cf9eb26a7165489" category="section-title">データセンスの導入</block>
   <block id="5bab44a31f81eef054e5895c9d068607" category="paragraph">以下の質問は、個別のData Senseインスタンスに関連しています。</block>
@@ -1862,7 +1828,6 @@
   <block id="3d61ecb24967db6bd93775c965d8571f" category="section-title">Googleドライブアカウントをコンプライアンススキャンから削除しています</block>
   <block id="9a1e694b1bf5a642eacf71ea21eede63" category="inline-link-macro">データセンスからGoogleドライブアカウントを削除します</block>
   <block id="e6fef5621a9e0deea941bde5d1ac51eb" category="paragraph">1人のユーザーのGoogleドライブファイルのみが1つのGoogleドライブアカウントの一部であるため、ユーザーのGoogleドライブアカウントからのファイルのスキャンを停止する場合は、次の手順を実行します <block ref="50340a10fcfa586f2410201e1b5bd674" category="inline-link-macro-rx"></block>。</block>
-  <block id="c4022fe65a9bea007e119f4d38ca5b82" category="paragraph">データベーススキーマ、OneDriveアカウント、SharePointアカウント、Googleドライブアカウント、Amazon S3アカウント、 または、Simple Storage Service（S3）プロトコルを使用するObject Storageの略。</block>
   <block id="6bd1beae17e48797805a36af79f55549" category="section-title">Cloud Data SenseからOneDrive、SharePoint、Google Driveのアカウントを削除する方法について説明します</block>
   <block id="1b0b7f0671ee5b3c52423f0719388b6e" category="paragraph">特定のOneDriveアカウント、特定のSharePointアカウント、またはGoogle Driveアカウントからユーザーファイルをスキャンする必要がなくなった場合は、Cloud Data Senseインターフェイスからアカウントを削除して、すべてのスキャンを停止できます。</block>
   <block id="9d1c29dc777962e9fef8dd6f8f0fd186" category="list-text">[_Configuration_] ページで、をクリックします <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> OneDrive、SharePoint、Google Driveアカウントの行にあるボタンをクリックし、* OneDriveアカウントの削除*、* SharePointアカウントの削除*、または* Googleドライブアカウントの削除*をクリックします。</block>
@@ -1938,7 +1903,6 @@
   <block id="3c14ec40364ae096849c696c3497ff60" category="list-text">移動元と移動先のデータ用</block>
   <block id="c02ceb243337f566ebb5a2984a4d72eb" category="list-text">コピー元およびコピー先の場合</block>
   <block id="e701a25b99aca57280ba389dd0e551c6" category="paragraph">たとえば、ログファイルの次の行は、コピー処理が成功し、コピー処理が失敗した場合を示しています。</block>
-  <block id="4892afff6c12a31702739804f9402dd2" category="section-title">ログファイルへのアクセス</block>
   <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">たとえば、 100 個のファイルを削除するなど、多くのファイルで ［ 調査結果 ］ ペインからアクションを実行すると、プロセスに時間がかかることがあります。アクションステータスペインでこれらの非同期アクションのステータスを監視して、すべてのファイルにいつ適用されたかを確認できます。</block>
   <block id="a5129dfbdf0dc4588d520f42de3004dd" category="paragraph">これにより、正常に完了した操作、現在実行中の操作、および失敗した操作を確認できるため、問題を診断して修正できます。</block>
   <block id="0b11e28340112432b7a51a8bf0bb5fbf" category="paragraph">レポートは、.csvファイル（最大5、000行のデータを含めることができます）、またはNFS共有にエクスポートする.jsonファイル（無制限の行数を含めることができます）としてローカルマシンに保存できます。ファイル（非構造化データ）、ディレクトリ（フォルダおよびファイル共有）、またはデータベース（構造化データ）をスキャンする場合、レポートファイルは最大3つダウンロードされます。</block>
@@ -2231,7 +2195,6 @@
   <block id="33054e4c4ec78cdbffe4024718f5be95" category="list-text">BlueXPからの自動ソフトウェアアップグレード</block>
   <block id="57d5e1045a3473cd48f13a7e21feffdf" category="paragraph">Linux システムがを満たしていることを確認します <block ref="2d54aecca24274aa47c2fb620cd7d497" category="inline-xref-macro-rx"></block>必要なソフトウェアがすべてインストールされていること、およびオフライン環境が要件を満たしていることを確認します <block ref="cecf7d2039efa2511a1cd1c96e91a043" category="inline-xref-macro-rx"></block>。</block>
   <block id="28312bff8dd6c634a03c918b3596d5f7" category="section-title">BlueXPコネクタを取り付けます</block>
-  <block id="dd4c90ec72ae39b7ae5e4b23558ad715" category="paragraph">オフラインのオンプレミスサイトにBlueXPコネクタがインストールされていない場合は、<block ref="b3b935401d776406adc004ee5c72bf0e" category="inline-link-rx"></block> オフラインサイトの Linux ホスト</block>
   <block id="0c9e786ebc9e7a7d92ca8bd8ccb639a3" category="section-title">BlueXPおよびData Senseの前提条件を確認します</block>
   <block id="7c2b9bc82b54ae1bc75bf6e5ec464df1" category="list-text">Web ブラウザから Cloud Data Sense への接続を確認するCloud Data Senseを有効にしたら、ユーザーがData Senseインスタンスに接続しているホストからBlueXPインターフェイスにアクセスすることを確認します。</block>
   <block id="623bbc14fb82c35326b70f6f05086c6b" category="paragraph">データセンスインスタンスは、プライベート IP アドレスを使用して、インデックス付きデータが他のユーザーにアクセスできないようにします。そのため、BlueXPへのアクセスに使用するWebブラウザには、そのプライベートIPアドレスへの接続が必要です。この接続は、データセンスインスタンスと同じネットワーク内にあるホストから確立できます。</block>
@@ -2317,7 +2280,6 @@
   <block id="7d0e3dd93f2549f8ce0be2f0454b12b2" category="cell">BlueXP Webサイトとの通信により、ユーザ認証を一元化。</block>
   <block id="396224b62257ab9727288876f0e89ef6" category="list-text">BlueXPに必要な権限があることを確認します</block>
   <block id="2553b8550ba26e95a0c0ef9ed98d09b8" category="list-text">BlueXPに、クラウドデータセンスインスタンスのリソースを展開し、セキュリティグループを作成する権限があることを確認します。BlueXPの最新の権限は、で確認できます<block ref="4d2fb4fece4e907087732c2d95d31be2" category="inline-link-rx"></block>。</block>
-  <block id="01406ab52510c9489e03f4c91c9d1eb0" category="list-text">クラウドプロバイダの vCPU 制限によって、 16 コアのインスタンスの導入が許可されていることを確認してください。BlueXPを実行している地域の関連するインスタンスファミリのvCPU制限を確認する必要があります。 <block ref="ced91b9ed92f648f7f8f7ec276835b9d" category="inline-link-macro-rx"></block>。</block>
   <block id="0446a8c1beeb7c24f32392c45f60ebfc" category="list-text">BlueXPコネクタがCloud Data Senseにアクセスできることを確認します</block>
   <block id="62a6666bb5aec60ebe2a8ff0d67a2df1" category="list-text">Cloud Data Senseを有効にしたら、ユーザーがData Senseインスタンスに接続しているホストからBlueXPインターフェイスにアクセスすることを確認します。</block>
   <block id="faaaa5851e0412bdcbe7c77b5c8e0cd6" category="paragraph">データセンスインスタンスは、プライベート IP アドレスを使用して、インデックス付きデータがインターネットにアクセスできないようにします。そのため、BlueXPへのアクセスに使用するWebブラウザには、そのプライベートIPアドレスへの接続が必要です。この接続は、クラウドプロバイダ（ VPN など）への直接接続、またはデータセンスインスタンスと同じネットワーク内にあるホストから行うことができます。</block>
@@ -2366,7 +2328,6 @@
   <block id="0c482db6ff22c3a7bd9036d861655cbf" category="paragraph">スキャンするデータソースがまだBlueXP環境にない場合は、この時点でキャンバスに追加できます。</block>
   <block id="f0d07e71c0ad5ba2b297c19c3e9347e0" category="inline-link">これらのクラスタはBlueXPで検出されます</block>
   <block id="51fb345d59b3adb8f0060afb63071c67" category="paragraph">お使いのCloud Volumes ONTAP システムは、BlueXPのキャンバスですでに使用できるはずです。オンプレミスの ONTAP システムには、が必要です<block ref="0ea86f15e08471a3866cbc09dd9a2bd4" category="inline-link-rx"></block>。</block>
-  <block id="0718fb096056f1b13075e60b653a79cf" category="paragraph">インターネットにアクセスできないダークサイトにインストールされているオンプレミスの ONTAP システムをスキャンする場合は、を実行する必要があります <block ref="ecc0eddec0bd55859619b2c1bb3475b2" category="inline-link-macro-rx"></block>。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。</block>
   <block id="213c26a534506d1ae60070296a0343e1" category="list-text">BlueXPでは、* Governance &gt; Classification *を選択します。</block>
   <block id="b14547d13e4545e40f6cf3e9a06dd4ab" category="list-text">プロンプトが表示されたら、プロキシの詳細を入力BlueXPコネクタが既にプロキシを使用している場合は、この情報を再度入力する必要はありません。これは、コネクタが使用するプロキシが自動的に使用されるためです。</block>
   <block id="a7daee29c59d5c1bd111c784f878f35b" category="paragraph">インターネットにアクセスできないダークサイトにインストールされているネットアップ以外の NFS または CIFS ファイル共有をスキャンする場合は、が必要です <block ref="ecc0eddec0bd55859619b2c1bb3475b2" category="inline-link-macro-rx"></block>。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。</block>
@@ -2489,7 +2450,6 @@
   <block id="db40121770270b95c73895598e6343b2" category="list-text">テキストファイルからカスタムキーワードを追加できます。</block>
   <block id="d2e9b58709e185388c14e9b7f7c876b8" category="list-text">カスタムパターンは、正規表現（regex）を使用して追加できます。</block>
   <block id="6b0cdbce1552e1685f4b4095276b6078" category="paragraph"><block ref="4a5fd31f8eed80e720a59ea6d295b8eb" category="inline-link-macro-rx"></block>。</block>
-  <block id="162bd73d17dd13a664718503fff639fc" category="paragraph">データセンスをオンプレミスにインストールした場合は、ログファイルに直接移動できます。</block>
   <block id="69aeb258470eedf7afb44d66a993f4d8" category="paragraph">スキャナノードがデータソースに物理的に近いデータソースでスキャンするデータソースがある場合は、スキャナノードまたはスキャナノードのグループを定義して、特定のデータソースまたはデータソースのグループをスキャンできます。次の図では、1つのマネージャーノードと3つのスキャナーノードがあります。</block>
   <block id="4ab1272ad311bec96f677d25b0901105" category="list-text">スキャナノードを「スキャナグループ」に追加する場合は、パラメータ*-r &lt;scanner_group_name&gt;*をコマンドに追加します。それ以外の場合は、スキャナノードが「デフォルト」グループに追加されます。</block>
   <block id="f76b6e3dc68f5a15976b3f64aae23646" category="paragraph">リストに追加されていない作業環境は、「デフォルト」グループによってスキャンされます。「デフォルト」グループには、少なくとも1つのマネージャまたはスキャナノードが必要です。</block>
@@ -2616,10 +2576,8 @@
   <block id="0cf30da5b3284b65f1bd1464a838ef7e" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> スキャンするバケットを選択します</block>
   <block id="f1250c9b73cd8f5ef391e449f0b5dcb4" category="inline-image-macro">必要なBlueXPとネットワークコンポーネント、および関連する接続の図。</block>
   <block id="0b0f1899ec6aba7470224b92502a86ac" category="paragraph"><block ref="0b0f1899ec6aba7470224b92502a86ac" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7253a7683e98218c221f39d0f0ad5f29" category="paragraph">クラウドプロバイダを使用してコネクタを作成することもできます。を参照してください<block ref="e291ebc6db7a8ec08d333384efa4743e" category="inline-link-rx"></block>、<block ref="3f9648a8e8f665af7b23c050702c5c95" category="inline-link-rx"></block>または<block ref="2559e3f18112d727f751d3574900096c" category="inline-link-rx"></block>。</block>
   <block id="d555b3c4f5c30360fbf950950d34991e" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Cloud Data Senseをダウンロードして導入</block>
   <block id="e33a78c333a2d3b8efa0e2ba89103793" category="paragraph">データセンスをインストールして使用するには、BlueXPコネクタが必要です。ほとんどの場合、Cloud Data Senseを有効にする前にコネクタがセットアップされていると考えられます<block ref="d18edc1f87b2c25c3b9a75b33d4a162f" category="inline-link-rx"></block>ただし、ここで設定する必要がある場合もあります。</block>
-  <block id="16e20291df97bd9c6dbb59865aa7c8bd" category="paragraph">クラウドプロバイダ環境で作成する場合は、を参照してください<block ref="e291ebc6db7a8ec08d333384efa4743e" category="inline-link-rx"></block>、<block ref="3f9648a8e8f665af7b23c050702c5c95" category="inline-link-rx"></block>または<block ref="2559e3f18112d727f751d3574900096c" category="inline-link-rx"></block>。</block>
   <block id="04e234c985524a78187de245502e592b" category="paragraph">データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。Linuxホストは、自社ネットワークまたはクラウドに配置できます。データセンスは、他のアプリケーションと共有されるホストではサポートされません。ホストは専用のホストである必要があります。</block>
   <block id="5b028b19d86301024ced75afef69e66d" category="list-text">OSにDockerエンジンがインストールされている必要があります</block>
   <block id="1c92a0c0cd35f6a2ac3eae778656a791" category="list-text">* Red Hat Subscription Management *：Red Hat Enterprise LinuxシステムをRed Hat Subscription Managementに登録する必要があります。登録されていないと、インストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。</block>
@@ -2841,7 +2799,6 @@
   <block id="ba3a038a97b620898e33b9e09db66632" category="paragraph"><block ref="ba3a038a97b620898e33b9e09db66632" category="inline-image-macro-rx" type="image"></block></block>
   <block id="969665117064b959d3c660b43611f713" category="list-text">Docker Engineバージョン19.3.1以降。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>。</block>
   <block id="bef424c97f7f20957409f086ca8ff3db" category="paragraph">ホストマシンとコネクタインスタンスの間にポート8080を介した接続がある場合は、BlueXPのData Senseタブにインストールの進行状況が表示されます。</block>
-  <block id="ed8c7ad82b3b6c68d52e7468a26cf5a7" category="list-text">データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.18.xがインストールされている場合は、1.19.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
   <block id="49bb7289b8abc33c271f634fc8149b1e" category="list-text">一度に移動できるファイルの最大数は1、500万です。</block>
   <block id="a09a5c1c3cb0d27dbac4cfa3c73c0ec8" category="list-text">[* Deploy*]をクリックして、クラウド導入ウィザードを開始します。</block>
   <block id="5c19ef53902ef56ea5c8f554cccb9ad8" category="section-title">2023年2月5日（バージョン1.20）</block>
@@ -2865,15 +2822,9 @@
   <block id="0629976487dc6cc7f0d343d4d336a4ac" category="list-text">必要に応じて、他のユーザに通知Eメールを送信する場合はチェックボックスをオンにし、Eメールアドレスを20個まで入力して、Eメールの送信間隔を選択します。</block>
   <block id="208609a972f6a4981e2c9511fc7d0063" category="paragraph">Cloud Data Senseは、特定の重要なポリシーが結果を返すときに、アカウントのBlueXPユーザーに電子メールアラートを送信して、データを保護するための通知を受け取ることができます。E メール通知は、日単位、週単位、または月単位で送信することができます。また、BlueXPアカウントではなく、最大20個のメールアドレスに電子メールアラートを送信することもできます。</block>
   <block id="abf0f7e6ece371db4b19fea5e49a4de2" category="list-text">他のユーザに通知メールを送信する場合は、[電子メールの送信]チェックボックスをオンにし、電子メールを送信する間隔を選択して、最大20個の電子メールアドレスを入力します。</block>
-  <block id="590f4e9626c88a785e5743f04a242c0f" category="list-text">GCP では、 Cloud Data Sense はで実行されます <block ref="f47e4641d38801bee7cf28563a438093" category="inline-link-macro-rx"></block> 512 GB の標準パーシステントディスクオペレーティングシステムイメージは CentOS 7.9 です。</block>
   <block id="4bd0feba4f0658e9db32d120e7e95926" category="paragraph">ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。複数のホストシステムを使用する場合、プライマリシステムは_Manager node_と呼ばれ、追加の処理能力を提供する追加システムは_Scanner Node_と 呼ばれます。</block>
-  <block id="a76b68d7e44fa22f2d4b5107c0729fa7" category="paragraph">コネクタがない場合は、<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> ネットワーク内のLinuxホスト、またはクラウド内のLinuxホスト。</block>
-  <block id="6124944413e19a98a7cefa988e91f90e" category="inline-link">m5.mc</block>
-  <block id="753c2f384183a67171ec75bbf3c5b35d" category="list-text">* AWS EC2 instance type *：上記のCPUおよびRAMの要件を満たすインスタンスタイプ。お勧めします<block ref="07a75e0a9170a24a8b798a3f0ad5bd4c" category="inline-link-rx"></block>。</block>
   <block id="dab82bd5fdaa1e12c8086bb3cfa494cb" category="inline-link">Standard_D16s_v3</block>
-  <block id="969592102786dd0b770b754b3220159f" category="list-text">* Azure VMのサイズ*：上記のCPUとRAMの要件を満たすインスタンスタイプ。お勧めします<block ref="b0e0081ceddb227f6d73954b69522e52" category="inline-link-rx"></block>。</block>
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="inline-link">N2-standard-16</block>
-  <block id="73731a154d429f05332addb49f2ec537" category="list-text">* GCPマシンタイプ*：上記のCPUとRAMの要件を満たすインスタンスタイプ。お勧めします<block ref="bb9e331217b48a311c7947c404f21f76" category="inline-link-rx"></block>。</block>
   <block id="2b27dbdd91cbe22f05c819e1be37f3ad" category="paragraph">スキャナノードとしてData Senseホストを追加する場合は、この時点で、次のルールをプライマリシステムに追加します。</block>
   <block id="80341b8c2d424b4008a1d168ff76c6a9" category="inline-image-macro">クラウドまたはオンプレミスのマシンにクラウドデータセンスを導入するボタンを選択するスクリーンショット。</block>
   <block id="df6d41b53ad1938e7b8934fc6ffdf147" category="paragraph"><block ref="df6d41b53ad1938e7b8934fc6ffdf147" category="inline-image-macro-rx" type="image"></block></block>
@@ -2883,7 +2834,6 @@
   <block id="a566366d665bafe53c9d0a82a6befd65" category="paragraph">複数のオンプレミスホストに同時にData Senseソフトウェアをインストールする場合は、次の手順を実行します。この方法で複数のホストを導入する場合、「スキャナグループ」は使用できません。</block>
   <block id="65c70fcd12b102e4a08b42a41a2e7de8" category="paragraph">Cloud Data Sense インストーラがパッケージのインストールを完了し、インストールを登録します。インストールには 10~20 分かかります。</block>
   <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新機能</block>
-  <block id="f8f0bde9e4fc1fbeefb41437010577d4" category="sidebar">インターネットを使用したLinuxホストにデータセンスを導入する</block>
   <block id="83d2b5781b150dc742697f6275e740ca" category="sidebar">データセンスのユースケース</block>
   <block id="a9cb7c21103eb81a473453f19f0d7b20" category="list-text">* 重複ファイル * - スキャンしているデータソース内の他の場所に複製されているファイル。 <block ref="440fccf34bc4c2a440d9bf3f906df06d" category="inline-link-macro-rx"></block>。</block>
   <block id="c79d6ed12c6347fc1bdd0dd91ef85ff7" category="paragraph">をクリックします <block ref="6160b7a55bd427b3fb91de138d9f467e" category="inline-link-macro-rx"></block> ポリシーの詳細については、を参照してください。</block>
@@ -3085,7 +3035,6 @@
   <block id="8160c3db5ceaeec9f21f500ad90a16ee" category="paragraph"><block ref="8160c3db5ceaeec9f21f500ad90a16ee" category="inline-image-macro-rx" type="image"></block></block>
   <block id="233a7e974842d65dd39122b575514270" category="paragraph">新しいカテゴリは、トレーニングファイルの定義に従って作成され、Data Senseに追加されます。その後、Data Senseはすべてのデータソースの再スキャンを開始し、この新しいカテゴリに該当するファイルを特定します。[Custom Classifiers]ページに戻り、新しいカテゴリに一致するファイルの数を確認できます。すべてのデータソースをスキャンした結果は、スキャンする必要があるファイルの数によってはしばらく時間がかかります。</block>
   <block id="24986a3fd86695b55b23be0d07a0d801" category="inline-link">BlueXP Connectorをアップグレードします</block>
-  <block id="2976d8218e5021d7d1f5cbbae070157d" category="paragraph">BlueXPコネクタとデータセンスの両方で、新しい機能を有効にするには定期的に手動でアップグレードする必要があります。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します<block ref="179f3f01544c50dcde464960dc0c66ec" category="inline-link-rx"></block> および <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
   <block id="e6226abfed55ff05d6368103074cf171" category="paragraph">+ Data Senseの分類スキャンによってファイルの「最終アクセス時刻」が変更されていないことを確認するには、CIFSの場合はWrite Attributes権限、NFSの場合はwrite権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。</block>
   <block id="b59c5194f3c88dc07265c30dac8a84fe" category="cell">ファイルまたはディレクトリ（CIFSまたはNFSのみ）が最後にアクセスされた時間範囲を選択します。カスタムの期間を指定して、検索結果をさらに絞り込むこともできます。データがスキャンするファイルのタイプの場合、これは最後にデータ検出がファイルをスキャンしたときです。</block>
   <block id="42942f3489af451c9c0c8a2e6cc0b756" category="cell">スキャン分析イベント</block>
@@ -3162,7 +3111,6 @@
   <block id="20aa1bbdb0fac9cadb849e6ab2887670" category="sidebar">BlueXPを使用してクラウドに導入</block>
   <block id="7c454725651fa93e75c3603da01e3ae2" category="sidebar">インターネットにアクセスできるLinuxホストにインストールします</block>
   <block id="34c631136a1ff65c0e2a718e56622097" category="sidebar">インターネットにアクセスせずにオンプレミスにインストール</block>
-  <block id="86d55936ff74c558250b6d6c3c3440fe" category="sidebar">Data Senseをクラウドに自動的に導入</block>
   <block id="1b829a0b2a17806376d7530e7c1aa7d0" category="list-text">スキャンするデータセットのサイズに応じて、ホストシステムは3つのサイズで指定できます。</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="cell">CPU</block>
   <block id="05289cee10f1f9057410b216de0d7e36" category="cell">RAM（スワップメモリを無効にする必要があります）</block>
@@ -3170,12 +3118,9 @@
   <block id="3a69b34ce86dacb205936a8094f6c743" category="cell">大規模</block>
   <block id="dc8179e6e72156a5578bf35cf9574540" category="cell">16 CPU</block>
   <block id="5a1fdf37d5cd85436f7504641d78b95f" category="cell">64GBのRAM</block>
-  <block id="d1dfcf68dd28742f6e8c1a149039f317" category="cell">500 GB SSDオン/または*オプションで100 GB利用可能*/varで395 GB */tmpで5 GB利用可能</block>
   <block id="bef6aed074693bd02885fa89c8b418f0" category="cell">8 CPU</block>
   <block id="70eb72cfa1dbdb5556e79344f161d62a" category="cell">32GBのRAM</block>
-  <block id="03c4b3e038e1f3312ead503649c43953" category="cell">200 GB SSDオン/または* 50 GB (/opt)* 145 GB (/var)* 5 GB (/tmp</block>
   <block id="e706090ac76b3e56523819912497e0f6" category="cell">16GB の RAM</block>
-  <block id="ed04b9cefc3e8c7791055ad71b874777" category="cell">100 GB SSDオン/または* 50 GB（オプション）* 45 GB（/var * 5 GB（/tmp</block>
   <block id="a0b7a7641d24b4614381b2d6a615f220" category="paragraph">これらの小さいシステムを使用する場合は制限があることに注意してください。を参照してください <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="3080c7bbf6707274907b8ec2e97fb7a8" category="list-text">インターネットへのアクセスにプロキシを使用している場合：</block>
   <block id="872a9ee7c158e8dd5094c5c93dcffc57" category="list-text">プロキシサーバー情報(IPアドレスまたはホスト名、接続ポート、接続スキーム: httpsまたはhttp、ユーザー名とパスワード)が必要です。</block>
@@ -3188,4 +3133,238 @@
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*添付ファイル（オプション）*：一度に1つずつ、最大5つの添付ファイルをアップロードできます。</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">添付ファイルはファイルあたり25 MBに制限されています。サポートされているファイル拡張子は、txt、log、pdf、jpg/jpeg、rtf、 doc/docx、xls/xlsx、およびcsv。</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*ケースノートの更新*：問題の詳細を入力するか、*ファイルのアップロード*を選択して最大5つのファイルを添付します。</block>
+  <block id="a338f19adc641be98bda63cc7a5d4741" category="admonition">データベースに存在するファイルは削除できません。その他のすべてのデータソースがサポートされます。</block>
+  <block id="51289cc570c497db655052573fd52ce4" category="inline-link">m6i.4xlargeインスタンス</block>
+  <block id="44c2553e3943a25ca27b119aec4ddeed" category="list-text">AWS では、 Cloud Data Sense はで実行されます<block ref="8b5561a11e73285eb1f0d9f437aa0677" category="inline-link-rx"></block> 500GiBのgp2ディスクを使用した場合。オペレーティングシステムイメージは Amazon Linux 2 です。</block>
+  <block id="a578a0182864dc5a178494bf4f144c5b" category="list-text">Azure では、 Cloud Data Sense はで実行されます <block ref="258fa0e906df18ccf945022280cc0721" category="inline-link-macro-rx"></block> 500GiBのディスクオペレーティングシステムイメージは CentOS 7.9 です。</block>
+  <block id="9df17d0405fb9e185afc5ef0f1d624b3" category="list-text">GCP では、 Cloud Data Sense はで実行されます <block ref="f47e4641d38801bee7cf28563a438093" category="inline-link-macro-rx"></block> 500GiB Standard永続ディスクを使用した場合。オペレーティングシステムイメージは CentOS 7.9 です。</block>
+  <block id="f5925a69c3d123beb6cb7406b43ca45e" category="inline-link-macro">別のインスタンスタイプを参照してください</block>
+  <block id="cd388915e4afa9160e47fe80283223a2" category="list-text">デフォルトのインスタンスを使用できない地域では、Data Senseは別のインスタンスで実行されます。 <block ref="e3d4e40a766f2ed64294b1dd26c6e095" category="inline-link-macro-rx"></block>。</block>
+  <block id="f1fec8e9e1c0fb72e2b217fcc55b8ae5" category="cell">CPU×16、64GB RAM、500GiB SSD</block>
+  <block id="ae0bb774c8ff14b3dcc932f311aaacb7" category="cell">CPU×8、32GB RAM、200GiB SSD</block>
+  <block id="4d4d090716714e5940e9220554e56673" category="cell">CPU×8、16GB RAM、100GiB SSD</block>
+  <block id="0c79a7c8deb47750705f0aa1a4b5c7fd" category="paragraph">Data SenseをAWSのクラウドに導入する場合は、大規模、中規模、小規模のインスタンスを選択できます。AzureまたはGCPにData Senseを導入する際に、これらの小規模なシステムのいずれかを使用する場合は、ng-contact-data-sense@netapp.comまでEメールで支援を依頼してください。これらの小規模なクラウド構成を導入するには、弊社と協力する必要があります。</block>
+  <block id="68745886c8ae338782cdb2a24185ef98" category="paragraph">データベーススキーマ、Googleドライブアカウント、Amazon S3アカウント、またはSimple Storage Service（S3）プロトコルを使用するオブジェクトストレージからユーザと権限の情報を識別することはできません。</block>
+  <block id="f83c4bcfd59e89db53ef94672795f27e" category="list-text">Data Discovery Assessmentレポート</block>
+  <block id="751e20fca328bd3225d682d4b205d9c5" category="inline-link-macro">学習モード</block>
+  <block id="0333f704191273d1488987d5a5b4f277" category="list-text">スキャンされた環境の高度な分析を行い、システムの調査結果を強調し、懸念すべき領域と潜在的な修復手順を示します。 <block ref="173502513bb309892de570fe58588c73" category="inline-link-macro-rx"></block>。</block>
+  <block id="e16a8819a9208b7412265960bc4c2f5a" category="paragraph">はい。可能です<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> ネットワーク内のLinuxホストまたはクラウド内のホスト。オンプレミスにデータセンスを導入する場合は、オンプレミスにもコネクタをインストールできますが、必須ではありません。</block>
+  <block id="0d311bfa55b29c745c3728b0e7b6cab3" category="list-text">AWSでは、Cloud Data Senseは、500GiBのgp2ディスクを含むm6i.4xlargeインスタンスで実行されます。導入時に小さいインスタンスタイプを選択できます。</block>
+  <block id="61625062dc49be0da13938045a1640a4" category="list-text">Azureでは、Cloud Data Senseは、ディスクが500GiBのStandard_D16s_v3 VMで実行されます。</block>
+  <block id="e390a9c964beab7ddd0a015c84e93ec7" category="list-text">GCPでは、Cloud Data Senseがn2-standard-16 VMと500GiB Standard永続ディスクで実行されます。</block>
+  <block id="419bbeb1dcf1d7e64720dd4d6840df31" category="summary">データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。Data Senseをクラウドに導入する場合は、完全な機能を実現するために、「大」な特性を持つシステムを使用することをお勧めします。</block>
+  <block id="8b8cc0b0eee276cd72b8e8daf7e2c1b4" category="doc">サポートされるData Senseインスタンスタイプ</block>
+  <block id="e3d9501cf5bf97e937eec87d87b8575b" category="inline-link-macro">これらの制限事項について説明します</block>
+  <block id="0c8f180499ecd9f4ffe12eae5d4d7a9e" category="paragraph">CPU の数と RAM の数が少ないシステムには Data Sense を導入できますが、このような低パフォーマンスのシステムを使用する場合はいくつかの制限事項があります。 <block ref="fb3c609d29fe2d540c303a8bdcc4197c" category="inline-link-macro-rx"></block>。</block>
+  <block id="97ad13448c874bc98eed7ae32e93c744" category="paragraph">次の表では、Data Senseをインストールする地域で「Default」とマークされたシステムが使用できない場合、テーブル内の次のシステムがデプロイされます。</block>
+  <block id="c050baa4e510e3ce3e02b5da38a1c517" category="section-title">AWSインスタンスタイプ</block>
+  <block id="1e4f0991fe8c17eeb30a08a567b6faeb" category="cell">インスタンスタイプ</block>
+  <block id="eec0d212c1750829ae380457eae9d24d" category="inline-link">m6i.4xlarge</block>
+  <block id="a0663cb1844f1b3415ad47f3e1336565" category="cell"><block ref="4a1901a74409198712b3543e7da252d5" category="inline-link-rx"></block> （デフォルト）M6A.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge</block>
+  <block id="74b1ff02462cd25206c932a6e717f618" category="inline-link">m6i.2xlarge</block>
+  <block id="c6f3d0ce2f348118098491bd4e596968" category="cell"><block ref="d3d71aa1fb316d99a8a4d2c1c360ebef" category="inline-link-rx"></block> （デフォルト）M6A.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge</block>
+  <block id="31f5c89df71ec769af1bb972a418e35d" category="inline-link">c6a.2xlarge</block>
+  <block id="fdf22b4a55e52f224df3e72ab9eb5ca8" category="cell"><block ref="fa55dc5c8a0289d3eee586f1fb616e44" category="inline-link-rx"></block> （デフォルト）C5a.2xlarge c5.2xlarge c4.2xlarge</block>
+  <block id="254c926efe222a9cced66b6753a3b70c" category="section-title">Azureインスタンスタイプ</block>
+  <block id="eadae203b0d698aa2181a9e07d139968" category="cell"><block ref="4267432880aa37f359eef525ee6bd13a" category="inline-link-rx"></block> （デフォルト）</block>
+  <block id="04857641e7994338feb506f5b60ebeb0" category="section-title">GCPインスタンスタイプ</block>
+  <block id="dd654e120269d83d0f32a6f695b8bab9" category="cell"><block ref="fc953708959f6784e56436278d753426" category="inline-link-rx"></block> （デフォルト）n2d-standard-16 n1-standard-16</block>
+  <block id="e4a97f644f96ebff2d3bc85537abc334" category="summary">Data Senseでは、スキャン対象のファイルのいずれかがアクセスまたは変更されたときにイベントをファイルに記録するように設定できます。次に、このファイル（ファイルアクセス監査ログ）の内容を表示するか、ファイルをダウンロードして、どのファイル変更が行われたか、誰によって行われたかを確認できます。</block>
+  <block id="aebeafb9d6b45d6e3629685737b0b510" category="doc">ファイルアクセスイベントを監視および管理します</block>
+  <block id="cec7bcb15c6741f47d69974fd0f0a3da" category="paragraph">たとえば、機密性の高い人事ファイルまたは給与ファイルに変更が加えられたタイミングを追跡する場合は、これらのファイルが存在するボリュームでこの機能を有効にすることができます。次に、ファイルアクセス監査ログを表示して、これらのファイルが変更されているかどうかを確認できます。変更されている場合は、変更を行ったユーザーの名前と変更がいつ行われたかを確認できます。</block>
+  <block id="4189ddcc75f1e8d4ba9a48d4e7f2fa48" category="inline-link">FPolicy機能</block>
+  <block id="1f41b9f328ef1decb38484b01c205a67" category="paragraph">この機能は、ONTAP 作業環境内の重要なボリュームで有効にすることができます。ボリュームで有効にすると、ボリューム内のすべてのファイルおよびディレクトリについてファイルアクセスイベントが追跡されます。この機能はに基づいています<block ref="215c8ae39ab5aa2af1bf0d7956d6ac15" category="inline-link-rx"></block> ONTAP システムから、Data SenseシステムをFPolicyサーバとして使用してONTAP から通知メッセージ（イベント）を受信します。</block>
+  <block id="424532b6533e1e780e6509b32ffc2caa" category="paragraph">Data Senseは現在、ファイルおよびディレクトリに対する次のアクションのイベントをキャプチャします。</block>
+  <block id="686e697538050e4664636337cc3b834f" category="list-text">作成</block>
+  <block id="7a1a5f3e79fdc91edf2f5ead9d66abb4" category="list-text">読み取り</block>
+  <block id="1129c0e4d43f2d121652a7302712cff6" category="list-text">書き込み</block>
+  <block id="904a8304056d77e4547744781b7ceb50" category="list-text">名前を変更する</block>
+  <block id="f2a6c498fb90ee345d997f888fce3b18" category="list-text">削除</block>
+  <block id="f6b6083eeb29d215e1928471f349dbd8" category="list-text">所有者/権限を変更します</block>
+  <block id="5cd5baa540f42504034e49f94c495d5b" category="list-text">SACL/DACLの変更（アクセス制御リスト（ACL）の変更）</block>
+  <block id="f98b8c01d34111418a2366beacd14ada" category="paragraph">「Account Admin」または「Workspace Admin」ロールを持つBlueXPユーザは、ファイルアクセス監査ログ用にボリュームを設定し、監査ログの表示とダウンロードを行うことができます。「Compliance Viewer」ロールを持つユーザは、監査ログの表示とダウンロードのみを実行できます。</block>
+  <block id="01591636d127b3c013da0cbde8cebf99" category="paragraph">Data Senseでは、次のデータソースにあるファイルのファイルアクセスイベントをログに記録できます。</block>
+  <block id="10eaa67ba3824a947cec2803e682249a" category="list-text">オンプレミスのONTAP</block>
+  <block id="df1070e1a3798231e1f881d6a1c6c27f" category="paragraph">Data Senseがファイルにアクセスしたユーザの名前を識別できるように、これらのデータソース用にActive Directoryを設定しておく必要があります。</block>
+  <block id="de7a9ded100f5ab68960785a7977419c" category="section-title">ファイルアクセス監査ログ用にボリュームを設定します</block>
+  <block id="80027566e31a879d1baef50d58692dc4" category="paragraph">個 々 のボリュームでファイルアクセス監査ログを有効にして、ファイルおよびディレクトリの変更を追跡できます。</block>
+  <block id="1eab470a6f707b92e15040773251a746" category="list-text">ヒント</block>
+  <block id="0925da7b2159d87a33d0fde69e738426" category="list-text">この時点で、各ONTAP システム上の最大5個のボリュームについてファイルアクセス監査を設定できます。</block>
+  <block id="9d0e2b2eb032ffd4efa13096caae567a" category="list-text">データソースの_Scan Configuration_pageで、をクリックします <block ref="50acd719b1954eb4890c002b3b5e71a6" category="inline-image-macro-rx" type="image"></block> を選択し、*[ファイルアクセス監査の設定]*を選択します。</block>
+  <block id="c791f5a696fa23cbe4c6c1b76be84e2f" category="inline-image-macro">ファイルアクセスログを有効にするボリュームを選択するスクリーンショット。</block>
+  <block id="df0da4611bcc736388ba21984af1f174" category="paragraph"><block ref="df0da4611bcc736388ba21984af1f174" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8e9c52df3325dfedde0e8bb4b2c520ec" category="list-text">[ファイルアクセス監査の設定]ダイアログで、*[ファイルアクセスイベントのロギングを有効にする]*のチェックボックスをクリックし、*[保存]*をクリックします。</block>
+  <block id="86c7e2b4da263969c3a2b3ea5a998ce8" category="paragraph">現時点では、すべての潜在的なロギングアクションがデフォルトで選択されていることに注意してください。これらのアクションは編集できません。</block>
+  <block id="c3e22ea8facda03b7f5f7e8991838e19" category="inline-image-macro">ボリュームのロギングを有効または無効にしたり、ログに記録する処理を選択したりするためのダイアログのスクリーンショット。</block>
+  <block id="744ed2aff35218670e523298fcffeeb2" category="paragraph"><block ref="744ed2aff35218670e523298fcffeeb2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9a2c4d598beb3c9bc8e390cae73ed5e0" category="list-text">ボリュームのファイルアクセス監査が有効になっていることを確認します。</block>
+  <block id="760fa6a53e99af41106fb9a484537801" category="inline-image-macro">特定のボリュームでファイルアクセス監査ログが有効になっていることを示すスクリーンショット。</block>
+  <block id="128380149729d40c8a7f08ebcf71b393" category="paragraph"><block ref="128380149729d40c8a7f08ebcf71b393" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a11ed4a6864c5bc8fd26866333740e8b" category="paragraph">有効なボリューム上のファイルに対して生成されたファイルアクセスイベントはすべてログファイルに追加されます。受信したイベントのタイプをログファイルで確認してください。</block>
+  <block id="1f61b01a11eb001752e432e36c02a458" category="paragraph">ファイルアクセスイベントを追跡するように設定した各ボリュームについて、ログファイルが作成されます。監査ログの各行には、次の形式で情報が表示されます。</block>
+  <block id="3608b8757d42972237c90a4166cb40ef" category="paragraph"><block ref="f81bca8d84e25507999914272dc54cf0" prefix="" category="inline-code"></block></block>
+  <block id="1953cba0d55aa268eb5c81452ed41aa0" category="list-text">timestamp -イベントの日時</block>
+  <block id="0837106e33dba045cd4d616fc85d209f" category="list-text">Volume name -ボリュームの名前</block>
+  <block id="03c77c7d7f8909d2d11fdaebf9f808ca" category="list-text">イベントタイプ-作成、読み取り、書き込み、名前変更、削除、 所有者/権限を変更し、SACL/DACLを変更します</block>
+  <block id="5dd6810cd17cbba46940574283942107" category="list-text">File name -フルパスとファイル名</block>
+  <block id="4385297914f93c5a09fb1cce2acb1a12" category="list-text">ユーザー名（またはID）-アクションを実行したユーザーの名前またはID</block>
+  <block id="3e5220331a650cbadbd6ee74b8f31714" category="list-text">アクション結果-アクションが成功したか失敗したか、および成功/失敗の理由</block>
+  <block id="41a8d2e8bafe2324a30d9ef1430e5dcb" category="list-text">アクションの詳細-何が行われたか:アクションによって異なります</block>
+  <block id="2da4d8c5bc0edc06ac63f3c95d761c7b" category="section-title">ファイルアクセス監査ログファイルにアクセスします</block>
+  <block id="36a0b16d7a5c6caf3d4fed5f04f10593" category="paragraph">ファイルアクセス監査ログファイルは、Data Senseマシンの次の場所にあります。<block ref="737f0a89396f6d78b87820109de683eb" prefix=" " category="inline-code"></block></block>
+  <block id="a02f04e5cf15eab34e36540d19d919c6" category="inline-xref">この値は、[File Access Audit Log Configuration]ページでカスタマイズできます。</block>
+  <block id="fb5ef99618a5f949d4465293748f9507" category="paragraph">ログファイルの名前は「File_Access_Audit_MedicalData_20230205092321.log &lt;volume_name&gt; 」のように「File_Access_Audit_MedicalData_20230205092321.log &lt;timestamp&gt; 」になります。&lt;timestamp&gt; は、Data Senseが最初のログをファイルに書き込んだ時刻です。各ファイルには、デフォルトで最大50、000件のイベントが格納されるように設定されています。 <block ref="d1bb72137f989cabbac97be0417a83ae" category="inline-xref-macro-rx"></block> この最大数に達すると、そのボリュームの新しいログファイルが作成されます。新しいファイルのタイムスタンプは新しくなります。</block>
+  <block id="cee8cebe9beae40b9ff2920c17036564" category="paragraph">ディレクトリ内のすべてのログファイルの合計サイズは、デフォルト値の50GBに設定されています。 <block ref="d1bb72137f989cabbac97be0417a83ae" category="inline-xref-macro-rx"></block> この制限に達すると、最も古いログファイルが自動的に削除されます。</block>
+  <block id="12c4200e2a63118a2b700c8be20acaf1" category="paragraph">Data SenseがオンプレミスのLinuxマシン、またはクラウドに導入したLinuxマシンにインストールされている場合は、ログファイルに直接移動できます。</block>
+  <block id="6720f460bf9ef3d0502907444e28739d" category="paragraph">Data Senseをクラウドに導入する場合は、Data SenseインスタンスにSSHで接続する必要があります。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。</block>
+  <block id="f1232e8f69c85f39de4569648f81f7d8" category="section-title">ファイルアクセス監査ログを設定します</block>
+  <block id="0ca40b156f41c3260b5d1e95bd7819cd" category="paragraph">ファイルアクセス監査ファイルログには3つのオプションを設定できます。これらの設定は、このData Senseインスタンスでファイルアクセス監査ログを設定しているすべてのデータソースに適用されます。これらの設定は、Data Sense_Configuration_pageの_File Access Audit Log_セクションで行います。</block>
+  <block id="90d7027b34323aa8085bc7090a05744f" category="inline-image-macro">[Data Sense Configuration]ページの監査ログの設定を示すスクリーンショット。</block>
+  <block id="6520ef12a2615aec2896544816c5558c" category="paragraph"><block ref="6520ef12a2615aec2896544816c5558c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="03dbd1b5fc01bd9510606278903a28bc" category="cell">[監査ログ]オプション</block>
+  <block id="d13e01ef2af0326f4f5a6e15fee2c4bc" category="cell">ログファイルの場所</block>
+  <block id="fbc948416dfe24ca5eec1703b2d724e2" category="cell">現在の場所は、ログファイルを書き込むためにハードコーディングされています<block ref="737f0a89396f6d78b87820109de683eb" prefix=" " category="inline-code"></block></block>
+  <block id="00fc8ad0777a7d04155f0aea1a460364" category="cell">監査ログの最大ストレージ割り当て</block>
+  <block id="e78e3ddb79416e357c114831c02be2ac" category="cell">ディレクトリ内のすべてのログファイルの合計サイズは、現在デフォルト値の50GBにハードコードされています。この制限に達すると、最も古いログファイルが自動的に削除されます。</block>
+  <block id="b98e5f30ca3cd0f113adc1ab13a39525" category="cell">監査ファイルあたりの監査イベントの最大数</block>
+  <block id="f46fa6c8b79f57cf8c58c5f05f8134cc" category="cell">現在、各ファイルには最大50、000個のイベントが格納されるようにハードコーディングされています。この最大数に達すると、そのボリュームの新しいログファイルが作成されます。新しいファイルのタイムスタンプは新しくなります。</block>
+  <block id="5046b3bc48bd37acc83c5000548deccc" category="paragraph">これらの設定は現在、デフォルト設定にハードコードされています。変更することはできません。</block>
+  <block id="8b6c5ced74ae32d25c3f6ebff98f9529" category="inline-link">コネクタをオンプレミスにインストールします</block>
+  <block id="d848fab961367a4c9f58a25dc74053f3" category="paragraph">また可能です<block ref="a4b2312bac71e1fcb5d5edc9dd08d5ef" category="inline-link-rx"></block> ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。</block>
+  <block id="18843bfa4e839db1b1058138f40db3fd" category="paragraph">また、次のことも可能です<block ref="975556d00e7303dad94ce8ee11ec8459" category="inline-link-rx"></block> 自社ネットワーク内またはクラウド内の Linux ホストデータセンスをオンプレミスにインストールする予定のユーザによっては、 Connector をオンプレミスにインストールすることもできます。</block>
+  <block id="7136865bb089260220159be68ad07c25" category="paragraph">ご覧のように、を使用する必要がある状況もあります<block ref="1b53f67d10a600e06f0d8110c1ecba99" category="inline-link-rx"></block>。</block>
+  <block id="d86d903b07bcdf54c0633484d605d52a" category="inline-link">政府地域へのコネクタの配置の詳細については、を参照してください</block>
+  <block id="4436ca4e2cfd329d13aeb590ee5ba775" category="paragraph"><block ref="c536f47a35ce0751f8d9699289dc0a42" category="inline-link-rx"></block>。</block>
+  <block id="8956737f30251faf084c888e955f3cbe" category="open-title">AWS環境に必要なエンドポイント</block>
+  <block id="24895bb3af278a15c1f4400bbcea0060" category="open-title">Azure環境に必要なエンドポイント</block>
+  <block id="e518d838d15e176357ed9408d4975b4a" category="open-title">GCP展開に必要なエンドポイント</block>
+  <block id="a44857d7397fe922f372968a4f545ca9" category="list-text">クラウドプロバイダのvCPU制限で、必要な数のコアを含むインスタンスの導入が許可されていることを確認してください。BlueXPを実行している地域の関連するインスタンスファミリのvCPU制限を確認する必要があります。 <block ref="ced91b9ed92f648f7f8f7ec276835b9d" category="inline-link-macro-rx"></block>。</block>
+  <block id="ed4aca88f93f80e744307500461f129e" category="paragraph">CPUとRAMの数が少ないAWSクラウド環境のインスタンスにData Senseを導入できますが、これらのシステムの使用には制限があります。を参照してください <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="95744bf1d6e502d3dfe327bf634f2e79" category="paragraph">クラウドデータセンスのインスタンスをクラウドに導入するには、次の手順を実行します。コネクタはインスタンスをクラウドに導入し、そのインスタンスにData Senseソフトウェアをインストールします。</block>
+  <block id="3d81ce02b62771b2627fbe04a96419a1" category="inline-link-macro">使用可能なインスタンスタイプと制限事項を参照してください</block>
+  <block id="9d93ac73eba82aefddbfc4386e0c91d9" category="paragraph">AWS環境にBlueXPコネクタからData Senseを導入する場合は、デフォルトのインスタンスサイズを選択することも、2つの小さいインスタンスタイプから選択することもできます。 <block ref="014512c6bb91f0e0099b18504a19e409" category="inline-link-macro-rx"></block>。</block>
+  <block id="7df445bf0c34cf36a966141745590030" category="open-title">AWSに導入</block>
+  <block id="a9720a0db2c46b05c7aa5ef25b98ae6f" category="inline-image-macro">Data Senseをアクティブ化するボタンを選択するスクリーンショット。</block>
+  <block id="e92dba2aab15f8ee7ca722d870383c77" category="paragraph"><block ref="e92dba2aab15f8ee7ca722d870383c77" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="26aa9f16a0741d4fff066dbc5645f9eb" category="inline-image-macro">Data Senseをクラウドに導入するためのボタンを選択したスクリーンショット。</block>
+  <block id="c4cfad69d7fd2bcaf1ab47f112073b50" category="paragraph"><block ref="c4cfad69d7fd2bcaf1ab47f112073b50" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2cf7dbc159875140b6f5ecc68994fa13" category="list-text">[_Installation_]ページで、*[Deploy]&gt;[Deploy]*をクリックして「Large」インスタンスサイズを使用し、クラウド導入ウィザードを開始します。</block>
+  <block id="479b6b65ac792693f50797fe579cc223" category="paragraph">スキャンするデータが大量にない場合は、*[Deploy]&gt;[Configuration]*をクリックして、2つの小さいインスタンスタイプから選択することもできます。これにより、小規模インスタンスを使用する場合のクラウドコストを削減できます。リソースサイズが「中」の場合は次のようになります。</block>
+  <block id="71cdc5961cdeced45790d6b0eddda4af" category="paragraph">次に、* Deploy *をクリックしてクラウド導入ウィザードを開始します。</block>
+  <block id="f098ec7e550775fee93661d8c692d164" category="inline-image-macro">Data Senseを導入するインスタンスのサイズを選択するための導入ページのスクリーンショット。</block>
+  <block id="c68d76aabf6c76aa4c20d43d588ae2fb" category="paragraph"><block ref="c68d76aabf6c76aa4c20d43d588ae2fb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="125c9895b0de4086b75bd6de17240096" category="list-text">導入手順が完了すると、ウィザードに進捗状況が表示されます。問題が発生した場合は、停止して入力を求められます。</block>
+  <block id="24bcb44ffc6d3c365c98ebdb1ba288ec" category="inline-image-macro">新しいインスタンスを導入するためのData Senseウィザードのスクリーンショット。</block>
+  <block id="d75542aba94f8422182d377b2b652a76" category="paragraph"><block ref="d75542aba94f8422182d377b2b652a76" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d3b2cde2deaae60fda51c199c59226d9" category="list-text">インスタンスが導入され、Data Senseがインストールされたら、*[構成に進む]*をクリックして_Configuration_pageに移動します。</block>
+  <block id="699be6723175322ef727a933c7b42bbd" category="open-title">Azureへの導入</block>
+  <block id="7354f6953a4502296f6f94c2856366f6" category="paragraph"><block ref="7354f6953a4502296f6f94c2856366f6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="12714d8579e39a7357fefed194511b8a" category="open-title">Google Cloudに導入</block>
+  <block id="9fae3afd7a345b36cb715783abf2b4f4" category="summary">LinuxホストにData Senseを手動でインストールする前に、ホストでスクリプトを実行して、Data Senseをインストールするための前提条件がすべて揃っていることを確認できます。このスクリプトは、ネットワーク内のLinuxホストまたはクラウド内のLinuxホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイトに配置することもできます。</block>
+  <block id="05c8a7e157c9c233b20b8184929e7502" category="doc">LinuxホストでData Senseをインストールできる状態になっていることを確認します</block>
+  <block id="72be4098fd916ad168fd0ef29b61d780" category="paragraph">LinuxホストにData Senseを手動でインストールする前に、ホストでスクリプトを実行して、Data Senseをインストールするための前提条件がすべて揃っていることを確認できます。このスクリプトは、ネットワーク内のLinuxホストまたはクラウド内のLinuxホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイト（「ダークサイト」）に配置することもできます。</block>
+  <block id="8239d79bfe51b5787f726e3a0b2f2917" category="paragraph">Data Senseインストールスクリプトには、前提条件となるテストスクリプトも含まれています。ここで説明するスクリプトは、Data Senseインストールスクリプトとは別にLinuxホストを検証するユーザ向けに設計されています。</block>
+  <block id="bf647454e36069fd16f1a7a35cf6a865" category="section-title">はじめに</block>
+  <block id="88a37f7fbc3214e9153d0377c4db9ded" category="paragraph">次のタスクを実行します。</block>
+  <block id="36038c34fcf653c17e321b870bf52dfe" category="list-text">任意。BlueXPコネクタがインストールされていない場合はインストールします。コネクタをインストールせずにテストスクリプトを実行できますが、コネクタとData Senseホストマシン間の接続がチェックされるため、コネクタを用意することをお勧めします。</block>
+  <block id="699254c5c0c8f50098c4ced6af6b9a8d" category="list-text">ホストマシンを準備し、すべての要件を満たしていることを確認します。</block>
+  <block id="0c81481c0b14e8dbff4568e2ed85648f" category="list-text">Data Senseホストマシンからのアウトバウンドインターネットアクセスを有効にします。</block>
+  <block id="1dc78a625057b828e3c9842b6a68f0f6" category="list-text">すべてのシステムで必要なすべてのポートが有効になっていることを確認します。</block>
+  <block id="638dfa4dd42c802c871ad02b969b48ab" category="list-text">前提条件テストスクリプトをダウンロードして実行します。</block>
+  <block id="df8c34684d3c4cad4df8d91e36fb1460" category="paragraph">データセンスをインストールして使用するには、BlueXPコネクタが必要です。ただし、コネクタを使用せずに前提条件スクリプトを実行することはできます。</block>
+  <block id="90d542a34601159dc539d5c4985d3bd8" category="paragraph">可能です<block ref="a4b2312bac71e1fcb5d5edc9dd08d5ef" category="inline-link-rx"></block> ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。データセンスをオンプレミスにインストールする予定のユーザによっては、 Connector をオンプレミスにインストールすることもできます。</block>
+  <block id="c3ac06ac78781d185b2fc79bb41b4d6e" category="paragraph">クラウドプロバイダ環境でコネクタを作成するには、を参照してください<block ref="06bad1cad7623f84a7790f550bd209ff" category="inline-link-rx"></block>、<block ref="926977b9dc6e3dc98510a7e4750a6354" category="inline-link-rx"></block>または<block ref="b28439bdd5c342e00ef48eab105c3933" category="inline-link-rx"></block>。</block>
+  <block id="088be43867eaac29f74142859d1e2a13" category="paragraph">前提条件スクリプトを実行するときに、コネクタシステムのIPアドレスまたはホスト名が必要になります。この情報は、コネクタをオンプレミスにインストールした場合に表示されます。コネクタがクラウドに導入されている場合は、BlueXPコンソールで[ヘルプ]アイコンをクリックし、[*サポート]を選択して、[* BlueXPコネクタ*]をクリックします。</block>
+  <block id="93144470251168b3e5488b736447f48f" category="section-title">ホストの要件を確認</block>
+  <block id="df5748fad9ff6f2a543703b454542c39" category="paragraph">データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。</block>
+  <block id="787c6e838f5b3ce374fc385267fbaeb7" category="list-text">データセンスは、他のアプリケーションと共有されるホストではサポートされません。ホストは専用のホストである必要があります。</block>
+  <block id="ecab195b4bf4d14a57f8186377c3408b" category="list-text">オンプレミスでホストシステムを構築する場合は、Data Senseスキャンを実行するデータセットのサイズに応じて、3つのシステムサイズから選択できます。</block>
+  <block id="c1b7308083354b8b60760460bcce3ccc" category="cell">*大きい*</block>
+  <block id="f73b260a6cb60f48bc6d018192dfb51b" category="cell">500GiB SSDオン/または-100GiBオン/opt-395GiBオン/var-5GiBオン/tmp</block>
+  <block id="f3e6e184202c9901024fa409f2c24cb1" category="cell">*中*</block>
+  <block id="63d284249a11c1390977c2b197c85419" category="cell">SSDが200GiB、または-50GiBが/opt-145GiBが/var-5GiBが/tmpにある</block>
+  <block id="e8ae9f0392263b55e4580177a75c948e" category="cell">*小さい*</block>
+  <block id="6798decba048766a66cd22d4442d7ec0" category="cell">100GiB SSDオン/または-50GiBオン/opt-45GiBオン/var-5GiBオン/tmp</block>
+  <block id="9c99814e37cd000910dac01d33c291c6" category="list-text">Data Senseインストール用にクラウドインスタンスを導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。</block>
+  <block id="e6414c92b8fa46238f4135e4d3e45674" category="inline-link-macro">その他のAWSインスタンスタイプを参照してください</block>
+  <block id="07c511fd0ad633d44d9e71cb0c9eaba9" category="list-text">* AWS EC2インスタンスタイプ*：「m6i.4xlarge」を推奨します。 <block ref="2fad631c28a07a1344ecdbaabb5084bf" category="inline-link-macro-rx"></block>。</block>
+  <block id="130a6b20e1175876fb22c9520aa18c8c" category="inline-link-macro">その他のAzureインスタンスタイプを参照してください</block>
+  <block id="d713d26696157989a3e54d75e186ddb9" category="list-text">* Azure VMのサイズ*：「Standard_D16s_v3」を推奨します。 <block ref="600a0a16acacbb97202eae2cd680ce79" category="inline-link-macro-rx"></block>。</block>
+  <block id="02a3b057fd8df2afe74574d8ba4929b5" category="inline-link-macro">追加のGCPインスタンスタイプを参照してください</block>
+  <block id="0b0199602ca16ca93e8ce086565ea99e" category="list-text">*GCPマシンタイプ*:「n2-standard-16」をお勧めします。 <block ref="0560993eb8cc456f0c5f18a57a7d0f71" category="inline-link-macro-rx"></block>。</block>
+  <block id="bcce3b7c6b8b03a58381b565a1fbdafc" category="paragraph">（分散モデルで）スキャナノードとして追加のData Senseホストを使用する場合は、この時点でプライマリシステムに次のルールを追加します。</block>
+  <block id="53e85091806837b4645654961632e2d5" category="section-title">Data Senseからのアウトバウンドインターネットアクセスを有効にします</block>
+  <block id="203e7e6d9fce73357c13077dddd33dc6" category="paragraph">Data Senseにはアウトバウンドのインターネットアクセスが必要です。仮想ネットワークまたは物理ネットワークでインターネットアクセスにプロキシサーバを使用している場合は、 Data sense インスタンスにアウトバウンドのインターネットアクセスがあり、次のエンドポイントに接続できることを確認します。</block>
+  <block id="810dff52416162c2f79a643152a575ba" category="list-text">このセクションは、インターネットに接続されていないサイトにインストールされているホストシステムには必要ありません。</block>
+  <block id="66670decd5d421e77fa94c728d92b561" category="paragraph">BlueXPはHTTPSを使用してONTAP クラスタを検出しましたカスタムファイアウォールポリシーを使用する場合は、コネクタホストでポート443経由のアウトバウンドHTTPSアクセスを許可する必要があります。コネクタがクラウド内にある場合、すべてのアウトバウンド通信は、事前定義されたファイアウォールまたはルーティングルールによって許可されます。</block>
+  <block id="f6990f2d470222c3ed9f83899df27c0c" category="section-title">Data Sense Prerequisitesスクリプトを実行します</block>
+  <block id="a440280a0884cc876fd249f888171f56" category="paragraph">Data Sense Prerequisitesスクリプトを実行するには、次の手順を実行します。</block>
+  <block id="501ccf13f0ae6f5bf8325fb7b226f1cc" category="list-text">Linux システムがを満たしていることを確認します <block ref="1d205163b0a8ca2801018349a2f8a3d4" category="inline-xref-macro-rx"></block>。</block>
+  <block id="0aba01bddab7014288e87ba411fee394" category="list-text">からData Sense Prerequisitesスクリプトをダウンロードします<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>。選択する必要があるファイルの名前は* test_datasense_predentiations_explementations_explementations_explementation &lt;version&gt;</block>
+  <block id="39ce475fbf0eef780b35fe3ac485fece" category="list-text">使用するLinuxホストにファイルをコピーします（を使用）<block ref="8a444a43bdf534c0c6338bb7809659b3" prefix=" " category="inline-code"></block> またはその他の方法を使用してください）。</block>
+  <block id="e9b5bbe1e4c19139761534abb688155a" category="list-text">スクリプトを実行する権限を割り当てます。</block>
+  <block id="ed0300f82ab0ca2d48bd381545c0fca0" category="list-text">次のコマンドを使用してスクリプトを実行します。</block>
+  <block id="c008ef7c319b7c48878aadb398f3307c" category="listing-title">/test_datasense_predentiations_1_0&amp;#8592;-darksite&amp;gt;</block>
+  <block id="d0a708991eb8285a1a4f6a0482ffaaa0" category="list-text">Data SenseホストマシンのIPアドレスの入力を求めるプロンプトが表示されます。</block>
+  <block id="e43c17415cef76a2c212e64025423457" category="list-text">IPアドレスまたはホスト名を入力します。</block>
+  <block id="8f0bad5248b84d3cd04b9ac0be530a9c" category="list-text">BlueXP Connectorがインストールされているかどうかを確認するメッセージが表示されます。</block>
+  <block id="94ac6dca39b0d38f3b950014db488255" category="list-text">コネクタが取り付けられていない場合は、「* N *」と入力します。</block>
+  <block id="d3530f7f55e5b4f9a9f54539096d928d" category="list-text">コネクタが取り付けられている場合は、「* Y *」と入力します。をクリックし、テストスクリプトで接続をテストできるように、BlueXPコネクタのIPアドレスまたはホスト名を入力します。</block>
+  <block id="0c0b961f03e62260991bd4f49a5ad756" category="list-text">このスクリプトでは、システムに対してさまざまなテストが実行され、処理が進むにつれて結果が表示されます。終了すると、セッションのログがファイルに書き込まれます。</block>
+  <block id="594043468011cdf9c086f0caf9d02434" category="paragraph">すべての前提条件テストが正常に実行された場合は、準備ができたらData Senseをホストにインストールできます。</block>
+  <block id="f4901bf6d7d428102d57f8f96d4eec7a" category="paragraph">問題が検出された場合は、「推奨」または「必須」に分類され、修正が必要です。推奨される問題は、通常、Data Senseのスキャンおよび分類タスクの実行速度が遅くなる項目です。これらの項目は修正する必要はありませんが、対処する必要があります。</block>
+  <block id="b6aefc1f5bf5d61908d5d40fe783f3c9" category="paragraph">「必須」の問題がある場合は、問題を修正してから、前提条件テストスクリプトを再度実行する必要があります。</block>
+  <block id="f42926ae5eb2834453e4706e43354d5c" category="section-title">2023年4月3日（バージョン1.22）</block>
+  <block id="e4279e9f497576fcde3caeb67ed0f96d" category="section-title">新しいデータ検出評価レポート</block>
+  <block id="5b9233dec22bab321ca47a360d9950b6" category="inline-link">Data Discovery Assessment Reportを生成して使用する方法を説明します</block>
+  <block id="a2f7db2af3b89cce9c368f52089406c7" category="paragraph">Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、システムの調査結果を強調し、懸念領域と潜在的な修復手順を示します。このレポートの目的は、データガバナンスの懸念、データセキュリティの危険性、データセットのデータコンプライアンスギャップに対する認識を高めることです。<block ref="9ad86f8b2d35a79c635fcc2e2795f8e1" category="inline-link-rx"></block>。</block>
+  <block id="67778bfe57cf94d953dd530babc8df46" category="section-title">クラウド内の小規模インスタンスにData Senseを導入できます</block>
+  <block id="34590974cfa4c7d3c4258641c30ef959" category="paragraph">AWS環境にBlueXPコネクタからData Senseを導入する際に、デフォルトのインスタンスよりも小さい2つのインスタンスタイプから選択できるようになりました。小規模な環境をスキャンする場合は、クラウドコストを節約できます。ただし、小さいインスタンスを使用する場合はいくつかの制限があります。<block ref="98ea36794454fcb53d0ac9a791bd6948" category="inline-link-rx"></block>。</block>
+  <block id="914d653aae79118a23517243079b88cb" category="section-title">スタンドアロンスクリプトを使用して、LinuxシステムがData Senseのインストールに適しているかどうかをテストできます</block>
+  <block id="374deadc3a3b7f52c668078795f75e3a" category="inline-link">LinuxホストでData Senseをインストールする準備ができているかどうかを確認する方法を参照してください</block>
+  <block id="04659fbbded99230220bc3321874622f" category="paragraph">Data Senseのインストールとは別に、Linuxシステムがすべての前提条件を満たしていることを確認する場合は、必要条件のみをテストするスクリプトをダウンロードできます。<block ref="721973ab191f916be1f3432f173ac838" category="inline-link-rx"></block>。</block>
+  <block id="e1161f065b10936afc930fd3d9d0c76f" category="section-title">ダークサイトでData Sense BYOLライセンスがサポートされるようになりました</block>
+  <block id="1ab65443ec0af7e5e1aee32a3cf59dcc" category="inline-link">Data Sense BYOLライセンスの入手方法とアップロード方法をご確認ください</block>
+  <block id="2bf877c3dde2fb63377a0bd54296e758" category="paragraph">ダークサイトのDigital WalletにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。<block ref="759f11b436ec2c3650ac0547916cb828" category="inline-link-rx"></block>。</block>
+  <block id="6858940dfbd3de02768877bc5d1ef613" category="paragraph">Data Senseでは、データベースが1日に1回スキャンされます。データベースは、他のデータソースのように継続的にスキャンされるわけではありません。</block>
+  <block id="5e4569f52e263bc5988dd871099065f5" category="paragraph">データマッピングレポートには、企業データソースに保存されているデータの概要が表示され、移行、バックアップ、セキュリティ、コンプライアンスの各プロセスの決定に役立ちます。このレポートには、まずすべての作業環境とデータソースの概要が表示され、次に各作業環境の内訳が表示されます。</block>
+  <block id="fcdb71624845b5b7a2eeb832133403e4" category="paragraph">このレポートは、Data Senseの[ガバナンス]タブから生成します。</block>
+  <block id="2d948e473e2d70b037f0549e51ba2a9d" category="list-text">[ガバナンス]*をクリックし、*[データマッピングレポート]*ボタンをクリックします。</block>
+  <block id="13ed4c2b952afff45ad89e55774e819d" category="paragraph">Data SenseによってPDFレポートが生成され、必要に応じて確認して他のグループに送信できます。</block>
+  <block id="7ddeaa5e00e834742bed79816a143502" category="section-title">Data Discovery Assessment Reportの略</block>
+  <block id="d40936cf7a3a0b1e1def94efecb41182" category="paragraph">Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、システムの調査結果を強調し、懸念領域と潜在的な修復手順を示します。結果は、データのマッピングと分類の両方に基づいています。このレポートの目的は、データセットの次の3つの重要な側面についての認知度を高めることです。</block>
+  <block id="4fc6419c6a12af16883e770d99dbf849" category="cell">データガバナンスの懸念</block>
+  <block id="29682fe2b70e1decc5fcddf7dc56bb80" category="cell">所有しているすべてのデータと、コストを節約するためにデータ量を削減できる可能性のある領域の詳細な画像。</block>
+  <block id="e26970e3266bdd73a6217ce7b8af4c3e" category="cell">データセキュリティのリスク</block>
+  <block id="7f63d3fd95ece72febd67545c6ea1e22" category="cell">広範なアクセス権限により、内部または外部の攻撃からデータにアクセスできる領域。</block>
+  <block id="d5143a80246b3eadc253d2f9951f4497" category="cell">データコンプライアンスのギャップ</block>
+  <block id="c75a625e2486681483f05951add3c0b6" category="cell">お客様の個人情報または機密性の高い個人情報が、セキュリティとDSAR（データ主体アクセス要求）の両方の目的で保管されている場所。</block>
+  <block id="9aec4530d7d1ab984331088496677dbd" category="paragraph">評価後、このレポートでは次のことが可能な領域を特定します。</block>
+  <block id="483d6c5447c876cec7c9f20a2f16d52e" category="list-text">保持ポリシーを変更したり、特定のデータ（古いデータ、重複データ、ビジネス以外のデータ）を移動または削除したりすることで、ストレージコストを削減</block>
+  <block id="5672e2463aa066853c9eb4cf4b3e3fa8" category="list-text">グローバルグループ管理ポリシーを改訂して、幅広い権限を持つデータを保護します</block>
+  <block id="1f4e12eb3b2fcb4ce87b8ed675d3270c" category="list-text">PIIをより安全なデータストアに移動することで、個人情報または機密性の高い個人情報を含むデータを保護します</block>
+  <block id="4928ecf57de239e143368971910a2343" category="section-title">データ検出評価レポートの生成</block>
+  <block id="1848496efeb9b0561b54c93d4ca7403e" category="list-text">Governance（ガバナンス）*をクリックし、* Data Discovery Assessment Report（データ検出評価レポート）*ボタンをクリックします。</block>
+  <block id="d3cfc5adb7d762b3824a7c02a95765b9" category="inline-image-macro">ガバナンスダッシュボードのスクリーンショット。Data Discovery Assessment Reportを起動する方法が示されています。</block>
+  <block id="6e54901f5113f24a64a46275f84c34da" category="paragraph"><block ref="6e54901f5113f24a64a46275f84c34da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="00d210b686acc6babc63b384567dcde3" category="inline-link-macro">インターネットにアクセスできないオンプレミスの場所にData Senseを導入します</block>
+  <block id="1c58cfead3bce760ca11dabf2d282efe" category="paragraph">インターネットにアクセスできないダークサイトにインストールされているオンプレミスの ONTAP システムをスキャンする場合は、を実行する必要があります <block ref="c4bfa9a7572999c06f40c33dfa41fc71" category="inline-link-macro-rx"></block>。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。</block>
+  <block id="0f3a38f6bdaadde2535568e5b8024e1d" category="paragraph">Data Senseインストールスクリプトは、システムと環境が必要な前提条件を満たしているかどうかを確認することから開始されます。前提条件がすべて満たされている場合は、インストールが開始されます。Data Senseのインストールとは別に前提条件を確認する場合は、前提条件のテストのみを行う別のソフトウェアパッケージをダウンロードできます。 <block ref="6eb38258dcb1b5a2369a3c7490ac5edb" category="inline-link-macro-rx"></block>。</block>
+  <block id="d6c9503df18e166c0913e797664e6004" category="paragraph">コネクタがない場合は、<block ref="fe048365448a4a82cbd9d363a7137a93" category="inline-link-rx"></block> ネットワーク内のLinuxホスト、またはクラウド内のLinuxホスト。</block>
+  <block id="4c9ceafe03162f097239df73110df01e" category="paragraph">クラウドプロバイダを使用してコネクタを作成することもできます。を参照してください<block ref="06bad1cad7623f84a7790f550bd209ff" category="inline-link-rx"></block>、<block ref="926977b9dc6e3dc98510a7e4750a6354" category="inline-link-rx"></block>または<block ref="b28439bdd5c342e00ef48eab105c3933" category="inline-link-rx"></block>。</block>
+  <block id="44bc729b266ea1f75cc8d556fa17943e" category="paragraph">クラウドプロバイダ環境で作成する場合は、を参照してください<block ref="06bad1cad7623f84a7790f550bd209ff" category="inline-link-rx"></block>、<block ref="926977b9dc6e3dc98510a7e4750a6354" category="inline-link-rx"></block>または<block ref="b28439bdd5c342e00ef48eab105c3933" category="inline-link-rx"></block>。</block>
+  <block id="73c8e0d6d53518ca1ce3f906cf53a472" category="paragraph">また、次のことも可能です<block ref="fe048365448a4a82cbd9d363a7137a93" category="inline-link-rx"></block> ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。データセンスをオンプレミスにインストールする予定のユーザによっては、 Connector をオンプレミスにインストールすることもできます。</block>
+  <block id="b2c7070fe7681d7705e5227c12abb5ee" category="list-text">オンプレミスでホストシステムを構築する場合は、Data Senseスキャンを実行するデータセットのサイズに応じて、次の3つのシステムサイズから選択できます。</block>
+  <block id="94e57f42b65e9f971fc0f5d0e58f4dc8" category="admonition">Cloud Data Sense は、ソフトウェアがオンプレミスにインストールされている場合、現在 S3 バケット、 Azure NetApp Files 、または FSX for ONTAP をスキャンできない。このような場合は、クラウドとに別のコネクタとデータセンスのインスタンスを導入する必要があります<block ref="a5731cb9d61066e025286d452caac241" category="inline-link-rx"></block> データソースごとに異なる。</block>
+  <block id="d6f3d99b6ad2aad706bd8a6a94b71d48" category="paragraph">BlueXPコネクタとデータセンスの両方で、新しい機能を有効にするには定期的に手動でアップグレードする必要があります。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します<block ref="6f82a28c992c99e70ccdf6d600627f19" category="inline-link-rx"></block> および <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
+  <block id="dcdba57692d95c33c15bffffceb6357c" category="paragraph">オフラインのオンプレミスサイトにコネクタがまだインストールされていない場合は、<block ref="c356cb96564d1aac144adbd1ad0f2ab1" category="inline-link-rx"></block> Linux ホストの場合は、</block>
+  <block id="89825cdcfb92068b90e1077fbbbe7eee" category="paragraph">オフラインのオンプレミスサイトにBlueXPコネクタがインストールされていない場合は、<block ref="c356cb96564d1aac144adbd1ad0f2ab1" category="inline-link-rx"></block> オフラインサイトの Linux ホスト</block>
+  <block id="6ad8560ca7a19d5d074930a230dc50fc" category="cell">500GiB SSDオン/、または* 100GiBオン/opt * 395GiBオン/var * 5GiBオン/tmp</block>
+  <block id="e3bf18040fd4c855063d57cdcdc805c2" category="list-text">データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.20.xがインストールされている場合は、1.21.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
+  <block id="c1fb9db100b9c0b30bdce67dd119b43a" category="list-text">オンプレミスコネクタソフトウェアが最新バージョンにアップグレードされていることを確認します。<block ref="ab6868debf887d8dec6688f98c536c70" category="inline-link-rx"></block>。</block>
+  <block id="95d360d4c70cbbf05116206b4e5edd67" category="section-title">ログファイルにアクセスします</block>
+  <block id="57821a5c88546ffd039da36155053161" category="paragraph">Data SenseがオンプレミスのLinuxマシン、またはクラウドに導入したLinuxマシンにインストールされている場合は、ログファイルに直接移動できます。</block>
+  <block id="e432b95f6293cbb473925a15a0256e7e" category="sidebar">BlueXPを使用してData Senseをクラウドに導入</block>
+  <block id="9c32f683e0ed7bb8df9d2a568f69fa40" category="sidebar">インターネットを使用するLinuxホストにData Senseをインストールします</block>
+  <block id="57c34c9d64ebba8a9c190b93c373c389" category="sidebar">インターネットを使用せずに、Data Senseをオンプレミスにインストールします</block>
 </blocks>
