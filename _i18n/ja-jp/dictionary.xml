@@ -529,13 +529,7 @@
   <block id="c23f592529f8db7551eafe3830b6427a" category="paragraph">データセンスでは、 OneDrive アカウントと SharePoint アカウントでスキャン中のファイルに存在するアクセス許可を読み取ることができます。この情報は、ファイルの [ 調査 ] ペインの詳細、およびガバナンスダッシュボードの [ アクセス許可を開く ] 領域に表示されます。</block>
   <block id="d431283363f0e868742391138a4ffbd0" category="list-text">フランスの INSEE - INSEE コードは、フランス国立統計経済研究所（ INSEE ）がさまざまなエンティティを識別するために使用する数値コードです。</block>
   <block id="7457180e95a424d146842587474ec483" category="list-text">パスワード - この情報は、英数字の文字列の横にある「 password 」という単語を検索して、近接性検証を使用して識別されます。見つかったアイテムの数は、コンプライアンスダッシュボードの [ 個人の結果 ] の下に表示されます。［ 調査 ］ ペインでパスワードを含むファイルを検索するには、 ［ フィルタ * 個人データ ］ &gt; ［ パスワード * ］ を使用します。</block>
-  <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022 年 2 月 9 日</block>
-  <block id="0d7a2e2094cbd9f065543ad864c58f56" category="inline-link-macro">SharePoint アカウントをスキャンする方法をご覧ください</block>
   <block id="dc188738e6cc2e9f8314e1b95f18ebfd" category="inline-link">NetApp Cloud Sync の略</block>
-  <block id="48a274f4830d58bf94182b778830c862" category="inline-link-macro">ファイルのコピーおよび同期方法を参照してください</block>
-  <block id="b7be70b4ae08b5c8540e95fbe14dcfa6" category="paragraph">データ主体の名前を検索して Data Subject Access Request （ dsar ）レポートを作成するときに、ドイツ語とスペイン語がサポートされるようになりました。このレポートは、企業が GDPR または同様のデータプライバシー法を遵守する必要がある場合に役立つように作成されています。</block>
-  <block id="da848e916ac29d03235a007036cf77ca" category="inline-link-macro">データがスキャンで識別するすべての個人データタイプのリストを表示します</block>
-  <block id="2e38fe6622e02d0346ffbd31c4347739" category="paragraph">Cloud Manager Connector のセキュリティグループでは、セキュリティを強化するために、データセンスインスタンスとの間のインバウンドトラフィックとアウトバウンドトラフィックにポート 80 ではなくポート 443 が使用されます。この時点では両方のポートは開いたままなので、問題はありませんが、将来のリリースではポート 80 が廃止される予定であるため、以前のどの環境でもセキュリティグループを更新する必要があります。</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">詳細はこちら。</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link-macro">方法を参照してください</block>
   <block id="74585f658544c691c6f6afb583a9dc61" category="inline-link-macro">S3 プロトコルを使用するオブジェクトストレージをスキャンしています</block>
@@ -1659,7 +1653,6 @@
   <block id="6b356fe759d450cad6ec9f478a17a524" category="paragraph">たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'sudo ./install.sh -a &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;token&gt; --host &lt;ds_host&gt; --manager-host &lt;cm_host&gt; * -n &lt;node-ip1&gt; 、 &lt;node-ip2&gt; 、 &lt;node-ip3&gt;*-proxy-proxy-proxy-host-pproxy-pxe-password&lt;/password&gt;</block>
   <block id="74e5e01600beec43894e96e22ac9f5eb" category="list-text">プロンプトが表示されたら、を持つ Cloud Data Sense インスタンスに IAM ロールを割り当てます <block ref="27b52f38738d689881a76b49c98ec7ec" category="inline-xref-macro-rx"></block>。</block>
   <block id="b7f2b0e45c51391324aebf221531b036" category="paragraph">FSX で ONTAP ボリュームをスキャンする前に、<block ref="68e9cbaf33b2641a589dc87867e4bfec" category="inline-link-rx"></block>。</block>
-  <block id="f72dc999895eb17e77093f9ecff4180c" category="paragraph">これは、データを移行していて、ファイルに加えられた最後の変更を確認する場合に役立ちます。このアクションではを使用します<block ref="a370f691ddfd2ad7b716b2db4ad021a1" category="inline-link-rx"></block> データをソースからターゲットにコピーおよび同期する機能。</block>
   <block id="bbd1b36ab0dbd0c17e60ec752bb02a55" category="paragraph"><block ref="b1e4fd148d344599f4a25922d8155dd9" category="inline-link-macro-rx"></block>。</block>
   <block id="91aef07a29d8068140e7dca06bec6d9d" category="list-text">データからプライバシーに関する情報を収集し、プライバシーリスクスコアを取得します。 <block ref="890a798f73fe571345d1ff7c58a08844" category="inline-link-macro-rx"></block>。</block>
   <block id="39630dece802514e5f7336bcbbf0ac6f" category="list-text">クレジットカード情報のファイルへの配布を識別するのに役立ちます。 <block ref="ef3bace538be6eee30a3e48516637cf7" category="inline-link-macro-rx"></block>。</block>
@@ -1671,12 +1664,6 @@
   <block id="6c0e8ed69caed245f57b7b8ac8246fff" category="section-title">新しいフィルタ：特定のユーザまたはグループに読み取りまたは書き込み権限があるファイルを表示します</block>
   <block id="6bcf3eec310c41993f38eea54e01a446" category="section-title">データセンスを使用すると、 SharePoint アカウントと OneDrive アカウントのファイルに対する権限を決定できます</block>
   <block id="6f7f4b2d525b7b8ad22c1d283e4b195e" category="section-title">追加の 2 種類の個人データは、データセンスで識別できます</block>
-  <block id="536f48524e36a16593703c5d8d108b79" category="section-title">Cloud Data Sense を使用して Cloud Backup ファイルをスキャンするベータ機能は、本リリースでは廃止されました</block>
-  <block id="5b7066a8679e57ba1c6e16c4237fb674" category="section-title">Microsoft SharePoint オンラインアカウントのスキャンのサポートが追加されました</block>
-  <block id="b8977b26a070b5eca7e5cfd90f128004" category="section-title">データセンスでは、データソースからターゲットの場所にファイルをコピーし、それらのファイルを同期できます</block>
-  <block id="622db54d0a7d9c01c841d932e3988937" category="section-title">dsar レポートの新しい言語サポート</block>
-  <block id="8cdccfd2e3c1390208fa5892348c4108" category="section-title">追加の 3 種類の個人データは、データセンスで識別できます</block>
-  <block id="2da79a92d5bb1f1f77ab993c07c12703" category="section-title">コネクタへのデータセンス通信のためにセキュリティグループポートが変更されました</block>
   <block id="5d7ec019a090d19805ff8b8708516943" category="paragraph">データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。データセンスは、他のアプリケーションと共有されるホストではサポートされません。ホストは専用のホストである必要があります。</block>
   <block id="7d3786abf2ebb473a5ba70b680734525" category="section-title">BYOL ライセンスに関する考慮事項</block>
   <block id="e95058755e821bf6cb439e37f1f068d7" category="list-text">スキャンするデータ量がライセンスで許可された容量の 80% に達したとき、および制限に達したときに再度スキャンします</block>
@@ -1684,13 +1671,8 @@
   <block id="c438a45ba498e9cee6eb5d6bb573e3dc" category="inline-xref">Cloud Data Sense ライセンスを更新する方法</block>
   <block id="06087ea3885ed7ac53f2f14132359adc" category="paragraph">データセンスでは、ハッシュテクノロジを使用して重複ファイルを特定します。ハッシュコードが別のファイルと同じファイルがある場合、ファイル名が異なる場合でも、ファイルが完全に重複していることを 100% 確認できます。</block>
   <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">このページで指定されている「ファイルハッシュ」値を使用して、 ［ 調査 ］ ページに直接入力すると、特定の重複ファイルをいつでも検索できます。また、ポリシーで使用することもできます。</block>
-  <block id="7d48333086004a7939c29f033e1bfad5" category="section-title">ダークサイトに導入した場合、 OneDrive と SharePoint のデータをスキャンできます</block>
-  <block id="5d1023de4743a538d723b0eea67b9c49" category="inline-link">次のエンドポイントへのアクセスを許可する必要があります。</block>
   <block id="03ab5a445b96670c4d6471f1e0ae786c" category="list-text">Cloud Sync を使用したソースファイルのコピーと同期</block>
   <block id="21d99d41f7aa56147e5b8e2f64a15458" category="list-text">ユーザからのフィードバックを受け取る</block>
-  <block id="1b602d3afff4393bd19938efb7312da3" category="inline-link-macro">インターネットにアクセスできないオンプレミスの場所に導入されている</block>
-  <block id="72be220d746bd2e14365d0ceeea52365" category="inline-link-macro">必要なエンドポイントのリストを参照してください</block>
-  <block id="e9b6d5f264bba809d5461558e8379d9e" category="paragraph">データセンスは、の場合もあります <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。ただし、ローカルの OneDrive ファイルをスキャンするには、いくつかの一部のエンドポイントへのインターネットアクセスを提供する必要があります。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
   <block id="9aa68bac48e77ad847d7e57a68f08944" category="paragraph">このステータスは、デジタルウォレットにも表示されます。</block>
   <block id="06314d3359f0409e52f485d16ab0c81f" category="paragraph">Cloud Data Sense ライセンスは、期限が切れる前に更新できるため、スキャンしたデータへのアクセスが中断されることはありません。</block>
   <block id="becde272662faf1aa4393e2cd5fbf2f7" category="admonition">使用しているアカウントに BYOL ライセンスと PAYGO の両方のサブスクリプションがある場合、 BYOL ライセンスの期限が切れたときに Data Sense _ が PAYGO サブスクリプションに移行することはありません。BYOL ライセンスを更新する必要があります。</block>
@@ -1783,9 +1765,6 @@
   <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">データの調査に使用できるすべてのフィルタのリストを確認します</block>
   <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
   <block id="fca7f51b54fee8b38e01607def214d88" category="paragraph">「ユーザ / グループの権限」という新しいフィルタが追加され、特定のユーザまたはグループの読み取り / 書き込み権限を持つファイルを一覧表示できるようになりました。1つ以上のユーザ名またはグループ名を選択するか、または名前の一部を入力できます。この機能は、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files 、 Amazon FSX for ONTAP 、およびファイル共有のボリュームで使用できます。</block>
-  <block id="659d1ffa40af561d84c53558562c1ec0" category="paragraph">SharePoint サイトからドキュメントやファイルをスキャンするために、 SharePoint オンラインアカウントをデータセンスに追加できるようになりました。 <block ref="7eefe10c1c468dca4cd0e6b3eed1adc0" category="inline-link-macro-rx"></block>。</block>
-  <block id="77a75568e8846a1bf685d1ee50c690cf" category="paragraph"><block ref="6cdda3320a1281c9d4957b83cba366de" category="inline-link-macro-rx"></block>。</block>
-  <block id="d55b3233b82d41486408c8252b8ebafb" category="paragraph">データセンスでは、ファイル内にフランス語のソーシャルセキュリティ番号、フランス語の ID 、フランス語のドライバーライセンス番号が表示されるようになりました。 <block ref="685a6d4b5536628189414cd84011e60e" category="inline-link-macro-rx"></block>。</block>
   <block id="9f2913099fea83e0f323c9eaa2647551" category="inline-link-macro">SharePointアカウント全体をデータセンスから削除します</block>
   <block id="22653e7e1ce41c78cecfefd77069565b" category="paragraph">できることに注意してください <block ref="b445b66eb7994fc8803d57fcbaaa50f1" category="inline-link-macro-rx"></block> SharePointアカウントからユーザーデータをスキャンする必要がなくなった場合。</block>
   <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">現在、 30MB を超えるファイルのラベルは変更できません。OneDrive、SharePoint、Google Driveアカウントの場合、最大ファイルサイズは4 MBです。</block>
@@ -2095,9 +2074,6 @@
   <block id="368538217a4a98d2d78bf94a224b8eb6" category="paragraph">データ検出では、階層リンクファイルがコンプライアンスダッシュボードに表示されるカテゴリの一部として認識されるようになりました。これらは、ソースの場所からNFS共有にファイルを移動するときにData Senseによって作成されるファイルです。<block ref="fd6931884959497f6c1600e29f97b838" category="inline-link-rx"></block>。</block>
   <block id="636d406982c471ea6a3e9f3a5d5f7f1f" category="paragraph">また、[調査]ページで検索を実行するときに、[カテゴリ]の[データセンスパンくずリスト]を選択して、データセンスブレッドクラムファイルのみを表示することもできます。</block>
   <block id="758462d66cb32533f49360d3b98e28c4" category="paragraph">以下の前提条件を確認して、SharePointアカウントでクラウドデータセンスをアクティブ化する準備ができていることを確認してください。</block>
-  <block id="19814c236f94ff3af850cb182f35add5" category="inline-link-macro">インターネットにアクセス可能なオンプレミスの場所にインストールされます</block>
-  <block id="1834f32ba8d3eab040f5ce5755a6ad8a" category="list-text">SharePoint Onlineの場合、データセンスはです <block ref="879c41e64fac303868428ba32472ed0b" category="inline-link-macro-rx"></block> または <block ref="1303820445af3a7c87be9fbd1bbc30ad" category="inline-link-macro-rx"></block>。</block>
-  <block id="8985dbaa7cbdc09c9a769e35fc86d4ad" category="paragraph">データセンスは、の場合もあります <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。ただし、SharePoint Onlineファイルをスキャンするには、いくつかの選択したエンドポイントへのインターネットアクセスを提供する必要があります。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
   <block id="88ce972549d8b67ad56bc9e681818ca2" category="section-title">SharePoint Onlineアカウントを追加する</block>
   <block id="8b7071c98b3d8a3e43ecfa77bab75857" category="paragraph">ユーザーファイルが存在するSharePoint Onlineアカウントを追加します。</block>
   <block id="c5545572ea4069cfaa50e205fd80e522" category="inline-image-macro">[SharePoint Onlineの追加]ボタンをクリックできる[構成]ページのスクリーンショット。</block>
@@ -2286,7 +2262,6 @@
   <block id="7c71ca28422eaaaf66d759fac9ddacd8" category="inline-link">BlueXPでONTAP ファイルシステムのFSXを検出または作成する方法を参照してください</block>
   <block id="5dbbb266134a4996024e4714a92eb4f4" category="paragraph"><block ref="b25b20c3e54422c7dfd405e788a8f63b" category="inline-link-rx"></block>。</block>
   <block id="550ed190220c30a219939b5cc149ea64" category="admonition">FSX for ONTAP の場合、Cloud Data SenseはBlueXPと同じリージョンのボリュームのみをスキャンできます。</block>
-  <block id="605064cd8edf5ae796b155904f40b48f" category="paragraph">インターネットにアクセスできないサイトにデータセンスをインストールする場合は、インターネットにアクセスできないサイトにBlueXPコネクタもインストールする必要があります。<block ref="879ebf9ca74e8f08bfff336454f4ade3" category="inline-link-rx"></block>。</block>
   <block id="65b1808e8755301d9b88abfe2641bc90" category="summary">Cloud Data SenseがBlueXPワークスペースでスキャンする最初の1 TBのデータは無料です。そのあとも引き続きデータをスキャンするには、ネットアップのBYOLライセンス、またはクラウドプロバイダMarketplaceからのサブスクリプションが必要です。</block>
   <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。</block>
   <block id="0f6c00034bac6e049845fa36d40deb87" category="inline-image-macro">BlueXPの右上にあるバナーのスクリーンショットで、[設定]アイコンを選択できます。</block>
@@ -2723,7 +2698,6 @@
   <block id="21e575de9b2cf958293bb22c657eba7b" category="paragraph">データセンスでは、日本語の個人番号（My Number）を含むファイルを識別して分類できます。これには、個人用電話番号と会社用電話番号の両方が含まれます。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
   <block id="ee7392d2316f5d3dd66a6f38dfd1dbfb" category="list-text">「ユーザ/グループの権限」フィルタを使用すると、特定のユーザまたはグループに対する読み取り/書き込み権限があるファイル、フォルダ、および共有を表示できます。複数のユーザまたはグループの名前を選択するか、名前の一部を入力できます。</block>
   <block id="d03ac14c4e429af55c127e304518d56e" category="paragraph">データセンスは、オーストラリアTFN (税ファイル番号)、オーストラリア運転免許証番号、オーストラリア医薬品番号、オーストラリアパスポート番号を含むファイルを識別し、分類することができます。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
-  <block id="765a37e7c0d57c675f5f9b8438aa0b27" category="paragraph">インターネットにアクセスできないオンプレミスサイトのホストにCloud Data Senseを導入した場合は、OneDriveアカウントまたはSharePointアカウントからローカルデータをスキャンできるようになりました。 <block ref="1b9c05db061e84ae6eca6f68bdd32c9b" category="inline-link-macro-rx"></block></block>
   <block id="3631ca73c04d0e5a0d6b08517f6f049f" category="cell">日本の個人識別番号（個人および会社）</block>
   <block id="35c134848f5f2aeab535e7e525874a02" category="paragraph">環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、ポート 443 を介したコネクタとクラウドデータセンスの接続などが含まれます。 <block ref="41431224cdc0c634efe8819b91420afe" category="inline-xref-macro-rx"></block>。</block>
   <block id="21e0d61d9e797a17767287de32bd7bef" category="list-text">HR -健全性カテゴリ</block>
@@ -3253,7 +3227,6 @@
   <block id="8239d79bfe51b5787f726e3a0b2f2917" category="paragraph">Data Senseインストールスクリプトには、前提条件となるテストスクリプトも含まれています。ここで説明するスクリプトは、Data Senseインストールスクリプトとは別にLinuxホストを検証するユーザ向けに設計されています。</block>
   <block id="bf647454e36069fd16f1a7a35cf6a865" category="section-title">はじめに</block>
   <block id="88a37f7fbc3214e9153d0377c4db9ded" category="paragraph">次のタスクを実行します。</block>
-  <block id="36038c34fcf653c17e321b870bf52dfe" category="list-text">任意。BlueXPコネクタがインストールされていない場合はインストールします。コネクタをインストールせずにテストスクリプトを実行できますが、コネクタとData Senseホストマシン間の接続がチェックされるため、コネクタを用意することをお勧めします。</block>
   <block id="699254c5c0c8f50098c4ced6af6b9a8d" category="list-text">ホストマシンを準備し、すべての要件を満たしていることを確認します。</block>
   <block id="0c81481c0b14e8dbff4568e2ed85648f" category="list-text">Data Senseホストマシンからのアウトバウンドインターネットアクセスを有効にします。</block>
   <block id="1dc78a625057b828e3c9842b6a68f0f6" category="list-text">すべてのシステムで必要なすべてのポートが有効になっていることを確認します。</block>
@@ -3287,17 +3260,14 @@
   <block id="f6990f2d470222c3ed9f83899df27c0c" category="section-title">Data Sense Prerequisitesスクリプトを実行します</block>
   <block id="a440280a0884cc876fd249f888171f56" category="paragraph">Data Sense Prerequisitesスクリプトを実行するには、次の手順を実行します。</block>
   <block id="501ccf13f0ae6f5bf8325fb7b226f1cc" category="list-text">Linux システムがを満たしていることを確認します <block ref="1d205163b0a8ca2801018349a2f8a3d4" category="inline-xref-macro-rx"></block>。</block>
-  <block id="0aba01bddab7014288e87ba411fee394" category="list-text">からData Sense Prerequisitesスクリプトをダウンロードします<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>。選択する必要があるファイルの名前は* test_datasense_predentiations_explementations_explementations_explementation &lt;version&gt;</block>
   <block id="39ce475fbf0eef780b35fe3ac485fece" category="list-text">使用するLinuxホストにファイルをコピーします（を使用）<block ref="8a444a43bdf534c0c6338bb7809659b3" prefix=" " category="inline-code"></block> またはその他の方法を使用してください）。</block>
   <block id="e9b5bbe1e4c19139761534abb688155a" category="list-text">スクリプトを実行する権限を割り当てます。</block>
   <block id="ed0300f82ab0ca2d48bd381545c0fca0" category="list-text">次のコマンドを使用してスクリプトを実行します。</block>
-  <block id="c008ef7c319b7c48878aadb398f3307c" category="listing-title">/test_datasense_predentiations_1_0&amp;#8592;-darksite&amp;gt;</block>
   <block id="d0a708991eb8285a1a4f6a0482ffaaa0" category="list-text">Data SenseホストマシンのIPアドレスの入力を求めるプロンプトが表示されます。</block>
   <block id="e43c17415cef76a2c212e64025423457" category="list-text">IPアドレスまたはホスト名を入力します。</block>
   <block id="8f0bad5248b84d3cd04b9ac0be530a9c" category="list-text">BlueXP Connectorがインストールされているかどうかを確認するメッセージが表示されます。</block>
   <block id="94ac6dca39b0d38f3b950014db488255" category="list-text">コネクタが取り付けられていない場合は、「* N *」と入力します。</block>
   <block id="d3530f7f55e5b4f9a9f54539096d928d" category="list-text">コネクタが取り付けられている場合は、「* Y *」と入力します。をクリックし、テストスクリプトで接続をテストできるように、BlueXPコネクタのIPアドレスまたはホスト名を入力します。</block>
-  <block id="0c0b961f03e62260991bd4f49a5ad756" category="list-text">このスクリプトでは、システムに対してさまざまなテストが実行され、処理が進むにつれて結果が表示されます。終了すると、セッションのログがファイルに書き込まれます。</block>
   <block id="594043468011cdf9c086f0caf9d02434" category="paragraph">すべての前提条件テストが正常に実行された場合は、準備ができたらData Senseをホストにインストールできます。</block>
   <block id="f4901bf6d7d428102d57f8f96d4eec7a" category="paragraph">問題が検出された場合は、「推奨」または「必須」に分類され、修正が必要です。推奨される問題は、通常、Data Senseのスキャンおよび分類タスクの実行速度が遅くなる項目です。これらの項目は修正する必要はありませんが、対処する必要があります。</block>
   <block id="b6aefc1f5bf5d61908d5d40fe783f3c9" category="paragraph">「必須」の問題がある場合は、問題を修正してから、前提条件テストスクリプトを再度実行する必要があります。</block>
@@ -3358,4 +3328,10 @@
   <block id="2b8cbb70f44f3831d9e9d67800ebb915" category="paragraph">また、次のことも可能です <block ref="239e282f4ba241974ca818753c648c59" category="inline-link-macro-rx"></block>。</block>
   <block id="d102535383c097c61a0a9f0f424e371d" category="paragraph">現在、Cloud Volumes ONTAP 、Azure NetApp Files 、FSx for ONTAP 、AWS S3、Googleドライブのスキャンはサポートされていません。 Data Senseがダークサイトに導入されている場合は、OneDrive（SharePoint Online）アカウントが作成されます。</block>
   <block id="e63a4e65f36778dd22d90e389565023a" category="paragraph">BlueXPコネクタとデータセンスの両方で、新しい機能を有効にするには定期的に手動でアップグレードする必要があります。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します<block ref="79c1d81a19f6b89269470ecda07878e3" category="inline-link-rx"></block> および <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
+  <block id="5706ba29d6e23990f862120134fbb359" category="list-text">SharePoint Onlineの場合、データセンスはです <block ref="879c41e64fac303868428ba32472ed0b" category="inline-link-macro-rx"></block>。</block>
+  <block id="69ac400752b1ac01aa7430b580d1d340" category="paragraph">インターネットにアクセスできないサイトにデータセンスをインストールする場合は、インターネットにアクセスできないサイトにBlueXPコネクタもインストールする必要があります。<block ref="1c688d8f43aa189fb0a1239cdf9c5893" category="inline-link-rx"></block>。</block>
+  <block id="c624da3c565b6b98b26a4f4ebf15529a" category="list-text">BlueXPコネクタがまだインストールされていない場合は、必要に応じてインストールします。コネクタをインストールせずにテストスクリプトを実行できますが、コネクタとData Senseホストマシン間の接続がチェックされるため、コネクタを用意することをお勧めします。</block>
+  <block id="01d6446c1a0e718244e8769f68a304fb" category="list-text">からData Sense Prerequisitesスクリプトをダウンロードします<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>。選択するファイルの名前は* standalone-pre-requisite-tester-tester*&lt;version&gt; です。</block>
+  <block id="b4628b43616bed69627de3b91fe817d0" category="paragraph">インターネットにアクセスできないホストでスクリプトを実行する場合にのみ、「--darksite」オプションを追加します。ホストがインターネットに接続されていない場合、一部の前提条件テストがスキップされます。</block>
+  <block id="1bb79e71fe1463a15c91ab711e20a6ac" category="list-text">このスクリプトでは、システムに対してさまざまなテストが実行され、処理が進むにつれて結果が表示されます。終了すると、セッションのログがという名前のファイルに書き込まれます<block ref="7bca4c3da1c027ba15644b115a5e9fd9" prefix=" " category="inline-code"></block> をクリックします<block ref="8a788ac11c9bfeaba837d43d9090ac97" prefix=" " category="inline-code"></block>。</block>
 </blocks>

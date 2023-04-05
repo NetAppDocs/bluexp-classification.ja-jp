@@ -24,7 +24,7 @@ Data Senseインストールスクリプトには、前提条件となるテス�
 
 次のタスクを実行します。
 
-. 任意。BlueXPコネクタがインストールされていない場合はインストールします。コネクタをインストールせずにテストスクリプトを実行できますが、コネクタとData Senseホストマシン間の接続がチェックされるため、コネクタを用意することをお勧めします。
+. BlueXPコネクタがまだインストールされていない場合は、必要に応じてインストールします。コネクタをインストールせずにテストスクリプトを実行できますが、コネクタとData Senseホストマシン間の接続がチェックされるため、コネクタを用意することをお勧めします。
 . ホストマシンを準備し、すべての要件を満たしていることを確認します。
 . Data Senseホストマシンからのアウトバウンドインターネットアクセスを有効にします。
 . すべてのシステムで必要なすべてのポートが有効になっていることを確認します。
@@ -175,21 +175,23 @@ Data Sense Prerequisitesスクリプトを実行するには、次の手順を�
 
 
 .手順
-. からData Sense Prerequisitesスクリプトをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択する必要があるファイルの名前は* test_datasense_predentiations_explementations_explementations_explementation <version>
+. からData Sense Prerequisitesスクリプトをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は* standalone-pre-requisite-tester-tester*<version> です。
 . 使用するLinuxホストにファイルをコピーします（を使用） `scp` またはその他の方法を使用してください）。
 . スクリプトを実行する権限を割り当てます。
 +
 [source, cli]
 ----
-chmod +x test_datasense_prerequisites_1_0
+chmod +x standalone-pre-requisite-tester-v1.21.0
 ----
 . 次のコマンドを使用してスクリプトを実行します。
 +
-./test_datasense_predentiations_1_0&#8592;-darksite>
 [source, cli]
 ----
-Add the option "--darksite" only if you are running the script on a host that doesn't have internet access. Certain prerequisite tests are skipped when the host is not connected to the internet.
+ ./standalone-pre-requisite-tester-v1.21.0 <--darksite>
 ----
++
+インターネットにアクセスできないホストでスクリプトを実行する場合にのみ、「--darksite」オプションを追加します。ホストがインターネットに接続されていない場合、一部の前提条件テストがスキップされます。
+
 . Data SenseホストマシンのIPアドレスの入力を求めるプロンプトが表示されます。
 +
 ** IPアドレスまたはホスト名を入力します。
@@ -201,7 +203,7 @@ Add the option "--darksite" only if you are running the script on a host that do
 ** コネクタが取り付けられている場合は、「* Y *」と入力します。をクリックし、テストスクリプトで接続をテストできるように、BlueXPコネクタのIPアドレスまたはホスト名を入力します。
 
 
-. このスクリプトでは、システムに対してさまざまなテストが実行され、処理が進むにつれて結果が表示されます。終了すると、セッションのログがファイルに書き込まれます。
+. このスクリプトでは、システムに対してさまざまなテストが実行され、処理が進むにつれて結果が表示されます。終了すると、セッションのログがという名前のファイルに書き込まれます `prerequisites-test-<timestamp>.log` をクリックします `/opt/netapp/install_logs`。
 
 
 .結果

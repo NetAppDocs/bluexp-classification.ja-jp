@@ -59,14 +59,11 @@ SharePoint アカウントでスキャンする SharePoint サイト URL のリ�
 
 導入済みのインスタンスがない場合は Cloud Data Sense を導入
 
-* SharePoint Onlineの場合、データセンスはです link:task-deploy-cloud-compliance.html["クラウドに導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセス可能なオンプレミスの場所にインストールされます"^]。
-+
-データセンスは、の場合もあります link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスの場所に導入されている"^]。ただし、SharePoint Onlineファイルをスキャンするには、いくつかの選択したエンドポイントへのインターネットアクセスを提供する必要があります。 link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["必要なエンドポイントのリストを参照してください"]。
-
+* SharePoint Onlineの場合、データセンスはです link:task-deploy-cloud-compliance.html["クラウドに導入"^]。
 * オンプレミスのSharePointの場合、データセンスをインストールできます link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^] または link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスの場所"^]。
 
 
-インターネットにアクセスできないサイトにデータセンスをインストールする場合は、インターネットにアクセスできないサイトにBlueXPコネクタもインストールする必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["詳細はこちら。"^]。
+インターネットにアクセスできないサイトにデータセンスをインストールする場合は、インターネットにアクセスできないサイトにBlueXPコネクタもインストールする必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["詳細はこちら。"^]。
 
 Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
 
