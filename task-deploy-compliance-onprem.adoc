@@ -309,13 +309,17 @@ image:screenshot_cloud_compliance_deploy_onprem.png["クラウドまたはオン
 
 
  a| 
-.. 手順7でコピーした情報を貼り付けます。
+.. 手順7でコピーしたコマンドを貼り付けます。
 `sudo ./install.sh -a <account_id> -c <agent_id> -t <token>`
++
+（オンプレミス以外の）クラウドインスタンスにインストールする場合は、を追加します `--manual-cloud-install <cloud_provider>`。
+
 .. コネクタインスタンスからアクセスできるように、 Data Sense ホストマシンの IP アドレスまたはホスト名を入力します。
 .. BlueXP ConnectorホストマシンのIPアドレスまたはホスト名を入力して、データセンスインスタンスからアクセスできるようにします。
 .. プロンプトが表示されたら、プロキシの詳細を入力BlueXPコネクタが既にプロキシを使用している場合は、この情報を再度入力する必要はありません。これは、コネクタが使用するプロキシが自動的に使用されるためです。
 
-| また、必要なホストパラメータとプロキシパラメータを指定して、コマンド全体を事前に作成することもできます。 sudo ./install.sh -a <account_id > -c <agent_id> -t <token> -host <ds_host> --proxy-host <cm_host> --proxy-host <proxy_host> -proxy-port <proxy-dir password> -proxy-password-dir <proxy-password> 
+| または、必要なホストパラメータとプロキシパラメータを指定して、コマンド全体を事前に作成することもできます。
+`sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --host <ds_host> --manager-host <cm_host> --manual-cloud-install <cloud_provider> --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password> --cacert-folder-path <ca_cert_dir>` 
 |===
 +
 変数値：
@@ -326,6 +330,7 @@ image:screenshot_cloud_compliance_deploy_onprem.png["クラウドまたはオン
 ** _ctoken _ = JWT ユーザートークン
 ** _ds_host_ = Data Sense Linux システムの IP アドレスまたはホスト名
 ** _cm_host_= BlueXPコネクタシステムのIPアドレスまたはホスト名。
+** _cloud_provider_=クラウドインスタンスにインストールする場合は、クラウドプロバイダに応じて「AWS」、「Azure」、または「GCP」を入力します。
 ** _proxy_host_ = ホストがプロキシサーバの背後にある場合は、プロキシサーバの IP 名またはホスト名。
 ** _proxy_port_= プロキシサーバに接続するポート（デフォルトは 80 ）です。
 ** _proxy_scheme_= 接続方式： https または http （デフォルト http ）。

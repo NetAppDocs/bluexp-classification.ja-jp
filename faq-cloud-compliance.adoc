@@ -354,13 +354,13 @@ Connectorは、クラウドアカウントまたはオンプレミスのいず�
 
 === コネクタを自分のホストに導入できますか。
 
-はい。可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタをオンプレミスに導入"^] ネットワーク内のLinuxホストまたはクラウド内のホスト。オンプレミスにデータセンスを導入する場合は、オンプレミスにもコネクタをインストールできますが、必須ではありません。
+はい。可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["コネクタをオンプレミスに導入"^] ネットワーク内のLinuxホストまたはクラウド内のホスト。オンプレミスにデータセンスを導入する場合は、オンプレミスにもコネクタをインストールできますが、必須ではありません。
 
 
 
 === インターネットにアクセスできないセキュアなサイトはどうでしょうか。
 
-はい、サポートされています。可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["インターネットにアクセスできないオンプレミスのLinuxホストにコネクタを導入します"^]。その上で、オンプレミスのONTAP クラスタやその他のローカルデータソースを検出し、データセンスを使用してデータをスキャンすることができます。
+はい、サポートされています。可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["インターネットにアクセスできないオンプレミスのLinuxホストにコネクタを導入します"^]。その上で、オンプレミスのONTAP クラスタやその他のローカルデータソースを検出し、データセンスを使用してデータをスキャンすることができます。
 
 
 
