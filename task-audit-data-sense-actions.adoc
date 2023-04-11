@@ -54,7 +54,7 @@ summary: データセンスは、データをスキャンするすべての作�
 
 管理監査ログファイルは、Data Senseマシンの次の場所にあります。 `/opt/netapp/audit_logs/`
 
-インストール監査ログファイルがに書き込まれます `/ops/netapp/install_logs`
+インストール監査ログファイルがに書き込まれます `/opt/netapp/install_logs/`
 
 各ログファイルのサイズは最大で10MBです。この制限に達すると、新しいログファイルが開始されます。ログファイルの名前は「DataSense _ audit.log」、「DataSense _ audit.log.1」、「DataSense _ audit.log.2」などです。最大数の100個のログファイルがシステムの古いログファイルに保持されている場合、最大数に達すると自動的に削除されます。
 
