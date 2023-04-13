@@ -713,8 +713,6 @@
   <block id="7a833d41d59abd430a8a21760722d14a" category="paragraph"><block ref="57d1ac548ab885ff197c8b0634f5bdfc" category="inline-link-macro-rx"></block>。</block>
   <block id="551187f69bb192d7df69d2113a8acac4" category="admonition">クラウドデータセンスインスタンスを完全に削除するには、クラウドプロバイダのポータルまたはオンプレミスの場所から手動でデータセンスインスタンスを削除します。</block>
   <block id="ae64bece015f15eb39e95575c833f8d3" category="section-title">ONTAP ボリュームでデータ階層化が有効になっている場合、どうなりますか？</block>
-  <block id="2de4e78513aa5bfeb890fe4ddc3ec775" category="paragraph">コールドデータをオブジェクトストレージに階層化する ONTAP システムでは、クラウドデータの意味を有効にすることができます。データ階層化が有効になっている場合、データセンスは、ディスクにあるすべてのデータと、オブジェクトストレージに階層化されたコールドデータをスキャンします。</block>
-  <block id="7245782d4f1eb0db394d9f1f8ae02b2c" category="paragraph">コンプライアンススキャンはコールドデータを加熱しません -- コールドデータを保存し ' オブジェクトストレージに階層化します</block>
   <block id="a7865b20d9097d32d555ae9b2251ef31" category="section-title">Cloud Data Sense は、自分の組織に通知を送信できますか？</block>
   <block id="0a351d661588dd9301518a85a687c4dc" category="paragraph">また、 [ ガバナンス ] ページと [ 調査 ] ページからステータスレポートをダウンロードして、組織内で共有することもできます。</block>
   <block id="eab4d10a40c49ac7fa1a3daf5756345e" category="paragraph">Cloud Data Sense は、すぐに使用できる分析情報をデータに提供します。これらの分析情報を抽出して、組織のニーズに活用できます。</block>
@@ -1512,14 +1510,12 @@
   <block id="d027b079c3ea3f4ab6dd99923ea9e615" category="list-text">*Download dsar Report*: アクセス要求に対する正式な応答で、データ主体に送信できます。このレポートには、クラウドデータが対象とするデータに基づいて自動的に生成された情報が含まれており、テンプレートとして使用するように設計されています。データ主体に送信する前に、フォームに必要事項を記入して内部で確認してください。</block>
   <block id="45c652234dbe5a9ab1456e9185eb8770" category="list-text">* 調査結果 * ：特定のファイルの検索、ソート、詳細の展開、およびファイルリストのダウンロードによってデータを調査できるページ。</block>
   <block id="da4fc4e9038590549f810ab20ac23f1d" category="admonition">10 、 000 件を超える結果がある場合は、ファイルリストに上位 10 、 000 件のみが表示されます。</block>
-  <block id="62833e4a62aecb06bdb2de4d651190fb" category="summary">クラウドデータセンスは、データソースをスキャンしてデータをマッピングおよび分類し、プライベート情報を識別するデータガバナンスサービスです。</block>
   <block id="c0554a6d8deefa28ad0d9e99455a69f7" category="doc">Cloud Data Sense ドキュメント</block>
   <block id="693cf3d80468cadd83e6ff4a1ef6638d" category="summary">NetApp 以外の NFS または CIFS ファイル共有を Cloud Data Sense で直接スキャンするには、いくつかの手順を実行します。これらのファイル共有は、オンプレミスでもクラウドでもかまいません。</block>
   <block id="8b30b43b2d32f52db456a78f120bec50" category="paragraph">CIFS （ SMB ）共有の場合は、共有にアクセスするためのクレデンシャルがあることを確認しておきます。</block>
   <block id="d2ea2bf943bb8c943367ebfd6b8aec96" category="paragraph">このグループは、スキャンするファイル共有のコンテナであり、これらのファイル共有の作業環境名として使用されます。</block>
   <block id="925a5b3d46766546e19dbce83a2fefb6" category="paragraph">スキャンするファイル共有のリストを追加し、スキャンのタイプを選択します。一度に最大 100 個のファイル共有を追加できます。</block>
   <block id="6f1739c829744e6585dc123d746a9106" category="section-title">ファイル共有の要件の確認</block>
-  <block id="2f01eae5e8c5b9452e84210106577138" category="list-text">共有は、クラウド内やオンプレミスなど、どこでもホストできます。ネットアップ以外のストレージシステム上のファイル共有です。</block>
   <block id="8b1b8390e7a987a1d682e70703508660" category="list-text">データセンスインスタンスと共有の間にネットワーク接続が必要です。</block>
   <block id="8e4ba18b85274d135925d3a46f8bbe8f" category="list-text">追加する共有のリストは、「 &lt;host_name&gt; ： /&lt;share_path&gt;` 」の形式で指定する必要があります。共有は個別に入力することも、スキャンするファイル共有の行区切りリストを指定することもできます。</block>
   <block id="33eb5451afff60f62a657470854a4f05" category="list-text">CIFS （ SMB ）共有の場合は、共有への読み取りアクセスを提供する Active Directory クレデンシャルがあることを確認します。管理者クレデンシャルが推奨されるのは、 Cloud Data Sense で管理者権限が必要なデータをスキャンする必要がある場合です。</block>
@@ -2357,7 +2353,6 @@
   <block id="e3aca1bee4b16554fd364b73482af4f3" category="list-text">にアクセスします<block ref="100b541e6046352c2cfaf3c9e6ddaf4d" category="inline-link-rx"></block> [*Learn how to authenticate*(認証方法を確認する)]をクリック</block>
   <block id="7ef314f37951a4ffae65aed3439a8da1" category="inline-image-macro">APIドキュメントページのスクリーンショット。認証手順へのリンクが表示されています。</block>
   <block id="e7897b39cbb592afc0430305aca32cc1" category="paragraph"><block ref="e7897b39cbb592afc0430305aca32cc1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d059d805b5ca279d8574f2b15a932bed" category="list-text">認証手順に従い、応答から_accessトークン_をコピーします。</block>
   <block id="9cb50d789a41a5c166876e5a17ca1d7c" category="list-text">Data Sense Managerノードで、スクリプト「add_scanner_node.sh」を実行します。たとえば、次のコマンドはスキャナノードを2つ追加します。</block>
   <block id="1480262c4a9656977a70cff8c21b5dc0" category="paragraph"><block ref="0d45fd4edeb386e475963435f8cc230a" prefix="" category="inline-code"></block></block>
   <block id="0490466572986d52027e27d707b776a5" category="list-text">_client_id_=コネクタクライアントID</block>
@@ -2458,7 +2453,6 @@
   <block id="1e91a35a4b5b4c34950343e981ca88b0" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> ユーザを追加して、スキャンのタイプを選択します</block>
   <block id="a3f1215a60ced30f6b58ece6e4fb2da2" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> ファイル共有の前提条件を確認する</block>
   <block id="116ef64523fed5112220351fa1d75dc4" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> ファイル共有を保持するグループを作成します</block>
-  <block id="b66fb4cea2ccd5e683401c9c49dfb560" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> ファイル共有を追加し、スキャンする共有を選択します</block>
   <block id="9af77730e3223116097b8cf1de0a2c1c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> BlueXPコネクタを取り付けます</block>
   <block id="ae52b22627bc20f5bd1f0ae7399f808a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> データセンスの前提条件を確認します</block>
   <block id="5145a29bff9f5d1e0a1fc1ca423ecea3" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> データセンスのダウンロードと導入</block>
@@ -2673,7 +2667,6 @@
   <block id="c09a51a41728880502cacff404ad64e8" category="paragraph">[調査]ページで、影響を受けるファイルのフィルタリングされた結果を表示するには、対象となるブロックをクリックします。これにより、詳細な調査が可能になります。</block>
   <block id="f4200d6b39c6bf611267284ca071fd8b" category="inline-link-macro">Active Directoryサービスをデータと統合する方法をご覧ください</block>
   <block id="87fae032ed5605e45b8ed104db07d51d" category="paragraph">IDサービスをデータセンスで統合していない場合、このパネルにはデータは表示されません。 <block ref="ab23cf884d322a71ba54be70f25499ab" category="inline-link-macro-rx"></block>。</block>
-  <block id="fc6931051107a02ba34edee1230d2510" category="admonition">このパネルでは、CIFS共有、OneDrive、SharePointのデータソースのファイルをサポートしています。現在、データベース、Google Drive、Amazon S3、汎用オブジェクトストレージはサポートされていません。</block>
   <block id="4f7b4b702c17bca954d2d186aaea71c0" category="list-text">オープンアクセス権がありません</block>
   <block id="e5ffd57c8ceca007705d9700419ab52a" category="paragraph">カテゴリを使用すると、保有している情報の種類を表示して、データの状況を把握することができます。たとえば、「履歴書」や「従業員契約書」などのカテゴリには機密データを含めることができます。結果を調査すると、従業員契約が安全でない場所に保存されていることがわかります。その後、その問題を修正できます。</block>
   <block id="13e71bc7a750dcb909f7b6e859dba7aa" category="paragraph">SharePointアカウントにログインするための資格を持つ資格情報があり、スキャンするSharePointサイトのURLがあることを確認します。</block>
@@ -2918,7 +2911,6 @@
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">テーブルの最後の列でメニューを選択した後に実行できる操作を示すスクリーンショット。</block>
   <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
   <block id="99d97930418935683e2b318283d0dfe1" category="section-title">最終アクセス時間のタイムスタンプ</block>
-  <block id="328433e1229196dfcfbc0b9d019a9d21" category="paragraph">Data Senseがファイル共有からデータを抽出すると、オペレーティングシステムはデータにアクセスしていると見なし、それに応じて「最終アクセス時間」を変更します。スキャン後、Data Senseは最終アクセス時間を元のタイムスタンプに戻しようとします。Data SenseにCIFSの書き込み属性権限、NFSの書き込み権限がない場合、最終アクセス時間を元のタイムスタンプに戻すことはできません。</block>
   <block id="8fccf85628cfcd90d8b0fe5cab43c86d" category="paragraph">デフォルトでは、Data Senseにこれらの権限がない場合、Data Senseでは「最終アクセス時間」を元のタイムスタンプに戻すことができないため、システムはボリューム内のこれらのファイルをスキャンしません。ただし、最終アクセス時刻がファイル内の元の時刻にリセットされていても問題ない場合は、[設定]ページの下部にある*[書き込み属性]権限がない場合にスキャン]*スイッチをクリックすると、Data Senseが権限に関係なくボリュームをスキャンするようになります。</block>
   <block id="3b65a5e239394b9dd027910cc1b152c1" category="inline-image-macro">最終アクセス時間を元のタイムスタンプに戻すための適切な権限がない場合でも、Data Senseでファイルをスキャンするために使用できるスイッチのスクリーンショット。</block>
   <block id="44408bbd035a502d323b922a5560e5d4" category="paragraph"><block ref="44408bbd035a502d323b922a5560e5d4" category="inline-image-macro-rx" type="image"></block></block>
@@ -3328,4 +3320,17 @@
   <block id="652d29fc9fdc8e0b507bb9eeecca952e" category="list-text">_cloud_provider_=クラウドインスタンスにインストールする場合は、クラウドプロバイダに応じて「AWS」、「Azure」、または「GCP」を入力します。</block>
   <block id="9e7ff0af4669feb5e45b838a89143e27" category="paragraph">インストール監査ログファイルがに書き込まれます<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block></block>
   <block id="c1fe7e1d533d99b367d348052b2d15b2" category="section-title">スタンドアロンスクリプトを使用して、Data Senseをインストールする前にLinuxシステムを認定できるようになりました</block>
+  <block id="e08c39eeecbac5d5f73dff71e2512def" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> ファイル共有をグループに追加します</block>
+  <block id="1c23c4b7c88b3335b15ccab5f09de226" category="list-text">共有は、クラウド内やオンプレミスなど、どこでもホストできます。ほとんどの場合、これらはネットアップ以外のストレージシステムに存在するファイル共有です。ただし、古いNetApp 7-ModeストレージシステムのCIFS共有はファイル共有としてスキャンできます。</block>
+  <block id="5f191911e5c5f72232f6a4507e559266" category="paragraph">Data Senseでは、7-Modeシステムから権限や最終アクセス時間を抽出できません。また、SMBバージョン2へのCIFS共有のマウントがLinuxでサポートされていない既知の問題 もあります。</block>
+  <block id="ba1b63d2bb4a9da8ac213b1773e59355" category="paragraph">Data Senseがファイル共有からデータを抽出すると、オペレーティングシステムはデータにアクセスしていると見なし、それに応じて「最終アクセス時間」を変更します。スキャン後、Data Senseは最終アクセス時間を元のタイムスタンプに戻しようとします。Data SenseにCIFSの書き込み属性権限、NFSの書き込み権限がない場合、最終アクセス時間を元のタイムスタンプに戻すことはできません。SnapLock が設定されたONTAP ボリュームには読み取り専用権限が設定され、最終アクセス時間を元のタイムスタンプに戻すこともできません。</block>
+  <block id="a22c3482ee96047a1abb3e9833dd6645" category="summary">BlueXPの分類（Cloud Data Sense）は、データソースをスキャンしてデータのマッピングと分類、個人情報の特定を行うデータガバナンスサービスです。</block>
+  <block id="0daf80bfa5f39bbd5725c0b5fb7a4c95" category="paragraph">コールドデータがオブジェクトストレージに階層化されているボリュームをData Senseでスキャンすると、ローカルディスク上のデータとオブジェクトストレージに階層化されたコールドデータのすべてのデータがスキャンされます。これは、階層化を実装する他社製品にも当てはまります。</block>
+  <block id="a6ca0e2e27cafcb7c34af13f7d19c004" category="paragraph">スキャンによってコールドデータが加熱されることはなく、コールドデータはオブジェクトストレージに残ります。</block>
+  <block id="10de4bc81f754b19b0d27246a0589c05" category="list-text">注</block>
+  <block id="312ffbf4bf2c65989ebbd000c725c369" category="list-text">いずれかのデータソースでデータ階層化が実装されている場合は、オブジェクトストレージにすでに存在する古いデータを_Stale Data_categoryで特定できます。</block>
+  <block id="66d08fa5ddeba835b1d01655713b9120" category="admonition">このパネルでは、CIFS共有、OneDrive、SharePointのデータソースのファイルをサポートしています。現在、データベース、Googleドライブ、Amazon S3、汎用オブジェクトストレージはサポートされていません。</block>
+  <block id="fd48a7c8c60d4f4ca62e7f192f27abea" category="list-text">いずれかのデータソースでデータ階層化が実装されている場合は、オブジェクトストレージにすでに存在する古いデータをData_graphの_Ageで特定できます。</block>
+  <block id="81ca64cf8cdaf987cf8d5efa54a4b6fd" category="list-text">「ユーザー名」と「パスワード」パラメータのアカウント管理者のユーザー名とパスワードを使用して、認証手順に従ってください。</block>
+  <block id="1edd72049e168646cdf62fc97f08f63c" category="list-text">次に、応答から_access token_をコピーします。</block>
 </blocks>

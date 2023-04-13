@@ -45,6 +45,10 @@ _Saving Opportunities 領域内の項目を調査して、削除または階層�
 
 
 * * 重複ファイル * - スキャンしているデータソース内の他の場所に複製されているファイル。 link:task-investigate-data.html#viewing-all-duplicated-files["表示される重複ファイルの種類を確認します"]。
++
+注:: いずれかのデータソースでデータ階層化が実装されている場合は、オブジェクトストレージにすでに存在する古いデータを_Stale Data_categoryで特定できます。
+
+
 
 
 
@@ -91,7 +95,7 @@ image:screenshot_compliance_sensitive_data.png["このパネル内の要素に�
 IDサービスをデータセンスで統合していない場合、このパネルにはデータは表示されません。 link:task-add-active-directory-datasense.html["Active Directoryサービスをデータと統合する方法をご覧ください"^]。
 
 
-TIP: このパネルでは、CIFS共有、OneDrive、SharePointのデータソースのファイルをサポートしています。現在、データベース、Google Drive、Amazon S3、汎用オブジェクトストレージはサポートされていません。
+TIP: このパネルでは、CIFS共有、OneDrive、SharePointのデータソースのファイルをサポートしています。現在、データベース、Googleドライブ、Amazon S3、汎用オブジェクトストレージはサポートされていません。
 
 
 
@@ -117,6 +121,10 @@ _Age および _Size_Graphs の項目を調査して、削除または階層化�
 
 * *Age of Data グラフ *- データが作成された時刻、アクセスされた最終時刻、またはデータが変更された最終時刻に基づいてデータを分類します。
 * * データサイズグラフ * - サイズに基づいてデータを分類します。
++
+注:: いずれかのデータソースでデータ階層化が実装されている場合は、オブジェクトストレージにすでに存在する古いデータをData_graphの_Ageで特定できます。
+
+
 
 
 

@@ -466,7 +466,8 @@ image:screenshot_work_env_id.png["Data Sense ConfigurationページのWorking En
 +
 image:screenshot_client_access_token.png["APIドキュメントページのスクリーンショット。認証手順へのリンクが表示されています。"]
 
-. 認証手順に従い、応答から_accessトークン_をコピーします。
+. 「ユーザー名」と「パスワード」パラメータのアカウント管理者のユーザー名とパスワードを使用して、認証手順に従ってください。
+. 次に、応答から_access token_をコピーします。
 
 
 .手順
