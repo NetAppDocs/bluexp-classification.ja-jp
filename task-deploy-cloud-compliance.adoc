@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-cloud-compliance.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance 
-summary: クラウドデータセンスをクラウドに導入するには、いくつかの手順を実行します。BlueXPは、BlueXPコネクタと同じクラウドプロバイダネットワークにData Senseインスタンスを導入します。 
+summary: BlueXP分類をクラウドに導入するには、いくつかの手順を実行します。BlueXPでは、BlueXPコネクタと同じクラウドプロバイダネットワークにBlueXP分類インスタンスが導入されます。 
 ---
-= BlueXPを使用してCloud Data Senseをクラウドに導入
+= BlueXPを使用してBlueXP分類をクラウドに導入します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: クラウドデータセンスをクラウドに導入するには、�
 
 
 [role="lead"]
-クラウドデータセンスをクラウドに導入するには、いくつかの手順を実行します。BlueXPは、BlueXPコネクタと同じクラウドプロバイダネットワークにData Senseインスタンスを導入します。
+BlueXP分類をクラウドに導入するには、いくつかの手順を実行します。BlueXPでは、BlueXPコネクタと同じクラウドプロバイダネットワークにBlueXP分類インスタンスが導入されます。
 
-また、次のことも可能です link:task-deploy-compliance-onprem.html["インターネットにアクセスできるLinuxホストにData Senseをインストールします"]。このようなインストールは、オンプレミスにあるデータセンスインスタンスを使用してオンプレミスのONTAP システムをスキャンする場合に適しています。ただしこれは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。
+また、次のことも可能です link:task-deploy-compliance-onprem.html["インターネットにアクセスできるLinuxホストにBlueXP分類をインストールします"]。このタイプのインストールは、同じくオンプレミスにあるBlueXP分類インスタンスを使用してオンプレミスのONTAP システムをスキャンする場合に適したオプションですが、これは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。
 
 
 
@@ -33,26 +33,26 @@ summary: クラウドデータセンスをクラウドに導入するには、�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] 前提条件を確認する
 [role="quick-margin-para"]
-環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、ポート 443 を介したコネクタとクラウドデータセンスの接続などが含まれます。 <<前提条件を確認する,すべてのリストを参照してください>>。
+環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、コネクタとBlueXPのポート443経由の分類間の接続などが含まれます。 <<前提条件を確認する,すべてのリストを参照してください>>。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] クラウドデータの導入センス
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] BlueXP分類を導入します
 [role="quick-margin-para"]
-インストールウィザードを起動して、クラウドに Cloud Data Sense インスタンスを導入します。
+インストールウィザードを起動して、BlueXP分類インスタンスをクラウドに導入します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] Cloud Data Sense サービスに登録する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] BlueXP分類サービスにサブスクライブします
 [role="quick-margin-para"]
-Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは30日間無料です。その時点以降もデータのスキャンを続行するには、クラウドプロバイダMarketplaceまたはネットアップのBYOLライセンスを通じてBlueXPサブスクリプションが必要です。
+BlueXPで分類されてスキャンされる最初の1TBのデータは、30日間無料です。その時点以降もデータのスキャンを続行するには、クラウドプロバイダMarketplaceまたはネットアップのBYOLライセンスを通じてBlueXPサブスクリプションが必要です。
 
 
 
 == コネクタを作成します
 
-コネクタがない場合は、クラウドプロバイダでコネクタを作成します。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["AWS でコネクタを作成する"^] または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["GCP でコネクタを作成する"^]。ほとんどの場合、 Cloud Data Sense を有効にする前にコネクタをセットアップしておくことができます https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["BlueXPの機能にはコネクタが必要です"]ただし、ここで設定する必要がある場合もあります。
+コネクタがない場合は、クラウドプロバイダでコネクタを作成します。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["AWS でコネクタを作成する"^] または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["GCP でコネクタを作成する"^]。ほとんどの場合、BlueXPの分類をアクティブ化する前にコネクタがセットアップされていることがほとんどです https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["BlueXPの機能にはコネクタが必要です"]ただし、ここで設定する必要がある場合もあります。
 
 特定のクラウドプロバイダに導入されているコネクタを使用する必要がある場合は、次のような状況があります。
 
-* AWS 、 Amazon FSX for ONTAP 、または AWS S3 バケット内の Cloud Volumes ONTAP のデータをスキャンするときは、 AWS のコネクタを使用します。
-* Azure または Azure NetApp Files で Cloud Volumes ONTAP 内のデータをスキャンする場合は、 Azure のコネクタを使用します。
+* AWSのCloud Volumes ONTAP 、Amazon FSx for ONTAP 、またはAWS S3バケット内のデータをスキャンする場合は、AWSのコネクタを使用します。
+* AzureのCloud Volumes ONTAP またはAzure NetApp Files でデータをスキャンする場合は、Azureのコネクタを使用します。
 +
 ** Azure NetApp Files の場合は、スキャンするボリュームと同じ領域に配置する必要があります。
 
@@ -62,7 +62,7 @@ Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは30日�
 
 オンプレミスのONTAP システム、ネットアップ以外のファイル共有、汎用のS3オブジェクトストレージ、データベース、OneDriveフォルダ、SharePointアカウント、Googleドライブアカウントは、これらのクラウドコネクタのいずれかを使用している場合にスキャンできます。
 
-また、次のことも可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスにインストールします"^] 自社ネットワーク内またはクラウド内の Linux ホストデータセンスをオンプレミスにインストールする予定のユーザによっては、 Connector をオンプレミスにインストールすることもできます。
+また、次のことも可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスにインストールします"^] 自社ネットワーク内またはクラウド内の Linux ホストBlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。
 
 ご覧のように、を使用する必要がある状況もあります https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["複数のコネクタ"]。
 
@@ -70,7 +70,7 @@ Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは30日�
 
 === 政府機関によるサポート
 
-コネクタが政府機関リージョン（AWS GovCloud、Azure Gov、またはAzure DoD）に導入されている場合は、Cloud Data Senseがサポートされます。この方法で展開する場合、データセンスには次の制約があります。
+BlueXPの分類は、コネクタが政府機関のリージョン（AWS GovCloud、Azure Gov、Azure DoD）に導入されている場合にサポートされます。この方法で導入した場合、BlueXPには次の制限があります。
 
 * OneDriveアカウント、SharePointアカウント、Googleドライブアカウントはスキャンできません。
 * Microsoft Azure Information Protection（AIP）ラベル機能を統合できません。
@@ -82,19 +82,19 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-restricted-
 
 == 前提条件を確認する
 
-クラウドに Cloud Data Sense を導入する前に、以下の前提条件を確認し、サポートされている構成であることを確認してください。
+BlueXPの分類をクラウドに導入する前に、次の前提条件を確認して、サポートされる構成があることを確認してください。
 
-Cloud Data Sense からのアウトバウンドインターネットアクセスを有効にする:: Cloud Data Sense では、アウトバウンドのインターネットアクセスが必要。仮想ネットワークまたは物理ネットワークでインターネットアクセスにプロキシサーバを使用している場合は、 Data sense インスタンスにアウトバウンドのインターネットアクセスがあり、次のエンドポイントに接続できることを確認します。クラウドにデータセンスを導入すると、コネクタと同じサブネットに配置されます。
+BlueXPの分類からアウトバウンドのインターネットアクセスを有効にします:: BlueXPの分類にはアウトバウンドのインターネットアクセスが必要です。仮想ネットワークまたは物理ネットワークでインターネットアクセスにプロキシサーバを使用している場合は、次のエンドポイントに接続するためのアウトバウンドのインターネットアクセスがBlueXP分類インスタンスにあることを確認してください。BlueXP分類をクラウドに導入する場合、コネクタと同じサブネットに配置されます。
 +
 --
-AWS 、 Azure 、 GCP のいずれに Cloud Data Sense を導入しているかに応じて、次の表を参照してください。
+AWS、Azure、GCPのいずれにBlueXP分類を導入するかに応じて、次の表を参照してください。
 
 --
 
 
 [role="tabbed-block"]
 ====
-.AWS環境に必要なエンドポイント
+.AWSに必要なエンドポイント
 --
 [cols="43,57"]
 |===
@@ -113,10 +113,10 @@ AWS 、 Azure 、 GCP のいずれに Cloud Data Sense を導入しているか�
 | \ https://kinesis.us-east-1.amazonaws.com | ネットアップが監査レコードからデータをストリーミングできるようにします。 
 
 
-| ¥ https://cognito-idp.us-east-1.amazonaws.com ¥ https://cognito-identity.us-east-1.amazonaws.com ¥ https://user-feedback-store-prod.s3.us-west-2.amazonaws.com ¥ https://customer-data-production.s3.us-west-2.amazonaws.com | Cloud Data Sense を使用して、マニフェストやテンプレートにアクセスしてダウンロードしたり、ログや指標を送信したりできます。 
+| ¥ https://cognito-idp.us-east-1.amazonaws.com ¥ https://cognito-identity.us-east-1.amazonaws.com ¥ https://user-feedback-store-prod.s3.us-west-2.amazonaws.com ¥ https://customer-data-production.s3.us-west-2.amazonaws.com | BlueXPでは、マニフェストやテンプレートへのアクセスとダウンロード、ログや指標の送信が可能です。 
 |===
 --
-.Azure環境に必要なエンドポイント
+.Azureに必要なエンドポイント
 --
 [cols="43,57"]
 |===
@@ -135,7 +135,7 @@ AWS 、 Azure 、 GCP のいずれに Cloud Data Sense を導入しているか�
 | \ https://support.compliance.api.bluexp.netapp.com/ | ネットアップが監査レコードからデータをストリーミングできるようにします。 
 |===
 --
-.GCP展開に必要なエンドポイント
+.GCPに必要なエンドポイント
 --
 [cols="43,57"]
 |===
@@ -155,8 +155,8 @@ AWS 、 Azure 、 GCP のいずれに Cloud Data Sense を導入しているか�
 |===
 --
 ====
-BlueXPに必要な権限があることを確認します:: BlueXPに、クラウドデータセンスインスタンスのリソースを展開し、セキュリティグループを作成する権限があることを確認します。BlueXPの最新の権限は、で確認できます https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["ネットアップが提供するポリシー"^]。
-BlueXPコネクタがCloud Data Senseにアクセスできることを確認します:: コネクタと Cloud Data Sense インスタンス間の接続を確認します。コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。この接続により、データセンスインスタンスの展開が可能になり、 [ コンプライアンス（ Compliance ） ] タブと [ ガバナンス（ Governance ） ] タブで情報を表示できます。Cloud Data Sense は、 AWS や Azure の政府機関でサポートされています。
+BlueXPに必要な権限があることを確認します:: BlueXPにリソースを導入し、BlueXP分類インスタンスのセキュリティグループを作成する権限があることを確認します。BlueXPの最新の権限は、で確認できます https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["ネットアップが提供するポリシー"^]。
+BlueXPコネクタからBlueXP分類にアクセスできることを確認します:: コネクタとBlueXP分類インスタンスが接続されていることを確認します。コネクタのセキュリティグループで、ポート443を介したBlueXP分類インスタンスとの間のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。この接続により、BlueXP分類インスタンスを導入し、[Compliance]タブと[Governance]タブに情報を表示できます。BlueXPの分類は、AWSとAzureの政府機関のリージョンでサポートされます。
 +
 --
 AWSおよびAWS GovCloud環境では、追加のインバウンドおよびアウトバウンドのセキュリティグループルールが必要です。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWS のコネクタのルール"^] を参照してください。
@@ -164,14 +164,14 @@ AWSおよびAWS GovCloud環境では、追加のインバウンドおよびア�
 AzureおよびAzure Government環境には、追加のインバウンドおよびアウトバウンドのセキュリティグループルールが必要です。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azure のコネクタのルール"^] を参照してください。
 
 --
-クラウドデータを常に運用しておく必要があります:: データを継続的にスキャンするには、 Cloud Data Sense インスタンスがオンのままになっている必要があります。
-Web ブラウザから Cloud Data Sense への接続を確認する:: Cloud Data Senseを有効にしたら、ユーザーがData Senseインスタンスに接続しているホストからBlueXPインターフェイスにアクセスすることを確認します。
+BlueXPの分類を継続して実行できることを確認します:: データを継続的にスキャンするには、BlueXP分類インスタンスを引き続き使用する必要があります。
+WebブラウザからBlueXPに接続できることを確認します:: BlueXPの分類を有効にしたら、ユーザがBlueXPの分類インスタンスに接続されているホストからBlueXPインターフェイスにアクセスできるようにします。
 +
 --
-データセンスインスタンスは、プライベート IP アドレスを使用して、インデックス付きデータがインターネットにアクセスできないようにします。そのため、BlueXPへのアクセスに使用するWebブラウザには、そのプライベートIPアドレスへの接続が必要です。この接続は、クラウドプロバイダ（ VPN など）への直接接続、またはデータセンスインスタンスと同じネットワーク内にあるホストから行うことができます。
+BlueXP分類インスタンスでは、プライベートIPアドレスを使用して、インデックス化されたデータにインターネットからアクセスできないようにします。そのため、BlueXPへのアクセスに使用するWebブラウザには、そのプライベートIPアドレスへの接続が必要です。この接続は、クラウドプロバイダへの直接接続（VPNなど）から行うことも、BlueXP分類インスタンスと同じネットワーク内のホストから行うこともできます。
 
 --
-vCPU の制限を確認してください:: クラウドプロバイダのvCPU制限で、必要な数のコアを含むインスタンスの導入が許可されていることを確認してください。BlueXPを実行している地域の関連するインスタンスファミリのvCPU制限を確認する必要があります。 link:concept-cloud-compliance.html#the-cloud-data-sense-instance["必要なインスタンスタイプを参照してください"]。
+vCPU の制限を確認してください:: クラウドプロバイダのvCPU制限で、必要な数のコアを含むインスタンスの導入が許可されていることを確認してください。BlueXPを実行している地域の関連するインスタンスファミリのvCPU制限を確認する必要があります。 link:concept-cloud-compliance.html#the-bluexp-classification-instance["必要なインスタンスタイプを参照してください"]。
 +
 --
 vCPU の制限の詳細については、次のリンクを参照してください。
@@ -181,18 +181,18 @@ vCPU の制限の詳細については、次のリンクを参照してくださ
 * https://cloud.google.com/compute/quotas["Google Cloud のドキュメント：リソースクォータ"^]
 
 
-CPUとRAMの数が少ないAWSクラウド環境のインスタンスにData Senseを導入できますが、これらのシステムの使用には制限があります。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
+CPUとRAMの数が少ないAWSクラウド環境のインスタンスにBlueXP分類を導入できますが、これらのシステムの使用には制限があります。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
 
 --
 
 
 
 
-== クラウドにデータを導入するメリット
+== BlueXPの分類機能をクラウドに導入します
 
-クラウドデータセンスのインスタンスをクラウドに導入するには、次の手順を実行します。コネクタはインスタンスをクラウドに導入し、そのインスタンスにData Senseソフトウェアをインストールします。
+BlueXP分類のインスタンスをクラウドに導入するには、次の手順を実行します。コネクタはインスタンスをクラウドに導入し、そのインスタンスにBlueXP分類ソフトウェアをインストールします。
 
-AWS環境にBlueXPコネクタからData Senseを導入する場合は、デフォルトのインスタンスサイズを選択することも、2つの小さいインスタンスタイプから選択することもできます。 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用可能なインスタンスタイプと制限事項を参照してください"]。デフォルトのインスタンスタイプを使用できない地域では、Data Senseはで実行されます link:reference-instance-types.html["代替インスタンスタイプ"]。
+AWS環境でBlueXPコネクタからBlueXPの分類を導入する場合は、デフォルトのインスタンスサイズを選択するか、2つの小さいインスタンスタイプから選択できます。 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用可能なインスタンスタイプと制限事項を参照してください"]。デフォルトのインスタンスタイプを使用できない地域では、BlueXPの分類はで実行されます link:reference-instance-types.html["代替インスタンスタイプ"]。
 
 [role="tabbed-block"]
 ====
@@ -201,11 +201,11 @@ AWS環境にBlueXPコネクタからData Senseを導入する場合は、デフ�
 .手順
 . BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックします。
 +
-image:screenshot_cloud_compliance_deploy_start.png["Data Senseをアクティブ化するボタンを選択するスクリーンショット。"]
+image:screenshot_cloud_compliance_deploy_start.png["BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。"]
 
 . [ データセンスを活動化（ Activate Data sense ） ] をクリックし
 +
-image:screenshot_cloud_compliance_deploy_cloud_aws.png["Data Senseをクラウドに導入するためのボタンを選択したスクリーンショット。"]
+image:screenshot_cloud_compliance_deploy_cloud_aws.png["BlueXP分類をクラウドに導入するためのボタンを選択したスクリーンショット。"]
 
 . [_Installation_]ページで、*[Deploy]>[Deploy]*をクリックして「Large」インスタンスサイズを使用し、クラウド導入ウィザードを開始します。
 +
@@ -215,13 +215,13 @@ image:screenshot_cloud_compliance_deploy_cloud_aws.png["Data Senseをクラウ�
 次に、* Deploy *をクリックしてクラウド導入ウィザードを開始します。
 
 +
-image:screenshot_cloud_deploy_resource_size.png["Data Senseを導入するインスタンスのサイズを選択するための導入ページのスクリーンショット。"]
+image:screenshot_cloud_deploy_resource_size.png["BlueXP分類を導入するインスタンスのサイズを選択するための導入ページのスクリーンショット。"]
 
 . 導入手順が完了すると、ウィザードに進捗状況が表示されます。問題が発生した場合は、停止して入力を求められます。
 +
-image:screenshot_cloud_compliance_wizard_start.png["新しいインスタンスを導入するためのData Senseウィザードのスクリーンショット。"]
+image:screenshot_cloud_compliance_wizard_start.png["新しいインスタンスを導入するためのBlueXP分類ウィザードのスクリーンショット。"]
 
-. インスタンスが導入され、Data Senseがインストールされたら、*[構成に進む]*をクリックして_Configuration_pageに移動します。
+. インスタンスが導入され、BlueXP分類がインストールされたら、*[構成に進む]*をクリックして_Configuration_pageに移動します。
 
 
 --
@@ -231,17 +231,17 @@ image:screenshot_cloud_compliance_wizard_start.png["新しいインスタンス�
 . BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックします。
 . [ データセンスを活動化（ Activate Data sense ） ] をクリックし
 +
-image:screenshot_cloud_compliance_deploy_start.png["Data Senseをアクティブ化するボタンを選択するスクリーンショット。"]
+image:screenshot_cloud_compliance_deploy_start.png["BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。"]
 
 . [* Deploy*]をクリックして、クラウド導入ウィザードを開始します。
 +
-image:screenshot_cloud_compliance_deploy_cloud.png["Data Senseをクラウドに導入するためのボタンを選択したスクリーンショット。"]
+image:screenshot_cloud_compliance_deploy_cloud.png["BlueXP分類をクラウドに導入するためのボタンを選択したスクリーンショット。"]
 
 . 導入手順が完了すると、ウィザードに進捗状況が表示されます。問題が発生した場合は、停止して入力を求められます。
 +
-image:screenshot_cloud_compliance_wizard_start.png["新しいインスタンスを導入するためのData Senseウィザードのスクリーンショット。"]
+image:screenshot_cloud_compliance_wizard_start.png["新しいインスタンスを導入するためのBlueXP分類ウィザードのスクリーンショット。"]
 
-. インスタンスが導入され、Data Senseがインストールされたら、*[構成に進む]*をクリックして_Configuration_pageに移動します。
+. インスタンスが導入され、BlueXP分類がインストールされたら、*[構成に進む]*をクリックして_Configuration_pageに移動します。
 
 
 --
@@ -251,27 +251,27 @@ image:screenshot_cloud_compliance_wizard_start.png["新しいインスタンス�
 . BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックします。
 . [ データセンスを活動化（ Activate Data sense ） ] をクリックし
 +
-image:screenshot_cloud_compliance_deploy_start.png["Data Senseをアクティブ化するボタンを選択するスクリーンショット。"]
+image:screenshot_cloud_compliance_deploy_start.png["BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。"]
 
 . [* Deploy*]をクリックして、クラウド導入ウィザードを開始します。
 +
-image:screenshot_cloud_compliance_deploy_cloud.png["Data Senseをクラウドに導入するためのボタンを選択したスクリーンショット。"]
+image:screenshot_cloud_compliance_deploy_cloud.png["BlueXP分類をクラウドに導入するためのボタンを選択したスクリーンショット。"]
 
 . 導入手順が完了すると、ウィザードに進捗状況が表示されます。問題が発生した場合は、停止して入力を求められます。
 +
-image:screenshot_cloud_compliance_wizard_start.png["新しいインスタンスを導入するためのData Senseウィザードのスクリーンショット。"]
+image:screenshot_cloud_compliance_wizard_start.png["新しいインスタンスを導入するためのBlueXP分類ウィザードのスクリーンショット。"]
 
-. インスタンスが導入され、Data Senseがインストールされたら、*[構成に進む]*をクリックして_Configuration_pageに移動します。
+. インスタンスが導入され、BlueXP分類がインストールされたら、*[構成に進む]*をクリックして_Configuration_pageに移動します。
 
 
 --
 ====
 .結果
-BlueXPはクラウドデータセンスインスタンスをクラウドプロバイダに導入します。
+BlueXPは、BlueXP分類インスタンスをクラウドプロバイダに導入します。
 
-BlueXP ConnectorとData Senseソフトウェアのアップグレードは、インスタンスがインターネットに接続されていれば自動で実行されます。
+インスタンスがインターネットに接続されていれば、BlueXP ConnectorとBlueXP分類ソフトウェアのアップグレードは自動で実行されます。
 
 .次のステップ
 設定ページで、スキャンするデータソースを選択できます。
 
-また可能です link:task-licensing-datasense.html["クラウドデータセンスのライセンスをセットアップする"] 現時点では、30日間の無料トライアルが終了するまで、料金はかかりません。
+また可能です link:task-licensing-datasense.html["BlueXP分類用のライセンスをセットアップ"] 現時点では、30日間の無料トライアルが終了するまで、料金はかかりません。

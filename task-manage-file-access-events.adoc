@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-manage-file-access-events.html 
 keywords: compliance, actions, view progress, audit, logs, installation 
-summary: Data Senseでは、スキャン対象のファイルのいずれかがアクセスまたは変更されたときにイベントをファイルに記録するように設定できます。次に、このファイル（ファイルアクセス監査ログ）の内容を表示するか、ファイルをダウンロードして、どのファイル変更が行われたか、誰によって行われたかを確認できます。 
+summary: スキャンするファイルのいずれかがアクセスまたは変更されたときにイベントがファイルに記録されるように、BlueXPの分類を設定できます。次に、このファイル（ファイルアクセス監査ログ）の内容を表示するか、ファイルをダウンロードして、どのファイル変更が行われたか、誰によって行われたかを確認できます。 
 ---
 = ファイルアクセスイベントを監視および管理します
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: Data Senseでは、スキャン対象のファイルのいずれかが�
 
 
 [role="lead"]
-Data Senseでは、スキャン対象のファイルのいずれかがアクセスまたは変更されたときにイベントをファイルに記録するように設定できます。次に、このファイル（ファイルアクセス監査ログ）の内容を表示するか、ファイルをダウンロードして、どのファイル変更が行われたか、誰によって行われたかを確認できます。
+スキャンするファイルのいずれかがアクセスまたは変更されたときにイベントがファイルに記録されるように、BlueXPの分類を設定できます。次に、このファイル（ファイルアクセス監査ログ）の内容を表示するか、ファイルをダウンロードして、どのファイル変更が行われたか、誰によって行われたかを確認できます。
 
 たとえば、機密性の高い人事ファイルまたは給与ファイルに変更が加えられたタイミングを追跡する場合は、これらのファイルが存在するボリュームでこの機能を有効にすることができます。次に、ファイルアクセス監査ログを表示して、これらのファイルが変更されているかどうかを確認できます。変更されている場合は、変更を行ったユーザーの名前と変更がいつ行われたかを確認できます。
 
-この機能は、ONTAP 作業環境内の重要なボリュームで有効にすることができます。ボリュームで有効にすると、ボリューム内のすべてのファイルおよびディレクトリについてファイルアクセスイベントが追跡されます。この機能はに基づいています https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy機能"^] ONTAP システムから、Data SenseシステムをFPolicyサーバとして使用してONTAP から通知メッセージ（イベント）を受信します。
+この機能は、ONTAP 作業環境内の重要なボリュームで有効にすることができます。ボリュームで有効にすると、ボリューム内のすべてのファイルおよびディレクトリについてファイルアクセスイベントが追跡されます。この機能はに基づいています https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy機能"^] ONTAP システムから、BlueXP分類システムをFPolicyサーバとして使用してONTAP から通知メッセージ（イベント）を受信します。
 
-Data Senseは現在、ファイルおよびディレクトリに対する次のアクションのイベントをキャプチャします。
+現在、BlueXPの分類では、ファイルとディレクトリに対する次のアクションのイベントがキャプチャされます。
 
 * 作成
 * 読み取り
@@ -37,7 +37,7 @@ Data Senseは現在、ファイルおよびディレクトリに対する次の�
 
 == サポートされているデータソース
 
-Data Senseでは、次のデータソースにあるファイルのファイルアクセスイベントをログに記録できます。
+BlueXPの分類では、次のデータソースにあるファイルのファイルアクセスイベントをログに記録できます。
 
 * オンプレミスのONTAP
 * Cloud Volumes ONTAP
@@ -45,7 +45,7 @@ Data Senseでは、次のデータソースにあるファイルのファイル�
 * FSX for ONTAP の略
 
 
-Data Senseがファイルにアクセスしたユーザの名前を識別できるように、これらのデータソース用にActive Directoryを設定しておく必要があります。
+BlueXPの分類でファイルにアクセスしたユーザの名前を特定できるように、これらのデータソース用にActive Directoryを設定しておく必要があります。
 
 
 
@@ -104,15 +104,15 @@ image:screenshot_compliance_file_access_audit_done.png["特定のボリューム
 
 == ファイルアクセス監査ログファイルにアクセスします
 
-ファイルアクセス監査ログファイルは、Data Senseマシンの次の場所にあります。 `/opt/netapp/audit_logs/`
+ファイルアクセス監査ログファイルは、BlueXP分類マシンの次の場所にあります。 `/opt/netapp/audit_logs/`
 
-ログファイルの名前は「File_Access_Audit_MedicalData_20230205092321.log <volume_name> 」のように「File_Access_Audit_MedicalData_20230205092321.log <timestamp> 」になります。<timestamp> は、Data Senseが最初のログをファイルに書き込んだ時刻です。各ファイルには、デフォルトで最大50、000件のイベントが格納されるように設定されています。 <<ファイルアクセス監査ログを設定します,この値は、[File Access Audit Log Configuration]ページでカスタマイズできます。>> この最大数に達すると、そのボリュームの新しいログファイルが作成されます。新しいファイルのタイムスタンプは新しくなります。
+ログファイルの名前は「File_Access_Audit_MedicalData_20230205092321.log <volume_name> 」のように「File_Access_Audit_MedicalData_20230205092321.log <timestamp> 」になります。<timestamp> は、BlueXPの分類によって最初のログがファイルに書き込まれた時刻です。各ファイルには、デフォルトで最大50、000件のイベントが格納されるように設定されています。 <<ファイルアクセス監査ログを設定します,この値は、[File Access Audit Log Configuration]ページでカスタマイズできます。>> この最大数に達すると、そのボリュームの新しいログファイルが作成されます。新しいファイルのタイムスタンプは新しくなります。
 
 ディレクトリ内のすべてのログファイルの合計サイズは、デフォルト値の50GBに設定されています。 <<ファイルアクセス監査ログを設定します,この値は、[File Access Audit Log Configuration]ページでカスタマイズできます。>> この制限に達すると、最も古いログファイルが自動的に削除されます。
 
-Data SenseがオンプレミスのLinuxマシン、またはクラウドに導入したLinuxマシンにインストールされている場合は、ログファイルに直接移動できます。
+BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、ログファイルに直接移動できます。
 
-Data Senseをクラウドに導入する場合は、Data SenseインスタンスにSSHで接続する必要があります。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。
+BlueXP分類をクラウドに導入する場合は、BlueXP分類インスタンスにSSHで接続する必要があります。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。
 
  ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
 * <path-to_The _ssh_key>= SSH認証キーの場所
@@ -137,9 +137,9 @@ Data Senseをクラウドに導入する場合は、Data Senseインスタンス
 
 == ファイルアクセス監査ログを設定します
 
-ファイルアクセス監査ファイルログには3つのオプションを設定できます。これらの設定は、このData Senseインスタンスでファイルアクセス監査ログを設定しているすべてのデータソースに適用されます。これらの設定は、Data Sense_Configuration_pageの_File Access Audit Log_セクションで行います。
+ファイルアクセス監査ファイルログには3つのオプションを設定できます。これらの設定は、このBlueXP分類インスタンスでファイルアクセスの監査ログが設定されているすべてのデータソースに適用されます。これらの設定は、BlueXPのclassification_Configuration_pageの_File Access Audit Log_セクションで行います。
 
-image:screenshot_compliance_file_access_audit_config.png["[Data Sense Configuration]ページの監査ログの設定を示すスクリーンショット。"]
+image:screenshot_compliance_file_access_audit_config.png["BlueXP分類の[Configuration]ページに表示される監査ログの設定を示すスクリーンショット。"]
 
 [cols="30,50"]
 |===

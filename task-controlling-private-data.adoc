@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-controlling-private-data.html 
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
-summary: 組織内の個人データと機密性の高い個人データに関する詳細を表示することで、個人データを管理できます。また、クラウドデータで見つかったカテゴリやファイルタイプを確認することで、データを可視化することもできます。 
+summary: 組織内の個人データと機密性の高い個人データに関する詳細を表示することで、個人データを管理できます。BlueXPで分類されたデータのカテゴリやファイルタイプを確認することで、データを可視化することもできます。 
 ---
 = 組織に保存されているデータのコンプライアンスの詳細を表示する
 :hardbreaks:
@@ -14,14 +14,14 @@ summary: 組織内の個人データと機密性の高い個人データに関�
 
 
 [role="lead"]
-組織内の個人データと機密性の高い個人データに関する詳細を表示することで、個人データを管理できます。また、クラウドデータで見つかったカテゴリやファイルタイプを確認することで、データを可視化することもできます。
+組織内の個人データと機密性の高い個人データに関する詳細を表示することで、個人データを管理できます。BlueXPで分類されたデータのカテゴリやファイルタイプを確認することで、データを可視化することもできます。
 
 
 NOTE: このセクションで説明する機能は、データソースに対して完全な分類スキャンを実行することを選択した場合にのみ使用できます。マッピングのみのスキャンを実行したデータソースでは、ファイルレベルの詳細は表示されません。
 
-デフォルトでは、 Cloud Data Sense ダッシュボードには、すべての作業環境とデータベースのコンプライアンスデータが表示されます。
+デフォルトでは、BlueXPの分類ダッシュボードには、すべての作業環境とデータベースのコンプライアンスデータが表示されます。
 
-image:screenshot_compliance_dashboard.png["クラウドデータセンスダッシュボードのスクリーンショット"]
+image:screenshot_compliance_dashboard.png["BlueXP分類ダッシュボードのスクリーンショット"]
 
 一部の作業環境のデータだけを表示する場合は、 <<特定の作業環境のダッシュボードデータの表示,それらの作業環境を選択します>>。
 
@@ -31,11 +31,11 @@ image:screenshot_compliance_dashboard.png["クラウドデータセンスダッ�
 
 == 個人データを含むファイルを表示する
 
-Cloud Data Sense は、データ内の特定の単語、文字列、パターン（ Regex ）を自動的に識別します。たとえば、個人識別情報（ PII ）、クレジットカード番号、社会保障番号、銀行口座番号、パスワード、 その他。 link:reference-private-data-categories.html#types-of-personal-data["すべてのリストを参照してください"^]。データセンスは、個々のファイル、ディレクトリ（共有およびフォルダ）内のファイル、およびデータベーステーブル内のこのタイプの情報を識別します。
+BlueXPの分類では、データ内の特定の単語、文字列、パターン（正規表現）が自動的に識別されます。たとえば、個人識別情報（ PII ）、クレジットカード番号、社会保障番号、銀行口座番号、パスワード、 その他。 link:reference-private-data-categories.html#types-of-personal-data["すべてのリストを参照してください"^]。BlueXPの分類では、個 々 のファイル、ディレクトリ（共有とフォルダ）内のファイル、およびデータベーステーブルでこのような情報が識別されます。
 
 また、スキャン対象のデータベースサーバを追加した場合、 Data Fusion の機能を使用してファイルをスキャンし、データベースから一意の識別子がこれらのファイルまたは他のデータベースのいずれに存在するかを特定できます。を参照してください link:task-managing-data-fusion.html["Data Fusion を使用して個人データ識別子を追加する"^] を参照してください。
 
-一部のタイプの個人データについては、データセンスは _ 近接性検証 _ を使用してその結果を検証します。検証は、見つかった個人データに近接した 1 つまたは複数の定義済みキーワードを検索することによって行われます。たとえば、データセンスは米国を識別しますソーシャルセキュリティ番号（ SSN ）は、 IT の横に近接語（ _SSN_or_social security_ など）が表示されている場合、 SSN として表示されます。 link:reference-private-data-categories.html#types-of-personal-data["個人データのテーブル"^] データセンスがプロキシミティ検証を使用する場合に表示されます
+BlueXPの分類では、一部のタイプの個人データについて、_proximity validation_を使用して検出結果が検証されます。検証は、見つかった個人データに近接した 1 つまたは複数の定義済みキーワードを検索することによって行われます。たとえば、BlueXPは米国を表しますソーシャルセキュリティ番号（ SSN ）は、 IT の横に近接語（ _SSN_or_social security_ など）が表示されている場合、 SSN として表示されます。 link:reference-private-data-categories.html#types-of-personal-data["個人データのテーブル"^] は、BlueXPの分類で近接検証を使用する状況を示しています。
 
 .手順
 . BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックし、* Compliance *タブをクリックします。
@@ -63,11 +63,11 @@ image:screenshot_compliance_investigation_page_directory.png["[調査結果]を�
 
 == 機密性の高い個人データを含むファイルを表示する
 
-クラウドデータセンスは、などのプライバシー規制によって定義された、特別な種類の機密情報を自動的に識別します https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["GDPR の第 9 、 10 記事"^]。たとえば、人の健康、民族の起源、性的指向に関する情報などです。 link:reference-private-data-categories.html#types-of-sensitive-personal-data["すべてのリストを参照してください"^]。データセンスは、個々のファイル、ディレクトリ（共有およびフォルダ）内のファイル、およびデータベーステーブル内のこのタイプの情報を識別します。
+BlueXPは、などのプライバシー規制で定義されている特別な種類の機密個人情報を自動的に識別します https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["GDPR の第 9 、 10 記事"^]。たとえば、人の健康、民族の起源、性的指向に関する情報などです。 link:reference-private-data-categories.html#types-of-sensitive-personal-data["すべてのリストを参照してください"^]。BlueXPの分類では、個 々 のファイル、ディレクトリ（共有とフォルダ）内のファイル、およびデータベーステーブルでこのような情報が識別されます。
 
-Cloud Data Sense は、人工知能（ AI ）、自然言語処理（ NLP ）、機械学習（ ML ）、コグニティブコンピューティング（ CC ）を使用して、スキャンするコンテンツの意味を理解し、エンティティを抽出してそれに応じて分類します。
+BlueXPは、人工知能（AI）、自然言語処理（NLP）、機械学習（ML）、コグニティブコンピューティング（CC）を使用してスキャンするコンテンツの意味を理解し、エンティティを抽出して適切に分類します。
 
-たとえば、機密性の高い GDPR データカテゴリの 1 つは民族起源です。データセンスは NLP の能力を持つため、「ジョージ・メキシカン」と書かれた文（ GDPR の第 9 条に規定されている機密データを示す文）と「ジョージ・メキシカン料理を食べている文（ George is exican food ）」の違いを区別することができます。
+たとえば、機密性の高い GDPR データカテゴリの 1 つは民族起源です。自然言語処理能力を備えたBlueXPの分類では、「George is Mexican」（GDPR第9条に規定されている機密データを示しています）と「George is Eating Mexican food」（ジョージはメキシコ料理を食べています）の違いを区別できます。
 
 
 NOTE: 機密性の高い個人データをスキャンする場合は、英語のみがサポートされます。言語のサポートは、あとで追加されます。
@@ -89,7 +89,7 @@ image:screenshot_sensitive_personal_files.gif["個人データの種類の横に
 
 == カテゴリ別にファイルを表示します
 
-Cloud Data Sense は、スキャンしたデータをさまざまなタイプのカテゴリに分割します。カテゴリは、各ファイルのコンテンツとメタデータの AI 分析に基づくトピックです。 link:reference-private-data-categories.html#types-of-categories["カテゴリのリストを参照してください"^]。
+BlueXPは、スキャンしたデータをさまざまなカテゴリに分類します。カテゴリは、各ファイルのコンテンツとメタデータの AI 分析に基づくトピックです。 link:reference-private-data-categories.html#types-of-categories["カテゴリのリストを参照してください"^]。
 
 カテゴリを使用すると、保有している情報の種類を表示して、データの状況を把握することができます。たとえば、履歴書や従業員契約などのカテゴリには機密データを含めることができます。結果を調査すると、従業員契約が安全でない場所に保存されていることがわかります。その後、その問題を修正できます。
 
@@ -109,7 +109,7 @@ image:screenshot_categories.gif["カテゴリダイアログボックスのス�
 
 == ファイルタイプ別にファイルを表示する
 
-Cloud Data Sense は、スキャンしたデータをファイルタイプ別に分類します。ファイルタイプを確認すると、特定のファイルタイプが正しく保存されない可能性があるため、機密データを制御するのに役立ちます。 link:reference-private-data-categories.html#types-of-files["ファイルタイプのリストを参照してください"^]。
+BlueXPは、スキャンしたデータをファイルタイプ別に分類して分類します。ファイルタイプを確認すると、特定のファイルタイプが正しく保存されない可能性があるため、機密データを制御するのに役立ちます。 link:reference-private-data-categories.html#types-of-files["ファイルタイプのリストを参照してください"^]。
 
 たとえば ' 組織に関する非常に機密性の高い情報を含む CAD ファイルを保存する場合がありますセキュリティで保護されていない場合は、権限を制限するか、ファイルを別の場所に移動することで、機密データを制御できます。
 
@@ -126,9 +126,9 @@ image:screenshot_file_types.gif["ファイルタイプダイアログボック�
 
 == 特定の作業環境のダッシュボードデータの表示
 
-Cloud Data Sense ダッシュボードの内容をフィルタリングして、すべての作業環境とデータベース、または特定の作業環境のコンプライアンスデータを表示できます。
+BlueXPの分類ダッシュボードの内容をフィルタリングして、すべての作業環境とデータベース、または特定の作業環境のコンプライアンスデータを表示できます。
 
-ダッシュボードをフィルタすると、 Data Sense によって、選択した作業環境だけにコンプライアンスデータとレポートがスコープされます。
+ダッシュボードをフィルタすると、BlueXPの分類によって、選択した作業環境のみに準拠データとレポートの範囲が限定されます。
 
 .手順
 . フィルタドロップダウンをクリックし、データを表示する作業環境を選択して、 * 表示 * をクリックします。

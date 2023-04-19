@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-onedrive.html 
-keywords: cloud compliance, enable cloud compliance, privacy, compliance, onedrive, Data Sense 
-summary: いくつかの手順を実行して、クラウドデータセンスを使用した OneDrive フォルダのファイルのスキャンを開始します。 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, onedrive, data sense 
+summary: BlueXP分類を使用して、ユーザーのOneDriveフォルダ内のファイルのスキャンを開始するには、いくつかの手順を実行します。 
 ---
 = OneDrive アカウントをスキャンしています
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: いくつかの手順を実行して、クラウドデータセンス�
 
 
 [role="lead"]
-いくつかの手順を実行して、クラウドデータセンスを使用した OneDrive フォルダのファイルのスキャンを開始します。
+BlueXP分類を使用して、ユーザーのOneDriveフォルダ内のファイルのスキャンを開始するには、いくつかの手順を実行します。
 
 
 
@@ -26,9 +26,9 @@ summary: いくつかの手順を実行して、クラウドデータセンス�
 [role="quick-margin-para"]
 OneDrive アカウントにログインするための管理者資格情報があることを確認してください。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Cloud Data Sense インスタンスを導入する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] OneDrive アカウントを追加します
 [role="quick-margin-para"]
@@ -42,7 +42,7 @@ Admin ユーザクレデンシャルを使用して、アクセスする OneDriv
 
 == OneDrive の要件を確認する
 
-Cloud Data Sense を有効にする前に、次の前提条件を確認し、サポートされている構成であることを確認します。
+BlueXPの分類を有効にする前に、次の前提条件を確認して、サポートされる構成があることを確認してください。
 
 * ユーザのファイルに読み取りアクセスを提供するOneDrive for Businessアカウントの管理者ログインクレデンシャルが必要です。
 * OneDriveフォルダをスキャンするすべてのユーザーに対して、電子メールアドレスの行区切りリストが必要です。
@@ -50,13 +50,13 @@ Cloud Data Sense を有効にする前に、次の前提条件を確認し、サ
 
 
 
-== Cloud Data Sense インスタンスの導入
+== BlueXP分類インスタンスの導入
 
-導入済みのインスタンスがない場合は Cloud Data Sense を導入
+導入されているインスタンスがない場合は、BlueXP分類を導入します。
 
-データセンスは、のいずれかです link:task-deploy-cloud-compliance.html["クラウドに導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^]。
+BlueXPには次のように分類できます link:task-deploy-cloud-compliance.html["クラウドに導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^]。
 
-Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
+インスタンスがインターネットに接続されていれば、BlueXP分類ソフトウェアへのアップグレードは自動で実行されます。
 
 
 
@@ -70,7 +70,7 @@ Data Sense ソフトウェアへのアップグレードは、インスタンス
 image:screenshot_compliance_add_onedrive_button.png["[OneDrive の追加 ] ボタンをクリックできる [ スキャン構成 ] ページのスクリーンショット。"]
 
 . [ OneDrive アカウントの追加 ] ダイアログで、 [* OneDrive にサインイン ] をクリックします。
-. 表示される Microsoft ページで、 OneDrive アカウントを選択し、必要な管理者ユーザーとパスワードを入力してから、 [*Accept*] をクリックして、 Cloud Data Sense がこのアカウントからデータを読み取ることを許可します。
+. 表示された[Microsoft]ページで、OneDriveアカウントを選択して必要な管理者ユーザとパスワードを入力し、*[同意する]*をクリックしてBlueXP分類によるこのアカウントからのデータの読み取りを許可します。
 
 
 OneDrive アカウントが作業環境の一覧に追加されます。
@@ -79,7 +79,7 @@ OneDrive アカウントが作業環境の一覧に追加されます。
 
 == OneDrive ユーザーをコンプライアンススキャンに追加する
 
-個々の OneDrive ユーザーまたはすべての OneDrive ユーザーを追加して、ファイルを Cloud Data Sense でスキャンすることができます。
+個 々 のOneDriveユーザまたはすべてのOneDriveユーザを追加して、BlueXPの分類によってファイルがスキャンされるようにすることができます。
 
 .手順
 . [_Configuration_] ページで、 OneDrive アカウントの [* 構成 *] ボタンをクリックします。
@@ -124,7 +124,7 @@ image:screenshot_compliance_onedrive_add_email_addresses.png["スキャンする
 
 
 .結果
-Cloud Data Sense によって、追加したユーザのファイルのスキャンが開始され、その結果がダッシュボードやその他の場所に表示されます。
+BlueXPの分類により、追加したユーザのファイルのスキャンが開始され、その結果がダッシュボードと他の場所に表示されます。
 
 
 
@@ -134,4 +134,4 @@ Cloud Data Sense によって、追加したユーザのファイルのスキャ
 
 image:screenshot_compliance_onedrive_remove_user.png["単一のユーザをスキャン対象から削除する方法を示すスクリーンショット。"]
 
-できることに注意してください link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-cloud-data-sense["データセンスからOneDriveアカウント全体を削除します"] OneDriveアカウントからユーザーデータをスキャンする必要がなくなった場合。
+できることに注意してください link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-bluexp-classification["BlueXPの分類からOneDriveアカウント全体を削除します"] OneDriveアカウントからユーザーデータをスキャンする必要がなくなった場合。

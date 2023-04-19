@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
 keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies 
-summary: 組織のストレージリソース上のデータに関連するコストを管理できます。Cloud Data Sense は、古いデータ、ビジネス以外のデータ、重複するファイル、および非常に大きなファイルをシステム内で特定するため、一部のファイルを削除するか、低コストのオブジェクトストレージに階層化するかを判断できます。 
+summary: 組織のストレージリソース上のデータに関連するコストを管理できます。BlueXPは分類されるため、システム内の古いデータ、ビジネス以外のデータ、重複ファイル、大容量ファイルの量が特定されるため、一部のファイルを削除するか、低コストのオブジェクトストレージに階層化するかを判断できます。 
 ---
 = 組織に保存されているデータに関するガバナンスの詳細を表示する
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 組織のストレージリソース上のデータに関連するコ�
 
 
 [role="lead"]
-組織のストレージリソース上のデータに関連するコストを管理できます。Cloud Data Sense は、古いデータ、ビジネス以外のデータ、重複するファイル、および非常に大きなファイルをシステム内で特定するため、一部のファイルを削除するか、低コストのオブジェクトストレージに階層化するかを判断できます。
+組織のストレージリソース上のデータに関連するコストを管理できます。BlueXPは分類されるため、システム内の古いデータ、ビジネス以外のデータ、重複ファイル、大容量ファイルの量が特定されるため、一部のファイルを削除するか、低コストのオブジェクトストレージに階層化するかを判断できます。
 
 さらに、オンプレミスの場所からクラウドにデータを移行する予定の場合は、データのサイズと、データを移動する前に機密情報が含まれているかどうかを確認できます。
 
@@ -24,7 +24,7 @@ summary: 組織のストレージリソース上のデータに関連するコ�
 
 Governance ダッシュボードには情報が表示されるため、ストレージリソースに保存されているデータの効率性を高め、コストを管理できます。
 
-image:screenshot_compliance_governance_dashboard.png["クラウドデータセンスガバナンスダッシュボードのスクリーンショット。"]
+image:screenshot_compliance_governance_dashboard.png["BlueXPの分類Governanceダッシュボードのスクリーンショット。"]
 
 
 
@@ -92,7 +92,7 @@ image:screenshot_compliance_sensitive_data.png["このパネル内の要素に�
 
 [調査]ページで、影響を受けるファイルのフィルタリングされた結果を表示するには、対象となるブロックをクリックします。これにより、詳細な調査が可能になります。
 
-IDサービスをデータセンスで統合していない場合、このパネルにはデータは表示されません。 link:task-add-active-directory-datasense.html["Active Directoryサービスをデータと統合する方法をご覧ください"^]。
+アイデンティティサービスをBlueXP分類に統合していない場合、このパネルにデータは表示されません。 link:task-add-active-directory-datasense.html["Active DirectoryサービスとBlueXPの分類を統合する方法をご紹介します"^]。
 
 
 TIP: このパネルでは、CIFS共有、OneDrive、SharePointのデータソースのファイルをサポートしています。現在、データベース、Googleドライブ、Amazon S3、汎用オブジェクトストレージはサポートされていません。
@@ -185,7 +185,7 @@ Azure Information Protection （ AIP ）に加入している場合は、コン�
 
 === データマッピングレポートの生成
 
-このレポートは、Data Senseの[ガバナンス]タブから生成します。
+このレポートは、BlueXPの[ガバナンス]タブで生成します。
 
 .手順
 . BlueXPメニューで、* Governance > Classification *をクリックします。
@@ -196,9 +196,9 @@ image:screenshot_compliance_data_mapping_report_button.png["データマッピ�
 
 
 .結果
-Data SenseによってPDFレポートが生成され、必要に応じて確認して他のグループに送信できます。
+BlueXPの分類によってPDFレポートが生成されます。このレポートを確認して、必要に応じて他のグループに送信できます。
 
-レポートの最初のページに表示される会社名は、[データセンス]ページの上部にあるをクリックしてカスタマイズできます image:screenshot_gallery_options.gif["[詳細]ボタン"] [会社名の変更]をクリックします。次回レポートを生成するときに、新しい名前が含まれます。
+BlueXPの分類ページの上部にあるをクリックすると、レポートの最初のページに表示される会社名をカスタマイズできます image:screenshot_gallery_options.gif["[詳細]ボタン"] [会社名の変更]をクリックします。次回レポートを生成するときに、新しい名前が含まれます。
 
 
 
@@ -230,7 +230,7 @@ Data Discovery Assessment Reportでは、スキャンされた環境の概要を
 
 === データ検出評価レポートの生成
 
-このレポートは、Data Senseの[ガバナンス]タブから生成します。
+このレポートは、BlueXPの[ガバナンス]タブで生成します。
 
 .手順
 . BlueXPメニューで、* Governance > Classification *をクリックします。
@@ -241,6 +241,6 @@ image:screenshot_compliance_data_discovery_report_button.png["ガバナンスダ
 
 
 .結果
-Data SenseによってPDFレポートが生成され、必要に応じて確認して他のグループに送信できます。
+BlueXPの分類によってPDFレポートが生成されます。このレポートを確認して、必要に応じて他のグループに送信できます。
 
-レポートの最初のページに表示される会社名は、[データセンス]ページの上部にあるをクリックしてカスタマイズできます image:screenshot_gallery_options.gif["[詳細]ボタン"] [会社名の変更]をクリックします。次回レポートを生成するときに、新しい名前が含まれます。
+BlueXPの分類ページの上部にあるをクリックすると、レポートの最初のページに表示される会社名をカスタマイズできます image:screenshot_gallery_options.gif["[詳細]ボタン"] [会社名の変更]をクリックします。次回レポートを生成するときに、新しい名前が含まれます。

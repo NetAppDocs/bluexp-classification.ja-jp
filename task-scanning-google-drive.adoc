@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-scanning-google-drive.html 
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, google drive, data sense 
-summary: Cloud Data Senseを使用して、Google Driveアカウントのユーザーファイルのスキャンを開始するには、いくつかの手順を実行します。 
+summary: BlueXP分類を使用してGoogleドライブアカウントのユーザファイルのスキャンを開始するには、いくつかの手順を実行します。 
 ---
 = Googleドライブアカウントをスキャンしています
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Data Senseを使用して、Google Driveアカウントのユー�
 
 
 [role="lead"]
-Cloud Data Senseを使用して、Google Driveアカウントのユーザーファイルのスキャンを開始するには、いくつかの手順を実行します。
+BlueXP分類を使用してGoogleドライブアカウントのユーザファイルのスキャンを開始するには、いくつかの手順を実行します。
 
 
 
@@ -26,9 +26,9 @@ Cloud Data Senseを使用して、Google Driveアカウントのユーザーフ�
 [role="quick-margin-para"]
 Googleドライブアカウントにログインするための管理者資格情報があることを確認します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] クラウドデータの導入センス
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類を導入します
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] Googleドライブアカウントにログインします
 [role="quick-margin-para"]
@@ -42,7 +42,7 @@ Adminユーザのクレデンシャルを使用して、アクセスするGoogle
 
 == Googleドライブの要件を確認する
 
-以下の前提条件を確認して、Google DriveアカウントでCloud Data Senseを有効にする準備ができていることを確認します。
+次の前提条件を確認して、Google DriveアカウントでBlueXPの分類を有効にする準備ができていることを確認してください。
 
 * ユーザのファイルへの読み取りアクセスを提供するGoogle Driveアカウントの管理者ログインクレデンシャルが必要です
 
@@ -51,7 +51,7 @@ Adminユーザのクレデンシャルを使用して、アクセスするGoogle
 
 === 現在の制限
 
-次のデータセンス機能は、Googleドライブファイルでは現在サポートされていません。
+BlueXPの次の分類機能は、現在Google Driveファイルではサポートされていません。
 
 * [データ調査]ページでファイルを表示している場合、ボタンバーのアクションはアクティブになりません。ファイルのコピー、移動、削除などはできません。
 * Googleドライブ内のファイル内で権限を識別できないため、［調査］ページに権限情報は表示されません。
@@ -59,13 +59,13 @@ Adminユーザのクレデンシャルを使用して、アクセスするGoogle
 
 
 
-== Cloud Data Sense の導入
+== BlueXP分類の導入
 
-導入済みのインスタンスがない場合は Cloud Data Sense を導入
+導入されているインスタンスがない場合は、BlueXP分類を導入します。
 
-データセンスは、のいずれかです link:task-deploy-cloud-compliance.html["クラウドに導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^]。
+BlueXPには次のように分類できます link:task-deploy-cloud-compliance.html["クラウドに導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^]。
 
-Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
+インスタンスがインターネットに接続されていれば、BlueXP分類ソフトウェアへのアップグレードは自動で実行されます。
 
 
 
@@ -79,7 +79,7 @@ Data Sense ソフトウェアへのアップグレードは、インスタンス
 image:screenshot_compliance_add_google_drive_button.png["Googleドライブの追加ボタンをクリックできるスキャン設定ページのスクリーンショット。"]
 
 . [Googleドライブアカウントの追加]ダイアログで、[Googleドライブへのサインイン*]をクリックします。
-. 表示されたGoogleページで、Googleドライブアカウントを選択し、必要な管理者ユーザーとパスワードを入力してから、* Accept *をクリックしてCloud Data Senseがこのアカウントからデータを読み取ることを許可します。
+. 表示された[Google]ページで、Google Driveアカウントを選択して必要な管理者ユーザとパスワードを入力し、*[同意する]*をクリックしてBlueXP分類によるこのアカウントからのデータの読み取りを許可します。
 
 
 Googleドライブアカウントが作業環境のリストに追加されます。
@@ -88,7 +88,7 @@ Googleドライブアカウントが作業環境のリストに追加されま�
 
 == ユーザデータのスキャンタイプを選択しています
 
-ユーザデータに対してCloud Data Senseが実行するスキャンのタイプを選択します。
+BlueXPで分類されるユーザのデータに対して実行するスキャンのタイプを選択します。
 
 .手順
 . _Configuration_pageで、Google Driveアカウントの* Configuration *ボタンをクリックします。
@@ -97,7 +97,7 @@ image:screenshot_compliance_google_drive_add_sites.png["Configuration（設定�
 
 . Google Driveアカウントのファイルに対して、マッピング専用スキャンまたはマッピングおよび分類スキャンを有効にします。
 +
-image:screenshot_compliance_google_drive_select_scan.png["Googleドライブデータで実行するスキャンデータセンスのタイプの選択方法を示すスクリーンショット。"]
+image:screenshot_compliance_google_drive_select_scan.png["Googleドライブのデータに対してBlueXP分類で実行するスキャンの種類を選択する方法を示すスクリーンショット。"]
 
 +
 [cols="45,45"]
@@ -116,10 +116,10 @@ image:screenshot_compliance_google_drive_select_scan.png["Googleドライブデ�
 
 
 .結果
-Cloud Data Senseは、追加したGoogle Driveアカウントのファイルのスキャンを開始し、その結果がダッシュボードやその他の場所に表示されます。
+BlueXPの分類により、追加したGoogle Driveアカウント内のファイルのスキャンが開始され、その結果がダッシュボードと他の場所に表示されます。
 
 
 
 == Googleドライブアカウントをコンプライアンススキャンから削除しています
 
-1人のユーザーのGoogleドライブファイルのみが1つのGoogleドライブアカウントの一部であるため、ユーザーのGoogleドライブアカウントからのファイルのスキャンを停止する場合は、次の手順を実行します link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-cloud-data-sense["データセンスからGoogleドライブアカウントを削除します"]。
+1人のユーザーのGoogleドライブファイルのみが1つのGoogleドライブアカウントの一部であるため、ユーザーのGoogleドライブアカウントからのファイルのスキャンを停止する場合は、次の手順を実行します link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-bluexp-classification["BlueXP分類からGoogle Driveアカウントを削除します"]。

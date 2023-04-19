@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Cloud Data Sense
+  name: BlueXP classification
   platform: cloud
   internal:
     pdf_enabled: true
@@ -11,15 +11,15 @@ settings:
   langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr
 sidebar:
   entries:
-  - title: Cloud Data Sense ドキュメント
+  - title: BlueXPの分類ドキュメント
     url: "/index.html"
   - title: リリースノート
     url: "/whats-new.html"
   - title: はじめに
     entries:
-    - title: クラウドデータの意味をご確認ください
+    - title: BlueXPの分類について説明します
       url: "/concept-cloud-compliance.html"
-    - title: クラウドデータの導入センス
+    - title: BlueXP分類を導入します
       entries:
       - title: BlueXPを使用してクラウドに導入
         url: "/task-deploy-cloud-compliance.html"
@@ -27,7 +27,7 @@ sidebar:
         url: "/task-deploy-compliance-onprem.html"
       - title: インターネットにアクセスせずにオンプレミスにインストール
         url: "/task-deploy-compliance-dark-site.html"
-      - title: LinuxホストでData Senseをインストールできる状態になっていることを確認します
+      - title: LinuxホストでBlueXP分類をインストールできる状態になっていることを確認します
         url: "/task-test-linux-system.html"
     - title: データソースでスキャンをアクティブ化します
       entries:
@@ -57,7 +57,7 @@ sidebar:
       url: "/task-licensing-datasense.html"
     - title: よく寄せられる質問
       url: "/faq-cloud-compliance.html"
-  - title: クラウドデータセンスを活用
+  - title: BlueXP分類を使用
     entries:
     - title: データのガバナンスの詳細を確認できます
       url: "/task-controlling-governance-data.html"
@@ -77,23 +77,23 @@ sidebar:
       url: task-managing-repo-scanning.html
     - title: コンプライアンスレポートを生成します
       url: "/task-generating-compliance-reports.html"
-  - title: クラウドデータの管理
+  - title: BlueXPの分類を管理します
     entries:
     - title: カスタムの個人データ識別子を追加します
       url: "/task-managing-data-fusion.html"
-    - title: データセンスアクションのステータスを表示します
+    - title: BlueXP分類操作のステータスを表示します
       url: "/task-view-compliance-actions.html"
-    - title: データセンスアクションの履歴を監査します
+    - title: BlueXPの分類アクションの履歴を監査します
       url: "/task-audit-data-sense-actions.html"
-    - title: データセンススキャンの速度を下げます
+    - title: BlueXPの分類スキャン速度を下げます
       url: "/task-reduce-scan-speed.html"
-    - title: データセンスからデータソースを削除します
+    - title: BlueXPの分類からデータソースを削除します
       url: "/task-managing-compliance.html"
-    - title: データセンスをアンインストールします
+    - title: BlueXPをアンインストールします
       url: "/task-uninstall-data-sense.html"
   - title: 参照
     entries:
-    - title: サポートされるData Senseインスタンスタイプ
+    - title: サポートされるBlueXP分類インスタンスタイプ
       url: "/reference-instance-types.html"
     - title: データソースから収集されたメタデータ
       url: "/reference-collected-metadata.html"
@@ -109,15 +109,15 @@ homepage:
   tiles:
   - title: はじめに
     links:
-    - title: クラウドデータの意味をご確認ください
+    - title: BlueXPの分類について説明します
       url: concept-cloud-compliance.html
     - title: 新機能
       url: whats-new.html
-    - title: BlueXPを使用してData Senseをクラウドに導入
+    - title: BlueXPを使用してBlueXP分類をクラウドに導入します
       url: task-deploy-cloud-compliance.html
-    - title: インターネットを使用するLinuxホストにData Senseをインストールします
+    - title: インターネットを使用するLinuxホストにBlueXP分類をインストールします
       url: task-deploy-compliance-onprem.html
-    - title: インターネットを使用せずに、Data Senseをオンプレミスにインストールします
+    - title: インターネットを使用せずに、BlueXPの分類をオンプレミスにインストール
       url: task-deploy-compliance-dark-site.html
     - title: Active Directory を統合します
       url: task-add-active-directory-datasense.html
@@ -185,7 +185,7 @@ homepage:
     links:
     - title: ネットアップコミュニティ
       url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-    - title: データセンスのユースケース
+    - title: BlueXPの分類のユースケース
       url: https://bluexp.netapp.com/netapp-cloud-data-sense
     - title: BlueXPブログ
       url: https://bluexp.netapp.com/blog

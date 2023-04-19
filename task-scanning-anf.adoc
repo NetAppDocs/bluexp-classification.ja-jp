@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-anf.html 
-keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, Azure NetApp Files, data sense 
-summary: Azure NetApp Files 向けクラウドデータセンスの導入を開始するには、いくつかの手順を実行します。 
+keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, azure netApp files, data sense 
+summary: いくつかの手順を実行して、Azure NetApp Files 向けBlueXPの分類を開始してください。 
 ---
-= Azure NetApp Files 向けクラウドデータセンスの導入を開始する方法をご確認ください
+= BlueXPでAzure NetApp Files の分類を開始します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Azure NetApp Files 向けクラウドデータセンスの導入を開�
 
 
 [role="lead"]
-Azure NetApp Files 向けクラウドデータセンスの導入を開始するには、いくつかの手順を実行します。
+いくつかの手順を実行して、Azure NetApp Files 向けBlueXPの分類を開始してください。
 
 
 
@@ -26,28 +26,28 @@ Azure NetApp Files 向けクラウドデータセンスの導入を開始する�
 [role="quick-margin-para"]
 Azure NetApp Files ボリュームをスキャンする前に、 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["構成を検出するには、BlueXPを設定する必要があります"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Cloud Data Sense インスタンスを導入する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["BlueXPにクラウドデータセンスを導入します"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXPでBlueXP分類を導入します"^] インスタンスが展開されていない場合。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] Cloud Data Sense を有効にして、スキャンするボリュームを選択します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] BlueXP分類を有効にし、スキャンするボリュームを選択します
 [role="quick-margin-para"]
 コンプライアンス * をクリックし、 * 構成 * タブを選択して、特定の作業環境でボリュームのコンプライアンススキャンを有効にします。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] ボリュームへのアクセスを確認
 [role="quick-margin-para"]
-Cloud Data Sense が有効になったので、すべてのボリュームにアクセスできることを確認します。
+BlueXPの分類が有効になったので、すべてのボリュームにアクセスできることを確認します。
 
 [role="quick-margin-list"]
-* クラウドデータセンスインスタンスには、各 Azure NetApp Files サブネットへのネットワーク接続が必要です。
-* これらのポートが Data Sense インスタンスに対して開いていることを確認します。
+* BlueXP分類インスタンスには、各Azure NetApp Files サブネットへのネットワーク接続が必要です。
+* 次のポートがBlueXP分類インスタンスに対して開いていることを確認します。
 +
 ** NFS –ポート 111 および 2049 。
 ** CIFS の場合 - ポート 139 および 445
 
 
-* NFS ボリュームエクスポートポリシーで、データセンスインスタンスからのアクセスを許可する必要があります。
-* CIFS ボリュームをスキャンするには、 Active Directory クレデンシャルが必要です。
+* NFSボリュームエクスポートポリシーでは、BlueXP分類インスタンスからのアクセスを許可する必要があります。
+* BlueXPの分類では、CIFSボリュームのスキャンにActive Directoryのクレデンシャルが必要です。
 +
 コンプライアンス * > * 構成 * > * CIFS クレデンシャルの編集 * をクリックし、クレデンシャルを入力します。
 
@@ -55,7 +55,7 @@ Cloud Data Sense が有効になったので、すべてのボリュームにア
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"] スキャンするボリュームを管理します
 [role="quick-margin-para"]
-スキャンするボリュームを選択または選択解除すると、 Cloud Data Sense でスキャンが開始または停止します。
+スキャンするボリュームを選択または選択解除すると、BlueXP分類によってスキャンが開始または停止されます。
 
 
 
@@ -67,25 +67,25 @@ https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.
 
 
 
-== Cloud Data Sense インスタンスの導入
+== BlueXP分類インスタンスの導入
 
-link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
 
-Azure NetApp Files ボリュームをスキャンするときは、データセンスをクラウドに導入する必要があります。また、スキャンするボリュームと同じリージョンに導入する必要があります。
+Azure NetApp Files ボリュームのスキャン時にBlueXP分類がクラウドに導入され、スキャンするボリュームと同じリージョンに導入されている必要があります。
 
-* 注： * オンプレミスの場所にクラウドデータセンスを導入することは、 Azure NetApp Files ボリュームのスキャンでは現在サポートされていません。
+*注：*現時点では、Azure NetApp Files ボリュームのスキャン時にBlueXPの分類をオンプレミスに導入することはできません。
 
-Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
+インスタンスがインターネットに接続されていれば、BlueXP分類ソフトウェアへのアップグレードは自動で実行されます。
 
 
 
-== 作業環境でクラウドデータを有効に活用
+== 作業環境でBlueXPの分類を有効にする
 
-Azure NetApp Files ボリュームでクラウドデータセンスを有効にすることができます。
+Azure NetApp Files ボリュームでBlueXP分類を有効にすることができます。
 
 . BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックし、* Configuration *タブを選択します。
 +
-image:screenshot_cloud_compliance_anf_scan_config.png["Cloud Data Sense インスタンスを展開した直後の [ 構成 ] タブのスクリーンショット。"]
+image:screenshot_cloud_compliance_anf_scan_config.png["BlueXP分類インスタンスを導入した直後の[Configuration]タブのスクリーンショット。"]
 
 . 各作業環境でボリュームをスキャンする方法を選択します。 link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングおよび分類スキャンについて説明します"]：
 +
@@ -97,46 +97,46 @@ image:screenshot_cloud_compliance_anf_scan_config.png["Cloud Data Sense イン�
 
 
 
-. 確認ダイアログボックスで、 [* 承認 ] をクリックして、ボリュームのスキャンを開始するデータセンスを設定します。
+. 確認のダイアログボックスで、*[承認]*をクリックして、BlueXP分類でボリュームのスキャンを開始します。
 
 
 .結果
-Cloud Data Sense により、作業環境で選択したボリュームのスキャンが開始されます。結果は、Data Senseによる初回スキャンが完了するとすぐに[Compliance]ダッシュボードに表示されます。所要時間はデータ量によって異なります。数分から数時間かかる場合もあります。
+作業環境で選択したボリュームのスキャンが開始されます。結果は、BlueXPの分類による初回スキャンが終了するとすぐに[Compliance]ダッシュボードに表示されます。所要時間はデータ量によって異なります。数分から数時間かかる場合もあります。
 
 
-NOTE: Data Senseでは「最終アクセス時間」を元のタイムスタンプに戻すことができないため、Data SenseにCIFSで属性への書き込み権限やNFSでの書き込み権限がない場合、デフォルトではボリューム内のファイルはスキャンされません。最終アクセス時間をリセットしても構わない場合は、*をクリックするか、各ボリュームのスキャンタイプ*を選択します。このページでは、Data Senseが権限に関係なくボリュームをスキャンするように設定できます。
+NOTE: BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、CIFSでは属性の書き込み権限やNFSでの書き込み権限がない場合、デフォルトではボリューム内のファイルはスキャンされません。最終アクセス時間をリセットしても構わない場合は、*をクリックするか、各ボリュームのスキャンタイプ*を選択します。このページでは、権限に関係なくBlueXP分類でボリュームがスキャンされるように設定できます。
 
 
 
-== Cloud Data Sense がボリュームにアクセスできることの確認
+== BlueXPの分類でボリュームにアクセスできることを確認する
 
-ネットワーク、セキュリティグループ、およびエクスポートポリシーを確認して、 Cloud Data Sense でボリュームにアクセスできることを確認します。CIFS ボリュームにアクセスできるようにするには、 CIFS クレデンシャルをデータセンスに指定する必要があります。
+ネットワーク、セキュリティグループ、およびエクスポートポリシーをチェックして、BlueXPの分類でボリュームにアクセスできることを確認します。CIFSボリュームにアクセスできるように、BlueXPの分類にCIFSクレデンシャルを指定する必要があります。
 
 .手順
-. クラウドデータセンスインスタンスと、 Azure NetApp Files 用のボリュームを含む各ネットワークの間にネットワーク接続が確立されていることを確認します。
+. BlueXP分類インスタンスと、Azure NetApp Files のボリュームを含む各ネットワークの間にネットワーク接続が確立されていることを確認します。
 +
 
-NOTE: Azure NetApp Files の場合、Cloud Data Senseは、BlueXPと同じ領域にあるボリュームのみをスキャンできます。
+NOTE: Azure NetApp Files では、BlueXPの分類でスキャンできるのはBlueXPと同じリージョンにあるボリュームのみです。
 
-. 次のポートがデータセンスインスタンスに対して開いていることを確認します。
+. BlueXP分類インスタンスに対して次のポートが開いていることを確認します。
 +
 ** NFS –ポート 111 および 2049 。
 ** CIFS の場合 - ポート 139 および 445
 
 
-. NFS ボリュームのエクスポートポリシーに、各ボリュームのデータにアクセスできるように Data sense インスタンスの IP アドレスが含まれていることを確認します。
-. CIFS を使用する場合は、 CIFS ボリュームをスキャンできるように、 Active Directory クレデンシャルを使用したデータセンスを設定します。
+. NFSボリュームエクスポートポリシーにBlueXP分類インスタンスのIPアドレスが含まれていることを確認して、各ボリュームのデータにアクセスできるようにします。
+. CIFSを使用する場合は、CIFSボリュームをスキャンできるように、BlueXPにActive Directoryクレデンシャルを指定してください。
 +
 .. BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックし、* Configuration *タブを選択します。
 +
 image:screenshot_cifs_credentials.gif["コンテンツペインの右上にある [ スキャンステータス ] ボタンを示す [ 遵守 ] タブのスクリーンショット。"]
 
-.. 各作業環境について、 * CIFS 資格情報の編集 * をクリックし、システム上の CIFS ボリュームにアクセスするために必要なユーザー名とパスワードを入力します。
+.. 各作業環境について、*[CIFSクレデンシャルの編集]*をクリックし、BlueXPでシステムのCIFSボリュームにアクセスするために必要なユーザ名とパスワードを入力します。
 +
-クレデンシャルは読み取り専用ですが、管理者のクレデンシャルを指定することで、データセンスは昇格された権限が必要なデータを読み取ることができます。クレデンシャルは Cloud Data Sense インスタンスに保存されます。
+クレデンシャルは読み取り専用ですが、adminクレデンシャルを指定すると、昇格された権限が必要なデータをBlueXP分類で確実に読み取ることができます。クレデンシャルはBlueXP分類インスタンスに格納されます。
 
 +
-Data Senseの分類スキャンによってファイルの「最終アクセス日時」が変更されていないことを確認するには、CIFSの場合はWrite Attributes権限、NFSの場合はwrite権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。
+BlueXPの分類スキャンでファイルの「最終アクセス日時」が変更されていないことを確認するには、CIFSの場合はWrite Attributes権限、NFSの場合はwrite権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。
 
 +
 クレデンシャルを入力すると、すべての CIFS ボリュームが認証されたことを示すメッセージが表示されます。
@@ -148,10 +148,10 @@ image:screenshot_cifs_status.gif["設定ページと Cloud Volumes ONTAP クレ�
 
 . _Configuration_page で、 *View Details * をクリックして、各 CIFS および NFS ボリュームのステータスを確認し、エラーを修正します。
 +
-たとえば、次の図は 4 つのボリュームを示しています。 1 つは、データセンスインスタンスとボリュームの間のネットワーク接続の問題が原因でクラウドデータセンスでスキャンできないボリュームです。
+たとえば、次の図は4つのボリュームを示しています。そのうちの1つは、BlueXP分類インスタンスとボリュームの間のネットワーク接続に問題があるため、BlueXP分類でスキャンできません。
 
 +
-image:screenshot_compliance_volume_details.gif["スキャン設定の View Details ページのスクリーンショット。 4 つのボリュームが表示されます。 1 つは Data Sense とボリューム間のネットワーク接続が原因でスキャンされていません。"]
+image:screenshot_compliance_volume_details.gif["スキャン設定の[View Details]ページのスクリーンショット。4つのボリュームが表示されています。そのうちの1つはBlueXPで分類されたボリュームとボリュームの間のネットワーク接続が原因でスキャンされていません。"]
 
 
 
@@ -161,7 +161,7 @@ image:screenshot_compliance_volume_details.gif["スキャン設定の View Detai
 
 設定ページからは、作業環境でマッピング専用スキャンまたはマッピングおよび分類スキャンをいつでも開始または停止できます。マッピングのみのスキャンからマッピングおよび分類スキャンに変更することもできます。また、マッピングのみのスキャンからマッピングおよび分類スキャンに変更することもできます。すべてのボリュームをスキャンすることを推奨します。
 
-「属性の書き込み」権限がない場合にスキャンする*のページ上部のスイッチは、デフォルトでは無効になっています。つまり、Data SenseにCIFSの書き込み属性権限、NFSの書き込み権限がない場合、Data Senseは「最終アクセス時間」を元のタイムスタンプに戻すことができないため、システムはファイルをスキャンしません。最終アクセス時間がリセットされても構わない場合は、スイッチをオンにすると、権限に関係なくすべてのファイルがスキャンされます。 link:reference-collected-metadata.html#last-access-time-timestamp["詳細はこちら。"^]。
+「属性の書き込み」権限がない場合にスキャンする*のページ上部のスイッチは、デフォルトでは無効になっています。つまり、BlueXPの分類にCIFSの属性への書き込み権限やNFSの書き込み権限がない場合、BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、ファイルはスキャンされません。最終アクセス時間がリセットされても構わない場合は、スイッチをオンにすると、権限に関係なくすべてのファイルがスキャンされます。 link:reference-collected-metadata.html#last-access-time-timestamp["詳細はこちら。"^]。
 
 image:screenshot_volume_compliance_selection.png["個々のボリュームのスキャンを有効または無効にできる設定ページのスクリーンショット。"]
 

@@ -2,10 +2,10 @@
 layout: astra 
 sidebar: sidebar 
 permalink: index.html 
-lead: 'BlueXP classification (Cloud Data Sense) is a data governance service that scans your data sources to map and classify data, and to identify private information.' 
-summary: BlueXPの分類（Cloud Data Sense）は、データソースをスキャンしてデータのマッピングと分類、個人情報の特定を行うデータガバナンスサービスです。 
+lead: 'BlueXP classification enables you to scan and classify data across your organization"s hybrid multicloud. Classification utilizes AI-driven natural language processing (NLP) for contextual data analysis and categorization, giving you actionable insights into your data to address compliance requirements, detect security vulnerabilities, optimize costs, and accelerate migration.' 
+summary: BlueXPの分類（Cloud Data Sense）を使用すると、組織のハイブリッドマルチクラウド全体にわたってデータをスキャンして分類できます。BlueXP分類は、AIによる自然言語処理（NLP）を活用してコンテキストに応じたデータの分析とカテゴリ化を行い、データに関する実用的な分析情報を提供して、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の高速化を実現します。 
 ---
-= Cloud Data Sense ドキュメント
+= BlueXPの分類に関するドキュメント
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

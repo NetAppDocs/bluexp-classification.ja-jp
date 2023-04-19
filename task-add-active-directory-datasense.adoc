@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-add-active-directory-datasense.html 
 keywords: active directory, ad, data sense, cloud data sense 
-summary: グローバル Active Directory をクラウドデータセンスと統合すると、ファイル所有者や、ファイルにアクセスできるユーザーやグループについてデータセンスがレポートする結果を高めることができます。 
+summary: グローバルなActive DirectoryとBlueXPの分類を統合すると、BlueXPの分類で報告されるファイル所有者や、どのユーザやグループがファイルにアクセスできるかについての結果を強化できます。 
 ---
-= Active Directory と Cloud Data Sense を統合
+= Active DirectoryをBlueXPに統合しましょう
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: グローバル Active Directory をクラウドデータセンスと�
 
 
 [role="lead"]
-グローバル Active Directory をクラウドデータセンスと統合すると、ファイル所有者や、ファイルにアクセスできるユーザーやグループについてデータセンスがレポートする結果を高めることができます。
+グローバルなActive DirectoryとBlueXPの分類を統合すると、BlueXPの分類で報告されるファイル所有者や、どのユーザやグループがファイルにアクセスできるかについての結果を強化できます。
 
-一部のデータソース（以下に記載）を設定する場合、 CIFS ボリュームをスキャンするデータセンスを設定するためには、 Active Directory のクレデンシャルを入力する必要があります。この統合により、データセンスとファイル所有者、およびそれらのデータソースに存在するデータの権限の詳細が提供されます。これらのデータソースに対して入力した Active Directory は、ここで入力したグローバル Active Directory クレデンシャルと異なる場合があります。データセンスは、統合されたすべての Active Directory でユーザと権限の詳細を確認します。
+BlueXPでCIFSボリュームをスキャンするためには、特定のデータソース（以下を参照）を設定するときにActive Directoryのクレデンシャルを入力する必要があります。この統合により、BlueXPの分類に、それらのデータソースに存在するデータのファイル所有者と権限の詳細が表示されます。これらのデータソースに対して入力した Active Directory は、ここで入力したグローバル Active Directory クレデンシャルと異なる場合があります。BlueXPの分類では、統合されているすべてのActive Directoryでユーザと権限の詳細が確認されます。
 
-この統合により、データセンスの良い場所で追加情報 を利用できるようになります。
+この統合により、BlueXPでは次の場所で追加情報 が提供されます。
 
 * 「ファイル所有者」を使用できます。 link:task-investigate-data.html#filtering-data-in-the-data-investigation-page["フィルタ"] [調査]ペインで、ファイルのメタデータの結果を確認できます。SID （セキュリティ ID ）を含むファイル所有者ではなく、実際のユーザ名が入力されます。
 * を参照してください link:task-investigate-data.html#viewing-permissions-for-files-and-directories["フルファイル権限"] [すべてのアクセス許可の表示]ボタンをクリックしたときに、各ファイルおよびディレクトリについて、
@@ -32,7 +32,7 @@ NOTE: ローカルユーザの SID および不明なドメインの SID は、�
 
 == サポートされているデータソース
 
-Active Directory と Cloud Data Sense との統合により、次のデータソース内からデータを識別できます。
+Active DirectoryとBlueXPの統合では、次のデータソースからデータを識別できます。
 
 * オンプレミスの ONTAP システム
 * Cloud Volumes ONTAP
@@ -49,11 +49,11 @@ Active Directory と Cloud Data Sense との統合により、次のデータソ
 
 == Active Directory サーバに接続しています
 
-データセンスを導入し、データソースでスキャンを有効化したら、 Active Directory とデータセンスを統合できます。Active Directory には、 DNS サーバの IP アドレスまたは LDAP サーバの IP アドレスを使用してアクセスできます。
+BlueXPの分類を導入し、データソースでスキャンをアクティブ化したら、BlueXPの分類をActive Directoryに統合できます。Active Directory には、 DNS サーバの IP アドレスまたは LDAP サーバの IP アドレスを使用してアクセスできます。
 
-Active Directory のクレデンシャルは読み取り専用ですが、管理者のクレデンシャルを指定することで、データセンスは昇格された権限を必要とするすべてのデータを読み取ることができます。クレデンシャルは Cloud Data Sense インスタンスに保存されます。
+Active Directoryクレデンシャルは読み取り専用ですが、管理者クレデンシャルを指定すると、昇格された権限が必要なデータをBlueXP分類で確実に読み取ることができます。クレデンシャルはBlueXP分類インスタンスに格納されます。
 
-CIFSボリュームまたはファイル共有で、ファイルの「最終アクセス日時」がデータセンス分類スキャンによって変更されないようにするには、ユーザーに書き込み属性権限を与えることをお勧めします。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。
+CIFSボリューム/ファイル共有の場合、BlueXPの分類スキャンでファイルの「最終アクセス日時」に変更がないことを確認するには、ユーザにWrite Attributes権限を付与することを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。
 
 .要件
 * 社内のユーザに対して Active Directory がすでに設定されている必要があります。
@@ -72,7 +72,7 @@ LDAP サーバの IP アドレス、または複数の IP アドレス
 ** LDAP サーバポート（通常は LDAP では 389 、セキュア LDAP では 636 ）
 
 
-* Data Sense インスタンスによるアウトバウンド通信用に、次のポートが開いている必要があります。
+* BlueXP分類インスタンスによるアウトバウンド通信用に、次のポートが開いている必要があります。
 +
 [cols="20,20,30,30"]
 |===
@@ -93,22 +93,22 @@ LDAP サーバの IP アドレス、または複数の IP アドレス
 
 
 .手順
-. Cloud Data Sense Configuration （クラウドデータセンス設定）ページで、 * Add Active Directory * （ Active Directory の追加）をクリックします。
+. BlueXPの分類の設定ページで、* Active Directoryの追加*をクリックします。
 +
-image:screenshot_compliance_integrate_active_directory.png["Active Directory サーバを Cloud Data Sense に追加するボタンをクリックすることを示すスクリーンショット。"]
+image:screenshot_compliance_integrate_active_directory.png["ボタンをクリックしてActive DirectoryサーバをBlueXPに追加するところを示すスクリーンショット。"]
 
 . Active Directory への接続ダイアログで、 Active Directory の詳細を入力し、 * 接続 * をクリックします。
 +
 必要に応じて、 * IP の追加 * をクリックすると、複数の IP アドレスを追加できます。
 
 +
-image:screenshot_compliance_active_directory_dialog.png["データセンスと統合する Active Directory を定義するダイアログのスクリーンショット。"]
+image:screenshot_compliance_active_directory_dialog.png["BlueXP分類と統合するActive Directoryを定義するダイアログのスクリーンショット。"]
 
 +
-データセンスは Active Directory に統合され、新しいセクションが [ 構成 ] ページに追加されます。
+BlueXPはActive Directoryに分類され、[設定]ページに新しいセクションが追加されました。
 
 +
-image:screenshot_compliance_active_directory_added.png["データセンスに統合された新しい Active Directory を示すスクリーンショット。"]
+image:screenshot_compliance_active_directory_added.png["BlueXPに統合された新しいActive Directoryを示すスクリーンショット。"]
 
 
 

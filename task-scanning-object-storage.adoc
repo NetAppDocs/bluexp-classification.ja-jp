@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-object-storage.html 
-keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, Data Sense 
-summary: Cloud Data Sense で、オブジェクトストレージ内のデータのスキャンを開始するには、いくつかの手順を実行します。データセンスは、 Simple Storage Service （ S3 ）プロトコルを使用する任意の Object Storage サービスからデータをスキャンできます。具体的には、 NetApp StorageGRID 、 IBM Cloud Object Store 、 Azure Blob （ MinIO を使用）、 Linode 、 B2 Cloud Storage 、 Amazon S3 などです。 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
+summary: いくつかの手順を実行して、BlueXPの分類を使用してオブジェクトストレージ内のデータの直接スキャンを開始します。BlueXPの分類では、Simple Storage Service（S3）プロトコルを使用する任意のオブジェクトストレージサービスのデータをスキャンできます。具体的には、 NetApp StorageGRID 、 IBM Cloud Object Store 、 Azure Blob （ MinIO を使用）、 Linode 、 B2 Cloud Storage 、 Amazon S3 などです。 
 ---
 = S3 プロトコルを使用するオブジェクトストレージをスキャンしています
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Data Sense で、オブジェクトストレージ内のデータ
 
 
 [role="lead"]
-Cloud Data Sense で、オブジェクトストレージ内のデータのスキャンを開始するには、いくつかの手順を実行します。データセンスは、 Simple Storage Service （ S3 ）プロトコルを使用する任意の Object Storage サービスからデータをスキャンできます。具体的には、 NetApp StorageGRID 、 IBM Cloud Object Store 、 Azure Blob （ MinIO を使用）、 Linode 、 B2 Cloud Storage 、 Amazon S3 などです。
+いくつかの手順を実行して、BlueXPの分類を使用してオブジェクトストレージ内のデータの直接スキャンを開始します。BlueXPの分類では、Simple Storage Service（S3）プロトコルを使用する任意のオブジェクトストレージサービスのデータをスキャンできます。具体的には、 NetApp StorageGRID 、 IBM Cloud Object Store 、 Azure Blob （ MinIO を使用）、 Linode 、 B2 Cloud Storage 、 Amazon S3 などです。
 
 
 
@@ -27,46 +27,46 @@ Cloud Data Sense で、オブジェクトストレージ内のデータのスキ
 オブジェクトストレージサービスに接続するには、エンドポイント URL が必要です。
 
 [role="quick-margin-para"]
-Cloud Data Sense でバケットにアクセスできるように、オブジェクトストレージプロバイダからアクセスキーとシークレットキーを入手する必要があります。
+BlueXP分類でバケットにアクセスできるように、オブジェクトストレージプロバイダのアクセスキーとシークレットキーが必要です。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Cloud Data Sense インスタンスを導入する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] オブジェクトストレージサービスを追加します
 [role="quick-margin-para"]
-オブジェクトストレージサービスをクラウドデータセンスに追加します。
+オブジェクトストレージサービスをBlueXP分類に追加します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] スキャンするバケットを選択します
 [role="quick-margin-para"]
-スキャンするバケットを選択すると、 Cloud Data Sense によってスキャンが開始されます。
+スキャンするバケットを選択すると、BlueXPの分類によってスキャンが開始されます。
 
 
 
 == オブジェクトストレージ要件の確認
 
-Cloud Data Sense を有効にする前に、次の前提条件を確認し、サポートされている構成であることを確認します。
+BlueXPの分類を有効にする前に、次の前提条件を確認して、サポートされる構成があることを確認してください。
 
 * オブジェクトストレージサービスに接続するには、エンドポイント URL が必要です。
-* データセンスでバケットにアクセスできるようにするには、オブジェクトストレージプロバイダからアクセスキーとシークレットキーを取得する必要があります。
+* BlueXP分類でバケットにアクセスできるように、オブジェクトストレージプロバイダのアクセスキーとシークレットキーが必要です。
 * Azure Blob のサポートにはを使用する必要があります link:https://min.io/["MinIO サービス"^]。
 
 
 
 
-== Cloud Data Sense インスタンスの導入
+== BlueXP分類インスタンスの導入
 
-導入済みのインスタンスがない場合は Cloud Data Sense を導入
+導入されているインスタンスがない場合は、BlueXP分類を導入します。
 
-インターネット経由でアクセス可能な S3 オブジェクトストレージからデータをスキャンする場合は、を実行します link:task-deploy-cloud-compliance.html["クラウドにクラウドデータセンスを導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセス可能なオンプレミスの場所にデータセンスを導入"^]。
+インターネット経由でアクセス可能な S3 オブジェクトストレージからデータをスキャンする場合は、を実行します link:task-deploy-cloud-compliance.html["BlueXPの分類機能をクラウドに導入します"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所にBlueXPの分類を導入します"^]。
 
-インターネットにアクセスできないダークサイトにインストールされている S3 オブジェクトストレージからデータをスキャンする場合は、が必要です link:task-deploy-compliance-dark-site.html["クラウドデータセンスは、インターネットにアクセスできないオンプレミス環境に導入できます"^]。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。
+インターネットにアクセスできないダークサイトにインストールされている S3 オブジェクトストレージからデータをスキャンする場合は、が必要です link:task-deploy-compliance-dark-site.html["インターネットアクセスのないオンプレミスと同じ場所にBlueXPの分類を導入します"^]。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。
 
-Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
+インスタンスがインターネットに接続されていれば、BlueXP分類ソフトウェアへのアップグレードは自動で実行されます。
 
 
 
-== Cloud Data Sense へのオブジェクトストレージサービスの追加
+== オブジェクトストレージサービスをBlueXP分類に追加しています
 
 オブジェクトストレージサービスを追加します。
 
@@ -79,7 +79,7 @@ image:screenshot_compliance_add_object_storage_button.png["［ スキャン設�
 +
 .. 作業環境に使用する名前を入力します。この名前には、接続先のオブジェクトストレージサービスの名前を指定する必要があります。
 .. エンドポイントの URL を入力してオブジェクトストレージサービスにアクセスします。
-.. Cloud Data Sense がオブジェクトストレージ内のバケットにアクセスできるように、アクセスキーとシークレットキーを入力します。
+.. [Access Key]と[Secret Key]を入力して、BlueXPの分類がオブジェクトストレージ内のバケットにアクセスできるようにします。
 +
 image:screenshot_compliance_add_object_storage.png["オブジェクトストレージサービスにアクセスするための値を入力するダイアログのスクリーンショット。"]
 
@@ -94,7 +94,7 @@ image:screenshot_compliance_add_object_storage.png["オブジェクトストレ�
 
 == オブジェクトストレージバケットでの準拠スキャンの有効化と無効化
 
-オブジェクトストレージサービスで Cloud Data Sense を有効にしたら、次の手順でスキャンするバケットを設定します。Data Sense は、これらのバケットを検出し、作成した作業環境に表示します。
+オブジェクトストレージサービスでBlueXPの分類を有効にしたら、次の手順でスキャンするバケットを設定します。BlueXPの分類により、該当するバケットが検出され、作成した作業環境に表示されます。
 
 .手順
 . 設定ページで、 Object Storage Service 作業環境の * 設定 * をクリックします。
@@ -122,4 +122,4 @@ image:screenshot_compliance_object_storage_select_buckets.png["スキャンす�
 
 
 .結果
-Cloud Data Sense は、有効にしたバケットのスキャンを開始します。エラーが発生した場合は、エラーを修正するために必要なアクションとともに、 [ ステータス ] 列に表示されます。
+BlueXPの分類で、有効にしたバケットのスキャンが開始されます。エラーが発生した場合は、エラーを修正するために必要なアクションとともに、 [ ステータス ] 列に表示されます。

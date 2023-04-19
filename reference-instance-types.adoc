@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: reference-instance-types.html 
-keywords: data sense, installation, deployment, instance, virtual machine, cpu, ram, memory, disk, capacity 
-summary: データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。Data Senseをクラウドに導入する場合は、完全な機能を実現するために、「大」な特性を持つシステムを使用することをお勧めします。 
+keywords: BlueXP classification, installation, deployment, instance, virtual machine, cpu, ram, memory, disk, capacity 
+summary: BlueXP分類ソフトウェアは、特定のオペレーティングシステム要件、RAM要件、ソフトウェア要件などを満たすホストで実行する必要があります。BlueXPの分類をクラウドに導入する場合、すべての機能を利用するには「大規模」のシステムを使用することを推奨します。 
 ---
-= サポートされるData Senseインスタンスタイプ
+= サポートされるBlueXP分類インスタンスタイプ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: データセンスソフトウェアは、特定のオペレーティ�
 
 
 [role="lead"]
-データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。Data Senseをクラウドに導入する場合は、完全な機能を実現するために、「大」な特性を持つシステムを使用することをお勧めします。
+BlueXP分類ソフトウェアは、特定のオペレーティングシステム要件、RAM要件、ソフトウェア要件などを満たすホストで実行する必要があります。BlueXPの分類をクラウドに導入する場合、すべての機能を利用するには「大規模」のシステムを使用することを推奨します。
 
-CPU の数と RAM の数が少ないシステムには Data Sense を導入できますが、このような低パフォーマンスのシステムを使用する場合はいくつかの制限事項があります。 link:concept-cloud-compliance.html#using-a-smaller-instance-type["これらの制限事項について説明します"^]。
+CPUとRAMの数が少ないシステムにBlueXPの分類を導入することもできますが、使用するシステムにはいくつかの制限があります。 link:concept-cloud-compliance.html#using-a-smaller-instance-type["これらの制限事項について説明します"^]。
 
-次の表では、Data Senseをインストールする地域で「Default」とマークされたシステムが使用できない場合、テーブル内の次のシステムがデプロイされます。
+次の表で、BlueXP分類をインストールするリージョンで「Default」とマークされたシステムが使用できない場合は、表の次のシステムが導入されます。
 
 
 

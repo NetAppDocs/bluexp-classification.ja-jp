@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-dark-site.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade 
-summary: インターネットにアクセスできないオンプレミスサイトのLinuxホストにData Senseをインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。 
+summary: インターネットにアクセスできないオンプレミスサイトのLinuxホストにBlueXP分類をインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。 
 ---
-= インターネットにアクセスできないホストにData Senseをインストールします
+= インターネットにアクセスできないホストにBlueXP分類をインストールします
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,17 +14,17 @@ summary: インターネットにアクセスできないオンプレミスサ�
 
 
 [role="lead"]
-インターネットにアクセスできないオンプレミスサイトのLinuxホストにData Senseをインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。
+インターネットにアクセスできないオンプレミスサイトのLinuxホストにBlueXP分類をインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。
 
-また、次のことも可能です link:task-quick-start-connector-on-prem.html["インターネットにアクセス可能なオンプレミスサイトにデータセンスを導入"]。
+また、次のことも可能です link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスサイトにBlueXPの分類を導入します"]。
 
-Data Senseインストールスクリプトは、システムと環境が必要な前提条件を満たしているかどうかを確認することから開始されます。前提条件がすべて満たされている場合は、インストールが開始されます。Data Senseのインストールとは別に前提条件を確認する場合は、前提条件のテストのみを行う別のソフトウェアパッケージをダウンロードできます。 link:task-test-linux-system.html["LinuxホストでData Senseをインストールする準備ができているかどうかを確認する方法を参照してください"]。
+BlueXPの分類インストールスクリプトでは、まず、システムと環境が必要な前提条件を満たしているかどうかが確認されます。前提条件がすべて満たされている場合は、インストールが開始されます。BlueXP分類のインストールとは別に前提条件を確認する場合は、前提条件のみをテストする別のソフトウェアパッケージをダウンロードできます。 link:task-test-linux-system.html["LinuxホストでBlueXPのインストール準備が完了しているかどうかを確認する方法を説明します"]。
 
 
 
 == サポートされているデータソース
 
-この方法でインストールすると（「オフライン」または「ダーク」サイトと呼ばれることもあります）、データ検出でスキャンできるのは、オンプレミスサイトに対してもローカルなデータソースのデータのみです。現時点では、データセンスは次の*ローカル*データソースをスキャンできます。
+この方法でインストールした場合（「オフライン」または「ダーク」サイトと呼ばれることもあります）、BlueXPの分類では、同じくオンプレミスサイトのローカルなデータソースのデータしかスキャンできません。現時点では、BlueXPでは次の*ローカル*データソースをスキャンできます。
 
 * オンプレミスの ONTAP システム
 * データベーススキーマ
@@ -33,22 +33,22 @@ Data Senseインストールスクリプトは、システムと環境が必要�
 * Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージ
 
 
-現在、Cloud Volumes ONTAP 、Azure NetApp Files 、FSx for ONTAP 、AWS S3、Googleドライブのスキャンはサポートされていません。 Data Senseがダークサイトに導入されている場合は、OneDrive（SharePoint Online）アカウントが作成されます。
+現在、Cloud Volumes ONTAP 、Azure NetApp Files 、FSx for ONTAP 、AWS S3、Googleドライブのスキャンはサポートされていません。 BlueXPの分類がダークサイトに導入されている場合は、OneDriveまたはSharePoint Onlineアカウント。
 
 
 
 == 制限
 
-ほとんどのデータセンス機能は、インターネットにアクセスできないサイトに導入されている場合に機能します。ただし、インターネットアクセスを必要とする特定の機能はサポートされていません。たとえば、次のような機能があります。
+BlueXPのほとんどの分類機能は、インターネットアクセスのないサイトに導入した場合に機能します。ただし、インターネットアクセスを必要とする特定の機能はサポートされていません。たとえば、次のような機能があります。
 
 * Microsoft Azure Information Protection （ AIP ）ラベルの管理
 * 特定の重要なポリシーの結果が返されたときに、BlueXPユーザーに電子メールアラートを送信する
 * 異なるユーザーのBlueXPロールの設定(アカウント管理者やCompliance Viewerなど)
-* Cloud Sync を使用したソースファイルのコピーと同期
+* BlueXPのコピーと同期を使用したソースファイルのコピーと同期
 * ユーザからのフィードバックを受け取る
 * BlueXPからの自動ソフトウェアアップグレード
 +
-BlueXPコネクタとデータセンスの両方で、新しい機能を有効にするには定期的に手動でアップグレードする必要があります。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["BlueXP Connectorをアップグレードします"^] および <<Data Sense ソフトウェアをアップグレードする,データセンスソフトウェアをアップグレードします>>。
+BlueXP ConnectorとBlueXPのどちらも、新機能を有効にするために定期的な手動アップグレードが必要になります。BlueXP分類バージョンは、BlueXP分類UIページの下部で確認できます。を確認します link:whats-new.html["BlueXPの分類に関するリリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["BlueXP Connectorをアップグレードします"^] および <<BlueXP分類ソフトウェアをアップグレードします,BlueXP分類ソフトウェアをアップグレードします>>。
 
 
 
@@ -62,17 +62,17 @@ BlueXPコネクタとデータセンスの両方で、新しい機能を有効�
 [role="quick-margin-para"]
 オフラインのオンプレミスサイトにコネクタがまだインストールされていない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["コネクタを配置します"^] Linux ホストの場合は、
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] データセンスの前提条件を確認します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXPの分類の前提条件を確認します
 [role="quick-margin-para"]
-Linux システムがを満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>必要なソフトウェアがすべてインストールされていること、およびオフライン環境が要件を満たしていることを確認します <<BlueXPおよびData Senseの前提条件を確認します,権限と接続>>。
+Linux システムがを満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>必要なソフトウェアがすべてインストールされていること、およびオフライン環境が要件を満たしていることを確認します <<BlueXPとBlueXPの分類の前提条件を確認,権限と接続>>。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] データセンスのダウンロードと導入
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] BlueXP分類をダウンロードして導入
 [role="quick-margin-para"]
-ネットアップサポートサイトから Cloud Data Sense ソフトウェアをダウンロードし、使用する Linux ホストにインストーラファイルをコピーします。次に、インストールウィザードを起動し、プロンプトに従って Cloud Data Sense インスタンスを導入します。
+NetApp Support Site からBlueXP分類ソフトウェアをダウンロードし、使用するLinuxホストにインストーラファイルをコピーします。インストールウィザードを起動し、画面の指示に従ってBlueXP分類インスタンスを導入します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] Cloud Data Sense サービスに登録する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] BlueXP分類サービスにサブスクライブします
 [role="quick-margin-para"]
-Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは30日間無料です。そのあともデータのスキャンを続行するには、ネットアップの BYOL ライセンスが必要です。
+BlueXPで分類されてスキャンされる最初の1TBのデータは、30日間無料です。そのあともデータのスキャンを続行するには、ネットアップの BYOL ライセンスが必要です。
 
 
 
@@ -84,18 +84,19 @@ Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは30日�
 
 == Linux ホストシステムを準備
 
-データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。データセンスは、他のアプリケーションと共有されるホストではサポートされません。ホストは専用のホストである必要があります。
+BlueXP分類ソフトウェアは、特定のオペレーティングシステム要件、RAM要件、ソフトウェア要件などを満たすホストで実行する必要があります。
 
-* スキャンするデータセットのサイズに応じて、ホストシステムは3つのサイズで指定できます。
+* BlueXPの分類は、他のアプリケーションと共有するホストではサポートされません。専用のホストである必要があります。
+
+
+* オンプレミスでホストシステムを構築する場合は、BlueXP分類スキャンを実行するデータセットのサイズに応じて、3つのシステムサイズの中から選択できます。
 +
 [cols="18,18,26,30"]
 |===
 | システムサイズ | CPU | RAM（スワップメモリを無効にする必要があります） | ディスク 
 
 
- a| 
-*大きい*
-| 16 CPU | 64GBのRAM | 500GiB SSDオン/、または* 100GiBオン/opt * 395GiBオン/var * 5GiBオン/tmp 
+| *大きい* | 16 CPU | 64GBのRAM | 500GiB SSDオン/または-100GiBオン/opt-395GiBオン/var-5GiBオン/tmp 
 
 
 | *中* | 8 CPU | 32GBのRAM | SSDが200GiB、または-50GiBが/opt-145GiBが/var-5GiBが/tmpにある 
@@ -106,20 +107,29 @@ Cloud Data SenseがBlueXPでスキャンする最初の1 TBのデータは30日�
 +
 これらの小さいシステムを使用する場合は制限があることに注意してください。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
 
-* *オペレーティング・システム*：Red Hat Enterprise LinuxまたはCentOSバージョン8.0~8.7
+* BlueXP分類インストール用にコンピューティングインスタンスをクラウドに導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。
 +
-** CentOS Stream 8もサポートされています
+** * AWS EC2インスタンスタイプ*：「m6i.4xlarge」を推奨します。 link:reference-instance-types.html#aws-instance-types["その他のAWSインスタンスタイプを参照してください"^]。
+** * Azure VMのサイズ*：「Standard_D16s_v3」を推奨します。 link:reference-instance-types.html#azure-instance-types["その他のAzureインスタンスタイプを参照してください"^]。
+** *GCPマシンタイプ*:「n2-standard-16」をお勧めします。 link:reference-instance-types.html#gcp-instance-types["追加のGCPインスタンスタイプを参照してください"^]。
+
+
+* *オペレーティングシステム*：このOSはDockerエンジンをインストールできる必要があります。
++
+** Red Hat Enterprise Linuxバージョン8.0~8.7
+** CentOSバージョン8.0から8.7
+** CentOS Stream 8
 ** バージョン7.8または7.9を使用できますが、Linuxカーネルバージョンは4.0以降である必要があります
-** OSがDocker Engineをインストールできる必要があります
 
 
-* *追加ソフトウェア*：Data Senseをインストールする前に、次のソフトウェアをホストにインストールする必要があります。
+* * Red Hat Subscription Management *：ホストはRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、システムはインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
+* *その他のソフトウェア*：BlueXP分類をインストールする前に、次のソフトウェアをホストにインストールする必要があります。
 +
 ** Docker Engineバージョン19.3.1以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
 ** Python 3 バージョン 3.6 以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
 
 
-* *ファイアウォールの考慮事項*:使用を計画している場合 `firewalld`では、データセンスをインストールする前に有効にすることをお勧めします。次のコマンドを実行して設定します `firewalld` データセンスとの互換性を確保するために、次のようにします。
+* *ファイアウォールの考慮事項*:使用を計画している場合 `firewalld`は、BlueXP分類をインストールする前に有効にすることを推奨します。次のコマンドを実行して設定します `firewalld` BlueXPと互換性があることを確認します。
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -130,24 +140,24 @@ firewall-cmd --permanent --add-port=443/tcp
 firewall-cmd --reload
 ....
 +
-を有効にした場合 `firewalld` Data Senseをインストールしたら、Dockerを再起動する必要があります。
+を有効にした場合 `firewalld` BlueXPの分類をインストールしたら、Dockerを再起動する必要があります。
 
 
 
 
-NOTE: Data Senseホスト・システムのIPアドレスは、インストール後は変更できません。
+NOTE: BlueXP分類ホストシステムのIPアドレスは、インストール後に変更することはできません。
 
 
 
-== BlueXPおよびData Senseの前提条件を確認します
+== BlueXPとBlueXPの分類の前提条件を確認
 
-Cloud Data Sense を導入する前に、次の前提条件を確認し、サポートされている構成であることを確認してください。
+BlueXPに分類を導入する前に、次の前提条件を確認して、サポートされる構成があることを確認してください。
 
-* Connectorにリソースを導入する権限があることを確認し、Cloud Data Senseインスタンス用のセキュリティグループを作成します。BlueXPの最新の権限は、で確認できます https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["ネットアップが提供するポリシー"^]。
-* クラウドデータを常に運用しておく必要がありますデータを継続的にスキャンするには、 Cloud Data Sense インスタンスがオンのままになっている必要があります。
-* Web ブラウザから Cloud Data Sense への接続を確認するCloud Data Senseを有効にしたら、ユーザーがData Senseインスタンスに接続しているホストからBlueXPインターフェイスにアクセスすることを確認します。
+* BlueXP分類インスタンスのリソースを導入し、セキュリティグループを作成するための権限がコネクタに割り当てられていることを確認します。BlueXPの最新の権限は、で確認できます https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["ネットアップが提供するポリシー"^]。
+* BlueXPの分類を継続して実行できることを確認します。データを継続的にスキャンするには、BlueXP分類インスタンスを引き続き使用する必要があります。
+* WebブラウザからBlueXPに接続できることを確認します。BlueXPの分類を有効にしたら、ユーザがBlueXPの分類インスタンスに接続されているホストからBlueXPインターフェイスにアクセスできるようにします。
 +
-データセンスインスタンスは、プライベート IP アドレスを使用して、インデックス付きデータが他のユーザーにアクセスできないようにします。そのため、BlueXPへのアクセスに使用するWebブラウザには、そのプライベートIPアドレスへの接続が必要です。この接続は、データセンスインスタンスと同じネットワーク内にあるホストから確立できます。
+BlueXP分類インスタンスでは、プライベートIPアドレスを使用して、インデックス化されたデータに他のユーザがアクセスできないようにします。そのため、BlueXPへのアクセスに使用するWebブラウザには、そのプライベートIPアドレスへの接続が必要です。この接続は、BlueXP分類インスタンスと同じネットワーク内のホストから行うことができます。
 
 
 
@@ -155,14 +165,14 @@ Cloud Data Sense を導入する前に、次の前提条件を確認し、サポ
 
 == 必要なすべてのポートが有効になっていることを確認します
 
-コネクタ、データセンス、Active Directory、およびデータソース間の通信に必要なすべてのポートが開いていることを確認する必要があります。
+コネクタ、BlueXP分類、Active Directory、データソースの間の通信に必要なすべてのポートが開いていることを確認する必要があります。
 
 [cols="25,25,50"]
 |===
 | 接続タイプ | ポート | 説明 
 
 
-| コネクタ<>データ検出 | 8080（TCP）、443（TCP）、および80 | コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。ポート8080が開いていることを確認し、BlueXPでインストールの進行状況を確認します。 
+| コネクタ<> BlueXPの分類 | 8080（TCP）、443（TCP）、および80 | コネクタのセキュリティグループで、ポート443を介したBlueXP分類インスタンスとの間のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。ポート8080が開いていることを確認し、BlueXPでインストールの進行状況を確認します。 
 
 
 | Connector <> ONTAP cluster（NAS） | 443（TCP）  a| 
@@ -174,25 +184,25 @@ BlueXPはHTTPSを使用してONTAP クラスタを検出しましたカスタム
 
 
 
-| データセンスONTAP クラスタ  a| 
+| BlueXP分類<> ONTAP クラスタ  a| 
 * nfs-111（TCP \ UDP）および2049（TCP \ UDP）の場合
 * CIFS - 139（TCP / UDP）および445（TCP / UDP）の場合
 
  a| 
-データセンスには、各Cloud Volumes ONTAP サブネットまたはオンプレミスのONTAP システムへのネットワーク接続が必要です。Cloud Volumes ONTAP のセキュリティグループは、データセンスインスタンスからのインバウンド接続を許可する必要があります。
+BlueXPの分類には、各Cloud Volumes ONTAP サブネットまたはオンプレミスのONTAP システムへのネットワーク接続が必要です。Cloud Volumes ONTAP のセキュリティグループで、BlueXP分類インスタンスからのインバウンド接続を許可する必要があります。
 
-これらのポートが Data Sense インスタンスに対して開いていることを確認します。
+次のポートがBlueXP分類インスタンスに対して開いていることを確認します。
 
 * nfs-111と2049の場合は同じです
 * CIFS/139および445の場合
 
 
-NFS ボリュームエクスポートポリシーで、データセンスインスタンスからのアクセスを許可する必要があります。
+NFSボリュームエクスポートポリシーでは、BlueXP分類インスタンスからのアクセスを許可する必要があります。
 
 
 
-| データセンス<> Active Directory | 389（TCPおよびUDP）、636（TCP）、3268（TCP）、および3269（TCP）  a| 
-社内のユーザに対して Active Directory がすでに設定されている必要があります。また、CIFSボリュームをスキャンするには、Active Directoryのクレデンシャルが必要です。
+| BlueXPの分類<> Active Directory | 389（TCPおよびUDP）、636（TCP）、3268（TCP）、および3269（TCP）  a| 
+社内のユーザに対して Active Directory がすでに設定されている必要があります。また、BlueXPの分類では、CIFSボリュームをスキャンするためにActive Directoryのクレデンシャルが必要です。
 
 Active Directory の次の情報が必要です。
 
@@ -204,35 +214,35 @@ Active Directory の次の情報が必要です。
 
 
 |===
-複数のData Senseホストを使用してデータソースをスキャンする場合は、追加のポートやプロトコルを有効にする必要があります。 link:task-deploy-compliance-dark-site.html#multi-host-installation-for-large-configurations["追加のポート要件を参照してください"]。
+複数のBlueXP分類ホストを使用してデータソースのスキャンに必要な処理能力を提供している場合は、追加のポート/プロトコルを有効にする必要があります。 link:task-deploy-compliance-dark-site.html#multi-host-installation-for-large-configurations["追加のポート要件を参照してください"]。
 
 
 
-== Data SenseをオンプレミスのLinuxホストにインストールします
+== オンプレミスのLinuxホストにBlueXP分類をインストールします
 
 一般的な構成では、ソフトウェアを 1 台のホストシステムにインストールします。 link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["これらの手順を参照してください"]。
 
-image:diagram_deploy_onprem_single_host_no_internet.png["インターネットにアクセスできない、オンプレミスに導入された単一のデータセンスインスタンスを使用してスキャンできるデータソースの場所を示す図。"]
+image:diagram_deploy_onprem_single_host_no_internet.png["インターネットアクセスなしでオンプレミスに導入された単一のBlueXP分類インスタンスを使用している場合にスキャンできるデータソースの場所を示す図。"]
 
 ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。 link:task-deploy-compliance-dark-site.html#multi-host-installation-for-large-configurations["これらの手順を参照してください"]。
 
-image:diagram_deploy_onprem_multi_host_no_internet.png["インターネットにアクセスせずにオンプレミスに導入された複数のData Senseインスタンスを使用してスキャンできるデータソースの場所を示す図。"]
+image:diagram_deploy_onprem_multi_host_no_internet.png["オンプレミスにインターネットアクセスなしで導入された複数のBlueXP分類インスタンスを使用している場合にスキャンできるデータソースの場所を示す図。"]
 
 
 
 === 一般的な構成でのシングルホストインストール
 
-オフライン環境で単一のオンプレミスホストに Data Sense ソフトウェアをインストールする場合は、次の手順を実行します。
+オフライン環境の単一のオンプレミスホストにBlueXP分類ソフトウェアをインストールする場合は、次の手順に従います。
 
 .必要なもの
 * Linux システムがを満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
 * 前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。
 * Linux システムに対する root 権限があることを確認してください。
-* オフライン環境が要件を満たしていることを確認します <<BlueXPおよびData Senseの前提条件を確認します,権限と接続>>。
+* オフライン環境が要件を満たしていることを確認します <<BlueXPとBlueXPの分類の前提条件を確認,権限と接続>>。
 
 
 .手順
-. インターネットに接続されたシステムで、から Cloud Data Sense ソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は * DataSense - offline-bundle-<version>.tar.gz * です。
+. インターネットが設定されたシステムの場合は、からBlueXP分類ソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は * DataSense - offline-bundle-<version>.tar.gz * です。
 . ダークサイトで使用する Linux ホストにインストーラバンドルをコピーします。
 . ホストマシンでインストーラバンドルを解凍します。次に例を示します。
 +
@@ -252,11 +262,11 @@ tar -xzf cc_onprem_installer.tar.gz
 . BlueXPを起動し、「ガバナンス」＞「分類」と選択します。
 . [ データセンスを活動化（ Activate Data sense ） ] をクリックし
 +
-image:screenshot_cloud_compliance_deploy_start.png["Cloud Data Sense を有効にするボタンを選択するスクリーンショット。"]
+image:screenshot_cloud_compliance_deploy_start.png["BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。"]
 
 . [Deploy]*をクリックしてオンプレミスのインストールを開始します。
 +
-image:screenshot_cloud_compliance_deploy_darksite.png["クラウドデータセンスをオンプレミスに導入するボタンを選択するスクリーンショット。"]
+image:screenshot_cloud_compliance_deploy_darksite.png["BlueXP分類をオンプレミスに導入するためのボタンを選択したスクリーンショット。"]
 
 . 「_Deploy Data Sense on Premises」ダイアログが表示されます。提供されたコマンドをコピーします（例： `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq --darksite`）をクリックし、後で使用できるようにテキストファイルに貼り付けます。次に*[閉じる]*をクリックしてダイアログを閉じます。
 . ホストマシンで、コピーしたコマンドを入力して一連のプロンプトに従います。または、必要なすべてのパラメータをコマンドライン引数として指定することもできます。
@@ -272,8 +282,8 @@ image:screenshot_cloud_compliance_deploy_darksite.png["クラウドデータセ�
  a| 
 .. 手順8でコピーした情報を貼り付けます。
 `sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --darksite`
-.. コネクタインスタンスからアクセスできるように、 Data Sense ホストマシンの IP アドレスまたはホスト名を入力します。
-.. BlueXP ConnectorホストマシンのIPアドレスまたはホスト名を入力して、データセンスインスタンスからアクセスできるようにします。
+.. コネクタインスタンスからアクセスできるように、BlueXP分類ホストマシンのIPアドレスまたはホスト名を入力します。
+.. BlueXPコネクタホストマシンのIPアドレスまたはホスト名を入力して、BlueXP分類インスタンスからアクセスできるようにします。
 
 | また、必要なホストパラメータとして、「 sudo ./install.sh -a <account_id > -c <agent_id > -t <token> --host <DS_host> --manager-host <cm_host> --no-proxy --darksite 」を事前に指定して、コマンド全体を作成することもできます 
 |===
@@ -284,21 +294,21 @@ image:screenshot_cloud_compliance_deploy_darksite.png["クラウドデータセ�
 ** _account_id _ = ネットアップアカウント ID
 ** _agent_id _ = コネクタ ID
 ** _ctoken _ = JWT ユーザートークン
-** _ds_host_ = Data Sense Linux システムの IP アドレスまたはホスト名
+** _DS_HOST_= BlueXP分類LinuxシステムのIPアドレスまたはホスト名。
 ** _cm_host_= BlueXPコネクタシステムのIPアドレスまたはホスト名。
 
 
 
 
 .結果
-Data Sense インストーラは、パッケージをインストールし、インストールを登録し、 Data Sense をインストールします。インストールには 10~20 分かかります。
+BlueXP分類インストーラは、パッケージをインストールして登録し、BlueXP分類をインストールします。インストールには 10~20 分かかります。
 
-ホストマシンとコネクタインスタンスの間にポート8080を介した接続がある場合は、BlueXPのData Senseタブにインストールの進行状況が表示されます。
+ホストマシンとコネクタインスタンスの間にポート8080経由で接続が確立されている場合は、BlueXPのBlueXPの分類タブでインストールの進捗状況を確認できます。
 
 .次のステップ
 設定ページからローカルを選択できます link:task-getting-started-compliance.html["オンプレミスの ONTAP クラスタ"] および link:task-scanning-databases.html["データベース"] をスキャンします。
 
-また可能です link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["クラウドデータセンスを使用する BYOL ライセンスをセットアップする"] 現時点では、デジタルウォレットのページから入手できます。30日間の無料トライアルが終了するまで、料金はかかりません。
+また可能です link:task-licensing-datasense.html#use-a-bluexp-classification-byol-license["BlueXP分類用のBYOLライセンスをセットアップ"] （この時点ではBlueXPのデジタルウォレットページから）。30日間の無料トライアルが終了するまで、料金はかかりません。
 
 
 
@@ -306,13 +316,13 @@ Data Sense インストーラは、パッケージをインストールし、イ
 
 ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。複数のホストシステムを使用する場合、プライマリシステムは _Managernode_name と呼ばれ、追加の処理能力を提供する追加システムは _Scanner Node_と 呼ばれます。
 
-オフライン環境で複数のオンプレミスホストに Data Sense ソフトウェアをインストールする場合は、次の手順を実行します。
+オフライン環境の複数のオンプレミスホストにBlueXP分類ソフトウェアをインストールする場合は、次の手順に従います。
 
 .必要なもの
 * Manager ノードと Scanner ノードのすべての Linux システムが、を満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
 * 前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。
 * Linux システムに対する root 権限があることを確認してください。
-* オフライン環境が要件を満たしていることを確認します <<BlueXPおよびData Senseの前提条件を確認します,権限と接続>>。
+* オフライン環境が要件を満たしていることを確認します <<BlueXPとBlueXPの分類の前提条件を確認,権限と接続>>。
 * 使用するスキャナノードホストの IP アドレスを確認しておく必要があります。
 * すべてのホストで次のポートとプロトコルを有効にする必要があります。
 +
@@ -363,27 +373,27 @@ Data Sense インストーラは、パッケージをインストールし、イ
 
 
 .結果
-Cloud Data Sense インストーラがパッケージのインストールを完了し、インストールを登録します。インストールには 15 ～ 25 分かかる場合があります。
+BlueXP分類インストーラがパッケージのインストールを完了し、インストールを登録します。インストールには 15 ～ 25 分かかる場合があります。
 
 .次のステップ
 設定ページからローカルを選択できます link:task-getting-started-compliance.html["オンプレミスの ONTAP クラスタ"] および local です link:task-scanning-databases.html["データベース"] をスキャンします。
 
-また可能です link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["クラウドデータセンスを使用する BYOL ライセンスをセットアップする"] 現時点では、デジタルウォレットのページから入手できます。30日間の無料トライアルが終了するまで、料金はかかりません。
+また可能です link:task-licensing-datasense.html#use-a-bluexp-classification-byol-license["BlueXP分類用のBYOLライセンスをセットアップ"] （この時点ではBlueXPのデジタルウォレットページから）。30日間の無料トライアルが終了するまで、料金はかかりません。
 
 
 
-== Data Sense ソフトウェアをアップグレードする
+== BlueXP分類ソフトウェアをアップグレードします
 
-データセンスソフトウェアは定期的に新しい機能で更新されるため、定期的に新しいバージョンをチェックして最新のソフトウェアや機能を使用していることを確認する必要があります。自動的にアップグレードを実行するためのインターネット接続がないため、 Data Sense ソフトウェアを手動でアップグレードする必要があります。
+BlueXPの分類ソフトウェアは定期的に新機能で更新されるため、定期的に新しいバージョンをチェックして、最新のソフトウェアや機能を使用しているかどうかを確認する必要があります。自動的にアップグレードを実行するためのインターネット接続がないため、BlueXP分類ソフトウェアは手動でアップグレードする必要があります。
 
 .作業を開始する前に
-* データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.20.xがインストールされている場合は、1.21.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。
+* BlueXP分類ソフトウェアは、一度に1つのメジャーバージョンにアップグレードできます。たとえば、バージョン1.20.xがインストールされている場合は、1.21.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。
 * オンプレミスコネクタソフトウェアが最新バージョンにアップグレードされていることを確認します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-in-a-location-without-internet-access["コネクタのアップグレード手順を参照してください"^]。
 
 
 .手順
-. インターネットに接続されたシステムで、から Cloud Data Sense ソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は * DataSense - offline-bundle-<version>.tar.gz * です。
-. ダークサイトにデータセンスをインストールした Linux ホストにソフトウェアバンドルをコピーします。
+. インターネットが設定されたシステムの場合は、からBlueXP分類ソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は * DataSense - offline-bundle-<version>.tar.gz * です。
+. BlueXP分類がインストールされているダークサイトのLinuxホストにソフトウェアバンドルをコピーします。
 . ホストマシンでソフトウェアバンドルを解凍します。次に例を示します。
 +
 [source, cli]
@@ -411,8 +421,8 @@ start_darksite_upgrade.sh
 
 
 .結果
-データセンスソフトウェアはホスト上でアップグレードされます。更新には 5 ～ 10 分かかる場合があります。
+ホストでBlueXP分類ソフトウェアがアップグレードされます。更新には 5 ～ 10 分かかる場合があります。
 
-非常に大規模な構成のスキャン用に複数のホストシステムに Data Sense を導入している場合は、スキャナノードをアップグレードする必要はありません。
+大規模な構成をスキャンするために複数のホストシステムにBlueXP分類を導入している場合は、スキャナノードでアップグレードする必要はありません。
 
-ソフトウェアが更新されたことを確認するには、 Data Sense UI ページの下部にあるバージョンを確認します。
+BlueXP分類UIページの下部でバージョンを確認すると、ソフトウェアが更新されたことを確認できます。

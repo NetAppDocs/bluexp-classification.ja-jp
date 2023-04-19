@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-file-shares.html 
-keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, Data Sense 
-summary: NetApp 以外の NFS または CIFS ファイル共有を Cloud Data Sense で直接スキャンするには、いくつかの手順を実行します。これらのファイル共有は、オンプレミスでもクラウドでもかまいません。 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, data sense, 7-mode 
+summary: ネットアップ以外のNFSまたはCIFSファイル共有のスキャンをBlueXPで直接開始するには、いくつかの手順を実行します。これらのファイル共有は、オンプレミスでもクラウドでもかまいません。 
 ---
 = ファイル共有をスキャンしています
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp 以外の NFS または CIFS ファイル共有を Cloud Data Se
 
 
 [role="lead"]
-NetApp 以外の NFS または CIFS ファイル共有を Cloud Data Sense で直接スキャンするには、いくつかの手順を実行します。これらのファイル共有は、オンプレミスでもクラウドでもかまいません。
+ネットアップ以外のNFSまたはCIFSファイル共有のスキャンをBlueXPで直接開始するには、いくつかの手順を実行します。これらのファイル共有は、オンプレミスでもクラウドでもかまいません。
 
 
 
@@ -26,9 +26,9 @@ NetApp 以外の NFS または CIFS ファイル共有を Cloud Data Sense で�
 [role="quick-margin-para"]
 CIFS （ SMB ）共有の場合は、共有にアクセスするためのクレデンシャルがあることを確認しておきます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Cloud Data Sense インスタンスを導入する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ファイル共有を保持するグループを作成します
 [role="quick-margin-para"]
@@ -42,37 +42,37 @@ link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"
 
 == ファイル共有の要件の確認
 
-Cloud Data Sense を有効にする前に、次の前提条件を確認し、サポートされている構成であることを確認します。
+BlueXPの分類を有効にする前に、次の前提条件を確認して、サポートされる構成があることを確認してください。
 
 * 共有は、クラウド内やオンプレミスなど、どこでもホストできます。ほとんどの場合、これらはネットアップ以外のストレージシステムに存在するファイル共有です。ただし、古いNetApp 7-ModeストレージシステムのCIFS共有はファイル共有としてスキャンできます。
 +
-Data Senseでは、7-Modeシステムから権限や最終アクセス時間を抽出できません。また、SMBバージョン2へのCIFS共有のマウントがLinuxでサポートされていない既知の問題 もあります。
+BlueXPの分類では、7-Modeシステムから権限や「最終アクセス時間」を抽出することはできません。また、7-Modeシステムの一部のLinuxバージョンとCIFS共有の問題 は既知のものであるため、NTLM認証が有効なSMB v1のみを使用するように共有を設定する必要があります。
 
-* データセンスインスタンスと共有の間にネットワーク接続が必要です。
-* これらのポートが Data Sense インスタンスに対して開いていることを確認します。
+* BlueXP分類インスタンスと共有の間にネットワーク接続が必要です。
+* 次のポートがBlueXP分類インスタンスに対して開いていることを確認します。
 +
 ** NFS –ポート 111 および 2049 。
 ** CIFS の場合 - ポート 139 および 445
 
 
 * 追加する共有のリストは、「 <host_name> ： /<share_path>` 」の形式で指定する必要があります。共有は個別に入力することも、スキャンするファイル共有の行区切りリストを指定することもできます。
-* CIFS （ SMB ）共有の場合は、共有への読み取りアクセスを提供する Active Directory クレデンシャルがあることを確認します。管理者クレデンシャルが推奨されるのは、 Cloud Data Sense で管理者権限が必要なデータをスキャンする必要がある場合です。
+* CIFS （ SMB ）共有の場合は、共有への読み取りアクセスを提供する Active Directory クレデンシャルがあることを確認します。BlueXPの分類で昇格された権限が必要なデータをスキャンする必要がある場合に備えて、管理者クレデンシャルが推奨されます。
 +
-Data Senseの分類スキャンによってファイルの「最終アクセス日時」が変更されていないことを確認するには、CIFSの場合はWrite Attributes権限、NFSの場合はwrite権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。
+BlueXPの分類スキャンでファイルの「最終アクセス日時」が変更されていないことを確認するには、CIFSの場合はWrite Attributes権限、NFSの場合はwrite権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。
 
 
 
 
 
-== Cloud Data Sense インスタンスの導入
+== BlueXP分類インスタンスの導入
 
-導入済みのインスタンスがない場合は Cloud Data Sense を導入
+導入されているインスタンスがない場合は、BlueXP分類を導入します。
 
-インターネット経由でアクセス可能な、ネットアップ以外の NFS または CIFS ファイル共有をスキャンする場合は、を実行します link:task-deploy-cloud-compliance.html["クラウドにクラウドデータセンスを導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセス可能なオンプレミスの場所にデータセンスを導入"^]。
+インターネット経由でアクセス可能な、ネットアップ以外の NFS または CIFS ファイル共有をスキャンする場合は、を実行します link:task-deploy-cloud-compliance.html["BlueXPの分類機能をクラウドに導入します"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所にBlueXPの分類を導入します"^]。
 
-インターネットにアクセスできないダークサイトにインストールされているネットアップ以外の NFS または CIFS ファイル共有をスキャンする場合は、が必要です link:task-deploy-compliance-dark-site.html["クラウドデータセンスは、インターネットにアクセスできないオンプレミス環境に導入できます"^]。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。
+インターネットにアクセスできないダークサイトにインストールされているネットアップ以外の NFS または CIFS ファイル共有をスキャンする場合は、が必要です link:task-deploy-compliance-dark-site.html["インターネットアクセスのないオンプレミスと同じ場所にBlueXPの分類を導入します"^]。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。
 
-Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
+インスタンスがインターネットに接続されていれば、BlueXP分類ソフトウェアへのアップグレードは自動で実行されます。
 
 
 
@@ -96,7 +96,7 @@ image:screenshot_compliance_add_fileshares_button.png["［ スキャン設定 �
 
 == グループへのファイル共有の追加
 
-ファイル共有グループにファイル共有を追加すると、これらの共有内のファイルが Cloud Data Sense によってスキャンされます。共有は、「 <host_name> ： /<share_path>` 」の形式で追加します。
+ファイル共有グループにファイル共有を追加して、それらの共有内のファイルがBlueXPの分類でスキャンされるようにします。共有は、の形式で追加します `<host_name>:/<share_path>`。
 
 個々のファイル共有を追加することも、スキャンするファイル共有を 1 行で区切って指定することもできます。一度に最大 100 個の共有を追加できます。
 
@@ -146,12 +146,12 @@ image:screenshot_compliance_fileshares_add_file_shares.png["［ ファイル共�
 | ファイル共有でのスキャンを無効にします | [ * Off * ] をクリックします 
 |===
 +
-「属性の書き込み」権限がない場合にスキャンする*のページ上部のスイッチは、デフォルトでは無効になっています。つまり、Data SenseにCIFSの書き込み属性権限、NFSの書き込み権限がない場合、Data Senseは「最終アクセス時間」を元のタイムスタンプに戻すことができないため、システムはファイルをスキャンしません。最終アクセス時間がリセットされても構わない場合は、スイッチをオンにすると、権限に関係なくすべてのファイルがスキャンされます。 link:reference-collected-metadata.html#last-access-time-timestamp["詳細はこちら。"^]。
+「属性の書き込み」権限がない場合にスキャンする*のページ上部のスイッチは、デフォルトでは無効になっています。つまり、BlueXPの分類にCIFSの属性への書き込み権限やNFSの書き込み権限がない場合、BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、ファイルはスキャンされません。最終アクセス時間がリセットされても構わない場合は、スイッチをオンにすると、権限に関係なくすべてのファイルがスキャンされます。 link:reference-collected-metadata.html#last-access-time-timestamp["詳細はこちら。"^]。
 
 
 
 .結果
-Cloud Data Sense によって、追加したファイル共有内のファイルのスキャンが開始され、その結果がダッシュボードやその他の場所に表示されます。
+BlueXPの分類により、追加したファイル共有内のファイルのスキャンが開始され、結果がダッシュボードと他の場所に表示されます。
 
 
 

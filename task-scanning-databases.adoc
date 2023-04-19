@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-databases.html 
-keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, Data Sense 
-summary: Cloud Data Sense でデータベーススキーマのスキャンを開始するには、いくつかの手順を実行します。 
+keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, data sense 
+summary: いくつかの手順を実行して、BlueXPの分類を使用したデータベーススキーマのスキャンを開始します。 
 ---
 = データベーススキーマをスキャンしています
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Data Sense でデータベーススキーマのスキャンを開
 
 
 [role="lead"]
-Cloud Data Sense でデータベーススキーマのスキャンを開始するには、いくつかの手順を実行します。
+いくつかの手順を実行して、BlueXPの分類を使用したデータベーススキーマのスキャンを開始します。
 
 
 
@@ -26,9 +26,9 @@ Cloud Data Sense でデータベーススキーマのスキャンを開始する
 [role="quick-margin-para"]
 データベースがサポートされていること、およびデータベースへの接続に必要な情報があることを確認します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Cloud Data Sense インスタンスを導入する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] データベースサーバを追加します
 [role="quick-margin-para"]
@@ -42,13 +42,13 @@ link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"
 
 == 前提条件の確認
 
-Cloud Data Sense を有効にする前に、次の前提条件を確認し、サポートされている構成であることを確認します。
+BlueXPの分類を有効にする前に、次の前提条件を確認して、サポートされる構成があることを確認してください。
 
 
 
 === サポートされるデータベース
 
-Cloud Data Sense では、次のデータベースからスキーマをスキャンできます。
+BlueXPの分類では、次のデータベースからスキーマをスキャンできます。
 
 * Amazon リレーショナルデータベースサービス（ Amazon RDS ）
 * MongoDB
@@ -66,14 +66,14 @@ CAUTION: 統計収集機能 * は、データベースで有効にする必要�
 
 === データベースの要件
 
-Cloud Data Sense インスタンスに接続されているデータベースは、どこでホストしているかに関係なく、すべてスキャンできます。データベースに接続するには、次の情報が必要です。
+BlueXP分類インスタンスに接続されているデータベースは、ホストされている場所に関係なく、すべてスキャンできます。データベースに接続するには、次の情報が必要です。
 
 * IP アドレスまたはホスト名
 * ポート
 * サービス名（ Oracle データベースにアクセスする場合のみ）
 * スキーマへの読み取りアクセスを許可するクレデンシャル
 +
-ユーザ名とパスワードを選択する場合は、スキャンするすべてのスキーマとテーブルに対する完全な読み取り権限を持つユーザを選択することが重要です。必要なすべての権限を持つクラウドデータセンスシステム専用のユーザを作成することを推奨します。
+ユーザ名とパスワードを選択する場合は、スキャンするすべてのスキーマとテーブルに対する完全な読み取り権限を持つユーザを選択することが重要です。BlueXP分類システム専用のユーザを作成し、必要なすべての権限を設定することを推奨します。
 
 
 
@@ -81,15 +81,15 @@ Cloud Data Sense インスタンスに接続されているデータベースは
 
 
 
-== Cloud Data Sense インスタンスの導入
+== BlueXP分類インスタンスの導入
 
-導入済みのインスタンスがない場合は Cloud Data Sense を導入
+導入されているインスタンスがない場合は、BlueXP分類を導入します。
 
-インターネット経由でアクセス可能なデータベーススキーマをスキャンする場合は、を実行します link:task-deploy-cloud-compliance.html["クラウドにクラウドデータセンスを導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセス可能なオンプレミスの場所にデータセンスを導入"^]。
+インターネット経由でアクセス可能なデータベーススキーマをスキャンする場合は、を実行します link:task-deploy-cloud-compliance.html["BlueXPの分類機能をクラウドに導入します"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所にBlueXPの分類を導入します"^]。
 
-インターネットにアクセスできないダークサイトにインストールされているデータベーススキーマをスキャンする場合は、が必要です link:task-deploy-compliance-dark-site.html["クラウドデータセンスは、インターネットにアクセスできないオンプレミス環境に導入できます"^]。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。
+インターネットにアクセスできないダークサイトにインストールされているデータベーススキーマをスキャンする場合は、が必要です link:task-deploy-compliance-dark-site.html["インターネットアクセスのないオンプレミスと同じ場所にBlueXPの分類を導入します"^]。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。
 
-Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
+インスタンスがインターネットに接続されていれば、BlueXP分類ソフトウェアへのアップグレードは自動で実行されます。
 
 
 
@@ -106,7 +106,7 @@ image:screenshot_compliance_add_db_server_button.png["［ Scan Configuration ］
 .. データベースタイプを選択します。
 .. データベースに接続するポートおよびホスト名または IP アドレスを入力します。
 .. Oracle データベースの場合は、サービス名を入力します。
-.. Cloud Data Sense がサーバにアクセスできるように、クレデンシャルを入力します。
+.. クレデンシャルを入力して、BlueXP分類からサーバにアクセスできるようにします。
 .. [Add DB Server* ] をクリックします。
 +
 image:screenshot_compliance_add_db_server_dialog.png["データベースを識別するための [Add DB Server] ページのスクリーンショット。"]
@@ -137,6 +137,6 @@ image:screenshot_compliance_select_schemas.png["スキャンするスキーマ�
 
 
 .結果
-Cloud Data Sense は、有効にしたデータベーススキーマのスキャンを開始します。エラーが発生した場合は、エラーを修正するために必要なアクションとともに、 [ ステータス ] 列に表示されます。
+BlueXPの分類で、有効にしたデータベーススキーマのスキャンが開始されます。エラーが発生した場合は、エラーを修正するために必要なアクションとともに、 [ ステータス ] 列に表示されます。
 
-Data Senseでは、データベースが1日に1回スキャンされます。データベースは、他のデータソースのように継続的にスキャンされるわけではありません。
+BlueXPの分類では、データベースが1日に1回スキャンされます。データベースは、他のデータソースのように継続的にスキャンされるわけではありません。

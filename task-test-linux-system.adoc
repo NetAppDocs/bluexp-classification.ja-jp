@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-test-linux-system.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, cloud compliance access, compliance, on-premises, linux, test linux system 
-summary: LinuxホストにData Senseを手動でインストールする前に、ホストでスクリプトを実行して、Data Senseをインストールするための前提条件がすべて揃っていることを確認できます。このスクリプトは、ネットワーク内のLinuxホストまたはクラウド内のLinuxホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイトに配置することもできます。 
+keywords: cloud compliance, data sense, get started, deploy cloud BlueXP classification, cloud compliance access, compliance, on-premises, linux, test linux system 
+summary: LinuxホストにBlueXPの分類を手動でインストールする前に、ホストでスクリプトを実行して、BlueXPの分類をインストールするための前提条件がすべて揃っていることを確認することができます。このスクリプトは、ネットワーク内のLinuxホストまたはクラウド内のLinuxホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイトに配置することもできます。 
 ---
-= LinuxホストでData Senseをインストールできる状態になっていることを確認します
+= LinuxホストでBlueXP分類をインストールできる状態になっていることを確認します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: LinuxホストにData Senseを手動でインストールする前に�
 
 
 [role="lead"]
-LinuxホストにData Senseを手動でインストールする前に、ホストでスクリプトを実行して、Data Senseをインストールするための前提条件がすべて揃っていることを確認できます。このスクリプトは、ネットワーク内のLinuxホストまたはクラウド内のLinuxホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイト（「ダークサイト」）に配置することもできます。
+LinuxホストにBlueXPの分類を手動でインストールする前に、ホストでスクリプトを実行して、BlueXPの分類をインストールするための前提条件がすべて揃っていることを確認することができます。このスクリプトは、ネットワーク内のLinuxホストまたはクラウド内のLinuxホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイト（「ダークサイト」）に配置することもできます。
 
-Data Senseインストールスクリプトには、前提条件となるテストスクリプトも含まれています。ここで説明するスクリプトは、Data Senseインストールスクリプトとは別にLinuxホストを検証するユーザ向けに設計されています。
+BlueXP分類インストールスクリプトには、前提条件となるテストスクリプトも含まれています。ここで説明するスクリプトは、BlueXP分類のインストールスクリプトとは別にLinuxホストを検証するユーザ向けに設計されています。
 
 
 
@@ -24,9 +24,9 @@ Data Senseインストールスクリプトには、前提条件となるテス�
 
 次のタスクを実行します。
 
-. BlueXPコネクタがまだインストールされていない場合は、必要に応じてインストールします。コネクタをインストールせずにテストスクリプトを実行できますが、コネクタとData Senseホストマシン間の接続がチェックされるため、コネクタを用意することをお勧めします。
+. BlueXPコネクタがまだインストールされていない場合は、必要に応じてインストールします。テストスクリプトはコネクタをインストールせずに実行できますが、コネクタとBlueXP分類ホストマシンの間の接続がチェックされるため、コネクタを用意することを推奨します。
 . ホストマシンを準備し、すべての要件を満たしていることを確認します。
-. Data Senseホストマシンからのアウトバウンドインターネットアクセスを有効にします。
+. BlueXP分類ホストマシンからのアウトバウンドインターネットアクセスを有効にします。
 . すべてのシステムで必要なすべてのポートが有効になっていることを確認します。
 . 前提条件テストスクリプトをダウンロードして実行します。
 
@@ -35,9 +35,9 @@ Data Senseインストールスクリプトには、前提条件となるテス�
 
 == コネクタを作成します
 
-データセンスをインストールして使用するには、BlueXPコネクタが必要です。ただし、コネクタを使用せずに前提条件スクリプトを実行することはできます。
+BlueXPをインストールして使用するには、BlueXPコネクタが必要です。ただし、コネクタを使用せずに前提条件スクリプトを実行することはできます。
 
-可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスにインストールします"^] ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。データセンスをオンプレミスにインストールする予定のユーザによっては、 Connector をオンプレミスにインストールすることもできます。
+可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスにインストールします"^] ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。BlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。
 
 クラウドプロバイダ環境でコネクタを作成するには、を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["AWS でコネクタを作成する"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["GCP でコネクタを作成する"^]。
 
@@ -47,12 +47,12 @@ Data Senseインストールスクリプトには、前提条件となるテス�
 
 == ホストの要件を確認
 
-データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。
+BlueXP分類ソフトウェアは、特定のオペレーティングシステム要件、RAM要件、ソフトウェア要件などを満たすホストで実行する必要があります。
 
-* データセンスは、他のアプリケーションと共有されるホストではサポートされません。ホストは専用のホストである必要があります。
+* BlueXPの分類は、他のアプリケーションと共有するホストではサポートされません。専用のホストである必要があります。
 
 
-* オンプレミスでホストシステムを構築する場合は、Data Senseスキャンを実行するデータセットのサイズに応じて、3つのシステムサイズから選択できます。
+* オンプレミスでホストシステムを構築する場合は、BlueXP分類スキャンを実行するデータセットのサイズに応じて、3つのシステムサイズの中から選択できます。
 +
 [cols="18,18,26,30"]
 |===
@@ -70,28 +70,29 @@ Data Senseインストールスクリプトには、前提条件となるテス�
 +
 これらの小さいシステムを使用する場合は制限があることに注意してください。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
 
-* Data Senseインストール用にクラウドインスタンスを導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。
+* BlueXP分類インストール用にコンピューティングインスタンスをクラウドに導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。
 +
 ** * AWS EC2インスタンスタイプ*：「m6i.4xlarge」を推奨します。 link:reference-instance-types.html#aws-instance-types["その他のAWSインスタンスタイプを参照してください"^]。
 ** * Azure VMのサイズ*：「Standard_D16s_v3」を推奨します。 link:reference-instance-types.html#azure-instance-types["その他のAzureインスタンスタイプを参照してください"^]。
 ** *GCPマシンタイプ*:「n2-standard-16」をお勧めします。 link:reference-instance-types.html#gcp-instance-types["追加のGCPインスタンスタイプを参照してください"^]。
 
 
-* *オペレーティング・システム*：Red Hat Enterprise LinuxまたはCentOSバージョン8.0~8.7
+* *オペレーティングシステム*：このOSはDockerエンジンをインストールできる必要があります。
 +
-** CentOS Stream 8もサポートされています
+** Red Hat Enterprise Linuxバージョン8.0~8.7
+** CentOSバージョン8.0から8.7
+** CentOS Stream 8
 ** バージョン7.8または7.9を使用できますが、Linuxカーネルバージョンは4.0以降である必要があります
-** OSにDockerエンジンがインストールされている必要があります
 
 
-* * Red Hat Subscription Management *：Red Hat Enterprise LinuxシステムをRed Hat Subscription Managementに登録する必要があります。登録されていないと、インストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
-* *追加ソフトウェア*：Data Senseをインストールする前に、次のソフトウェアをホストにインストールする必要があります。
+* * Red Hat Subscription Management *：ホストはRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、システムはインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
+* *その他のソフトウェア*：BlueXP分類をインストールする前に、次のソフトウェアをホストにインストールする必要があります。
 +
 ** Docker Engineバージョン19.3.1以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
 ** Python 3 バージョン 3.6 以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
 
 
-* *ファイアウォールの考慮事項*:使用を計画している場合 `firewalld`では、データセンスをインストールする前に有効にすることをお勧めします。次のコマンドを実行して設定します `firewalld` データセンスとの互換性を確保するために、次のようにします。
+* *ファイアウォールの考慮事項*:使用を計画している場合 `firewalld`は、BlueXP分類をインストールする前に有効にすることを推奨します。次のコマンドを実行して設定します `firewalld` BlueXPと互換性があることを確認します。
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -102,7 +103,7 @@ firewall-cmd --permanent --add-port=443/tcp
 firewall-cmd --reload
 ....
 +
-（分散モデルで）スキャナノードとして追加のData Senseホストを使用する場合は、この時点でプライマリシステムに次のルールを追加します。
+BlueXP分類ホストを（分散モデルで）スキャナノードとして使用する場合は、この時点でプライマリシステムに次のルールを追加します。
 
 +
 ....
@@ -112,15 +113,15 @@ firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 ....
 +
-を有効にした場合 `firewalld` Data Senseをインストールしたら、Dockerを再起動する必要があります。
+を有効にした場合 `firewalld` BlueXPの分類をインストールしたら、Dockerを再起動する必要があります。
 
 
 
 
 
-== Data Senseからのアウトバウンドインターネットアクセスを有効にします
+== BlueXPの分類からアウトバウンドのインターネットアクセスを有効にします
 
-Data Senseにはアウトバウンドのインターネットアクセスが必要です。仮想ネットワークまたは物理ネットワークでインターネットアクセスにプロキシサーバを使用している場合は、 Data sense インスタンスにアウトバウンドのインターネットアクセスがあり、次のエンドポイントに接続できることを確認します。
+BlueXPの分類にはアウトバウンドのインターネットアクセスが必要です。仮想ネットワークまたは物理ネットワークでインターネットアクセスにプロキシサーバを使用している場合は、次のエンドポイントに接続するためのアウトバウンドのインターネットアクセスがBlueXP分類インスタンスにあることを確認してください。
 
 ヒント:: このセクションは、インターネットに接続されていないサイトにインストールされているホストシステムには必要ありません。
 
@@ -148,14 +149,14 @@ Data Senseにはアウトバウンドのインターネットアクセスが必�
 
 == 必要なすべてのポートが有効になっていることを確認します
 
-コネクタ、データセンス、Active Directory、およびデータソース間の通信に必要なすべてのポートが開いていることを確認する必要があります。
+コネクタ、BlueXP分類、Active Directory、データソースの間の通信に必要なすべてのポートが開いていることを確認する必要があります。
 
 [cols="25,25,50"]
 |===
 | 接続タイプ | ポート | 説明 
 
 
-| コネクタ<>データ検出 | 8080（TCP）、443（TCP）、および80 | コネクタのファイアウォールまたはルーティングルールで、ポート443からデータセンスインスタンスへのインバウンドおよびアウトバウンドトラフィックを許可する必要があります。ポート8080が開いていることを確認し、BlueXPでインストールの進行状況を確認します。 
+| コネクタ<> BlueXPの分類 | 8080（TCP）、443（TCP）、および80 | コネクタのファイアウォールルールまたはルーティングルールで、ポート443を介したBlueXP分類インスタンスとの間のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。ポート8080が開いていることを確認し、BlueXPでインストールの進行状況を確認します。 
 
 
 | Connector <> ONTAP cluster（NAS） | 443（TCP）  a| 
@@ -164,9 +165,9 @@ BlueXPはHTTPSを使用してONTAP クラスタを検出しましたカスタム
 |===
 
 
-== Data Sense Prerequisitesスクリプトを実行します
+== BlueXPの分類の前提条件スクリプトを実行します
 
-Data Sense Prerequisitesスクリプトを実行するには、次の手順を実行します。
+BlueXPの分類の前提条件スクリプトを実行するには、次の手順を実行します。
 
 .必要なもの
 * Linux システムがを満たしていることを確認します <<ホストの要件を確認,ホストの要件>>。
@@ -175,7 +176,7 @@ Data Sense Prerequisitesスクリプトを実行するには、次の手順を�
 
 
 .手順
-. からData Sense Prerequisitesスクリプトをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は* standalone-pre-requisite-tester-tester*<version> です。
+. からBlueXPの分類のPrerequisitesスクリプトをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は* standalone-pre-requisite-tester-tester*<version> です。
 . 使用するLinuxホストにファイルをコピーします（を使用） `scp` またはその他の方法を使用してください）。
 . スクリプトを実行する権限を割り当てます。
 +
@@ -192,7 +193,7 @@ chmod +x standalone-pre-requisite-tester-v1.21.0
 +
 インターネットにアクセスできないホストでスクリプトを実行する場合にのみ、「--darksite」オプションを追加します。ホストがインターネットに接続されていない場合、一部の前提条件テストがスキップされます。
 
-. Data SenseホストマシンのIPアドレスの入力を求めるプロンプトが表示されます。
+. BlueXP分類ホストマシンのIPアドレスの入力を求められます。
 +
 ** IPアドレスまたはホスト名を入力します。
 
@@ -207,8 +208,8 @@ chmod +x standalone-pre-requisite-tester-v1.21.0
 
 
 .結果
-すべての前提条件テストが正常に実行された場合は、準備ができたらData Senseをホストにインストールできます。
+すべての前提条件テストが正常に実行されたら、準備ができたらBlueXP分類をホストにインストールできます。
 
-問題が検出された場合は、「推奨」または「必須」に分類され、修正が必要です。推奨される問題は、通常、Data Senseのスキャンおよび分類タスクの実行速度が遅くなる項目です。これらの項目は修正する必要はありませんが、対処する必要があります。
+問題が検出された場合は、「推奨」または「必須」に分類され、修正が必要です。通常、推奨される問題は、BlueXPの分類のスキャンとカテゴリ化のタスクの実行に時間がかかる原因となる項目です。これらの項目は修正する必要はありませんが、対処する必要があります。
 
 「必須」の問題がある場合は、問題を修正してから、前提条件テストスクリプトを再度実行する必要があります。
