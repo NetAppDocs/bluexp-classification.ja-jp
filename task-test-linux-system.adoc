@@ -96,21 +96,21 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 
 
 * *オペレーティングシステム*：このOSはDockerエンジンをインストールできる必要があります。
+
+
+* Red Hat Enterprise Linuxバージョン8.0~8.7
+* CentOSバージョン8.0から8.7
+* CentOS Stream 8
+* RHELまたはCentOSバージョン7.8または7.9を使用できますが、Linuxカーネルのバージョンは4.0以降である必要があります
 +
-** Red Hat Enterprise Linuxバージョン8.0~8.7
-** CentOSバージョン8.0から8.7
-** CentOS Stream 8
-** RHELまたはCentOSバージョン7.8または7.9を使用できますが、Linuxカーネルのバージョンは4.0以降である必要があります
+** * Red Hat Subscription Management *：ホストはRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、システムはインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
+** *その他のソフトウェア*：BlueXP分類をインストールする前に、次のソフトウェアをホストにインストールする必要があります。
 
 
-* * Red Hat Subscription Management *：ホストはRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、システムはインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
-* *その他のソフトウェア*：BlueXP分類をインストールする前に、次のソフトウェアをホストにインストールする必要があります。
+* Docker Engineバージョン19.3.1以降。 https://["インストール手順を確認します"^]。
+* Python 3 バージョン 3.6 以降。 https://["インストール手順を確認します"^]。
 +
-** Docker Engineバージョン19.3.1以降。 https://["インストール手順を確認します"^]。
-** Python 3 バージョン 3.6 以降。 https://["インストール手順を確認します"^]。
-
-
-* *ファイアウォールの考慮事項*:使用を計画している場合 `firewalld`は、BlueXP分類をインストールする前に有効にすることを推奨します。次のコマンドを実行して設定します `firewalld` BlueXPと互換性があることを確認します。
+** *ファイアウォールの考慮事項*:使用を計画している場合 `firewalld`は、BlueXP分類をインストールする前に有効にすることを推奨します。次のコマンドを実行して設定します `firewalld` BlueXPと互換性があることを確認します。
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -132,6 +132,8 @@ firewall-cmd --permanent --add-port=4789/udp
 ....
 +
 を有効または更新するたびに、Dockerを再起動する必要があります `firewalld` 設定：
+
+
 
 
 
