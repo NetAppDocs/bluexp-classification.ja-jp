@@ -37,9 +37,9 @@ BlueXP分類インストールスクリプトには、前提条件となるテ�
 
 BlueXPをインストールして使用するには、BlueXPコネクタが必要です。ただし、コネクタを使用せずに前提条件スクリプトを実行することはできます。
 
-可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスにインストールします"^] ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。BlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。
+可能です https://["コネクタをオンプレミスにインストールします"^] ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。BlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。
 
-クラウドプロバイダ環境でコネクタを作成するには、を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["AWS でコネクタを作成する"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["GCP でコネクタを作成する"^]。
+クラウドプロバイダ環境でコネクタを作成するには、を参照してください https://["AWS でコネクタを作成する"^]、 https://["Azure でコネクタを作成する"^]または https://["GCP でコネクタを作成する"^]。
 
 前提条件スクリプトを実行するときに、コネクタシステムのIPアドレスまたはホスト名が必要になります。この情報は、コネクタをオンプレミスにインストールした場合に表示されます。コネクタがクラウドに導入されている場合は、BlueXPコンソールで[ヘルプ]アイコンをクリックし、[*サポート]を選択して、[* BlueXPコネクタ*]をクリックします。
 
@@ -70,6 +70,24 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 +
 これらの小さいシステムを使用する場合は制限があることに注意してください。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
 
+* * UNIXフォルダ権限*：次の最小UNIX権限が必要です。
++
+[cols="25,25"]
+|===
+| フォルダ | 最小権限 
+
+
+| /tmp | `rwxrwxrwt` 
+
+
+| /opt | `rwxr-xr-x` 
+
+
+| /var/lib/dockerを使用します | `rwx------` 
+
+
+| /user/lib/systemd/system | `rwxr-xr-x` 
+|===
 * BlueXP分類インストール用にコンピューティングインスタンスをクラウドに導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。
 +
 ** * AWS EC2インスタンスタイプ*：「m6i.4xlarge」を推奨します。 link:reference-instance-types.html#aws-instance-types["その他のAWSインスタンスタイプを参照してください"^]。
@@ -82,14 +100,14 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 ** Red Hat Enterprise Linuxバージョン8.0~8.7
 ** CentOSバージョン8.0から8.7
 ** CentOS Stream 8
-** バージョン7.8または7.9を使用できますが、Linuxカーネルバージョンは4.0以降である必要があります
+** RHELまたはCentOSバージョン7.8または7.9を使用できますが、Linuxカーネルのバージョンは4.0以降である必要があります
 
 
 * * Red Hat Subscription Management *：ホストはRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、システムはインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
 * *その他のソフトウェア*：BlueXP分類をインストールする前に、次のソフトウェアをホストにインストールする必要があります。
 +
-** Docker Engineバージョン19.3.1以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
-** Python 3 バージョン 3.6 以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
+** Docker Engineバージョン19.3.1以降。 https://["インストール手順を確認します"^]。
+** Python 3 バージョン 3.6 以降。 https://["インストール手順を確認します"^]。
 
 
 * *ファイアウォールの考慮事項*:使用を計画している場合 `firewalld`は、BlueXP分類をインストールする前に有効にすることを推奨します。次のコマンドを実行して設定します `firewalld` BlueXPと互換性があることを確認します。
@@ -113,7 +131,7 @@ firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 ....
 +
-を有効にした場合 `firewalld` BlueXPの分類をインストールしたら、Dockerを再起動する必要があります。
+を有効または更新するたびに、Dockerを再起動する必要があります `firewalld` 設定：
 
 
 
@@ -123,8 +141,8 @@ firewall-cmd --permanent --add-port=4789/udp
 
 BlueXPの分類にはアウトバウンドのインターネットアクセスが必要です。仮想ネットワークまたは物理ネットワークでインターネットアクセスにプロキシサーバを使用している場合は、次のエンドポイントに接続するためのアウトバウンドのインターネットアクセスがBlueXP分類インスタンスにあることを確認してください。
 
-ヒント:: このセクションは、インターネットに接続されていないサイトにインストールされているホストシステムには必要ありません。
 
+TIP: このセクションは、インターネットに接続されていないサイトにインストールされているホストシステムには必要ありません。
 
 [cols="43,57"]
 |===
@@ -143,7 +161,10 @@ BlueXPの分類にはアウトバウンドのインターネットアクセス�
 | \ https://support.compliance.api.bluexp.netapp.com/ | ネットアップが監査レコードからデータをストリーミングできるようにします。 
 
 
-| ¥ https://github.com/docker ¥ https://download.docker.com ¥ http://mirror.centos.org ¥ http://mirrorlist.centos.org ¥ http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | インストールの前提条件パッケージを提供します。 
+| https://github.com/docker https://download.docker.com | Dockerのインストールに必要なパッケージを提供します。 
+
+
+| http://mirror.centos.org http://mirrorlist.centos.org http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | CentOSのインストールに必要なパッケージを提供します。 
 |===
 
 
@@ -176,7 +197,7 @@ BlueXPの分類の前提条件スクリプトを実行するには、次の手�
 
 
 .手順
-. からBlueXPの分類のPrerequisitesスクリプトをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は* standalone-pre-requisite-tester-tester*<version> です。
+. からBlueXPの分類のPrerequisitesスクリプトをダウンロードします https://["ネットアップサポートサイト"^]。選択するファイルの名前は* standalone-pre-requisite-tester-tester*<version> です。
 . 使用するLinuxホストにファイルをコピーします（を使用） `scp` またはその他の方法を使用してください）。
 . スクリプトを実行する権限を割り当てます。
 +

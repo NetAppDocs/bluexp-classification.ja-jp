@@ -179,6 +179,8 @@ homepage:
       url: task-managing-highlights.html#deleting-source-files
     - title: 準拠していないデータが見つかった場合にアラートを E メールで送信
       url: task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found
+    - title: ファイルアクセスイベントを監視および管理します
+      url: task-manage-file-access-events.html
     - title: データサブジェクトのアクセス要求に応答します
       url: task-generating-compliance-reports.html#searching-for-data-subjects-and-downloading-reports
   - title: ブログコミュニティ
@@ -189,7 +191,7 @@ homepage:
       url: https://bluexp.netapp.com/netapp-cloud-data-sense
     - title: BlueXPブログ
       url: https://bluexp.netapp.com/blog
-    - title: クラウドに関する Web セミナー
+    - title: BlueXP Webセミナー
       url: https://bluexp.netapp.com/events
 product-family:
   name: BlueXP

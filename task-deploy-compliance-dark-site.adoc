@@ -48,7 +48,7 @@ BlueXPのほとんどの分類機能は、インターネットアクセスの�
 * ユーザからのフィードバックを受け取る
 * BlueXPからの自動ソフトウェアアップグレード
 +
-BlueXP ConnectorとBlueXPのどちらも、新機能を有効にするために定期的な手動アップグレードが必要になります。BlueXP分類バージョンは、BlueXP分類UIページの下部で確認できます。を確認します link:whats-new.html["BlueXPの分類に関するリリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["BlueXP Connectorをアップグレードします"^] および <<BlueXP分類ソフトウェアをアップグレードします,BlueXP分類ソフトウェアをアップグレードします>>。
+BlueXP ConnectorとBlueXPのどちらも、新機能を有効にするために定期的な手動アップグレードが必要になります。BlueXP分類バージョンは、BlueXP分類UIページの下部で確認できます。を確認します link:whats-new.html["BlueXPの分類に関するリリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します https://["BlueXP Connectorをアップグレードします"^] および <<BlueXP分類ソフトウェアをアップグレードします,BlueXP分類ソフトウェアをアップグレードします>>。
 
 
 
@@ -60,7 +60,7 @@ BlueXP ConnectorとBlueXPのどちらも、新機能を有効にするために�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] BlueXPコネクタを取り付けます
 [role="quick-margin-para"]
-オフラインのオンプレミスサイトにコネクタがまだインストールされていない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["コネクタを配置します"^] Linux ホストの場合は、
+オフラインのオンプレミスサイトにコネクタがまだインストールされていない場合は、 https://["コネクタを配置します"^] Linux ホストの場合は、
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXPの分類の前提条件を確認します
 [role="quick-margin-para"]
@@ -78,7 +78,7 @@ BlueXPで分類されてスキャンされる最初の1TBのデータは、30日
 
 == BlueXPコネクタを取り付けます
 
-オフラインのオンプレミスサイトにBlueXPコネクタがインストールされていない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["コネクタを配置します"^] オフラインサイトの Linux ホスト
+オフラインのオンプレミスサイトにBlueXPコネクタがインストールされていない場合は、 https://["コネクタを配置します"^] オフラインサイトの Linux ホスト
 
 
 
@@ -107,6 +107,24 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 +
 これらの小さいシステムを使用する場合は制限があることに注意してください。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
 
+* * UNIXフォルダ権限*：次の最小UNIX権限が必要です。
++
+[cols="25,25"]
+|===
+| フォルダ | 最小権限 
+
+
+| /tmp | `rwxrwxrwt` 
+
+
+| /opt | `rwxr-xr-x` 
+
+
+| /var/lib/dockerを使用します | `rwx------` 
+
+
+| /user/lib/systemd/system | `rwxr-xr-x` 
+|===
 * BlueXP分類インストール用にコンピューティングインスタンスをクラウドに導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。
 +
 ** * AWS EC2インスタンスタイプ*：「m6i.4xlarge」を推奨します。 link:reference-instance-types.html#aws-instance-types["その他のAWSインスタンスタイプを参照してください"^]。
@@ -119,14 +137,14 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 ** Red Hat Enterprise Linuxバージョン8.0~8.7
 ** CentOSバージョン8.0から8.7
 ** CentOS Stream 8
-** バージョン7.8または7.9を使用できますが、Linuxカーネルバージョンは4.0以降である必要があります
+** RHELまたはCentOSバージョン7.8または7.9を使用できますが、Linuxカーネルのバージョンは4.0以降である必要があります
 
 
 * * Red Hat Subscription Management *：ホストはRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、システムはインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
 * *その他のソフトウェア*：BlueXP分類をインストールする前に、次のソフトウェアをホストにインストールする必要があります。
 +
-** Docker Engineバージョン19.3.1以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
-** Python 3 バージョン 3.6 以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
+** Docker Engineバージョン19.3.1以降。 https://["インストール手順を確認します"^]。
+** Python 3 バージョン 3.6 以降。 https://["インストール手順を確認します"^]。
 
 
 * *ファイアウォールの考慮事項*:使用を計画している場合 `firewalld`は、BlueXP分類をインストールする前に有効にすることを推奨します。次のコマンドを実行して設定します `firewalld` BlueXPと互換性があることを確認します。
@@ -140,12 +158,12 @@ firewall-cmd --permanent --add-port=443/tcp
 firewall-cmd --reload
 ....
 +
-を有効にした場合 `firewalld` BlueXPの分類をインストールしたら、Dockerを再起動する必要があります。
+を有効または更新するたびに、Dockerを再起動する必要があります `firewalld` 設定：
 
 
 
 
-NOTE: BlueXP分類ホストシステムのIPアドレスは、インストール後に変更することはできません。
+TIP: BlueXP分類ホストシステムのIPアドレスは、インストール後に変更することはできません。
 
 
 
@@ -153,7 +171,7 @@ NOTE: BlueXP分類ホストシステムのIPアドレスは、インストール
 
 BlueXPに分類を導入する前に、次の前提条件を確認して、サポートされる構成があることを確認してください。
 
-* BlueXP分類インスタンスのリソースを導入し、セキュリティグループを作成するための権限がコネクタに割り当てられていることを確認します。BlueXPの最新の権限は、で確認できます https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["ネットアップが提供するポリシー"^]。
+* BlueXP分類インスタンスのリソースを導入し、セキュリティグループを作成するための権限がコネクタに割り当てられていることを確認します。BlueXPの最新の権限は、で確認できます https://["ネットアップが提供するポリシー"^]。
 * BlueXPの分類を継続して実行できることを確認します。データを継続的にスキャンするには、BlueXP分類インスタンスを引き続き使用する必要があります。
 * WebブラウザからBlueXPに接続できることを確認します。BlueXPの分類を有効にしたら、ユーザがBlueXPの分類インスタンスに接続されているホストからBlueXPインターフェイスにアクセスできるようにします。
 +
@@ -242,7 +260,7 @@ image:diagram_deploy_onprem_multi_host_no_internet.png["オンプレミスにイ
 
 
 .手順
-. インターネットが設定されたシステムの場合は、からBlueXP分類ソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は * DataSense - offline-bundle-<version>.tar.gz * です。
+. インターネットが設定されたシステムの場合は、からBlueXP分類ソフトウェアをダウンロードします https://["ネットアップサポートサイト"^]。選択するファイルの名前は * DataSense - offline-bundle-<version>.tar.gz * です。
 . ダークサイトで使用する Linux ホストにインストーラバンドルをコピーします。
 . ホストマシンでインストーラバンドルを解凍します。次に例を示します。
 +
@@ -281,20 +299,21 @@ image:screenshot_cloud_compliance_deploy_darksite.png["BlueXP分類をオンプ�
 
  a| 
 .. 手順8でコピーした情報を貼り付けます。
-`sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --darksite`
-.. コネクタインスタンスからアクセスできるように、BlueXP分類ホストマシンのIPアドレスまたはホスト名を入力します。
-.. BlueXPコネクタホストマシンのIPアドレスまたはホスト名を入力して、BlueXP分類インスタンスからアクセスできるようにします。
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --darksite`
+.. コネクタシステムからアクセスできるように、BlueXP分類ホストマシンのIPアドレスまたはホスト名を入力します。
+.. BlueXPコネクタホストマシンのIPアドレスまたはホスト名を入力して、BlueXP分類システムからアクセスできるようにします。
 
-| また、必要なホストパラメータとして、「 sudo ./install.sh -a <account_id > -c <agent_id > -t <token> --host <DS_host> --manager-host <cm_host> --no-proxy --darksite 」を事前に指定して、コマンド全体を作成することもできます 
+| または、必要なホストパラメータを指定して、コマンド全体を事前に作成することもできます。
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> --no-proxy --darksite` 
 |===
 +
 変数値：
 
 +
 ** _account_id _ = ネットアップアカウント ID
-** _agent_id _ = コネクタ ID
-** _ctoken _ = JWT ユーザートークン
-** _DS_HOST_= BlueXP分類LinuxシステムのIPアドレスまたはホスト名。
+** _client_id_=コネクタクライアントID（クライアントIDがない場合は、接尾辞「clients」を追加）
+** _user_token_= JWTユーザーアクセストークン
+** _DS_HOST_= BlueXP分類システムのIPアドレスまたはホスト名。
 ** _cm_host_= BlueXPコネクタシステムのIPアドレスまたはホスト名。
 
 
@@ -357,7 +376,8 @@ BlueXP分類インストーラは、パッケージをインストールして�
 シングルホストのインストールで使用できる変数に加えて、新しいオプション * -n <Node_IP> * を使用してスキャナノードの IP アドレスを指定します。複数のノードの IP をカンマで区切って指定します。
 
 +
-たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'sudo ./install.sh -a <account_id > -c <agent_id> -t <token> --host <DS_host> --manager-host <cm_host> * -n <node-ip1> 、 <node-ip2> 、 <node-dark3>*-no-proxy-site
+たとえば、次のコマンドは3つのスキャナノードを追加します。
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> *-n <node_ip1>,<node_ip2>,<node_ip3>* --no-proxy --darksite`
 
 . マネージャノードのインストールが完了する前に、スキャナノードに必要なインストールコマンドがダイアログに表示されます。コマンドをコピーします（例： `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`）を入力し、テキストファイルに保存します。
 . 各 * スキャナノードホストで：
@@ -388,11 +408,11 @@ BlueXPの分類ソフトウェアは定期的に新機能で更新されるた�
 
 .作業を開始する前に
 * BlueXP分類ソフトウェアは、一度に1つのメジャーバージョンにアップグレードできます。たとえば、バージョン1.20.xがインストールされている場合は、1.21.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。
-* オンプレミスコネクタソフトウェアが最新バージョンにアップグレードされていることを確認します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-in-a-location-without-internet-access["コネクタのアップグレード手順を参照してください"^]。
+* BlueXP Connectorソフトウェアが最新バージョンにアップグレードされていることを確認します。 https://["コネクタのアップグレード手順を参照してください"^]。
 
 
 .手順
-. インターネットが設定されたシステムの場合は、からBlueXP分類ソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は * DataSense - offline-bundle-<version>.tar.gz * です。
+. インターネットが設定されたシステムの場合は、からBlueXP分類ソフトウェアをダウンロードします https://["ネットアップサポートサイト"^]。選択するファイルの名前は * DataSense - offline-bundle-<version>.tar.gz * です。
 . BlueXP分類がインストールされているダークサイトのLinuxホストにソフトウェアバンドルをコピーします。
 . ホストマシンでソフトウェアバンドルを解凍します。次に例を示します。
 +

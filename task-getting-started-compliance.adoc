@@ -28,7 +28,7 @@ summary: いくつかの手順を実行して、BlueXPの分類を使用してCl
 
 [role="quick-margin-list"]
 * Cloud Volumes ONTAP システムでは、これらの作業環境はBlueXPですでに使用可能になっています
-* オンプレミスの ONTAP システムでは、 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["BlueXPはONTAP クラスタを検出する必要があります"^]
+* オンプレミスの ONTAP システムでは、 https://["BlueXPはONTAP クラスタを検出する必要があります"^]
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
@@ -69,7 +69,7 @@ BlueXPの分類が有効になったので、すべてのボリュームにア�
 
 スキャンするデータソースがまだBlueXP環境にない場合は、この時点でキャンバスに追加できます。
 
-お使いのCloud Volumes ONTAP システムは、BlueXPのキャンバスですでに使用できるはずです。オンプレミスの ONTAP システムには、が必要です https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["これらのクラスタはBlueXPで検出されます"^]。
+お使いのCloud Volumes ONTAP システムは、BlueXPのキャンバスですでに使用できるはずです。オンプレミスの ONTAP システムには、が必要です https://["これらのクラスタはBlueXPで検出されます"^]。
 
 
 
@@ -142,7 +142,7 @@ image:screenshot_cifs_credentials_cvo.png["コンテンツペインの右上に�
 クレデンシャルは読み取り専用ですが、adminクレデンシャルを指定すると、昇格された権限が必要なデータをBlueXP分類で確実に読み取ることができます。クレデンシャルはBlueXP分類インスタンスに格納されます。
 
 +
-BlueXPの分類スキャンでファイルの「最終アクセス日時」が変更されていないことを確認するには、CIFSの場合はWrite Attributes権限、NFSの場合はwrite権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。
+BlueXPの分類スキャンでファイルの「最終アクセス日時」が変更されないようにするには、CIFSではWrite Attributes権限、NFSではwrite権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。
 
 +
 クレデンシャルを入力すると、すべての CIFS ボリュームが認証されたことを示すメッセージが表示されます。

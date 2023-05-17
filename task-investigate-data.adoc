@@ -60,7 +60,7 @@ image:screenshot_compliance_investigation_filtered.png["調査ページで結果
 | 機密性の高い個人データ | を選択します link:reference-private-data-categories.html#types-of-sensitive-personal-data["機密性の高い個人データのタイプ"^]。 
 
 
-| データの件名 | データ主体のフルネームまたは既知の識別子を入力します 
+| データの件名 | データ主体のフルネームまたは既知の識別子を入力します link:task-generating-compliance-reports.html#searching-for-data-subjects-and-downloading-reports["データ主体の詳細については、こちらをご覧ください"^]。 
 |===
 
 
@@ -104,7 +104,11 @@ image:screenshot_compliance_investigation_filtered.png["調査ページで結果
 | 最終更新日 | ファイルが最後に変更された時間範囲を選択します。カスタムの期間を指定して、検索結果をさらに絞り込むこともできます。 
 
 
-| 最後にアクセスした | ファイルまたはディレクトリ（CIFSまたはNFSのみ）が最後にアクセスされた時間範囲を選択します。カスタムの期間を指定して、検索結果をさらに絞り込むこともできます。BlueXP分類でスキャンされるファイルの種類については、BlueXP分類でファイルがスキャンされるのはこれが最後です。 
+| 最後にアクセスした  a| 
+ファイルまたはディレクトリ（CIFSまたはNFSのみ）が最後にアクセスされた時間範囲を選択します。カスタムの期間を指定して、検索結果をさらに絞り込むこともできます。BlueXP分類でスキャンされるファイルの種類については、BlueXP分類でファイルがスキャンされるのはこれが最後です。
+
+BlueXPの分類では、SharePoint Online、SharePointオンプレミス（SharePoint Server）、OneDrive、Google Drive、Amazon S3の各データソースから「最終アクセス時刻」は抽出されません。
+
 |===
 
 
@@ -192,7 +196,7 @@ link:reference-collected-metadata.html#last-access-time-timestamp["「最終ア�
 
 
 
-=== データを重複でフィルタリングします
+=== 重複でデータをフィルタリングします
 
 ストレージ内で複製されているファイルを表示するには、次のフィルタを使用します。
 

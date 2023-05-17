@@ -35,6 +35,8 @@ BlueXPの分類では、データソースや作業環境からのデータに�
 
 | *ユーザー/グループアクセス* | ユーザおよびグループの情報はLDAPから取得されます | 使用不可（NFSユーザは通常、サーバ上でローカルに管理されるため、各サーバで同じユーザのUIDを別 々 に設定できます） 
 |===
+BlueXPの分類では、SharePoint Online、SharePointオンプレミス（SharePoint Server）、OneDrive、Google Drive、Amazon S3の各データソースから「最終アクセス時刻」は抽出されません。
+
 
 
 == 最終アクセス時間のタイムスタンプ
@@ -57,4 +59,4 @@ image:screenshot_scan_analysis_event_filter.png["書き込み権限があるか�
 * 「Classified and updated last access time」-分類されたファイルと、BlueXPの分類で最終アクセス時刻を元の日付にリセットできなかったファイルが表示されます。このフィルタは、*「属性の書き込み」権限がない場合にスキャン*をオンにした環境にのみ適用されます。
 
 
-必要に応じて、これらの結果をレポートにエクスポートして、権限が原因でスキャンされているファイル、またはスキャンされていないファイルを確認できます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html#data-investigation-report["詳細については、データ調査レポートを参照してください"^]。
+必要に応じて、これらの結果をレポートにエクスポートして、権限が原因でスキャンされているファイル、またはスキャンされていないファイルを確認できます。 https://["詳細については、データ調査レポートを参照してください"^]。

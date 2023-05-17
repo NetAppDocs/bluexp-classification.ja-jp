@@ -52,7 +52,7 @@ link:concept-cloud-compliance.html["BlueXPの分類の仕組みについて詳�
 * データ保持ポリシーに準拠
 
 
-https://bluexp.netapp.com/netapp-cloud-data-sense["BlueXP分類のユースケースの詳細については、こちらをご覧ください"^]。
+https://["BlueXP分類のユースケースの詳細については、こちらをご覧ください"^]。
 
 
 
@@ -210,7 +210,7 @@ BlueXPの分類では、コールドデータがオブジェクトストレー�
 
 === BlueXPの分類は、ファイルに埋め込まれたAIPラベルでも機能しますか？
 
-はい。サブスクライブ済みの場合は、BlueXP分類でスキャンするファイルでAIPラベルを管理できます https://azure.microsoft.com/en-us/services/information-protection/["Azure 情報保護（ AIP ）"^]。既にファイルに割り当てられているラベルを表示したり、ファイルにラベルを追加したり、既存のラベルを変更したりできます。
+はい。サブスクライブ済みの場合は、BlueXP分類でスキャンするファイルでAIPラベルを管理できます https://["Azure 情報保護（ AIP ）"^]。既にファイルに割り当てられているラベルを表示したり、ファイルにラベルを追加したり、既存のラベルを変更したりできます。
 
 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["詳細はこちら。"^]。
 
@@ -318,7 +318,7 @@ BlueXPの分類を使用するコストは、スキャンするデータの量�
 * ネットアップが提供するお客様所有のライセンス（BYOL）
 
 
-を参照してください https://bluexp.netapp.com/pricing["価格設定"^] を参照してください。
+を参照してください https://["価格設定"^] を参照してください。
 
 
 
@@ -348,19 +348,19 @@ Connectorは、クラウドアカウントまたはオンプレミスのいず�
 * オンプレミスのONTAP システム、ネットアップ以外のファイル共有、汎用のS3オブジェクトストレージ、データベース、OneDriveフォルダ、SharePointアカウント、Google Driveアカウント内のデータをスキャンする場合、これらのクラウド環境ではコネクタを使用できます。
 
 
-そのため、これらの場所の多くにデータがある場合は、を使用する必要があります https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["複数のコネクタ"^]。
+そのため、これらの場所の多くにデータがある場合は、を使用する必要があります https://["複数のコネクタ"^]。
 
 
 
 === コネクタを自分のホストに導入できますか。
 
-はい。可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["コネクタをオンプレミスに導入"^] ネットワーク内のLinuxホストまたはクラウド内のホスト。BlueXP分類をオンプレミスに導入する予定の場合は、コネクタもオンプレミスにインストールすることを推奨しますが、必須ではありません。
+はい。可能です https://["コネクタをオンプレミスに導入"^] ネットワーク内のLinuxホストまたはクラウド内のホスト。BlueXP分類をオンプレミスに導入する予定の場合は、コネクタもオンプレミスにインストールすることを推奨しますが、必須ではありません。
 
 
 
 === インターネットにアクセスできないセキュアなサイトはどうでしょうか。
 
-はい、サポートされています。可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["インターネットにアクセスできないオンプレミスのLinuxホストにコネクタを導入します"^]。その後、オンプレミスのONTAP クラスタとその他のローカルデータソースを検出し、BlueXPの分類を使用してデータをスキャンできます。
+はい、サポートされています。可能です https://["インターネットにアクセスできないオンプレミスのLinuxホストにコネクタを導入します"^]。その後、オンプレミスのONTAP クラスタとその他のローカルデータソースを検出し、BlueXPの分類を使用してデータをスキャンできます。
 
 
 

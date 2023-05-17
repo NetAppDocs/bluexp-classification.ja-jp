@@ -23,13 +23,13 @@ summary: いくつかの手順を実行して、BlueXPに分類されたAmazon F
 * BlueXP分類を導入して管理するには、AWSにアクティブコネクタが必要です。
 * 作業環境の作成時に選択したセキュリティグループで、BlueXP分類インスタンスからのトラフィックを許可する必要があります。関連付けられたセキュリティグループは、 FSX for ONTAP ファイルシステムに接続されている ENI を使用して検索し、 AWS 管理コンソールを使用して編集できます。
 +
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["Linux インスタンス用の AWS セキュリティグループ"^]
+https://["Linux インスタンス用の AWS セキュリティグループ"^]
 
 +
-https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/security-group-rules.html["Windows インスタンス用の AWS セキュリティグループ"^]
+https://["Windows インスタンス用の AWS セキュリティグループ"^]
 
 +
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS Elastic Network Interface （ ENI ）"^]
+https://["AWS Elastic Network Interface （ ENI ）"^]
 
 
 
@@ -41,7 +41,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS Elastic 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] スキャンするONTAP ファイルシステムのFSXを検出します
 [role="quick-margin-para"]
-FSX で ONTAP ボリュームをスキャンする前に、 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["ボリュームが設定された FSX 作業環境が必要です"^]。
+FSX で ONTAP ボリュームをスキャンする前に、 https://["ボリュームが設定された FSX 作業環境が必要です"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
 [role="quick-margin-para"]
@@ -77,7 +77,7 @@ BlueXPの分類が有効になったので、すべてのボリュームにア�
 
 スキャンするFSX for ONTAP ファイルシステムが作業環境としてまだBlueXPにない場合は、この時点でキャンバスに追加できます。
 
-https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["BlueXPでONTAP ファイルシステムのFSXを検出または作成する方法を参照してください"^]。
+https://["BlueXPでONTAP ファイルシステムのFSXを検出または作成する方法を参照してください"^]。
 
 
 
@@ -156,7 +156,7 @@ NOTE: FSx for ONTAP では、BlueXPの分類でスキャンできるのはBlueXP
 クレデンシャルは読み取り専用ですが、adminクレデンシャルを指定すると、昇格された権限が必要なデータをBlueXP分類で確実に読み取ることができます。クレデンシャルはBlueXP分類インスタンスに格納されます。
 
 +
-BlueXPの分類スキャンでファイルの「最終アクセス日時」が変更されていないことを確認するには、CIFSの場合はWrite Attributes権限、NFSの場合はwrite権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。
+BlueXPの分類スキャンでファイルの「最終アクセス日時」が変更されないようにするには、CIFSではWrite Attributes権限、NFSではwrite権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。
 
 +
 クレデンシャルを入力すると、すべての CIFS ボリュームが認証されたことを示すメッセージが表示されます。

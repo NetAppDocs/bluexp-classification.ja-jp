@@ -24,7 +24,7 @@ summary: いくつかの手順を実行して、Azure NetApp Files 向けBlueXP�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] スキャンするAzure NetApp Files システムを検出します
 [role="quick-margin-para"]
-Azure NetApp Files ボリュームをスキャンする前に、 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["構成を検出するには、BlueXPを設定する必要があります"^]。
+Azure NetApp Files ボリュームをスキャンする前に、 https://["構成を検出するには、BlueXPを設定する必要があります"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
 [role="quick-margin-para"]
@@ -63,7 +63,7 @@ BlueXPの分類が有効になったので、すべてのボリュームにア�
 
 スキャンするAzure NetApp Files システムが作業環境としてまだBlueXPにない場合は、この時点でキャンバスに追加できます。
 
-https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["BlueXPでAzure NetApp Files システムを検出する方法を参照してください"^]。
+https://["BlueXPでAzure NetApp Files システムを検出する方法を参照してください"^]。
 
 
 
@@ -136,7 +136,7 @@ image:screenshot_cifs_credentials.gif["コンテンツペインの右上にあ�
 クレデンシャルは読み取り専用ですが、adminクレデンシャルを指定すると、昇格された権限が必要なデータをBlueXP分類で確実に読み取ることができます。クレデンシャルはBlueXP分類インスタンスに格納されます。
 
 +
-BlueXPの分類スキャンでファイルの「最終アクセス日時」が変更されていないことを確認するには、CIFSの場合はWrite Attributes権限、NFSの場合はwrite権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。
+BlueXPの分類スキャンでファイルの「最終アクセス日時」が変更されないようにするには、CIFSではWrite Attributes権限、NFSではwrite権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。
 
 +
 クレデンシャルを入力すると、すべての CIFS ボリュームが認証されたことを示すメッセージが表示されます。

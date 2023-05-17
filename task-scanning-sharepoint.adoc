@@ -36,7 +36,7 @@ link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] イン
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] スキャンするSharePointサイトのURLを追加します
 [role="quick-margin-para"]
-SharePoint アカウントでスキャンする SharePoint サイト URL のリストを追加し、スキャンの種類を選択します。一度に最大 100 個の URL を追加できます。
+SharePoint アカウントでスキャンする SharePoint サイト URL のリストを追加し、スキャンの種類を選択します。一度に最大100個のURLを追加でき、アカウントごとに合計1,000個のサイトを追加できます。
 
 
 
@@ -63,7 +63,7 @@ SharePointアカウントでBlueXP分類をアクティブ化する準備がで�
 * オンプレミスのSharePointの場合は、BlueXPの分類をインストールできます link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^] または link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスの場所"^]。
 
 
-インターネットにアクセスできないサイトにBlueXP分類がインストールされている場合は、インターネットにアクセスできない同じサイトにもBlueXP Connectorをインストールする必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["詳細はこちら。"^]。
+インターネットにアクセスできないサイトにBlueXP分類がインストールされている場合は、インターネットにアクセスできない同じサイトにもBlueXP Connectorをインストールする必要があります。 https://["詳細はこちら。"^]。
 
 インスタンスがインターネットに接続されていれば、BlueXP分類ソフトウェアへのアップグレードは自動で実行されます。
 
@@ -113,7 +113,7 @@ SharePointのオンプレミスアカウントが作業環境のリストに追�
 
 == SharePoint サイトをコンプライアンススキャンに追加する
 
-個 々 のSharePointサイトまたはアカウント内のすべてのSharePointサイトを追加して、関連するファイルがBlueXPの分類によってスキャンされるようにすることができます。手順は、SharePoint OnlineまたはSharePointのオンプレミスサイトを追加する場合と同じです。
+個 々 のSharePointサイトを追加することも、アカウントに最大1、000のSharePointサイトを追加して、関連するファイルがBlueXPの分類によってスキャンされるようにすることもできます。SharePoint OnlineサイトとSharePointオンプレミスサイトのどちらを追加する場合でも、手順は同じです。
 
 .手順
 . [_Configuration_] ページで、 SharePoint アカウントの [*Configuration*] ボタンをクリックします。
@@ -140,6 +140,7 @@ image:screenshot_compliance_sharepoint_add_site.png["スキャン対象のサイ
 +
 ダイアログに追加できなかったサイトが表示された場合は、問題 を解決できるようにこの情報を記録します。場合によっては、 URL を修正してサイトを再追加することができます。
 
+. このアカウントに100を超えるサイトを追加する必要がある場合は、[SharePointサイトの追加]*をもう一度クリックして、このアカウントのすべてのサイトを追加します(アカウントごとに合計1,000サイトまで)。
 . SharePoint サイト内のファイルに対して、マッピングのみのスキャン、またはマッピングと分類スキャンを有効にします。
 +
 [cols="45,45"]

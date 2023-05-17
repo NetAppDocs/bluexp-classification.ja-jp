@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-scanning-object-storage.html 
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
-summary: いくつかの手順を実行して、BlueXPの分類を使用してオブジェクトストレージ内のデータの直接スキャンを開始します。BlueXPの分類では、Simple Storage Service（S3）プロトコルを使用する任意のオブジェクトストレージサービスのデータをスキャンできます。具体的には、 NetApp StorageGRID 、 IBM Cloud Object Store 、 Azure Blob （ MinIO を使用）、 Linode 、 B2 Cloud Storage 、 Amazon S3 などです。 
+summary: いくつかの手順を実行して、BlueXPの分類を使用してオブジェクトストレージ内のデータの直接スキャンを開始します。BlueXPの分類では、Simple Storage Service（S3）プロトコルを使用する任意のオブジェクトストレージサービスのデータをスキャンできます。これには、NetApp StorageGRID 、IBM Cloud Object Store、Linode、B2クラウドストレージ、Amazon S3などが含まれます。 
 ---
 = S3 プロトコルを使用するオブジェクトストレージをスキャンしています
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: いくつかの手順を実行して、BlueXPの分類を使用して�
 
 
 [role="lead"]
-いくつかの手順を実行して、BlueXPの分類を使用してオブジェクトストレージ内のデータの直接スキャンを開始します。BlueXPの分類では、Simple Storage Service（S3）プロトコルを使用する任意のオブジェクトストレージサービスのデータをスキャンできます。具体的には、 NetApp StorageGRID 、 IBM Cloud Object Store 、 Azure Blob （ MinIO を使用）、 Linode 、 B2 Cloud Storage 、 Amazon S3 などです。
+いくつかの手順を実行して、BlueXPの分類を使用してオブジェクトストレージ内のデータの直接スキャンを開始します。BlueXPの分類では、Simple Storage Service（S3）プロトコルを使用する任意のオブジェクトストレージサービスのデータをスキャンできます。これには、NetApp StorageGRID 、IBM Cloud Object Store、Linode、B2クラウドストレージ、Amazon S3などが含まれます。
 
 
 
@@ -49,7 +49,6 @@ BlueXPの分類を有効にする前に、次の前提条件を確認して、�
 
 * オブジェクトストレージサービスに接続するには、エンドポイント URL が必要です。
 * BlueXP分類でバケットにアクセスできるように、オブジェクトストレージプロバイダのアクセスキーとシークレットキーが必要です。
-* Azure Blob のサポートにはを使用する必要があります link:https://min.io/["MinIO サービス"^]。
 
 
 
