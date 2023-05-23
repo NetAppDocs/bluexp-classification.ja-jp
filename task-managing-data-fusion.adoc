@@ -138,7 +138,7 @@ image:screenshot_add_keywords_result.png["[調査結果]ペインにカスタム
 
 正規表現を追加すると、BlueXPの分類によってすべてのデータソースのスキャンが再開されます。スキャンが完了すると、BlueXP分類コンプライアンスダッシュボードの[Personal Results]セクションと[Investigation]ページの[Personal Data]フィルタに新しい結果が表示されます。
 
-を参照してください https://[] 正規表現の作成にサポートが必要な場合は、
+を参照してください https://regex101.com/[] 正規表現の作成にサポートが必要な場合は、
 
 .手順
 . [_Classification settings]タブで*[Add New Classifier]*をクリックし、_Add Custom Classifier_wizardを起動します。

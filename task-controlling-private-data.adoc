@@ -63,7 +63,7 @@ image:screenshot_compliance_investigation_page_directory.png["[調査結果]を�
 
 == 機密性の高い個人データを含むファイルを表示する
 
-BlueXPは、などのプライバシー規制で定義されている特別な種類の機密個人情報を自動的に識別します https://["GDPR の第 9 、 10 記事"^]。たとえば、人の健康、民族の起源、性的指向に関する情報などです。 link:reference-private-data-categories.html#types-of-sensitive-personal-data["すべてのリストを参照してください"^]。BlueXPの分類では、個 々 のファイル、ディレクトリ（共有とフォルダ）内のファイル、およびデータベーステーブルでこのような情報が識別されます。
+BlueXPは、などのプライバシー規制で定義されている特別な種類の機密個人情報を自動的に識別します https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["GDPR の第 9 、 10 記事"^]。たとえば、人の健康、民族の起源、性的指向に関する情報などです。 link:reference-private-data-categories.html#types-of-sensitive-personal-data["すべてのリストを参照してください"^]。BlueXPの分類では、個 々 のファイル、ディレクトリ（共有とフォルダ）内のファイル、およびデータベーステーブルでこのような情報が識別されます。
 
 BlueXPは、人工知能（AI）、自然言語処理（NLP）、機械学習（ML）、コグニティブコンピューティング（CC）を使用してスキャンするコンテンツの意味を理解し、エンティティを抽出して適切に分類します。
 

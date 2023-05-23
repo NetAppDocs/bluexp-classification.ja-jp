@@ -29,13 +29,13 @@ CPUとRAMの数が少ないシステムにBlueXPの分類を導入すること�
 | システムサイズ | 仕様 | インスタンスタイプ 
 
 
-| 大規模 | CPU×16、64GB RAM、500GiB SSD | https://["m6i.4xlarge"^] （デフォルト）M6A.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
+| 大規模 | CPU×16、64GB RAM、500GiB SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlarge"^] （デフォルト）M6A.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
 
 
-| 中 | CPU×8、32GB RAM、200GiB SSD | https://["m6i.2xlarge"^] （デフォルト）M6A.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge 
+| 中 | CPU×8、32GB RAM、200GiB SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.2xlarge"^] （デフォルト）M6A.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge 
 
 
-| 小規模 | CPU×8、16GB RAM、100GiB SSD | https://["c6a.2xlarge"^] （デフォルト）C5a.2xlarge c5.2xlarge c4.2xlarge 
+| 小規模 | CPU×8、16GB RAM、100GiB SSD | https://aws.amazon.com/ec2/instance-types/c6a/["c6a.2xlarge"^] （デフォルト）C5a.2xlarge c5.2xlarge c4.2xlarge 
 |===
 
 
@@ -46,7 +46,7 @@ CPUとRAMの数が少ないシステムにBlueXPの分類を導入すること�
 | システムサイズ | 仕様 | インスタンスタイプ 
 
 
-| 大規模 | CPU×16、64GB RAM、500GiB SSD | https://["Standard_D16s_v3"^] （デフォルト） 
+| 大規模 | CPU×16、64GB RAM、500GiB SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^] （デフォルト） 
 |===
 
 
@@ -57,5 +57,5 @@ CPUとRAMの数が少ないシステムにBlueXPの分類を導入すること�
 | システムサイズ | 仕様 | インスタンスタイプ 
 
 
-| 大規模 | CPU×16、64GB RAM、500GiB SSD | https://["N2-standard-16"^] （デフォルト）n2d-standard-16 n1-standard-16 
+| 大規模 | CPU×16、64GB RAM、500GiB SSD | https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["N2-standard-16"^] （デフォルト）n2d-standard-16 n1-standard-16 
 |===

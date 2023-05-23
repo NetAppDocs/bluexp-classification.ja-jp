@@ -57,17 +57,17 @@ image:screenshot_add_subscription.gif["資格情報ページのメニューの�
 
 . 既存のサブスクリプションを選択し、 [* アソシエイト * ] をクリックするか、 [ * サブスクリプションの追加 * ] をクリックして、手順を実行します。
 +
-次のビデオでは、を関連付ける方法を示します https://["AWS Marketplace"^] AWS サブスクリプションへのサブスクリプション：
+次のビデオでは、を関連付ける方法を示します https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^] AWS サブスクリプションへのサブスクリプション：
 
 +
 video::video_subscribing_aws.mp4[width=848,height=480]
 +
-次のビデオでは、を関連付ける方法を示します https://["Azure Marketplace で入手できます"^] Azure サブスクリプションへのサブスクリプション：
+次のビデオでは、を関連付ける方法を示します https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace で入手できます"^] Azure サブスクリプションへのサブスクリプション：
 
 +
 video::video_subscribing_azure.mp4[width=848,height=480]
 +
-次のビデオでは、を関連付ける方法を示します https://["GCP Marketplace"^] GCP サブスクリプションへのサブスクリプション：
+次のビデオでは、を関連付ける方法を示します https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP Marketplace"^] GCP サブスクリプションへのサブスクリプション：
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
@@ -85,7 +85,7 @@ BlueXP分類ライセンスをお持ちでない場合は、弊社までお問�
 * ライセンスをリクエストするには、BlueXPの右下にあるチャットアイコンをクリックします。
 
 
-必要に応じて、使用しないCloud Volumes ONTAP の未割り当てのノードベースライセンスがある場合は、同じ金額、同じ有効期限のBlueXP分類ライセンスに変換できます。 https://["詳細については、こちらをご覧ください"^]。
+必要に応じて、使用しないCloud Volumes ONTAP の未割り当てのノードベースライセンスがある場合は、同じ金額、同じ有効期限のBlueXP分類ライセンスに変換できます。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["詳細については、こちらをご覧ください"^]。
 
 BlueXPのBlueXPデジタルウォレットページを使用して、BlueXP分類のBYOLライセンスを管理します。新しいライセンスを追加したり、既存のライセンスを更新したりできます。
 
@@ -98,7 +98,7 @@ BlueXP分類（Data Sense）ライセンスを購入したら、BlueXP分類の�
 インターネットにアクセスできないオンプレミスサイトのホストにBlueXP分類を導入している場合は、インターネットに接続されたシステムからライセンスファイルを取得する必要があります。シリアル番号と NSS アカウントを使用してライセンスをアクティブ化することは、ダークサイトへのインストールには使用できません。
 
 .手順
-. にサインインします https://["ネットアップサポートサイト"^] [ システム ] 、 [ ソフトウェアライセンス ] の順にクリックします。
+. にサインインします https://mysupport.netapp.com["ネットアップサポートサイト"^] [ システム ] 、 [ ソフトウェアライセンス ] の順にクリックします。
 . BlueXP分類ライセンスのシリアル番号を入力します。
 +
 image:screenshot_cloud_tiering_license_step1.gif["シリアル番号で検索したあとのライセンスの一覧を示すスクリーンショット。"]
@@ -126,7 +126,7 @@ BlueXPアカウント用のBlueXP分類（Data Sense）ライセンスを購入�
 +
 ** BlueXP分類ライセンスのシリアル番号があり、NSSアカウントがわかっている場合は、*[シリアル番号の入力]*オプションを選択してその情報を入力します。
 +
-お使いのNetApp Support Siteのアカウントがドロップダウンリストにない場合は、 https://["NSSアカウントをBlueXPに追加します"^]。
+お使いのNetApp Support Siteのアカウントがドロップダウンリストにない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NSSアカウントをBlueXPに追加します"^]。
 
 ** BlueXP分類ライセンスファイル（ダークサイトにインストールされている場合に必要）がある場合は、*[Upload License File]*オプションを選択し、プロンプトに従ってファイルを添付します。
 +

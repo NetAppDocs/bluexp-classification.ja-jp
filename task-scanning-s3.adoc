@@ -78,12 +78,12 @@ BlueXP分類インスタンス用のIAMロールを設定します:: BlueXPの�
 }
 ----
 --
-BlueXP分類からAmazon S3への接続を提供します:: BlueXPの分類にはAmazon S3への接続が必要です。この接続を確立する最善の方法は、 VPC エンドポイントを介して S3 サービスに接続することです。手順については、を参照してください https://["AWS のドキュメント：「 Creating a Gateway Endpoint"^]。
+BlueXP分類からAmazon S3への接続を提供します:: BlueXPの分類にはAmazon S3への接続が必要です。この接続を確立する最善の方法は、 VPC エンドポイントを介して S3 サービスに接続することです。手順については、を参照してください https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS のドキュメント：「 Creating a Gateway Endpoint"^]。
 +
 --
 VPCエンドポイントを作成するときは、BlueXP分類インスタンスに対応するリージョン、VPC、およびルーティングテーブルを選択してください。S3 エンドポイントへのトラフィックを有効にする発信 HTTPS ルールを追加するには、セキュリティグループも変更する必要があります。そうしないと、BlueXPの分類からS3サービスに接続できません。
 
-問題が発生した場合は、を参照してください https://["AWSのサポートナレッジセンター：ゲートウェイVPCエンドポイントを使用してS3バケットに接続できないのはなぜですか。"^]
+問題が発生した場合は、を参照してください https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWSのサポートナレッジセンター：ゲートウェイVPCエンドポイントを使用してS3バケットに接続できないのはなぜですか。"^]
 
 別の方法として、 NAT ゲートウェイを使用して接続を提供する方法があります。
 

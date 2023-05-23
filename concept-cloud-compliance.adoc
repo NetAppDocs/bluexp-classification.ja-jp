@@ -16,7 +16,7 @@ summary: BlueXPの分類は、BlueXP向けのデータガバナンスサービ�
 [role="lead"]
 BlueXPの分類は、BlueXP向けのデータガバナンスサービスです。オンプレミスとクラウドの社内データソースをスキャンしてデータのマッピングと分類を行い、個人情報を特定します。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減し、データ移行プロジェクトを支援できます。
 
-https://["BlueXPの分類のユースケースをご紹介します"^]。
+https://bluexp.netapp.com/netapp-cloud-data-sense["BlueXPの分類のユースケースをご紹介します"^]。
 
 
 
@@ -48,7 +48,7 @@ BlueXPでは、犯罪目的でアクセスされるリスクのあるデータ�
 * データ保持ポリシーに準拠
 * 新しいセキュリティ問題をセキュリティスタッフに自動的に通知して、ただちに対処できるようにするには、_Policies_を使用します。
 * カスタムタグをファイルに追加し（「移動が必要」など）、BlueXPユーザーを割り当てて、ユーザーがファイルの更新を所有できるようにします。
-* 表示と変更 https://["Azure Information Protection （ AIP ）ラベル"^] ファイルに保存できます。
+* 表示と変更 https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection （ AIP ）ラベル"^] ファイルに保存できます。
 
 
 
@@ -59,7 +59,7 @@ BlueXPは、ストレージの総所有コスト（TCO）に役立つツール�
 
 * 重複データやビジネス以外のデータを特定することで、ストレージ効率を向上させます。この情報を使用して、特定のファイルを移動するか削除するかを決定できます。
 * 安全でないようであるか、ストレージシステムに残すのにリスクが高すぎるファイル、または重複として識別されたファイルを削除してください。_Policies_を使用すると'特定の条件に一致するファイルを自動的に削除できます
-* アクセス頻度の低いデータを低コストのオブジェクトストレージに階層化できるため、ストレージコストを削減できます。 https://["Cloud Volumes ONTAP システムからの階層化の詳細については、こちらをご覧ください"^]。 https://["オンプレミスのONTAP システムからの階層化の詳細については、こちらをご覧ください"^]。
+* アクセス頻度の低いデータを低コストのオブジェクトストレージに階層化できるため、ストレージコストを削減できます。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["Cloud Volumes ONTAP システムからの階層化の詳細については、こちらをご覧ください"^]。 https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html["オンプレミスのONTAP システムからの階層化の詳細については、こちらをご覧ください"^]。
 
 
 
@@ -124,12 +124,12 @@ BlueXPの分類では、NFSバージョン3.x、4.0、4.1、CIFSバージョン1
 
 == コスト
 
-* BlueXPの分類を使用するコストは、スキャンするデータの量によって異なります。BlueXPワークスペースでBlueXPの分類によってスキャンされる最初の1TBのデータは30日間無料です。これには、すべての作業環境とデータソースのすべてのデータが含まれます。この時点以降もデータのスキャンを続行するには、 AWS 、 Azure 、 GCP Marketplace 、またはネットアップの BYOL ライセンスのサブスクリプションが必要です。を参照してください https://["価格設定"^] を参照してください。
+* BlueXPの分類を使用するコストは、スキャンするデータの量によって異なります。BlueXPワークスペースでBlueXPの分類によってスキャンされる最初の1TBのデータは30日間無料です。これには、すべての作業環境とデータソースのすべてのデータが含まれます。この時点以降もデータのスキャンを続行するには、 AWS 、 Azure 、 GCP Marketplace 、またはネットアップの BYOL ライセンスのサブスクリプションが必要です。を参照してください https://bluexp.netapp.com/netapp-cloud-data-sense["価格設定"^] を参照してください。
 +
 link:task-licensing-datasense.html["BlueXPのライセンスを取得する方法について説明します"^]。
 
 * BlueXPをクラウドにインストールするにはクラウドインスタンスを導入する必要があるため、導入先のクラウドプロバイダから料金が請求されます。を参照してください <<BlueXP分類インスタンス,各クラウドに導入されるインスタンスのタイプ プロバイダ>>。BlueXP分類をオンプレミスシステムにインストールすればコストはかかりません。
-* BlueXPに分類されるためには、BlueXPコネクタが導入されている必要があります。多くの場合、BlueXPで使用している他のストレージとサービスのためにコネクタが既に存在します。Connector インスタンスを使用すると、導入先のクラウドプロバイダから料金が発生します。を参照してください https://["クラウドプロバイダごとに導入されるインスタンスのタイプ"^]。コネクタをオンプレミスシステムにインストールしても、コストはかかりません。
+* BlueXPに分類されるためには、BlueXPコネクタが導入されている必要があります。多くの場合、BlueXPで使用している他のストレージとサービスのためにコネクタが既に存在します。Connector インスタンスを使用すると、導入先のクラウドプロバイダから料金が発生します。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["クラウドプロバイダごとに導入されるインスタンスのタイプ"^]。コネクタをオンプレミスシステムにインストールしても、コストはかかりません。
 
 
 
@@ -138,22 +138,22 @@ link:task-licensing-datasense.html["BlueXPのライセンスを取得する方�
 
 データ転送のコストは設定によって異なります。BlueXP分類インスタンスとデータソースが同じアベイラビリティゾーンとリージョンにある場合、データ転送コストは発生しません。ただし、 Cloud Volumes ONTAP システムや S3 バケットなどのデータソースが _different _Availability Zone またはリージョンにある場合は、クラウドプロバイダにデータ転送コストが請求されます。詳細については、次のリンクを参照してください。
 
-* https://["AWS ： Amazon EC2 価格設定"^]
-* https://["Microsoft Azure ： Bandwidth Pricing Details 』"^]
-* https://["Google Cloud ：ストレージ転送サービスの価格"^]
+* https://aws.amazon.com/ec2/pricing/on-demand/["AWS ： Amazon EC2 価格設定"^]
+* https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure ： Bandwidth Pricing Details 』"^]
+* https://cloud.google.com/storage-transfer/pricing["Google Cloud ：ストレージ転送サービスの価格"^]
 
 
 
 
 == BlueXP分類インスタンス
 
-BlueXP分類をクラウドに導入すると、BlueXPはコネクタと同じサブネットにインスタンスを導入します。 https://["コネクタの詳細については、こちらをご覧ください。"^]
+BlueXP分類をクラウドに導入すると、BlueXPはコネクタと同じサブネットにインスタンスを導入します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタの詳細については、こちらをご覧ください。"^]
 
 image:diagram_cloud_compliance_instance.png["クラウドプロバイダで実行されているBlueXPインスタンスとBlueXP分類インスタンスを示す図。"]
 
 デフォルトのインスタンスについては、次の点に注意してください。
 
-* AWSでは、BlueXPの分類はで実行されます https://["m6i.4xlargeインスタンス"^] 500GiBのgp2ディスクを使用した場合。オペレーティングシステムイメージは Amazon Linux 2 です。AWSに導入した場合、少量のデータをスキャンする場合は、インスタンスサイズを小さくすることができます。
+* AWSでは、BlueXPの分類はで実行されます https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlargeインスタンス"^] 500GiBのgp2ディスクを使用した場合。オペレーティングシステムイメージは Amazon Linux 2 です。AWSに導入した場合、少量のデータをスキャンする場合は、インスタンスサイズを小さくすることができます。
 * Azureでは、BlueXPの分類はで実行されます link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] 500GiBのディスクオペレーティングシステムイメージは CentOS 7.9 です。
 * GCPでは、BlueXPの分類はで実行されます link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["N2-standard-16 VM"^] 500GiB Standard永続ディスクを使用した場合。オペレーティングシステムイメージは CentOS 7.9 です。
 * デフォルトのインスタンスを使用できない地域では、BlueXPの分類は別のインスタンスで実行されます。 link:reference-instance-types.html["別のインスタンスタイプを参照してください"]。
@@ -311,4 +311,4 @@ SaaSモードでBlueXPを使用している場合、BlueXPへの接続はHTTPS�
 * コンプライアンスビューア * の役割を持つユーザーは、アクセス権を持つシステムのコンプライアンス情報を表示し、レポートを生成することのみができます。これらのユーザは、ボリューム、バケット、またはデータベーススキーマのスキャンを有効または無効にすることはできません。これらのユーザーは、ファイルのコピー、移動、または削除もできません。
 
 
-https://["BlueXPの役割の詳細をご覧ください"^] そして方法 https://["特定のロールのユーザを追加します"^]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["BlueXPの役割の詳細をご覧ください"^] そして方法 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-netapp-accounts.html#adding-users["特定のロールのユーザを追加します"^]。

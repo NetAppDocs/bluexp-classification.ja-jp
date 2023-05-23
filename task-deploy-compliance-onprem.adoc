@@ -40,10 +40,10 @@ image:diagram_deploy_onprem_cloud_instance.png["必要なBlueXPとネットワ�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] コネクタを作成します
 [role="quick-margin-para"]
-コネクタがない場合は、 https://["コネクタをオンプレミスに導入"^] ネットワーク内のLinuxホスト、またはクラウド内のLinuxホスト。
+コネクタがない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスに導入"^] ネットワーク内のLinuxホスト、またはクラウド内のLinuxホスト。
 
 [role="quick-margin-para"]
-クラウドプロバイダを使用してコネクタを作成することもできます。を参照してください https://["AWS でコネクタを作成する"^]、 https://["Azure でコネクタを作成する"^]または https://["GCP でコネクタを作成する"^]。
+クラウドプロバイダを使用してコネクタを作成することもできます。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["AWS でコネクタを作成する"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["GCP でコネクタを作成する"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] 前提条件を確認する
 [role="quick-margin-para"]
@@ -64,9 +64,9 @@ BlueXPで分類されてスキャンされる最初の1TBのデータは、30日
 
 == コネクタを作成します
 
-BlueXPをインストールして使用するには、BlueXPコネクタが必要です。ほとんどの場合、BlueXPの分類をアクティブ化する前にコネクタがセットアップされていることがほとんどです https://["BlueXPの機能にはコネクタが必要です"]ただし、ここで設定する必要がある場合もあります。
+BlueXPをインストールして使用するには、BlueXPコネクタが必要です。ほとんどの場合、BlueXPの分類をアクティブ化する前にコネクタがセットアップされていることがほとんどです https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["BlueXPの機能にはコネクタが必要です"]ただし、ここで設定する必要がある場合もあります。
 
-クラウドプロバイダ環境で作成する場合は、を参照してください https://["AWS でコネクタを作成する"^]、 https://["Azure でコネクタを作成する"^]または https://["GCP でコネクタを作成する"^]。
+クラウドプロバイダ環境で作成する場合は、を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["AWS でコネクタを作成する"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["GCP でコネクタを作成する"^]。
 
 特定のクラウドプロバイダに導入されているコネクタを使用する必要がある場合は、次のような状況があります。
 
@@ -80,9 +80,9 @@ Azure NetApp Files の場合は、スキャンするボリュームと同じ領�
 
 オンプレミスのONTAP システムでは、ネットアップ以外のファイル共有、汎用のS3オブジェクトストレージ、データベース、OneDriveフォルダ、SharePointアカウント、Googleドライブアカウントを、これらのクラウドコネクタのいずれかを使用してスキャンできます。
 
-また、次のことも可能です https://["コネクタをオンプレミスに導入"^] ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。BlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。
+また、次のことも可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスに導入"^] ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。BlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。
 
-ご覧のように、を使用する必要がある状況もあります https://["複数のコネクタ"]。
+ご覧のように、を使用する必要がある状況もあります https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["複数のコネクタ"]。
 
 BlueXP分類をインストールするときは、コネクタシステムのIPアドレスまたはホスト名が必要です。この情報は、コネクタをオンプレミスにインストールした場合に表示されます。コネクタがクラウドに導入されている場合は、BlueXPコンソールで[ヘルプ]アイコンをクリックし、[*サポート]を選択して、[* BlueXPコネクタ*]をクリックします。
 
@@ -141,21 +141,21 @@ BlueXPの分類を継続して実行できることを確認します。BlueXP�
 
 
 * *オペレーティングシステム*：このOSはDockerエンジンをインストールできる必要があります。
-
-
-* Red Hat Enterprise Linuxバージョン8.0~8.7
-* CentOSバージョン8.0から8.7
-* CentOS Stream 8
-* RHELまたはCentOSバージョン7.8または7.9を使用できますが、Linuxカーネルのバージョンは4.0以降である必要があります
 +
-** * Red Hat Subscription Management *：ホストはRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、システムはインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
-** *その他のソフトウェア*：BlueXP分類をインストールする前に、次のソフトウェアをホストにインストールする必要があります。
+** Red Hat Enterprise Linuxバージョン8.0~8.7
+** CentOSバージョン8.0から8.7
+** CentOS Stream 8
+** RHELまたはCentOSバージョン7.8または7.9を使用できますが、Linuxカーネルのバージョンは4.0以降である必要があります
 
 
-* Docker Engineバージョン19.3.1以降。 https://["インストール手順を確認します"^]。
-* Python 3 バージョン 3.6 以降。 https://["インストール手順を確認します"^]。
+* * Red Hat Subscription Management *：ホストはRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、システムはインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
+* *その他のソフトウェア*：BlueXP分類をインストールする前に、次のソフトウェアをホストにインストールする必要があります。
 +
-** *ファイアウォールの考慮事項*:使用を計画している場合 `firewalld`は、BlueXP分類をインストールする前に有効にすることを推奨します。次のコマンドを実行して設定します `firewalld` BlueXPと互換性があることを確認します。
+** Docker Engineバージョン19.3.1以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
+** Python 3 バージョン 3.6 以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
+
+
+* *ファイアウォールの考慮事項*:使用を計画している場合 `firewalld`は、BlueXP分類をインストールする前に有効にすることを推奨します。次のコマンドを実行して設定します `firewalld` BlueXPと互換性があることを確認します。
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -177,8 +177,6 @@ firewall-cmd --permanent --add-port=4789/udp
 ....
 +
 を有効または更新するたびに、Dockerを再起動する必要があります `firewalld` 設定：
-
-
 
 
 
@@ -285,7 +283,7 @@ image:diagram_deploy_onprem_multi_host_internet.png["オンプレミスに導入
 インスタンスがインターネットに接続されていれば、BlueXP分類ソフトウェアへのアップグレードは自動で実行されます。
 
 
-NOTE: 現在、BlueXPの分類では、S3バケット、Azure NetApp Files 、FSx for ONTAP がオンプレミスにインストールされている場合はスキャンできません。このような場合は、BlueXP分類のコネクタとインスタンスを別 々 にクラウドとに導入する必要があります https://["コネクタを切り替えます"^] データソースごとに異なる。
+NOTE: 現在、BlueXPの分類では、S3バケット、Azure NetApp Files 、FSx for ONTAP がオンプレミスにインストールされている場合はスキャンできません。このような場合は、BlueXP分類のコネクタとインスタンスを別 々 にクラウドとに導入する必要があります https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["コネクタを切り替えます"^] データソースごとに異なる。
 
 
 
@@ -307,7 +305,7 @@ BlueXP分類ソフトウェアをオンプレミスの単一のホストにイ�
 
 
 .手順
-. からBlueXP分類ソフトウェアをダウンロードします https://["ネットアップサポートサイト"^]。選択するファイルの名前は* DATASENSE-installer -<version> .tar.gz *です。
+. からBlueXP分類ソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は* DATASENSE-installer -<version> .tar.gz *です。
 . 使用する Linux ホストにインストーラファイルをコピーします (`cp またはその他の方法を使用 ) 。
 . ホストマシンでインストーラファイルを解凍します。次に例を示します。
 +
@@ -489,7 +487,7 @@ image:screenshot_connector_client_id.png["BlueXP Connectorの構成設定のス�
 +
 image:screenshot_work_env_id.png["BlueXPの分類の[Configuration]ページに表示されるWorking Environment IDのスクリーンショット。"]
 
-. にアクセスします https://["APIドキュメント開発者ハブ"^] [*Learn how to authenticate*(認証方法を確認する)]をクリック
+. にアクセスします https://services.cloud.netapp.com/developer-hub["APIドキュメント開発者ハブ"^] [*Learn how to authenticate*(認証方法を確認する)]をクリック
 +
 image:screenshot_client_access_token.png["APIドキュメントページのスクリーンショット。認証手順へのリンクが表示されています。"]
 
