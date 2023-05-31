@@ -59,4 +59,4 @@ image:screenshot_scan_analysis_event_filter.png["書き込み権限があるか�
 * 「Classified and updated last access time」-分類されたファイルと、BlueXPの分類で最終アクセス時刻を元の日付にリセットできなかったファイルが表示されます。このフィルタは、*「属性の書き込み」権限がない場合にスキャン*をオンにした環境にのみ適用されます。
 
 
-必要に応じて、これらの結果をレポートにエクスポートして、権限が原因でスキャンされているファイル、またはスキャンされていないファイルを確認できます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html#data-investigation-report["詳細については、データ調査レポートを参照してください"^]。
+必要に応じて、これらの結果をレポートにエクスポートして、権限が原因でスキャンされているファイル、またはスキャンされていないファイルを確認できます。 https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#data-investigation-report["詳細については、データ調査レポートを参照してください"^]。

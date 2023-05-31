@@ -48,7 +48,7 @@ BlueXPのほとんどの分類機能は、インターネットアクセスの�
 * ユーザからのフィードバックを受け取る
 * BlueXPからの自動ソフトウェアアップグレード
 +
-BlueXP ConnectorとBlueXPのどちらも、新機能を有効にするために定期的な手動アップグレードが必要になります。BlueXP分類バージョンは、BlueXP分類UIページの下部で確認できます。を確認します link:whats-new.html["BlueXPの分類に関するリリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["BlueXP Connectorをアップグレードします"^] および <<BlueXP分類ソフトウェアをアップグレードします,BlueXP分類ソフトウェアをアップグレードします>>。
+BlueXP ConnectorとBlueXPのどちらも、新機能を有効にするために定期的な手動アップグレードが必要になります。BlueXP分類バージョンは、BlueXP分類UIページの下部で確認できます。を確認します link:whats-new.html["BlueXPの分類に関するリリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["BlueXP Connectorをアップグレードします"^] および <<BlueXP分類ソフトウェアをアップグレードします,BlueXP分類ソフトウェアをアップグレードします>>。
 
 
 
@@ -60,7 +60,7 @@ BlueXP ConnectorとBlueXPのどちらも、新機能を有効にするために�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] BlueXPコネクタを取り付けます
 [role="quick-margin-para"]
-オフラインのオンプレミスサイトにコネクタがまだインストールされていない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["コネクタを配置します"^] Linux ホストの場合は、
+オフラインのオンプレミスサイトにコネクタがまだインストールされていない場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["コネクタを配置します"^] Linux ホストの場合は、
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXPの分類の前提条件を確認します
 [role="quick-margin-para"]
@@ -78,7 +78,7 @@ BlueXPで分類されてスキャンされる最初の1TBのデータは、30日
 
 == BlueXPコネクタを取り付けます
 
-オフラインのオンプレミスサイトにBlueXPコネクタがインストールされていない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["コネクタを配置します"^] オフラインサイトの Linux ホスト
+オフラインのオンプレミスサイトにBlueXPコネクタがインストールされていない場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["コネクタを配置します"^] オフラインサイトの Linux ホスト
 
 
 
@@ -171,7 +171,7 @@ TIP: BlueXP分類ホストシステムのIPアドレスは、インストール�
 
 BlueXPに分類を導入する前に、次の前提条件を確認して、サポートされる構成があることを確認してください。
 
-* BlueXP分類インスタンスのリソースを導入し、セキュリティグループを作成するための権限がコネクタに割り当てられていることを確認します。BlueXPの最新の権限は、で確認できます https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["ネットアップが提供するポリシー"^]。
+* BlueXP分類インスタンスのリソースを導入し、セキュリティグループを作成するための権限がコネクタに割り当てられていることを確認します。BlueXPの最新の権限は、で確認できます https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["ネットアップが提供するポリシー"^]。
 * BlueXPの分類を継続して実行できることを確認します。データを継続的にスキャンするには、BlueXP分類インスタンスを引き続き使用する必要があります。
 * WebブラウザからBlueXPに接続できることを確認します。BlueXPの分類を有効にしたら、ユーザがBlueXPの分類インスタンスに接続されているホストからBlueXPインターフェイスにアクセスできるようにします。
 +
@@ -408,7 +408,7 @@ BlueXPの分類ソフトウェアは定期的に新機能で更新されるた�
 
 .作業を開始する前に
 * BlueXP分類ソフトウェアは、一度に1つのメジャーバージョンにアップグレードできます。たとえば、バージョン1.20.xがインストールされている場合は、1.21.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。
-* BlueXP Connectorソフトウェアが最新バージョンにアップグレードされていることを確認します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["コネクタのアップグレード手順を参照してください"^]。
+* BlueXP Connectorソフトウェアが最新バージョンにアップグレードされていることを確認します。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["コネクタのアップグレード手順を参照してください"^]。
 
 
 .手順

@@ -63,7 +63,7 @@ SharePointアカウントでBlueXP分類をアクティブ化する準備がで�
 * オンプレミスのSharePointの場合は、BlueXPの分類をインストールできます link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^] または link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスの場所"^]。
 
 
-インターネットにアクセスできないサイトにBlueXP分類がインストールされている場合は、インターネットにアクセスできない同じサイトにもBlueXP Connectorをインストールする必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["詳細はこちら。"^]。
+インターネットにアクセスできないサイトにBlueXP分類がインストールされている場合は、インターネットにアクセスできない同じサイトにもBlueXP Connectorをインストールする必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["詳細はこちら。"^]。
 
 インスタンスがインターネットに接続されていれば、BlueXP分類ソフトウェアへのアップグレードは自動で実行されます。
 

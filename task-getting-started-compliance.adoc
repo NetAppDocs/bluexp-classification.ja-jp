@@ -28,7 +28,7 @@ summary: いくつかの手順を実行して、BlueXPの分類を使用してCl
 
 [role="quick-margin-list"]
 * Cloud Volumes ONTAP システムでは、これらの作業環境はBlueXPですでに使用可能になっています
-* オンプレミスの ONTAP システムでは、 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["BlueXPはONTAP クラスタを検出する必要があります"^]
+* オンプレミスの ONTAP システムでは、 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["BlueXPはONTAP クラスタを検出する必要があります"^]
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
@@ -69,7 +69,7 @@ BlueXPの分類が有効になったので、すべてのボリュームにア�
 
 スキャンするデータソースがまだBlueXP環境にない場合は、この時点でキャンバスに追加できます。
 
-お使いのCloud Volumes ONTAP システムは、BlueXPのキャンバスですでに使用できるはずです。オンプレミスの ONTAP システムには、が必要です https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["これらのクラスタはBlueXPで検出されます"^]。
+お使いのCloud Volumes ONTAP システムは、BlueXPのキャンバスですでに使用できるはずです。オンプレミスの ONTAP システムには、が必要です https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["これらのクラスタはBlueXPで検出されます"^]。
 
 
 

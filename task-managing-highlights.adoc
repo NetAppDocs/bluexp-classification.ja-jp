@@ -46,7 +46,7 @@ BlueXP分類でスキャンしている任意のソースファイルをコピ�
 
 * * 単一のソースリポジトリ（ ONTAP ボリューム、 S3 バケット、 NFS 共有など）から特定のデスティネーション（ターゲット）にあるディレクトリにファイルをコピーして同期します。
 +
-これは、あるソースシステムから別のシステムにデータを移行する場合に便利です。最初のコピーの後、設定したスケジュールに基づいて変更されたデータが同期されます。このアクションではを使用します https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp BlueXPのコピーと同期"^] データをソースからターゲットにコピーおよび同期する機能。
+これは、あるソースシステムから別のシステムにデータを移行する場合に便利です。最初のコピーの後、設定したスケジュールに基づいて変更されたデータが同期されます。このアクションではを使用します https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["NetApp BlueXPのコピーと同期"^] データをソースからターゲットにコピーおよび同期する機能。
 
 
 
@@ -149,9 +149,9 @@ image:screenshot_compliance_clone_files_dialog.png["ソースボリュームか�
 
 === ソース・ファイルをターゲット・システムにコピーして同期する
 
-BlueXP分類でスキャンしているソースファイルを、サポートされている非構造化データソースから特定のターゲットデスティネーションの場所にあるディレクトリにコピーできます (https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["BlueXPのコピーと同期でサポートされるターゲットの場所"^]）。最初のコピー後、ファイル内で変更されたデータは、設定したスケジュールに基づいて同期されます。
+BlueXP分類でスキャンしているソースファイルを、サポートされている非構造化データソースから特定のターゲットデスティネーションの場所にあるディレクトリにコピーできます (https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["BlueXPのコピーと同期でサポートされるターゲットの場所"^]）。最初のコピー後、ファイル内で変更されたデータは、設定したスケジュールに基づいて同期されます。
 
-これは、あるソースシステムから別のシステムにデータを移行する場合に便利です。このアクションではを使用します https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp BlueXPのコピーと同期"^] データをソースからターゲットにコピーおよび同期する機能。
+これは、あるソースシステムから別のシステムにデータを移行する場合に便利です。このアクションではを使用します https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["NetApp BlueXPのコピーと同期"^] データをソースからターゲットにコピーおよび同期する機能。
 
 
 TIP: データベース、 OneDrive アカウント、 SharePoint アカウントにあるファイルはコピーおよび同期できません。
@@ -160,7 +160,7 @@ TIP: データベース、 OneDrive アカウント、 SharePoint アカウン�
 * ファイルをコピーして同期するには、アカウント管理者またはワークスペース管理者の役割が必要です。
 * 少なくとも20個のファイルを選択する必要があります。
 * 選択したファイルはすべて、同じソースリポジトリ（ ONTAP ボリューム、 S3 バケット、 NFS 共有、 CIFS 共有など）にある必要があります。
-* BlueXPのコピーおよび同期サービスをアクティブ化し、ソースシステムとターゲットシステム間でファイルを転送するためのデータブローカーを少なくとも1つ設定する必要があります。から、BlueXPのコピーと同期の要件を確認します https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["Quick Start 概要 の略"^]。
+* BlueXPのコピーおよび同期サービスをアクティブ化し、ソースシステムとターゲットシステム間でファイルを転送するためのデータブローカーを少なくとも1つ設定する必要があります。から、BlueXPのコピーと同期の要件を確認します https://docs.netapp.com/us-en/bluexp-copy-sync/task-quick-start.html["Quick Start 概要 の略"^]。
 +
 BlueXPのコピーおよび同期サービスでは、同期関係ごとにサービス料金が別途発生します。データブローカーをクラウドに導入した場合はリソース料金が発生します。
 
@@ -189,7 +189,7 @@ BlueXPのコピーと同期のUIがBlueXPで開きます。
 +
 同期関係を定義するよう求められます。ソースシステムには、BlueXPの分類で選択したリポジトリとファイルがあらかじめ設定されています。
 
-. ターゲットシステムを選択し、使用するデータブローカーを選択（または作成）する必要があります。から、BlueXPのコピーと同期の要件を確認します link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["Quick Start 概要 の略"^]。
+. ターゲットシステムを選択し、使用するデータブローカーを選択（または作成）する必要があります。から、BlueXPのコピーと同期の要件を確認します link:https://docs.netapp.com/us-en/bluexp-copy-sync/task-quick-start.html["Quick Start 概要 の略"^]。
 
 
 .結果

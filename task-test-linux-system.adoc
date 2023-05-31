@@ -37,9 +37,9 @@ BlueXP分類インストールスクリプトには、前提条件となるテ�
 
 BlueXPをインストールして使用するには、BlueXPコネクタが必要です。ただし、コネクタを使用せずに前提条件スクリプトを実行することはできます。
 
-可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスにインストールします"^] ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。BlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。
+可能です https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスにインストールします"^] ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。BlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。
 
-クラウドプロバイダ環境でコネクタを作成するには、を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["AWS でコネクタを作成する"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["GCP でコネクタを作成する"^]。
+クラウドプロバイダ環境でコネクタを作成するには、を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS でコネクタを作成する"^]、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP でコネクタを作成する"^]。
 
 前提条件スクリプトを実行するときに、コネクタシステムのIPアドレスまたはホスト名が必要になります。この情報は、コネクタをオンプレミスにインストールした場合に表示されます。コネクタがクラウドに導入されている場合は、BlueXPコンソールで[ヘルプ]アイコンをクリックし、[*サポート]を選択して、[* BlueXPコネクタ*]をクリックします。
 

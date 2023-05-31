@@ -348,19 +348,19 @@ Connectorは、クラウドアカウントまたはオンプレミスのいず�
 * オンプレミスのONTAP システム、ネットアップ以外のファイル共有、汎用のS3オブジェクトストレージ、データベース、OneDriveフォルダ、SharePointアカウント、Google Driveアカウント内のデータをスキャンする場合、これらのクラウド環境ではコネクタを使用できます。
 
 
-そのため、これらの場所の多くにデータがある場合は、を使用する必要があります https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["複数のコネクタ"^]。
+そのため、これらの場所の多くにデータがある場合は、を使用する必要があります https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["複数のコネクタ"^]。
 
 
 
 === コネクタを自分のホストに導入できますか。
 
-はい。可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["コネクタをオンプレミスに導入"^] ネットワーク内のLinuxホストまたはクラウド内のホスト。BlueXP分類をオンプレミスに導入する予定の場合は、コネクタもオンプレミスにインストールすることを推奨しますが、必須ではありません。
+はい。可能です https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["コネクタをオンプレミスに導入"^] ネットワーク内のLinuxホストまたはクラウド内のホスト。BlueXP分類をオンプレミスに導入する予定の場合は、コネクタもオンプレミスにインストールすることを推奨しますが、必須ではありません。
 
 
 
 === インターネットにアクセスできないセキュアなサイトはどうでしょうか。
 
-はい、サポートされています。可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["インターネットにアクセスできないオンプレミスのLinuxホストにコネクタを導入します"^]。その後、オンプレミスのONTAP クラスタとその他のローカルデータソースを検出し、BlueXPの分類を使用してデータをスキャンできます。
+はい、サポートされています。可能です https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["インターネットにアクセスできないオンプレミスのLinuxホストにコネクタを導入します"^]。その後、オンプレミスのONTAP クラスタとその他のローカルデータソースを検出し、BlueXPの分類を使用してデータをスキャンできます。
 
 
 

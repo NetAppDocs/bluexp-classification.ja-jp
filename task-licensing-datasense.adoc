@@ -85,7 +85,7 @@ BlueXP分類ライセンスをお持ちでない場合は、弊社までお問�
 * ライセンスをリクエストするには、BlueXPの右下にあるチャットアイコンをクリックします。
 
 
-必要に応じて、使用しないCloud Volumes ONTAP の未割り当てのノードベースライセンスがある場合は、同じ金額、同じ有効期限のBlueXP分類ライセンスに変換できます。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["詳細については、こちらをご覧ください"^]。
+必要に応じて、使用しないCloud Volumes ONTAP の未割り当てのノードベースライセンスがある場合は、同じ金額、同じ有効期限のBlueXP分類ライセンスに変換できます。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["詳細については、こちらをご覧ください"^]。
 
 BlueXPのBlueXPデジタルウォレットページを使用して、BlueXP分類のBYOLライセンスを管理します。新しいライセンスを追加したり、既存のライセンスを更新したりできます。
 
@@ -126,7 +126,7 @@ BlueXPアカウント用のBlueXP分類（Data Sense）ライセンスを購入�
 +
 ** BlueXP分類ライセンスのシリアル番号があり、NSSアカウントがわかっている場合は、*[シリアル番号の入力]*オプションを選択してその情報を入力します。
 +
-お使いのNetApp Support Siteのアカウントがドロップダウンリストにない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NSSアカウントをBlueXPに追加します"^]。
+お使いのNetApp Support Siteのアカウントがドロップダウンリストにない場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["NSSアカウントをBlueXPに追加します"^]。
 
 ** BlueXP分類ライセンスファイル（ダークサイトにインストールされている場合に必要）がある場合は、*[Upload License File]*オプションを選択し、プロンプトに従ってファイルを添付します。
 +
