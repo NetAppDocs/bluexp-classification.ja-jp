@@ -50,9 +50,9 @@
 
 * *オペレーティングシステム*：このOSはDockerエンジンをインストールできる必要があります。
 +
-** Red Hat Enterprise Linuxバージョン8.0~8.7
-** CentOSバージョン8.0から8.7
-** CentOS Stream 8
+** Ubuntu 22.04.
+** Red Hat Enterprise Linuxバージョン8.0~8.5
+** CentOSバージョン8.0~8.5
 ** RHELまたはCentOSバージョン7.8または7.9を使用できますが、Linuxカーネルのバージョンは4.0以降である必要があります
 
 

@@ -18,6 +18,40 @@ BlueXPの新機能をご紹介します。
 
 
 
+== 2023年6月6日（バージョン1.23）
+
+
+
+=== データ主体名の検索で日本語がサポートされるようになりました
+
+データ主体アクセス要求（DSAR）に応答して、被験者の名前を検索する際に日本語名を入力できるようになりました。を生成できます https://docs.netapp.com/us-en/bluexp-classification/task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Data Subject Access Request レポート"] 結果の情報を使用して。に日本語の名前を入力することもできます https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filter-data-by-sensitivity-and-content["[Data Investigation]ページの[Data Subject]フィルタ"] サブジェクト名を含むファイルを識別します。
+
+
+
+=== Ubuntuがサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました
+
+Ubuntu 22.04は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXP分類は、ネットワーク内のUbuntu Linuxホストまたはクラウド内のLinuxホストにインストールできます。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["UbuntuがインストールされているホストにBlueXP分類をインストールする方法を参照してください"]。
+
+
+
+=== 新しいBlueXP分類のインストールでは、Red Hat Enterprise Linux 8.6および8.7はサポートされなくなりました
+
+Red Hatでは前提条件であるDockerがサポートされなくなるため、新規導入ではこれらのバージョンはサポートされません。RHEL 8.6または8.7で既存のBlueXP分類マシンを実行している場合、NetAppでは引き続き構成がサポートされます。
+
+
+
+=== BlueXPの分類は、ONTAPシステムからFPolicyイベントを受信するFPolicyコレクタとして設定できます
+
+作業環境内のボリュームで検出されたファイルアクセスイベントについて、BlueXP分類システムでファイルアクセス監査ログの収集を有効にすることができます。BlueXPの分類では、次のタイプのFPolicyイベントと、ファイルに対してアクションを実行したユーザ（Create、Read、Write、Delete、Rename、 所有者/権限を変更し、SACL/DACLを変更します。 https://docs.netapp.com/us-en/bluexp-classification/task-manage-file-access-events.html["ファイルアクセスイベントを監視および管理する方法を参照してください"]。
+
+
+
+=== ダークサイトでData Sense BYOLライセンスがサポートされるようになりました
+
+ダークサイトのBlueXPデジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。 https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["Data Sense BYOLライセンスの入手方法とアップロード方法をご確認ください"]。
+
+
+
 == 2023年4月3日（バージョン1.22）
 
 
@@ -93,7 +127,6 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 
 === インストールの機能拡張
 
-* BlueXPの分類は、CentOS Stream 8を実行しているLinuxホストにインストールできます。
 * インターネットアクセスがないサイト（ダークサイト）用のBlueXP分類インストーラで、インストールを成功させるためにシステムとネットワークの要件が満たされていることを確認するための事前チェックが実行されるようになりました。
 * インストール監査ログファイルは保存され、に書き込まれます `/ops/netapp/install_logs`。
 

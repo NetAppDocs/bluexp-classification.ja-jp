@@ -14,7 +14,11 @@ sidebar:
   - title: BlueXPの分類ドキュメント
     url: "/index.html"
   - title: リリースノート
-    url: "/whats-new.html"
+    entries:
+    - title: 新機能
+      url: "/whats-new.html"
+    - title: 既知の制限
+      url: "/reference-limitations.html"
   - title: はじめに
     entries:
     - title: BlueXPの分類について説明します
@@ -73,6 +77,8 @@ sidebar:
       url: "/task-using-policies.html"
     - title: プライベートデータを管理
       url: "/task-managing-highlights.html"
+    - title: ファイルアクセスイベントを監視および管理します
+      url: "/task-manage-file-access-events.html"
     - title: スキャン設定を変更します
       url: task-managing-repo-scanning.html
     - title: コンプライアンスレポートを生成します

@@ -134,9 +134,9 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 
 * *オペレーティングシステム*：このOSはDockerエンジンをインストールできる必要があります。
 +
-** Red Hat Enterprise Linuxバージョン8.0~8.7
-** CentOSバージョン8.0から8.7
-** CentOS Stream 8
+** Ubuntu 22.04.
+** Red Hat Enterprise Linuxバージョン8.0~8.5
+** CentOSバージョン8.0~8.5
 ** RHELまたはCentOSバージョン7.8または7.9を使用できますが、Linuxカーネルのバージョンは4.0以降である必要があります
 
 
@@ -204,7 +204,7 @@ BlueXPはHTTPSを使用してONTAP クラスタを検出しましたカスタム
 
 | BlueXP分類<> ONTAP クラスタ  a| 
 * nfs-111（TCP \ UDP）および2049（TCP \ UDP）の場合
-* CIFS - 139（TCP / UDP）および445（TCP / UDP）の場合
+* CIFS-139（TCP\UDP）および445（TCP\UDP）の場合
 
  a| 
 BlueXPの分類には、各Cloud Volumes ONTAP サブネットまたはオンプレミスのONTAP システムへのネットワーク接続が必要です。Cloud Volumes ONTAP のセキュリティグループで、BlueXP分類インスタンスからのインバウンド接続を許可する必要があります。
@@ -407,8 +407,8 @@ BlueXP分類インストーラがパッケージのインストールを完了�
 BlueXPの分類ソフトウェアは定期的に新機能で更新されるため、定期的に新しいバージョンをチェックして、最新のソフトウェアや機能を使用しているかどうかを確認する必要があります。自動的にアップグレードを実行するためのインターネット接続がないため、BlueXP分類ソフトウェアは手動でアップグレードする必要があります。
 
 .作業を開始する前に
+* BlueXP Connectorソフトウェアを最新バージョンにアップグレードすることを推奨します。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["コネクタのアップグレード手順を参照してください"^]。
 * BlueXP分類ソフトウェアは、一度に1つのメジャーバージョンにアップグレードできます。たとえば、バージョン1.20.xがインストールされている場合は、1.21.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。
-* BlueXP Connectorソフトウェアが最新バージョンにアップグレードされていることを確認します。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["コネクタのアップグレード手順を参照してください"^]。
 
 
 .手順
@@ -418,7 +418,7 @@ BlueXPの分類ソフトウェアは定期的に新機能で更新されるた�
 +
 [source, cli]
 ----
-tar -xvf DataSense-offline-bundle-v1.21.0.tar.gz
+tar -xvf DataSense-offline-bundle-v1.22.0.tar.gz
 ----
 +
 これにより、インストールファイル* cc_onpm_installer.tar.gz *が抽出されます。

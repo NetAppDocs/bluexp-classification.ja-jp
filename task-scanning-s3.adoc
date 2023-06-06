@@ -129,7 +129,7 @@ image:screenshot_s3_compliance_iam_role.png["BlueXP分類用のAWS IAMロール�
 
 
 
-TIP: また、作業環境のコンプライアンススキャンを有効にすることもできます Configuration ページでをクリックします image:screenshot_gallery_options.gif[""] ボタンをクリックし、*[BlueXP分類のアクティブ化]*を選択します。
+TIP: また、作業環境のコンプライアンススキャンを有効にすることもできます Configuration ページでをクリックします image:screenshot_gallery_options.gif["3つの点"] ボタンをクリックし、*[BlueXP分類のアクティブ化]*を選択します。
 
 .結果
 BlueXPは、インスタンスにIAMロールを割り当てます。

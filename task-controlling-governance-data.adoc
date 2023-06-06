@@ -198,6 +198,8 @@ image:screenshot_compliance_data_mapping_report_button.png["データマッピ�
 .結果
 BlueXPの分類によってPDFレポートが生成されます。このレポートを確認して、必要に応じて他のグループに送信できます。
 
+レポートのサイズが1MBを超える場合は、BlueXP分類インスタンスにPDFファイルが保持され、正確な場所に関するポップアップメッセージが表示されます。BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、PDFファイルに直接移動できます。BlueXP分類をクラウドに導入したら、BlueXP分類インスタンスにSSHでアクセスしてPDFファイルをダウンロードする必要があります。 link:task-audit-data-sense-actions.html#access-the-log-file["「分類インスタンスのデータにアクセスする方法」を参照してください"^]。
+
 BlueXPの分類ページの上部にあるをクリックすると、レポートの最初のページに表示される会社名をカスタマイズできます image:screenshot_gallery_options.gif["[詳細]ボタン"] [会社名の変更]をクリックします。次回レポートを生成するときに、新しい名前が含まれます。
 
 
