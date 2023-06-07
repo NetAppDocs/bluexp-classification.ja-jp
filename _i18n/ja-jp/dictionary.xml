@@ -2877,7 +2877,6 @@
   <block id="4b273eb22f0e890dce8d8a73dba2425e" category="section-title">BlueXPの分類では、日本の個人番号を識別できます</block>
   <block id="f5055886b0ed4db432221d378f3730c1" category="paragraph">変更できる点としては、リポジトリがスキャンされるかどうか、およびBlueXPの分類でが実行されるかどうかなどがあります <block ref="9c20ac53e6a16bb1a8678a8405359003" category="inline-link-macro-rx"></block>。また、一定期間にわたるボリュームのスキャンを停止する必要がある場合などに、スキャンを一時停止および再開することもできます。</block>
   <block id="06f4c04dbf4f6e1007102feb5e139b5f" category="paragraph">BlueXPで分類されてスキャンされている個 々 のリポジトリ（ボリューム、バケットなど）を、作業環境およびデータソースごとに表示できます。さらに、「マッピング済み」の数と「分類済み」の数を確認できます。すべてのデータに対してAIの完全な識別が実行されるため、分類にかかる時間が長くなります。</block>
-  <block id="1653ff09a832461934f62b062bb49a8f" category="paragraph">特定のコンテンツのスキャンを一時的に停止する場合は'リポジトリ上のスキャンを一時的に停止できますこれは、スキャンを「オフ」にするのとは異なります。スキャンをオフにすると、そのボリュームに関するすべてのインデックスと情報がシステムから削除されます。スキャンを一時停止すると、BlueXPの分類によってリポジトリに対する変更や追加がスキャンされることはありませんが、現在の結果はすべてシステムに表示されます。</block>
   <block id="e9ef05a76f2eb11216d8bcec1c8a1ee1" category="paragraph">BlueXPの分類機能は、データを継続的にスキャンして、追加したリポジトリ内の増分的な変更を検出します。ただし、システムがすべての環境をスキャンするのに時間がかかり、スキャンするリポジトリの順序を制御する方法もありません。変更がシステムに反映されるように特定のリポジトリをただちに再スキャンする必要がある場合は、リポジトリを選択して再スキャンします。これにより、特定のデータのスキャンに優先順位を付けてから、他のデータをスキャンすることができます。再スキャン操作が完了すると、選択したリポジトリは通常のBlueXP分類スケジュールのスキャン対象に戻ります。</block>
   <block id="c07dbec3e7acd472789625d35a7563da" category="paragraph">BlueXPの分類では、Amazon S3とデータベースを除くすべてのデータソースタイプでディレクトリのスキャンがサポートされます。現在、単一のディレクトリ（フォルダまたは共有）または複数のディレクトリの再スキャンがサポートされています。今後のサポートには、追加のリポジトリタイプ（ファイル、データベースなど）の再スキャンが含まれます。</block>
   <block id="eb069b124d02b06908e1071cc2edae80" category="summary">データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響がごくわずかであっても問題が発生する場合は、「低速」スキャンを実行するようにBlueXPの分類を設定できます。</block>
@@ -3150,11 +3149,9 @@
   <block id="ae99dae6f6384006aeadebbab894f370" category="list-text">アクションの詳細-何が行われたか:アクションによって異なります</block>
   <block id="e4e81dbf5cdcb72e814265ea01d1f3eb" category="paragraph">たとえば、ログファイルの次の行は、ボリューム「fpolicy_cifs」で「作成」操作が発生したことを示しています。ボリュームに新しいファイル「f14」が作成されたことを示しています。</block>
   <block id="e5f8c207227297bb2868689eb39d6520" category="paragraph">BlueXPの[Classification Investigation]ページでは、ボリューム（[Storage Repository]フィルタを使用）またはファイル（[File/Directory Path]フィルタを使用）を検索して、該当するボリュームおよびファイルに関する詳細を確認できます。</block>
-  <block id="f78abbcec2f9ea5bc3fa03b36826fc43" category="paragraph">ファイルアクセス監査ログファイルは、BlueXP分類マシンの次の場所にあります。<block ref="fec957882759a1b449bd1dfc164a64e6" prefix=" " category="inline-code"></block></block>
   <block id="d83435d800785132bce0e54bcaa13373" category="paragraph">各ファイルには、デフォルトで最大50、000件のイベントが格納されるように設定されています。 <block ref="d1bb72137f989cabbac97be0417a83ae" category="inline-xref-macro-rx"></block> この最大数に達すると、ログファイル内の古いエントリが上書きされます。</block>
   <block id="55b3e20fcb82b08c30a902311468d3c8" category="paragraph">ディレクトリ内のすべてのログファイルの合計サイズは、デフォルトで最大50GBに設定されます。 <block ref="d1bb72137f989cabbac97be0417a83ae" category="inline-xref-macro-rx"></block> この制限に達すると、新しいログファイルが追加されるにつれて最も古いログファイルが削除されます。また、14日を経過したログファイルは、最大保持期間であるため上書きされます。</block>
   <block id="a0381bb8e5ebb77d0c9d2d40db0d1fe3" category="list-text">&lt;datasense_ip&gt; = BlueXP分類仮想マシンインスタンスのIPアドレス</block>
-  <block id="5c3750f0826de99975f78125d81ce638" category="cell">現在の場所は、ログファイルを書き込むためにハードコーディングされています<block ref="fec957882759a1b449bd1dfc164a64e6" prefix=" " category="inline-code"></block></block>
   <block id="190e59fe3d6a787439b4b5c2c989f6bf" category="cell">現在、各ファイルには最大50、000個のイベントが格納されるようにハードコーディングされています。この最大数に達すると、新しいイベントが追加されるたびに古いイベントが削除されます。</block>
   <block id="a1c4e88cdf8e157dbb344fe556f58d28" category="paragraph">BlueXPの分類スキャンでファイルの「最終アクセス日時」が変更されないようにするには、CIFSではWrite Attributes権限、NFSではwrite権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。</block>
   <block id="6af032d0de89339877509ae11ea19c63" category="paragraph">SharePoint アカウントでスキャンする SharePoint サイト URL のリストを追加し、スキャンの種類を選択します。一度に最大100個のURLを追加でき、アカウントごとに合計1,000個のサイトを追加できます。</block>
@@ -3348,7 +3345,6 @@
   <block id="8b33a4571db736cc278b213820df9c13" category="paragraph">データ主体アクセス要求（DSAR）に応答して、被験者の名前を検索する際に日本語名を入力できるようになりました。を生成できます<block ref="8ff27ad1e3f1d885a2f0c0f257501bb1" category="inline-link-rx"></block> 結果の情報を使用して。に日本語の名前を入力することもできます<block ref="615fae5bff7ec48fe0ed5c47e50f199a" category="inline-link-rx"></block> サブジェクト名を含むファイルを識別します。</block>
   <block id="988e5d1ef231d33d94784c928261f0aa" category="section-title">Ubuntuがサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました</block>
   <block id="bf62ea0cc2aa2f5ecb7f712ffcdafc64" category="inline-link">UbuntuがインストールされているホストにBlueXP分類をインストールする方法を参照してください</block>
-  <block id="e79851962ec44d8c7ccd2a63f0c4e92c" category="paragraph">Ubuntu 22.04は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXP分類は、ネットワーク内のUbuntu Linuxホストまたはクラウド内のLinuxホストにインストールできます。<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>。</block>
   <block id="eba7ad27f2a236389ef88102ad7e8e2e" category="section-title">新しいBlueXP分類のインストールでは、Red Hat Enterprise Linux 8.6および8.7はサポートされなくなりました</block>
   <block id="5b1dc8e5b7717b205bb516bc41f51da7" category="paragraph">Red Hatでは前提条件であるDockerがサポートされなくなるため、新規導入ではこれらのバージョンはサポートされません。RHEL 8.6または8.7で既存のBlueXP分類マシンを実行している場合、NetAppでは引き続き構成がサポートされます。</block>
   <block id="b5ba343fa4469021dbdf64181a67e909" category="section-title">BlueXPの分類は、ONTAPシステムからFPolicyイベントを受信するFPolicyコレクタとして設定できます</block>
@@ -3389,4 +3385,9 @@
   <block id="0fe1279b28d533b32c08d839691ef653" category="inline-image-macro">3つの点</block>
   <block id="e56ef2e2348492a4f0e1e9513b068cc4" category="admonition">また、作業環境のコンプライアンススキャンを有効にすることもできます Configuration ページでをクリックします <block ref="a759a567ce9a72b21fd45f48f1f358c8" category="inline-image-macro-rx" type="image"></block> ボタンをクリックし、*[BlueXP分類のアクティブ化]*を選択します。</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
+  <block id="967ed7b18cc2e131fa8fe860d4e4f18d" category="paragraph">特定のコンテンツのスキャンを一時的に停止する場合は'リポジトリ上のスキャンを一時的に停止できますこれは、スキャンを「オフ」にするのとは異なります。スキャンをオフにすると、そのボリュームに関するすべてのインデックスと情報がシステムから削除され、データをスキャンするための課金が停止します。スキャンを一時停止すると、BlueXPの分類によってリポジトリに対する変更や追加がスキャンされることはありませんが、現在の結果はすべてシステムに表示されます。データがまだ存在するため、スキャンを一時停止しても、データをスキャンするための課金は停止しません。</block>
+  <block id="218b1b5040dd27f37c3fab6adea21bff" category="paragraph">データソースが削除されると、データスキャンの課金が停止します。</block>
+  <block id="32bb143fdc5ad46423876511f8c73c77" category="paragraph">Ubuntu 22.04は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXP分類は、ネットワーク内のUbuntu Linuxホストにインストールすることも、バージョン1.23のインストーラを使用している場合はクラウドのLinuxホストにインストールすることもできます。<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>。</block>
+  <block id="3e102feedd861186d57f6a85de9de541" category="paragraph">ファイルアクセス監査ログファイルは、BlueXP分類マシンの次の場所にあります。<block ref="86b82df39f08511f43d33216f4538d29" prefix=" " category="inline-code"></block></block>
+  <block id="7f16356d7b675ed76686e591ad5dc661" category="cell">現在の場所は、ログファイルを書き込むためにハードコーディングされています<block ref="86b82df39f08511f43d33216f4538d29" prefix=" " category="inline-code"></block></block>
 </blocks>

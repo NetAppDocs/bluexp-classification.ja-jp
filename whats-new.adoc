@@ -30,7 +30,7 @@ BlueXPの新機能をご紹介します。
 
 === Ubuntuがサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました
 
-Ubuntu 22.04は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXP分類は、ネットワーク内のUbuntu Linuxホストまたはクラウド内のLinuxホストにインストールできます。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["UbuntuがインストールされているホストにBlueXP分類をインストールする方法を参照してください"]。
+Ubuntu 22.04は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXP分類は、ネットワーク内のUbuntu Linuxホストにインストールすることも、バージョン1.23のインストーラを使用している場合はクラウドのLinuxホストにインストールすることもできます。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["UbuntuがインストールされているホストにBlueXP分類をインストールする方法を参照してください"]。
 
 
 

@@ -111,7 +111,7 @@ BlueXPの[Classification Investigation]ページでは、ボリューム（[Stor
 
 == ファイルアクセス監査ログファイルにアクセスします
 
-ファイルアクセス監査ログファイルは、BlueXP分類マシンの次の場所にあります。 `/opt/netapp/file_access_audit_logs/`
+ファイルアクセス監査ログファイルは、BlueXP分類マシンの次の場所にあります。 `/opt/netapp/fpolicy/logs`
 
 各ファイルには、デフォルトで最大50、000件のイベントが格納されるように設定されています。 <<ファイルアクセス監査ログを設定します,この値は、[File Access Audit Log Configuration]ページでカスタマイズできます。>> この最大数に達すると、ログファイル内の古いエントリが上書きされます。
 
@@ -153,7 +153,7 @@ image:screenshot_compliance_file_access_audit_config.png["BlueXP分類の[Config
 | [監査ログ]オプション | 説明 
 
 
-| ログファイルの場所 | 現在の場所は、ログファイルを書き込むためにハードコーディングされています `/opt/netapp/file_access_audit_logs/` 
+| ログファイルの場所 | 現在の場所は、ログファイルを書き込むためにハードコーディングされています `/opt/netapp/fpolicy/logs` 
 
 
 | 監査ログの最大ストレージ割り当て | ディレクトリ内のすべてのログファイルの合計サイズは、現在デフォルト値の50GBにハードコードされています。この制限に達すると、最も古いログファイルが自動的に削除されます。 
