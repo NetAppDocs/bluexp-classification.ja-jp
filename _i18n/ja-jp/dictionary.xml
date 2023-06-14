@@ -2297,11 +2297,8 @@
   <block id="088be43867eaac29f74142859d1e2a13" category="paragraph">前提条件スクリプトを実行するときに、コネクタシステムのIPアドレスまたはホスト名が必要になります。この情報は、コネクタをオンプレミスにインストールした場合に表示されます。コネクタがクラウドに導入されている場合は、BlueXPコンソールで[ヘルプ]アイコンをクリックし、[*サポート]を選択して、[* BlueXPコネクタ*]をクリックします。</block>
   <block id="93144470251168b3e5488b736447f48f" category="section-title">ホストの要件を確認</block>
   <block id="c1b7308083354b8b60760460bcce3ccc" category="cell">*大きい*</block>
-  <block id="f73b260a6cb60f48bc6d018192dfb51b" category="cell">500GiB SSDオン/または-100GiBオン/opt-395GiBオン/var-5GiBオン/tmp</block>
   <block id="f3e6e184202c9901024fa409f2c24cb1" category="cell">*中*</block>
-  <block id="63d284249a11c1390977c2b197c85419" category="cell">SSDが200GiB、または-50GiBが/opt-145GiBが/var-5GiBが/tmpにある</block>
   <block id="e8ae9f0392263b55e4580177a75c948e" category="cell">*小さい*</block>
-  <block id="6798decba048766a66cd22d4442d7ec0" category="cell">100GiB SSDオン/または-50GiBオン/opt-45GiBオン/var-5GiBオン/tmp</block>
   <block id="e6414c92b8fa46238f4135e4d3e45674" category="inline-link-macro">その他のAWSインスタンスタイプを参照してください</block>
   <block id="07c511fd0ad633d44d9e71cb0c9eaba9" category="list-text">* AWS EC2インスタンスタイプ*：「m6i.4xlarge」を推奨します。 <block ref="2fad631c28a07a1344ecdbaabb5084bf" category="inline-link-macro-rx"></block>。</block>
   <block id="130a6b20e1175876fb22c9520aa18c8c" category="inline-link-macro">その他のAzureインスタンスタイプを参照してください</block>
@@ -3042,7 +3039,6 @@
   <block id="bfd2c96cae6d29697ceac4feda921426" category="inline-image-macro">オンプレミスに導入された複数のBlueXP分類インスタンスをインターネットアクセスで使用している場合にスキャンできるデータソースの場所を示す図。</block>
   <block id="b1030a584c34dcb45c3a231937109e48" category="paragraph"><block ref="b1030a584c34dcb45c3a231937109e48" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0eb32e59a3574faaca63218c3f5922f" category="paragraph">を参照してください <block ref="dc1d236e8ef0d554549faeaffd48b8b2" category="inline-xref-macro-rx"></block> および <block ref="2360c56931bf3d2d23fb74a3dc780c78" category="inline-xref-macro-rx"></block> では、BlueXPに分類を導入する前のすべての要件について説明します。</block>
-  <block id="86bb25ae4391f2558f38a5358121ae0d" category="paragraph">BlueXP分類ソフトウェアをオンプレミスの単一のホストにインストールする場合は、次の手順に従います。</block>
   <block id="60e3e1e8b520c28183ebe86bd433deda" category="list-text">プロキシでTLS代行受信を実行している場合は、TLS CA証明書が格納されているBlueXP分類Linuxシステムのパスを確認しておく必要があります。</block>
   <block id="d66d1b16789175829b23ed7e745d66dd" category="list-text">オフライン環境が要件を満たしていることを確認します <block ref="9eb48ce3a280aa134b4c3aab7ed78a68" category="inline-xref-macro-rx"></block>。</block>
   <block id="2fdc544d6ce29e3a29dd3b9cb532c792" category="list-text">からBlueXP分類ソフトウェアをダウンロードします<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>。選択するファイルの名前は* DATASENSE-installer -&lt;version&gt; .tar.gz *です。</block>
@@ -3390,4 +3386,20 @@
   <block id="32bb143fdc5ad46423876511f8c73c77" category="paragraph">Ubuntu 22.04は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXP分類は、ネットワーク内のUbuntu Linuxホストにインストールすることも、バージョン1.23のインストーラを使用している場合はクラウドのLinuxホストにインストールすることもできます。<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>。</block>
   <block id="3e102feedd861186d57f6a85de9de541" category="paragraph">ファイルアクセス監査ログファイルは、BlueXP分類マシンの次の場所にあります。<block ref="86b82df39f08511f43d33216f4538d29" prefix=" " category="inline-code"></block></block>
   <block id="7f16356d7b675ed76686e591ad5dc661" category="cell">現在の場所は、ログファイルを書き込むためにハードコーディングされています<block ref="86b82df39f08511f43d33216f4538d29" prefix=" " category="inline-code"></block></block>
+  <block id="34c688a0843dc19a0624e151973b37a7" category="cell">500GiB SSDオン/、または
+-100GiBは/optで利用可能
+-395GiBは/var/lib/dockerで使用可能
+-5GiB（/tmp</block>
+  <block id="7c2e343b426a44deea2cb9e6eb69e8af" category="cell">200GiB SSDオン/、または
+-50GiBは/optで利用可能
+-145GiBは/var/lib/dockerで使用可能
+-5GiB（/tmp</block>
+  <block id="a8ec707d3d7dc0af4b9cce44343387b0" category="cell">100GiB SSDオン/、または
+-50GiBは/optで利用可能
+-45GiBは/var/lib/dockerで使用可能
+-5GiB（/tmp</block>
+  <block id="0a10409b2f38332b7a7c8f820fc0edd5" category="inline-link">こちらのビデオをご覧ください</block>
+  <block id="404a8e21de3fe2bfdd2e77b81889e5cb" category="paragraph"><block ref="21e1c490f7e7bc90ffb6dabbc263e6f2" category="inline-link-rx"></block> では、CentOSへのDockerのインストールの簡単なデモをご覧ください。</block>
+  <block id="d56adb545fe9309fc7a4cfd339798344" category="paragraph">要件を確認し、BlueXP分類ソフトウェアをオンプレミスの単一のホストにインストールする場合は、以下の手順に従ってください。</block>
+  <block id="cf3d087ad95f213d839f606d398101ee" category="paragraph"><block ref="501f73c9c42bcec313b07a4d01108ec0" category="inline-link-rx"></block> をクリックして、BlueXP分類のインストール方法を確認してください。</block>
 </blocks>

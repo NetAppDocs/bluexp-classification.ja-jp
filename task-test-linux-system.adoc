@@ -50,8 +50,6 @@ BlueXPをインストールして使用するには、BlueXPコネクタが必�
 BlueXP分類ソフトウェアは、特定のオペレーティングシステム要件、RAM要件、ソフトウェア要件などを満たすホストで実行する必要があります。
 
 * BlueXPの分類は、他のアプリケーションと共有するホストではサポートされません。専用のホストである必要があります。
-
-
 * オンプレミスでホストシステムを構築する場合は、BlueXP分類スキャンを実行するデータセットのサイズに応じて、3つのシステムサイズの中から選択できます。
 +
 [cols="18,18,26,30"]
@@ -59,13 +57,22 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 | システムサイズ | CPU | RAM（スワップメモリを無効にする必要があります） | ディスク 
 
 
-| *大きい* | 16 CPU | 64GBのRAM | 500GiB SSDオン/または-100GiBオン/opt-395GiBオン/var-5GiBオン/tmp 
+| *大きい* | 16 CPU | 64GBのRAM | 500GiB SSDオン/、または
+-100GiBは/optで利用可能
+-395GiBは/var/lib/dockerで使用可能
+-5GiB（/tmp 
 
 
-| *中* | 8 CPU | 32GBのRAM | SSDが200GiB、または-50GiBが/opt-145GiBが/var-5GiBが/tmpにある 
+| *中* | 8 CPU | 32GBのRAM | 200GiB SSDオン/、または
+-50GiBは/optで利用可能
+-145GiBは/var/lib/dockerで使用可能
+-5GiB（/tmp 
 
 
-| *小さい* | 8 CPU | 16GB の RAM | 100GiB SSDオン/または-50GiBオン/opt-45GiBオン/var-5GiBオン/tmp 
+| *小さい* | 8 CPU | 16GB の RAM | 100GiB SSDオン/、または
+-50GiBは/optで利用可能
+-45GiBは/var/lib/dockerで使用可能
+-5GiB（/tmp 
 |===
 +
 これらの小さいシステムを使用する場合は制限があることに注意してください。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
@@ -107,6 +114,9 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 * *その他のソフトウェア*：BlueXP分類をインストールする前に、次のソフトウェアをホストにインストールする必要があります。
 +
 ** Docker Engineバージョン19.3.1以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
++
+https://youtu.be/H1WS_-85pWA["こちらのビデオをご覧ください"] では、CentOSへのDockerのインストールの簡単なデモをご覧ください。
+
 ** Python 3 バージョン 3.6 以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
 
 
