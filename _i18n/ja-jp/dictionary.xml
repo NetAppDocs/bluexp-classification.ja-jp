@@ -2555,7 +2555,6 @@
   <block id="2875279e7093015cd8ccf93240c548e9" category="paragraph"><block ref="2875279e7093015cd8ccf93240c548e9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e7fa07083790a8112d00af542356ec88" category="paragraph">データ保護（DP）ボリュームは外部に公開されず、BlueXPの分類ではアクセスできないため、デフォルトではスキャンされません。オンプレミスの ONTAP システムまたは Cloud Volumes ONTAP システムからの SnapMirror 処理のデスティネーションボリュームです。</block>
   <block id="7c0a9b3e555cf595d3d01d33df76df82" category="list-text">ソース ONTAP システムで最初に CIFS ボリュームとして作成されたボリュームでは、それらの DP ボリュームをスキャンするために CIFS クレデンシャルを入力する必要があります。Active Directoryクレデンシャルを入力してBlueXP分類でCIFSボリュームをスキャンできるようにした場合は、それらのクレデンシャルを使用することも、別の管理者クレデンシャルのセットを指定することもできます。</block>
-  <block id="fbf1d4f9e395daa419609b8d5b9705f7" category="summary">スキャンするファイルのいずれかがアクセスまたは変更されたときにイベントがファイルに記録されるように、BlueXPの分類を設定できます。次に、このファイル（ファイルアクセス監査ログ）の内容を表示するか、ファイルをダウンロードして、どのファイル変更が行われたか、誰によって行われたかを確認できます。</block>
   <block id="52887b7fa084c02e609d7372dfab4740" category="paragraph">現在、BlueXPの分類では、ファイルとディレクトリに対する次のアクションのイベントがキャプチャされます。</block>
   <block id="f8a450637ddb6668a04ea30131e3a1e2" category="paragraph">BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、ログファイルに直接移動できます。</block>
   <block id="c025349cd3a26a699951f8e578938046" category="paragraph">BlueXP分類をクラウドに導入する場合は、BlueXP分類インスタンスにSSHで接続する必要があります。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。</block>
@@ -3123,11 +3122,9 @@
   <block id="c3e36333a4a6733ccd92dafc9d8c17b5" category="sidebar">インターネットを使用せずに、BlueXPの分類をオンプレミスにインストール</block>
   <block id="c0b7cbffdfa6fa18059367f2045ac22c" category="sidebar">BlueXPの分類のユースケース</block>
   <block id="44b48aa0d2158361e53832315034f513" category="paragraph">たとえば、機密性の高い人事ファイルまたは給与ファイルに変更が加えられたタイミングを追跡する場合は、これらのファイルが存在するボリュームでこの機能を有効にすることができます。次に、ファイルアクセス監査ログを表示して、これらのファイルが変更されているかどうかを確認できます。変更されている場合は、変更を行ったユーザーのセキュリティ識別子(SID)と変更がいつ行われたかを確認できます。</block>
-  <block id="f8877f183813ba08abe0b73b3b1c1a0a" category="paragraph">この機能は、ONTAP ソフトウェアを実行している作業環境内の重要なボリュームで有効にすることができます。ボリュームで有効にすると、ボリューム内のすべてのファイルおよびディレクトリについてファイルアクセスイベントが追跡されます。この機能はに基づいています<block ref="215c8ae39ab5aa2af1bf0d7956d6ac15" category="inline-link-rx"></block> ONTAP システムから、BlueXP分類システムをFPolicyサーバとして使用してONTAP から通知メッセージ（イベント）を受信します。</block>
   <block id="c7f8db8434f3e3057bca29922b597e31" category="paragraph">BlueXPの分類では、次のデータソースのONTAP ボリュームにあるファイルに対するファイルアクセスイベントがログに記録されます。</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">NetApp ONTAP 対応の Amazon FSX</block>
   <block id="64067288b8531fcd99186eba6a8c23b0" category="paragraph">データソースでONTAP バージョン9.11以降のソフトウェアが実行されている必要があります。</block>
-  <block id="e409723ead2999f7cf6579d5cdaa079c" category="admonition">ファイルアクセス監査は、現時点で各データソースの最大5個のボリュームで設定できます。</block>
   <block id="266321178f48dd580597ebe11b4ed93e" category="list-text">BlueXPの分類でファイルにアクセスしたユーザのIDをリストできるように、データソース用にActive Directoryを設定しておく必要があります。</block>
   <block id="c59b99fd4a78f457a5e94a037bb88563" category="list-text">BlueXP分類システムからのアウトバウンドアクセス用にポート5018が開いている必要があります。</block>
   <block id="4d2cf95eb79434a26117b70f40109d70" category="paragraph">ファイルアクセスイベントを追跡するように設定した各ボリュームについて、ログファイルが作成されます。ログファイルの名前は「&lt;volume_name&gt; _&lt;volume_uuid&gt; _.log」になります（例：「fpolicy_CIFS_838c1727-dd2d-11ed-a3ec-590ce4991.log」）。監査ログの各行には、次の形式で情報が表示されます。</block>
@@ -3402,4 +3399,7 @@
   <block id="404a8e21de3fe2bfdd2e77b81889e5cb" category="paragraph"><block ref="21e1c490f7e7bc90ffb6dabbc263e6f2" category="inline-link-rx"></block> では、CentOSへのDockerのインストールの簡単なデモをご覧ください。</block>
   <block id="d56adb545fe9309fc7a4cfd339798344" category="paragraph">要件を確認し、BlueXP分類ソフトウェアをオンプレミスの単一のホストにインストールする場合は、以下の手順に従ってください。</block>
   <block id="cf3d087ad95f213d839f606d398101ee" category="paragraph"><block ref="501f73c9c42bcec313b07a4d01108ec0" category="inline-link-rx"></block> をクリックして、BlueXP分類のインストール方法を確認してください。</block>
+  <block id="7273543485153af36bd67d8d37fe08b3" category="summary">スキャンするファイルのいずれかがアクセスまたは変更されたときにイベントがファイルに記録されるように、BlueXPの分類を設定できます。次に、このログファイル（ファイルアクセス監査ログ）の内容を表示するか、ファイルをダウンロードして、どのファイル変更が行われたか、誰によって行われたかを確認できます。</block>
+  <block id="145ca78924109b125fb405dc2644ebba" category="paragraph">この機能は、ONTAP ソフトウェアを実行している作業環境内の重要なボリュームで有効にすることができます。ボリュームで有効にすると、ボリューム内のすべてのファイルおよびディレクトリについてファイルアクセスイベントが追跡されます。この機能はに基づいています<block ref="215c8ae39ab5aa2af1bf0d7956d6ac15" category="inline-link-rx"></block> ONTAP システムから、BlueXP分類システムをFPolicyサーバとして使用してONTAP から通知メッセージ（イベント）を受信します。BlueXPの分類では、ONTAPから1秒あたり約990のイベントを処理できます。</block>
+  <block id="7a6df57d74a900c4b9e956add6358c97" category="paragraph">インストールを正常に完了するには、インストーラによって事前チェックが実行され、システムとネットワークの要件が満たされていることが確認されます。<block ref="4ca4cc07e57f7afbeb1dff6c98bd6092" category="inline-link-rx"></block> 事前チェックのメッセージとその影響を理解する。</block>
 </blocks>
