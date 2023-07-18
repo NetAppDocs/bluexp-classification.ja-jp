@@ -104,10 +104,10 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 
 * *オペレーティングシステム*：このOSはDockerエンジンをインストールできる必要があります。
 +
-** Ubuntu 22.04.
-** Red Hat Enterprise Linuxバージョン8.0~8.5
-** CentOSバージョン8.0~8.5
-** RHELまたはCentOSバージョン7.8または7.9を使用できますが、Linuxカーネルのバージョンは4.0以降である必要があります
+** Red Hat Enterprise Linuxバージョン7.8および7.9 - Linuxカーネルのバージョンは4.0以降である必要があります。
+** CentOSバージョン7.8および7.9 - Linuxカーネルのバージョンは4.0以上である必要があります。
+** Rocky Linux 9（BlueXP分類バージョン1.24以降が必要）
+** Ubuntu 22.04（BlueXP分類バージョン1.23以降が必要）
 
 
 * * Red Hat Subscription Management *：ホストはRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、システムはインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。

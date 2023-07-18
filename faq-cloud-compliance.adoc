@@ -251,7 +251,7 @@ BlueXPの分類では、NFSバージョン3.x、4.0、4.1、CIFSバージョン1
 
 === 政府機関に導入した場合、制限はありますか？
 
-BlueXPの分類は、コネクタが政府機関のリージョン（AWS GovCloud、Azure Gov、Azure DoD）に導入されている場合にサポートされます。この方法で導入した場合、BlueXPには次の制限があります。
+BlueXPの分類は、コネクタが政府機関のリージョン（AWS GovCloud、Azure Gov、Azure DoD）（「制限モード」とも呼ばれます）に導入されている場合にサポートされます。この方法で導入した場合、BlueXPには次の制限があります。
 
 * OneDriveアカウント、SharePointアカウント、Googleドライブアカウントはスキャンできません。
 * Microsoft Azure Information Protection（AIP）ラベル機能を統合できません。
@@ -261,7 +261,7 @@ BlueXPの分類は、コネクタが政府機関のリージョン（AWS GovClou
 
 === インターネットにアクセスできないサイトにBlueXP分類をインストールすると、どのようなデータソースをスキャンできますか？
 
-BlueXPの分類では、オンプレミスサイトのローカルなデータソースのデータのみをスキャンできます。現時点では、BlueXPの分類では「ダーク」サイト内の次のローカルデータソースをスキャンできます。
+BlueXPの分類では、オンプレミスサイトのローカルなデータソースのデータのみをスキャンできます。この時点で、BlueXPの分類では、「プライベートモード」（「ダーク」サイトとも呼ばれます）で次のローカルデータソースをスキャンできます。
 
 * オンプレミスの ONTAP システム
 * データベーススキーマ
@@ -360,7 +360,7 @@ Connectorは、クラウドアカウントまたはオンプレミスのいず�
 
 === インターネットにアクセスできないセキュアなサイトはどうでしょうか。
 
-はい、サポートされています。可能です https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["インターネットにアクセスできないオンプレミスのLinuxホストにコネクタを導入します"^]。その後、オンプレミスのONTAP クラスタとその他のローカルデータソースを検出し、BlueXPの分類を使用してデータをスキャンできます。
+はい、サポートされています。可能です https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["インターネットにアクセスできないオンプレミスのLinuxホストにコネクタを導入します"^]。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["これは「プライベートモード」とも呼ばれます。"^]。その後、オンプレミスのONTAP クラスタとその他のローカルデータソースを検出し、BlueXPの分類を使用してデータをスキャンできます。
 
 
 

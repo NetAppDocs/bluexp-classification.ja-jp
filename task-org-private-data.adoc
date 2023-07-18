@@ -226,6 +226,9 @@ image:screenshot_compliance_tag_multi_files.png["[ データ調査 ] ページ�
 +
 ** 個々のファイルを選択するには、各ファイル（image:button_backup_1_volume.png[""]）。
 ** 現在のページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）。
++
+この時点で、一度に最大20個のファイルにタグを適用できます（[Data Investigation results]ページの1ページ）。
+
 
 
 . ボタンバーで * タグ * をクリックすると、現在割り当てられているタグが表示されます。

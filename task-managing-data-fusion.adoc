@@ -62,15 +62,12 @@ image:screenshot_compliance_add_data_fusion.png["データ Fusion ソースの�
 
 . [Add Data Fusion Source*] をクリックします。
 +
-[Data Fusion inventory]ページには、スキャンするように設定したデータベースソースの列が表示されます。
-
-+
 image:screenshot_compliance_data_fusion_list.png["Data Fusion で設定したすべてのデータソース参照のスクリーンショット。"]
 
 
 
 .結果
-次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。追加した各ソース列は、「Table.Column」という形式でフィルタリストに表示されます。たとえば、「customers.CustomerID」のようになります。
+次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。分類子に使用した名前がフィルタリストに表示されます。例： `Customers.CustomerID`。
 
 image:screenshot_add_data_fusion_result.png["［調査結果］ペインに表示されるData Fusion の結果の例を示すスクリーンショット。"]
 
@@ -116,7 +113,7 @@ image:screenshot_select_classifier_tool_keywords.png["BlueXPの分類でパタ�
 下のスクリーンショットは、内部の製品名(さまざまな種類のフクロウ)を示しています。これらの項目に対するBlueXPの分類検索では、大文字と小文字は区別されません。
 
 +
-image:screenshot_select_classifier_create_logic_keyword.png["顧客分類子のキーワードを入力したスクリーンショット。"]
+image:screenshot_select_classifier_create_logic_keyword.png["カスタム分類子のキーワードを入力したスクリーンショット。"]
 
 . [完了]*をクリックすると、BlueXPの分類によってデータの再スキャンが開始されます。
 
@@ -138,7 +135,10 @@ image:screenshot_add_keywords_result.png["[調査結果]ペインにカスタム
 
 正規表現を追加すると、BlueXPの分類によってすべてのデータソースのスキャンが再開されます。スキャンが完了すると、BlueXP分類コンプライアンスダッシュボードの[Personal Results]セクションと[Investigation]ページの[Personal Data]フィルタに新しい結果が表示されます。
 
-を参照してください https://regex101.com/[] 正規表現の作成にサポートが必要な場合は、
+を参照してください https://regex101.com/[] 正規表現の作成にサポートが必要な場合は、フレーバーに「* Python *」を選択すると、BlueXPの分類が正規表現と一致する結果のタイプが表示されます。
+
+
+NOTE: 現在、正規表現を作成するときにパターンフラグを使用することは許可されていません。これは、"/"を使用しないことを意味します。
 
 .手順
 . [_Classification settings]タブで*[Add New Classifier]*をクリックし、_Add Custom Classifier_wizardを起動します。
@@ -161,7 +161,7 @@ image:screenshot_select_classifier_tool_regex.png["BlueXP分類でパターン�
 .. 正規表現は任意に入力できます。[検証]*ボタンをクリックして、BlueXPで正規表現が有効かどうか、また正規表現が広すぎないかどうか（返される結果が多すぎないかどうか）が検証されます。
 .. 必要に応じて、近接キーワードを入力して結果の精度を高めることができます。検索対象のパターンの300文字以内（検出されたパターンの前または後）に検索されるのが一般的な単語です。単語またはフレーズをそれぞれ別の行に入力します。
 +
-image:screenshot_select_classifier_create_logic_regex.png["顧客分類子のregexおよびproximity wordsを入力するスクリーンショット。"]
+image:screenshot_select_classifier_create_logic_regex.png["カスタム分類子の正規表現とプロキシミティワードを入力したスクリーンショット。"]
 
 
 
@@ -241,6 +241,9 @@ image:screenshot_custom_classifier_top_5.png["返された結果に基づいて�
 == カスタム分類子を管理します
 
 作成したカスタム分類子は、*Edit Classifier*ボタンを使用して変更できます。
+
+
+TIP: 現時点では、Data Fusion分類子を編集することはできません。
 
 あとで、追加したカスタムパターンをBlueXPの分類で特定する必要がないと判断した場合は、*[Delete Classifier]*ボタンを使用して各項目を削除できます。
 

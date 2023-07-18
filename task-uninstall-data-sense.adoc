@@ -22,16 +22,18 @@ BlueXP分類ソフトウェアをアンインストールして、問題をト�
 
 == クラウド環境からBlueXP分類をアンインストールします
 
-BlueXP分類を使用する必要がなくなった場合は、クラウドプロバイダからBlueXP分類インスタンスをアンインストールして削除できます。
+BlueXP分類を使用する必要がなくなった場合は、クラウドプロバイダ環境からBlueXP分類インスタンスをアンインストールして削除できます。
 
 . BlueXPの分類ページの上部にあるをクリックします image:screenshot_gallery_options.gif["[ 詳細 ] ボタン"] 次に、[データセンスのアンインストール]をクリックします。
 +
 image:screenshot_compliance_uninstall.png["BlueXP分類ソフトウェアをアンインストールするボタンのスクリーンショット。"]
 
-. [データの削除]センスダイアログで、「*uninstall*」と入力して、インスタンスと関連するすべてのデータを削除することを確認し、[アンインストール*]をクリックします。
+. [_Uninstall Data Sense_]ダイアログで、「* uninstall *」と入力してBlueXPコネクタからBlueXP分類インスタンスを切断することを確認し、*[アンインストール]*をクリックします。
+. クラウドプロバイダのコンソールに移動し、BlueXP分類インスタンスを削除します。インスタンスの名前は _CloudCompliancy_with で、生成されたハッシュ（ UUID ）を連結しています。例： _CloudCompliion-16bb6564-38ad-40802-9a92-36f5fd2f71c7_
++
+これにより、BlueXPの分類によって収集されたインスタンスと関連するすべてのデータが削除されます。
 
 
-クラウドプロバイダのコンソールに移動して、そこからBlueXP分類インスタンスを削除することもできます。インスタンスの名前は _CloudCompliancy_with で、生成されたハッシュ（ UUID ）を連結しています。例： _CloudCompliion-16bb6564-38ad-40802-9a92-36f5fd2f71c7_
 
 
 
@@ -43,11 +45,11 @@ BlueXP分類を使用する必要がなくなった場合や、問題 の再イ�
 +
 image:screenshot_compliance_uninstall.png["BlueXP分類ソフトウェアをアンインストールするボタンのスクリーンショット。"]
 
-. [Uninstall Data sense dialog]に「*uninstall*」と入力して、すべての設定情報をクリアしてから、「Uninstall *」をクリックします。
-. ホストからのアンインストールを完了するには、次のように、ホストマシンでアンインストールスクリプトを実行します。
+. [_Uninstall Data Sense_]ダイアログで、「* uninstall *」と入力してBlueXPコネクタからBlueXP分類インスタンスを切断することを確認し、*[アンインストール]*をクリックします。
+. ホストからソフトウェアをアンインストールするには、 `cleanup.sh` ホストマシン上のスクリプト。例：
 +
 [source, cli]
 ----
-uninstall.sh
+cleanup.sh
 ----
 

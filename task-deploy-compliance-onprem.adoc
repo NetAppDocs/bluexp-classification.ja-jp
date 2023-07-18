@@ -149,10 +149,10 @@ BlueXPの分類を継続して実行できることを確認します。BlueXP�
 
 * *オペレーティングシステム*：このOSはDockerエンジンをインストールできる必要があります。
 +
-** Ubuntu 22.04.
-** Red Hat Enterprise Linuxバージョン8.0~8.5
-** CentOSバージョン8.0~8.5
-** RHELまたはCentOSバージョン7.8または7.9を使用できますが、Linuxカーネルのバージョンは4.0以降である必要があります
+** Red Hat Enterprise Linuxバージョン7.8および7.9 - Linuxカーネルのバージョンは4.0以降である必要があります。
+** CentOSバージョン7.8および7.9 - Linuxカーネルのバージョンは4.0以上である必要があります。
+** Rocky Linux 9（BlueXP分類バージョン1.24以降が必要）
+** Ubuntu 22.04（BlueXP分類バージョン1.23以降が必要）
 
 
 * * Red Hat Subscription Management *：ホストはRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、システムはインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
@@ -307,6 +307,8 @@ NOTE: 現在、BlueXPの分類では、S3バケット、Azure NetApp Files 、FS
 
 https://youtu.be/gE-vrBLSJqw["こちらのビデオをご覧ください"] をクリックして、BlueXP分類のインストール方法を確認してください。
 
+BlueXP分類をインストールすると、すべてのインストールアクティビティがログに記録されます。インストール中に問題が発生した場合は、インストール監査ログの内容を表示できます。に書き込まれます。 `/opt/netapp/install_logs/`。 link:task-audit-data-sense-actions.html#access-the-log-file["詳細はこちら"]。
+
 .必要なもの
 * Linux システムがを満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
 * システムに、前提条件となる2つのソフトウェアパッケージ（Docker EngineとPython 3）がインストールされていることを確認します。
@@ -329,7 +331,7 @@ https://youtu.be/gE-vrBLSJqw["こちらのビデオをご覧ください"] を�
 +
 [source, cli]
 ----
-tar -xzf DATASENSE-INSTALLER-V1.21.0.tar.gz
+tar -xzf DATASENSE-INSTALLER-V1.22.0.tar.gz
 ----
 . BlueXPでは、* Governance > Classification *を選択します。
 . [ データセンスを活動化（ Activate Data sense ） ] をクリックし

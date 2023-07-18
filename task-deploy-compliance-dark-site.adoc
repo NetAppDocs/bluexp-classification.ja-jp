@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-dark-site.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade 
-summary: インターネットにアクセスできないオンプレミスサイトのLinuxホストにBlueXP分類をインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade, private mode 
+summary: インターネットアクセスがないオンプレミスサイト（「プライベートモード」とも呼ばれます）のLinuxホストにBlueXP分類をインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。 
 ---
 = インターネットにアクセスできないホストにBlueXP分類をインストールします
 :hardbreaks:
@@ -14,7 +14,9 @@ summary: インターネットにアクセスできないオンプレミスサ�
 
 
 [role="lead"]
-インターネットにアクセスできないオンプレミスサイトのLinuxホストにBlueXP分類をインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。
+インターネットアクセスがないオンプレミスサイト（「プライベートモード」とも呼ばれます）のLinuxホストにBlueXP分類をインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["BlueXP ConnectorとBlueXPの分類のさまざまな導入モードについて説明します。"^]。
 
 また、次のことも可能です link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスサイトにBlueXPの分類を導入します"]。
 
@@ -24,7 +26,7 @@ BlueXPの分類インストールスクリプトでは、まず、システム�
 
 == サポートされているデータソース
 
-この方法でインストールした場合（「オフライン」または「ダーク」サイトと呼ばれることもあります）、BlueXPの分類では、同じくオンプレミスサイトのローカルなデータソースのデータしかスキャンできません。現時点では、BlueXPでは次の*ローカル*データソースをスキャンできます。
+プライベートモード（「オフライン」または「ダーク」サイトと呼ばれることもある）がインストールされている場合、BlueXPの分類では、オンプレミスサイトに対してローカルなデータソースのデータしかスキャンできません。現時点では、BlueXPでは次の*ローカル*データソースをスキャンできます。
 
 * オンプレミスの ONTAP システム
 * データベーススキーマ
@@ -33,7 +35,7 @@ BlueXPの分類インストールスクリプトでは、まず、システム�
 * Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージ
 
 
-現在、Cloud Volumes ONTAP 、Azure NetApp Files 、FSx for ONTAP 、AWS S3、Googleドライブのスキャンはサポートされていません。 BlueXPの分類がダークサイトに導入されている場合は、OneDriveまたはSharePoint Onlineアカウント。
+現在、Cloud Volumes ONTAP、Azure NetApp Files、FSx for ONTAP、AWS S3、Googleドライブのスキャンはサポートされていません。 BlueXP分類がプライベートモードで導入されている場合は、OneDriveまたはSharePoint Onlineアカウント。
 
 
 
@@ -60,7 +62,7 @@ BlueXP ConnectorとBlueXPのどちらも、新機能を有効にするために�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] BlueXPコネクタを取り付けます
 [role="quick-margin-para"]
-オフラインのオンプレミスサイトにコネクタがまだインストールされていない場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["コネクタを配置します"^] Linux ホストの場合は、
+プライベートモードでコネクタがインストールされていない場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["コネクタを配置します"^] Linux ホストの場合は、
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXPの分類の前提条件を確認します
 [role="quick-margin-para"]
@@ -78,7 +80,7 @@ BlueXPで分類されてスキャンされる最初の1TBのデータは、30日
 
 == BlueXPコネクタを取り付けます
 
-オフラインのオンプレミスサイトにBlueXPコネクタがインストールされていない場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["コネクタを配置します"^] オフラインサイトの Linux ホスト
+BlueXP Connectorがプライベートモードでインストールされていない場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["コネクタを配置します"^] オフラインサイトの Linux ホスト
 
 
 
@@ -141,10 +143,10 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 
 * *オペレーティングシステム*：このOSはDockerエンジンをインストールできる必要があります。
 +
-** Ubuntu 22.04.
-** Red Hat Enterprise Linuxバージョン8.0~8.5
-** CentOSバージョン8.0~8.5
-** RHELまたはCentOSバージョン7.8または7.9を使用できますが、Linuxカーネルのバージョンは4.0以降である必要があります
+** Red Hat Enterprise Linuxバージョン7.8および7.9 - Linuxカーネルのバージョンは4.0以降である必要があります。
+** CentOSバージョン7.8および7.9 - Linuxカーネルのバージョンは4.0以上である必要があります。
+** Rocky Linux 9（BlueXP分類バージョン1.24以降が必要）
+** Ubuntu 22.04（BlueXP分類バージョン1.23以降が必要）
 
 
 * * Red Hat Subscription Management *：ホストはRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、システムはインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
@@ -262,6 +264,8 @@ image:diagram_deploy_onprem_multi_host_no_internet.png["オンプレミスにイ
 
 オフライン環境の単一のオンプレミスホストにBlueXP分類ソフトウェアをインストールする場合は、次の手順に従います。
 
+BlueXP分類をインストールすると、すべてのインストールアクティビティがログに記録されます。インストール中に問題が発生した場合は、インストール監査ログの内容を表示できます。に書き込まれます。 `/opt/netapp/install_logs/`。 link:task-audit-data-sense-actions.html#access-the-log-file["詳細はこちら"]。
+
 .必要なもの
 * Linux システムがを満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
 * 前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。
@@ -271,12 +275,12 @@ image:diagram_deploy_onprem_multi_host_no_internet.png["オンプレミスにイ
 
 .手順
 . インターネットが設定されたシステムの場合は、からBlueXP分類ソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は * DataSense - offline-bundle-<version>.tar.gz * です。
-. ダークサイトで使用する Linux ホストにインストーラバンドルをコピーします。
+. プライベートモードで使用するLinuxホストにインストーラバンドルをコピーします。
 . ホストマシンでインストーラバンドルを解凍します。次に例を示します。
 +
 [source, cli]
 ----
-tar -xzf DataSense-offline-bundle-v1.21.0.tar.gz
+tar -xzf DataSense-offline-bundle-v1.22.0.tar.gz
 ----
 +
 これにより、必要なソフトウェアと実際のインストールファイル* cc_onpm_installer.tar.gz *が抽出されます。
@@ -418,7 +422,10 @@ BlueXPの分類ソフトウェアは定期的に新機能で更新されるた�
 
 .作業を開始する前に
 * BlueXP Connectorソフトウェアを最新バージョンにアップグレードすることを推奨します。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["コネクタのアップグレード手順を参照してください"^]。
-* BlueXP分類ソフトウェアは、一度に1つのメジャーバージョンにアップグレードできます。たとえば、バージョン1.20.xがインストールされている場合は、1.21.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。
+* BlueXP分類バージョン1.24以降では、ソフトウェアの将来のバージョンへのアップグレードを実行できます。
++
+BlueXP分類ソフトウェアで1.24より前のバージョンが実行されている場合、一度にアップグレードできるメジャーバージョンは1つだけです。たとえば、バージョン1.21.xがインストールされている場合は、1.22.xにのみアップグレードできます。いくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。
+
 
 
 .手順
@@ -428,7 +435,7 @@ BlueXPの分類ソフトウェアは定期的に新機能で更新されるた�
 +
 [source, cli]
 ----
-tar -xvf DataSense-offline-bundle-v1.22.0.tar.gz
+tar -xvf DataSense-offline-bundle-v1.23.0.tar.gz
 ----
 +
 これにより、インストールファイル* cc_onpm_installer.tar.gz *が抽出されます。

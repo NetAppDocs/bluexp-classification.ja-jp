@@ -374,7 +374,6 @@
   <block id="abcdab0f1cbbe968798a52245b476c30" category="paragraph">* 注： DP ボリュームへのアクセスを最初に有効にしたときに CIFS データ保護ボリュームがない場合は、あとで追加しても、 CIFS DP の有効化ボタン * が設定ページの上部に表示されます。このボタンをクリックして、 CIFS DP ボリュームへのアクセスを有効にする CIFS クレデンシャルを追加します。</block>
   <block id="21118277527dde4297826bff350dbf36" category="admonition">Active Directory クレデンシャルは、最初の CIFS DP ボリュームの Storage VM にのみ登録されているため、その SVM 上のすべての DP ボリュームがスキャンされます。他の SVM 上のボリュームには Active Directory クレデンシャルが登録されないため、これらの DP ボリュームはスキャンされません。</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">詳細はこちら。</block>
-  <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link-macro">方法を参照してください</block>
   <block id="74585f658544c691c6f6afb583a9dc61" category="inline-link-macro">S3 プロトコルを使用するオブジェクトストレージをスキャンしています</block>
   <block id="93f515959ce6187b986c42fa6959168b" category="doc">プライベートデータのカテゴリ</block>
   <block id="10ff4e7c2ffc1fd426aa6f784a05da66" category="section-title">個人データの種類</block>
@@ -941,7 +940,6 @@
   <block id="d709c500efa2b07b31dad2acb1fc7b92" category="list-text">Linux システムがを満たしていることを確認します <block ref="2d54aecca24274aa47c2fb620cd7d497" category="inline-xref-macro-rx"></block>。</block>
   <block id="03d8c71f4932cca67122b714ef67000c" category="list-text">前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。</block>
   <block id="7e1fecc0c3cbd38b434a0a6232a69c06" category="list-text">Linux システムに対する root 権限があることを確認してください。</block>
-  <block id="efa6f10157137475f11a46219066d662" category="list-text">ダークサイトで使用する Linux ホストにインストーラバンドルをコピーします。</block>
   <block id="1eecc2fcccd4fcb3cadd8bec3044d3bb" category="list-text">ホストマシンでインストーラバンドルを解凍します。次に例を示します。</block>
   <block id="cce26d229722c6ca9257990a7091d9c0" category="list-text">[ データセンスを活動化（ Activate Data sense ） ] をクリックし</block>
   <block id="6b0f70e5c18db6f7f252ec60af1fdda0" category="list-text">ホストマシンでインストールファイルを解凍します。次に例を示します。</block>
@@ -1287,8 +1285,6 @@
   <block id="39630dece802514e5f7336bcbbf0ac6f" category="list-text">クレジットカード情報のファイルへの配布を識別するのに役立ちます。 <block ref="ef3bace538be6eee30a3e48516637cf7" category="inline-link-macro-rx"></block>。</block>
   <block id="be27a8dc9dfba1897217ecee5823bd4e" category="list-text">健常性情報がファイルにどのように分散されているかを確認できます。 <block ref="1ce675538fc85bf3b1ef6fa4ab26346c" category="inline-link-macro-rx"></block>。</block>
   <block id="f887e54f519cc35b4741120230ac9d1a" category="paragraph">_Classification_area には ' 最も識別されたリストが表示されます <block ref="b823fa31d5dec268aaa19a8828bf34fe" category="inline-link-macro-rx"></block>、 <block ref="336d27c782a82199a3380deae5570591" category="inline-link-macro-rx"></block>および <block ref="8376771def5b60bb1cfdd0dc180ae5cc" category="inline-link-macro-rx"></block> をスキャンしたデータに保存します。</block>
-  <block id="e661d5c04d5948d390d622ba88bdcc6b" category="section-title">オーストラリアの個人データは、データセンスで新たに 4 種類識別できます</block>
-  <block id="0387123627dfe002c7435c0101983f19" category="section-title">グローバル Active Directory サーバを LDAP サーバとして使用できるようになりました</block>
   <block id="7d3786abf2ebb473a5ba70b680734525" category="section-title">BYOL ライセンスに関する考慮事項</block>
   <block id="e95058755e821bf6cb439e37f1f068d7" category="list-text">スキャンするデータ量がライセンスで許可された容量の 80% に達したとき、および制限に達したときに再度スキャンします</block>
   <block id="d8ea74d0bc0e6f3c5be22312a953d7fb" category="list-text">ライセンスの有効期限が切れる 30 日前と、ライセンスの有効期限が切れたあとに再度有効になります</block>
@@ -1344,15 +1340,6 @@
   <block id="0f259b55b58f019c0dd1cc33fbe10199" category="list-text">[データ調査]ページで、をクリックします <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> ボタンをクリックします。</block>
   <block id="6dc6bf0d1023a1b5714c777b474cce12" category="paragraph">非構造化ファイルデータレポート*には、ファイルに関する次の情報が含まれています。</block>
   <block id="f7a21d48814a155d5e8e39ddbf0827ae" category="paragraph">構造化データレポート*には、データベーステーブルに関する次の情報が含まれています。</block>
-  <block id="6c5c8bcc3e6c86825162a1ff2603c1f3" category="section-title">Google Driveアカウントでのデータスキャンのサポートが追加されました</block>
-  <block id="686f6248c08053e57c0ee91c18b2d097" category="inline-link">Googleドライブアカウントをスキャンする方法をご覧ください</block>
-  <block id="1c569820a2d89c87007e78d8b99f545d" category="inline-link">既存のファイルタイプ</block>
-  <block id="2f8d7f7b2a9f475f94e961eea0214b6f" category="section-title">[データ調査]ページに追加されたディレクトリレベルビュー</block>
-  <block id="a1e4ba958a7013f98fdbb1a883102e86" category="inline-link">スキャンしたデータのディレクトリビューを選択する方法を参照してください</block>
-  <block id="fc923fa1acb929379421a26667fff392" category="section-title">グループを展開して、ファイルにアクセスする権限を持つユーザー/メンバーを表示します</block>
-  <block id="87dc185d970f7684d5d731eebbf8d195" category="inline-link">ファイルに対する読み取り権限または書き込み権限を持つユーザーおよびグループを表示する方法を参照してください</block>
-  <block id="96ab93ed4512cdb4dd07828ed738b502" category="section-title">2つの新しいフィルタが[データ調査]ページに追加されました</block>
-  <block id="9e4e3d73f23809aabccd30c3abe0f99f" category="list-text">「ディレクトリタイプ」フィルタを使用すると、フォルダまたは共有のみを表示するようにデータを絞り込むことができます。結果は新しい*ディレクトリ*タブに表示されます。</block>
   <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">データの調査に使用できるすべてのフィルタのリストを確認します</block>
   <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">現在、 30MB を超えるファイルのラベルは変更できません。OneDrive、SharePoint、Google Driveアカウントの場合、最大ファイルサイズは4 MBです。</block>
   <block id="5ba18772d6c4efd6fedbaf5fb29d559a" category="paragraph">調査ページの内容をフィルタリングして、表示する結果のみを表示できます。これは非常に強力な機能です。データをリファインした後、ページ上部のボタンバーを使用して、ファイルのコピー、ファイルの移動、ファイルへのタグまたはAIPラベルの追加など、さまざまなアクションを実行できます。</block>
@@ -1390,19 +1377,6 @@
   <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">データをフィルタして、特定のファイルを表示します</block>
   <block id="bc80eb794f149fca6a16076a0e09247f" category="list-text">最上位のタブでは、ファイル（非構造化データ）、ディレクトリ（フォルダおよびファイル共有）、またはデータベース（構造化データ）のデータを表示できます。</block>
   <block id="d5ef18883c38c2dd1dffc30e93610cde" category="paragraph">ユーザーファイルが存在するGoogleドライブアカウントを追加します。複数のユーザーからファイルをスキャンする場合は、ユーザーごとにこの手順を実行する必要があります。</block>
-  <block id="f313b26419f4694c764a8d9a38b04ce1" category="section-title">Data Investigationページから結果を.jsonレポートとしてダウンロードできるようになりました</block>
-  <block id="d214193a7fda757836199c60304f2ab0" category="inline-link">Data Investigationページからレポートを作成する方法を参照してください</block>
-  <block id="bef8207d9128cb7b1a5dc68939fc3d45" category="section-title">データセンスUIからデータセンスをアンインストールする機能</block>
-  <block id="d96d07db10c050adfb5fed7e3d885b82" category="section-title">監査ログを使用して、データ検出によって実行されたアクションの履歴を追跡できるようになりました</block>
-  <block id="1ce49760bcdac502d41fb1e9e547086b" category="paragraph">監査ログは、データがスキャンしているすべての作業環境およびデータソースから、ファイルに対してデータが実行した管理アクティビティを追跡します。アクティビティには、ユーザが生成するアクティビティ（ファイルの削除、ポリシーの作成など）と生成されるポリシー（ファイルにラベルを自動的に追加するアクティビティ、ファイルを自動的に削除するアクティビティなど）があります。</block>
-  <block id="f5678b0269d5a9952a36966b56ab8f2e" category="inline-link">監査ログの詳細を確認してください</block>
-  <block id="a74d72e2c5ed113941ee600287aaa999" category="section-title">[データ調査]ページの重要な識別子の数に対する新しいフィルタ</block>
-  <block id="3c5d93e6c38bd86146cef63658df62d2" category="paragraph">「Number of identifiers（識別子の数）」フィルタを使用すると、個人データと機密性の高い個人データの両方を含む、一定数の機密識別子を持つファイルをリストできます。1-10や501-1000などの範囲を選択すると、その数の機密識別子を含むファイルのみを表示できます。</block>
-  <block id="a630192bda7a95f4930b54f41701fc66" category="section-title">これで、作成した既存のポリシーを編集できるようになります</block>
-  <block id="61e409921fe798c5667689af4656a112" category="inline-link">ポリシーの編集方法については、を参照してください</block>
-  <block id="b6d077046b2cf0c110fa9676e30656f1" category="list-text">[データの削除]センスダイアログで、「*uninstall*」と入力して、インスタンスと関連するすべてのデータを削除することを確認し、[アンインストール*]をクリックします。</block>
-  <block id="9fa93379f19a53edba45b6ad3485c2ec" category="list-text">[Uninstall Data sense dialog]に「*uninstall*」と入力して、すべての設定情報をクリアしてから、「Uninstall *」をクリックします。</block>
-  <block id="f5778aefaac6fff25d1b42554bc3eb10" category="list-text">ホストからのアンインストールを完了するには、次のように、ホストマシンでアンインストールスクリプトを実行します。</block>
   <block id="ba7710e66e983f5d109ee54ee938f343" category="paragraph">をクリックできます <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> をクリックすると、グループの一部であるユーザのリストが表示されます。</block>
   <block id="26ec7ebe8b7297e79affc05b3e89352b" category="cell">IDの数</block>
   <block id="9774801e5b642078494706b6a4b33bd0" category="paragraph">コピー処理の進捗状況はで確認できます <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
@@ -1444,9 +1418,6 @@
   <block id="e1b1adec6acf239fb7bfb9f392edd34d" category="list-text">オープンアクセス権</block>
   <block id="c24fc9c3402e7cb47c72d71cf6d864be" category="list-text">ディレクトリタイプ</block>
   <block id="5108bf4a4931cd23ea67515ca4dda122" category="paragraph">有効にすると、すべてのデータソースで低速スキャンが使用されます。 1 つの作業環境またはデータソースで低速スキャンを設定することはできません。</block>
-  <block id="360d69dcc915fa54a4ac5faccbaf2127" category="section-title">2022年6月12日（バージョン1.13.1）</block>
-  <block id="2dd4f685f001cb4e6c0149956ba4a997" category="section-title">2022年5月11日（バージョン1.12.1）</block>
-  <block id="07de9e897e96f5f63e0778d691b62d59" category="section-title">2022年4月5日（バージョン1.11.1）</block>
   <block id="49346bec66601a23d58acfc71f396d3f" category="list-text">Azure NetApp Files の場合は、スキャンするボリュームと同じ領域に配置する必要があります。</block>
   <block id="b39e81db6545fcc5e2567ec3c6930540" category="section-title">政府機関によるサポート</block>
   <block id="b3478a494adde25715314b14559dd6a4" category="list-text">OneDriveアカウント、SharePointアカウント、Googleドライブアカウントはスキャンできません。</block>
@@ -1482,7 +1453,6 @@
   <block id="9fadb6e2508d92e954b40d39c36e9687" category="inline-link">ポリシーの作成の詳細については、こちらをご覧ください</block>
   <block id="7d96313dbf4a19b7144c3ff41f415250" category="section-title">データセンスでは、一度に最大100,000個のファイルを移動できます</block>
   <block id="3e0c53bc3881ac60b7e7165fda5915c1" category="inline-link">データセンスを使用してファイルを移動する方法をご覧ください</block>
-  <block id="c761b545ddd43d078ae7ea86495182db" category="paragraph">Data Sense と統合するグローバル Active Directory サーバは、以前にサポートされていた DNS サーバに加えて、 LDAP サーバにすることができます。 <block ref="de464dfb9c55e9818cd55e6911bff3a5" category="inline-link-macro-rx"></block>。</block>
   <block id="dfb9b838b2fdca41edadb04c9ebbb240" category="list-text">ネットアップ以外のCIFSファイル共有（NFSファイル共有は除く）</block>
   <block id="9816532bdb11b99d3175be528e41c5b6" category="cell">Texas Driver's License</block>
   <block id="89b56b1e048dcf0ec285e29a05d6d029" category="paragraph">同じ名前のファイルがコピー先に存在する場合、そのファイルは移動されません。</block>
@@ -1553,7 +1523,6 @@
   <block id="93527746a0aabc74aefe0ff55c837bc7" category="list-text">1つ以上のデータソースで、概要レベルのマッピングまたは詳細レベルのスキャンを有効にします。</block>
   <block id="c442f433b878bcb44759d46bd9921901" category="list-text">スキャンするデータベース内の特定の列に基づいて一意の識別子を追加できます。</block>
   <block id="68bd9fa0417b646f5dcd316727b11be1" category="list-text">正規表現（regex）を使用してパーソナルパターンを追加できます。既存の定義済みパターンに正規表現が追加されます。</block>
-  <block id="7a4f785c9bf1b41e9eb899da0e988d27" category="paragraph">次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。追加した各ソース列は、「Table.Column」という形式でフィルタリストに表示されます。たとえば、「customers.CustomerID」のようになります。</block>
   <block id="86776d2aca02c16f7beb228e9112d324" category="inline-image-macro">［調査結果］ペインに表示されるData Fusion の結果の例を示すスクリーンショット。</block>
   <block id="4275c0ed3233cbea8a2f0bc0d2c33395" category="paragraph"><block ref="4275c0ed3233cbea8a2f0bc0d2c33395" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0bac9ec0256a9fd2858c7836245c9025" category="list-text">AWSの場合：&lt;ec2-user&gt;を使用します</block>
@@ -1975,8 +1944,6 @@
   <block id="7a8c400460fcd57ab61e646f8f7222ff" category="list-text">すべてのSharePointサイトへの読み取りアクセスを提供するSharePointアカウントの管理者ユーザーのログイン資格情報が必要です。</block>
   <block id="fbd2a3d3a2a95ffb088fd8e0ccf6b67d" category="list-text">SharePoint Onlineの場合、管理者以外のアカウントを使用できますが、スキャンするすべてのSharePointサイトにアクセスするには、そのユーザーに権限が必要です。</block>
   <block id="5e6d4a84337eb1e0ff5a019edf3a15d6" category="section-title">機密データが含まれ、過度に許容されるファイルのグラフを表示する機能</block>
-  <block id="ee7392d2316f5d3dd66a6f38dfd1dbfb" category="list-text">「ユーザ/グループの権限」フィルタを使用すると、特定のユーザまたはグループに対する読み取り/書き込み権限があるファイル、フォルダ、および共有を表示できます。複数のユーザまたはグループの名前を選択するか、名前の一部を入力できます。</block>
-  <block id="d03ac14c4e429af55c127e304518d56e" category="paragraph">データセンスは、オーストラリアTFN (税ファイル番号)、オーストラリア運転免許証番号、オーストラリア医薬品番号、オーストラリアパスポート番号を含むファイルを識別し、分類することができます。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
   <block id="3631ca73c04d0e5a0d6b08517f6f049f" category="cell">日本の個人識別番号（個人および会社）</block>
   <block id="21e0d61d9e797a17767287de32bd7bef" category="list-text">HR -健全性カテゴリ</block>
   <block id="46bd1bd2277d77e6f044cdb7a6983fc6" category="inline-image-macro">[詳細]ボタン</block>
@@ -2004,7 +1971,6 @@
   <block id="dfc0ae4804b6b33aec281efa7221c9f8" category="list-text">[データ分析ツールの選択]ページで、分類子の定義に使用するメソッドとして[カスタム正規表現*]を選択し、[次へ*]をクリックします。</block>
   <block id="a9569396e69f952ac709738236397e87" category="list-text">Create Logic_pageで、正規表現と近接文字を入力し、* Done *をクリックします。</block>
   <block id="13ba2d1d9a0f00239a30b9470cb310b7" category="list-text">必要に応じて、近接キーワードを入力して結果の精度を高めることができます。検索対象のパターンの300文字以内（検出されたパターンの前または後）に検索されるのが一般的な単語です。単語またはフレーズをそれぞれ別の行に入力します。</block>
-  <block id="1e7880d19e1061f1e0be8da511ed88eb" category="inline-image-macro">顧客分類子のregexおよびproximity wordsを入力するスクリーンショット。</block>
   <block id="8925d45313a1840fbda58900234b9850" category="inline-image-macro">スキャンを実行中の新しい正規表現分類子がシステムに追加された結果を示すスクリーンショット。</block>
   <block id="a70eb09ec7232b2b5daa5a4ed1191637" category="paragraph"><block ref="a70eb09ec7232b2b5daa5a4ed1191637" category="inline-image-macro-rx" type="image"></block></block>
   <block id="271475eb7f78f9d2e008af17381b1de6" category="section-title">カスタム分類子の結果を表示します</block>
@@ -2155,12 +2121,8 @@
   <block id="e3c79b2ff3bee6052bf8c4ee0232f80e" category="paragraph"><block ref="e3c79b2ff3bee6052bf8c4ee0232f80e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9e4767f52f09ad6e7ef4b30d384072e4" category="list-text">[データ分析ツールの選択]ページで、分類子の定義に使用する方法として*[カスタムキーワード]*を選択し、*[次へ]*をクリックします。</block>
   <block id="3a90a5ca5e14d97fff479f3d90241b87" category="list-text">[_Create Logic_]ページで、認識するキーワード（各単語を別 々 の行に入力）を入力し、*[Validate]*をクリックします。</block>
-  <block id="191f56b08d3aa6205b1fc04740933cb0" category="inline-image-macro">顧客分類子のキーワードを入力したスクリーンショット。</block>
-  <block id="e118360bc0be2d158a035dd090d97a14" category="paragraph"><block ref="e118360bc0be2d158a035dd090d97a14" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4a0c8017c43848ad16733c719676cca0" category="paragraph">スキャンが完了すると、コンプライアンスダッシュボードの[個人結果]セクションと[個人データ]フィルタの[調査]ページに、この新しい情報が結果に含まれます。</block>
   <block id="9d56a2a830feae88d7c977220b52c2f0" category="paragraph">ご覧のように、分類子の名前が個人結果パネルの名前として使用されます。このようにして、さまざまなキーワードグループをアクティブ化し、各グループの結果を表示できます。</block>
-  <block id="2941998d10d5b129985cf6f71952d76a" category="paragraph">を参照してください<block ref="58ff2edcee6f09ed29d8b1fa3d90f44d" category="inline-link-rx"></block> 正規表現の作成にサポートが必要な場合は、</block>
-  <block id="bc88bee93425842eaf0d676cafac7772" category="paragraph"><block ref="bc88bee93425842eaf0d676cafac7772" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1d221f76e0177c019cf82913885bbd0d" category="section-title">カスタムカテゴリを追加します</block>
   <block id="0741a8e3d0de49fd54dd6e2c08c12535" category="inline-link-macro">事前定義されたカテゴリのリストを参照してください</block>
   <block id="68791bee5ed94dd2236ce0d5fb76ef7c" category="paragraph">カテゴリを使用すると、保有している情報の種類を表示して、データの状況を把握することができます。たとえば、_resumes_or_employee contracts_のようなカテゴリには、機密データが含まれている場合があります。結果を調査すると、従業員契約が安全でない場所に保存されていることがわかります。その後、その問題を修正できます。</block>
@@ -2749,7 +2711,6 @@
   <block id="af0ca0f7eeb04884e0718a50bbcfb74d" category="paragraph">BlueXPの分類では、BlueXP Canvasに追加した作業環境や、BlueXPの分類がネットワーク経由でアクセスできるさまざまな種類の構造化/非構造化データソースのデータをスキャンできます。</block>
   <block id="33131c83033941e511576a90476300a6" category="paragraph">BlueXPの分類では、NFSバージョン3.x、4.0、4.1、CIFSバージョン1.x、2.0、2.1、3.0がサポートされます。</block>
   <block id="4f554b82a208efb281c300628a271b8e" category="section-title">インターネットにアクセスできないサイトにBlueXP分類をインストールすると、どのようなデータソースをスキャンできますか？</block>
-  <block id="3defc371ca20714c31806a8ab1d93135" category="paragraph">BlueXPの分類では、オンプレミスサイトのローカルなデータソースのデータのみをスキャンできます。現時点では、BlueXPの分類では「ダーク」サイト内の次のローカルデータソースをスキャンできます。</block>
   <block id="bc90c1660d729d86ab10b8018a956932" category="paragraph">BlueXPの分類は、すべてのファイルをスキャンしてカテゴリやメタデータの分析情報を取得し、ダッシュボードの[File Types]セクションにすべてのファイルタイプを表示します。</block>
   <block id="6352911cc42108d1f16863e618ef84d4" category="paragraph">BlueXPの分類でPersonal Identifiable Information（PII）が検出された場合、またはDSAR検索が実行された場合、サポートされるファイル形式は次のとおりです。</block>
   <block id="d288c89eadda3d7c229b7316faf2209a" category="section-title">BlueXPの分類では、どのような種類のデータやメタデータがキャプチャされますか？</block>
@@ -2812,7 +2773,6 @@
   <block id="e88adea3b212c154801612c8605db6d5" category="paragraph">Data Fusion _という機能を使用すると、組織のデータをスキャンして、データベースからの一意の識別子が他のいずれかのデータソースに存在するかどうかを確認できます。データベーステーブルで特定の列を選択することで、BlueXPのスキャンで検索される追加の識別子を選択できます。たとえば、次の図は、データ Fusion を使用してボリューム、バケット、およびデータベースをスキャンし、 Oracle データベースからすべての顧客 ID が出現する状況を示しています。</block>
   <block id="905a4962b323594ff4605a44781efa64" category="paragraph">独自のデータベースをスキャンするため、データが保存されている言語に関係なく、今後のBlueXP分類スキャンでデータを識別するために使用されることに注意してください。</block>
   <block id="7d6ff4779a51eda37c81632e481e5db2" category="paragraph">が必要です <block ref="4ec8c7ffee3077e2fe1a50f122f89322" category="inline-link-macro-rx"></block> データFusion ソースを追加する前に、をBlueXPの分類に追加する必要があります。</block>
-  <block id="f0d905a2b95158fa649adac1455f5138" category="paragraph">[Data Fusion inventory]ページには、スキャンするように設定したデータベースソースの列が表示されます。</block>
   <block id="7c655988789d416c5a4a87e462cfe874" category="paragraph">BlueXPの分類にカスタムキーワードを追加すると、その情報がデータ内のどこにあるかがわかるようになります。キーワードを追加するには、BlueXPの分類で認識したい単語を1つずつ入力します。これらのキーワードは、BlueXPの分類ですでに使用されている定義済みの既存のキーワードに追加され、結果は個人のパターンセクションに表示されます。</block>
   <block id="ddebf200916f487e633020a034f5904d" category="paragraph">カスタムキーワードを更新すると、BlueXP分類によってすべてのデータソースのスキャンが再開されます。スキャンが完了すると、BlueXP分類コンプライアンスダッシュボードの[Personal Results]セクションと[Investigation]ページの[Personal Data]フィルタに新しい結果が表示されます。</block>
   <block id="3702db8c41a7dd17f1292e46a0b6c861" category="paragraph">入力した名前は、BlueXP分類UIに分類子の要件に一致するスキャン済みファイルの見出しとして表示され、[Investigation]ページにフィルタの名前として表示されます。</block>
@@ -2877,13 +2837,10 @@
   <block id="c07dbec3e7acd472789625d35a7563da" category="paragraph">BlueXPの分類では、Amazon S3とデータベースを除くすべてのデータソースタイプでディレクトリのスキャンがサポートされます。現在、単一のディレクトリ（フォルダまたは共有）または複数のディレクトリの再スキャンがサポートされています。今後のサポートには、追加のリポジトリタイプ（ファイル、データベースなど）の再スキャンが含まれます。</block>
   <block id="eb069b124d02b06908e1071cc2edae80" category="summary">データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響がごくわずかであっても問題が発生する場合は、「低速」スキャンを実行するようにBlueXPの分類を設定できます。</block>
   <block id="97ef33fd9429f1df7d0c8f2bd514652f" category="doc">BlueXPの分類スキャン速度が低下します</block>
-  <block id="4ee44614605fdee3023ee5e90fc32c96" category="summary">インターネットにアクセスできないオンプレミスサイトのLinuxホストにBlueXP分類をインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。</block>
   <block id="640f79fe2c11ee3747373fdc28e64b1d" category="doc">インターネットにアクセスできないホストにBlueXP分類をインストールします</block>
   <block id="4f7157701d2db96edcc01457067a6771" category="inline-link-macro">インターネットにアクセスできるオンプレミスサイトにBlueXPの分類を導入します</block>
   <block id="90815e3d99ff61b4887b2f941fff4e46" category="paragraph">また、次のことも可能です <block ref="1a9c56cdde8c9a93a744fbe95f12b64a" category="inline-link-macro-rx"></block>。</block>
   <block id="e883a1e45b8fba8675ed0e79f4a46200" category="paragraph">BlueXPの分類インストールスクリプトでは、まず、システムと環境が必要な前提条件を満たしているかどうかが確認されます。前提条件がすべて満たされている場合は、インストールが開始されます。BlueXP分類のインストールとは別に前提条件を確認する場合は、前提条件のみをテストする別のソフトウェアパッケージをダウンロードできます。 <block ref="18e558c0c5f7db863c39638301013423" category="inline-link-macro-rx"></block>。</block>
-  <block id="c383b2b4ecaf670c0911464dc58a95f6" category="paragraph">この方法でインストールした場合（「オフライン」または「ダーク」サイトと呼ばれることもあります）、BlueXPの分類では、同じくオンプレミスサイトのローカルなデータソースのデータしかスキャンできません。現時点では、BlueXPでは次の*ローカル*データソースをスキャンできます。</block>
-  <block id="1c4bb213d1712e300bd8be0758e63681" category="paragraph">現在、Cloud Volumes ONTAP 、Azure NetApp Files 、FSx for ONTAP 、AWS S3、Googleドライブのスキャンはサポートされていません。 BlueXPの分類がダークサイトに導入されている場合は、OneDriveまたはSharePoint Onlineアカウント。</block>
   <block id="00c4bd00ffe3dc5bd31127d620af994f" category="paragraph">BlueXPのほとんどの分類機能は、インターネットアクセスのないサイトに導入した場合に機能します。ただし、インターネットアクセスを必要とする特定の機能はサポートされていません。たとえば、次のような機能があります。</block>
   <block id="3810a01b94974a043d567ab2db7a696e" category="list-text">BlueXPのコピーと同期を使用したソースファイルのコピーと同期</block>
   <block id="4e723b95287afbde0f6a8cc51611032a" category="inline-link-macro">BlueXPの分類に関するリリースノート</block>
@@ -2924,7 +2881,6 @@
   <block id="3cbfe5d6050d3fa6a178743d08cc033f" category="paragraph">BlueXP分類インストーラがパッケージのインストールを完了し、インストールを登録します。インストールには 15 ～ 25 分かかる場合があります。</block>
   <block id="f00f20082c79c9a705bd40373b5cc586" category="section-title">BlueXP分類ソフトウェアをアップグレードします</block>
   <block id="63f5b4da5545b30a2083b6f7eedcd826" category="paragraph">BlueXPの分類ソフトウェアは定期的に新機能で更新されるため、定期的に新しいバージョンをチェックして、最新のソフトウェアや機能を使用しているかどうかを確認する必要があります。自動的にアップグレードを実行するためのインターネット接続がないため、BlueXP分類ソフトウェアは手動でアップグレードする必要があります。</block>
-  <block id="c8394b699f3b76874fd2d529699d8d72" category="list-text">BlueXP分類ソフトウェアは、一度に1つのメジャーバージョンにアップグレードできます。たとえば、バージョン1.20.xがインストールされている場合は、1.21.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
   <block id="b814c5d8e5cff4b4ed2155ea6a2243a8" category="list-text">BlueXP分類がインストールされているダークサイトのLinuxホストにソフトウェアバンドルをコピーします。</block>
   <block id="7780686cdd0be0a9a8a2193a030392e5" category="paragraph">ホストでBlueXP分類ソフトウェアがアップグレードされます。更新には 5 ～ 10 分かかる場合があります。</block>
   <block id="0c15d0871362e4ad1de8e6731ecdac22" category="paragraph">大規模な構成をスキャンするために複数のホストシステムにBlueXP分類を導入している場合は、スキャナノードでアップグレードする必要はありません。</block>
@@ -3072,11 +3028,9 @@
   <block id="ae2fd70b5fccf0d18c6c0a33a953aa3b" category="doc">BlueXP分類をアンインストールしています</block>
   <block id="f93e118724d27bde2efdff3938b9b6df" category="paragraph">使用する必要がある手順は、BlueXPの分類をクラウドとオンプレミスのどちらのホストのどちらに導入したかによって異なります。</block>
   <block id="8d8f6d516c2b2976c4b330129843859b" category="section-title">クラウド環境からBlueXP分類をアンインストールします</block>
-  <block id="fcab398c475cbf16e71f0af73d900dc3" category="paragraph">BlueXP分類を使用する必要がなくなった場合は、クラウドプロバイダからBlueXP分類インスタンスをアンインストールして削除できます。</block>
   <block id="fb718f900bda591d59ded552d9f94de8" category="list-text">BlueXPの分類ページの上部にあるをクリックします <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 次に、[データセンスのアンインストール]をクリックします。</block>
   <block id="36c78ffc00f44e6669853141b4757135" category="inline-image-macro">BlueXP分類ソフトウェアをアンインストールするボタンのスクリーンショット。</block>
   <block id="f4b93d0f798b3e20a2411b62607f9933" category="paragraph"><block ref="f4b93d0f798b3e20a2411b62607f9933" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b5898183cb0358b8b05a7f376a3ca8c7" category="paragraph">クラウドプロバイダのコンソールに移動して、そこからBlueXP分類インスタンスを削除することもできます。インスタンスの名前は _CloudCompliancy_with で、生成されたハッシュ（ UUID ）を連結しています。例： _CloudCompliion-16bb6564-38ad-40802-9a92-36f5fd2f71c7_</block>
   <block id="a3b42cd70d6e63a58b881566f7a8992b" category="section-title">オンプレミス環境からBlueXP分類をアンインストールします</block>
   <block id="19699e7aed7e972e489e53b7a581039d" category="paragraph">BlueXP分類を使用する必要がなくなった場合や、問題 の再インストールが必要な場合は、ホストからBlueXPをアンインストールできます。</block>
   <block id="0b139c0236cbbe51386a48380dccef80" category="summary">BlueXPの分類では、プライベートデータをさまざまな方法で管理、整理できます。これにより、最も重要なデータを簡単に確認できます。</block>
@@ -3160,7 +3114,6 @@
   <block id="2e1a4e3f55001820560b237188c70bc3" category="cell">/var/lib/dockerを使用します</block>
   <block id="651ffe70d1da174ca6955ceb139ab71c" category="cell"><block ref="20218561600e990c68a725b6b98ae569" prefix="" category="inline-code"></block></block>
   <block id="361e697d946a0a8473f2bda1979090c3" category="cell">/user/lib/systemd/system</block>
-  <block id="fa17233f7eaadf931550cd80b9ba0e45" category="list-text">RHELまたはCentOSバージョン7.8または7.9を使用できますが、Linuxカーネルのバージョンは4.0以降である必要があります</block>
   <block id="9997b2ae11cbffd6fe1a6e9f683ed24a" category="paragraph">+ BlueXPの分類スキャンでファイルの「最終アクセス日時」が変更されないようにするには、CIFSでは「属性の書き込み」権限、NFSでは「書き込み」権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。</block>
   <block id="ae4d468f55febeccb4eff973d9b635ff" category="inline-link-macro">データ主体の詳細については、こちらをご覧ください</block>
   <block id="1a7107cbf75ccf5399b80fbafd0ee649" category="cell">データ主体のフルネームまたは既知の識別子を入力します <block ref="dbe06c006d2f67629a75e1ec088edbea" category="inline-link-macro-rx"></block>。</block>
@@ -3198,7 +3151,6 @@
   <block id="b8896222e179e8ba790e363bd135ecae" category="paragraph">AzureおよびAzure Government環境には、追加のインバウンドおよびアウトバウンドのセキュリティグループルールが必要です。を参照してください<block ref="179e195cc8e81b19d72f9ddb7460e81f" category="inline-link-rx"></block> を参照してください。</block>
   <block id="ccb7563cf9bbae3ac26b7f8f10f59968" category="paragraph">そのため、これらの場所の多くにデータがある場合は、を使用する必要があります<block ref="bc298eaca29e4bff3f0d222b24813861" category="inline-link-rx"></block>。</block>
   <block id="c2a51289509ec65eb3621726e2760f5a" category="paragraph">はい。可能です<block ref="643a4fbaa5b15b86bda31e47e3f0d2bb" category="inline-link-rx"></block> ネットワーク内のLinuxホストまたはクラウド内のホスト。BlueXP分類をオンプレミスに導入する予定の場合は、コネクタもオンプレミスにインストールすることを推奨しますが、必須ではありません。</block>
-  <block id="b4ebf9c8f6076746b08fc48974345e32" category="paragraph">はい、サポートされています。可能です<block ref="1c270efcf36a8d1c2de58c1ed2ed7315" category="inline-link-rx"></block>。その後、オンプレミスのONTAP クラスタとその他のローカルデータソースを検出し、BlueXPの分類を使用してデータをスキャンできます。</block>
   <block id="abefc4760bb681a677a193d3f612cf4f" category="paragraph">FSX で ONTAP ボリュームをスキャンする前に、<block ref="7452eb54bbdeb3cd1b4f5d5a58a8a661" category="inline-link-rx"></block>。</block>
   <block id="bbb49ffca9a7a090a24129f517c49921" category="paragraph"><block ref="cfae4f09920e34de0a804a19a3f6c70a" category="inline-link-rx"></block>。</block>
   <block id="52ba8ac12050d2494572b940a0d65b25" category="list-text"><block ref="52ba8ac12050d2494572b940a0d65b25" category="inline-link-rx"></block></block>
@@ -3227,8 +3179,6 @@
   <block id="30fc689a9c3cd4222329fe3a4c818a33" category="paragraph">お使いのNetApp Support Siteのアカウントがドロップダウンリストにない場合は、<block ref="06a3bc9d474b5d4e44d1a2733cac785a" category="inline-link-rx"></block>。</block>
   <block id="94a52882adfe57c5834eeba52357fc83" category="paragraph">必要に応じて、これらの結果をレポートにエクスポートして、権限が原因でスキャンされているファイル、またはスキャンされていないファイルを確認できます。<block ref="12cdeb999c26684f4f639c285d1ab42e" category="inline-link-rx"></block>。</block>
   <block id="8d6538084049892228b105ee80ab20a7" category="paragraph">BlueXP ConnectorとBlueXPのどちらも、新機能を有効にするために定期的な手動アップグレードが必要になります。BlueXP分類バージョンは、BlueXP分類UIページの下部で確認できます。を確認します <block ref="4cc8c968e2438af740515443c2861b36" category="inline-link-macro-rx"></block> 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します<block ref="ec79fe10499592bc63065061930fbb06" category="inline-link-rx"></block> および <block ref="b1d8f2a5489be1789530a7fc668375fb" category="inline-xref-macro-rx"></block>。</block>
-  <block id="ba29241cb1ada66fbef1294aa7e1002a" category="paragraph">オフラインのオンプレミスサイトにコネクタがまだインストールされていない場合は、<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> Linux ホストの場合は、</block>
-  <block id="b63ff2e2b175854ce3610e27e52a6f21" category="paragraph">オフラインのオンプレミスサイトにBlueXPコネクタがインストールされていない場合は、<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> オフラインサイトの Linux ホスト</block>
   <block id="772608951c3bed8c37dd30e4fa52ea7a" category="list-text">BlueXP分類インスタンスのリソースを導入し、セキュリティグループを作成するための権限がコネクタに割り当てられていることを確認します。BlueXPの最新の権限は、で確認できます<block ref="12017b43c12237092f4f947467fd170e" category="inline-link-rx"></block>。</block>
   <block id="4da25d5e326dac4c0bb3865e69dd3325" category="paragraph">Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、システムの調査結果を強調し、懸念領域と潜在的な修復手順を示します。このレポートの目的は、データガバナンスの懸念、データセキュリティの危険性、データセットのデータコンプライアンスギャップに対する認識を高めることです。<block ref="34e879e713683b8352bb56b59c6078e2" category="inline-link-rx"></block>。</block>
   <block id="38e8bfeb390cec6e72d97323084e18cc" category="paragraph">AWS環境のBlueXP ConnectorからBlueXPの分類を導入する際に、デフォルトのインスタンスよりも小さい2つのインスタンスタイプから選択できるようになりました。小規模な環境をスキャンする場合は、クラウドコストを節約できます。ただし、小さいインスタンスを使用する場合はいくつかの制限があります。<block ref="d8ef680ce45b86e2a6afe2805a7e5562" category="inline-link-rx"></block>。</block>
@@ -3260,15 +3210,6 @@
   <block id="3b572d9c05ed055da6459f3e2b6bea84" category="paragraph">スキャンを一時停止した場合、ボリュームやバケットに対する追加や変更はデータスキャンで今後実行されませんが、現在の結果はすべてシステムで確認できます。<block ref="fba52941eb2875e9ea6da4ed2fe28022" category="inline-link-rx"></block>。</block>
   <block id="03b10003577e8d37f10edbb62ef2ee5c" category="paragraph">以前は、カスタムポリシーを作成したときに、検索条件に一致したファイルが結果に表示されていました。これで、クエリに一致するディレクトリ（フォルダおよびファイル共有）も結果に表示されます。<block ref="ccb93d8e566e1e038edf17d92ae50d0d" category="inline-link-rx"></block>。</block>
   <block id="eaca269100e6cf0779ac7a4fcd678906" category="paragraph">スキャンしたデータソースからNFS共有へのファイル移動にData Senseを使用する場合は、ファイルの最大数が100、000ファイルに増加しています。<block ref="5a5ecc63e9c44abe629f0e448f245359" category="inline-link-rx"></block>。</block>
-  <block id="2861f70af3b42e90eec7e285c70a9c8d" category="paragraph">[データ調査]ページでデータをフィルタリングした後、データを.jsonファイルに保存してNFS共有にエクスポートできます。これにより、ローカルシステム上の.csvファイルにデータを保存することができます。データセンスにエクスポートアクセスのための正しい権限があることを確認します。<block ref="7afde6877e2ae4e967ec248e30653d66" category="inline-link-rx"></block>。</block>
-  <block id="478f08fe5b5fe809c6b21f13651500da" category="paragraph">Data Senseをアンインストールして、ソフトウェアをホストから完全に削除することができます。クラウドの導入の場合は、Data Senseが導入されていた仮想マシン/インスタンスを削除します。インスタンスを削除すると、データセンスがスキャンしたインデックス情報がすべて完全に削除されます。<block ref="bdca54d6bf3eebba0728d5a1d7eb236c" category="inline-link-rx"></block>。</block>
-  <block id="cd86045a347ee0d8457de102c22a7fdf" category="paragraph"><block ref="5c757199826793147ff22b567458314b" category="inline-link-rx"></block>。</block>
-  <block id="59bf226793c8978b0bab2ae77843401d" category="paragraph"><block ref="7a7e187b1204a0f471af3266bca88524" category="inline-link-rx"></block>。</block>
-  <block id="53736873f529dad7bd7046cb7661c6a9" category="paragraph">以前に作成したカスタムポリシーに変更を加える必要がある場合は、新しいポリシーを作成する代わりにポリシーを編集できるようになりました。<block ref="e3bc30380d421ea397691bfc976eb397" category="inline-link-rx"></block>。</block>
-  <block id="fea76c790acd43cf50315716dc8913b1" category="paragraph">Googleドライブアカウントからドキュメントやファイルをスキャンするために、Googleドライブアカウントをデータセンスに追加できるようになりました。<block ref="7a1afe123dfdc25a0ad9a0e77396e331" category="inline-link-rx"></block>。</block>
-  <block id="5d453722647d508b47c2cac8119abeed" category="paragraph">データセンスは、に加えて、Googleドキュメントスイート（ドキュメント、シート、スライド）からGoogleファイルタイプ内の個人識別情報（PII）を識別できます<block ref="aae50f4bf2d5955e33e4448cfc2446cf" category="inline-link-rx"></block>。</block>
-  <block id="7a7144f5247ce7406c8787806665c592" category="paragraph">すべてのファイルおよびデータベースのデータを表示およびフィルタリングするだけでなく、[データ調査]ページのフォルダおよび共有内のすべてのデータに基づいてデータを表示およびフィルタリングできるようになりました。ディレクトリには、スキャンされたCIFS共有とNFS共有、OneDrive、SharePoint、Google Driveフォルダのインデックスが作成されます。これで、権限を表示し、ディレクトリレベルでデータを管理できるようになりました。<block ref="f2a55e31f0ac3e171d1e45b8e3eb2c50" category="inline-link-rx"></block>。</block>
-  <block id="019559d3bd068962cb59afee4e2967d5" category="paragraph">データセンス権限機能の一部として、ファイルにアクセスできるユーザとグループのリストを表示できるようになりました。各グループを展開すると、グループ内のユーザのリストが表示されます。<block ref="70d54ddc5877b170257ba4130e65b17c" category="inline-link-rx"></block>。</block>
   <block id="9aeb191a0aa6c1027436d873f00b71c9" category="paragraph">可能です<block ref="1f636e96c754f54f3e3b5b9bf17177fa" category="inline-link-rx"></block> ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。BlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。</block>
   <block id="1b01b1e09dd0c52ed6a6d8b4ca2a0568" category="paragraph">クラウドプロバイダ環境でコネクタを作成するには、を参照してください<block ref="43c354a9e10c487e79b72ac55319f506" category="inline-link-rx"></block>、<block ref="f57cc468ab9bea4198c876368a971c60" category="inline-link-rx"></block>または<block ref="4ed2379781d8ba33fa9fe0959039a8e2" category="inline-link-rx"></block>。</block>
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
@@ -3297,9 +3238,6 @@
   <block id="643a860f992333b8600ea264aca7c4fc" category="cell">E メールアドレス</block>
   <block id="52d854882d971396b8b17f8ac787c3c5" category="cell">IBAN番号（国際銀行口座番号）</block>
   <block id="5b8c99dad1893a85076709b2d3c2d2d0" category="cell">IP アドレス</block>
-  <block id="e5051949dc3a37f9077e85df0f1c8a21" category="list-text">Ubuntu 22.04.</block>
-  <block id="bfb5ca6a1be7e27bafb8e663408b453a" category="list-text">Red Hat Enterprise Linuxバージョン8.0~8.5</block>
-  <block id="0d424e96e4117758c3bc3268ab82bacf" category="list-text">CentOSバージョン8.0~8.5</block>
   <block id="3dac7b81357a4f4b160a2d842c8e7348" category="list-text">CIFS-139（TCP\UDP）および445（TCP\UDP）の場合</block>
   <block id="130c9b78c071186d7e3d61f1c4eb4c60" category="list-text">BlueXP Connectorソフトウェアを最新バージョンにアップグレードすることを推奨します。<block ref="1189728130fe33c2fb7adb2d97a83d35" category="inline-link-rx"></block>。</block>
   <block id="78b65cf97b25c47011081025c212c7c0" category="paragraph">BlueXPの分類をクラウドに導入する前に、次の前提条件を確認して、サポートされる構成があることを確認してください。BlueXP分類をクラウドに導入する場合、コネクタと同じサブネットに配置されます。</block>
@@ -3402,4 +3340,79 @@
   <block id="7273543485153af36bd67d8d37fe08b3" category="summary">スキャンするファイルのいずれかがアクセスまたは変更されたときにイベントがファイルに記録されるように、BlueXPの分類を設定できます。次に、このログファイル（ファイルアクセス監査ログ）の内容を表示するか、ファイルをダウンロードして、どのファイル変更が行われたか、誰によって行われたかを確認できます。</block>
   <block id="145ca78924109b125fb405dc2644ebba" category="paragraph">この機能は、ONTAP ソフトウェアを実行している作業環境内の重要なボリュームで有効にすることができます。ボリュームで有効にすると、ボリューム内のすべてのファイルおよびディレクトリについてファイルアクセスイベントが追跡されます。この機能はに基づいています<block ref="215c8ae39ab5aa2af1bf0d7956d6ac15" category="inline-link-rx"></block> ONTAP システムから、BlueXP分類システムをFPolicyサーバとして使用してONTAP から通知メッセージ（イベント）を受信します。BlueXPの分類では、ONTAPから1秒あたり約990のイベントを処理できます。</block>
   <block id="7a6df57d74a900c4b9e956add6358c97" category="paragraph">インストールを正常に完了するには、インストーラによって事前チェックが実行され、システムとネットワークの要件が満たされていることが確認されます。<block ref="4ca4cc07e57f7afbeb1dff6c98bd6092" category="inline-link-rx"></block> 事前チェックのメッセージとその影響を理解する。</block>
+  <block id="809de3d4b48cba202a3e92df9b5646ca" category="paragraph">BlueXP分類を使用する必要がなくなった場合は、クラウドプロバイダ環境からBlueXP分類インスタンスをアンインストールして削除できます。</block>
+  <block id="7b608a074398a486bc744655598680ea" category="list-text">[_Uninstall Data Sense_]ダイアログで、「* uninstall *」と入力してBlueXPコネクタからBlueXP分類インスタンスを切断することを確認し、*[アンインストール]*をクリックします。</block>
+  <block id="f10f83db534963d9efae7a297e100091" category="list-text">クラウドプロバイダのコンソールに移動し、BlueXP分類インスタンスを削除します。インスタンスの名前は _CloudCompliancy_with で、生成されたハッシュ（ UUID ）を連結しています。例： _CloudCompliion-16bb6564-38ad-40802-9a92-36f5fd2f71c7_</block>
+  <block id="961ca08e58e9f85191f5707bc4dac07a" category="paragraph">これにより、BlueXPの分類によって収集されたインスタンスと関連するすべてのデータが削除されます。</block>
+  <block id="2c81bcce32daace3a1e27ca8e62dfd40" category="list-text">ホストからソフトウェアをアンインストールするには、<block ref="cc561bef4dbd2996ec2b2478f3e1042d" prefix=" " category="inline-code"></block> ホストマシン上のスクリプト。例：</block>
+  <block id="e1add3649abfc02bc2a83bd64183210e" category="summary">インターネットアクセスがないオンプレミスサイト（「プライベートモード」とも呼ばれます）のLinuxホストにBlueXP分類をインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。</block>
+  <block id="05e22c2c931d6a4218f029a72eeb9206" category="inline-link">BlueXP ConnectorとBlueXPの分類のさまざまな導入モードについて説明します。</block>
+  <block id="3c86f5b7f0c9db7841cc30ae9d32c2c2" category="paragraph"><block ref="a9635649936a46cf7723db5b3c00a913" category="inline-link-rx"></block>。</block>
+  <block id="2d2dd43d5ab43d823e03c94645202108" category="paragraph">プライベートモード（「オフライン」または「ダーク」サイトと呼ばれることもある）がインストールされている場合、BlueXPの分類では、オンプレミスサイトに対してローカルなデータソースのデータしかスキャンできません。現時点では、BlueXPでは次の*ローカル*データソースをスキャンできます。</block>
+  <block id="d2a2c5ad694a196d91103a3db366503f" category="paragraph">現在、Cloud Volumes ONTAP、Azure NetApp Files、FSx for ONTAP、AWS S3、Googleドライブのスキャンはサポートされていません。 BlueXP分類がプライベートモードで導入されている場合は、OneDriveまたはSharePoint Onlineアカウント。</block>
+  <block id="548a75d789202d935a1a2f04740b1caf" category="paragraph">プライベートモードでコネクタがインストールされていない場合は、<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> Linux ホストの場合は、</block>
+  <block id="958f4b7cbe550d6d49b31bbeff50f3a9" category="paragraph">BlueXP Connectorがプライベートモードでインストールされていない場合は、<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> オフラインサイトの Linux ホスト</block>
+  <block id="ebd8af30c2bd1f5614199bd389919de2" category="list-text">Red Hat Enterprise Linuxバージョン7.8および7.9 - Linuxカーネルのバージョンは4.0以降である必要があります。</block>
+  <block id="067032f0b3420d92b7bee458a84f9cb8" category="list-text">CentOSバージョン7.8および7.9 - Linuxカーネルのバージョンは4.0以上である必要があります。</block>
+  <block id="171555066bf717df792509b1e762fc08" category="list-text">Rocky Linux 9（BlueXP分類バージョン1.24以降が必要）</block>
+  <block id="941bcccad7d165ebd4c5d993e2643a0b" category="list-text">Ubuntu 22.04（BlueXP分類バージョン1.23以降が必要）</block>
+  <block id="5c2d28b4f3a99b0fe3968b98ea7d88e5" category="inline-link-macro">詳細はこちら</block>
+  <block id="92b051108aff71c86d91cfa5338016b1" category="paragraph">BlueXP分類をインストールすると、すべてのインストールアクティビティがログに記録されます。インストール中に問題が発生した場合は、インストール監査ログの内容を表示できます。に書き込まれます。<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block>。 <block ref="d63cd9daf9e428da9929248a998d6b79" category="inline-link-macro-rx"></block>。</block>
+  <block id="e441d0b06845e470533ecf90d990663b" category="list-text">プライベートモードで使用するLinuxホストにインストーラバンドルをコピーします。</block>
+  <block id="c28fe179e2385f26eb310f2d32183eea" category="list-text">BlueXP分類バージョン1.24以降では、ソフトウェアの将来のバージョンへのアップグレードを実行できます。</block>
+  <block id="6d1c16ac15ccc187094a216f48771131" category="paragraph">BlueXP分類ソフトウェアで1.24より前のバージョンが実行されている場合、一度にアップグレードできるメジャーバージョンは1つだけです。たとえば、バージョン1.21.xがインストールされている場合は、1.22.xにのみアップグレードできます。いくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
+  <block id="6aeb4bc196ce15b33fc71ab2281bea05" category="inline-link-macro">データベースからカスタム個人データ識別子を追加する方法</block>
+  <block id="d2a0b2ea5f0192d44b255b22ac07ac38" category="paragraph">データベーススキャンを有効にすると、すべてのデータソースでデータベースの特定の列に基づいて識別される一意の識別子を追加できます。これは_Data Fusionフィーチャーと呼ばれます。 <block ref="27145dd16962daa6321a9c7c31532d09" category="inline-link-macro-rx"></block>。</block>
+  <block id="22aaaee7ed315da82bdc4e6c44ea217b" category="paragraph">この時点で、一度に最大20個のファイルにタグを適用できます（[Data Investigation results]ページの1ページ）。</block>
+  <block id="f02bee48d510d4c39a70c57e295d5f38" category="summary">データベーススキーマをスキャンする場合、BlueXPの分類では使用できない機能がいくつかあります。</block>
+  <block id="7aa098aa616e23b53a2f4243de4e4a07" category="doc">サポートされるデータベース機能とサポートされないデータベース</block>
+  <block id="f0061c0ade9d240d09f9bbadc2b27aa3" category="paragraph">データベーススキーマをスキャンする場合、BlueXPの分類では使用できない機能がいくつかあります。以下のリストを参照してください。</block>
+  <block id="990222def8053839fd07dd4a3c81e9dc" category="inline-link-macro">ここで説明するようにします</block>
+  <block id="f408878c9c22bd52607fe08b497546a4" category="paragraph">スキャン対象のBlueXP分類にデータベーススキーマを追加できます。 <block ref="32350e7a1f032d301549bb941192cdc0" category="inline-link-macro-rx"></block>。</block>
+  <block id="a71f76c3256e4c206a4841d8eb0fed35" category="cell">SQL Server</block>
+  <block id="35686630aa3baddc18c904374e570233" category="cell">Amazon RDS</block>
+  <block id="06df33001c1d7187fdd81ea1f5b277aa" category="cell">アクション</block>
+  <block id="af4141cf3fb8179af4deac9547c01278" category="cell">ポリシーを作成する</block>
+  <block id="c101058e7ea21bbbf2a5ac893088e90b" category="cell">タグ（ Tag ）</block>
+  <block id="773ecc684d98231f8f23773727622446" category="cell">割り当て先</block>
+  <block id="5e20646580da584d76435da00d6face4" category="cell">データをエクスポートします</block>
+  <block id="cd6ae20e52d83f601c5fa12b66f0f6d0" category="cell">再スキャン</block>
+  <block id="9dd4e461268c8034f5c8564e155c67a6" category="cell">X</block>
+  <block id="6bc362dbf494c61ea117fe3c71ca48a5" category="cell">移動</block>
+  <block id="5fb63579fc981698f97d55bfecb213ea" category="cell">コピー</block>
+  <block id="f3f43e30c8c7d78c6ac0173515e57a00" category="cell">フィルタ</block>
+  <block id="e80df5ee03a17fe47c471debd1cb6a7b" category="cell">スキャン分析ステータス</block>
+  <block id="16627cf42947f5240556f0586110db9b" category="cell">作業環境</block>
+  <block id="8e1608d6951087912c426bcb53d12280" category="cell">ストレージリポジトリ</block>
+  <block id="ab8e5ad0942da85cf79224653e3beb72" category="cell">感度レベル</block>
+  <block id="c815717e4decce00234014599e664ab0" category="cell">データ主体</block>
+  <block id="3e9f09095e53d4aa46d296b9c32b7be4" category="cell">スキャン分析イベント</block>
+  <block id="7c2647ff45382a42029e7a109ef1b4c5" category="cell">ファイル/ディレクトリパス</block>
+  <block id="c24fd35c406c9694e3bee288f8825b5c" category="cell">権限フィルタ</block>
+  <block id="e2f64dc02ab3f9d3b659d24b9503b545" category="cell">ドイツ語ID（Personalausweisnummer）</block>
+  <block id="95f62f425a7554a6bb2367cbfa3779e7" category="cell">銀行振込用ドイツ語内部ID</block>
+  <block id="ac01084f4d5a1af5de639eaf04ad94ff" category="cell">ドイツ社会保障番号（Sozialversicherungsnummer）</block>
+  <block id="1ac31bbf670e91966ab52da26d845a13" category="paragraph">次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。分類子に使用した名前がフィルタリストに表示されます。例：<block ref="4a5be64948722957979f804944a2f3b4" prefix=" " category="inline-code"></block>。</block>
+  <block id="afad61c0157650446d7dd3c6d21a14e6" category="inline-image-macro">カスタム分類子のキーワードを入力したスクリーンショット。</block>
+  <block id="10f58dd452f46270c630a34534611bc1" category="paragraph"><block ref="10f58dd452f46270c630a34534611bc1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1d1397279bf894721deb3fa47481478d" category="paragraph">を参照してください<block ref="58ff2edcee6f09ed29d8b1fa3d90f44d" category="inline-link-rx"></block> 正規表現の作成にサポートが必要な場合は、フレーバーに「* Python *」を選択すると、BlueXPの分類が正規表現と一致する結果のタイプが表示されます。</block>
+  <block id="c010468930979e106d9f7ed3eb1af1fb" category="admonition">現在、正規表現を作成するときにパターンフラグを使用することは許可されていません。これは、"/"を使用しないことを意味します。</block>
+  <block id="6fbfdb8194a5bee71195edc43d8d917c" category="inline-image-macro">カスタム分類子の正規表現とプロキシミティワードを入力したスクリーンショット。</block>
+  <block id="3d6c90f327764becd63dc600a2c87368" category="paragraph"><block ref="3d6c90f327764becd63dc600a2c87368" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="86eb2b827c48e5784ea52b533f562701" category="admonition">現時点では、Data Fusion分類子を編集することはできません。</block>
+  <block id="8b099d45c50bad711b65183f7029f3da" category="admonition">ファイルアクセス監査は、現時点で各データソースの最大8個のボリュームで設定できます。</block>
+  <block id="8aa912f072a560e74be845c27c1d0978" category="paragraph">BlueXPの分類は、コネクタが政府機関のリージョン（AWS GovCloud、Azure Gov、Azure DoD）（「制限モード」とも呼ばれます）に導入されている場合にサポートされます。この方法で導入した場合、BlueXPには次の制限があります。</block>
+  <block id="d8e9d38457b0cf1fc41c4f7dc9118e28" category="paragraph">BlueXPの分類では、オンプレミスサイトのローカルなデータソースのデータのみをスキャンできます。この時点で、BlueXPの分類では、「プライベートモード」（「ダーク」サイトとも呼ばれます）で次のローカルデータソースをスキャンできます。</block>
+  <block id="3b1883650bdcd250161cbf99ce0450d4" category="inline-link">これは「プライベートモード」とも呼ばれます。</block>
+  <block id="26d411dfdee47762b69f79244d61895e" category="paragraph">はい、サポートされています。可能です<block ref="1c270efcf36a8d1c2de58c1ed2ed7315" category="inline-link-rx"></block>。<block ref="93d53de7d74c2549b2ebf074270b753f" category="inline-link-rx"></block>。その後、オンプレミスのONTAP クラスタとその他のローカルデータソースを検出し、BlueXPの分類を使用してデータをスキャンできます。</block>
+  <block id="0494d69152dc144f6691315fabf9af4d" category="section-title">2023年7月17日（バージョン1.24）</block>
+  <block id="025b17159c4d2dd28926bdc5b13436e2" category="section-title">BlueXPの分類では、ドイツの2つの新しいタイプの個人データが特定されています。</block>
+  <block id="f6731e0bd9f7a8a40f83ba1c622ffe25" category="section-title">Rocky Linux 9がサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました。</block>
+  <block id="76264cc2bc8d3793465d31c38655f588" category="inline-link">Rocky LinuxがインストールされているホストにBlueXP分類をインストールする方法を確認</block>
+  <block id="059df2e0abacded1764d0222f6ab3b42" category="paragraph">Rocky Linux 9（9.0、9.1、9.2）は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXPの分類は、ネットワーク内のRocky Linuxホストにインストールすることも、バージョン1.24のインストーラを使用している場合はクラウド内のLinuxホストにインストールすることもできます。<block ref="b549f731e0826bdc1659ea47e9a6f422" category="inline-link-rx"></block>。</block>
+  <block id="cdbb87700ea6d8c32de7576d1ecb9987" category="section-title">BlueXPの分類は制限モードとプライベートモードで完全にサポートされています。</block>
+  <block id="7c4ed755305616a8a97076615e4aa1e5" category="inline-link">コネクタのBlueXP導入モードの詳細</block>
+  <block id="e7c3514a81618b80dab1e9591ba97368" category="paragraph">インターネットアクセスがないサイト（プライベートモード）とアウトバウンドのインターネットアクセスが制限されているサイト（制限モード）で、BlueXPの分類が完全にサポートされるようになりました。<block ref="7ee715aa70b4c6d819896ee955e59621" category="inline-link-rx"></block>。</block>
+  <block id="8dd6a265487e54146fb2bdfb3e5174a5" category="section-title">BlueXP分類のプライベートモードインストールをアップグレードするときにバージョンをスキップする機能</block>
+  <block id="241957d9f6c696915858d43476112454" category="paragraph">シーケンシャルでなくても、新しいバージョンのBlueXP分類にアップグレードできるようになりました。つまり、BlueXPの分類を1つのバージョンにアップグレードするという現行の制限は不要になりました。この機能は、バージョン1.24以降で該当します。</block>
 </blocks>
