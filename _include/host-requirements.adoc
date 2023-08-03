@@ -68,7 +68,7 @@
 +
 ** Docker Engineバージョン19.3.1以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
 +
-https://youtu.be/H1WS_-85pWA["こちらのビデオをご覧ください"] では、CentOSへのDockerのインストールの簡単なデモをご覧ください。
+https://youtu.be/Ogoufel1q6c["こちらのビデオをご覧ください"^] では、CentOSへのDockerのインストールの簡単なデモをご覧ください。
 
 ** Python 3 バージョン 3.6 以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
 

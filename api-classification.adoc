@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: api-classification.html 
+keywords: api, apis, rest, restful, authorization, classification, data sense, swagger, body, header, list apis 
+summary: Web UIから使用できるBlueXPの分類機能は、Swagger APIからも使用できます。 
+---
+= BlueXP分類API
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Web UIから使用できるBlueXPの分類機能は、Swagger APIからも使用できます。
+
+BlueXPでは、UIのタブに対応する4つのカテゴリが定義されています。
+
+* 調査
+* コンプライアンス
+* ガバナンス
+* 設定
+
+
+Swaggerドキュメントに記載されているAPIを使用して、検索、データの集約、スキャンの追跡、コピーや移動などのアクションの作成を行うことができます。
+
+
+
+== 概要
+
+APIでは、次の機能を実行できます。
+
+* 情報のエクスポート
++
+** UIで使用可能なすべての情報をAPI経由でエクスポート可能（レポートを除く）
+** データはJSON形式でエクスポートされます（Splunkなどのサードパーティアプリケーションに簡単に解析してプッシュできます）。
+
+
+* 「AND」および「OR」ステートメントを使用してクエリを作成したり、情報を含めたり除外したりすることができます。
++
+たとえば、FILES_without_Specific Personal Identifiable Information（PII）（UIでは使用できない機能）を検索できます。エクスポート操作の特定のフィールドを除外することもできます。
+
+* アクションの実行
++
+** CIFSクレデンシャルの更新
+** アクションの表示とキャンセル
+** ディレクトリの再スキャン
+
+
+
+
+このAPIはセキュアで、UIと同じ認証方式を使用します。認証の詳細については、次のページを参照してください。 https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html[]
+
+
+
+== Swagger APIリファレンスへのアクセス
+
+Swaggerにアクセスするには、BlueXP分類インスタンスのIPアドレスが必要です。クラウド展開の場合は、パブリックIPアドレスを使用します。次に、次のエンドポイントにアクセスする必要があります。
+
+https://<classification_ip>/documentation[]

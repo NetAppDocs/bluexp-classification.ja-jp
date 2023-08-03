@@ -160,7 +160,7 @@ BlueXPの分類を継続して実行できることを確認します。BlueXP�
 +
 ** Docker Engineバージョン19.3.1以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
 +
-https://youtu.be/H1WS_-85pWA["こちらのビデオをご覧ください"] では、CentOSへのDockerのインストールの簡単なデモをご覧ください。
+https://youtu.be/Ogoufel1q6c["こちらのビデオをご覧ください"^] では、CentOSへのDockerのインストールの簡単なデモをご覧ください。
 
 ** Python 3 バージョン 3.6 以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
 
@@ -305,7 +305,7 @@ NOTE: 現在、BlueXPの分類では、S3バケット、Azure NetApp Files 、FS
 
 要件を確認し、BlueXP分類ソフトウェアをオンプレミスの単一のホストにインストールする場合は、以下の手順に従ってください。
 
-https://youtu.be/gE-vrBLSJqw["こちらのビデオをご覧ください"] をクリックして、BlueXP分類のインストール方法を確認してください。
+https://youtu.be/rFpmekdbORc["こちらのビデオをご覧ください"^] をクリックして、BlueXP分類のインストール方法を確認してください。
 
 BlueXP分類をインストールすると、すべてのインストールアクティビティがログに記録されます。インストール中に問題が発生した場合は、インストール監査ログの内容を表示できます。に書き込まれます。 `/opt/netapp/install_logs/`。 link:task-audit-data-sense-actions.html#access-the-log-file["詳細はこちら"]。
 
@@ -345,7 +345,7 @@ image:screenshot_cloud_compliance_deploy_onprem.png["BlueXP分類をクラウド
 . 「_Deploy Data Sense on Premises」ダイアログが表示されます。提供されたコマンドをコピーします（例： `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq`）をクリックし、後で使用できるようにテキストファイルに貼り付けます。次に*[閉じる]*をクリックしてダイアログを閉じます。
 . ホストマシンで、コピーしたコマンドを入力して一連のプロンプトに従います。または、必要なすべてのパラメータをコマンドライン引数として指定することもできます。
 +
-インストールを正常に完了するには、インストーラによって事前チェックが実行され、システムとネットワークの要件が満たされていることが確認されます。 https://youtu.be/UZtn_I0e1Ls["こちらのビデオをご覧ください"] 事前チェックのメッセージとその影響を理解する。
+インストールを正常に完了するには、インストーラによって事前チェックが実行され、システムとネットワークの要件が満たされていることが確認されます。 https://youtu.be/_RCYpuLXiV0["こちらのビデオをご覧ください"^] 事前チェックのメッセージとその影響を理解する。
 
 +
 [cols="50a,50"]

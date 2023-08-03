@@ -52,6 +52,16 @@ Rocky Linux 9（9.0、9.1、9.2）は、BlueXPのサポート対象オペレー�
 
 
 
+=== BlueXP分類APIを利用できるようになりました
+
+BlueXP分類APIを使用すると、スキャンするデータに関する操作の実行、クエリの作成、情報のエクスポートを行うことができます。Swaggerを使用して対話型ドキュメントを利用できます。ドキュメントは、調査、コンプライアンス、ガバナンス、構成など、複数のカテゴリに分かれています。各カテゴリは、BlueXP分類用UIのタブを表しています。
+
+Swaggerにアクセスするには、BlueXP分類インスタンスのIPアドレスが必要です。クラウド展開の場合は、パブリックIPアドレスを使用します。次に、次のエンドポイントにアクセスする必要があります。
+
+https://<classification_ip>/documentation[]
+
+
+
 == 2023年6月6日（バージョン1.23）
 
 
@@ -364,37 +374,3 @@ link:reference-private-data-categories.html#types-of-personal-data["データで
 
 
 これらのキーワードとパターンは、データ検出ですでに使用されている既存の定義済みパターンに追加され、結果は[個人パターン]セクションに表示されます。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html["詳細はこちら。"^]。
-
-
-
-== 2022年7月6日（バージョン1.14）
-
-
-
-=== これで、ディレクトリにアクセスできるユーザとグループを表示できます
-
-これまでは、個々のファイルに付与されているオープンアクセス権のタイプを表示できました。これで、ディレクトリ（フォルダおよびファイル共有）にアクセスできるすべてのユーザまたはグループ、およびディレクトリにアクセスできる権限のタイプのリストが表示されます。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-private-data.html#viewing-permissions-for-files-and-directories["フォルダおよびファイル共有にアクセスできるユーザとグループを表示する方法について説明します"]。
-
-
-
-=== リポジトリのスキャンを一時停止すると'特定のコンテンツのスキャンを一時的に停止できます
-
-スキャンを一時停止した場合、ボリュームやバケットに対する追加や変更はデータスキャンで今後実行されませんが、現在の結果はすべてシステムで確認できます。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#pausing-and-resuming-scanning-for-a-repository["スキャンを一時停止および再開する方法を参照してください"]。
-
-
-
-=== 3つの追加状態からのUSドライバーのライセンスデータは、データセンスで識別できます
-
-データセンスは、インディアナ、ニューヨーク、テキサスの運転免許証データを含むファイルを識別して分類できます。 link:reference-private-data-categories.html#types-of-personal-data["データで特定できるすべての種類の個人データを表示します"]。
-
-
-
-=== ポリシーは、検索条件に一致するディレクトリを返すようになりました
-
-以前は、カスタムポリシーを作成したときに、検索条件に一致したファイルが結果に表示されていました。これで、クエリに一致するディレクトリ（フォルダおよびファイル共有）も結果に表示されます。 https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#creating-custom-policies["ポリシーの作成の詳細については、こちらをご覧ください"]。
-
-
-
-=== データセンスでは、一度に最大100,000個のファイルを移動できます
-
-スキャンしたデータソースからNFS共有へのファイル移動にData Senseを使用する場合は、ファイルの最大数が100、000ファイルに増加しています。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share["データセンスを使用してファイルを移動する方法をご覧ください"]。
