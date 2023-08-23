@@ -2462,7 +2462,6 @@
   <block id="84c1068a68e2f96982851954838c2d5b" category="list-text">AIPラベルをBlueXPに統合した場合は、このファイルにラベルを割り当てることができます。また、すでに存在する場合は別のラベルに変更することもできます。を参照してください <block ref="1d610d8b86b5e1441346aa765100c237" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="50cdf86b563a0d781f053c4a23d816c2" category="paragraph">ユーザ名とグループ名の代わりにSID（セキュリティ識別子）が表示される場合は、Active DirectoryをBlueXPに統合する必要があります。 <block ref="a543108cc451095d486457d9ff215fd0" category="inline-link-macro-rx"></block>。</block>
   <block id="bcd3dc09170e331762d1f098247c3974" category="paragraph">BlueXPの分類では、ハッシュテクノロジを使用して重複ファイルが特定されます。ハッシュコードが別のファイルと同じファイルがある場合、ファイル名が異なる場合でも、ファイルが完全に重複していることを 100% 確認できます。</block>
-  <block id="fd1d98039043f82f0635dcf86849024a" category="paragraph">レポートは、.csvファイル（最大5、000行のデータを含めることができます）、またはNFS共有にエクスポートする.jsonファイル（無制限の行数を含めることができます）としてローカルマシンに保存できます。BlueXPの分類で、ファイル（非構造化データ）、ディレクトリ（フォルダとファイル共有）、またはデータベース（構造化データ）をスキャンしている場合は、最大3つのレポートファイルをダウンロードできます。</block>
   <block id="c67419f269df3afdc5c4ea77c6a74cef" category="paragraph">ファイル共有にエクスポートする場合は、BlueXPの分類にエクスポートアクセス用の正しい権限が割り当てられていることを確認してください。</block>
   <block id="c3e3558057a47a586b2936491602503e" category="summary">BlueXPの分類（Cloud Data Sense）を使用すると、組織のハイブリッドマルチクラウド全体にわたってデータをスキャンして分類できます。BlueXP分類は、AIによる自然言語処理（NLP）を活用してコンテキストに応じたデータの分析とカテゴリ化を行い、データに関する実用的な分析情報を提供して、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の高速化を実現します。</block>
   <block id="44b34442167c9611792529867ee76d90" category="doc">BlueXPの分類に関するドキュメント</block>
@@ -3452,4 +3451,9 @@
   <block id="12b0af2e5ea89b04eb9606c50747a466" category="paragraph">特定のコンテンツのスキャンを一時的に停止する場合は'リポジトリ上のスキャンを一時的に停止できますスキャンを一時停止すると、BlueXPの分類によってリポジトリに対する変更や追加がスキャンされることはありませんが、現在の結果はすべてシステムに表示されます。スキャンを一時停止しても、データはまだ存在するため、スキャンしたデータの充電は停止しません。</block>
   <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link">BlueXP分類APIの詳細</block>
   <block id="67a7c5f0403c8f58fe4ae70a6f761ae5" category="paragraph"><block ref="6c685f385b4749ef1d91fb7e0577272e" category="inline-link-rx"></block>。</block>
+  <block id="90ca6bd84833f8a6659f7ea02a7649ba" category="list-text">DFS（Distributed File System）共有を通常のCIFS共有として追加できます。ただし、BlueXPの分類では、共有が複数のサーバ/ボリュームを1つのCIFS共有として組み合わせて構築されていることを認識していないため、別のサーバ/ボリュームにあるフォルダ/共有の1つだけを環境というメッセージが表示された場合に、共有に関する権限や接続のエラーが表示されることがあります。</block>
+  <block id="1cf7463413ea994be95c0189c2bb57a5" category="paragraph">レポートは次の2つの形式で保存できます。</block>
+  <block id="d9c89ee38491bdb679829f426faea2ef" category="list-text">ローカルマシンへの.csvファイル。最大5,000行のデータを含めることができます。</block>
+  <block id="8909a1f3cdd58859743896107e545477" category="list-text">NFS共有にエクスポートする.jsonファイル。最大100、000行のデータを含めることができます。10万行を超えるデータがある場合は、追加の.jsonファイルが作成されます。</block>
+  <block id="090f87d7b81c809aa6a6d81dcabfeeb8" category="paragraph">BlueXPの分類でファイル（非構造化データ）、ディレクトリ（フォルダとファイル共有）、データベース（構造化データ）をスキャンしている場合は、最大3つのレポートファイルをダウンロードできます。</block>
 </blocks>
