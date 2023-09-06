@@ -20,6 +20,7 @@ BlueXPワークスペースでBlueXPの分類によってスキャンされる�
 
 * クラウドプロバイダのマーケットプレイスでBlueXPの従量課金制（PAYGO）サブスクリプションにすでに登録している場合は、BlueXPの分類にも自動的に登録されます。再度サブスクライブする必要はありません。
 * BlueXPの分類（Data Sense）であるBring-your-own-license（BYOL）は_floating_licenseです。このライセンスは、スキャンするワークスペース内のすべての作業環境とデータソースに使用できます。BlueXPデジタルウォレットには、アクティブなサブスクリプションが表示されます。
+* スキャンされるデータの量は論理ファイルサイズに基づいて計算され、Storage Efficiency機能は使用されません。
 
 
 link:concept-cloud-compliance.html#cost["BlueXPの分類に関連するライセンスとコストの詳細については、こちらをご覧ください"]。

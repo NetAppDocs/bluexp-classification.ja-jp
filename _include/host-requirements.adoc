@@ -30,6 +30,13 @@
 +
 これらの小さいシステムを使用する場合は制限があることに注意してください。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
 
+* BlueXP分類インストール用にコンピューティングインスタンスをクラウドに導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。
++
+** * AWS EC2インスタンスタイプ*：「m6i.4xlarge」を推奨します。 link:reference-instance-types.html#aws-instance-types["その他のAWSインスタンスタイプを参照してください"^]。
+** * Azure VMのサイズ*：「Standard_D16s_v3」を推奨します。 link:reference-instance-types.html#azure-instance-types["その他のAzureインスタンスタイプを参照してください"^]。
+** *GCPマシンタイプ*:「n2-standard-16」をお勧めします。 link:reference-instance-types.html#gcp-instance-types["追加のGCPインスタンスタイプを参照してください"^]。
+
+
 * * UNIXフォルダ権限*：次の最小UNIX権限が必要です。
 +
 [cols="25,25"]
@@ -48,29 +55,32 @@
 
 | /user/lib/systemd/system | `rwxr-xr-x` 
 |===
-* BlueXP分類インストール用にコンピューティングインスタンスをクラウドに導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。
+* * オペレーティング・システム * ：
 +
-** * AWS EC2インスタンスタイプ*：「m6i.4xlarge」を推奨します。 link:reference-instance-types.html#aws-instance-types["その他のAWSインスタンスタイプを参照してください"^]。
-** * Azure VMのサイズ*：「Standard_D16s_v3」を推奨します。 link:reference-instance-types.html#azure-instance-types["その他のAzureインスタンスタイプを参照してください"^]。
-** *GCPマシンタイプ*:「n2-standard-16」をお勧めします。 link:reference-instance-types.html#gcp-instance-types["追加のGCPインスタンスタイプを参照してください"^]。
+** 次のオペレーティングシステムでは、Dockerコンテナエンジンを使用する必要があります。
++
+*** Red Hat Enterprise Linuxバージョン7.8および7.9 - Linuxカーネルのバージョンは4.0以降である必要があります。
+*** CentOSバージョン7.8および7.9 - Linuxカーネルのバージョンは4.0以上である必要があります。
+*** Rocky Linux 9（BlueXP分類バージョン1.24以降が必要）
+*** Ubuntu 22.04（BlueXP分類バージョン1.23以降が必要）
 
 
-* *オペレーティングシステム*：このOSはDockerエンジンをインストールできる必要があります。
-+
-** Red Hat Enterprise Linuxバージョン7.8および7.9 - Linuxカーネルのバージョンは4.0以降である必要があります。
-** CentOSバージョン7.8および7.9 - Linuxカーネルのバージョンは4.0以上である必要があります。
-** Rocky Linux 9（BlueXP分類バージョン1.24以降が必要）
-** Ubuntu 22.04（BlueXP分類バージョン1.23以降が必要）
+
+
 
 
 * * Red Hat Subscription Management *：ホストはRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、システムはインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
 * *その他のソフトウェア*：BlueXP分類をインストールする前に、次のソフトウェアをホストにインストールする必要があります。
 +
-** Docker Engineバージョン19.3.1以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
+** 使用しているOSに応じて、次のいずれかのコンテナエンジンをインストールする必要があります。
++
+*** Docker Engineバージョン19.3.1以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
 +
 https://youtu.be/Ogoufel1q6c["こちらのビデオをご覧ください"^] では、CentOSへのDockerのインストールの簡単なデモをご覧ください。
 
-** Python 3 バージョン 3.6 以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
+
+
+** Pythonバージョン3.6以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
 
 
 

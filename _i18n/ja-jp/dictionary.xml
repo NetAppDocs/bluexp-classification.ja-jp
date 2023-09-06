@@ -762,7 +762,6 @@
   <block id="fc9033d933e9132cc23bfe396744d214" category="inline-link-macro">ファイルを削除します</block>
   <block id="05a9e2e2902a6ea5dacdfe3be87085eb" category="section-title">重複するすべてのファイルを表示します</block>
   <block id="5b00edf3a5903017b22e268ae58998c0" category="paragraph">スキャンする作業環境およびデータソースで複製されているすべてのファイルのリストが必要な場合は、 [ データの調査 ] ページで、 [ 重複 ] &gt; [ 重複しているもの ] というフィルタを使用できます。</block>
-  <block id="d093b6ce815865a414da07677b4c868c" category="paragraph">すべてのファイルタイプ（データベースを除く）から重複しているすべてのファイルが 50 MB 以上のサイズで、個人情報または機密情報を含むすべてのファイルが結果ページに表示されます。</block>
   <block id="7ae09bb031844e25b6bd333f8e364d99" category="section-title">特定のファイルが複製されているかどうかを表示します</block>
   <block id="481ee5e06ca7a72cfe4a783b39c7d0e3" category="paragraph">1 つのファイルに重複があるかどうかを確認するには、 [ データ調査結果 ] ペインでをクリックします <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> をクリックすると、単一のファイルについてファイルのメタデータが表示されます。特定のファイルが重複している場合、この情報は _Duplicats_field の横に表示されます。</block>
   <block id="b478c70cc88f62deb519e4d41609fff2" category="paragraph">重複したファイルとその場所のリストを表示するには、 [ * 詳細の表示 * ] をクリックします。次のページで、 [ 重複の表示 *] をクリックして、 [ 調査 ] ページでファイルを表示します。</block>
@@ -929,7 +928,6 @@
   <block id="532b2291afa0585aed0b7f83e343086f" category="inline-xref">権限と接続</block>
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">Linux ホストシステムを準備</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">インストール手順を確認します</block>
-  <block id="c0ffa5845aefb5e4bb0fa6089bcc513d" category="list-text">Python 3 バージョン 3.6 以降。<block ref="f67fc9f0c7d8aa701884bad21356a242" category="inline-link-rx"></block>。</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">エンドポイント</block>
   <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
   <block id="92aadc02d249003db0a3c659eb74f06b" category="inline-link-macro">これらの手順を参照してください</block>
@@ -937,7 +935,6 @@
   <block id="49110f631362d4a9865d9c280368ebb1" category="paragraph">ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。 <block ref="31dc1b3eda8e489f4f5ca469c6f3d2e1" category="inline-link-macro-rx"></block>。</block>
   <block id="fadc42ee050a70884c159ab263e06542" category="section-title">一般的な構成でのシングルホストインストール</block>
   <block id="d709c500efa2b07b31dad2acb1fc7b92" category="list-text">Linux システムがを満たしていることを確認します <block ref="2d54aecca24274aa47c2fb620cd7d497" category="inline-xref-macro-rx"></block>。</block>
-  <block id="03d8c71f4932cca67122b714ef67000c" category="list-text">前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。</block>
   <block id="7e1fecc0c3cbd38b434a0a6232a69c06" category="list-text">Linux システムに対する root 権限があることを確認してください。</block>
   <block id="1eecc2fcccd4fcb3cadd8bec3044d3bb" category="list-text">ホストマシンでインストーラバンドルを解凍します。次に例を示します。</block>
   <block id="cce26d229722c6ca9257990a7091d9c0" category="list-text">[ データセンスを活動化（ Activate Data sense ） ] をクリックし</block>
@@ -1886,7 +1883,6 @@
   <block id="d40d8569fcb40c761c8217de218391ba" category="list-text">「アクセス権を持つユーザの数」フィルタは、特定の数のユーザに対して開かれているファイルやフォルダを表示します。数値の範囲を選択して結果を絞り込むことができます。たとえば、51~100ユーザがアクセスできるファイルを確認できます。</block>
   <block id="142c1e7e965016b6fe04e45f8ae01209" category="list-text">「作成日時」、「検出日時」、「最終変更日時」、「最終アクセス日時」の各フィルタを使用して、事前に定義された日範囲だけを選択するのではなく、カスタムの日付範囲を作成できるようになりました。たとえば、「作成日時」が6か月を超えているファイルや、「最終更新日時」が「過去10日間」の日付になっているファイルを探すことができます。</block>
   <block id="248b219562d5c677bea769543286aaf9" category="list-text">ニュージーランド・ドライバーのライセンス番号</block>
-  <block id="1a70f847ca98ead8008196451ddb3173" category="list-text">システムに、前提条件となる2つのソフトウェアパッケージ（Docker EngineとPython 3）がインストールされていることを確認します。</block>
   <block id="dc398b6dfc944aa53fc80c488796fb93" category="list-text">システムに、前提条件となる2つのソフトウェアパッケージ（Docker EngineとPython 3）がインストールされていることを確認します。</block>
   <block id="47a431ede9d263c65258e5be6ff6b2c1" category="paragraph">プライバシーリスクアセスメントレポートには、GDPRやCCPAなどのプライバシー規制に必要な、組織のプライバシーリスクステータスの概要が記載されています。このレポートには次の情報が含まれます。</block>
   <block id="e9ebebe267d1d822cab67a314b8df765" category="section-title">各データ調査レポートに含まれる情報</block>
@@ -1958,7 +1954,6 @@
   <block id="a315a3a18e07665e5d98dc24a64a921f" category="paragraph">作成したカスタム分類子は、*Edit Classifier*ボタンを使用して変更できます。</block>
   <block id="6c4af53d01a0fd2f4b9e2d860002e476" category="inline-image-macro">分類子を編集および削除するためのボタンを含む[カスタム分類子]ページのスクリーンショット。</block>
   <block id="ba3a038a97b620898e33b9e09db66632" category="paragraph"><block ref="ba3a038a97b620898e33b9e09db66632" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="969665117064b959d3c660b43611f713" category="list-text">Docker Engineバージョン19.3.1以降。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>。</block>
   <block id="49bb7289b8abc33c271f634fc8149b1e" category="list-text">一度に移動できるファイルの最大数は1、500万です。</block>
   <block id="a09a5c1c3cb0d27dbac4cfa3c73c0ec8" category="list-text">[* Deploy*]をクリックして、クラウド導入ウィザードを開始します。</block>
   <block id="5c19ef53902ef56ea5c8f554cccb9ad8" category="section-title">2023年2月5日（バージョン1.20）</block>
@@ -2447,7 +2442,6 @@
   <block id="264b044bf416a5337d28443921b46791" category="list-text">BlueXPの分類は、他のアプリケーションと共有するホストではサポートされません。専用のホストである必要があります。</block>
   <block id="34c6b12ec99e0004de549a9d1fd9589c" category="list-text">オンプレミスでホストシステムを構築する場合は、BlueXP分類スキャンを実行するデータセットのサイズに応じて、3つのシステムサイズの中から選択できます。</block>
   <block id="d5c832490c0ab9dcb105acd9ee7b4709" category="list-text">BlueXP分類インストール用にコンピューティングインスタンスをクラウドに導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。</block>
-  <block id="f36c8c3dc40ab9521c9078ec5894a47c" category="list-text">*オペレーティングシステム*：このOSはDockerエンジンをインストールできる必要があります。</block>
   <block id="f2183b09e54e4aa491c008ea8ca08bbc" category="list-text">* Red Hat Subscription Management *：ホストはRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、システムはインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。</block>
   <block id="7299a589db31a0bc8b28dedaafe896cd" category="list-text">*その他のソフトウェア*：BlueXP分類をインストールする前に、次のソフトウェアをホストにインストールする必要があります。</block>
   <block id="786452cdc534ba8395eb7a26c9ab3efc" category="summary">[データ調査]ページで詳細を表示すると、組織のデータを調査できます。このページには、ガバナンスダッシュボードやコンプライアンスダッシュボードなど、BlueXPの分類UIのさまざまな領域から移動できます。</block>
@@ -2909,7 +2903,6 @@
   <block id="e5cbd4e407b221a95e9bc8b3965978dd" category="paragraph">BlueXPの分類の概要は次のようになります。</block>
   <block id="1483534eda512965970c7917b74698ae" category="list-text">BlueXPでBlueXP分類のインスタンスを導入します。</block>
   <block id="0392ab186be19d97094b4c522c8c8a61" category="list-text">BlueXPの分類では、AI学習プロセスを使用してデータがスキャンされます。</block>
-  <block id="2a62deba2dc325bba21859a7763042d9" category="paragraph">BlueXPの分類を有効にして、スキャンするボリューム、バケット、データベーススキーマ、OneDriveまたはSharePointのユーザデータを選択すると、すぐにデータのスキャンが開始され、個人データと機密データが特定されます。組織のデータをマッピングし、各ファイルを分類して、データ内のエンティティと定義済みパターンを特定して抽出します。スキャンの結果は、個人情報、機密性の高い個人情報、データカテゴリ、およびファイルタイプのインデックスです。</block>
   <block id="8bb62f2d8bb562c2448b94ddd2767086" category="paragraph">BlueXPは、他のクライアントと同様に、NFSボリュームとCIFSボリュームをマウントすることでデータに接続します。NFS ボリュームには読み取り専用で自動的にアクセスされますが、 CIFS ボリュームをスキャンするためには Active Directory のクレデンシャルを指定する必要があります。</block>
   <block id="328776a7300ef8a5bca61abea128357e" category="inline-image-macro">クラウドプロバイダで実行されているBlueXPインスタンスとBlueXP分類インスタンスを示す図。BlueXP分類インスタンスは、NFSボリュームとCIFSボリューム、S3バケット、OneDriveアカウント、データベースに接続してスキャンします。</block>
   <block id="e7e22a17fdc74eed26b429d4795f8f01" category="paragraph"><block ref="e7e22a17fdc74eed26b429d4795f8f01" category="inline-image-macro-rx" type="image"></block></block>
@@ -3308,8 +3301,6 @@
   <block id="958f4b7cbe550d6d49b31bbeff50f3a9" category="paragraph">BlueXP Connectorがプライベートモードでインストールされていない場合は、<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> オフラインサイトの Linux ホスト</block>
   <block id="ebd8af30c2bd1f5614199bd389919de2" category="list-text">Red Hat Enterprise Linuxバージョン7.8および7.9 - Linuxカーネルのバージョンは4.0以降である必要があります。</block>
   <block id="067032f0b3420d92b7bee458a84f9cb8" category="list-text">CentOSバージョン7.8および7.9 - Linuxカーネルのバージョンは4.0以上である必要があります。</block>
-  <block id="171555066bf717df792509b1e762fc08" category="list-text">Rocky Linux 9（BlueXP分類バージョン1.24以降が必要）</block>
-  <block id="941bcccad7d165ebd4c5d993e2643a0b" category="list-text">Ubuntu 22.04（BlueXP分類バージョン1.23以降が必要）</block>
   <block id="5c2d28b4f3a99b0fe3968b98ea7d88e5" category="inline-link-macro">詳細はこちら</block>
   <block id="92b051108aff71c86d91cfa5338016b1" category="paragraph">BlueXP分類をインストールすると、すべてのインストールアクティビティがログに記録されます。インストール中に問題が発生した場合は、インストール監査ログの内容を表示できます。に書き込まれます。<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block>。 <block ref="d63cd9daf9e428da9929248a998d6b79" category="inline-link-macro-rx"></block>。</block>
   <block id="e441d0b06845e470533ecf90d990663b" category="list-text">プライベートモードで使用するLinuxホストにインストーラバンドルをコピーします。</block>
@@ -3317,7 +3308,6 @@
   <block id="6d1c16ac15ccc187094a216f48771131" category="paragraph">BlueXP分類ソフトウェアで1.24より前のバージョンが実行されている場合、一度にアップグレードできるメジャーバージョンは1つだけです。たとえば、バージョン1.21.xがインストールされている場合は、1.22.xにのみアップグレードできます。いくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
   <block id="6aeb4bc196ce15b33fc71ab2281bea05" category="inline-link-macro">データベースからカスタム個人データ識別子を追加する方法</block>
   <block id="d2a0b2ea5f0192d44b255b22ac07ac38" category="paragraph">データベーススキャンを有効にすると、すべてのデータソースでデータベースの特定の列に基づいて識別される一意の識別子を追加できます。これは_Data Fusionフィーチャーと呼ばれます。 <block ref="27145dd16962daa6321a9c7c31532d09" category="inline-link-macro-rx"></block>。</block>
-  <block id="22aaaee7ed315da82bdc4e6c44ea217b" category="paragraph">この時点で、一度に最大20個のファイルにタグを適用できます（[Data Investigation results]ページの1ページ）。</block>
   <block id="f02bee48d510d4c39a70c57e295d5f38" category="summary">データベーススキーマをスキャンする場合、BlueXPの分類では使用できない機能がいくつかあります。</block>
   <block id="7aa098aa616e23b53a2f4243de4e4a07" category="doc">サポートされるデータベース機能とサポートされないデータベース</block>
   <block id="f0061c0ade9d240d09f9bbadc2b27aa3" category="paragraph">データベーススキーマをスキャンする場合、BlueXPの分類では使用できない機能がいくつかあります。以下のリストを参照してください。</block>
@@ -3451,7 +3441,6 @@
   <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link">BlueXP分類APIの詳細</block>
   <block id="67a7c5f0403c8f58fe4ae70a6f761ae5" category="paragraph"><block ref="6c685f385b4749ef1d91fb7e0577272e" category="inline-link-rx"></block>。</block>
   <block id="90ca6bd84833f8a6659f7ea02a7649ba" category="list-text">DFS（Distributed File System）共有を通常のCIFS共有として追加できます。ただし、BlueXPの分類では、共有が複数のサーバ/ボリュームを1つのCIFS共有として組み合わせて構築されていることを認識していないため、別のサーバ/ボリュームにあるフォルダ/共有の1つだけを環境というメッセージが表示された場合に、共有に関する権限や接続のエラーが表示されることがあります。</block>
-  <block id="1cf7463413ea994be95c0189c2bb57a5" category="paragraph">レポートは次の2つの形式で保存できます。</block>
   <block id="d9c89ee38491bdb679829f426faea2ef" category="list-text">ローカルマシンへの.csvファイル。最大5,000行のデータを含めることができます。</block>
   <block id="8909a1f3cdd58859743896107e545477" category="list-text">NFS共有にエクスポートする.jsonファイル。最大100、000行のデータを含めることができます。10万行を超えるデータがある場合は、追加の.jsonファイルが作成されます。</block>
   <block id="090f87d7b81c809aa6a6d81dcabfeeb8" category="paragraph">BlueXPの分類でファイル（非構造化データ）、ディレクトリ（フォルダとファイル共有）、データベース（構造化データ）をスキャンしている場合は、最大3つのレポートファイルをダウンロードできます。</block>
@@ -3459,4 +3448,28 @@
   <block id="31bf187a1f6ba9a21c24893034392c45" category="cell">コネクタのセキュリティグループで、ポート6000および443を介したBlueXP分類インスタンスとの間のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。
 
 ポート8080が開いていることを確認し、BlueXPでインストールの進行状況を確認します。</block>
+  <block id="17308c76959fcb971603b7274a57c128" category="list-text">* オペレーティング・システム * ：</block>
+  <block id="3e91b710997d720d3e069e8c923eb206" category="list-text">次のオペレーティングシステムでは、Dockerコンテナエンジンを使用する必要があります。</block>
+  <block id="93dd08da8a4c0d472e885570798d74ab" category="list-text">Rocky Linux 9（BlueXP分類バージョン1.24以降が必要）</block>
+  <block id="156e173d1de86766f5cb22a057c779e9" category="list-text">Ubuntu 22.04（BlueXP分類バージョン1.23以降が必要）</block>
+  <block id="2a2958e5280a05650587dc8d454a5f8d" category="list-text">使用しているOSに応じて、次のいずれかのコンテナエンジンをインストールする必要があります。</block>
+  <block id="42b04f3730744d602d0c4b812384dce9" category="list-text">Docker Engineバージョン19.3.1以降。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>。</block>
+  <block id="1d7787fe4a7264402153a51d8513414f" category="list-text">Pythonバージョン3.6以降。<block ref="f67fc9f0c7d8aa701884bad21356a242" category="inline-link-rx"></block>。</block>
+  <block id="b3eca644efa08065eb8c4ac6103bb98b" category="list-text">システムに前提条件となる2つのソフトウェアパッケージ（Docker EngineとPython 3）がインストールされていることを確認します。</block>
+  <block id="b22f0c43f37aea47ed39cf9a0ab2a837" category="list-text">前提条件となる2つのソフトウェアパッケージ（Docker Engine、およびPython 3）がインストールされていることを確認します。</block>
+  <block id="66f5e7d970f0cf4b79e5b61fd2dba7c1" category="list-text">スキャンされるデータの量は論理ファイルサイズに基づいて計算され、Storage Efficiency機能は使用されません。</block>
+  <block id="9977ca20c8bc19b052f79b784b9f28f8" category="paragraph">BlueXPの分類を有効にしてスキャンするリポジトリ（ボリューム、バケット、データベーススキーマ、OneDriveまたはSharePointのユーザデータ）を選択すると、すぐにデータのスキャンが開始され、個人データと機密データが特定されます。ほとんどの場合、バックアップ、ミラー、DRサイトではなく、本番環境のライブデータのスキャンに重点を置いてください。次に、BlueXPの分類によって組織データがマッピングされ、各ファイルが分類され、データ内のエンティティと事前定義されたパターンが特定されて抽出されます。スキャンの結果は、個人情報、機密性の高い個人情報、データカテゴリ、およびファイルタイプのインデックスです。</block>
+  <block id="ab7a4d49b4e814b44fcc2e4e34cdc29b" category="paragraph">を有効または更新するたびに、DockerまたはPodmanを再起動する必要があることに注意してください。<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> 設定：</block>
+  <block id="0cc4457720b5fe0dd1b8dc6667280ebb" category="list-text">システムに前提条件となる2つのソフトウェアパッケージ（DockerまたはPodman Engine、およびPython 3）がインストールされていることを確認します。</block>
+  <block id="bfd42c156b2ca871cd12ee8e72e55e95" category="paragraph">1MB以上で、個人情報または機密情報を含むすべてのファイル（データベースを除く）が比較され、重複がないかどうかが確認されます。[Investigation]ページフィルタの[File Size]と[Duplicates]を使用して、環境内で特定のサイズ範囲のどのファイルが重複しているかを確認できます。</block>
+  <block id="285a3049428c6b155fde44a18621f551" category="paragraph">複製されたすべてのファイルが結果ページに表示されます。</block>
+  <block id="d4c414c875c5535df32b9c04f15b398d" category="paragraph">レポートは、次の2つの形式で保存できます。</block>
+  <block id="9d1bf1e07d6563a578988a0916d686ff" category="section-title">9月5日（バージョン1.25）</block>
+  <block id="a4338ca25ea7436675e99fe5320a9d8a" category="section-title">[Investigation Results]ページから最大100,000項目にタグを適用</block>
+  <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">方法を参照してください</block>
+  <block id="6d37cd3f2b76637efa533f6623bf7ceb" category="paragraph">これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。 <block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>。</block>
+  <block id="d0b71ca8d45c425a9eafb601e1eb4c3c" category="section-title">最小ファイルサイズが1MBの重複ファイルを特定する</block>
+  <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">BlueXPの分類では、ファイルが50MB以上の場合にのみ重複ファイルが特定されます。1MBで始まる重複ファイルを識別できるようになりました。[Investigation]ページフィルタの[File Size]と[Duplicates]を使用して、環境内で特定のサイズのファイルが重複しているかどうかを確認できます。</block>
+  <block id="a0b0397888c391cefadbe3fa028a49bc" category="list-text">すべてのページのすべてのファイルを選択するには、タイトル行（<block ref="240ed779654c3f6cf32843800cecc801" category="inline-image-macro-rx" type="image"></block>）をクリックし、ポップアップメッセージにと入力します <block ref="6d073c59586864da957e4fe8e0338e10" category="inline-image-macro-rx" type="image"></block>をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。</block>
+  <block id="b28003dc3eea16791b3379012ffb1993" category="paragraph">一度に最大100,000個のファイルにタグを適用できます。</block>
 </blocks>
