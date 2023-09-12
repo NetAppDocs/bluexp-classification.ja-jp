@@ -568,7 +568,6 @@
   <block id="f761b4a4393e1a53850ec9f4dd420f50" category="paragraph"><block ref="f761b4a4393e1a53850ec9f4dd420f50" category="inline-image-macro-rx" type="image"></block></block>
   <block id="11dfa7f8030ea34c4933fff6eaa19333" category="list-text">[* このファイルにラベルを割り当て * ] をクリックして、ラベルを選択します。</block>
   <block id="5108557521189397e1f9be01f92633b0" category="paragraph">ラベルがファイルメタデータに表示されます。</block>
-  <block id="398b53642810a3ebb827ca64a7e031fe" category="paragraph">AIP ラベルを複数のファイルに割り当てるには、次の手順を実行します。</block>
   <block id="f26e9a93fd90f2481bfff0f8c4517da6" category="list-text">[ データ調査結果 ] ペインで、ラベル付けするファイルを選択します。</block>
   <block id="4547ea9eb340b9b3af947472b935464f" category="inline-image-macro">ラベル付けするファイルの選択方法を示すスクリーンショットと、 [ データ調査 ] ページの [ ラベル ] ボタン。</block>
   <block id="82f4c85e0490488ae85ec5e3e8910f40" category="paragraph"><block ref="82f4c85e0490488ae85ec5e3e8910f40" category="inline-image-macro-rx" type="image"></block></block>
@@ -634,12 +633,10 @@
   <block id="c920fb7990e3c619785581c1ca57a2e6" category="section-title">特定のファイルを管理するためのユーザの割り当て</block>
   <block id="640ddcfcbdd6fd24058616dfd813d30c" category="paragraph">たとえば、特定の個人データを含むファイルで、読み取りおよび書き込みアクセス（オープン権限）を大量に許可する場合などです。したがって、 Status タグ「 Change permissions 」を割り当て、このファイルをユーザー「 Joan Smith 」に割り当てて、問題の修正方法を決定することができます。問題を修正すると、 Status タグが「 Completed 」に変更されることがあります。</block>
   <block id="931074f4d66344e7b9658958b6d87907" category="paragraph">[ 調査 ] ページの新しいフィルタを使用すると、 [ 割り当て先 ] フィールドに同じユーザーを持つすべてのファイルを簡単に表示できます。</block>
-  <block id="6f4326437137a604ca129e07fbf28447" category="paragraph">ユーザーを 1 つのファイルに割り当てるには、次の手順を実行します。</block>
   <block id="a86a8c5ea91657b179c7c6639a2c33e7" category="list-text">[*Assigned To*] フィールドをクリックして、ユーザ名を選択します。</block>
   <block id="a80ae116cfcf2ab82dcddbfc170be5b7" category="inline-image-macro">[ データ調査 ] ページでファイルにユーザーを割り当てる方法を示すスクリーンショット。</block>
   <block id="412f0fb9ebd6475572b807f651180d22" category="paragraph"><block ref="412f0fb9ebd6475572b807f651180d22" category="inline-image-macro-rx" type="image"></block></block>
   <block id="608c20f332a7cdf1c8b13907f1cc490c" category="paragraph">ユーザ名がファイルメタデータに表示されます。</block>
-  <block id="8533d80dc327c1f01f502cb153b295dd" category="paragraph">ユーザーを複数のファイルに割り当てるには：</block>
   <block id="9d03854319e73cc41bd352adb5eb647e" category="list-text">[ データ調査結果 ] ペインで、ユーザーに割り当てるファイルを選択します。</block>
   <block id="ca614decc202c0a06868e70380a540ca" category="inline-image-macro">[ データ調査 ] ページから、ユーザーに割り当てるファイルの選択方法と [ 割り当て先 ] ボタンを示すスクリーンショット。</block>
   <block id="5771f928056682d86e2c8ac3c8a3ba87" category="paragraph"><block ref="5771f928056682d86e2c8ac3c8a3ba87" category="inline-image-macro-rx" type="image"></block></block>
@@ -3472,4 +3469,8 @@
   <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">BlueXPの分類では、ファイルが50MB以上の場合にのみ重複ファイルが特定されます。1MBで始まる重複ファイルを識別できるようになりました。[Investigation]ページフィルタの[File Size]と[Duplicates]を使用して、環境内で特定のサイズのファイルが重複しているかどうかを確認できます。</block>
   <block id="a0b0397888c391cefadbe3fa028a49bc" category="list-text">すべてのページのすべてのファイルを選択するには、タイトル行（<block ref="240ed779654c3f6cf32843800cecc801" category="inline-image-macro-rx" type="image"></block>）をクリックし、ポップアップメッセージにと入力します <block ref="6d073c59586864da957e4fe8e0338e10" category="inline-image-macro-rx" type="image"></block>をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。</block>
   <block id="b28003dc3eea16791b3379012ffb1993" category="paragraph">一度に最大100,000個のファイルにタグを適用できます。</block>
+  <block id="8b6c126d65d4a1501ecb5e4a7f296fa9" category="paragraph"><block ref="78a1f63a475eced077a3b4ccbdcfca4e" category="inline-link-rx"></block> 前提条件スクリプトの実行方法と結果の解釈方法を確認します。</block>
+  <block id="6558368ee6073deea643cc8c934764fc" category="paragraph">AIPラベルを複数のファイルに割り当てる手順は、次のとおりです。AIPラベルは、一度に最大20個のファイル（UIの1ページ）に割り当てることができます。</block>
+  <block id="734926fafb1271c111d9404b81a2a40f" category="paragraph">ユーザを単一のファイルに割り当てる手順は、次のとおりです。</block>
+  <block id="7cb00932323e74919350bd2ce54bb9db" category="paragraph">ユーザーを複数のファイルに割り当てるには、次の手順を実行します。一度に最大20個のファイルにユーザを割り当てることができます（UIの1ページ）。</block>
 </blocks>
