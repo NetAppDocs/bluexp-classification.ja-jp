@@ -2208,8 +2208,6 @@
   <block id="3d81ce02b62771b2627fbe04a96419a1" category="inline-link-macro">使用可能なインスタンスタイプと制限事項を参照してください</block>
   <block id="7df445bf0c34cf36a966141745590030" category="open-title">AWSに導入</block>
   <block id="2cf7dbc159875140b6f5ecc68994fa13" category="list-text">[_Installation_]ページで、*[Deploy]&gt;[Deploy]*をクリックして「Large」インスタンスサイズを使用し、クラウド導入ウィザードを開始します。</block>
-  <block id="479b6b65ac792693f50797fe579cc223" category="paragraph">スキャンするデータが大量にない場合は、*[Deploy]&gt;[Configuration]*をクリックして、2つの小さいインスタンスタイプから選択することもできます。これにより、小規模インスタンスを使用する場合のクラウドコストを削減できます。リソースサイズが「中」の場合は次のようになります。</block>
-  <block id="71cdc5961cdeced45790d6b0eddda4af" category="paragraph">次に、* Deploy *をクリックしてクラウド導入ウィザードを開始します。</block>
   <block id="125c9895b0de4086b75bd6de17240096" category="list-text">導入手順が完了すると、ウィザードに進捗状況が表示されます。問題が発生した場合は、停止して入力を求められます。</block>
   <block id="699be6723175322ef727a933c7b42bbd" category="open-title">Azureへの導入</block>
   <block id="12714d8579e39a7357fefed194511b8a" category="open-title">Google Cloudに導入</block>
@@ -2566,9 +2564,6 @@
   <block id="d33aba60d91a201fe7b4bce522f9deb7" category="inline-image-macro">BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。</block>
   <block id="c48b9bad2a3a25d6dad223ab11c5a33e" category="paragraph"><block ref="c48b9bad2a3a25d6dad223ab11c5a33e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="473b6ff5a1c62a3a028f4dc37b9cbd6c" category="inline-image-macro">BlueXP分類をクラウドに導入するためのボタンを選択したスクリーンショット。</block>
-  <block id="3da6cac2700be9c7ac98eca813973ea5" category="paragraph"><block ref="3da6cac2700be9c7ac98eca813973ea5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ac4153eee3b95ba06c1d210eaf07d1a5" category="inline-image-macro">BlueXP分類を導入するインスタンスのサイズを選択するための導入ページのスクリーンショット。</block>
-  <block id="eaa6152e0a0616ae6e971e06d3710c49" category="paragraph"><block ref="eaa6152e0a0616ae6e971e06d3710c49" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6ccd3462f51e144ba54924a76ff58ce8" category="inline-image-macro">新しいインスタンスを導入するためのBlueXP分類ウィザードのスクリーンショット。</block>
   <block id="f7b6e8ebd5557b7030e15d04046f60e7" category="paragraph"><block ref="f7b6e8ebd5557b7030e15d04046f60e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bdfca0a21ad4ec182fb0ff0fe7b8bc6b" category="list-text">インスタンスが導入され、BlueXP分類がインストールされたら、*[構成に進む]*をクリックして_Configuration_pageに移動します。</block>
@@ -3348,9 +3343,6 @@
   <block id="26d411dfdee47762b69f79244d61895e" category="paragraph">はい、サポートされています。可能です<block ref="1c270efcf36a8d1c2de58c1ed2ed7315" category="inline-link-rx"></block>。<block ref="93d53de7d74c2549b2ebf074270b753f" category="inline-link-rx"></block>。その後、オンプレミスのONTAP クラスタとその他のローカルデータソースを検出し、BlueXPの分類を使用してデータをスキャンできます。</block>
   <block id="0494d69152dc144f6691315fabf9af4d" category="section-title">2023年7月17日（バージョン1.24）</block>
   <block id="025b17159c4d2dd28926bdc5b13436e2" category="section-title">BlueXPの分類では、ドイツの2つの新しいタイプの個人データが特定されています。</block>
-  <block id="f6731e0bd9f7a8a40f83ba1c622ffe25" category="section-title">Rocky Linux 9がサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました。</block>
-  <block id="76264cc2bc8d3793465d31c38655f588" category="inline-link">Rocky LinuxがインストールされているホストにBlueXP分類をインストールする方法を確認</block>
-  <block id="059df2e0abacded1764d0222f6ab3b42" category="paragraph">Rocky Linux 9（9.0、9.1、9.2）は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXPの分類は、ネットワーク内のRocky Linuxホストにインストールすることも、バージョン1.24のインストーラを使用している場合はクラウド内のLinuxホストにインストールすることもできます。<block ref="b549f731e0826bdc1659ea47e9a6f422" category="inline-link-rx"></block>。</block>
   <block id="cdbb87700ea6d8c32de7576d1ecb9987" category="section-title">BlueXPの分類は制限モードとプライベートモードで完全にサポートされています。</block>
   <block id="7c4ed755305616a8a97076615e4aa1e5" category="inline-link">コネクタのBlueXP導入モードの詳細</block>
   <block id="e7c3514a81618b80dab1e9591ba97368" category="paragraph">インターネットアクセスがないサイト（プライベートモード）とアウトバウンドのインターネットアクセスが制限されているサイト（制限モード）で、BlueXPの分類が完全にサポートされるようになりました。<block ref="7ee715aa70b4c6d819896ee955e59621" category="inline-link-rx"></block>。</block>
@@ -3447,7 +3439,6 @@
 ポート8080が開いていることを確認し、BlueXPでインストールの進行状況を確認します。</block>
   <block id="17308c76959fcb971603b7274a57c128" category="list-text">* オペレーティング・システム * ：</block>
   <block id="3e91b710997d720d3e069e8c923eb206" category="list-text">次のオペレーティングシステムでは、Dockerコンテナエンジンを使用する必要があります。</block>
-  <block id="93dd08da8a4c0d472e885570798d74ab" category="list-text">Rocky Linux 9（BlueXP分類バージョン1.24以降が必要）</block>
   <block id="156e173d1de86766f5cb22a057c779e9" category="list-text">Ubuntu 22.04（BlueXP分類バージョン1.23以降が必要）</block>
   <block id="2a2958e5280a05650587dc8d454a5f8d" category="list-text">使用しているOSに応じて、次のいずれかのコンテナエンジンをインストールする必要があります。</block>
   <block id="42b04f3730744d602d0c4b812384dce9" category="list-text">Docker Engineバージョン19.3.1以降。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>。</block>
@@ -3464,7 +3455,6 @@
   <block id="9d1bf1e07d6563a578988a0916d686ff" category="section-title">9月5日（バージョン1.25）</block>
   <block id="a4338ca25ea7436675e99fe5320a9d8a" category="section-title">[Investigation Results]ページから最大100,000項目にタグを適用</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">方法を参照してください</block>
-  <block id="6d37cd3f2b76637efa533f6623bf7ceb" category="paragraph">これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。 <block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>。</block>
   <block id="d0b71ca8d45c425a9eafb601e1eb4c3c" category="section-title">最小ファイルサイズが1MBの重複ファイルを特定する</block>
   <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">BlueXPの分類では、ファイルが50MB以上の場合にのみ重複ファイルが特定されます。1MBで始まる重複ファイルを識別できるようになりました。[Investigation]ページフィルタの[File Size]と[Duplicates]を使用して、環境内で特定のサイズのファイルが重複しているかどうかを確認できます。</block>
   <block id="a0b0397888c391cefadbe3fa028a49bc" category="list-text">すべてのページのすべてのファイルを選択するには、タイトル行（<block ref="240ed779654c3f6cf32843800cecc801" category="inline-image-macro-rx" type="image"></block>）をクリックし、ポップアップメッセージにと入力します <block ref="6d073c59586864da957e4fe8e0338e10" category="inline-image-macro-rx" type="image"></block>をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。</block>
@@ -3473,4 +3463,7 @@
   <block id="6558368ee6073deea643cc8c934764fc" category="paragraph">AIPラベルを複数のファイルに割り当てる手順は、次のとおりです。AIPラベルは、一度に最大20個のファイル（UIの1ページ）に割り当てることができます。</block>
   <block id="734926fafb1271c111d9404b81a2a40f" category="paragraph">ユーザを単一のファイルに割り当てる手順は、次のとおりです。</block>
   <block id="7cb00932323e74919350bd2ce54bb9db" category="paragraph">ユーザーを複数のファイルに割り当てるには、次の手順を実行します。一度に最大20個のファイルにユーザを割り当てることができます（UIの1ページ）。</block>
+  <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="section-title">小規模および中規模の導入が一時的に利用できない</block>
+  <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">現時点では、BlueXP分類のインスタンスをAWSに導入する場合、*[Deploy]&gt;[Configuration]*を選択してSmallまたはMedium sizedインスタンスを選択するオプションは使用できません。[Deploy]&gt;[Deploy]*を選択して、大きなインスタンスサイズを使用してインスタンスを導入することもできます。</block>
+  <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>。</block>
 </blocks>

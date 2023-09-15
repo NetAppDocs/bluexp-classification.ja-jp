@@ -204,19 +204,7 @@ AWS環境でBlueXPコネクタからBlueXPの分類を導入する場合は、�
 image:screenshot_cloud_compliance_deploy_start.png["BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。"]
 
 . [ データセンスを活動化（ Activate Data sense ） ] をクリックし
-+
-image:screenshot_cloud_compliance_deploy_cloud_aws.png["BlueXP分類をクラウドに導入するためのボタンを選択したスクリーンショット。"]
-
 . [_Installation_]ページで、*[Deploy]>[Deploy]*をクリックして「Large」インスタンスサイズを使用し、クラウド導入ウィザードを開始します。
-+
-スキャンするデータが大量にない場合は、*[Deploy]>[Configuration]*をクリックして、2つの小さいインスタンスタイプから選択することもできます。これにより、小規模インスタンスを使用する場合のクラウドコストを削減できます。リソースサイズが「中」の場合は次のようになります。
-
-+
-次に、* Deploy *をクリックしてクラウド導入ウィザードを開始します。
-
-+
-image:screenshot_cloud_deploy_resource_size.png["BlueXP分類を導入するインスタンスのサイズを選択するための導入ページのスクリーンショット。"]
-
 . 導入手順が完了すると、ウィザードに進捗状況が表示されます。問題が発生した場合は、停止して入力を求められます。
 +
 image:screenshot_cloud_compliance_wizard_start.png["新しいインスタンスを導入するためのBlueXP分類ウィザードのスクリーンショット。"]
