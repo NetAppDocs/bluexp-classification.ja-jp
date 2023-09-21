@@ -1392,7 +1392,6 @@
   <block id="c02ceb243337f566ebb5a2984a4d72eb" category="list-text">コピー元およびコピー先の場合</block>
   <block id="e701a25b99aca57280ba389dd0e551c6" category="paragraph">たとえば、ログファイルの次の行は、コピー処理が成功し、コピー処理が失敗した場合を示しています。</block>
   <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">たとえば、 100 個のファイルを削除するなど、多くのファイルで ［ 調査結果 ］ ペインからアクションを実行すると、プロセスに時間がかかることがあります。アクションステータスペインでこれらの非同期アクションのステータスを監視して、すべてのファイルにいつ適用されたかを確認できます。</block>
-  <block id="a5129dfbdf0dc4588d520f42de3004dd" category="paragraph">これにより、正常に完了した操作、現在実行中の操作、および失敗した操作を確認できるため、問題を診断して修正できます。</block>
   <block id="038235769c3322b247e85f9bc8d7b5da" category="list-text">データの.csvレポートと.jsonレポートのどちらをダウンロードするかを選択し、*レポートのダウンロード*をクリックします。</block>
   <block id="02b8107c002e6577adbfdfd6d6f1b208" category="inline-image-macro">調査レポートのダウンロードページのスクリーンショット。複数のオプションがあります。</block>
   <block id="0b0eacf696b45d65c53ff1b5473edb39" category="paragraph"><block ref="0b0eacf696b45d65c53ff1b5473edb39" category="inline-image-macro-rx" type="image"></block></block>
@@ -1430,7 +1429,6 @@
   <block id="9b0105a4da00bc6036dcb389d0f65890" category="paragraph"><block ref="9b0105a4da00bc6036dcb389d0f65890" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dfb9b838b2fdca41edadb04c9ebbb240" category="list-text">ネットアップ以外のCIFSファイル共有（NFSファイル共有は除く）</block>
   <block id="9816532bdb11b99d3175be528e41c5b6" category="cell">Texas Driver's License</block>
-  <block id="89b56b1e048dcf0ec285e29a05d6d029" category="paragraph">同じ名前のファイルがコピー先に存在する場合、そのファイルは移動されません。</block>
   <block id="e6860b78555fc79d4429acb5534cf51b" category="paragraph">組織固有の検索結果を提供する独自のカスタムポリシーを作成できます。検索条件に一致するすべてのファイルとディレクトリ（共有とフォルダ）の結果が返されます。</block>
   <block id="5587c065d5a62295455b157389cd71e5" category="paragraph">データを削除し、ポリシーの結果に基づいてAIPラベルを割り当てるアクションは、ファイルに対してのみ有効です。検索条件に一致するディレクトリは、自動的に削除することも、AIPラベルを割り当てることもできません。</block>
   <block id="90915c385560094095567649cbd732aa" category="section-title">ファイルおよびディレクトリの権限を表示する</block>
@@ -2424,7 +2422,6 @@
   <block id="342b7ce218ad37eb58175d677e743a1d" category="paragraph">BlueXPのコピーと同期のUIがBlueXPで開きます。</block>
   <block id="8ed3cff1bce3680cbecb3718361328e0" category="paragraph">同期関係を定義するよう求められます。ソースシステムには、BlueXPの分類で選択したリポジトリとファイルがあらかじめ設定されています。</block>
   <block id="599b3adc06ff60709e02c3d42a15c442" category="paragraph">BlueXPの分類から起動すると、通常のBlueXPのコピー処理と同期処理の一部が無効になることに注意してください。</block>
-  <block id="0507a26254d90555779319aac2a586a6" category="paragraph">BlueXP分類でスキャンするソースファイルを任意のNFS共有に移動できます。NFS共有をBlueXPの分類に統合する必要はありません（を参照） <block ref="29fc238c82f37afa6e56193b0cf6f5eb" category="inline-link-macro-rx"></block>）。</block>
   <block id="687c2785d0e6bcc55e7d411f98257c26" category="list-text">ファイルを移動するには、NFS共有でBlueXP分類インスタンスのIPアドレスからのアクセスが許可されている必要があります。</block>
   <block id="ab799d9194a97ef175cc77104273ab42" category="paragraph">BlueXP分類でバケットにアクセスできるように、オブジェクトストレージプロバイダのアクセスキーとシークレットキーが必要です。</block>
   <block id="53ab1a83968fb0e47aaf2604fd097f22" category="paragraph">オブジェクトストレージサービスをBlueXP分類に追加します。</block>
@@ -3175,7 +3172,6 @@
   <block id="c843b01ef48f3bd79d5d3521fbfa6125" category="cell">_最終変更時刻_</block>
   <block id="e9349d6c7fc3f860e75fd091e850b861" category="cell">_権限を開く_</block>
   <block id="44f76dcd3cb66939e2cbdab782c8314f" category="cell">ユーザー/グループアクセス_</block>
-  <block id="770ad37e7b6dccf816f59000b32376eb" category="list-text">BlueXPの分類では、SharePoint Online、SharePointオンプレミス（SharePoint Server）、OneDrive、Google Drive、Amazon S3の各データソースから「最終アクセス時刻」は抽出されません。</block>
   <block id="846ac2b072f7b636a6e9eec4c3e71fe1" category="list-text">古いバージョンのWindows OS（Windows 7やWindows 8など）では、システムのパフォーマンスに影響を与える可能性があるため、デフォルトで「最終アクセス時刻」属性の収集が無効になります。この属性が収集されない場合は、「最終アクセス日時」に基づくBlueXPの分類分析が影響を受けます。これらの古いWindowsシステムでは、必要に応じて最終アクセス時間の収集を有効にすることができます。</block>
   <block id="e636b4a892ea62f67be639b3661d6897" category="list-text">BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、CIFSでは属性の書き込み権限やNFSでの書き込み権限がない場合、デフォルトではボリューム内のファイルはスキャンされません。最終アクセス時間をリセットしても構わない場合は、*をクリックするか、各ボリュームのスキャンタイプ*を選択します。表示されるページで設定を有効にすると、権限に関係なくBlueXP分類でボリュームがスキャンされます。</block>
   <block id="dbc6be69ce4e1e10bc890167fa46f18b" category="inline-link-macro">BlueXPの分類に関するこの制限の詳細を参照してください</block>
@@ -3466,4 +3462,8 @@
   <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="section-title">小規模および中規模の導入が一時的に利用できない</block>
   <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">現時点では、BlueXP分類のインスタンスをAWSに導入する場合、*[Deploy]&gt;[Configuration]*を選択してSmallまたはMedium sizedインスタンスを選択するオプションは使用できません。[Deploy]&gt;[Deploy]*を選択して、大きなインスタンスサイズを使用してインスタンスを導入することもできます。</block>
   <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>。</block>
+  <block id="b76d53d86b234eb61cbe1f1f8dd81414" category="paragraph">BlueXP分類でスキャンするソースファイルを任意のNFS共有に移動できます。NFS共有をBlueXPの分類と統合する必要はありません。</block>
+  <block id="125161c62eedd013601db45d9716edf6" category="paragraph">ソースファイルのサブディレクトリ構造は、ファイルの移動時に移動先の共有に再作成されるため、ファイルの移動元がわかりやすくなります。同じ名前のファイルがコピー先に存在する場合、そのファイルは移動されません。</block>
+  <block id="81e4b26a6519cffe24195e5edc407992" category="paragraph">これにより、正常に完了した操作、現在実行中の操作、および失敗した操作を確認できるため、問題を診断して修正できます。単一ファイルの移動など、短時間で完了する短時間の処理は、[操作][ステータス]ペインには表示されません。</block>
+  <block id="b2ed02bab90c71832a95050419f003e6" category="list-text">BlueXPの分類では、SharePoint Online、SharePointオンプレミス（SharePoint Server）、OneDrive、Google Drive、Amazon S3、データベースのデータソースから「最終アクセス時刻」は抽出されません。</block>
 </blocks>

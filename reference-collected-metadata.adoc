@@ -37,7 +37,7 @@ BlueXPの分類では、データソースや作業環境からのデータに�
 |===
 [NOTE]
 ====
-* BlueXPの分類では、SharePoint Online、SharePointオンプレミス（SharePoint Server）、OneDrive、Google Drive、Amazon S3の各データソースから「最終アクセス時刻」は抽出されません。
+* BlueXPの分類では、SharePoint Online、SharePointオンプレミス（SharePoint Server）、OneDrive、Google Drive、Amazon S3、データベースのデータソースから「最終アクセス時刻」は抽出されません。
 * 古いバージョンのWindows OS（Windows 7やWindows 8など）では、システムのパフォーマンスに影響を与える可能性があるため、デフォルトで「最終アクセス時刻」属性の収集が無効になります。この属性が収集されない場合は、「最終アクセス日時」に基づくBlueXPの分類分析が影響を受けます。これらの古いWindowsシステムでは、必要に応じて最終アクセス時間の収集を有効にすることができます。
 
 
