@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman 
 summary: いくつかの手順を実行して、ネットワーク内のLinuxホスト、またはインターネットにアクセスできるクラウド内のLinuxホストにBlueXP分類をインストールします。このインストールの一環として、Linuxホストをネットワークまたはクラウドに手動で導入する必要があります。 
 ---
 = インターネットにアクセスできるホストにBlueXP分類をインストールします
@@ -156,6 +156,17 @@ BlueXPの分類を継続して実行できることを確認します。BlueXP�
 *** Ubuntu 22.04（BlueXP分類バージョン1.23以降が必要）
 
 
+** 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.26以降が必要です。
++
+*** Red Hat Enterprise Linuxバージョン9.0、9.1、9.2
++
+RHEL 9.xを使用している場合、次の機能は現在サポートされていません。
+
++
+**** タアクサイトテノセツチ
+**** 分散スキャン（マスタースキャナノードとリモートスキャナノードを使用）
+
+
 
 
 
@@ -169,6 +180,7 @@ BlueXPの分類を継続して実行できることを確認します。BlueXP�
 +
 https://youtu.be/Ogoufel1q6c["こちらのビデオをご覧ください"^] では、CentOSへのDockerのインストールの簡単なデモをご覧ください。
 
+*** Podmanバージョン4以降。Podmanをインストールするには、システムパッケージを更新します。 (`sudo yum update -y`）をクリックし、Podmanをインストールします。 (`sudo yum install podman -y`）。
 
 
 ** Pythonバージョン3.6以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
@@ -320,7 +332,7 @@ BlueXP分類をインストールすると、すべてのインストールア�
 
 .必要なもの
 * Linux システムがを満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
-* システムに前提条件となる2つのソフトウェアパッケージ（Docker EngineとPython 3）がインストールされていることを確認します。
+* システムに前提条件となる2つのソフトウェアパッケージ（Docker EngineまたはPodman、およびPython 3）がインストールされていることを確認します。
 * Linux システムに対する root 権限があることを確認してください。
 * インターネットへのアクセスにプロキシを使用している場合：
 +
@@ -450,7 +462,7 @@ BlueXPの分類に追加するスキャナグループとその名前を選択�
 
 .必要なもの
 * スキャナノードのすべてのLinuxシステムがを満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
-* システムに、前提条件となる2つのソフトウェアパッケージ（Docker EngineとPython 3）がインストールされていることを確認します。
+* システムに前提条件となる2つのソフトウェアパッケージ（Docker EngineまたはPodman、およびPython 3）がインストールされていることを確認します。
 * Linux システムに対する root 権限があることを確認してください。
 * 環境が要件を満たしていることを確認します <<BlueXPの分類からアウトバウンドのインターネットアクセスを有効にします,権限と接続>>。
 * 追加するスキャナノードホストのIPアドレスを確認しておく必要があります。
@@ -495,7 +507,7 @@ firewall-cmd --permanent --add-port=4789/udp
 firewall-cmd --reload
 ....
 +
-を有効または更新するたびに、Dockerを再起動する必要があります `firewalld` 設定：
+を有効または更新するたびに、DockerまたはPodmanを再起動する必要があることに注意してください。 `firewalld` 設定：
 
 
 
