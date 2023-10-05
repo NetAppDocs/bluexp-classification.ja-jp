@@ -1611,7 +1611,6 @@
   <block id="0f6c00034bac6e049845fa36d40deb87" category="inline-image-macro">BlueXPの右上にあるバナーのスクリーンショットで、[設定]アイコンを選択できます。</block>
   <block id="ec24fbf33d16fbcbcd5109403b3ac212" category="paragraph"><block ref="ec24fbf33d16fbcbcd5109403b3ac212" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6193e62acb4a86204633b2d093e49546" category="list-text">ライセンスをリクエストするには、BlueXPの右下にあるチャットアイコンをクリックします。</block>
-  <block id="257ff1df6b80ed0bf9b3463d53be79f9" category="paragraph">BlueXPアカウントIDを確認するには、BlueXPの上部にある[*Account*]ドロップダウンを選択し、アカウントの横にある[*Manage Account*]をクリックします。アカウント ID は、 [ 概要 ] タブにあります。</block>
   <block id="bae190eec3db4a0dd635ae72756acde8" category="inline-link">NSSアカウントをBlueXPに追加します</block>
   <block id="15f4e537c6c3c2957b6e194cb0894a09" category="list-text">BlueXPの右下にあるチャットアイコンをクリックして、特定のシリアル番号のCloud Data Senseライセンスの期間延長または追加容量をリクエストします。mailto ： ng-contact-data-sense@netapp.com ？ subject= Licensing [ ライセンスの更新をリクエストするメールを送信 ] もできます。</block>
   <block id="379dea20c8734742bd3f9c78de134135" category="paragraph">これらの警告が表示された場合は、BlueXPインターフェイスの右下にあるチャットアイコンを使用してライセンスを更新してください。</block>
@@ -2498,7 +2497,6 @@
   <block id="5bae938f4e490a5e1f1b65254d8e3ef5" category="paragraph">BlueXP分類ライセンスをお持ちでない場合は、弊社までお問い合わせください。</block>
   <block id="4c7c3836e9f902c5159464ae2ebf8187" category="paragraph">BlueXPのBlueXPデジタルウォレットページを使用して、BlueXP分類のBYOLライセンスを管理します。新しいライセンスを追加したり、既存のライセンスを更新したりできます。</block>
   <block id="656e076fbf2897c36a85dea0c00f2ddf" category="section-title">BlueXP分類ライセンスファイルを入手します</block>
-  <block id="eadd0c096097fd10d6470d5fc988867d" category="paragraph">インターネットにアクセスできないオンプレミスサイトのホストにBlueXP分類を導入している場合は、インターネットに接続されたシステムからライセンスファイルを取得する必要があります。シリアル番号と NSS アカウントを使用してライセンスをアクティブ化することは、ダークサイトへのインストールには使用できません。</block>
   <block id="91be63c0508d6a7954379847241750fe" category="list-text">BlueXP分類ライセンスのシリアル番号を入力します。</block>
   <block id="ab75085a52c32bc4b667115d2ca1861b" category="section-title">BlueXP分類のBYOLライセンスをアカウントに追加します</block>
   <block id="9f685573d36b3e4610c00dee293b7790" category="paragraph">BlueXPアカウント用のBlueXP分類（Data Sense）ライセンスを購入したら、BlueXP分類サービスを使用するにはライセンスをBlueXPに追加する必要があります。</block>
@@ -2623,7 +2621,6 @@
   <block id="ff33a1d5662bade5069e8522071a3ff9" category="section-title">BlueXPの分類スキャンと分析</block>
   <block id="cf9dcb28aaf2217e50ac277dc9f4d0ff" category="paragraph">ここでは、BlueXPの分類スキャンのパフォーマンスとユーザが利用できる分析について説明します。</block>
   <block id="5a4a7af8f3eadbbd473bb36cae6b0b1b" category="section-title">BlueXPの分類では、どのくらいの頻度でデータがスキャンされますか？</block>
-  <block id="1934082891f1aa4fb2a822091d21faae" category="paragraph">データは頻繁に変更されるため、BlueXPの分類により、データに影響を与えることなくデータが継続的にスキャンされます。データの初回スキャンには時間がかかる場合がありますが、その後のスキャンでは差分変更のみがスキャンされるため、システムのスキャン時間が短縮されます。</block>
   <block id="9e6a4b0d665f3981a5edd6e924e91581" category="paragraph">データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響がごくわずかであっても問題が発生する場合は、「低速」スキャンを実行するようにBlueXPの分類を設定できます。 <block ref="c0297b8a85bd81fc39a6444d8d1b6586" category="inline-link-macro-rx"></block>。</block>
   <block id="afc513a3724d36f6d8c4fc99c59325b5" category="section-title">BlueXPの分類を使用してデータを検索できますか。</block>
   <block id="09491c07cd2dfaa3838ed0ef6f3b7af0" category="paragraph">BlueXPは、幅広い検索機能を備えており、接続されているすべてのソースから特定のファイルやデータを簡単に検索できます。BlueXPの分類機能を使用すると、メタデータに反映される情報よりも詳細な情報を検索できます。言語に依存しないサービスで、ファイルを読み取ったり、名前やIDなどの機密データの種類を多数分析したりすることもできます。たとえば、構造化データストアと非構造化データストアの両方を検索して、企業ポリシーに違反してデータベースからユーザファイルに漏れた可能性のあるデータを見つけることができます。検索は後で保存できます。ポリシーを作成して、設定した頻度で結果を検索してアクションを実行できます。</block>
@@ -2891,7 +2888,6 @@
   <block id="8bb62f2d8bb562c2448b94ddd2767086" category="paragraph">BlueXPは、他のクライアントと同様に、NFSボリュームとCIFSボリュームをマウントすることでデータに接続します。NFS ボリュームには読み取り専用で自動的にアクセスされますが、 CIFS ボリュームをスキャンするためには Active Directory のクレデンシャルを指定する必要があります。</block>
   <block id="328776a7300ef8a5bca61abea128357e" category="inline-image-macro">クラウドプロバイダで実行されているBlueXPインスタンスとBlueXP分類インスタンスを示す図。BlueXP分類インスタンスは、NFSボリュームとCIFSボリューム、S3バケット、OneDriveアカウント、データベースに接続してスキャンします。</block>
   <block id="e7e22a17fdc74eed26b429d4795f8f01" category="paragraph"><block ref="e7e22a17fdc74eed26b429d4795f8f01" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e952f5add7977986663dbcc32004a8a9" category="paragraph">初回のスキャン後、BlueXPの分類機能はデータを継続的にスキャンして差分の変更を検出します（そのため、インスタンスを常に実行しておくことが重要です）。</block>
   <block id="c7eecba843c437de6a7f23657d755812" category="paragraph">BlueXPの分類を使用すると、選択したデータソースに対して一般的な「マッピング」スキャンを実行できます。マッピングではデータの概要のみが示され、分類ではデータの詳細なスキャンが提供されます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。</block>
   <block id="4aa06a2b4191eee9b59686458a3cf0e5" category="section-title">BlueXPの分類によるデータのスキャン速度</block>
   <block id="86c63f6e62f1edd7d597685edbad3395" category="list-text">マッピングスキャンを実行する場合、BlueXPの分類では、スキャナノードごとに1日に100~150TiBのデータをスキャンできます。</block>
@@ -3479,4 +3475,10 @@
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">クラウドプロバイダのファイルサービスのサポート</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">クラウドプロバイダのファイルサービスとそのインフラ、またはサービスを使用する解決策に関連するテクニカルサポートについては、該当する製品のBlueXPドキュメントの「困ったときは」を参照してください。</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">BlueXPおよびそのストレージソリューションとサービスに固有のテクニカルサポートを受けるには、以下に記載されているサポートオプションを使用してください。</block>
+  <block id="f3cd3d23d33dfe26418bbc5243171a69" category="inline-link">プライベートモード</block>
+  <block id="040827df4818cd49af8851daf98180cd" category="paragraph">インターネットにアクセスできないオンプレミスサイトのホストにBlueXP分類を導入している（つまりBlueXPコネクタを<block ref="6426a8a427a5eadce24d979d317c10cc" category="inline-link-rx"></block>では、インターネットに接続されたシステムからライセンスファイルを取得する必要があります。シリアル番号と NSS アカウントを使用してライセンスをアクティブ化することは、ダークサイトへのインストールには使用できません。</block>
+  <block id="3013e5a381c02243fda59b6191eacc44" category="paragraph">BlueXPアカウントIDを確認するには、BlueXPの上部にある[*Account*]ドロップダウンを選択し、アカウントの横にある[*Manage Account*]をクリックします。アカウント ID は、 [ 概要 ] タブにあります。インターネットにアクセスできないプライベートモードのサイトでは、* account-DARKSITE1*を使用します。</block>
+  <block id="5325380bce88952998c2cad273cdef5b" category="paragraph">データの最初のスキャンには少し時間がかかることがありますが、その後のスキャンでは増分変更のみが検査されるため、システムスキャン時間が短縮されます。BlueXPの分類では、データがラウンドロビン方式で継続的にスキャンされ、一度に6つのリポジトリがスキャンされるため、変更されたすべてのデータが非常に迅速に分類されます。</block>
+  <block id="098df4b7dbd64ba9dbd496df653f27b4" category="paragraph">BlueXPの分類では、データベースが1日に1回しかスキャンされません。データベースは、他のデータソースのように継続的にスキャンされるわけではありません。</block>
+  <block id="9c8736affefce89efb819f7f63f5a237" category="paragraph">初回スキャン後、BlueXPの分類ではラウンドロビン方式でデータが継続的にスキャンされ、差分の変更が検出されます（そのため、インスタンスを常に実行しておくことが重要です）。</block>
 </blocks>
