@@ -3454,11 +3454,6 @@
   <block id="81e4b26a6519cffe24195e5edc407992" category="paragraph">これにより、正常に完了した操作、現在実行中の操作、および失敗した操作を確認できるため、問題を診断して修正できます。単一ファイルの移動など、短時間で完了する短時間の処理は、[操作][ステータス]ペインには表示されません。</block>
   <block id="b2ed02bab90c71832a95050419f003e6" category="list-text">BlueXPの分類では、SharePoint Online、SharePointオンプレミス（SharePoint Server）、OneDrive、Google Drive、Amazon S3、データベースのデータソースから「最終アクセス時刻」は抽出されません。</block>
   <block id="4b9f4d0e463502904f138e1d9f0014a4" category="section-title">10月4日（バージョン1.26）</block>
-  <block id="620a73262e6956695319caae21506289" category="section-title">RHELバージョン9を使用したオンプレミスインストールのサポート</block>
-  <block id="97e778415712a740a3bb71e9070c88c5" category="paragraph">Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインストールに必要なDockerエンジンをサポートしていません。コンテナインフラとしてPodmanバージョン4以降を使用したRHEL 9.0、9.1、9.2へのインストールがサポートされるようになりました。最新バージョンのRHELを使用する必要がある環境では、Podmanを使用する際にBlueXP分類（バージョン1.26以降）をインストールできるようになりました。</block>
-  <block id="081ac57be4c35d4de4fc43c105089d8f" category="paragraph">現時点では、ダークサイトのインストールや分散スキャン環境（マスターおよびリモートスキャナノードを使用）はサポートされていません。</block>
-  <block id="db5b005cbaaba7a23899858892848a77" category="section-title">調査ページの結果には、項目の合計数に加えて合計サイズが表示されるようになりました。</block>
-  <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">[Investigation]ページでフィルタ処理された結果に、ファイルの合計数に加えてアイテムの合計サイズが表示されるようになりました。これは、ファイルの移動、ファイルの削除などを行うときに役立ちます。</block>
   <block id="4a90d7d35061a4c9e5845a989ea05db2" category="list-text">次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.26以降が必要です。</block>
   <block id="59f227bced13db9b55686d58d4422b7b" category="list-text">Red Hat Enterprise Linuxバージョン9.0、9.1、9.2</block>
   <block id="ca4483ba58214f8a91253985b52c976c" category="paragraph">RHEL 9.xを使用している場合、次の機能は現在サポートされていません。</block>
@@ -3481,4 +3476,7 @@
   <block id="5325380bce88952998c2cad273cdef5b" category="paragraph">データの最初のスキャンには少し時間がかかることがありますが、その後のスキャンでは増分変更のみが検査されるため、システムスキャン時間が短縮されます。BlueXPの分類では、データがラウンドロビン方式で継続的にスキャンされ、一度に6つのリポジトリがスキャンされるため、変更されたすべてのデータが非常に迅速に分類されます。</block>
   <block id="098df4b7dbd64ba9dbd496df653f27b4" category="paragraph">BlueXPの分類では、データベースが1日に1回しかスキャンされません。データベースは、他のデータソースのように継続的にスキャンされるわけではありません。</block>
   <block id="9c8736affefce89efb819f7f63f5a237" category="paragraph">初回スキャン後、BlueXPの分類ではラウンドロビン方式でデータが継続的にスキャンされ、差分の変更が検出されます（そのため、インスタンスを常に実行しておくことが重要です）。</block>
+  <block id="74246010013353726bd9ff99866fa7d4" category="section-title">RHELバージョン9でのBlueXP分類のオンプレミスインストールのサポート</block>
+  <block id="efbacc885d0798efa8b4d06d61cb578e" category="paragraph">Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインストールに必要なDockerエンジンをサポートしていません。コンテナインフラとしてPodmanバージョン4以降を使用したRHEL 9.0、9.1、9.2でのBlueXP分類のインストールがサポートされるようになりました。最新バージョンのRHELを使用する必要がある環境では、Podmanを使用する際にBlueXP分類（バージョン1.26以降）をインストールできるようになりました。</block>
+  <block id="efe06748da92e661d7225cc7ec109b32" category="paragraph">現時点では、RHEL 9.xを使用している場合、ダークサイトのインストールや分散スキャン環境（マスターノードとリモートスキャナノードを使用）はサポートされていません。</block>
 </blocks>
