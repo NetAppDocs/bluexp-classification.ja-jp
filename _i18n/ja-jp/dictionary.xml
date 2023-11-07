@@ -3479,4 +3479,8 @@
   <block id="74246010013353726bd9ff99866fa7d4" category="section-title">RHELバージョン9でのBlueXP分類のオンプレミスインストールのサポート</block>
   <block id="efbacc885d0798efa8b4d06d61cb578e" category="paragraph">Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインストールに必要なDockerエンジンをサポートしていません。コンテナインフラとしてPodmanバージョン4以降を使用したRHEL 9.0、9.1、9.2でのBlueXP分類のインストールがサポートされるようになりました。最新バージョンのRHELを使用する必要がある環境では、Podmanを使用する際にBlueXP分類（バージョン1.26以降）をインストールできるようになりました。</block>
   <block id="efe06748da92e661d7225cc7ec109b32" category="paragraph">現時点では、RHEL 9.xを使用している場合、ダークサイトのインストールや分散スキャン環境（マスターノードとリモートスキャナノードを使用）はサポートされていません。</block>
+  <block id="abff2804f60c6da51fe02e78167abad1" category="section-title">11月6日（バージョン1.26.3）</block>
+  <block id="e25bae53fb1951841531279fa78ee63a" category="section-title">このリリースで解決された問題は次のとおりです。</block>
+  <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">システムによってスキャンされたファイル数をダッシュボードに表示する際の不一致を修正しました。</block>
+  <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">名前とメタデータに特殊文字が含まれるファイルとディレクトリを処理およびレポートすることで、スキャンの動作が改善されました。</block>
 </blocks>
