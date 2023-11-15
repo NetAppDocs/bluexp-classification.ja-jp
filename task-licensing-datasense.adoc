@@ -27,13 +27,21 @@ link:concept-cloud-compliance.html#cost["BlueXPの分類に関連するライセ
 
 
 
-== BlueXP分類のPAYGOサブスクリプションを使用
+== 30 日間の無償トライアルをご利用いただけます
 
-クラウドプロバイダのマーケットプレイスから購入した従量課金制サブスクリプションを使用すると、Cloud Volumes ONTAP システムや多くのクラウドデータサービス（BlueXP分類など）のライセンスを取得できます。
+BlueXPワークスペースでは、BlueXPの分類によってスキャンされる最大1TBのデータを対象とした30日間の無償トライアルを利用できます。その後もデータのスキャンを継続するには、NetAppからBYOLライセンスを購入するか、クラウドプロバイダのマーケットプレイスからサブスクリプションに登録する必要があります。
 
 いつでも購読できます。30日間の試用期間が終了するか、データ量が1TBを超えるまでは、料金は発生しません。スキャンされているデータの合計量は、BlueXPの分類Governance Dashboardでいつでも確認できます。また、 [ 今すぐサブスクライブ ] ボタンを使用すると、準備が整ったときに簡単にサブスクライブできます。
 
 image:screenshot_compliance_subscribe.png["スキャンされているデータの量を示すスクリーンショットと、サービスにサブスクライブするための [ サブスクライブ（ Subscribe ） ] ボタン。"]
+
+
+
+== BlueXP分類のPAYGOサブスクリプションを使用
+
+クラウドプロバイダのマーケットプレイスで提供されている従量課金制サブスクリプションを使用すると、Cloud Volumes ONTAPシステムや多くのBlueXPサービス（BlueXP分類など）のライセンスを取得できます。BlueXP分類が1つのサブスクリプションで1時間ごとにスキャンしているデータの量に応じて、クラウドプロバイダに料金を支払います。
+
+登録することで、無償トライアルの終了後にサービスが中断されることがなくなります。トライアルが終了すると、スキャンしているデータの量に応じて1時間ごとに課金されます。無料トライアル中は、月額プランから課金されることはありません。
 
 .手順
 これらの手順は、 _Account Admin_role 権限を持つユーザが実行する必要があります。
@@ -42,23 +50,23 @@ image:screenshot_compliance_subscribe.png["スキャンされているデータ�
 +
 image:screenshot_settings_icon.gif["BlueXPの右上にあるバナーのスクリーンショットで、[設定]アイコンを選択できます。"]
 
-. AWS インスタンスプロファイル、 Azure Managed Service Identity 、 Google Project のクレデンシャルを検索します。
+. [Credentials]*をクリックし、AWSインスタンスプロファイル、Azure Managed Service Identity、またはGoogle Projectのクレデンシャルを検索します。
 +
 サブスクリプションは、インスタンスプロファイル、マネージドサービス ID 、または Google プロジェクトに追加する必要があります。充電ができない。
 
 +
-BlueXPサブスクリプションをすでにお持ちの場合(AWSの場合は以下を参照)、設定はすべて済みです。必要な操作は他にありません。
+以下のAWS向けBlueXPサブスクリプションをすでにお持ちの場合は、設定が完了しています。他に必要なことはありません。
 
 +
 image:screenshot_profile_subscription.gif["アクティブなサブスクリプションを持つインスタンスプロファイルを示す資格情報ページのスクリーンショット。"]
 
-. まだサブスクリプションをお持ちでない場合は、資格情報の上にカーソルを置いてアクションメニューをクリックし、 * サブスクリプションの関連付け * をクリックします。
+. まだサブスクリプションをお持ちでない場合は、アクションメニューをクリックして*サブスクリプションの関連付け*をクリックします。
 +
 image:screenshot_add_subscription.gif["資格情報ページのメニューのスクリーンショット。サブスクリプションを資格情報に関連付けるボタンが表示されます。"]
 
 . 既存のサブスクリプションを選択し、 [* アソシエイト * ] をクリックするか、 [ * サブスクリプションの追加 * ] をクリックして、手順を実行します。
 +
-次のビデオでは、を関連付ける方法を示します https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^] AWS サブスクリプションへのサブスクリプション：
+次のビデオでは、を関連付ける方法を示します https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4["AWS Marketplace"^] AWS サブスクリプションへのサブスクリプション：
 
 +
 video::video_subscribing_aws.mp4[width=848,height=480]
@@ -68,10 +76,23 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 +
 video::video_subscribing_azure.mp4[width=848,height=480]
 +
-次のビデオでは、を関連付ける方法を示します https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP Marketplace"^] GCP サブスクリプションへのサブスクリプション：
+次のビデオでは、を関連付ける方法を示します https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project["Google Cloud Marketplace"^] GCP サブスクリプションへのサブスクリプション：
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
+
+
+
+
+== 年間契約を使用する
+
+BlueXP分類の料金は、年単位の契約を購入して年単位で支払います。期間は1年、2年、3年から選択できます。
+
+市場で年間契約を結んでいるパートナー様は、BlueXPの分類データスキャンの料金がその契約に対して請求されます。BYOLでは、年単位のマーケットプレイス契約を組み合わせることはできません。
+
+* AWS https://aws.amazon.com/marketplace/pp/prodview-q7dg6zwszplri["価格の詳細については、BlueXP Marketplaceのサービスを参照してください"^]。
+* Azure https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-bluexp["価格の詳細については、BlueXP Marketplaceのサービスを参照してください"^]。
+* Google Cloud：年間契約の購入については、NetAppの営業担当者にお問い合わせください。この契約は、Google Cloud Marketplaceでのプライベートオファーとして利用できます。NetAppからプライベートオファーが提供されたら、BlueXPの分類をアクティブ化する際にGoogle Cloud Marketplaceからサブスクライブする際に年間プランを選択できます。
 
 
 
@@ -88,15 +109,15 @@ BlueXP分類ライセンスをお持ちでない場合は、弊社までお問�
 
 必要に応じて、使用しないCloud Volumes ONTAP の未割り当てのノードベースライセンスがある場合は、同じ金額、同じ有効期限のBlueXP分類ライセンスに変換できます。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["詳細については、こちらをご覧ください"^]。
 
-BlueXPのBlueXPデジタルウォレットページを使用して、BlueXP分類のBYOLライセンスを管理します。新しいライセンスを追加したり、既存のライセンスを更新したりできます。
+BlueXPデジタルウォレットを使用して、BlueXP分類のBYOLライセンスを管理します。BlueXPデジタルウォレットから、新しいライセンスの追加、既存ライセンスの更新、ライセンスステータスの表示を行うことができます。
 
 
 
 === BlueXP分類ライセンスファイルを入手します
 
-BlueXP分類（Data Sense）ライセンスを購入したら、BlueXP分類のシリアル番号とNSSアカウントを入力するか、NLFライセンスファイルをアップロードして、BlueXPでライセンスをアクティブ化します。次の手順は、 NLF ライセンスファイルを取得する方法を示しています。
+BlueXP分類（Data Sense）ライセンスを購入したら、BlueXP分類のシリアル番号とNetApp Support Site（NSS）アカウントを入力するか、NetAppライセンスファイル（NLF）をアップロードして、BlueXPでライセンスをアクティブ化します。次の手順は、 NLF ライセンスファイルを取得する方法を示しています。
 
-インターネットにアクセスできないオンプレミスサイトのホストにBlueXP分類を導入している（つまりBlueXPコネクタを https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["プライベートモード"^]では、インターネットに接続されたシステムからライセンスファイルを取得する必要があります。シリアル番号と NSS アカウントを使用してライセンスをアクティブ化することは、ダークサイトへのインストールには使用できません。
+インターネットにアクセスできないオンプレミスサイトのホストにBlueXP分類を導入している（つまりBlueXPコネクタを https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["プライベートモード"^]では、インターネットに接続されたシステムからライセンスファイルを取得する必要があります。プライベートモードのインストールでは、シリアル番号とNSSアカウントを使用してライセンスをアクティブ化することはできません。
 
 .作業を開始する前に
 開始する前に、次の情報が必要です。
@@ -118,7 +139,7 @@ BlueXPアカウントIDを確認するには、BlueXPの上部にある[*Account
 image:screenshot_cloud_tiering_license_step1.gif["シリアル番号で検索したあとのライセンスの一覧を示すスクリーンショット。"]
 
 . [ライセンスキー]列の*[Get NetApp License File]*をクリックします。
-. テナントID（BlueXPアカウントID）を入力し、*[送信]*をクリックしてライセンスファイルをダウンロードします。
+. BlueXPアカウントID (これはサポートサイトではテナントIDと呼ばれます)を入力し'[*Submit*]をクリックしてライセンスファイルをダウンロードします
 +
 image:screenshot_cloud_tiering_license_step2.gif["ライセンスの取得ダイアログボックスを示すスクリーンショット。テナント ID を入力し、送信をクリックしてライセンスファイルをダウンロードします。"]
 
@@ -154,11 +175,11 @@ BlueXPにライセンスが追加され、BlueXP分類サービスがアクテ�
 
 === BlueXP分類のBYOLライセンスを更新します
 
-ライセンス期間が有効期限に近づいている場合や、ライセンス容量が上限に達している場合は、BlueXPの分類で通知されます。
+ライセンス期間が有効期限に近づいている場合、またはライセンス容量が上限に達している場合は、分類UIで通知されます。
 
 image:screenshot_services_license_expire_cc1.png["BlueXPの分類ページの有効期限が近いライセンスを示すスクリーンショット。"]
 
-このステータスは、BlueXPのデジタルウォレットにも表示されます。
+このステータスは、BlueXPのデジタルウォレットや https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center["通知"^]。
 
 image:screenshot_services_license_expire_cc2.png["BlueXPのデジタルウォレットページの有効期限が近いライセンスを示すスクリーンショット。"]
 
