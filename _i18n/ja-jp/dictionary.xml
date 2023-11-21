@@ -1253,7 +1253,6 @@
   <block id="38aabb48c7b00e0c5ef0ec27ca5a850d" category="paragraph"><block ref="38aabb48c7b00e0c5ef0ec27ca5a850d" category="inline-link-rx"></block></block>
   <block id="7c04897feb206ad3e6d38ea88ccde2d4" category="paragraph"><block ref="7c04897feb206ad3e6d38ea88ccde2d4" category="inline-link-rx"></block></block>
   <block id="0e07c8e30d5d787d70fbc93583eb3032" category="paragraph"><block ref="0e07c8e30d5d787d70fbc93583eb3032" category="inline-link-rx"></block></block>
-  <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">データで特定できるすべての種類の個人データを表示します</block>
   <block id="9ffceb20e382df6e4587add0d24af321" category="cell">オーストラリア TFN ( 税ファイル番号 )</block>
   <block id="67863eec6ed398cda366fe555c1746bd" category="cell">オーストラリアのメディケア番号</block>
   <block id="bba082dd43baad5296b00863b2fd871e" category="cell">オーストラリアパスポート番号</block>
@@ -1448,16 +1447,6 @@
   <block id="1ce92447664cc42f3e2c04aaf8570862" category="cell">ニュージーランド銀行口座</block>
   <block id="2be885677b02540592a1f44b87ee5fb9" category="cell">ニュージーランドIRD番号（税ID）</block>
   <block id="3c266b4db1bf588305e19eddcef36116" category="cell">ニュージーランドパスポート番号</block>
-  <block id="6006377785b7aa3dfed8795e05fbc569" category="section-title">2022年8月7日（バージョン1.15）</block>
-  <block id="afae08b9f3014d73a3bf7e0c201b2b36" category="section-title">ニュージーランドの5つの新しいタイプの個人データは、データセンスによって識別されます</block>
-  <block id="3b4b0faa54186ef002c6026e97e51a10" category="paragraph">データセンスでは、次の種類のデータを含むファイルを識別および分類できます。</block>
-  <block id="c189819be34e41f0ac712261c4bb10b0" category="list-text">ニュージーランド銀行口座番号</block>
-  <block id="c8c8337bd5f0527c7ba4b08117f3d96f" category="paragraph"><block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
-  <block id="8d3dd83a131924f6dd08fdea2d8e7828" category="section-title">ブレッドクラムファイルを追加して、ファイルが移動された理由を示す機能</block>
-  <block id="13cd21aa095db4c5e2c5cd12303ecc97" category="section-title">ディレクトリにある個人データと機密性の高い個人データは、調査結果に表示されます</block>
-  <block id="6b473faf5fc253b69b173e6b8b87f726" category="inline-link">例を参照してください</block>
-  <block id="76013a8e1044d1903752927bac2c2799" category="section-title">分類に成功したボリューム、バケットなどの数のステータスを表示します</block>
-  <block id="046e94b126bcddc4303664d7f72819a5" category="inline-link">この情報の表示方法については、を参照してください</block>
   <block id="992e3ca84c2944a0dbcaf7e99231a50e" category="inline-link-macro">マッピングスキャンと分類スキャンの違いを参照してください</block>
   <block id="5e27c5cc9f66f543d963585b42d1709d" category="section-title">コンプライアンスを維持</block>
   <block id="3a1ce1b3df0ddd54818235c5f83820d9" category="list-text">GDPR、CCPA、PCI、HIPAAの各プライバシー規制の要件に応じて、機密性の高い個人情報の範囲を特定します。</block>
@@ -1495,17 +1484,7 @@
   <block id="0bac9ec0256a9fd2858c7836245c9025" category="list-text">AWSの場合：&lt;ec2-user&gt;を使用します</block>
   <block id="5e0b61460f50f9b62d95b060b2f3f8d2" category="inline-image-macro">［調査結果］ペインに表示される、カスタム正規表現の結果の例を示すスクリーンショット。</block>
   <block id="f0957a103fdf829c95e6748bbaec5b4a" category="paragraph"><block ref="f0957a103fdf829c95e6748bbaec5b4a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8b4506c76e97dc4cbdfa92467d581a0a" category="section-title">これで、データの中でデータを識別するカスタムパターンを追加できるようになりました</block>
-  <block id="331a3f3aa511b1c438e9c58674f70985" category="section-title">2022年9月6日（バージョン1.16）</block>
-  <block id="d59aefa3621ff4109ce747758711c46c" category="section-title">ファイルの変更を反映するために、リポジトリをすぐに再スキャンできます</block>
   <block id="a6277013831bd0ba5dd8499592e6d67b" category="inline-link">ディレクトリを再スキャンする方法を参照してください</block>
-  <block id="24a7d06e1fe90aca0c0301d12fadc686" category="section-title">[データ調査]ページの[データスキャン]ステータスの新しいフィルタ</block>
-  <block id="e2e0734ca474deb38b2c13f526832e06" category="paragraph">[分析ステータス]フィルタを使用すると、データセンススキャンの特定の段階にあるファイルを一覧表示できます。オプションを選択して、「*最初のスキャンを保留*」、「*完了*スキャン中」、「*再スキャンを保留中*」、または「スキャンに失敗*」のファイルのリストを表示できます。</block>
-  <block id="9d771bf7f3ed0f2d7cd7bbf827bab0a2" category="section-title">データ主体は、スキャンで見つかった「個人データ」の一部と見なされるようになりました</block>
-  <block id="76eab5fecba3164354032ddcdc0feb3d" category="paragraph">データセンスは、コンプライアンスダッシュボードに表示される個人結果の一部として、データ主体を認識するようになりました。また、［調査］ページで検索を実行するときに、［個人データ］の［データ主体］を選択して、データ主体を含むファイルのみを表示することもできます。</block>
-  <block id="6d3ab1cb3139d4416e111272db779d6d" category="section-title">データ検出ブレッドクラムファイルは、スキャンで検出された「カテゴリ」の一部と見なされるようになりました</block>
-  <block id="d6933caaf62074fc0c3e63f604181712" category="inline-link">ブレッドクラムファイルの作成方法の詳細については、こちらをご覧ください</block>
-  <block id="636d406982c471ea6a3e9f3a5d5f7f1f" category="paragraph">また、[調査]ページで検索を実行するときに、[カテゴリ]の[データセンスパンくずリスト]を選択して、データセンスブレッドクラムファイルのみを表示することもできます。</block>
   <block id="88ce972549d8b67ad56bc9e681818ca2" category="section-title">SharePoint Onlineアカウントを追加する</block>
   <block id="8b7071c98b3d8a3e43ecfa77bab75857" category="paragraph">ユーザーファイルが存在するSharePoint Onlineアカウントを追加します。</block>
   <block id="c5545572ea4069cfaa50e205fd80e522" category="inline-image-macro">[SharePoint Onlineの追加]ボタンをクリックできる[構成]ページのスクリーンショット。</block>
@@ -1714,8 +1693,6 @@
   <block id="8cc577dbce4245d15abad6f3b1dfc995" category="paragraph">各ログファイルのサイズは最大で10MBです。この制限に達すると、新しいログファイルが開始されます。ログファイルの名前は「DataSense _ audit.log」、「DataSense _ audit.log.1」、「DataSense _ audit.log.2」などです。最大数の100個のログファイルがシステムの古いログファイルに保持されている場合、最大数に達すると自動的に削除されます。</block>
   <block id="fbda64f06352e44a4e6523dbdd6b039e" category="paragraph">クラウドのシステムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。詳細については、以下を参照してください。</block>
   <block id="c490178f4142a4c06caeff7c04e922f8" category="inline-link">スキャナノードをインストールして他のデータソースをスキャンする方法を参照してください</block>
-  <block id="095466eeefcbabc811ab5e2a672ee877" category="paragraph">将来のスキャンでデータセンスが識別するカスタムの「個人データ」を追加するには、2つの方法があります。これにより、機密性の高いデータがすべての組織のファイル内に存在する場所に関する全体像を確認できます。</block>
-  <block id="3fb1605dea41a1022e020f895acc727f" category="list-text">正規表現（regex）を使用してパーソナルパターンを追加できます。</block>
   <block id="3c73fb515a637be4a1083e3e061099f9" category="paragraph">インストールを正常に完了するには、インストーラによって事前チェックが実行され、システムとネットワークの要件が満たされていることが確認されます。</block>
   <block id="0cf39354f7edfa15dd84075131e27804" category="list-text">クラウドプロバイダからのBlueXP Marketplaceへのサブスクリプション、または</block>
   <block id="21315205ba34163a83853c5526e534c1" category="list-text">一度に最大1、000個のアイテムを再スキャンできます。</block>
@@ -1869,7 +1846,6 @@
   <block id="a05ecd168005e0205e52b540a66b4208" category="paragraph">[データ調査]ページに表示する結果を絞り込むための新しいフィルタを使用できます。</block>
   <block id="d40d8569fcb40c761c8217de218391ba" category="list-text">「アクセス権を持つユーザの数」フィルタは、特定の数のユーザに対して開かれているファイルやフォルダを表示します。数値の範囲を選択して結果を絞り込むことができます。たとえば、51~100ユーザがアクセスできるファイルを確認できます。</block>
   <block id="142c1e7e965016b6fe04e45f8ae01209" category="list-text">「作成日時」、「検出日時」、「最終変更日時」、「最終アクセス日時」の各フィルタを使用して、事前に定義された日範囲だけを選択するのではなく、カスタムの日付範囲を作成できるようになりました。たとえば、「作成日時」が6か月を超えているファイルや、「最終更新日時」が「過去10日間」の日付になっているファイルを探すことができます。</block>
-  <block id="248b219562d5c677bea769543286aaf9" category="list-text">ニュージーランド・ドライバーのライセンス番号</block>
   <block id="47a431ede9d263c65258e5be6ff6b2c1" category="paragraph">プライバシーリスクアセスメントレポートには、GDPRやCCPAなどのプライバシー規制に必要な、組織のプライバシーリスクステータスの概要が記載されています。このレポートには次の情報が含まれます。</block>
   <block id="e9ebebe267d1d822cab67a314b8df765" category="section-title">各データ調査レポートに含まれる情報</block>
   <block id="8b3b2b670034ec0279cb937c145f257a" category="paragraph">これにより、必要なソフトウェアと実際のインストールファイル* cc_onpm_installer.tar.gz *が抽出されます。</block>
@@ -3128,13 +3104,6 @@
   <block id="b218ff5e02da9d35096238a32166dde5" category="paragraph">データセンスで、SharePoint OnlineアカウントとSharePointオンプレミスアカウント(SharePoint Server)の両方をスキャンできるようになりました。SharePointを自分のサーバー、またはインターネットにアクセスできないサイトにインストールする必要がある場合は、これらのアカウントのユーザーファイルをデータ検出でスキャンできるようになりました。<block ref="f9677d6768fea140fb85ff23d7983a85" category="inline-link-rx"></block>。</block>
   <block id="96c123ab6f4734112bc50bc214494621" category="paragraph">これで、複数のディレクトリ（フォルダまたは共有）をただちに再スキャンして、変更がシステムに反映されるようになります。これにより、特定のデータを再スキャンする際に、他のデータよりも優先順位を付けることができます。<block ref="30c54ee6e02a85bc7c1713b7a90e6ed8" category="inline-link-rx"></block>。</block>
   <block id="0226172c9b936ddaa203e083a4b9cc81" category="paragraph">必要に応じて、スキャンするデータソースに物理的に近いホストシステムにスキャナノードをインストールできます。スキャナノードがデータに近いほど、データのスキャン時のネットワークレイテンシができるだけ低減されるため、データの読み取り速度が向上します。<block ref="838641529bd2d9079ec09cedca69b267" category="inline-link-rx"></block>。</block>
-  <block id="cd0d9671e6080c26297795b009cbbdce" category="paragraph">変更がシステムに反映されるように特定のリポジトリをただちに再スキャンする必要がある場合は、リポジトリを選択して再スキャンします。これにより、特定のデータを再スキャンする際に、他のデータよりも優先順位を付けることができます。<block ref="30c54ee6e02a85bc7c1713b7a90e6ed8" category="inline-link-rx"></block>。</block>
-  <block id="394e72d8b35ee4d082653107b57db524" category="paragraph"><block ref="0036173f4fe5a5d22b0f2328a28ebcbb" category="inline-link-rx"></block>。</block>
-  <block id="82f7cb5359fda2db7066d505c282baf6" category="paragraph">データ検出では、階層リンクファイルがコンプライアンスダッシュボードに表示されるカテゴリの一部として認識されるようになりました。これらは、ソースの場所からNFS共有にファイルを移動するときにData Senseによって作成されるファイルです。<block ref="333cd23a73253379d4dadb8212365c81" category="inline-link-rx"></block>。</block>
-  <block id="9602c54aa4fcdb34c3d9e86a7d890ea2" category="paragraph">データ検出機能を使用してソースファイルをNFS共有に移動する際に、移動したファイルの場所にブレッドクラムファイルを残すことができるようになりました。ブレッドクラムファイルは、ファイルが元の場所から移動された理由をユーザーが理解するのに役立ちます。移動されたファイルごとに、システムはという名前のソースの場所にブレッドクラムファイルを作成します<block ref="e5b81a76aedb2ddb1da7aba12de3e20b" prefix=" " category="inline-code"></block> ファイルが移動された場所とファイルを移動したユーザーを表示します。<block ref="2ccef004fdad5fd0d9cdb8ce1d569434" category="inline-link-rx"></block>。</block>
-  <block id="0aec8167e209c9b773de640809bb2ffe" category="paragraph">[データ調査]ページに、個人データと、ディレクトリ（フォルダおよび共有）内で検出された機密性の高い個人データの結果が表示されるようになりました。<block ref="838b4ac121a236248619da49a65d1710" category="inline-link-rx"></block>。</block>
-  <block id="f1454006c2b84f6126900ebe59c31558" category="paragraph">データ検出でスキャンしている個々のリポジトリ（ボリューム、バケットなど）を表示したときに、マッピングされているリポジトリの数と「分類済み」の数が表示されるようになりました。すべてのデータに対してAIの完全な識別が実行されるため、分類にかかる時間が長くなります。<block ref="2a13251a6fe881bbd1315d595f667f8b" category="inline-link-rx"></block>。</block>
-  <block id="b37b0bfc35cb447c84138ba82441ec4f" category="paragraph">これらのキーワードとパターンは、データ検出ですでに使用されている既存の定義済みパターンに追加され、結果は[個人パターン]セクションに表示されます。<block ref="a38b2261878a3d41c0abfc69bd23b15e" category="inline-link-rx"></block>。</block>
   <block id="9aeb191a0aa6c1027436d873f00b71c9" category="paragraph">可能です<block ref="1f636e96c754f54f3e3b5b9bf17177fa" category="inline-link-rx"></block> ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。BlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。</block>
   <block id="1b01b1e09dd0c52ed6a6d8b4ca2a0568" category="paragraph">クラウドプロバイダ環境でコネクタを作成するには、を参照してください<block ref="43c354a9e10c487e79b72ac55319f506" category="inline-link-rx"></block>、<block ref="f57cc468ab9bea4198c876368a971c60" category="inline-link-rx"></block>または<block ref="4ed2379781d8ba33fa9fe0959039a8e2" category="inline-link-rx"></block>。</block>
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
@@ -3407,9 +3376,6 @@
   <block id="8909a1f3cdd58859743896107e545477" category="list-text">NFS共有にエクスポートする.jsonファイル。最大100、000行のデータを含めることができます。10万行を超えるデータがある場合は、追加の.jsonファイルが作成されます。</block>
   <block id="090f87d7b81c809aa6a6d81dcabfeeb8" category="paragraph">BlueXPの分類でファイル（非構造化データ）、ディレクトリ（フォルダとファイル共有）、データベース（構造化データ）をスキャンしている場合は、最大3つのレポートファイルをダウンロードできます。</block>
   <block id="abfab9fcbcf9c983c6fcb0efced8edc6" category="cell">8080（TCP）、6000（TCP）、443（TCP）、および80</block>
-  <block id="31bf187a1f6ba9a21c24893034392c45" category="cell">コネクタのセキュリティグループで、ポート6000および443を介したBlueXP分類インスタンスとの間のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。
-
-ポート8080が開いていることを確認し、BlueXPでインストールの進行状況を確認します。</block>
   <block id="17308c76959fcb971603b7274a57c128" category="list-text">* オペレーティング・システム * ：</block>
   <block id="3e91b710997d720d3e069e8c923eb206" category="list-text">次のオペレーティングシステムでは、Dockerコンテナエンジンを使用する必要があります。</block>
   <block id="156e173d1de86766f5cb22a057c779e9" category="list-text">Ubuntu 22.04（BlueXP分類バージョン1.23以降が必要）</block>
@@ -3494,4 +3460,7 @@
   <block id="ee28dd0aeae91008620b667fd834dc53" category="paragraph">ライセンス期間が有効期限に近づいている場合、またはライセンス容量が上限に達している場合は、分類UIで通知されます。</block>
   <block id="a274f4d4670213a9045ce258c6c56b80" category="inline-link">通知</block>
   <block id="697511e8d7a1e79b59a32ea4cdfd567a" category="paragraph">このステータスは、BlueXPのデジタルウォレットや<block ref="5ed52bf872a49314e95419b00a21b97c" category="inline-link-rx"></block>。</block>
+  <block id="13d4946175fa2baa511a3731aec3cf3d" category="paragraph">コネクタのセキュリティグループで、ポート6000および443を介したBlueXP分類インスタンスとの間のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。</block>
+  <block id="ba66ea25533ed21d178a828c4ca4e652" category="list-text">BlueXPのBYOLライセンスをダークサイトで使用するには、ポート6000が必要です。</block>
+  <block id="1f883a560be0732076f2237a57c5195f" category="list-text">インストールの進捗状況をBlueXPで確認できるように、ポート8080が開いている必要があります。</block>
 </blocks>
