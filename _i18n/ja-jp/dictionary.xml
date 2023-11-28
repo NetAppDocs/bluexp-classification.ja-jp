@@ -3235,8 +3235,6 @@
   <block id="d2a2c5ad694a196d91103a3db366503f" category="paragraph">現在、Cloud Volumes ONTAP、Azure NetApp Files、FSx for ONTAP、AWS S3、Googleドライブのスキャンはサポートされていません。 BlueXP分類がプライベートモードで導入されている場合は、OneDriveまたはSharePoint Onlineアカウント。</block>
   <block id="548a75d789202d935a1a2f04740b1caf" category="paragraph">プライベートモードでコネクタがインストールされていない場合は、<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> Linux ホストの場合は、</block>
   <block id="958f4b7cbe550d6d49b31bbeff50f3a9" category="paragraph">BlueXP Connectorがプライベートモードでインストールされていない場合は、<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> オフラインサイトの Linux ホスト</block>
-  <block id="ebd8af30c2bd1f5614199bd389919de2" category="list-text">Red Hat Enterprise Linuxバージョン7.8および7.9 - Linuxカーネルのバージョンは4.0以降である必要があります。</block>
-  <block id="067032f0b3420d92b7bee458a84f9cb8" category="list-text">CentOSバージョン7.8および7.9 - Linuxカーネルのバージョンは4.0以上である必要があります。</block>
   <block id="5c2d28b4f3a99b0fe3968b98ea7d88e5" category="inline-link-macro">詳細はこちら</block>
   <block id="92b051108aff71c86d91cfa5338016b1" category="paragraph">BlueXP分類をインストールすると、すべてのインストールアクティビティがログに記録されます。インストール中に問題が発生した場合は、インストール監査ログの内容を表示できます。に書き込まれます。<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block>。 <block ref="d63cd9daf9e428da9929248a998d6b79" category="inline-link-macro-rx"></block>。</block>
   <block id="e441d0b06845e470533ecf90d990663b" category="list-text">プライベートモードで使用するLinuxホストにインストーラバンドルをコピーします。</block>
@@ -3463,4 +3461,6 @@
   <block id="13d4946175fa2baa511a3731aec3cf3d" category="paragraph">コネクタのセキュリティグループで、ポート6000および443を介したBlueXP分類インスタンスとの間のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。</block>
   <block id="ba66ea25533ed21d178a828c4ca4e652" category="list-text">BlueXPのBYOLライセンスをダークサイトで使用するには、ポート6000が必要です。</block>
   <block id="1f883a560be0732076f2237a57c5195f" category="list-text">インストールの進捗状況をBlueXPで確認できるように、ポート8080が開いている必要があります。</block>
+  <block id="3834cda66b40129353aaded5673c3634" category="list-text">Red Hat Enterprise Linuxバージョン7.8および7.9</block>
+  <block id="05b80f267d8929f809fe86d91268bc94" category="list-text">CentOSバージョン7.8および7.9</block>
 </blocks>
