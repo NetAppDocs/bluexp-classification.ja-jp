@@ -3370,7 +3370,6 @@
   <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link">BlueXP分類APIの詳細</block>
   <block id="67a7c5f0403c8f58fe4ae70a6f761ae5" category="paragraph"><block ref="6c685f385b4749ef1d91fb7e0577272e" category="inline-link-rx"></block>。</block>
   <block id="90ca6bd84833f8a6659f7ea02a7649ba" category="list-text">DFS（Distributed File System）共有を通常のCIFS共有として追加できます。ただし、BlueXPの分類では、共有が複数のサーバ/ボリュームを1つのCIFS共有として組み合わせて構築されていることを認識していないため、別のサーバ/ボリュームにあるフォルダ/共有の1つだけを環境というメッセージが表示された場合に、共有に関する権限や接続のエラーが表示されることがあります。</block>
-  <block id="d9c89ee38491bdb679829f426faea2ef" category="list-text">ローカルマシンへの.csvファイル。最大5,000行のデータを含めることができます。</block>
   <block id="8909a1f3cdd58859743896107e545477" category="list-text">NFS共有にエクスポートする.jsonファイル。最大100、000行のデータを含めることができます。10万行を超えるデータがある場合は、追加の.jsonファイルが作成されます。</block>
   <block id="090f87d7b81c809aa6a6d81dcabfeeb8" category="paragraph">BlueXPの分類でファイル（非構造化データ）、ディレクトリ（フォルダとファイル共有）、データベース（構造化データ）をスキャンしている場合は、最大3つのレポートファイルをダウンロードできます。</block>
   <block id="abfab9fcbcf9c983c6fcb0efced8edc6" category="cell">8080（TCP）、6000（TCP）、443（TCP）、および80</block>
@@ -3463,4 +3462,5 @@
   <block id="1f883a560be0732076f2237a57c5195f" category="list-text">インストールの進捗状況をBlueXPで確認できるように、ポート8080が開いている必要があります。</block>
   <block id="3834cda66b40129353aaded5673c3634" category="list-text">Red Hat Enterprise Linuxバージョン7.8および7.9</block>
   <block id="05b80f267d8929f809fe86d91268bc94" category="list-text">CentOSバージョン7.8および7.9</block>
+  <block id="7d389403e7b93ff8a467567b0e19cd8a" category="list-text">ローカルマシンへの.csvファイル。最大10,000行のデータを含めることができます。</block>
 </blocks>
