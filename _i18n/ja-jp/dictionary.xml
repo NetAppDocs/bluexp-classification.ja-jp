@@ -3469,4 +3469,28 @@
   <block id="12863c4f3d21d132902517901137f0ce" category="list-text">スキャン分析エラー</block>
   <block id="c0796e6eb525f9f4fe2a9d96a28d314a" category="list-text">ディレクトリ名</block>
   <block id="ea36f55b106d5d1443d6a1e80c18df3d" category="list-text">ディレクトリ所有者</block>
+  <block id="0ee0dd7645f9fd01a3094af2719826bf" category="summary">NFSファイル共有内のファイルまたはフォルダにグループIDが添付されている場合、グループIDはファイルまたはフォルダに対する権限（組織に対して開かれているかどうかなど）を定義します。一部のグループID（GID）に「組織を開く」権限レベルが設定されていない場合は、その権限をGIDに追加して、そのGIDが添付されているファイルやフォルダが「組織に対して開かれている」とみなされるようにすることができます。</block>
+  <block id="9ada56a36c98a6592b93aac97b759b65" category="doc">追加のグループIDを「組織にオープン」として定義する</block>
+  <block id="54f4d6ea6929f3157249a7232005ba31" category="paragraph">グループID（GID）がNFSファイル共有内のファイルまたはフォルダに添付される場合、グループIDはファイルまたはフォルダに対する権限（組織に対して開かれているかどうかなど）を定義します。一部のグループID（GID）に「組織を開く」権限レベルが設定されていない場合は、その権限をGIDに追加して、そのGIDが添付されているファイルやフォルダが「組織に対して開かれている」とみなされるようにすることができます。</block>
+  <block id="85755c2c4a65adf46f4aed267e145acd" category="paragraph">この変更を行ってBlueXPの分類でファイルやフォルダが再スキャンされると、これらのグループIDが関連付けられているファイルやフォルダには、[調査の詳細]ページにこの権限が表示され、ファイルの権限を表示しているレポートにも表示されます。</block>
+  <block id="5b2ef9bd1232e63caf3da28133ca8a3d" category="paragraph">この機能を使用するには、構成ファイルを編集してスクリプトを実行できるように、BlueXP分類システムにログインする必要があります。</block>
+  <block id="c079e3a087379d135bc6228cdbf4538d" category="section-title">BlueXP分類システムにログインする</block>
+  <block id="3e6039a3c9f368f407b293a4cae886e2" category="paragraph">BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、構成ファイルとスクリプトに直接アクセスできます。</block>
+  <block id="aea796c551760c123249c98597ef5dab" category="section-title">「組織に開く」権限をグループIDに追加する</block>
+  <block id="cab0d8189f1383e6633abad2d8bb10e2" category="paragraph">このタスクを開始する前に、グループID番号（GID）が必要です。</block>
+  <block id="2783de23499f1b6912284079950af328" category="list-text">BlueXP分類システムで、「/opt/netapp/config/custom _configuration」に移動し、「data_provider.yaml」ファイルを開きます。</block>
+  <block id="f81b0bf85bf2ac124c8235722fd5953b" category="list-text">「organization_group_ids:[]」行にグループIDを追加します。例：</block>
+  <block id="98ab797cb238cc535772dce1663baf49" category="paragraph">このファイルの他の内容は変更しないでください。</block>
+  <block id="fb448d942cb14f250d9497a3bb5f49dc" category="list-text">「/opt/NetApp/Datasense」に移動し、次のスクリプトを実行します。</block>
+  <block id="8a9190ee1ce170537f2281a1fd3efbf8" category="paragraph">このコマンドは、変更されたグループID権限を分類エンジンにコミットします。</block>
+  <block id="fa72d06a2d710ef92a76614af32ec1f7" category="paragraph">その後のデータスキャンでは、これらのグループIDが「組織に対して開かれている」と添付されているファイルまたはフォルダが特定されます。</block>
+  <block id="3ef472518560fb1d514f802f7b78520c" category="paragraph">次の手順を使用して、グループIDのリストを編集したり、過去に追加したグループIDを削除したりできます。変更したグループIDのリストは、スクリプトを実行して変更をコミットすると更新されます。</block>
+  <block id="547ea5f0fcc4aedf35c256e9b5b85845" category="paragraph">BlueXPの分類に追加したグループIDの現在のリストを表示するには、「/opt/NetApp/Datasense」から次のコマンドを実行します。</block>
+  <block id="81c60fb26d30a0a1fa208bc6b7d14e6f" category="section-title">1月10日（バージョン1.27）</block>
+  <block id="be8658cdca9524eb49f00560785f3ab7" category="section-title">調査ページの結果に、項目の合計数に加えて合計サイズが表示されるようになりました。</block>
+  <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">[Investigation]ページでフィルタ処理された結果に、ファイルの合計数に加えてアイテムの合計サイズが表示されるようになりました。これは、ファイルの移動、ファイルの削除などを行うときに役立ちます。</block>
+  <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="section-title">追加のグループIDを[Open to Organization]として設定します。</block>
+  <block id="617de59f0823cef046ababc40408cb92" category="inline-link">追加のグループIDを「組織にオープン」として追加</block>
+  <block id="883dea14e891e466e8184cc34b65bd17" category="paragraph">BlueXPの分類で、NFSのグループIDが最初にその権限で設定されていなかった場合に、直接「組織として開く」とみなされるようにNFSのグループIDを設定できるようになりました。方法を参照してください<block ref="d0c1b51f12c2e361f70a1ff7d6038c44" category="inline-link-rx"></block>。</block>
+  <block id="7823cdf226bddeed3789b41cce9f2f73" category="sidebar">既存のグループIDを「組織にオープン」として定義する</block>
 </blocks>

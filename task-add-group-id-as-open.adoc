@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: task-add-group-id-as-open.html 
+keywords: permissions, open to organization, file access 
+summary: NFSファイル共有内のファイルまたはフォルダにグループIDが添付されている場合、グループIDはファイルまたはフォルダに対する権限（組織に対して開かれているかどうかなど）を定義します。一部のグループID（GID）に「組織を開く」権限レベルが設定されていない場合は、その権限をGIDに追加して、そのGIDが添付されているファイルやフォルダが「組織に対して開かれている」とみなされるようにすることができます。 
+---
+= 追加のグループIDを「組織にオープン」として定義する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+グループID（GID）がNFSファイル共有内のファイルまたはフォルダに添付される場合、グループIDはファイルまたはフォルダに対する権限（組織に対して開かれているかどうかなど）を定義します。一部のグループID（GID）に「組織を開く」権限レベルが設定されていない場合は、その権限をGIDに追加して、そのGIDが添付されているファイルやフォルダが「組織に対して開かれている」とみなされるようにすることができます。
+
+この変更を行ってBlueXPの分類でファイルやフォルダが再スキャンされると、これらのグループIDが関連付けられているファイルやフォルダには、[調査の詳細]ページにこの権限が表示され、ファイルの権限を表示しているレポートにも表示されます。
+
+この機能を使用するには、構成ファイルを編集してスクリプトを実行できるように、BlueXP分類システムにログインする必要があります。
+
+
+
+== BlueXP分類システムにログインする
+
+BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、構成ファイルとスクリプトに直接アクセスできます。
+
+BlueXP分類をクラウドに導入する場合は、BlueXP分類インスタンスにSSHで接続する必要があります。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。
+
+ ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
+* <path-to_The _ssh_key>= SSH認証キーの場所
+* <machine_user>：
++
+** AWSの場合：<ec2-user>を使用します
+** Azureの場合：BlueXPインスタンス用に作成したユーザを使用します
+** GCPの場合：BlueXPインスタンス用に作成されたユーザーを使用します
+
+
+* <datasension_IP>=仮想マシンインスタンスのIPアドレス
+
+
+クラウドのシステムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。詳細については、以下を参照してください。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWSのセキュリティグループのルール"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azureのセキュリティグループルール"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Google Cloudのファイアウォールルール"^]
+
+
+
+
+== 「組織に開く」権限をグループIDに追加する
+
+このタスクを開始する前に、グループID番号（GID）が必要です。
+
+.手順
+. BlueXP分類システムで、「/opt/netapp/config/custom _configuration」に移動し、「data_provider.yaml」ファイルを開きます。
+. 「organization_group_ids:[]」行にグループIDを追加します。例：
++
+ organization_group_ids: [1014, 1015, 21, 2021, 1013, 2020, 1018, 1019]
++
+このファイルの他の内容は変更しないでください。
+
+. 「/opt/NetApp/Datasense」に移動し、次のスクリプトを実行します。
++
+ update_data_providers_from_config_file.sh
++
+このコマンドは、変更されたグループID権限を分類エンジンにコミットします。
+
+
+
+その後のデータスキャンでは、これらのグループIDが「組織に対して開かれている」と添付されているファイルまたはフォルダが特定されます。
+
+次の手順を使用して、グループIDのリストを編集したり、過去に追加したグループIDを削除したりできます。変更したグループIDのリストは、スクリプトを実行して変更をコミットすると更新されます。
+
+BlueXPの分類に追加したグループIDの現在のリストを表示するには、「/opt/NetApp/Datasense」から次のコマンドを実行します。
+
+ get_data_providers_configuration.sh

@@ -90,6 +90,8 @@ sidebar:
       url: "/task-managing-data-fusion.html"
     - title: BlueXP分類操作のステータスを表示します
       url: "/task-view-compliance-actions.html"
+    - title: 既存のグループIDを「組織にオープン」として定義する
+      url: "/task-add-group-id-as-open.html"
     - title: BlueXPの分類アクションの履歴を監査します
       url: "/task-audit-data-sense-actions.html"
     - title: BlueXPの分類スキャン速度を下げます
