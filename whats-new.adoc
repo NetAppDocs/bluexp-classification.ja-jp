@@ -30,7 +30,7 @@ BlueXPの新機能をご紹介します。
 
 === 追加のグループIDを[Open to Organization]として設定します。
 
-BlueXPの分類で、NFSのグループIDが最初にその権限で設定されていなかった場合に、直接「組織として開く」とみなされるようにNFSのグループIDを設定できるようになりました。方法を参照してください https://task-add-group-id-as-open["追加のグループIDを「組織にオープン」として追加"]。
+BlueXPの分類で、NFSのグループIDが最初にその権限で設定されていなかった場合に、直接「組織として開く」とみなされるようにNFSのグループIDを設定できるようになりました。方法を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open["追加のグループIDを「組織にオープン」として追加"]。
 
 
 

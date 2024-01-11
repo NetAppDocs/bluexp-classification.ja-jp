@@ -61,7 +61,7 @@ BlueXP分類をクラウドに導入する場合は、BlueXP分類インスタ�
 +
 このファイルの他の内容は変更しないでください。
 
-. 「/opt/NetApp/Datasense」に移動し、次のスクリプトを実行します。
+. 「/opt/netapp/Datasense/tools/customer _configuration/data_providers」に移動し、次のスクリプトを実行します。
 +
  update_data_providers_from_config_file.sh
 +
@@ -73,6 +73,6 @@ BlueXP分類をクラウドに導入する場合は、BlueXP分類インスタ�
 
 次の手順を使用して、グループIDのリストを編集したり、過去に追加したグループIDを削除したりできます。変更したグループIDのリストは、スクリプトを実行して変更をコミットすると更新されます。
 
-BlueXPの分類に追加したグループIDの現在のリストを表示するには、「/opt/NetApp/Datasense」から次のコマンドを実行します。
+BlueXPの分類に追加したグループIDの現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer _configuration/data_providers」から次のコマンドを実行します。
 
  get_data_providers_configuration.sh
