@@ -30,7 +30,7 @@ BlueXPの新機能をご紹介します。
 
 === 追加のグループIDを[Open to Organization]として設定します。
 
-BlueXPの分類で、NFSのグループIDが最初にその権限で設定されていなかった場合に、直接「組織として開く」とみなされるようにNFSのグループIDを設定できるようになりました。方法を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open["追加のグループIDを「組織にオープン」として追加"]。
+グループに最初にその権限が設定されていなかった場合に、BlueXPの分類から直接、NFSのグループIDを「Open to Organization」とみなされるように設定できるようになりました。これらのグループIDが添付されているファイルおよびフォルダは、[Investigation Details]ページで[Open to Organization]として表示されます。方法を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["追加のグループIDを「組織にオープン」として追加"]。
 
 
 
@@ -317,33 +317,3 @@ BlueXPの分類では、日本語の個人番号（「マイナンバー」と�
 
 
 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["1台のホストサーバと複数のホストにデータセンスをインストールする方法については、こちらをご覧ください"]。
-
-
-
-== 2022年11月13日（バージョン1.17）
-
-
-
-=== オンプレミスのSharePointアカウントのスキャンがサポートされます
-
-データセンスで、SharePoint OnlineアカウントとSharePointオンプレミスアカウント(SharePoint Server)の両方をスキャンできるようになりました。SharePointを自分のサーバー、またはインターネットにアクセスできないサイトにインストールする必要がある場合は、これらのアカウントのユーザーファイルをデータ検出でスキャンできるようになりました。 https://docs.netapp.com/us-en/bluexp-classification/task-scanning-sharepoint.html#adding-a-sharepoint-on-premise-account["詳細はこちら。"^]。
-
-
-
-=== 複数のディレクトリ（フォルダまたは共有）を再スキャンする機能
-
-これで、複数のディレクトリ（フォルダまたは共有）をただちに再スキャンして、変更がシステムに反映されるようになります。これにより、特定のデータを再スキャンする際に、他のデータよりも優先順位を付けることができます。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["ディレクトリを再スキャンする方法を参照してください"^]。
-
-
-
-=== オンプレミスの「スキャナ」ノードを追加して、特定のデータソースをスキャンする機能
-
-データセンスをオンプレミス環境にインストールしている場合、特定のデータソースをスキャンするためにスキャン処理能力がさらに必要になることがわかったときは、「スキャナ」ノードを追加して、それらのデータソースをスキャンするように割り当てることができます。マネージャノードをインストールした直後にスキャナノードを追加することも、後でスキャナノードを追加することもできます。
-
-必要に応じて、スキャンするデータソースに物理的に近いホストシステムにスキャナノードをインストールできます。スキャナノードがデータに近いほど、データのスキャン時のネットワークレイテンシができるだけ低減されるため、データの読み取り速度が向上します。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html#add-scanner-nodes-to-an-existing-deployment["スキャナノードをインストールして他のデータソースをスキャンする方法を参照してください"^]。
-
-
-
-=== オンプレミスのインストーラが、インストールを開始する前に事前チェックを実行できるようになりました
-
-LinuxシステムにData Senseをインストールする場合、実際のインストールを開始する前に、システムが必要な要件（CPU、RAM、容量、ネットワークなど）をすべて満たしているかどうかを確認します。これにより、インストールに時間を費やす前に*問題をキャッチできます。
