@@ -2569,7 +2569,6 @@
   <block id="a0ae0e32ddfd7ab74e020981760f58f8" category="paragraph">BlueXPはクラウドかオンプレミスかを問わず、単一のサーバ（クラスタ）を任意の場所に導入できます。サーバは標準プロトコルでデータソースに接続し、同じサーバにも導入されているElasticsearchクラスタの結果をインデックス化します。これにより、マルチクラウド環境、クロスクラウド環境、プライベートクラウド環境、オンプレミス環境をサポートできます。</block>
   <block id="ff5134b8822856ebcc5677de01bc300f" category="paragraph">BlueXPの分類はBlueXPの一部として機能し、AWS、Azure、GCPをサポートします。これにより、異なるクラウドプロバイダ間で統一されたプライバシー可視性を実現できます。</block>
   <block id="43fb0be49307beaaf607049cdcec4e54" category="section-title">BlueXPにはREST APIがありますか？また、他社製ツールと連携できますか？</block>
-  <block id="477e2dc63bdbee29f0ad2ab4fbe572fc" category="paragraph">BlueXPは、サービスのREST API機能をサポートしています。BlueXPの管理が推奨されない場合は、REST APIを使用してBlueXPの分類などのサービスを使用することもできます。すべてのユーザアクションには、サードパーティのシステムと統合できるREST APIがあります。</block>
   <block id="f08123eb9486c940f0187f02090476ae" category="section-title">BlueXPの分類はマーケットプレイスを通じて提供されますか？</block>
   <block id="064545628e27cedb51462f11c151eea0" category="paragraph">はい。BlueXPとBlueXPの分類は、AWS、Azure、GCPのマーケットプレイスで提供されています。</block>
   <block id="ff33a1d5662bade5069e8522071a3ff9" category="section-title">BlueXPの分類スキャンと分析</block>
@@ -3479,4 +3478,7 @@
   <block id="d16189c10d4d8a98db7b1b99d883a1fd" category="paragraph">BlueXPの分類に追加したグループIDの現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer _configuration/data_providers」から次のコマンドを実行します。</block>
   <block id="4103104f589e62a63d3d9cfb58c764f2" category="paragraph">この機能をアクティブ化するには、構成ファイルを編集してスクリプトを実行できるように、BlueXP分類システムにログインする必要があります。</block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">グループに最初にその権限が設定されていなかった場合に、BlueXPの分類から直接、NFSのグループIDを「Open to Organization」とみなされるように設定できるようになりました。これらのグループIDが添付されているファイルおよびフォルダは、[Investigation Details]ページで[Open to Organization]として表示されます。方法を参照してください<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>。</block>
+  <block id="3fa1e4aec3c930accd20ae2a1e354a79" category="paragraph">BlueXPは、サービスのREST API機能をサポートしています。BlueXPの管理が推奨されない場合は、REST APIを使用してBlueXPの分類などのサービスを使用することもできます。すべてのユーザアクションには、サードパーティのシステムと統合できるREST APIがあります。を参照してください <block ref="6cf6f695e0ddd2cc536783d6e0951a10" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="da4874b0888a9dafc160c24905184d23" category="section-title">ONTAPボリュームにあるSnapshotコピーはスキャンされますか？</block>
+  <block id="a35301b044a7bc259b579edebe42bff3" category="paragraph">いいえBlueXPの分類ではSnapshotはスキャンされません。これは、コンテンツがボリューム内のコンテンツと同じであるためです。</block>
 </blocks>
