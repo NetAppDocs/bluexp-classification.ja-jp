@@ -100,7 +100,7 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 | /var/lib/dockerを使用します | `rwx------` 
 
 
-| /user/lib/systemd/system | `rwxr-xr-x` 
+| /usr/lib/systemd/system | `rwxr-xr-x` 
 |===
 * * オペレーティング・システム * ：
 +

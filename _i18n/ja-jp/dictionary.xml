@@ -1230,26 +1230,7 @@
   <block id="3e51e074f12d2c873310422bb9c8cb50" category="sidebar">プライベートデータを管理</block>
   <block id="b243b08794c870ea91d13357c677102f" category="sidebar">カスタムの個人データ識別子を追加します</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
-  <block id="7a1ecd84a5a121cd176d1d7c8945c20b" category="sidebar">Cloud Volumes ONTAP ボリューム</block>
-  <block id="8d097e38d6920ece5917d57da5699e5c" category="sidebar">オンプレミスの ONTAP ボリューム</block>
-  <block id="c7596ffa8d20a8a14d1f631c94185f72" category="sidebar">Azure NetApp Files ボリューム</block>
-  <block id="fd2fd9101d9dde8ab7090da05f8117ff" category="sidebar">ONTAP ボリュームの Amazon FSX</block>
-  <block id="1dc03133d25c1924f8604133a6fa7f0a" category="sidebar">汎用の S3 バケット</block>
-  <block id="7644f60fe7823935bde3cbe9f9e82bf8" category="sidebar">AIP ラベルを使用してデータを分類します</block>
-  <block id="40af1406afc061038f5851961a636714" category="sidebar">準拠していないデータが見つかった場合にアラートを E メールで送信</block>
-  <block id="b33a306cb7abd3790ba4311eb102a667" category="sidebar">独自のカスタム個人データ識別子を追加します</block>
-  <block id="514f916b25444f3ec0ab113c2706f83a" category="sidebar">注意が必要なファイルにタグと所有者を適用します</block>
-  <block id="9293f14feca10eb970a136a34ecc9d8c" category="sidebar">データサブジェクトのアクセス要求に応答します</block>
-  <block id="503c49a3ccf62894992dc5b2f108ca21" category="sidebar">ソースファイルをコピーします</block>
-  <block id="2987f20ce906ae32ec7e3e192413377f" category="sidebar">ソースファイルを移動します</block>
-  <block id="865eee83e350aaa1f9bf0c9f0c4adef0" category="sidebar">ソースファイルを削除します</block>
-  <block id="3305adbdafef990b45e1b0ded7f5a486" category="sidebar">データの詳細を表示します</block>
-  <block id="ca60961cf2d876d600daca4a1ad60001" category="sidebar">上位検索を表示するポリシーを作成します</block>
-  <block id="f72e4f10556fdc1e84c715407cbda16b" category="sidebar">プライベート情報を含むファイルを表示します</block>
-  <block id="53aba5c7ba7952b6d58e9dfb83a4516e" category="sidebar">ストレージに複製されているファイルを表示します</block>
   <block id="becce430afb103abe05ad66b3e6cde8a" category="sidebar">コンプライアンスレポートを生成します</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログコミュニティ</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
   <block id="38aabb48c7b00e0c5ef0ec27ca5a850d" category="paragraph"><block ref="38aabb48c7b00e0c5ef0ec27ca5a850d" category="inline-link-rx"></block></block>
   <block id="7c04897feb206ad3e6d38ea88ccde2d4" category="paragraph"><block ref="7c04897feb206ad3e6d38ea88ccde2d4" category="inline-link-rx"></block></block>
   <block id="0e07c8e30d5d787d70fbc93583eb3032" category="paragraph"><block ref="0e07c8e30d5d787d70fbc93583eb3032" category="inline-link-rx"></block></block>
@@ -1352,9 +1333,6 @@
   <block id="37c9303e988a90a91e5799c6d881439b" category="paragraph">オンプレミスのONTAP システムでは、ネットアップ以外のファイル共有、汎用のS3オブジェクトストレージ、データベース、OneDriveフォルダ、SharePointアカウント、Googleドライブアカウントを、これらのクラウドコネクタのいずれかを使用してスキャンできます。</block>
   <block id="68c4a78a67d74510c65b916751c96b07" category="list-text">Google Driveアカウントのデータでは、現時点でこれらの機能を使用することはできません。</block>
   <block id="9c471504c4f66f275b7d110c46622118" category="paragraph">オンプレミスのONTAP システム、ネットアップ以外のファイル共有、汎用のS3オブジェクトストレージ、データベース、OneDriveフォルダ、SharePointアカウント、Googleドライブアカウントは、これらのクラウドコネクタのいずれかを使用している場合にスキャンできます。</block>
-  <block id="1692b32d79b99cfb5a1277f8c49a23af" category="sidebar">作業環境をスキャンします</block>
-  <block id="0dcbed0ed443cc2be8b28a4bd6ea0b84" category="sidebar">他のデータソースをスキャンします</block>
-  <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">データをフィルタして、特定のファイルを表示します</block>
   <block id="bc80eb794f149fca6a16076a0e09247f" category="list-text">最上位のタブでは、ファイル（非構造化データ）、ディレクトリ（フォルダおよびファイル共有）、またはデータベース（構造化データ）のデータを表示できます。</block>
   <block id="d5ef18883c38c2dd1dffc30e93610cde" category="paragraph">ユーザーファイルが存在するGoogleドライブアカウントを追加します。複数のユーザーからファイルをスキャンする場合は、ユーザーごとにこの手順を実行する必要があります。</block>
   <block id="ba7710e66e983f5d109ee54ee938f343" category="paragraph">をクリックできます <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> をクリックすると、グループの一部であるユーザのリストが表示されます。</block>
@@ -1598,7 +1576,6 @@
   <block id="7aeae51930f9c356f9f8611d740f88b8" category="list-text">BlueXPの左ナビゲーションメニューで、* Governance &gt; Classification *をクリックし、* Compliance *タブをクリックします。</block>
   <block id="acdc619c23bd4363ccec733a2e8a38ae" category="list-text">このファイルをBlueXPユーザーに割り当てることで、ファイルに対して実行する必要があるフォローアップアクションを実行できます。を参照してください <block ref="aae7319c920bbcb541f7fa3a1a1db120" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXPに関する注意事項</block>
-  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXPブログ</block>
   <block id="cd02721523de57441e385fc64cc693cc" category="list-text">SharePointオンプレミスアカウント(SharePoint Server)</block>
   <block id="97f34c43cfd5abbd752382f17f44c9a2" category="list-text">BlueXPメニューで、* Governance &gt; Classification *をクリックします。</block>
   <block id="4bb7a83842b1271682b6be62080707cb" category="list-text">SharePoint Onlineアカウントとオンプレミスアカウント</block>
@@ -1920,7 +1897,6 @@
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="inline-link">N2-standard-16</block>
   <block id="610e28574a4dbf2d34e497e3ed7bd822" category="list-text">特定のデータソース、または特定のデータソースグループ（通常は場所に基づく）のスキャンに役立つノードを追加する</block>
   <block id="3fe624f4914417740fe3cf68a4327554" category="list-text">コネクタシステムのIPアドレスまたはホスト名、ネットアップアカウントID、コネクタクライアントID、およびユーザアクセストークンが必要です。スキャナグループを使用する場合は、アカウントの各データソースの作業環境IDを確認しておく必要があります。この情報を取得するには、以下の*_必要条件ステップ_*を参照してください。</block>
-  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新機能</block>
   <block id="a9cb7c21103eb81a473453f19f0d7b20" category="list-text">* 重複ファイル * - スキャンしているデータソース内の他の場所に複製されているファイル。 <block ref="440fccf34bc4c2a440d9bf3f906df06d" category="inline-link-macro-rx"></block>。</block>
   <block id="c79d6ed12c6347fc1bdd0dd91ef85ff7" category="paragraph">をクリックします <block ref="6160b7a55bd427b3fb91de138d9f467e" category="inline-link-macro-rx"></block> ポリシーの詳細については、を参照してください。</block>
   <block id="f7e44fd8c27ddf80c242fb3dae245422" category="paragraph">Data Overview_Sectionには、スキャンされるすべてのデータの概要が表示されます。ボタンをクリックして、使用容量、経過時間、データサイズ、すべての作業環境およびデータソースのファイルタイプを含むデータマッピングレポートをダウンロードします。を参照してください <block ref="53e5c76c1fe1c6ab36aa624f6960e384" category="inline-xref-macro-rx"></block> 詳細については、を参照してください。</block>
@@ -2965,9 +2941,6 @@
   <block id="3304fa5a3260dac4f8f51ddd7ca9e5f3" category="sidebar">BlueXPの分類スキャン速度を下げます</block>
   <block id="54892fa61b1eb6050fbd342fbf8e2218" category="sidebar">BlueXPの分類からデータソースを削除します</block>
   <block id="997bc9ee8834fdaee5b662f9a2bd743f" category="sidebar">BlueXPをアンインストールします</block>
-  <block id="daf1be80b90f9f38eccbf069ac08640c" category="sidebar">インターネットを使用するLinuxホストにBlueXP分類をインストールします</block>
-  <block id="c3e36333a4a6733ccd92dafc9d8c17b5" category="sidebar">インターネットを使用せずに、BlueXPの分類をオンプレミスにインストール</block>
-  <block id="c0b7cbffdfa6fa18059367f2045ac22c" category="sidebar">BlueXPの分類のユースケース</block>
   <block id="44b48aa0d2158361e53832315034f513" category="paragraph">たとえば、機密性の高い人事ファイルまたは給与ファイルに変更が加えられたタイミングを追跡する場合は、これらのファイルが存在するボリュームでこの機能を有効にすることができます。次に、ファイルアクセス監査ログを表示して、これらのファイルが変更されているかどうかを確認できます。変更されている場合は、変更を行ったユーザーのセキュリティ識別子(SID)と変更がいつ行われたかを確認できます。</block>
   <block id="c7f8db8434f3e3057bca29922b597e31" category="paragraph">BlueXPの分類では、次のデータソースのONTAP ボリュームにあるファイルに対するファイルアクセスイベントがログに記録されます。</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">NetApp ONTAP 対応の Amazon FSX</block>
@@ -3006,7 +2979,6 @@
   <block id="5cbcaeca0f98bea3f5714fbeb859b1f8" category="cell"><block ref="a39d05df186d1deb03343bf4f79e6b17" prefix="" category="inline-code"></block></block>
   <block id="2e1a4e3f55001820560b237188c70bc3" category="cell">/var/lib/dockerを使用します</block>
   <block id="651ffe70d1da174ca6955ceb139ab71c" category="cell"><block ref="20218561600e990c68a725b6b98ae569" prefix="" category="inline-code"></block></block>
-  <block id="361e697d946a0a8473f2bda1979090c3" category="cell">/user/lib/systemd/system</block>
   <block id="9997b2ae11cbffd6fe1a6e9f683ed24a" category="paragraph">+ BlueXPの分類スキャンでファイルの「最終アクセス日時」が変更されないようにするには、CIFSでは「属性の書き込み」権限、NFSでは「書き込み」権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。</block>
   <block id="ae4d468f55febeccb4eff973d9b635ff" category="inline-link-macro">データ主体の詳細については、こちらをご覧ください</block>
   <block id="1a7107cbf75ccf5399b80fbafd0ee649" category="cell">データ主体のフルネームまたは既知の識別子を入力します <block ref="dbe06c006d2f67629a75e1ec088edbea" category="inline-link-macro-rx"></block>。</block>
@@ -3028,7 +3000,6 @@
   <block id="8a7af24665c107d42e27bf9f85872742" category="cell">または、必要なホストパラメータとプロキシパラメータを指定して、コマンド全体を事前に作成することもできます。<block ref="3b4bbf213dadbeb10421530a3d8a245b" prefix=" " category="inline-code"></block></block>
   <block id="79dad5af8e7ba04bd45d58a3d10d4209" category="list-text">_client_id_=コネクタクライアントID（前提条件ステップでコピーしたクライアントIDに接尾辞「clients」を追加）</block>
   <block id="800fbb2e9f1063caafe6917c236f24a6" category="paragraph">たとえば、次のコマンドは3つのスキャナノードを追加します。<block ref="ba1da14563d546c370f034861b50d8f8" prefix=" " category="inline-code"></block></block>
-  <block id="f93e4e0ba0745745e36a3b67b14a8a5b" category="sidebar">BlueXP Webセミナー</block>
   <block id="c1560b054493db03cae97adece148673" category="list-text"><block ref="c1560b054493db03cae97adece148673" category="inline-link-rx"></block></block>
   <block id="72a0c1f7935cbaab164295a8fac378d8" category="list-text"><block ref="72a0c1f7935cbaab164295a8fac378d8" category="inline-link-rx"></block></block>
   <block id="9d7d457b861dcdf8b4b7f28f3a120c36" category="list-text"><block ref="9d7d457b861dcdf8b4b7f28f3a120c36" category="inline-link-rx"></block></block>
@@ -3320,7 +3291,6 @@
   <block id="85b9386ed443776127e099931d73448a" category="list-text">プロンプトが表示されたら、*続行*を選択してMicrosoftログインページにリダイレクトします。</block>
   <block id="c77d5103bf67167dd667762d984e1e14" category="section-title">BlueXP分類APIを利用できるようになりました</block>
   <block id="95eaa41c2e7025ac80bcfafd1710ff57" category="paragraph">BlueXP分類APIを使用すると、スキャンするデータに関する操作の実行、クエリの作成、情報のエクスポートを行うことができます。Swaggerを使用して対話型ドキュメントを利用できます。ドキュメントは、調査、コンプライアンス、ガバナンス、構成など、複数のカテゴリに分かれています。各カテゴリは、BlueXP分類用UIのタブを表しています。</block>
-  <block id="ca37e37afe1d388be7dabea9f8f09ba3" category="sidebar">BlueXPの分類に関するビデオ</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -3481,4 +3451,5 @@
   <block id="3fa1e4aec3c930accd20ae2a1e354a79" category="paragraph">BlueXPは、サービスのREST API機能をサポートしています。BlueXPの管理が推奨されない場合は、REST APIを使用してBlueXPの分類などのサービスを使用することもできます。すべてのユーザアクションには、サードパーティのシステムと統合できるREST APIがあります。を参照してください <block ref="6cf6f695e0ddd2cc536783d6e0951a10" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="da4874b0888a9dafc160c24905184d23" category="section-title">ONTAPボリュームにあるSnapshotコピーはスキャンされますか？</block>
   <block id="a35301b044a7bc259b579edebe42bff3" category="paragraph">いいえBlueXPの分類ではSnapshotはスキャンされません。これは、コンテンツがボリューム内のコンテンツと同じであるためです。</block>
+  <block id="dce2a9642217836d54f614dfd625b753" category="cell">/usr/lib/systemd/system</block>
 </blocks>
