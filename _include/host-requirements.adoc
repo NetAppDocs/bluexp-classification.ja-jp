@@ -94,4 +94,5 @@ https://youtu.be/Ogoufel1q6c["こちらのビデオをご覧ください"^] で�
 ** Pythonバージョン3.6以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
 
 
+* * NTPに関する考慮事項*：NetAppでは、ネットワークタイムプロトコル（NTP）サービスを使用するようにBlueXP分類システムを設定することを推奨しています。BlueXP分類システムとBlueXP Connectorシステムの間で時刻が同期されている必要があります。
 

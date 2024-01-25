@@ -50,33 +50,16 @@ BlueXP分類監査ログファイルの内容を表示したり、ファイル�
 ....
 
 
-== ログファイルにアクセスします
+== ログファイルの場所
 
 管理監査ログファイルは、BlueXP分類マシンの次の場所にあります。 `/opt/netapp/audit_logs/`
 
 インストール監査ログファイルがに書き込まれます `/opt/netapp/install_logs/`
 
-各ログファイルのサイズは最大で10MBです。この制限に達すると、新しいログファイルが開始されます。ログファイルの名前は「DataSense _ audit.log」、「DataSense _ audit.log.1」、「DataSense _ audit.log.2」などです。最大数の100個のログファイルがシステムの古いログファイルに保持されている場合、最大数に達すると自動的に削除されます。
-
-BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、ログファイルに直接移動できます。
-
-BlueXP分類をクラウドに導入する場合は、BlueXP分類インスタンスにSSHで接続する必要があります。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。
-
- ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
-* <path-to_The _ssh_key>= SSH認証キーの場所
-* <machine_user>：
-+
-** AWSの場合：<ec2-user>を使用します
-** Azureの場合：BlueXPインスタンス用に作成したユーザを使用します
-** GCPの場合：BlueXPインスタンス用に作成されたユーザーを使用します
+各ログファイルのサイズは最大で10MBです。この制限に達すると、新しいログファイルが開始されます。ログファイルの名前は「DataSense _ audit.log」、「DataSense _ audit.log.1」、「DataSense _ audit.log.2」などです。システムに保持されるログファイルの最大数は100です。古いログファイルは、最大数に達すると自動的に削除されます。
 
 
-* <datasension_IP>=仮想マシンインスタンスのIPアドレス
 
+== ログファイルへのアクセス
 
-クラウドのシステムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。詳細については、以下を参照してください。
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWSのセキュリティグループのルール"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azureのセキュリティグループルール"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Google Cloudのファイアウォールルール"^]
-
+ログファイルにアクセスするには、BlueXP分類システムにログインする必要があります。方法を参照してください link:reference-log-in-to-instance.html["BlueXP分類システムにログインする"] ソフトウェアを手動でLinuxマシンにインストールしたか、インスタンスをクラウドに導入したかによって異なります。

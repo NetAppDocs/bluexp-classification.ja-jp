@@ -18,34 +18,7 @@ summary: NFSファイル共有内のファイルまたはフォルダにグル�
 
 この変更を行ってBlueXPの分類でファイルやフォルダが再スキャンされると、これらのグループIDが関連付けられているファイルやフォルダには、[調査の詳細]ページにこの権限が表示され、ファイルの権限を表示しているレポートにも表示されます。
 
-この機能をアクティブ化するには、構成ファイルを編集してスクリプトを実行できるように、BlueXP分類システムにログインする必要があります。
-
-
-
-== BlueXP分類システムにログインする
-
-BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、構成ファイルとスクリプトに直接アクセスできます。
-
-BlueXP分類をクラウドに導入する場合は、BlueXP分類インスタンスにSSHで接続する必要があります。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。
-
- ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
-* <path-to_The _ssh_key>= SSH認証キーの場所
-* <machine_user>：
-+
-** AWSの場合：<ec2-user>を使用します
-** Azureの場合：BlueXPインスタンス用に作成したユーザを使用します
-** GCPの場合：BlueXPインスタンス用に作成されたユーザーを使用します
-
-
-* <datasension_IP>=仮想マシンインスタンスのIPアドレス
-
-
-クラウドのシステムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。詳細については、以下を参照してください。
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWSのセキュリティグループのルール"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azureのセキュリティグループルール"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Google Cloudのファイアウォールルール"^]
-
+この機能をアクティブ化するには、構成ファイルを編集してスクリプトを実行できるように、BlueXP分類システムにログインする必要があります。方法を参照してください link:reference-log-in-to-instance.html["BlueXP分類システムにログインする"] ソフトウェアを手動でLinuxマシンにインストールしたか、インスタンスをクラウドに導入したかによって異なります。
 
 
 

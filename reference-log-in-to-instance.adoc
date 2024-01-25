@@ -1,6 +1,22 @@
-= 
+---
+sidebar: sidebar 
+permalink: reference-log-in-to-instance.html 
+keywords: log in, data sense, classification 
+summary: 場合によっては、ログファイルにアクセスしたり構成ファイルを編集したりするために、BlueXP分類システムへのログインが必要になることがあります。 
+---
+= BlueXP分類システムにログインする
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
+
+[role="lead"]
+場合によっては、ログファイルにアクセスしたり構成ファイルを編集したりするために、BlueXP分類システムへのログインが必要になることがあります。
+
+BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、構成ファイルとスクリプトに直接アクセスできます。
 
 BlueXP分類をクラウドに導入する場合は、BlueXP分類インスタンスにSSHで接続する必要があります。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。
 

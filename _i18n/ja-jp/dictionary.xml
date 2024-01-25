@@ -1660,7 +1660,6 @@
   <block id="8022db3692364177695fce2a133b526b" category="list-text">tag-tag nameを指定します</block>
   <block id="91f93253b1daa7f572477e6f8dc4f163" category="list-text">をクリックします</block>
   <block id="00fde4d5ca4e0124dccf8017bb92fc4e" category="list-text">Eメールアラートの場合- Eメールアドレス/アカウント</block>
-  <block id="8cc577dbce4245d15abad6f3b1dfc995" category="paragraph">各ログファイルのサイズは最大で10MBです。この制限に達すると、新しいログファイルが開始されます。ログファイルの名前は「DataSense _ audit.log」、「DataSense _ audit.log.1」、「DataSense _ audit.log.2」などです。最大数の100個のログファイルがシステムの古いログファイルに保持されている場合、最大数に達すると自動的に削除されます。</block>
   <block id="fbda64f06352e44a4e6523dbdd6b039e" category="paragraph">クラウドのシステムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。詳細については、以下を参照してください。</block>
   <block id="3c73fb515a637be4a1083e3e061099f9" category="paragraph">インストールを正常に完了するには、インストーラによって事前チェックが実行され、システムとネットワークの要件が満たされていることが確認されます。</block>
   <block id="0cf39354f7edfa15dd84075131e27804" category="list-text">クラウドプロバイダからのBlueXP Marketplaceへのサブスクリプション、または</block>
@@ -2187,7 +2186,6 @@
   <block id="1848496efeb9b0561b54c93d4ca7403e" category="list-text">Governance（ガバナンス）*をクリックし、* Data Discovery Assessment Report（データ検出評価レポート）*ボタンをクリックします。</block>
   <block id="d3cfc5adb7d762b3824a7c02a95765b9" category="inline-image-macro">ガバナンスダッシュボードのスクリーンショット。Data Discovery Assessment Reportを起動する方法が示されています。</block>
   <block id="6e54901f5113f24a64a46275f84c34da" category="paragraph"><block ref="6e54901f5113f24a64a46275f84c34da" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="95d360d4c70cbbf05116206b4e5edd67" category="section-title">ログファイルにアクセスします</block>
   <block id="8b4cc0616cd3112ce97c78446249e336" category="inline-link-macro">代替インスタンスタイプ</block>
   <block id="b4628b43616bed69627de3b91fe817d0" category="paragraph">インターネットにアクセスできないホストでスクリプトを実行する場合にのみ、「--darksite」オプションを追加します。ホストがインターネットに接続されていない場合、一部の前提条件テストがスキップされます。</block>
   <block id="1bb79e71fe1463a15c91ab711e20a6ac" category="list-text">このスクリプトでは、システムに対してさまざまなテストが実行され、処理が進むにつれて結果が表示されます。終了すると、セッションのログがという名前のファイルに書き込まれます<block ref="7bca4c3da1c027ba15644b115a5e9fd9" prefix=" " category="inline-code"></block> をクリックします<block ref="8a788ac11c9bfeaba837d43d9090ac97" prefix=" " category="inline-code"></block>。</block>
@@ -2677,7 +2675,6 @@
   <block id="fc82aea02743067d55a199569cd61d50" category="doc">BlueXPの分類アクションの履歴の監査</block>
   <block id="323141f17dc965b7894c3fede5810589" category="paragraph">BlueXP分類監査ログファイルの内容を表示したり、ファイルをダウンロードして、どのファイルが変更されたか、いつ変更されたかを確認したりできます。たとえば、発行された要求、要求の時刻、ファイルが削除された場合のソースの場所、ファイルが移動された場合のソースとデスティネーションの場所などの詳細を確認できます。</block>
   <block id="c1e0b6a06406fd162de0635cd20ac657" category="paragraph">管理監査ログファイルは、BlueXP分類マシンの次の場所にあります。<block ref="737f0a89396f6d78b87820109de683eb" prefix=" " category="inline-code"></block></block>
-  <block id="ce0fbdf83a7ac5995d4c903ac0745a09" category="paragraph">BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、ログファイルに直接移動できます。</block>
   <block id="2970783922bde0b77210901329267de0" category="paragraph">BlueXP分類をクラウドに導入する場合は、BlueXP分類インスタンスにSSHで接続する必要があります。システムにSSHするには、ユーザとパスワードを入力するか、BlueXPコネクタのインストール時に入力したSSHキーを使用します。SSHコマンドは次のとおりです。</block>
   <block id="08aececdd8070f547d2aa65ea8c35446" category="summary">BlueXPの新機能をご紹介します。</block>
   <block id="406ca16c022fe122c7920a69664a84f2" category="doc">BlueXP分類の新機能</block>
@@ -3446,10 +3443,19 @@
   <block id="7823cdf226bddeed3789b41cce9f2f73" category="sidebar">既存のグループIDを「組織にオープン」として定義する</block>
   <block id="c994485ccd2b31a48f2ec01a7e6462e0" category="list-text">「/opt/netapp/Datasense/tools/customer _configuration/data_providers」に移動し、次のスクリプトを実行します。</block>
   <block id="d16189c10d4d8a98db7b1b99d883a1fd" category="paragraph">BlueXPの分類に追加したグループIDの現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer _configuration/data_providers」から次のコマンドを実行します。</block>
-  <block id="4103104f589e62a63d3d9cfb58c764f2" category="paragraph">この機能をアクティブ化するには、構成ファイルを編集してスクリプトを実行できるように、BlueXP分類システムにログインする必要があります。</block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">グループに最初にその権限が設定されていなかった場合に、BlueXPの分類から直接、NFSのグループIDを「Open to Organization」とみなされるように設定できるようになりました。これらのグループIDが添付されているファイルおよびフォルダは、[Investigation Details]ページで[Open to Organization]として表示されます。方法を参照してください<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>。</block>
   <block id="3fa1e4aec3c930accd20ae2a1e354a79" category="paragraph">BlueXPは、サービスのREST API機能をサポートしています。BlueXPの管理が推奨されない場合は、REST APIを使用してBlueXPの分類などのサービスを使用することもできます。すべてのユーザアクションには、サードパーティのシステムと統合できるREST APIがあります。を参照してください <block ref="6cf6f695e0ddd2cc536783d6e0951a10" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="da4874b0888a9dafc160c24905184d23" category="section-title">ONTAPボリュームにあるSnapshotコピーはスキャンされますか？</block>
   <block id="a35301b044a7bc259b579edebe42bff3" category="paragraph">いいえBlueXPの分類ではSnapshotはスキャンされません。これは、コンテンツがボリューム内のコンテンツと同じであるためです。</block>
   <block id="dce2a9642217836d54f614dfd625b753" category="cell">/usr/lib/systemd/system</block>
+  <block id="31af9dbc59d95015ad9e14c7d979d66b" category="summary">場合によっては、ログファイルにアクセスしたり構成ファイルを編集したりするために、BlueXP分類システムへのログインが必要になることがあります。</block>
+  <block id="d4b72b40125aaee8335dc145cdc6e2f1" category="inline-link-macro">BlueXP分類システムにログインする</block>
+  <block id="5b40d5baf253a6d11974d57a0890fe5a" category="paragraph">この機能をアクティブ化するには、構成ファイルを編集してスクリプトを実行できるように、BlueXP分類システムにログインする必要があります。方法を参照してください <block ref="fee7c33f779340beee212bd52ff12fd0" category="inline-link-macro-rx"></block> ソフトウェアを手動でLinuxマシンにインストールしたか、インスタンスをクラウドに導入したかによって異なります。</block>
+  <block id="dd2a68717d555f6a974eca51868e4e97" category="list-text">* NTPに関する考慮事項*：NetAppでは、ネットワークタイムプロトコル（NTP）サービスを使用するようにBlueXP分類システムを設定することを推奨しています。BlueXP分類システムとBlueXP Connectorシステムの間で時刻が同期されている必要があります。</block>
+  <block id="bc43ce46ec2d6fbf9c8f6da8a4306dd8" category="section-title">ログファイルの場所</block>
+  <block id="4f2ff1b367ff3e36e64a9ae197aa8277" category="paragraph">各ログファイルのサイズは最大で10MBです。この制限に達すると、新しいログファイルが開始されます。ログファイルの名前は「DataSense _ audit.log」、「DataSense _ audit.log.1」、「DataSense _ audit.log.2」などです。システムに保持されるログファイルの最大数は100です。古いログファイルは、最大数に達すると自動的に削除されます。</block>
+  <block id="8d62d7d8c4e5247ff9d832d971c73356" category="section-title">ログファイルへのアクセス</block>
+  <block id="1adc1bcbca14587886f0722f89d1238c" category="paragraph">ログファイルにアクセスするには、BlueXP分類システムにログインする必要があります。方法を参照してください <block ref="fee7c33f779340beee212bd52ff12fd0" category="inline-link-macro-rx"></block> ソフトウェアを手動でLinuxマシンにインストールしたか、インスタンスをクラウドに導入したかによって異なります。</block>
+  <block id="2556206d42384bb829190e0aafdb0def" category="inline-link-macro">BlueXP分類ホストマシンにログインします。</block>
+  <block id="3d156543c6fce54302812044d96a7f13" category="paragraph">方法を参照してください <block ref="4d88ed2399fdae83afcc83672f5b6c79" category="inline-link-macro-rx"></block>。</block>
 </blocks>

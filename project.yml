@@ -106,6 +106,8 @@ sidebar:
       url: "/reference-instance-types.html"
     - title: データソースから収集されたメタデータ
       url: "/reference-collected-metadata.html"
+    - title: BlueXP分類システムにログインする
+      url: "/reference-log-in-to-instance.html"
     - title: BlueXP分類API
       url: "/api-classification.html"
   - title: 知識とサポート
