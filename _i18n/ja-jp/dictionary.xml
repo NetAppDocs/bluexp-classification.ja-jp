@@ -1259,7 +1259,6 @@
   <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">このページで指定されている「ファイルハッシュ」値を使用して、 ［ 調査 ］ ページに直接入力すると、特定の重複ファイルをいつでも検索できます。また、ポリシーで使用することもできます。</block>
   <block id="21d99d41f7aa56147e5b8e2f64a15458" category="list-text">ユーザからのフィードバックを受け取る</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです</block>
-  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用しています。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">ログインページで、ネットアップサポートサイトの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">著作権に関する声明、商標、特許などにアクセスできます。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">著作権</block>
@@ -3451,11 +3450,22 @@
   <block id="31af9dbc59d95015ad9e14c7d979d66b" category="summary">場合によっては、ログファイルにアクセスしたり構成ファイルを編集したりするために、BlueXP分類システムへのログインが必要になることがあります。</block>
   <block id="d4b72b40125aaee8335dc145cdc6e2f1" category="inline-link-macro">BlueXP分類システムにログインする</block>
   <block id="5b40d5baf253a6d11974d57a0890fe5a" category="paragraph">この機能をアクティブ化するには、構成ファイルを編集してスクリプトを実行できるように、BlueXP分類システムにログインする必要があります。方法を参照してください <block ref="fee7c33f779340beee212bd52ff12fd0" category="inline-link-macro-rx"></block> ソフトウェアを手動でLinuxマシンにインストールしたか、インスタンスをクラウドに導入したかによって異なります。</block>
-  <block id="dd2a68717d555f6a974eca51868e4e97" category="list-text">* NTPに関する考慮事項*：NetAppでは、ネットワークタイムプロトコル（NTP）サービスを使用するようにBlueXP分類システムを設定することを推奨しています。BlueXP分類システムとBlueXP Connectorシステムの間で時刻が同期されている必要があります。</block>
   <block id="bc43ce46ec2d6fbf9c8f6da8a4306dd8" category="section-title">ログファイルの場所</block>
   <block id="4f2ff1b367ff3e36e64a9ae197aa8277" category="paragraph">各ログファイルのサイズは最大で10MBです。この制限に達すると、新しいログファイルが開始されます。ログファイルの名前は「DataSense _ audit.log」、「DataSense _ audit.log.1」、「DataSense _ audit.log.2」などです。システムに保持されるログファイルの最大数は100です。古いログファイルは、最大数に達すると自動的に削除されます。</block>
   <block id="8d62d7d8c4e5247ff9d832d971c73356" category="section-title">ログファイルへのアクセス</block>
   <block id="1adc1bcbca14587886f0722f89d1238c" category="paragraph">ログファイルにアクセスするには、BlueXP分類システムにログインする必要があります。方法を参照してください <block ref="fee7c33f779340beee212bd52ff12fd0" category="inline-link-macro-rx"></block> ソフトウェアを手動でLinuxマシンにインストールしたか、インスタンスをクラウドに導入したかによって異なります。</block>
   <block id="2556206d42384bb829190e0aafdb0def" category="inline-link-macro">BlueXP分類ホストマシンにログインします。</block>
   <block id="3d156543c6fce54302812044d96a7f13" category="paragraph">方法を参照してください <block ref="4d88ed2399fdae83afcc83672f5b6c79" category="inline-link-macro-rx"></block>。</block>
+  <block id="dfd993077bb353282906702dc3143ec7" category="list-text">* NTPに関する考慮事項*：NetAppでは、ネットワークタイムプロトコル（NTP）サービスを使用するようにBlueXP分類システムを設定することを推奨しています。BlueXP分類システムとBlueXP Connectorシステムの間で時刻が同期されている必要があります。</block>
+  <block id="0d7b5294055876bf358044259606856f" category="paragraph">BlueXPの分類では、ファイル名、権限、作成日時、最終アクセス、最終変更日時などのメタデータがキャプチャされます。これには、[Data Investigation Details]ページおよび[Data Investigation Reports]に表示されるすべてのメタデータが含まれます。</block>
+  <block id="829d8d2f641dd9e58ec1a7d5e605ae21" category="inline-link">BlueXPの分類でスキャンされるプライベートデータのカテゴリ</block>
+  <block id="3db00327e72827118e6c677e24f6a704" category="paragraph">BlueXPの分類では、個人データや機密性の高い個人データなど、さまざまなタイプのプライベートデータを特定できます。プライベートデータの詳細については、を参照してください。<block ref="56427cf32f2481dc2470f5e57414e198" category="inline-link-rx"></block>。</block>
+  <block id="74d4d96e624f192d4ebed96b99d9cedd" category="paragraph">スキャンされたデータは環境内に保持されます。</block>
+  <block id="b39079257432aa2e0ea1ac3e4e36cdf8" category="section-title">機密データはどのように処理されますか？</block>
+  <block id="35a8814c3eaa26f66ca3a0eea1193f70" category="paragraph">NetAppは機密データにアクセスできず、UIに表示されません。機密データはマスクされます。たとえば、クレジットカード情報用に最後の4つの数字が表示されます。</block>
+  <block id="a6b6381d05f6dc9530f37099c9feb5cf" category="section-title">データはどこに保存されていますか？</block>
+  <block id="efe4cf854e0017e5c35b4f8fb03e5a1b" category="paragraph">スキャン結果は、BlueXP分類インスタンス内のElastisearchに格納されます。</block>
+  <block id="dbe9d1b278184da6355700a9d5f9c0e6" category="section-title">データへのアクセス方法</block>
+  <block id="9e52028c48600512f13df2884f1ec709" category="paragraph">BlueXPの分類では、Elasticsearchに格納されたデータにAPI呼び出しを通じてアクセスします。API呼び出しは認証を必要とし、AES-128を使用して暗号化されます。Elasticsearchに直接アクセスするにはrootアクセスが必要です。</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetAppでは、サポートとライセンスに固有の認証サービスのIDプロバイダとしてMicrosoftエントラIDを使用します。</block>
 </blocks>
