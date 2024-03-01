@@ -21,7 +21,7 @@ NOTE: このセクションで説明する機能は、データソースに対�
 
 
 
-== [ データ調査 ] ページでデータをフィルタリングします
+== [Data Investigation]ページでのデータのフィルタリング
 
 調査ページの内容をフィルタリングして、表示する結果のみを表示できます。これは非常に強力な機能です。データをリファインした後、ページ上部のボタンバーを使用して、ファイルのコピー、ファイルの移動、ファイルへのタグまたはAIPラベルの追加など、さまざまなアクションを実行できます。
 
@@ -29,8 +29,8 @@ NOTE: このセクションで説明する機能は、データソースに対�
 
 image:screenshot_compliance_investigation_filtered.png["調査ページで結果を絞り込むときに使用できるフィルタのスクリーンショット。"]
 
-* 最上位のタブでは、ファイル（非構造化データ）、ディレクトリ（フォルダおよびファイル共有）、またはデータベース（構造化データ）のデータを表示できます。
-* 各列の上部にあるコントロールを使用して、結果を数値またはアルファベット順にソートできます。
+* トップレベルのタブでは、ファイル（非構造化データ）、ディレクトリ（フォルダおよびファイル共有）、またはデータベース（構造化データ）のデータを表示できます。
+* 各列の上部にあるコントロールを使用して、結果を数値またはアルファベット順に並べ替えることができます。
 * 左側のペインフィルタを使用すると、以降のセクションで説明する属性を選択して、結果を絞り込むことができます。
 
 
@@ -51,7 +51,9 @@ image:screenshot_compliance_investigation_filtered.png["調査ページで結果
 | 感度レベル | 感度レベルを選択します。個人レベル、個人レベル、または非機密レベルを選択します。 
 
 
-| IDの数 | 検出された機密識別子のファイルごとの範囲を選択します。個人データと機密性の高い個人データが含まれます。ディレクトリでフィルタリングする場合、BlueXPの分類では、各フォルダ（およびサブフォルダ）内のすべてのファイルに一致するものが合計されます。 
+| IDの数 | 検出された機密識別子のファイルごとの範囲を選択します。個人データと機密性の高い個人データが含まれます。ディレクトリでフィルタリングする場合、BlueXPの分類では、各フォルダ（およびサブフォルダ）内のすべてのファイルに一致するものが合計されます。
+
+注: 2023年12月(バージョン1.26.6)リリースでは、ディレクトリごとの個人識別情報(PII)データの数を計算するオプションが一時的に削除されました。 
 
 
 | 個人データ | を選択します link:reference-private-data-categories.html#types-of-personal-data["個人データの種類"^]。 
@@ -60,7 +62,7 @@ image:screenshot_compliance_investigation_filtered.png["調査ページで結果
 | 機密性の高い個人データ | を選択します link:reference-private-data-categories.html#types-of-sensitive-personal-data["機密性の高い個人データのタイプ"^]。 
 
 
-| データの件名 | データ主体のフルネームまたは既知の識別子を入力します link:task-generating-compliance-reports.html#searching-for-data-subjects-and-downloading-reports["データ主体の詳細については、こちらをご覧ください"^]。 
+| データの件名 | データ主体のフルネームまたは既知の識別子を入力します link:task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports["データ主体の詳細については、こちらをご覧ください"^]。 
 |===
 
 
@@ -168,10 +170,10 @@ AIPラベルまたはタグでデータを表示するには、次のフィル�
 | ポリシー | ポリシーを選択します。実行します link:task-using-policies.html["こちらをご覧ください"^] をクリックして、既存のポリシーのリストを表示し、独自のカスタムポリシーを作成します。 
 
 
-| ラベル | 選択するオプション link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP ラベル"] ファイルに割り当てられます。 
+| ラベル | 選択するオプション link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP ラベル"] ファイルに割り当てられます。 
 
 
-| タグ | 選択するオプション link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["タグ"] ファイルに割り当てられます。 
+| タグ | 選択するオプション link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["タグ"] ファイルに割り当てられます。 
 
 
 | 割り当て先 | ファイルが割り当てられているユーザーの名前を選択します。 
@@ -209,23 +211,23 @@ link:reference-collected-metadata.html#last-access-time-timestamp["「最終ア�
 |===
 
 
-== ファイルメタデータを表示しています
+== ファイルメタデータの表示
 
 [ データ調査結果 ] ペインで、をクリックできます image:button_down_caret.png["下キャレット"] をクリックすると、単一のファイルについてファイルのメタデータが表示されます。
 
 image:screenshot_compliance_file_details.png["[ データ調査 ] ページのファイルのメタデータの詳細を示すスクリーンショット。"]
 
-ファイルが存在する作業環境とボリュームを表示するだけでなく、メタデータには、ファイル権限、ファイルの所有者、このファイルの重複がないかどうか、および AIP ラベルが割り当てられている場合など、より多くの情報が表示されます link:task-org-private-data.html#categorizing-your-data-using-aip-labels["BlueXPに統合されたAIPです"^]）。この情報は、を計画している場合に役立ちます link:task-using-policies.html#creating-custom-policies["ポリシーを作成します"] データのフィルタリングに使用できるすべての情報が表示されます。
+ファイルが存在する作業環境とボリュームを表示するだけでなく、メタデータには、ファイル権限、ファイルの所有者、このファイルの重複がないかどうか、および AIP ラベルが割り当てられている場合など、より多くの情報が表示されます link:task-org-private-data.html#categorize-your-data-using-aip-labels["BlueXPに統合されたAIPです"^]）。この情報は、を計画している場合に役立ちます link:task-using-policies.html#create-custom-policies["ポリシーを作成します"] データのフィルタリングに使用できるすべての情報が表示されます。
 
 すべてのデータソースについて、すべての情報が表示されるわけではなく、そのデータソースに適した情報だけが表示されることに注意してください。たとえば、ボリューム名、権限、および AIP ラベルは、データベースファイルには関係ありません。
 
 単一のファイルの詳細を表示する場合は、ファイルに対していくつかの操作を実行できます。
 
-* ファイルは任意の NFS 共有に移動またはコピーできます。を参照してください link:task-managing-highlights.html#moving-source-files-to-an-nfs-share["ソースファイルを NFS 共有に移動しています"] および link:task-managing-highlights.html#copying-source-files["ソースファイルを NFS 共有にコピーしています"] を参照してください。
-* ファイルを削除できます。を参照してください link:task-managing-highlights.html#deleting-source-files["ソースファイルを削除しています"] を参照してください。
-* ファイルに特定のステータスを割り当てることができます。を参照してください link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["タグの適用"] を参照してください。
-* このファイルをBlueXPユーザーに割り当てることで、ファイルに対して実行する必要があるフォローアップアクションを実行できます。を参照してください link:task-org-private-data.html#assigning-users-to-manage-certain-files["ファイルへのユーザの割り当て"] を参照してください。
-* AIPラベルをBlueXPに統合した場合は、このファイルにラベルを割り当てることができます。また、すでに存在する場合は別のラベルに変更することもできます。を参照してください link:task-org-private-data.html#assigning-aip-labels-manually["AIP ラベルを手動で割り当てる"] を参照してください。
+* ファイルは任意の NFS 共有に移動またはコピーできます。を参照してください link:task-managing-highlights.html#move-source-files-to-an-nfs-share["ソースファイルを NFS 共有に移動しています"] および link:task-managing-highlights.html#copy-source-files["ソースファイルを NFS 共有にコピーしています"] を参照してください。
+* ファイルを削除できます。を参照してください link:task-managing-highlights.html#delete-source-files["ソースファイルを削除しています"] を参照してください。
+* ファイルに特定のステータスを割り当てることができます。を参照してください link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["タグの適用"] を参照してください。
+* このファイルをBlueXPユーザーに割り当てることで、ファイルに対して実行する必要があるフォローアップアクションを実行できます。を参照してください link:task-org-private-data.html#assign-users-to-manage-certain-files["ファイルへのユーザの割り当て"] を参照してください。
+* AIPラベルをBlueXPに統合した場合は、このファイルにラベルを割り当てることができます。また、すでに存在する場合は別のラベルに変更することもできます。を参照してください link:task-org-private-data.html#assign-aip-labels-manually["AIP ラベルを手動で割り当てる"] を参照してください。
 
 
 
@@ -244,7 +246,7 @@ image:screenshot_compliance_permissions.png["詳細なファイル権限を示�
 
 
 
-== ストレージシステム内に重複ファイルがないかどうかを確認しています
+== ストレージシステム内の重複ファイルのチェック
 
 重複ファイルがストレージシステムに保存されているかどうかを確認できます。これは、ストレージスペースを節約できる領域を特定する場合に便利です。また、特定の権限や機密情報を持つファイルが、ストレージシステム内で不必要に重複しないようにすることもできます。
 
@@ -252,11 +254,11 @@ image:screenshot_compliance_permissions.png["詳細なファイル権限を示�
 
 BlueXPの分類では、ハッシュテクノロジを使用して重複ファイルが特定されます。ハッシュコードが別のファイルと同じファイルがある場合、ファイル名が異なる場合でも、ファイルが完全に重複していることを 100% 確認できます。
 
-重複ファイルのリストをダウンロードし、ストレージ管理者に送信して、削除可能なファイルをユーザが判別できるようにします。または link:task-managing-highlights.html#deleting-source-files["ファイルを削除します"] 特定のバージョンのファイルが不要であることが確信できる場合は、自分自身で実行します。
+重複ファイルのリストをダウンロードし、ストレージ管理者に送信して、削除可能なファイルをユーザが判別できるようにします。または link:task-managing-highlights.html#delete-source-files["ファイルを削除します"] 特定のバージョンのファイルが不要であることが確信できる場合は、自分自身で実行します。
 
 
 
-=== 重複するすべてのファイルを表示します
+=== 重複ファイルをすべて表示
 
 スキャンする作業環境およびデータソースで複製されているすべてのファイルのリストが必要な場合は、 [ データの調査 ] ページで、 [ 重複 ] > [ 重複しているもの ] というフィルタを使用できます。
 
@@ -264,7 +266,7 @@ BlueXPの分類では、ハッシュテクノロジを使用して重複ファ�
 
 
 
-=== 特定のファイルが複製されているかどうかを表示します
+=== 特定のファイルが重複しているかどうかを表示する
 
 1 つのファイルに重複があるかどうかを確認するには、 [ データ調査結果 ] ペインでをクリックします image:button_down_caret.png["下キャレット"] をクリックすると、単一のファイルについてファイルのメタデータが表示されます。特定のファイルが重複している場合、この情報は _Duplicats_field の横に表示されます。
 

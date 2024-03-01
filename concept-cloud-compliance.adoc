@@ -177,7 +177,10 @@ CPUとRAMの数が少ないシステムにBlueXPの分類を導入すること�
 | システムサイズ | 仕様 | 制限 
 
 
-| Large （デフォルト） | CPU×16、64GB RAM、500GiB SSD | なし 
+| 特大 | CPU×32、128GB RAM、1TiB SSD | 最大5億個のファイルをスキャンできます。 
+
+
+| Large （デフォルト） | CPU×16、64GB RAM、500GiB SSD | 最大2億5、000万個のファイルをスキャンできます。 
 
 
 | 中 | CPU×8、32GB RAM、200GiB SSD | スキャンに時間がかかり、スキャンできるファイルは最大 100 万個です。 
@@ -185,9 +188,9 @@ CPUとRAMの数が少ないシステムにBlueXPの分類を導入すること�
 
 | 小規模 | CPU×8、16GB RAM、100GiB SSD | 「中」と同じ制限に加えて、特定する機能 link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["データ主体名"] 内部ファイルは無効です。 
 |===
-AWSのクラウドにBlueXPの分類を導入する場合は、大規模、中規模、小規模のインスタンスを選択できます。AzureまたはGCPにBlueXPの分類を導入する際に、これらの小規模なシステムのいずれかを使用する場合は、ng-contact-data-sense@netapp.comまでEメールで支援を要請してください。これらの小規模なクラウド構成を導入するには、弊社と協力する必要があります。
+AWSのクラウドにBlueXPの分類を導入する場合は、大規模、中規模、小規模のインスタンスを選択できます。AzureまたはGCPにBlueXPの分類を導入する際に、これらの代替システムのいずれかを使用する場合は、ng-contact-data-sense@netapp.comまでEメールで支援を要請してください。これらの他のクラウド構成を導入するには、お客様と協力する必要があります。
 
-BlueXPの分類をオンプレミスに導入する場合は、より小さい仕様のLinuxホストを使用するだけです。ネットアップにお問い合わせいただく必要はありません。
+BlueXPの分類をオンプレミスに導入する場合は、別の仕様のLinuxホストを使用するだけです。ネットアップにお問い合わせいただく必要はありません。
 
 
 
@@ -281,10 +284,10 @@ link:task-deploy-compliance-onprem.html#install-bluexp-classification-on-the-lin
 BlueXPの分類では、データ（ファイル）の収集とインデックス作成が行われ、カテゴリが割り当てられます。BlueXP分類のインデックスには、次のデータが含まれています。
 
 標準メタデータ:: BlueXPは分類されるため、ファイルの種類、サイズ、作成日や変更日など、ファイルに関する標準的なメタデータが収集されます。
-個人データ:: メールアドレス、識別番号、クレジットカード番号など、個人を特定できる情報。 link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["個人データの詳細については、こちらをご覧ください"^]。
-機密性の高い個人データ:: GDPR やその他のプライバシー規制で定義されている、健康データ、民族的起源、政治的見解などの機密情報の特殊な種類。 link:task-controlling-private-data.html#viewing-files-that-contain-sensitive-personal-data["機密性の高い個人データの詳細をご覧ください"^]。
-カテゴリ:: BlueXPは、スキャンしたデータをさまざまなカテゴリに分類します。カテゴリは、各ファイルのコンテンツとメタデータの AI 分析に基づくトピックです。 link:task-controlling-private-data.html#viewing-files-by-categories["カテゴリの詳細については、こちらをご覧ください"^]。
-タイプ（ Types ）:: BlueXPは、スキャンしたデータをファイルタイプ別に分類して分類します。 link:task-controlling-private-data.html#viewing-files-by-file-types["タイプの詳細については、こちらをご覧ください"^]。
+個人データ:: メールアドレス、識別番号、クレジットカード番号など、個人を特定できる情報。 link:task-controlling-private-data.html#view-files-that-contain-personal-data["個人データの詳細については、こちらをご覧ください"^]。
+機密性の高い個人データ:: GDPR やその他のプライバシー規制で定義されている、健康データ、民族的起源、政治的見解などの機密情報の特殊な種類。 link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["機密性の高い個人データの詳細をご覧ください"^]。
+カテゴリ:: BlueXPは、スキャンしたデータをさまざまなカテゴリに分類します。カテゴリは、各ファイルのコンテンツとメタデータの AI 分析に基づくトピックです。 link:task-controlling-private-data.html#view-files-by-categories["カテゴリの詳細については、こちらをご覧ください"^]。
+タイプ（ Types ）:: BlueXPは、スキャンしたデータをファイルタイプ別に分類して分類します。 link:task-controlling-private-data.html#view-files-by-file-types["タイプの詳細については、こちらをご覧ください"^]。
 名前エンティティ認識:: BlueXPの分類では、AIを使用してドキュメントから自然人の名前を抽出します。 link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["データ主体のアクセスリクエストへの対応について説明します"^]。
 
 

@@ -4,7 +4,7 @@ permalink: task-scanning-databases.html
 keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, data sense 
 summary: いくつかの手順を実行して、BlueXPの分類を使用したデータベーススキーマのスキャンを開始します。 
 ---
-= データベーススキーマをスキャンしています
+= データベーススキーマのスキャン
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -42,7 +42,7 @@ link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] イン
 
 
 
-== 前提条件の確認
+== 前提条件を確認する
 
 BlueXPの分類を有効にする前に、次の前提条件を確認して、サポートされる構成があることを確認してください。
 
@@ -83,7 +83,7 @@ BlueXP分類インスタンスに接続されているデータベースは、�
 
 
 
-== BlueXP分類インスタンスの導入
+== BlueXP分類インスタンスを導入します
 
 導入されているインスタンスがない場合は、BlueXP分類を導入します。
 
@@ -95,7 +95,7 @@ BlueXP分類インスタンスに接続されているデータベースは、�
 
 
 
-== データベースサーバを追加しています
+== データベースサーバを追加します
 
 スキーマが存在するデータベース・サーバを追加します。
 
@@ -121,7 +121,7 @@ image:screenshot_compliance_add_db_server_dialog.png["データベースを識�
 
 
 
-== データベーススキーマでの準拠スキャンの有効化と無効化
+== データベーススキーマでのコンプライアンススキャンの有効化と無効化
 
 スキーマのフルスキャンは、いつでも停止または開始できます。
 

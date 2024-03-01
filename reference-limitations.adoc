@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations.html 
-keywords: limitations, data sense, classification, scan shares 
+keywords: limitations, data sense, classification, bluexp, scan shares 
 summary: 既知の制限事項には、このリリースの製品でサポートされていない機能、またはこのリリースと正しく相互運用できない機能が記載されています。これらの制限事項を慎重に確認してください 
 ---
 = 既知の制限
@@ -15,6 +15,17 @@ summary: 既知の制限事項には、このリリースの製品でサポー�
 
 [role="lead"]
 既知の制限事項には、このリリースの製品でサポートされていない機能、またはこのリリースと正しく相互運用できない機能が記載されています。これらの制限事項を慎重に確認してください
+
+
+
+== BlueXP分類リリースで一時的に削除されたオプション
+
+2023年12月（バージョン1.26.6）リリースでは、次のオプションが一時的に削除されました。
+
+* 監査ログ収集をアクティブ化するオプションが無効になりました。
+* ディレクトリ調査中に、ディレクトリごとの個人識別情報（PII）データの数を計算するオプションは使用できません。
+* Azure Information Protection（AIP）ラベルを使用してデータを統合するオプションが無効になりました。
+
 
 
 

@@ -23,7 +23,7 @@ TIP: 国別ID番号や医療用IDなど、他のプライベートデータタ�
 
 == 個人データの種類
 
-ファイルに含まれる個人データは、一般的な個人データまたは国 ID です。次の表の3列目は、BlueXPの分類でが使用されているかどうかを示しています link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["近接性検証"^] 識別子の調査結果を検証します。
+ファイルに含まれる個人データは、一般的な個人データまたは国 ID です。次の表の3列目は、BlueXPの分類でが使用されているかどうかを示しています link:task-controlling-private-data.html#view-files-that-contain-personal-data["近接性検証"^] 識別子の調査結果を検証します。
 
 これらの項目を認識できる言語が表に示されています。
 

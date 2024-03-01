@@ -20,8 +20,8 @@ BlueXPでCIFSボリュームをスキャンするためには、特定のデー�
 
 この統合により、BlueXPでは次の場所で追加情報 が提供されます。
 
-* 「ファイル所有者」を使用できます。 link:task-investigate-data.html#filtering-data-in-the-data-investigation-page["フィルタ"] [調査]ペインで、ファイルのメタデータの結果を確認できます。SID （セキュリティ ID ）を含むファイル所有者ではなく、実際のユーザ名が入力されます。
-* を参照してください link:task-investigate-data.html#viewing-permissions-for-files-and-directories["フルファイル権限"] [すべてのアクセス許可の表示]ボタンをクリックしたときに、各ファイルおよびディレクトリについて、
+* 「ファイル所有者」を使用できます。 link:task-investigate-data.html#filter-data-in-the-data-investigation-page["フィルタ"] [調査]ペインで、ファイルのメタデータの結果を確認できます。SID （セキュリティ ID ）を含むファイル所有者ではなく、実際のユーザ名が入力されます。
+* を参照してください link:task-investigate-data.html#view-permissions-for-files-and-directories["フルファイル権限"] [すべてのアクセス許可の表示]ボタンをクリックしたときに、各ファイルおよびディレクトリについて、
 * を参照してください link:task-controlling-governance-data.html["ガバナンスダッシュボード"]を選択すると、 [ アクセス許可 ] パネルに、データに関するより詳細な情報が表示されます。
 
 
@@ -47,7 +47,7 @@ Active DirectoryとBlueXPの統合では、次のデータソースからデー�
 
 
 
-== Active Directory サーバに接続しています
+== Active Directoryサーバへの接続
 
 BlueXPの分類を導入し、データソースでスキャンをアクティブ化したら、BlueXPの分類をActive Directoryに統合できます。Active Directory には、 DNS サーバの IP アドレスまたは LDAP サーバの IP アドレスを使用してアクセスできます。
 
@@ -114,7 +114,7 @@ image:screenshot_compliance_active_directory_added.png["BlueXPに統合された
 
 
 
-== Active Directory 統合の管理
+== Active Directory統合の管理
 
 Active Directory 統合の値を変更する必要がある場合は、 * Edit * ボタンをクリックして変更を行います。
 

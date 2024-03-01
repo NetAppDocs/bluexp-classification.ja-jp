@@ -4,7 +4,7 @@ permalink: task-audit-data-sense-actions.html
 keywords: compliance, actions, view progress, audit, logs, installation 
 summary: BlueXPの分類では、BlueXPの分類でスキャンするすべての作業環境とデータソースのファイルに対して実行された管理アクティビティがログに記録されます。BlueXPの分類では、BlueXP分類インスタンスを導入する際のアクティビティも記録されます。 
 ---
-= BlueXPの分類アクションの履歴の監査
+= BlueXPの分類アクションの履歴を監査します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

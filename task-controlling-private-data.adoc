@@ -4,7 +4,7 @@ permalink: task-controlling-private-data.html
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
 summary: 組織内の個人データと機密性の高い個人データに関する詳細を表示することで、個人データを管理できます。BlueXPで分類されたデータのカテゴリやファイルタイプを確認することで、データを可視化することもできます。 
 ---
-= 組織に保存されているデータのコンプライアンスの詳細を表示する
+= 組織に保存されているデータに関するコンプライアンスの詳細を表示する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -23,9 +23,9 @@ NOTE: このセクションで説明する機能は、データソースに対�
 
 image:screenshot_compliance_dashboard.png["BlueXP分類ダッシュボードのスクリーンショット"]
 
-一部の作業環境のデータだけを表示する場合は、 <<特定の作業環境のダッシュボードデータの表示,それらの作業環境を選択します>>。
+一部の作業環境のデータだけを表示する場合は、 <<特定の作業環境のダッシュボードデータを表示する,それらの作業環境を選択します>>。
 
-また、 [ データ調査 ] ページから結果をフィルタリングして、結果のレポートを CSV ファイルとしてダウンロードすることもできます。を参照してください link:task-investigate-data.html#filtering-data-in-the-data-investigation-page["[ データ調査 ] ページでデータをフィルタリングします"] を参照してください。
+また、 [ データ調査 ] ページから結果をフィルタリングして、結果のレポートを CSV ファイルとしてダウンロードすることもできます。を参照してください link:task-investigate-data.html#filter-data-in-the-data-investigation-page["[ データ調査 ] ページでデータをフィルタリングします"] を参照してください。
 
 
 
@@ -87,7 +87,7 @@ image:screenshot_sensitive_personal_files.gif["個人データの種類の横に
 
 
 
-== カテゴリ別にファイルを表示します
+== カテゴリ別にファイルを表示
 
 BlueXPは、スキャンしたデータをさまざまなカテゴリに分類します。カテゴリは、各ファイルのコンテンツとメタデータの AI 分析に基づくトピックです。 link:reference-private-data-categories.html#types-of-categories["カテゴリのリストを参照してください"^]。
 
@@ -107,7 +107,7 @@ image:screenshot_categories.gif["カテゴリダイアログボックスのス�
 
 
 
-== ファイルタイプ別にファイルを表示する
+== ファイルタイプ別のファイルの表示
 
 BlueXPは、スキャンしたデータをファイルタイプ別に分類して分類します。ファイルタイプを確認すると、特定のファイルタイプが正しく保存されない可能性があるため、機密データを制御するのに役立ちます。 link:reference-private-data-categories.html#types-of-files["ファイルタイプのリストを参照してください"^]。
 
@@ -124,7 +124,7 @@ image:screenshot_file_types.gif["ファイルタイプダイアログボック�
 
 
 
-== 特定の作業環境のダッシュボードデータの表示
+== 特定の作業環境のダッシュボードデータを表示する
 
 BlueXPの分類ダッシュボードの内容をフィルタリングして、すべての作業環境とデータベース、または特定の作業環境のコンプライアンスデータを表示できます。
 

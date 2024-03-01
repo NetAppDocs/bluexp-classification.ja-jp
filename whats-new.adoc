@@ -18,7 +18,7 @@ BlueXPの新機能をご紹介します。
 
 
 
-== 1月10日（バージョン1.27）
+== 2024年1月10日（バージョン1.27）
 
 
 
@@ -34,7 +34,20 @@ BlueXPの新機能をご紹介します。
 
 
 
-== 11月6日（バージョン1.26.3）
+== 2023年12月（バージョン1.26.6）
+
+このリリースには、いくつかのマイナーな機能拡張が含まれ
+
+また、次のオプションも一時的に削除されました。
+
+* 監査ログ収集をアクティブ化するオプションが無効になりました。を参照してください link:task-manage-file-access-events.html["ファイルアクセスイベントを監視および管理します"]。
+* ディレクトリ調査中に、ディレクトリごとの個人識別情報（PII）データの数を計算するオプションは使用できません。を参照してください link:task-investigate-data.html#filter-data-by-sensitivity-and-content["組織に保存されているデータを調査します"]。
+* Azure Information Protection（AIP）ラベルを使用してデータを統合するオプションが無効になりました。を参照してください link:task-org-private-data.html["プライベートデータを整理します"]。
+
+
+
+
+== 2023年11月6日（バージョン1.26.3）
 
 
 
@@ -46,7 +59,7 @@ BlueXPの新機能をご紹介します。
 
 
 
-== 10月4日（バージョン1.26）
+== 2023年10月4日（バージョン1.26）
 
 
 
@@ -58,7 +71,7 @@ Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインス
 
 
 
-== 9月5日（バージョン1.25）
+== 2023年9月5日（バージョン1.25）
 
 
 
@@ -70,7 +83,7 @@ Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインス
 
 === [Investigation Results]ページから最大100,000項目にタグを適用
 
-これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。 https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["方法を参照してください"]。
+これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。 https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assign-tags-to-files["方法を参照してください"]。
 
 
 
@@ -239,7 +252,7 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 
 以前のバージョンのBlueXP分類では、特定のクリティカルポリシーが結果を返したときに、アカウントのBlueXPユーザにEメールアラートを送信できました。この機能を使用すると、オンラインでないときにデータを保護するための通知を受け取ることができます。また、ポリシーから、BlueXPアカウントに登録されていない最大20個の電子メールアドレスを持つ他のユーザーに電子メールアラートを送信することもできます。
 
-https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found["ポリシーの結果に基づいて電子メールアラートを送信する方法については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#send-email-alerts-when-non-compliant-data-is-found["ポリシーの結果に基づいて電子メールアラートを送信する方法については、こちらをご覧ください"]。
 
 
 
@@ -253,7 +266,7 @@ https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.ht
 
 === BlueXPの分類を使用して1、500万個のファイルを移動できます
 
-これまで、BlueXPの分類では、最大100、000個のソースファイルを任意のNFS共有に移動できました。一度に最大1,500万個のファイルを移動できるようになりました。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share["BlueXPによる分類を使用したソースファイルの移動の詳細については、こちらをご覧ください"]。
+これまで、BlueXPの分類では、最大100、000個のソースファイルを任意のNFS共有に移動できました。一度に最大1,500万個のファイルを移動できるようになりました。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#move-source-files-to-an-nfs-share["BlueXPによる分類を使用したソースファイルの移動の詳細については、こちらをご覧ください"]。
 
 
 
@@ -288,7 +301,7 @@ Governanceダッシュボードには、機密データ（機密性の高い個�
 * 「ファイルパス」フィルタで、フィルタリングされたクエリ結果から除外するパスを指定できるようになりました。対象に含めるデータと除外するデータの両方のパスを入力すると、BlueXPの分類によって、対象に含めるパス内のすべてのファイルが最初に検出され、除外するパスからファイルが削除されて結果が表示されます。
 
 
-https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filtering-data-in-the-data-investigation-page["データの調査に使用できるすべてのフィルタのリストを確認します"]。
+https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filter-data-in-the-data-investigation-page["データの調査に使用できるすべてのフィルタのリストを確認します"]。
 
 
 

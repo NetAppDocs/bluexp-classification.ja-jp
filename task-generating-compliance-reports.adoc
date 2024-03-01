@@ -4,7 +4,7 @@ permalink: task-generating-compliance-reports.html
 keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file, dsar 
 summary: BlueXPの分類では、組織のデータプライバシープログラムのステータスを詳しく把握するために使用できるレポートが提供されます。 
 ---
-= コンプライアンスレポートの表示
+= コンプライアンスレポートを表示する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,7 +16,7 @@ summary: BlueXPの分類では、組織のデータプライバシープログ�
 [role="lead"]
 BlueXPの分類では、組織のデータプライバシープログラムのステータスを詳しく把握するために使用できるレポートが提供されます。
 
-BlueXPの分類ダッシュボードには、デフォルトで、すべての作業環境、データベース、データソースのコンプライアンスとガバナンスのデータが表示されます。一部の作業環境のデータのみを含むレポートを表示する場合は、 <<レポートの作業環境を選択する,それらの作業環境を選択します>>。
+BlueXPの分類ダッシュボードには、デフォルトで、すべての作業環境、データベース、データソースのコンプライアンスとガバナンスのデータが表示されます。一部の作業環境のデータのみを含むレポートを表示する場合は、 <<レポートの作業環境を選択,それらの作業環境を選択します>>。
 
 [NOTE]
 ====
@@ -38,7 +38,7 @@ BlueXPの分類ダッシュボードには、デフォルトで、すべての�
 
 
 
-=== プライバシーリスク評価レポートの生成
+=== プライバシーリスクアセスメントレポートの生成
 
 コンプライアンスタブに移動してレポートを生成します。
 
@@ -118,7 +118,7 @@ Payment Card Industry Data Security Standard （ PCI DSS ） Report は、クレ
 
 
 
-=== PCI DSS レポートの生成
+=== PCI DSSレポートの生成
 
 コンプライアンスタブに移動してレポートを生成します。
 
@@ -157,7 +157,7 @@ Health Insurance Portability and Accountability Act （ HIPAA ：医療保険の
 
 
 
-=== HIPAA レポートの生成
+=== HIPAAレポートの生成
 
 コンプライアンスタブに移動してレポートを生成します。
 
@@ -224,7 +224,7 @@ NOTE: 10 、 000 件を超える結果がある場合は、ファイルリスト
 
 
 
-== レポートの作業環境を選択する
+== レポートの作業環境を選択
 
 BlueXPの分類[Compliance]ダッシュボードの内容をフィルタリングして、すべての作業環境とデータベース、または特定の作業環境のコンプライアンスデータを表示できます。
 

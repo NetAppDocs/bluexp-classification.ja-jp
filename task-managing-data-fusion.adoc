@@ -4,7 +4,7 @@ permalink: task-managing-data-fusion.html
 keywords: data identifiers, personal data, sensitive personal data, compliance, data fusion, data sense 
 summary: BlueXPの分類では、今後のスキャンでBlueXPの分類によって特定される「個人データ」のカスタムリストを追加するためのさまざまな方法が用意されています。これにより、機密性の高いデータが組織のすべてのファイルのどこに格納されているかを全体的に把握できます。 
 ---
-= BlueXPの分類スキャンに個人データ識別子を追加します
+= BlueXPの分類スキャンに個人データ識別子を追加
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -40,7 +40,7 @@ image:diagram_compliance_data_fusion.png["データベースのコンテンツ�
 独自のデータベースをスキャンするため、データが保存されている言語に関係なく、今後のBlueXP分類スキャンでデータを識別するために使用されることに注意してください。
 
 .手順
-が必要です link:task-scanning-databases.html#adding-the-database-server["データベースサーバを少なくとも 1 つ追加しました"^] データFusion ソースを追加する前に、をBlueXPの分類に追加する必要があります。
+が必要です link:task-scanning-databases.html#add-the-database-server["データベースサーバを少なくとも 1 つ追加しました"^] データFusion ソースを追加する前に、をBlueXPの分類に追加する必要があります。
 
 . [ 構成 ] ページで、ソースデータが存在するデータベースの [ データ Fusion の管理 ] をクリックします。
 +
@@ -184,7 +184,7 @@ BlueXPの分類にカスタムカテゴリを追加すると、データ資産�
 
 たとえば、必要に応じて削除できるように、.gz形式の圧縮インストールファイルがファイル内のどこにあるかを確認することができます。
 
-カスタムカテゴリを更新すると、BlueXPの分類によってすべてのデータソースのスキャンが再開されます。スキャンが完了すると、BlueXP分類コンプライアンスダッシュボードの[カテゴリ]セクションと[カテゴリ]フィルタの[調査]ページに新しい結果が表示されます。 link:task-controlling-private-data.html#viewing-files-by-categories["カテゴリ別にファイルを表示する方法を参照してください"]。
+カスタムカテゴリを更新すると、BlueXPの分類によってすべてのデータソースのスキャンが再開されます。スキャンが完了すると、BlueXP分類コンプライアンスダッシュボードの[カテゴリ]セクションと[カテゴリ]フィルタの[調査]ページに新しい結果が表示されます。 link:task-controlling-private-data.html#view-files-by-categories["カテゴリ別にファイルを表示する方法を参照してください"]。
 
 .必要なもの
 BlueXPの分類で認識するデータカテゴリのサンプルを含むトレーニングファイルを少なくとも25個作成する必要があります。次のファイルタイプがサポートされています。

@@ -204,7 +204,7 @@ BlueXPの分類では、コールドデータがオブジェクトストレー�
 
 はい。サブスクライブ済みの場合は、BlueXP分類でスキャンするファイルでAIPラベルを管理できます https://azure.microsoft.com/en-us/services/information-protection/["Azure 情報保護（ AIP ）"^]。既にファイルに割り当てられているラベルを表示したり、ファイルにラベルを追加したり、既存のラベルを変更したりできます。
 
-link:task-org-private-data.html#categorizing-your-data-using-aip-labels["詳細はこちら。"^]。
+link:task-org-private-data.html#categorize-your-data-using-aip-labels["詳細はこちら。"^]。
 
 
 
@@ -326,7 +326,7 @@ NetAppは機密データにアクセスできず、UIに表示されません。
 
 === データはどこに保存されていますか？
 
-スキャン結果は、BlueXP分類インスタンス内のElastisearchに格納されます。
+スキャン結果は、BlueXP分類インスタンス内のElasticsearchに保存されます。
 
 
 

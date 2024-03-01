@@ -44,7 +44,7 @@ _Saving Opportunities 領域内の項目を調査して、削除または階層�
 ** その他（一般的な「その他」カテゴリ）
 
 
-* * 重複ファイル * - スキャンしているデータソース内の他の場所に複製されているファイル。 link:task-investigate-data.html#viewing-all-duplicated-files["表示される重複ファイルの種類を確認します"]。
+* * 重複ファイル * - スキャンしているデータソース内の他の場所に複製されているファイル。 link:task-investigate-data.html#view-all-duplicated-files["表示される重複ファイルの種類を確認します"]。
 +
 注:: いずれかのデータソースでデータ階層化が実装されている場合は、オブジェクトストレージにすでに存在する古いデータを_Stale Data_categoryで特定できます。
 
@@ -131,7 +131,7 @@ _Age および _Size_Graphs の項目を調査して、削除または階層化�
 
 === 最も識別されているデータ分類
 
-_Classification_area には ' 最も識別されたリストが表示されます link:task-controlling-private-data.html#viewing-files-by-categories["カテゴリ"^]、 link:task-controlling-private-data.html#viewing-files-by-file-types["ファイルの種類"^]および link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP ラベル"^] をスキャンしたデータに保存します。
+_Classification_area には ' 最も識別されたリストが表示されます link:task-controlling-private-data.html#view-files-by-categories["カテゴリ"^]、 link:task-controlling-private-data.html#view-files-by-file-types["ファイルの種類"^]および link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP ラベル"^] をスキャンしたデータに保存します。
 
 
 
@@ -139,7 +139,7 @@ _Classification_area には ' 最も識別されたリストが表示されま�
 
 カテゴリを使用すると、保有している情報の種類を表示して、データの状況を把握することができます。たとえば、「履歴書」や「従業員契約書」などのカテゴリには機密データを含めることができます。結果を調査すると、従業員契約が安全でない場所に保存されていることがわかります。その後、その問題を修正できます。
 
-を参照してください link:task-controlling-private-data.html#viewing-files-by-categories["カテゴリ別にファイルを表示します"^] を参照してください。
+を参照してください link:task-controlling-private-data.html#view-files-by-categories["カテゴリ別にファイルを表示します"^] を参照してください。
 
 
 
@@ -147,7 +147,7 @@ _Classification_area には ' 最も識別されたリストが表示されま�
 
 ファイルタイプを確認すると、特定のファイルタイプが正しく保存されない可能性があるため、機密データを制御するのに役立ちます。
 
-を参照してください link:task-controlling-private-data.html#viewing-files-by-file-types["ファイルタイプを表示しています"^] を参照してください。
+を参照してください link:task-controlling-private-data.html#view-files-by-file-types["ファイルタイプを表示しています"^] を参照してください。
 
 
 
@@ -155,7 +155,7 @@ _Classification_area には ' 最も識別されたリストが表示されま�
 
 Azure Information Protection （ AIP ）に加入している場合は、コンテンツにラベルを適用することで、ドキュメントとファイルを分類して保護できます。ファイルに割り当てられている最も使用されている AIP ラベルを確認すると、ファイルで最も使用されているラベルを確認できます。
 
-を参照してください link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP ラベル"^] を参照してください。
+を参照してください link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP ラベル"^] を参照してください。
 
 
 
@@ -198,7 +198,7 @@ image:screenshot_compliance_data_mapping_report_button.png["データマッピ�
 .結果
 BlueXPの分類によってPDFレポートが生成されます。このレポートを確認して、必要に応じて他のグループに送信できます。
 
-レポートのサイズが1MBを超える場合は、BlueXP分類インスタンスにPDFファイルが保持され、正確な場所に関するポップアップメッセージが表示されます。BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、PDFファイルに直接移動できます。BlueXP分類をクラウドに導入したら、BlueXP分類インスタンスにSSHでアクセスしてPDFファイルをダウンロードする必要があります。 link:task-audit-data-sense-actions.html#access-the-log-file["「分類インスタンスのデータにアクセスする方法」を参照してください"^]。
+レポートのサイズが1MBを超える場合は、BlueXP分類インスタンスにPDFファイルが保持され、正確な場所に関するポップアップメッセージが表示されます。BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、PDFファイルに直接移動できます。BlueXP分類をクラウドに導入したら、BlueXP分類インスタンスにSSHでアクセスしてPDFファイルをダウンロードする必要があります。 link:task-audit-data-sense-actions.html#access-the-log-files["「分類インスタンスのデータにアクセスする方法」を参照してください"^]。
 
 BlueXPの分類ページの上部にあるをクリックすると、レポートの最初のページに表示される会社名をカスタマイズできます image:screenshot_gallery_options.gif["[詳細]ボタン"] [会社名の変更]をクリックします。次回レポートを生成するときに、新しい名前が含まれます。
 
