@@ -1654,13 +1654,6 @@
   <block id="6187258d3b87228cf977d535a5db1ea0" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> ユーザファイルのスキャンタイプを選択します</block>
   <block id="1a7c4f8acb1e42cdd7c2f34894fc2a2a" category="cell">Large （デフォルト）</block>
   <block id="9868eea85c69d464c823a4c7e185121a" category="section-title">マッピングスキャンと分類スキャンの違いは何ですか</block>
-  <block id="c3828ad11edf9a8e2a0d7bd8910b2ad3" category="section-title">2022年12月11日（バージョン1.18）</block>
-  <block id="329171a5c817ab7ae03a1497aa6d59fa" category="section-title">オンプレミスインストールの機能拡張</block>
-  <block id="500b30285e1a741b658bc533a0a125a1" category="paragraph">オンプレミスのデータセンスインストールには、次の拡張機能が追加されています。</block>
-  <block id="bacf3e82e48abd0e39c6a162b4aa7191" category="list-text">オンプレミスホストでインストールを開始する前に、いくつかの前提条件が確認されます。これにより、ホストシステムにデータセンスソフトウェアを100%インストールできる状態になります。</block>
-  <block id="8e3833fdafa0cd3a63d1fae40cbd74e9" category="list-text">必要なすべてのフォルダについて、関連する権限をテストします</block>
-  <block id="36cbb51c271d3c68a01a8599c0fbd2b8" category="list-text">[構成]ページの[作業環境]セクションに、_Working Environment ID_と_Scanner Group_nameが表示されるようになりました。複数のData Senseホストを使用して、データソースをスキャンする処理能力を追加する場合は、Working Environment IDを知っておく必要があります。</block>
-  <block id="73e22396c6474ab27832098f1351b823" category="inline-link">1台のホストサーバと複数のホストにデータセンスをインストールする方法については、こちらをご覧ください</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">始める前に</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完了後</block>
   <block id="9c2468c732c2a3c37f5718ed3927f188" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> オブジェクトストレージの前提条件を確認する</block>
@@ -1672,8 +1665,6 @@
   <block id="23dcbd39a65a485d50a0307dbfaed624" category="list-text">次のスクリプトを実行して、このマッピング情報をすべてのスキャナノードに登録します。<block ref="095075046e7ff767d3fd56d02f6fdfdb" prefix=" " category="inline-code"></block></block>
   <block id="a27db93614949e38a138b99356391903" category="paragraph-title">事前に必要な手順</block>
   <block id="ddeaea1d2d5cacbe438413e4143bca6e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> クラウド環境で S3 の要件を設定します</block>
-  <block id="c73eb1c0478b9ea7f0699ac7b64d4214" category="list-text">の十分なスペースをテストします<block ref="2e1a4e3f55001820560b237188c70bc3" prefix=" " category="inline-code"></block>、<block ref="d42b9c57d24cf5db3bd8d332dc35437f" prefix=" " category="inline-code"></block>および<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block></block>
-  <block id="da8fda88af08dfa86e6c1895e629a7a5" category="list-text">また、設定ページの新しいセクションには、設定したスキャナグループと各グループにあるスキャナノードが表示されます。</block>
   <block id="a0bc8fee488c4982eb9cac7b4cd30c5d" category="list-text">コネクタホストが、ポート 443 経由のアウトバウンド HTTPS アクセスを許可する必要があります。コネクタがクラウド内にある場合、すべてのアウトバウンド通信は、事前定義されたファイアウォールまたはルーティングルールによって許可されます。</block>
   <block id="be8e8316109467c39dd04940dda55d9c" category="list-text">「/opt/netapp/Datasense/working _environment_To-scanner _group_config.yml」ファイルを開き、スキャナグループが特定の作業環境をスキャンするためのマッピングを入力します。データソースごとに_Working Environment ID_が必要になります。たとえば、次のエントリでは、2つの作業環境を「ヨーロッパ」スキャナグループに、2つを「United States」スキャナグループに追加します。</block>
   <block id="1d4c3c5a59e200a8cf6bd280a00b8b39" category="paragraph">設定ページで、スキャンするデータソースを選択できます（まだ選択していない場合）。スキャナグループを作成した場合は、各データソースがそれぞれのグループのスキャナノードによってスキャンされます。</block>
@@ -2957,7 +2948,6 @@
   <block id="451e723f277a39328c39e790b3d47ebc" category="paragraph">新しい「Partial Success」ステータスは、BlueXPの分類処理が完了し、一部の項目が失敗し、一部の項目が成功したことを示します（100個のファイルを移動または削除する場合など）。さらに、「終了」ステータスが「成功」に変更されました。以前は、「終了」ステータスに成功した処理と失敗した処理が表示されることがありました。現在、「Success」ステータスは、すべての項目に対するすべてのアクションが成功したことを意味します。<block ref="81392bd70242cc4257015d9eb2f1d43a" category="inline-link-rx"></block>。</block>
   <block id="fccd9d5627e0ea943a2decbcedc75caf" category="paragraph">Governanceダッシュボードには、機密データ（機密性の高い個人データと機密性の高い個人データの両方を含む）を含むファイルのヒートマップを提供するnew_sensitive DataおよびWide Permissive_areaが追加されています。これにより、機密データを含むリスクがある場所を確認できます。<block ref="7c90c3d5fe3f2a4e9ca8ce0d84318210" category="inline-link-rx"></block>。</block>
   <block id="e5047cfc3a021db29e30390a5a0de3c1" category="paragraph">BlueXPの分類では、日本語の個人番号（「マイナンバー」とも呼ばれます）を含むファイルを特定して分類できます。これには、個人用電話番号と会社用電話番号の両方が含まれます。<block ref="902797e77ffbfd681f1fc19dad4fefbc" category="inline-link-rx"></block>。</block>
-  <block id="70ef9f0f001698901fc7782c85efbd22" category="paragraph"><block ref="d164dabede0c4e6f2317947d0f40a4c9" category="inline-link-rx"></block>。</block>
   <block id="9aeb191a0aa6c1027436d873f00b71c9" category="paragraph">可能です<block ref="1f636e96c754f54f3e3b5b9bf17177fa" category="inline-link-rx"></block> ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。BlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。</block>
   <block id="1b01b1e09dd0c52ed6a6d8b4ca2a0568" category="paragraph">クラウドプロバイダ環境でコネクタを作成するには、を参照してください<block ref="43c354a9e10c487e79b72ac55319f506" category="inline-link-rx"></block>、<block ref="f57cc468ab9bea4198c876368a971c60" category="inline-link-rx"></block>または<block ref="4ed2379781d8ba33fa9fe0959039a8e2" category="inline-link-rx"></block>。</block>
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
@@ -3317,14 +3307,12 @@
   <block id="c0796e6eb525f9f4fe2a9d96a28d314a" category="list-text">ディレクトリ名</block>
   <block id="ea36f55b106d5d1443d6a1e80c18df3d" category="list-text">ディレクトリ所有者</block>
   <block id="0ee0dd7645f9fd01a3094af2719826bf" category="summary">NFSファイル共有内のファイルまたはフォルダにグループIDが添付されている場合、グループIDはファイルまたはフォルダに対する権限（組織に対して開かれているかどうかなど）を定義します。一部のグループID（GID）に「組織を開く」権限レベルが設定されていない場合は、その権限をGIDに追加して、そのGIDが添付されているファイルやフォルダが「組織に対して開かれている」とみなされるようにすることができます。</block>
-  <block id="9ada56a36c98a6592b93aac97b759b65" category="doc">追加のグループIDを「組織にオープン」として定義する</block>
   <block id="54f4d6ea6929f3157249a7232005ba31" category="paragraph">グループID（GID）がNFSファイル共有内のファイルまたはフォルダに添付される場合、グループIDはファイルまたはフォルダに対する権限（組織に対して開かれているかどうかなど）を定義します。一部のグループID（GID）に「組織を開く」権限レベルが設定されていない場合は、その権限をGIDに追加して、そのGIDが添付されているファイルやフォルダが「組織に対して開かれている」とみなされるようにすることができます。</block>
   <block id="85755c2c4a65adf46f4aed267e145acd" category="paragraph">この変更を行ってBlueXPの分類でファイルやフォルダが再スキャンされると、これらのグループIDが関連付けられているファイルやフォルダには、[調査の詳細]ページにこの権限が表示され、ファイルの権限を表示しているレポートにも表示されます。</block>
   <block id="c079e3a087379d135bc6228cdbf4538d" category="section-title">BlueXP分類システムにログインする</block>
   <block id="3e6039a3c9f368f407b293a4cae886e2" category="paragraph">BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、構成ファイルとスクリプトに直接アクセスできます。</block>
   <block id="aea796c551760c123249c98597ef5dab" category="section-title">「組織に開く」権限をグループIDに追加する</block>
   <block id="cab0d8189f1383e6633abad2d8bb10e2" category="paragraph">このタスクを開始する前に、グループID番号（GID）が必要です。</block>
-  <block id="2783de23499f1b6912284079950af328" category="list-text">BlueXP分類システムで、「/opt/netapp/config/custom _configuration」に移動し、「data_provider.yaml」ファイルを開きます。</block>
   <block id="f81b0bf85bf2ac124c8235722fd5953b" category="list-text">「organization_group_ids:[]」行にグループIDを追加します。例：</block>
   <block id="98ab797cb238cc535772dce1663baf49" category="paragraph">このファイルの他の内容は変更しないでください。</block>
   <block id="8a9190ee1ce170537f2281a1fd3efbf8" category="paragraph">このコマンドは、変更されたグループID権限を分類エンジンにコミットします。</block>
@@ -3336,7 +3324,6 @@
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link">追加のグループIDを「組織にオープン」として追加</block>
   <block id="7823cdf226bddeed3789b41cce9f2f73" category="sidebar">既存のグループIDを「組織にオープン」として定義する</block>
   <block id="c994485ccd2b31a48f2ec01a7e6462e0" category="list-text">「/opt/netapp/Datasense/tools/customer _configuration/data_providers」に移動し、次のスクリプトを実行します。</block>
-  <block id="d16189c10d4d8a98db7b1b99d883a1fd" category="paragraph">BlueXPの分類に追加したグループIDの現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer _configuration/data_providers」から次のコマンドを実行します。</block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">グループに最初にその権限が設定されていなかった場合に、BlueXPの分類から直接、NFSのグループIDを「Open to Organization」とみなされるように設定できるようになりました。これらのグループIDが添付されているファイルおよびフォルダは、[Investigation Details]ページで[Open to Organization]として表示されます。方法を参照してください<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>。</block>
   <block id="3fa1e4aec3c930accd20ae2a1e354a79" category="paragraph">BlueXPは、サービスのREST API機能をサポートしています。BlueXPの管理が推奨されない場合は、REST APIを使用してBlueXPの分類などのサービスを使用することもできます。すべてのユーザアクションには、サードパーティのシステムと統合できるREST APIがあります。を参照してください <block ref="6cf6f695e0ddd2cc536783d6e0951a10" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="da4874b0888a9dafc160c24905184d23" category="section-title">ONTAPボリュームにあるSnapshotコピーはスキャンされますか？</block>
@@ -3465,7 +3452,6 @@
   <block id="117276e96b89d072e0a833596332ef29" category="section-title">データベースサーバを追加します</block>
   <block id="0dacbfa35e4a190378a78ef8c1f6a644" category="section-title">データベーススキーマでのコンプライアンススキャンの有効化と無効化</block>
   <block id="402607c1b30a68385dcfbd12111327c1" category="section-title">2024年1月10日（バージョン1.27）</block>
-  <block id="c0aa452130abaadece0c71d90274bb8e" category="section-title">2023年12月（バージョン1.26.6）</block>
   <block id="5cc6a6599bfa6671ce515940a0badce7" category="paragraph">このリリースには、いくつかのマイナーな機能拡張が含まれ</block>
   <block id="176a42de7f70d82ff8506b6739d7b290" category="paragraph">また、次のオプションも一時的に削除されました。</block>
   <block id="39b6848535d4f2679ee032ca465bba8c" category="list-text">監査ログ収集をアクティブ化するオプションが無効になりました。を参照してください <block ref="01ac4154b50639da0a94f22ce7059c7f" category="inline-link-macro-rx"></block>。</block>
@@ -3512,7 +3498,6 @@
   <block id="f72e4f10556fdc1e84c715407cbda16b" category="sidebar">プライベート情報を含むファイルを表示します</block>
   <block id="53aba5c7ba7952b6d58e9dfb83a4516e" category="sidebar">ストレージに複製されているファイルを表示します</block>
   <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">データをフィルタして、特定のファイルを表示します</block>
-  <block id="ca60961cf2d876d600daca4a1ad60001" category="sidebar">上位検索を表示するポリシーを作成します</block>
   <block id="514f916b25444f3ec0ab113c2706f83a" category="sidebar">注意が必要なファイルにタグと所有者を適用します</block>
   <block id="b33a306cb7abd3790ba4311eb102a667" category="sidebar">独自のカスタム個人データ識別子を追加します</block>
   <block id="2987f20ce906ae32ec7e3e192413377f" category="sidebar">ソースファイルを移動します</block>
@@ -3524,4 +3509,68 @@
   <block id="ca37e37afe1d388be7dabea9f8f09ba3" category="sidebar">BlueXPの分類に関するビデオ</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXPブログ</block>
   <block id="f93e4e0ba0745745e36a3b67b14a8a5b" category="sidebar">BlueXP Webセミナー</block>
+  <block id="8180cc16c2c6f5d6b650c76944d52252" category="summary">BlueXPの分類で、特定のデータソースディレクトリにあるスキャンデータを除外するには、これらのディレクトリ名を構成ファイルに追加します。この変更を適用すると、BlueXP分類エンジンによってディレクトリ内のスキャンデータが除外されます。</block>
+  <block id="f6af5e23cd22bc5f1b7833ad602a5c38" category="doc">BlueXPの分類スキャンから特定のディレクトリを除外する</block>
+  <block id="bea0fd574e5a5abde1c8262dbd6e2370" category="paragraph">BlueXPの分類は、ボリュームの内容と同じであるため、ボリュームSnapshotデータのスキャンを除外するようにデフォルトで設定されています。</block>
+  <block id="efebf801e240ae82ed1c434305548b38" category="paragraph">この機能は、BlueXP分類バージョン1.29以降（2024年3月以降）で使用できます。</block>
+  <block id="0abc7ce542155915b82311c6450bea62" category="paragraph">BlueXPの分類スキャンから特定のディレクトリを除外することは、次のデータソースのNFS共有とCIFS共有でサポートされます。</block>
+  <block id="49fe103d0a39e5feeddf772106a8122e" category="list-text">一般的なファイル共有</block>
+  <block id="cf2e31e61b9c0d3547f54fc506e4b383" category="section-title">スキャン対象から除外するディレクトリを定義する</block>
+  <block id="78e986fa820c103dbcc45ed24bd2f383" category="paragraph">分類のスキャン対象からディレクトリを除外するには、構成ファイルを編集してスクリプトを実行できるように、BlueXP分類システムにログインする必要があります。方法を参照してください <block ref="fee7c33f779340beee212bd52ff12fd0" category="inline-link-macro-rx"></block> ソフトウェアを手動でLinuxマシンにインストールしたか、インスタンスをクラウドに導入したかによって異なります。</block>
+  <block id="bc6218284832af039faeb4c497e97a18" category="list-text">BlueXP分類システムごとに最大50個のディレクトリパスを除外できます。</block>
+  <block id="66a7b6ae1af91171aaf4ecc7afd0b7d0" category="list-text">ディレクトリパスを除外すると、スキャン時間に影響することがあります。</block>
+  <block id="2e19c6096e07e117219780aee7f88c45" category="list-text">BlueXP分類システムで、「/opt/netapp/config/custom _configuration」に移動してファイルを開きます。<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block>。</block>
+  <block id="6e0803e8653caacbe1a019f32eda00bb" category="list-text">「data_providers」セクションの「exclude：」行の下に、除外するディレクトリパスを入力します。例：</block>
+  <block id="5a0dfd405c0424a01f42cdb7e596d91c" category="list-text">変更をファイルに保存します。</block>
+  <block id="d661ab86a14960e8bcf6cdfa727299d1" category="paragraph">このコマンドは、スキャンから除外するディレクトリを分類エンジンにコミットします。</block>
+  <block id="21f183efd2dff70b58a99d83fc4f0ce7" category="paragraph">以降のデータスキャンでは、指定したディレクトリのスキャンが除外されます。</block>
+  <block id="a495b8035b743d8b7dea2d9d0918de77" category="paragraph">除外リストの項目を追加、編集、または削除するには、同じ手順を実行します。修正された除外リストは、スクリプトを実行して変更をコミットすると更新されます。</block>
+  <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">例</block>
+  <block id="0440227581515c72236de5a764242d5c" category="paragraph-title">構成1：</block>
+  <block id="8c0f7ed2eea737d19ff087745c78f4ae" category="paragraph">名前の任意の場所に"folder1"を含むすべてのフォルダは、すべてのデータソースから除外されます。</block>
+  <block id="d6d0a43c6c69d1f785258f09797e96a2" category="list-title">除外するパスの想定される結果：</block>
+  <block id="0d30977fecaa90640135943496e20863" category="list-text">/CVO1/folder1</block>
+  <block id="8eb7d336cfc030df3afe89d5c289514d" category="list-text">/CVO1/folder1name</block>
+  <block id="9f2d1aa2824b0506dd1e80da3eaebd63" category="list-text">/CVO1/folder10</block>
+  <block id="15fb383027ef8fbe15d374b2efc33994" category="list-text">/CVO1/*フォルダ1</block>
+  <block id="569806d3b5250620ff0f137d85df73c4" category="list-text">/CVO1/+ folder1name</block>
+  <block id="d6f23bc30d0950bf24b440de3579ee1f" category="list-text">/CVO1/notfolder10</block>
+  <block id="7e3057c60782470bd7f0c765e4d614b9" category="list-text">/CVO22/フォルダ1</block>
+  <block id="b18ea64bfd5aa27240193320e354bfeb" category="list-text">/CVO22/folder1name</block>
+  <block id="6fdf0a8d667f474107a56d7566260558" category="list-text">/CVO22/フォルダ10</block>
+  <block id="7c9e22babb20d95a6ccacbc12c6e72db" category="list-title">除外されないパスの例：</block>
+  <block id="ec2b190a955f29720921cc8e6a67731d" category="list-text">/CVO1/*フォルダ</block>
+  <block id="0856e33548ceb338ab56d993d8281098" category="list-text">/CVO1/foldername</block>
+  <block id="14b8fac51101a115be8405f9d25adf0c" category="list-text">/CVO22/* folder20</block>
+  <block id="ce6c202454d84db0a51ee3b673259d76" category="paragraph-title">構成2：</block>
+  <block id="cd10b67d6b72e9152aca54085862e630" category="paragraph">名前の先頭にのみ「* folder1」を含むすべてのフォルダは除外されます。</block>
+  <block id="33114d8cd4f5562094ea8f71798fab0c" category="list-text">/CVO /*フォルダ1</block>
+  <block id="07099186c5910fc2467ae1b4757b70f3" category="list-text">/CVO /* folder1name</block>
+  <block id="b96768cc207dc3d7940a06aed4482e49" category="list-text">/CVO /*フォルダ10</block>
+  <block id="129853dc73d0231d5c812823e2480cba" category="list-text">/CVO/フォルダ1</block>
+  <block id="c855f79110a45e3cf4ee4a2e9f07d01c" category="list-text">/cvo/folder1name</block>
+  <block id="5b6734714cb7b0ac3b7b695994d18616" category="list-text">/CVO / NOT * folder10</block>
+  <block id="d3b9102bc3b45248bbfec3ec65c81ffd" category="paragraph-title">構成3：</block>
+  <block id="c962d247f3d6cbb96db748ddbc8947d0" category="paragraph">データソース「CVO22」内の名前の任意の場所に「folder1」を含むすべてのフォルダは除外されます。</block>
+  <block id="85aafa7a10a33b1a6b3edd3a981f3e09" category="section-title">フォルダ名の特殊文字のエスケープ</block>
+  <block id="555e1283533f2fd2406da22eb7c48543" category="paragraph">次の特殊文字のいずれかを含むフォルダ名があり、そのフォルダ内のデータをスキャン対象から除外する場合は、フォルダ名の前にエスケープシーケンス\\を使用する必要があります。</block>
+  <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">例：</block>
+  <block id="f6b342a69edf320338b3f72b95931768" category="paragraph">ソース内のパス：<block ref="4cd339ff39aca9d50d4472947a989dc1" prefix=" " category="inline-code"></block></block>
+  <block id="457d08b230361da11684b35702d5d114" category="paragraph">EXCLUDEファイルの構文：<block ref="656c9e12809cee621e2abce3032674d0" prefix=" " category="inline-code"></block></block>
+  <block id="3d704d8a7dea04055fa8e435fb3ba4a4" category="section-title">現在の除外リストを表示する</block>
+  <block id="ce591271bee64e6f1ef9a4585a8a1142" category="paragraph">内容は可能である<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block> の実行後に実際にコミットされたものとは異なる構成ファイル<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block> スクリプト：BlueXPの分類スキャンの対象から除外したディレクトリの現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer _configuration/data_providers」で次のコマンドを実行します。</block>
+  <block id="75377d4edffa6c8df90ec35a6c2955ae" category="section-title">特定のディレクトリのスキャンデータを除外するようにサービスに指示することはできますか?</block>
+  <block id="140079c23bf99666acb52cc8f9b453cb" category="paragraph">はい。BlueXPの分類で、特定のデータソースディレクトリにあるスキャンデータを除外するには、そのリストを分類エンジンに指定します。この変更を適用すると、BlueXPの分類によって、指定したディレクトリ内のスキャンデータが除外されます。</block>
+  <block id="cccdbfa223764cc2c6bbdf979c65ac39" category="paragraph"><block ref="8704cac21d49e5e6ff202bcfdaf0dcb0" category="inline-link-macro-rx"></block>。</block>
+  <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">2024年3月4日（バージョン1.29）</block>
+  <block id="2155776a968fa3c23d5147a57832435f" category="section-title">特定のデータソースディレクトリにあるスキャンデータを除外できるようになりました。</block>
+  <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">BlueXPの分類で、特定のデータソースディレクトリにあるスキャンデータを除外する場合は、BlueXPの分類で処理する構成ファイルにこれらのディレクトリ名を追加します。この機能を使用すると、不要なディレクトリや、個人データの誤検出結果が返されるディレクトリのスキャンを回避できます。</block>
+  <block id="1566e9c70755185a01fd5ae6296dca7b" category="paragraph"><block ref="2b616ef681b794b63b03f66a13723ff8" category="inline-link-rx"></block>。</block>
+  <block id="7cda33697c25a4972bdbfab414004cc2" category="section-title">2023年12月14日（バージョン1.26.6）</block>
+  <block id="a1663078538acf931413c4667ee4dc32" category="doc">追加のグループIDを組織に対してオープンとして定義する</block>
+  <block id="14262b7b54453519cfa73f76b2652616" category="section-title">現在のグループIDのリストを表示する</block>
+  <block id="30e7ed02f97ac1e08032a6f980412c4b" category="paragraph">内容は可能である<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block> の実行後に実際にコミットされたものとは異なる構成ファイル<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block> スクリプト：BlueXPの分類に追加したグループIDの現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer _configuration/data_providers」から次のコマンドを実行します。</block>
+  <block id="2238095e02de090e407d911c0f0f1e9f" category="sidebar">ポリシーを作成して、上位の検索結果を表示する</block>
+  <block id="3e01ecaa94897c14b8a0c8eb76bf0c93" category="sidebar">特定のディレクトリをスキャン対象から除外する</block>
+  <block id="c7d804294d8fa0d1ba6bfc80ead25ca0" category="sidebar">ディレクトリをスキャン対象から除外</block>
 </blocks>

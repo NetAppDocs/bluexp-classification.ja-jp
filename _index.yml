@@ -55,7 +55,7 @@ indexpage:
       url: task-investigate-data.html#check-for-duplicate-files-in-your-storage-systems
     - title: データをフィルタして、特定のファイルを表示します
       url: task-investigate-data.html
-    - title: 上位検索を表示するポリシーを作成します
+    - title: ポリシーを作成して、上位の検索結果を表示する
       url: task-using-policies.html
     - title: コンプライアンスレポートを生成します
       url: task-generating-compliance-reports.html
@@ -67,6 +67,8 @@ indexpage:
       url: task-org-private-data.html#categorize-your-data-using-aip-labels
     - title: 独自のカスタム個人データ識別子を追加します
       url: task-managing-data-fusion.html
+    - title: 特定のディレクトリをスキャン対象から除外する
+      url: task-exclude-scan-paths.html
   - title: プライベートデータを管理
     links:
     - title: ソースファイルをコピーします

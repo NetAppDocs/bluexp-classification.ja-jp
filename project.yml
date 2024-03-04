@@ -88,6 +88,8 @@ sidebar:
     entries:
     - title: カスタムの個人データ識別子を追加します
       url: "/task-managing-data-fusion.html"
+    - title: ディレクトリをスキャン対象から除外
+      url: "/task-exclude-scan-paths.html"
     - title: BlueXP分類操作のステータスを表示します
       url: "/task-view-compliance-actions.html"
     - title: 既存のグループIDを「組織にオープン」として定義する

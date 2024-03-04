@@ -4,7 +4,7 @@ permalink: task-add-group-id-as-open.html
 keywords: permissions, open to organization, file access 
 summary: NFSファイル共有内のファイルまたはフォルダにグループIDが添付されている場合、グループIDはファイルまたはフォルダに対する権限（組織に対して開かれているかどうかなど）を定義します。一部のグループID（GID）に「組織を開く」権限レベルが設定されていない場合は、その権限をGIDに追加して、そのGIDが添付されているファイルやフォルダが「組織に対して開かれている」とみなされるようにすることができます。 
 ---
-= 追加のグループIDを「組織にオープン」として定義する
+= 追加のグループIDを組織に対してオープンとして定義する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -27,13 +27,14 @@ summary: NFSファイル共有内のファイルまたはフォルダにグル�
 このタスクを開始する前に、グループID番号（GID）が必要です。
 
 .手順
-. BlueXP分類システムで、「/opt/netapp/config/custom _configuration」に移動し、「data_provider.yaml」ファイルを開きます。
+. BlueXP分類システムで、「/opt/netapp/config/custom _configuration」に移動してファイルを開きます。 `data_provider.yaml`。
 . 「organization_group_ids:[]」行にグループIDを追加します。例：
 +
  organization_group_ids: [1014, 1015, 21, 2021, 1013, 2020, 1018, 1019]
 +
 このファイルの他の内容は変更しないでください。
 
+. 変更をファイルに保存します。
 . 「/opt/netapp/Datasense/tools/customer _configuration/data_providers」に移動し、次のスクリプトを実行します。
 +
  update_data_providers_from_config_file.sh
@@ -42,10 +43,15 @@ summary: NFSファイル共有内のファイルまたはフォルダにグル�
 
 
 
+.結果
 その後のデータスキャンでは、これらのグループIDが「組織に対して開かれている」と添付されているファイルまたはフォルダが特定されます。
 
 次の手順を使用して、グループIDのリストを編集したり、過去に追加したグループIDを削除したりできます。変更したグループIDのリストは、スクリプトを実行して変更をコミットすると更新されます。
 
-BlueXPの分類に追加したグループIDの現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer _configuration/data_providers」から次のコマンドを実行します。
+
+
+== 現在のグループIDのリストを表示する
+
+内容は可能である `data_provider.yaml` の実行後に実際にコミットされたものとは異なる構成ファイル `update_data_providers_from_config_file.sh` スクリプト：BlueXPの分類に追加したグループIDの現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer _configuration/data_providers」から次のコマンドを実行します。
 
  get_data_providers_configuration.sh

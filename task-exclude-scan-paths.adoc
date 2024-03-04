@@ -1,0 +1,164 @@
+---
+sidebar: sidebar 
+permalink: task-exclude-scan-paths.html 
+keywords: exclude scans, folders, directories 
+summary: BlueXPの分類で、特定のデータソースディレクトリにあるスキャンデータを除外するには、これらのディレクトリ名を構成ファイルに追加します。この変更を適用すると、BlueXP分類エンジンによってディレクトリ内のスキャンデータが除外されます。 
+---
+= BlueXPの分類スキャンから特定のディレクトリを除外する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXPの分類で、特定のデータソースディレクトリにあるスキャンデータを除外するには、これらのディレクトリ名を構成ファイルに追加します。この変更を適用すると、BlueXP分類エンジンによってディレクトリ内のスキャンデータが除外されます。
+
+BlueXPの分類は、ボリュームの内容と同じであるため、ボリュームSnapshotデータのスキャンを除外するようにデフォルトで設定されています。
+
+この機能は、BlueXP分類バージョン1.29以降（2024年3月以降）で使用できます。
+
+
+
+== サポートされているデータソース
+
+BlueXPの分類スキャンから特定のディレクトリを除外することは、次のデータソースのNFS共有とCIFS共有でサポートされます。
+
+* オンプレミスのONTAP
+* Cloud Volumes ONTAP
+* NetApp ONTAP 対応の Amazon FSX
+* Azure NetApp Files の特長
+* 一般的なファイル共有
+
+
+
+
+== スキャン対象から除外するディレクトリを定義する
+
+分類のスキャン対象からディレクトリを除外するには、構成ファイルを編集してスクリプトを実行できるように、BlueXP分類システムにログインする必要があります。方法を参照してください link:reference-log-in-to-instance.html["BlueXP分類システムにログインする"] ソフトウェアを手動でLinuxマシンにインストールしたか、インスタンスをクラウドに導入したかによって異なります。
+
+[NOTE]
+====
+* BlueXP分類システムごとに最大50個のディレクトリパスを除外できます。
+* ディレクトリパスを除外すると、スキャン時間に影響することがあります。
+
+
+====
+.手順
+. BlueXP分類システムで、「/opt/netapp/config/custom _configuration」に移動してファイルを開きます。 `data_provider.yaml`。
+. 「data_providers」セクションの「exclude：」行の下に、除外するディレクトリパスを入力します。例：
++
+....
+exclude:
+- "folder1"
+- "folder2"
+....
++
+このファイルの他の内容は変更しないでください。
+
+. 変更をファイルに保存します。
+. 「/opt/netapp/Datasense/tools/customer _configuration/data_providers」に移動し、次のスクリプトを実行します。
++
+ update_data_providers_from_config_file.sh
++
+このコマンドは、スキャンから除外するディレクトリを分類エンジンにコミットします。
+
+
+
+.結果
+以降のデータスキャンでは、指定したディレクトリのスキャンが除外されます。
+
+除外リストの項目を追加、編集、または削除するには、同じ手順を実行します。修正された除外リストは、スクリプトを実行して変更をコミットすると更新されます。
+
+
+
+== 例
+
+.構成1：
+名前の任意の場所に"folder1"を含むすべてのフォルダは、すべてのデータソースから除外されます。
+
+....
+data_providers:
+   exclude:
+   - "folder1"
+....
+.除外するパスの想定される結果：
+* /CVO1/folder1
+* /CVO1/folder1name
+* /CVO1/folder10
+* /CVO1/*フォルダ1
+* /CVO1/+ folder1name
+* /CVO1/notfolder10
+* /CVO22/フォルダ1
+* /CVO22/folder1name
+* /CVO22/フォルダ10
+
+
+.除外されないパスの例：
+* /CVO1/*フォルダ
+* /CVO1/foldername
+* /CVO22/* folder20
+
+
+.構成2：
+名前の先頭にのみ「* folder1」を含むすべてのフォルダは除外されます。
+
+....
+data_providers:
+   exclude:
+   - "\\*folder1"
+....
+.除外するパスの想定される結果：
+* /CVO /*フォルダ1
+* /CVO /* folder1name
+* /CVO /*フォルダ10
+
+
+.除外されないパスの例：
+* /CVO/フォルダ1
+* /cvo/folder1name
+* /CVO / NOT * folder10
+
+
+.構成3：
+データソース「CVO22」内の名前の任意の場所に「folder1」を含むすべてのフォルダは除外されます。
+
+....
+data_providers:
+   exclude:
+   - "CVO22/folder1"
+....
+.除外するパスの想定される結果：
+* /CVO22/フォルダ1
+* /CVO22/folder1name
+* /CVO22/フォルダ10
+
+
+.除外されないパスの例：
+* /CVO1/folder1
+* /CVO1/folder1name
+* /CVO1/folder10
+
+
+
+
+== フォルダ名の特殊文字のエスケープ
+
+次の特殊文字のいずれかを含むフォルダ名があり、そのフォルダ内のデータをスキャン対象から除外する場合は、フォルダ名の前にエスケープシーケンス\\を使用する必要があります。
+
+ ., +, *, ?, ^, $, (, ), [, ], {, }, |
+例：
+
+ソース内のパス： `/project/*not_to_scan`
+
+EXCLUDEファイルの構文： `"\\*not_to_scan"`
+
+
+
+== 現在の除外リストを表示する
+
+内容は可能である `data_provider.yaml` の実行後に実際にコミットされたものとは異なる構成ファイル `update_data_providers_from_config_file.sh` スクリプト：BlueXPの分類スキャンの対象から除外したディレクトリの現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer _configuration/data_providers」で次のコマンドを実行します。
+
+ get_data_providers_configuration.sh
