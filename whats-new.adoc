@@ -30,6 +30,14 @@ https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html
 
 
 
+=== 特大規模インスタンスのサポートが認定されました
+
+BlueXPの分類で2億5、000万を超えるファイルをスキャンする必要がある場合は、クラウド環境またはオンプレミス環境で特大規模なインスタンスを使用できます。このタイプのシステムは、最大5億個のファイルをスキャンできます。
+
+https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["詳細はこちら。"]。
+
+
+
 == 2024年1月10日（バージョン1.27）
 
 
