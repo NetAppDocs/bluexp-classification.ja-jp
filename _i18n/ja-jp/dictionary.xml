@@ -2477,7 +2477,6 @@
   <block id="b1cfb802271338af5bae746aee65d68f" category="paragraph">はい。BlueXPはBlueXPに完全に統合されています。BlueXPユーザーは'ワークスペース権限に応じて表示可能な作業環境の情報のみを表示できます</block>
   <block id="78d74c7ac59dc7722ad434f3b07f8c77" category="paragraph">また、BlueXPの分類設定を管理せずに、特定のユーザにBlueXPの分類スキャン結果だけを表示させる場合は、それらのユーザにCloud Compliance Viewerロールを割り当てることができます。</block>
   <block id="baa3d508ff34a4c15a58d71fbe4f0e0f" category="section-title">ブラウザとBlueXPの分類の間で送信されたプライベートデータに誰でもアクセスできますか？</block>
-  <block id="7dea17d7c4e7f3bb29ea4243e638d5bf" category="paragraph">いいえブラウザとBlueXP分類インスタンスの間で送信されるプライベートデータはエンドツーエンドの暗号化で保護されます。つまり、ネットアップやサードパーティはデータを読み取ることができません。BlueXPの分類では、アクセスをリクエストして承認しないかぎり、ネットアップとデータや結果が共有されることはありません。</block>
   <block id="d85edc022c467b1de0d062bc4f4215b5" category="paragraph">BlueXPの分類では、コールドデータがオブジェクトストレージに階層化されたボリュームをスキャンするときに、ローカルディスクにあるデータとオブジェクトストレージに階層化されたコールドデータのすべてのデータがスキャンされます。これは、階層化を実装する他社製品にも当てはまります。</block>
   <block id="f56bd4fda221a92df45e4216f8b75da7" category="section-title">BlueXPの分類から組織に通知を送信できますか？</block>
   <block id="b1855bdbeb4a91ab4dc5cedfdb491dbf" category="section-title">BlueXPの分類は、ファイルに埋め込まれたAIPラベルでも機能しますか？</block>
@@ -2723,7 +2722,6 @@
   <block id="e1c6fd17dccbebfc440207f27d59459b" category="list-text">BlueXPは分類されるため、ファイルの種類、サイズ、作成日や変更日など、ファイルに関する標準的なメタデータが収集されます。</block>
   <block id="8546288939f901d3a1276b7f9e394f46" category="list-text">BlueXPの分類では、AIを使用してドキュメントから自然人の名前を抽出します。 <block ref="3e345053a8e9ce1c3eacafd31ce8d78d" category="inline-link-macro-rx"></block>。</block>
   <block id="6baaa35b9d6c708af7920a94de9f3951" category="paragraph">BlueXPでは、コネクタインスタンスからのインバウンドHTTP接続を可能にするセキュリティグループとともにBlueXP分類インスタンスを導入します。</block>
-  <block id="be23e27acb2e7fab8227de3a00bddee1" category="paragraph">SaaSモードでBlueXPを使用している場合、BlueXPへの接続はHTTPS経由で提供され、ブラウザとBlueXP分類インスタンスの間で送信されるプライベートデータはエンドツーエンドの暗号化で保護されます。つまり、ネットアップやサードパーティはデータを読み取ることができません。</block>
   <block id="b7753345b24c98f72b73e9e641a456d7" category="paragraph">アウトバウンドルールは完全にオープンです。BlueXP分類ソフトウェアのインストールとアップグレード、使用状況の指標の送信には、インターネットアクセスが必要です。</block>
   <block id="def03cca1b6cd44fc1ef14e712a6c792" category="inline-link-macro">BlueXP分類の連絡先となるエンドポイントについて説明します</block>
   <block id="80cef547cabd3e510ea56f58ec10a12e" category="paragraph">ネットワーク要件が厳しい場合は、 <block ref="a5023c570d3c1110eead6b3e84b02871" category="inline-link-macro-rx"></block>。</block>
@@ -3582,4 +3580,6 @@
   <block id="02201d429f7390acabd29e5c0c6e22e2" category="inline-link">STANDARD_D32_v3</block>
   <block id="f15da40a9b4a1b9d1900476ba761ddf8" category="cell"><block ref="98fbfccb7d937f28be2761c9fd869045" category="inline-link-rx"></block> （デフォルト）</block>
   <block id="7c6b159592aa05d7d8934685f5b0c4c8" category="cell">CPU×32、128GB RAM、OSディスク（2、048GiB、最小250MB/秒のスループット）、データディスク（1TiB SSD、最小750MB/秒のスループット）</block>
+  <block id="f3c46003464601608d44d2644affcce1" category="paragraph">SaaSモードでBlueXPを使用している場合、BlueXPへの接続はHTTPS経由で提供され、ブラウザとBlueXP分類インスタンスの間で送信されるプライベートデータは、TLS 1.2を使用したエンドツーエンドの暗号化で保護されます。つまり、NetAppやサードパーティはデータを読み取ることができません。</block>
+  <block id="522910fcbd37d9f1fe242ff7c7cde8db" category="paragraph">いいえブラウザとBlueXP分類インスタンスの間で送信されるプライベートデータは、TLS 1.2を使用したエンドツーエンドの暗号化で保護されます。つまり、NetAppやサードパーティはデータを読み取ることができません。BlueXPの分類では、アクセスをリクエストして承認しないかぎり、ネットアップとデータや結果が共有されることはありません。</block>
 </blocks>
