@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-overview.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, bluexp classification 
+summary: ニーズに合ったBlueXP分類の導入を計画します。 
+---
+= BlueXPのどの分類環境を使用すればよいですか？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP分類はさまざまな方法で導入できます。ニーズに合った方法を確認します。
+
+BlueXPは次の方法で分類されます。
+
+* link:task-deploy-cloud-compliance.html["BlueXPを使用してクラウドに導入"]。BlueXPでは、BlueXPコネクタと同じクラウドプロバイダネットワークにBlueXP分類インスタンスが導入されます。
+* link:task-deploy-compliance-onprem.html["インターネットにアクセスできるLinuxホストにインストールします"]。ネットワーク内のLinuxホスト、またはインターネットにアクセスできるクラウド内のLinuxホストにBlueXP分類をインストールします。このタイプのインストールは、同じくオンプレミスにあるBlueXP分類インスタンスを使用してオンプレミスのONTAPシステムをスキャンする場合に適したオプションですが、これは必須ではありません。
+* link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスサイトのLinuxホストにインストール"]は、_privateモードとも呼ばれます。_インストールスクリプトを使用するこのタイプのインストールは、安全なサイトに適しています。
+
+
+インターネットにアクセスできるLinuxホストへのインストールと、インターネットにアクセスできないLinuxホストへのオンプレミスインストールの両方で、インストールスクリプトを使用します。システムと環境が前提条件を満たしているかどうかが確認されます。前提条件を満たしている場合は、インストールが開始されます。BlueXP分類のインストールとは別に前提条件を確認する場合は、前提条件のみをテストする別のソフトウェアパッケージをダウンロードできます。
+
+を参照してください link:task-test-linux-system.html["LinuxホストでBlueXP分類をインストールできる状態になっていることを確認します"]。

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman, install bluexp classification 
 summary: いくつかの手順を実行して、ネットワーク内のLinuxホスト、またはインターネットにアクセスできるクラウド内のLinuxホストにBlueXP分類をインストールします。このインストールの一環として、Linuxホストをネットワークまたはクラウドに手動で導入する必要があります。 
 ---
 = インターネットにアクセスできるホストにBlueXP分類をインストールします
@@ -162,11 +162,11 @@ BlueXPの分類を継続して実行できることを確認します。BlueXP�
 *** Ubuntu 22.04（BlueXP分類バージョン1.23以降が必要）
 
 
-** 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.26以降が必要です。
+** 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.30以降が必要です。
 +
-*** Red Hat Enterprise Linuxバージョン9.0、9.1、9.2
+*** Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3
 +
-RHEL 9.xを使用している場合、次の機能は現在サポートされていません。
+RHEL 8.xおよびRHEL 9.xを使用している場合、次の機能は現在サポートされていません。
 
 +
 **** タアクサイトテノセツチ
@@ -186,14 +186,17 @@ RHEL 9.xを使用している場合、次の機能は現在サポートされて
 +
 https://youtu.be/Ogoufel1q6c["こちらのビデオをご覧ください"^] では、CentOSへのDockerのインストールの簡単なデモをご覧ください。
 
-*** Podmanバージョン4以降。Podmanをインストールするには、システムパッケージを更新します。 (`sudo yum update -y`）をクリックし、Podmanをインストールします。 (`sudo yum install podman -y`）。
+*** Podmanバージョン4以降。Podmanをインストールするには、システムパッケージを更新します。 (`sudo yum update -y`）をクリックし、Podmanをインストールします。 (`sudo yum install netavark -y`）。
 
 
-** Pythonバージョン3.6以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
 
 
-* * NTPに関する考慮事項*：NetAppでは、ネットワークタイムプロトコル（NTP）サービスを使用するようにBlueXP分類システムを設定することを推奨しています。BlueXP分類システムとBlueXP Connectorシステムの間で時刻が同期されている必要があります。
-* *ファイアウォールの考慮事項*:使用を計画している場合 `firewalld`は、BlueXP分類をインストールする前に有効にすることを推奨します。次のコマンドを実行して設定します `firewalld` BlueXPと互換性があることを確認します。
+
+
+* Pythonバージョン3.6以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
++
+** * NTPに関する考慮事項*：NetAppでは、ネットワークタイムプロトコル（NTP）サービスを使用するようにBlueXP分類システムを設定することを推奨しています。BlueXP分類システムとBlueXP Connectorシステムの間で時刻が同期されている必要があります。
+** *ファイアウォールの考慮事項*:使用を計画している場合 `firewalld`は、BlueXP分類をインストールする前に有効にすることを推奨します。次のコマンドを実行して設定します `firewalld` BlueXPと互換性があることを確認します。
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -215,6 +218,8 @@ firewall-cmd --permanent --add-port=4789/udp
 ....
 +
 を有効または更新するたびに、DockerまたはPodmanを再起動する必要があることに注意してください。 `firewalld` 設定：
+
+
 
 
 
@@ -574,7 +579,7 @@ image:screenshot_client_access_token.png["APIドキュメントページのス�
 
 . スキャナグループにスキャナノードを追加した場合は、マネージャノードに戻り、次の2つのタスクを実行します。
 +
-.. 「/opt/netapp/Datasense/working _environment_To-scanner _group_config.yml」ファイルを開き、スキャナグループが特定の作業環境をスキャンするためのマッピングを入力します。データソースごとに_Working Environment ID_が必要になります。たとえば、次のエントリでは、2つの作業環境を「ヨーロッパ」スキャナグループに、2つを「United States」スキャナグループに追加します。
+.. 「/opt/netapp/config/custom _configuration/working_environment_to_scanner_group_config.yml」ファイルを開き、スキャナグループが特定の作業環境をスキャンするマッピングを入力します。データソースごとに_Working Environment ID_が必要になります。たとえば、次のエントリでは、2つの作業環境を「ヨーロッパ」スキャナグループに、2つを「United States」スキャナグループに追加します。
 +
 ....
 scanner_groups:

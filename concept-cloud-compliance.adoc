@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-cloud-compliance.html 
-keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, data sense, privacy control, classification, optimization 
+keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, data sense, privacy control, classification, optimization, cloud data sense, bluexp 
 summary: BlueXPの分類は、BlueXP向けのデータガバナンスサービスです。オンプレミスとクラウドの社内データソースをスキャンしてデータのマッピングと分類を行い、個人情報を特定します。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減し、データ移行プロジェクトを支援できます。 
 ---
 = BlueXPの分類について説明します
@@ -14,15 +14,15 @@ summary: BlueXPの分類は、BlueXP向けのデータガバナンスサービ�
 
 
 [role="lead"]
-BlueXPの分類は、BlueXP向けのデータガバナンスサービスです。オンプレミスとクラウドの社内データソースをスキャンしてデータのマッピングと分類を行い、個人情報を特定します。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減し、データ移行プロジェクトを支援できます。
-
-https://bluexp.netapp.com/netapp-cloud-data-sense["BlueXPの分類のユースケースをご紹介します"^]。
+BlueXPの分類（Cloud Data Sense）は、BlueXP向けのデータガバナンスサービスです。オンプレミスとクラウドの社内データソースをスキャンしてデータのマッピングと分類を行い、個人情報を特定します。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減し、データ移行プロジェクトを支援できます。
 
 
 
 == の機能
 
 BlueXPの分類では、人工知能（AI）、自然言語処理（NLP）、機械学習（ML）を使用してスキャンされるコンテンツを把握し、エンティティを抽出し、それに応じてコンテンツを分類します。これにより、BlueXPでは次の機能が提供されます。
+
+https://bluexp.netapp.com/netapp-cloud-data-sense["BlueXP分類のユースケースの詳細については、こちらをご覧ください"^]。
 
 
 
@@ -118,7 +118,7 @@ BlueXPの分類では、次のタイプのデータソースから構造化デ�
 * SQL Server （ MSSQL ）
 
 
-BlueXPの分類では、NFSバージョン3.x、4.0、4.1、CIFSバージョン1.x、2.0、2.1、3.0がサポートされます。
+BlueXPの分類では、NFSバージョン3.xとCIFSバージョン1.x、2.0、2.1、3.0がサポートされます。
 
 
 

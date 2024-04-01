@@ -26,11 +26,13 @@ sidebar:
       url: "/concept-cloud-compliance.html"
     - title: BlueXP分類を導入します
       entries:
+      - title: 使用する導入方法
+        url: "/task-deploy-overview.html"
       - title: BlueXPを使用してクラウドに導入
         url: "/task-deploy-cloud-compliance.html"
       - title: インターネットにアクセスできるLinuxホストにインストールします
         url: "/task-deploy-compliance-onprem.html"
-      - title: インターネットにアクセスせずにオンプレミスにインストール
+      - title: インターネットにアクセスできないオンプレミスのLinuxホストにインストール
         url: "/task-deploy-compliance-dark-site.html"
       - title: LinuxホストでBlueXP分類をインストールできる状態になっていることを確認します
         url: "/task-test-linux-system.html"

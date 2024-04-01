@@ -70,11 +70,11 @@
 *** Ubuntu 22.04（BlueXP分類バージョン1.23以降が必要）
 
 
-** 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.26以降が必要です。
+** 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.30以降が必要です。
 +
-*** Red Hat Enterprise Linuxバージョン9.0、9.1、9.2
+*** Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3
 +
-RHEL 9.xを使用している場合、次の機能は現在サポートされていません。
+RHEL 8.xおよびRHEL 9.xを使用している場合、次の機能は現在サポートされていません。
 
 +
 **** タアクサイトテノセツチ
@@ -94,11 +94,16 @@ RHEL 9.xを使用している場合、次の機能は現在サポートされて
 +
 https://youtu.be/Ogoufel1q6c["こちらのビデオをご覧ください"^] では、CentOSへのDockerのインストールの簡単なデモをご覧ください。
 
-*** Podmanバージョン4以降。Podmanをインストールするには、システムパッケージを更新します。 (`sudo yum update -y`）をクリックし、Podmanをインストールします。 (`sudo yum install podman -y`）。
+*** Podmanバージョン4以降。Podmanをインストールするには、システムパッケージを更新します。 (`sudo yum update -y`）をクリックし、Podmanをインストールします。 (`sudo yum install netavark -y`）。
 
 
-** Pythonバージョン3.6以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
 
 
-* * NTPに関する考慮事項*：NetAppでは、ネットワークタイムプロトコル（NTP）サービスを使用するようにBlueXP分類システムを設定することを推奨しています。BlueXP分類システムとBlueXP Connectorシステムの間で時刻が同期されている必要があります。
+
+
+* Pythonバージョン3.6以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
++
+** * NTPに関する考慮事項*：NetAppでは、ネットワークタイムプロトコル（NTP）サービスを使用するようにBlueXP分類システムを設定することを推奨しています。BlueXP分類システムとBlueXP Connectorシステムの間で時刻が同期されている必要があります。
+
+
 

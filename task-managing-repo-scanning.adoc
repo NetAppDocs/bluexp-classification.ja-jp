@@ -35,7 +35,7 @@ image:screenshot_compliance_repo_scan_settings.png["バケットがスキャン�
 
 
 
-_Scan Status_columnのグラフにカーソルを合わせると、各リポジトリ（この例ではbucket）でマッピングまたは分類されたファイルの数を確認できます。
+[Mapping Status_]列のグラフにカーソルを合わせると、各リポジトリ（この例ではバケット）にマッピングまたは分類されたままであるファイルの数を確認できます。
 
 
 
@@ -53,7 +53,7 @@ image:screenshot_compliance_config_button.png["作業環境の設定ボタンを
 
 . [Scan Configuration]ページでは、任意のリポジトリ（この例ではバケット）を変更して、*Map*スキャンまたは*Map & Classify*スキャンを実行できます。
 +
-image:screenshot_compliance_repo_scanning.png["バケットのスキャンのタイプを選択する方法を示すスクリーンショット。"]
+image:screenshot_compliance_repo_scan_settings.png["バケットのスキャンのタイプを選択する方法を示すスクリーンショット。"]
 
 
 

@@ -2,8 +2,8 @@
 indexpage:
   title: BlueXPの分類に関するドキュメント
   summary: BlueXPの分類（Cloud Data Sense）を使用すると、組織のハイブリッドマルチクラウド全体にわたってデータをスキャンして分類できます。BlueXPの分類では、AIによる自然言語処理（NLP）を活用してコンテキストに応じたデータの分析とカテゴリ化を行い、データに関する実用的な分析情報を提供して、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の高速化を実現します。
-  keywords: classification, cloud data sense, data sense, compliance, security
-  lead: BlueXPは、組織のハイブリッドマルチクラウド全体にわたってデータをスキャンして分類できます。分類では、AIベースの自然言語処理（NLP）を活用してコンテキストに応じたデータの分析とカテゴリ化を行い、データに関する実用的な分析情報を提供して、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の高速化を実現します。
+  keywords: bluexp, classification, cloud data sense, data sense, compliance, security
+  lead: BlueXPの分類（Cloud Data Sense）を使用すると、組織のハイブリッドマルチクラウド全体にわたってデータをスキャンして分類できます。分類では、AIベースの自然言語処理（NLP）を活用してコンテキストに応じたデータの分析とカテゴリ化を行い、データに関する実用的な分析情報を提供して、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の高速化を実現します。
   tiles:
   - title: はじめに
     links:
@@ -79,8 +79,6 @@ indexpage:
       url: task-managing-highlights.html#delete-source-files
     - title: 準拠していないデータが見つかった場合にアラートを E メールで送信
       url: task-using-policies.html#send-email-alerts-when-non-compliant-data-is-found
-    - title: ファイルアクセスイベントを監視および管理します
-      url: task-manage-file-access-events.html
     - title: データサブジェクトのアクセス要求に応答します
       url: task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports
   - title: ブログとコミュニティ

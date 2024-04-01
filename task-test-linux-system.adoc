@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-test-linux-system.html 
-keywords: cloud compliance, data sense, get started, deploy, bluexp classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman 
+keywords: cloud compliance, data sense, get started, deploy, bluexp classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman, dark site 
 summary: LinuxホストにBlueXPの分類を手動でインストールする前に、ホストでスクリプトを実行して、BlueXPの分類をインストールするための前提条件がすべて揃っていることを確認することができます。このスクリプトは、ネットワーク内のLinuxホストまたはクラウド内のLinuxホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイトに配置することもできます。 
 ---
 = LinuxホストでBlueXP分類をインストールできる状態になっていることを確認します
@@ -14,7 +14,7 @@ summary: LinuxホストにBlueXPの分類を手動でインストールする前
 
 
 [role="lead"]
-LinuxホストにBlueXPの分類を手動でインストールする前に、ホストでスクリプトを実行して、BlueXPの分類をインストールするための前提条件がすべて揃っていることを確認することができます。このスクリプトは、ネットワーク内のLinuxホストまたはクラウド内のLinuxホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイト（「ダークサイト」）に配置することもできます。
+LinuxホストにBlueXPの分類を手動でインストールする前に、ホストでスクリプトを実行して、BlueXPの分類をインストールするための前提条件がすべて揃っていることを確認することができます。このスクリプトは、ネットワーク内のLinuxホストまたはクラウド内のLinuxホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイト（a_dark site_）に配置することもできます。
 
 BlueXP分類インストールスクリプトには、前提条件となるテストスクリプトも含まれています。ここで説明するスクリプトは、BlueXP分類のインストールスクリプトとは別にLinuxホストを検証するユーザ向けに設計されています。
 
@@ -117,11 +117,11 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 *** Ubuntu 22.04（BlueXP分類バージョン1.23以降が必要）
 
 
-** 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.26以降が必要です。
+** 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.30以降が必要です。
 +
-*** Red Hat Enterprise Linuxバージョン9.0、9.1、9.2
+*** Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3
 +
-RHEL 9.xを使用している場合、次の機能は現在サポートされていません。
+RHEL 8.xおよびRHEL 9.xを使用している場合、次の機能は現在サポートされていません。
 
 +
 **** タアクサイトテノセツチ
@@ -141,14 +141,17 @@ RHEL 9.xを使用している場合、次の機能は現在サポートされて
 +
 https://youtu.be/Ogoufel1q6c["こちらのビデオをご覧ください"^] では、CentOSへのDockerのインストールの簡単なデモをご覧ください。
 
-*** Podmanバージョン4以降。Podmanをインストールするには、システムパッケージを更新します。 (`sudo yum update -y`）をクリックし、Podmanをインストールします。 (`sudo yum install podman -y`）。
+*** Podmanバージョン4以降。Podmanをインストールするには、システムパッケージを更新します。 (`sudo yum update -y`）をクリックし、Podmanをインストールします。 (`sudo yum install netavark -y`）。
 
 
-** Pythonバージョン3.6以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
 
 
-* * NTPに関する考慮事項*：NetAppでは、ネットワークタイムプロトコル（NTP）サービスを使用するようにBlueXP分類システムを設定することを推奨しています。BlueXP分類システムとBlueXP Connectorシステムの間で時刻が同期されている必要があります。
-* *ファイアウォールの考慮事項*:使用を計画している場合 `firewalld`は、BlueXP分類をインストールする前に有効にすることを推奨します。次のコマンドを実行して設定します `firewalld` BlueXPと互換性があることを確認します。
+
+
+* Pythonバージョン3.6以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
++
+** * NTPに関する考慮事項*：NetAppでは、ネットワークタイムプロトコル（NTP）サービスを使用するようにBlueXP分類システムを設定することを推奨しています。BlueXP分類システムとBlueXP Connectorシステムの間で時刻が同期されている必要があります。
+** *ファイアウォールの考慮事項*:使用を計画している場合 `firewalld`は、BlueXP分類をインストールする前に有効にすることを推奨します。次のコマンドを実行して設定します `firewalld` BlueXPと互換性があることを確認します。
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -170,6 +173,8 @@ firewall-cmd --permanent --add-port=4789/udp
 ....
 +
 を有効または更新するたびに、DockerまたはPodmanを再起動する必要があることに注意してください。 `firewalld` 設定：
+
+
 
 
 

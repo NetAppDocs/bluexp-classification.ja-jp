@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense' 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, bluexp, bluexp classification' 
 summary: BlueXPの新機能をご紹介します。 
 ---
 = BlueXP分類の新機能
@@ -14,7 +14,29 @@ summary: BlueXPの新機能をご紹介します。
 
 
 [role="lead"]
-BlueXPの新機能をご紹介します。
+BlueXP分類の新機能（Cloud Data Sense）をご紹介します。
+
+
+
+== 2024年4月1日（バージョン1.30）
+
+
+
+=== RHEL v8.8およびv9.3 BlueXPの分類のサポートの追加
+
+このリリースでは、以前サポートされていた9.xに加えて、Red Hat Enterprise Linux v8.8およびv9.3がサポートされます。9.xにはDockerエンジンではなくPodmanが必要です。
+
+これは、手動でオンプレミスにBlueXPをインストールした場合にも当てはまります。
+
+次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.30以降（Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3）が必要です。
+
+の詳細を確認してください link:task-deploy-overview.html["BlueXPの分類環境の概要"]。
+
+
+
+=== 監査ログ収集をアクティブ化するオプションが削除されました
+
+監査ログ収集をアクティブ化するオプションが無効になりました。
 
 
 
