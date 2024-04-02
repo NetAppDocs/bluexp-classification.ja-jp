@@ -24,19 +24,31 @@ BlueXP分類の新機能（Cloud Data Sense）をご紹介します。
 
 === RHEL v8.8およびv9.3 BlueXPの分類のサポートの追加
 
-このリリースでは、以前サポートされていた9.xに加えて、Red Hat Enterprise Linux v8.8およびv9.3がサポートされます。9.xにはDockerエンジンではなくPodmanが必要です。
-
-これは、手動でオンプレミスにBlueXPをインストールした場合にも当てはまります。
+このリリースでは、以前サポートされていた9.xに加えて、Red Hat Enterprise Linux v8.8およびv9.3がサポートされます。9.xにはDockerエンジンではなくPodmanが必要です。これは、手動でオンプレミスにBlueXPをインストールした場合にも当てはまります。
 
 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.30以降（Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3）が必要です。
 
-の詳細を確認してください link:task-deploy-overview.html["BlueXPの分類環境の概要"]。
+の詳細を確認してください https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXPの分類環境の概要"]。
 
 
 
 === 監査ログ収集をアクティブ化するオプションが削除されました
 
 監査ログ収集をアクティブ化するオプションが無効になりました。
+
+
+
+=== スキャン速度の向上
+
+セカンダリスキャナノードでのスキャンパフォーマンスが改善されました。スキャンの処理能力を高める必要がある場合は、スキャナノードを追加できます。詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["インターネットにアクセスできるホストにBlueXP分類をインストールします"]。
+
+
+
+=== ジドウアップグレード
+
+インターネットにアクセスできるシステムにBlueXP分類を導入している場合は、システムが自動的にアップグレードされます。以前は、最後のユーザアクティビティから特定の時間が経過したあとにアップグレードが実行されていました。このリリースでは、現地時間が午前1時から午前5時の場合、BlueXPの分類が自動的にアップグレードされます。ローカル時間がこの時間外の場合は、最後のユーザアクティビティから特定の時間が経過したあとにアップグレードが実行されます。詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["インターネットにアクセスできるLinuxホストにインストールします"]。
+
+インターネットアクセスを使用せずにBlueXP分類を導入した場合は、手動でアップグレードする必要があります。詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["インターネットアクセスのないLinuxホストにBlueXP分類をインストールする"]。
 
 
 

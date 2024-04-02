@@ -3528,11 +3528,8 @@
   <block id="b05347ded7555dfe4b18afd3dfa678f3" category="paragraph">BlueXP分類の新機能（Cloud Data Sense）をご紹介します。</block>
   <block id="1e3ff9766d4708d7de4568322138b5f8" category="section-title">2024年4月1日（バージョン1.30）</block>
   <block id="1f2986b833ebc6f322deb045aeee0ad8" category="section-title">RHEL v8.8およびv9.3 BlueXPの分類のサポートの追加</block>
-  <block id="91e323b860fc9af090c33fd0be441816" category="paragraph">このリリースでは、以前サポートされていた9.xに加えて、Red Hat Enterprise Linux v8.8およびv9.3がサポートされます。9.xにはDockerエンジンではなくPodmanが必要です。</block>
-  <block id="07dc3e2055cac820c8885923e98b8e76" category="paragraph">これは、手動でオンプレミスにBlueXPをインストールした場合にも当てはまります。</block>
   <block id="2c435ff16ae089dc2d457e7776588268" category="paragraph">次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.30以降（Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3）が必要です。</block>
   <block id="fae29fbaffa78fbfd6537b0feec1a925" category="inline-link-macro">BlueXPの分類環境の概要</block>
-  <block id="729b0325b4dca702948987b756d6c4dd" category="paragraph">の詳細を確認してください <block ref="203983d50efda661e0fb2921922583cd" category="inline-link-macro-rx"></block>。</block>
   <block id="efdeb6220b979140e56f16caceb1d7e9" category="section-title">監査ログ収集をアクティブ化するオプションが削除されました</block>
   <block id="677b8eea0d783418318883e36c4858cc" category="paragraph">[Mapping Status_]列のグラフにカーソルを合わせると、各リポジトリ（この例ではバケット）にマッピングまたは分類されたままであるファイルの数を確認できます。</block>
   <block id="cdf1bf05ba65b107bb0cbe2a4303f966" category="paragraph"><block ref="cdf1bf05ba65b107bb0cbe2a4303f966" category="inline-image-macro-rx" type="image"></block></block>
@@ -3543,4 +3540,11 @@
   <block id="e7695799ba8bc92bb08a6949b8326571" category="sidebar">BlueXPの分類（Cloud Data Sense）を使用すると、組織のハイブリッドマルチクラウド全体にわたってデータをスキャンして分類できます。分類では、AIベースの自然言語処理（NLP）を活用してコンテキストに応じたデータの分析とカテゴリ化を行い、データに関する実用的な分析情報を提供して、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の高速化を実現します。</block>
   <block id="23b8d81b3767810f42dfbd7dcd9bd760" category="sidebar">使用する導入方法</block>
   <block id="fca1d82780afb1668b61925e8a0b964a" category="sidebar">インターネットにアクセスできないオンプレミスのLinuxホストにインストール</block>
+  <block id="bed0a63060826a7b1ed8cba91cb12ba6" category="paragraph">このリリースでは、以前サポートされていた9.xに加えて、Red Hat Enterprise Linux v8.8およびv9.3がサポートされます。9.xにはDockerエンジンではなくPodmanが必要です。これは、手動でオンプレミスにBlueXPをインストールした場合にも当てはまります。</block>
+  <block id="b7f7cb3b83ae19c923f62035dd4305fd" category="paragraph">の詳細を確認してください<block ref="cea7a7dae9f7d88b97fa434e79201c9b" category="inline-link-rx"></block>。</block>
+  <block id="6cf7e053021d02a6a394c1e69f8e8352" category="section-title">スキャン速度の向上</block>
+  <block id="9d343bee917ed42deed4a08429d2e86f" category="paragraph">セカンダリスキャナノードでのスキャンパフォーマンスが改善されました。スキャンの処理能力を高める必要がある場合は、スキャナノードを追加できます。詳細については、を参照してください<block ref="bccb2247e180b6227640eec7d70d0351" category="inline-link-rx"></block>。</block>
+  <block id="747585a36be1e14a4dd3ff25c4bf1e48" category="section-title">ジドウアップグレード</block>
+  <block id="5908128f01988745be85a67845195980" category="paragraph">インターネットにアクセスできるシステムにBlueXP分類を導入している場合は、システムが自動的にアップグレードされます。以前は、最後のユーザアクティビティから特定の時間が経過したあとにアップグレードが実行されていました。このリリースでは、現地時間が午前1時から午前5時の場合、BlueXPの分類が自動的にアップグレードされます。ローカル時間がこの時間外の場合は、最後のユーザアクティビティから特定の時間が経過したあとにアップグレードが実行されます。詳細については、を参照してください<block ref="ec7f7d5f354f2c39e4e863a85c31a7f9" category="inline-link-rx"></block>。</block>
+  <block id="7adcca7abf8ead9407a9511a195904c3" category="paragraph">インターネットアクセスを使用せずにBlueXP分類を導入した場合は、手動でアップグレードする必要があります。詳細については、を参照してください<block ref="9aedc51770264f0d93a81417a0d08768" category="inline-link-rx"></block>。</block>
 </blocks>
