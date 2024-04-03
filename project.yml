@@ -80,8 +80,6 @@ sidebar:
       url: "/task-using-policies.html"
     - title: プライベートデータを管理
       url: "/task-managing-highlights.html"
-    - title: ファイルアクセスイベントを監視および管理します
-      url: "/task-manage-file-access-events.html"
     - title: スキャン設定を変更します
       url: task-managing-repo-scanning.html
     - title: コンプライアンスレポートを生成します
