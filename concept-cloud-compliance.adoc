@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-cloud-compliance.html 
-keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, data sense, privacy control, classification, optimization, cloud data sense, bluexp 
+keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, cloud data sense, data sense, privacy control, classification, optimization, cloud data sense, bluexp 
 summary: BlueXPの分類は、BlueXP向けのデータガバナンスサービスです。オンプレミスとクラウドの社内データソースをスキャンしてデータのマッピングと分類を行い、個人情報を特定します。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減し、データ移行プロジェクトを支援できます。 
 ---
 = BlueXPの分類について説明します
@@ -16,6 +16,17 @@ summary: BlueXPの分類は、BlueXP向けのデータガバナンスサービ�
 [role="lead"]
 BlueXPの分類（Cloud Data Sense）は、BlueXP向けのデータガバナンスサービスです。オンプレミスとクラウドの社内データソースをスキャンしてデータのマッピングと分類を行い、個人情報を特定します。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減し、データ移行プロジェクトを支援できます。
 
+[]
+====
+重要
+
+2024年5月にバージョン1.31から、BlueXPのコア機能としてBlueXPの分類が追加料金なしで利用できるようになりました。分類ライセンスまたはサブスクリプションは必要ありません。また、BlueXPの分類機能もNetAppストレージシステムに重点を置いているため、一部の未使用の機能やあまり使用されていない機能は廃止されました。
+
+link:reference-free-paid.html["廃止された機能の一覧を見る"]。
+
+旧バージョン1.30以前を使用していたユーザーは、サブスクリプションが期限切れになるまでそのバージョンを引き続き使用できます。
+
+====
 
 
 == の機能
@@ -33,8 +44,6 @@ BlueXPには、コンプライアンスへの取り組みに役立ついくつ�
 * 個人識別情報（ PII ）を識別します。
 * GDPR、CCPA、PCI、HIPAAの各プライバシー規制の要件に応じて、機密性の高い個人情報の範囲を特定します。
 * 名前または電子メールアドレスに基づいてデータサブジェクトアクセス要求（dsar）に応答します。
-* データベースの一意の識別子が他のリポジトリのファイルに含まれているかどうかを特定します。基本的には、BlueXPの分類スキャンで特定された「個人データ」の独自のリストを作成します。
-* ファイルに特定のPIIが含まれている場合は、電子メールで特定のユーザーに通知します（を使用してこの基準を定義します link:task-using-policies.html["ポリシー"^]）では、アクションプランを決定することができます。
 
 
 
@@ -46,9 +55,7 @@ BlueXPでは、犯罪目的でアクセスされるリスクのあるデータ�
 * 組織全体またはパブリックに公開されているオープンな権限を持つすべてのファイルとディレクトリ（共有およびフォルダ）を特定します。
 * 初期の専用の場所以外に存在する機密データを特定します。
 * データ保持ポリシーに準拠
-* 新しいセキュリティ問題をセキュリティスタッフに自動的に通知して、ただちに対処できるようにするには、_Policies_を使用します。
-* カスタムタグをファイルに追加し（「移動が必要」など）、BlueXPユーザーを割り当てて、ユーザーがファイルの更新を所有できるようにします。
-* 表示と変更 https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection （ AIP ）ラベル"^] ファイルに保存できます。
+* 新しいセキュリティの問題を自動的に検出するには、_Policies_を使用します。これにより、セキュリティ担当者はすぐに対処できます。
 
 
 
@@ -57,20 +64,8 @@ BlueXPでは、犯罪目的でアクセスされるリスクのあるデータ�
 
 BlueXPは、ストレージの総所有コスト（TCO）に役立つツールを備えています。BlueXPの分類を使用すると、次の処理を実行できます。
 
-* 重複データやビジネス以外のデータを特定することで、ストレージ効率を向上させます。この情報を使用して、特定のファイルを移動するか削除するかを決定できます。
-* 安全でないようであるか、ストレージシステムに残すのにリスクが高すぎるファイル、または重複として識別されたファイルを削除してください。_Policies_を使用すると'特定の条件に一致するファイルを自動的に削除できます
+* 重複データやビジネス以外のデータを特定することで、ストレージ効率を向上させます。
 * アクセス頻度の低いデータを低コストのオブジェクトストレージに階層化できるため、ストレージコストを削減できます。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["Cloud Volumes ONTAP システムからの階層化の詳細については、こちらをご覧ください"^]。 https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["オンプレミスのONTAP システムからの階層化の詳細については、こちらをご覧ください"^]。
-
-
-
-
-=== データ移行を高速化
-
-BlueXPの分類を使用すると、オンプレミスのデータをパブリッククラウドやプライベートクラウドに移行する前にスキャンできます。BlueXPの分類を使用すると、次の処理を実行できます。
-
-* データのサイズ、および移動前に機密情報が含まれているデータがないかどうかを確認する。
-* ソースデータを（25種類以上の基準に基づいて）フィルタリングして、必要なファイルのみを宛先に移動できるようにします。不要なデータは移動されません。
-* 必要なデータのみをクラウドリポジトリに自動的かつ継続的に移動、コピー、同期
 
 
 
@@ -79,43 +74,23 @@ BlueXPの分類を使用すると、オンプレミスのデータをパブリ�
 
 BlueXPの分類では、次のタイプのデータソースから構造化データと非構造化データをスキャンして分析できます。
 
-*ネットアップ：*
-
 * Cloud Volumes ONTAP （ AWS 、 Azure 、 GCP に導入）
 * オンプレミスの ONTAP クラスタ
-* StorageGRID
 * Azure NetApp Files の特長
 * ONTAP 対応の Amazon FSX
-* Cloud Volumes Service for Google Cloud
+* Google Cloud NetAppボリューム
+* ファイル共有（Dell EMC Isilon、Pure Storage、Nutanixなど）
+* データベース：
++
+** Amazon リレーショナルデータベースサービス（ Amazon RDS ）
+** MongoDB
+** MySQL
+** Oracle の場合
+** PostgreSQL
+** SAP HANA のサポート
+** SQL Server （ MSSQL ）
 
 
-*ネットアップ以外：*
-
-* Dell EMC Isilon の
-* Pure Storageの略
-* Nutanix
-* その他のストレージベンダー
-
-
-*クラウド：*
-
-* Amazon S3
-* Google クラウドストレージ
-* OneDrive
-* SharePoint Online
-* SharePointオンプレミス（SharePoint Server）
-* Googleドライブ
-
-
-*データベース：*
-
-* Amazon リレーショナルデータベースサービス（ Amazon RDS ）
-* MongoDB
-* MySQL
-* Oracle の場合
-* PostgreSQL
-* SAP HANA のサポート
-* SQL Server （ MSSQL ）
 
 
 BlueXPの分類では、NFSバージョン3.xとCIFSバージョン1.x、2.0、2.1、3.0がサポートされます。
@@ -124,9 +99,11 @@ BlueXPの分類では、NFSバージョン3.xとCIFSバージョン1.x、2.0、2
 
 == コスト
 
-* BlueXPの分類を使用するコストは、スキャンするデータの量によって異なります。BlueXPワークスペースでBlueXPの分類によってスキャンされる最初の1TBのデータは30日間無料です。これには、すべての作業環境とデータソースのすべてのデータが含まれます。この時点以降もデータのスキャンを続行するには、 AWS 、 Azure 、 GCP Marketplace 、またはネットアップの BYOL ライセンスのサブスクリプションが必要です。を参照してください https://bluexp.netapp.com/netapp-cloud-data-sense["価格設定"^] を参照してください。
-+
-link:task-licensing-datasense.html["BlueXPのライセンスを取得する方法について説明します"^]。
+BlueXPの分類機能は、最大500TiBのデータに無料で使用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。500TiBを超えるデータをスキャンする場合は、一部の元のシステムでスキャンを無効にして、500TiBを超える新しいシステムをスキャンすることができます。
+
+
+
+=== インフラコスト
 
 * BlueXPをクラウドにインストールするにはクラウドインスタンスを導入する必要があるため、導入先のクラウドプロバイダから料金が請求されます。を参照してください <<BlueXP分類インスタンス,各クラウドに導入されるインスタンスのタイプ プロバイダ>>。BlueXP分類をオンプレミスシステムにインストールすればコストはかかりません。
 * BlueXPに分類されるためには、BlueXPコネクタが導入されている必要があります。多くの場合、BlueXPで使用している他のストレージとサービスのためにコネクタが既に存在します。Connector インスタンスを使用すると、導入先のクラウドプロバイダから料金が発生します。を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["クラウドプロバイダごとに導入されるインスタンスのタイプ"^]。コネクタをオンプレミスシステムにインストールしても、コストはかかりません。
@@ -136,7 +113,7 @@ link:task-licensing-datasense.html["BlueXPのライセンスを取得する方�
 
 === データ転送コスト
 
-データ転送のコストは設定によって異なります。BlueXP分類インスタンスとデータソースが同じアベイラビリティゾーンとリージョンにある場合、データ転送コストは発生しません。ただし、 Cloud Volumes ONTAP システムや S3 バケットなどのデータソースが _different _Availability Zone またはリージョンにある場合は、クラウドプロバイダにデータ転送コストが請求されます。詳細については、次のリンクを参照してください。
+データ転送のコストは設定によって異なります。BlueXP分類インスタンスとデータソースが同じアベイラビリティゾーンとリージョンにある場合、データ転送コストは発生しません。ただし、Cloud Volumes ONTAPシステムなどのデータソースが_ different_アベイラビリティゾーンまたはリージョンにある場合、データ転送のコストはクラウドプロバイダから請求されます。詳細については、次のリンクを参照してください。
 
 * https://aws.amazon.com/ec2/pricing/on-demand/["AWS ： Amazon EC2 価格設定"^]
 * https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure ： Bandwidth Pricing Details 』"^]
@@ -208,15 +185,15 @@ BlueXPの分類の概要は次のようになります。
 
 == スキャンの動作
 
-BlueXPの分類を有効にしてスキャンするリポジトリ（ボリューム、バケット、データベーススキーマ、OneDriveまたはSharePointのユーザデータ）を選択すると、すぐにデータのスキャンが開始され、個人データと機密データが特定されます。ほとんどの場合、バックアップ、ミラー、DRサイトではなく、本番環境のライブデータのスキャンに重点を置いてください。次に、BlueXPの分類によって組織データがマッピングされ、各ファイルが分類され、データ内のエンティティと事前定義されたパターンが特定されて抽出されます。スキャンの結果は、個人情報、機密性の高い個人情報、データカテゴリ、およびファイルタイプのインデックスです。
+BlueXPの分類を有効にしてスキャンするリポジトリ（ボリューム、データベーススキーマ、その他のユーザデータ）を選択すると、すぐにデータのスキャンが開始され、個人データと機密データが特定されます。ほとんどの場合、バックアップ、ミラー、DRサイトではなく、本番環境のライブデータのスキャンに重点を置いてください。次に、BlueXPの分類によって組織データがマッピングされ、各ファイルが分類され、データ内のエンティティと事前定義されたパターンが特定されて抽出されます。スキャンの結果は、個人情報、機密性の高い個人情報、データカテゴリ、およびファイルタイプのインデックスです。
 
 BlueXPは、他のクライアントと同様に、NFSボリュームとCIFSボリュームをマウントすることでデータに接続します。NFS ボリュームには読み取り専用で自動的にアクセスされますが、 CIFS ボリュームをスキャンするためには Active Directory のクレデンシャルを指定する必要があります。
 
-image:diagram_cloud_compliance_scan.png["クラウドプロバイダで実行されているBlueXPインスタンスとBlueXP分類インスタンスを示す図。BlueXP分類インスタンスは、NFSボリュームとCIFSボリューム、S3バケット、OneDriveアカウント、データベースに接続してスキャンします。"]
+image:diagram_cloud_compliance_scan.png["クラウドプロバイダで実行されているBlueXPインスタンスとBlueXP分類インスタンスを示す図。BlueXP分類インスタンスは、NFSおよびCIFSのボリュームとデータベースに接続してスキャンします。"]
 
 初回スキャン後、BlueXPの分類ではラウンドロビン方式でデータが継続的にスキャンされ、差分の変更が検出されます（そのため、インスタンスを常に実行しておくことが重要です）。
 
-スキャンは、ボリュームレベル、バケットレベル、データベーススキーマレベル、 OneDrive ユーザレベル、 SharePoint サイトレベルで有効または無効にできます。
+スキャンは、ボリュームレベルまたはデータベーススキーマレベルで有効または無効にすることができます。
 
 
 
@@ -257,12 +234,6 @@ BlueXPの分類を使用すると、選択したデータソースに対して�
 | 作成 link:task-using-policies.html["ポリシー"] カスタムの検索結果が表示されます | はい。 | いいえ 
 
 
-| AIP ラベルおよびステータスタグを使用してデータを分類します | はい。 | いいえ 
-
-
-| ソースファイルをコピー、削除、および移動します | はい。 | いいえ 
-
-
 | 他のレポートを実行できます | はい。 | いいえ 
 |===
 
@@ -271,11 +242,9 @@ BlueXPの分類を使用すると、選択したデータソースに対して�
 
 スキャン速度は、ネットワークレイテンシ、ディスクレイテンシ、ネットワーク帯域幅、環境のサイズ、およびファイル配信サイズによって左右されます。
 
-* マッピングスキャンを実行する場合、BlueXPの分類では、スキャナノードごとに1日に100~150TiBのデータをスキャンできます。
-* 分類スキャンを実行する場合、BlueXPの分類では、スキャナノードごとに1日あたり15~40TiBのデータをスキャンできます。
+* マッピングスキャンを実行する場合、BlueXPでは1日に100~150TiBのデータをスキャンできます。
+* 分類スキャンを実行する場合、BlueXPの分類では1日に15~40TiBのデータをスキャンできます。
 
-
-link:task-deploy-compliance-onprem.html#install-bluexp-classification-on-the-linux-host["データをスキャンするための複数のスキャナノードの導入の詳細については、こちらをご覧ください"^]。
 
 
 

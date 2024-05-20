@@ -41,7 +41,7 @@ BlueXP分類をクラウドに導入するには、いくつかの手順を実�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] BlueXP分類サービスにサブスクライブします
 [role="quick-margin-para"]
-BlueXPで分類されてスキャンされる最初の1TBのデータは、30日間無料です。その時点以降もデータのスキャンを続行するには、クラウドプロバイダMarketplaceまたはネットアップのBYOLライセンスを通じてBlueXPサブスクリプションが必要です。
+BlueXPで分類されてスキャンされる最初の500TBのデータは、30日間無料です。その時点以降もデータのスキャンを続行するには、クラウドプロバイダMarketplaceまたはネットアップのBYOLライセンスを通じてBlueXPサブスクリプションが必要です。
 
 
 
@@ -51,7 +51,7 @@ BlueXPで分類されてスキャンされる最初の1TBのデータは、30日
 
 特定のクラウドプロバイダに導入されているコネクタを使用する必要がある場合は、次のような状況があります。
 
-* AWSのCloud Volumes ONTAP 、Amazon FSx for ONTAP 、またはAWS S3バケット内のデータをスキャンする場合は、AWSのコネクタを使用します。
+* AWSのCloud Volumes ONTAPまたはAmazon FSx for ONTAPバケットでデータをスキャンする場合は、AWSのコネクタを使用します。
 * AzureのCloud Volumes ONTAP またはAzure NetApp Files でデータをスキャンする場合は、Azureのコネクタを使用します。
 +
 ** Azure NetApp Files の場合は、スキャンするボリュームと同じ領域に配置する必要があります。
@@ -60,7 +60,7 @@ BlueXPで分類されてスキャンされる最初の1TBのデータは、30日
 * GCP の Cloud Volumes ONTAP でデータをスキャンする場合は、 GCP のコネクタを使用します。
 
 
-オンプレミスのONTAP システム、ネットアップ以外のファイル共有、汎用のS3オブジェクトストレージ、データベース、OneDriveフォルダ、SharePointアカウント、Googleドライブアカウントは、これらのクラウドコネクタのいずれかを使用している場合にスキャンできます。
+これらのクラウドコネクタを使用すると、オンプレミスのONTAPシステム、ネットアップ以外のファイル共有、汎用のS3オブジェクトストレージ、データベースをスキャンできます。
 
 また、次のことも可能です https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスにインストールします"^] 自社ネットワーク内またはクラウド内の Linux ホストBlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。
 
@@ -71,10 +71,6 @@ BlueXPで分類されてスキャンされる最初の1TBのデータは、30日
 === 政府機関によるサポート
 
 BlueXPの分類は、コネクタが政府機関のリージョン（AWS GovCloud、Azure Gov、Azure DoD）に導入されている場合にサポートされます。この方法で導入した場合、BlueXPには次の制限があります。
-
-* OneDriveアカウント、SharePointアカウント、Googleドライブアカウントはスキャンできません。
-* Microsoft Azure Information Protection（AIP）ラベル機能を統合できません。
-
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.html["政府地域へのコネクタの配置の詳細については、を参照してください"^]。
 

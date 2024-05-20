@@ -4,7 +4,7 @@ permalink: task-scanning-sharepoint.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, sharepoint, sharepoint online, sharepoint on-premises, data sense 
 summary: BlueXPで分類されたSharePoint OnlineアカウントとSharePointオンプレミスアカウントのファイルのスキャンを開始するには、いくつかの手順を実行します。 
 ---
-= SharePoint アカウントをスキャンしています
+= SharePointアカウントのスキャン
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,6 +16,11 @@ summary: BlueXPで分類されたSharePoint OnlineアカウントとSharePoint�
 [role="lead"]
 BlueXPで分類されたSharePoint OnlineアカウントとSharePointオンプレミスアカウントのファイルのスキャンを開始するには、いくつかの手順を実行します。
 
+[]
+====
+*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
+
+====
 
 
 == クイックスタート
@@ -40,7 +45,7 @@ SharePoint アカウントでスキャンする SharePoint サイト URL のリ�
 
 
 
-== SharePoint の要件を確認する
+== SharePointの要件を確認する
 
 SharePointアカウントでBlueXP分類をアクティブ化する準備ができていることを確認するには、次の前提条件を確認してください。
 
@@ -55,7 +60,7 @@ SharePointアカウントでBlueXP分類をアクティブ化する準備がで�
 
 
 
-== BlueXP分類インスタンスの導入
+== BlueXP分類インスタンスを導入します
 
 導入されているインスタンスがない場合は、BlueXP分類を導入します。
 
@@ -111,7 +116,7 @@ SharePointのオンプレミスアカウントが作業環境のリストに追�
 
 
 
-== SharePoint サイトをコンプライアンススキャンに追加する
+== SharePointサイトをコンプライアンススキャンに追加する
 
 個 々 のSharePointサイトを追加することも、アカウントに最大1、000のSharePointサイトを追加して、関連するファイルがBlueXPの分類によってスキャンされるようにすることもできます。SharePoint OnlineサイトとSharePointオンプレミスサイトのどちらを追加する場合でも、手順は同じです。
 
@@ -163,10 +168,10 @@ BlueXPの分類により、追加したSharePointサイト内のファイルの�
 
 
 
-== SharePoint サイトをコンプライアンススキャンから削除します
+== コンプライアンススキャンからSharePointサイトを削除する
 
 今後 SharePoint サイトを削除する場合や、 SharePoint サイト内のファイルをスキャンしない場合は、個々の SharePoint サイトのファイルがいつでもスキャンされないようにすることができます。[ 構成 ] ページで [SharePoint サイトの削除 ] をクリックします。
 
 image:screenshot_compliance_sharepoint_remove_site.png["単一の SharePoint サイトを削除してファイルをスキャンする方法を示すスクリーンショット。"]
 
-できることに注意してください link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-bluexp-classification["BlueXP分類からSharePointアカウント全体を削除します"] SharePointアカウントからユーザーデータをスキャンする必要がなくなった場合。
+できることに注意してください link:task-managing-compliance.html["BlueXP分類からSharePointアカウント全体を削除します"] SharePointアカウントからユーザーデータをスキャンする必要がなくなった場合。

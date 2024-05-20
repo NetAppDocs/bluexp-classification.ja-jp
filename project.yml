@@ -44,20 +44,10 @@ sidebar:
         url: "/task-scanning-anf.html"
       - title: ONTAP 対応の Amazon FSX
         url: "/task-scanning-fsx.html"
-      - title: Amazon S3 バケット
-        url: "/task-scanning-s3.html"
       - title: データベーススキーマ
         url: "/task-scanning-databases.html"
-      - title: OneDrive アカウント
-        url: "/task-scanning-onedrive.html"
-      - title: SharePoint アカウント
-        url: "/task-scanning-sharepoint.html"
-      - title: Googleドライブアカウント
-        url: "/task-scanning-google-drive.html"
       - title: ファイル共有
         url: "/task-scanning-file-shares.html"
-      - title: オブジェクトストレージ
-        url: "/task-scanning-object-storage.html"
     - title: Active Directory を統合します
       url: "/task-add-active-directory-datasense.html"
     - title: ライセンスをセットアップする
@@ -74,34 +64,64 @@ sidebar:
       url: "/reference-private-data-categories.html"
     - title: データを調査します
       url: "/task-investigate-data.html"
-    - title: プライベートデータを整理します
-      url: "/task-org-private-data.html"
     - title: データにポリシーを割り当てます
       url: "/task-using-policies.html"
-    - title: プライベートデータを管理
-      url: "/task-managing-highlights.html"
     - title: スキャン設定を変更します
       url: task-managing-repo-scanning.html
     - title: コンプライアンスレポートを生成します
       url: "/task-generating-compliance-reports.html"
   - title: BlueXPの分類を管理します
     entries:
-    - title: カスタムの個人データ識別子を追加します
-      url: "/task-managing-data-fusion.html"
     - title: ディレクトリをスキャン対象から除外
       url: "/task-exclude-scan-paths.html"
-    - title: BlueXP分類操作のステータスを表示します
-      url: "/task-view-compliance-actions.html"
     - title: 既存のグループIDを「組織にオープン」として定義する
       url: "/task-add-group-id-as-open.html"
-    - title: BlueXPの分類アクションの履歴を監査します
-      url: "/task-audit-data-sense-actions.html"
-    - title: BlueXPの分類スキャン速度を下げます
-      url: "/task-reduce-scan-speed.html"
     - title: BlueXPの分類からデータソースを削除します
       url: "/task-managing-compliance.html"
     - title: BlueXPをアンインストールします
       url: "/task-uninstall-data-sense.html"
+  - title: 廃止された機能
+    entries:
+    - title: 廃止された機能のリスト
+      url: "/reference-free-paid.html"
+    - title: BlueXP分類を導入します
+      entries:
+      - title: インターネットアクセスのない複数のホストにBlueXP分類をインストールする
+        url: "/task-deploy-multi-host-install-dark-site.html"
+      - title: 既存の環境にスキャナノードを追加する
+        url: "/task-deploy-add-scanner-nodes.html"
+      - title: 無償トライアルをセットアップするか、お客様所有のライセンスを使用
+        url: "/task-licensing-byol-freetrial.html"
+    - title: スキャンデータ
+      entries:
+      - title: Amazon S3バケットをスキャン
+        url: "/task-scanning-s3.html"
+      - title: OneDriveアカウントのスキャン
+        url: "/task-scanning-onedrive.html"
+      - title: SharePointアカウントのスキャン
+        url: "/task-scanning-sharepoint.html"
+      - title: Googleドライブアカウントのスキャン
+        url: "/task-scanning-google-drive.html"
+      - title: S3プロトコルを使用するオブジェクトストレージをスキャンする
+        url: "/task-scanning-object-storage.html"
+    - title: データの管理
+      entries:
+      - title: ガバナンスダッシュボードでデータに関するガバナンスの詳細を表示する
+        url: "/task-controlling-governance-dashboard-deprecated.html"
+      - title: プライベートデータを整理します
+        url: "/task-org-private-data.html"
+      - title: プライベートデータを管理
+        url: "/task-managing-highlights.html"
+      - title: カスタムの個人データ識別子を追加します
+        url: "/task-managing-data-fusion.html"
+      - title: BlueXP分類操作のステータスを表示します
+        url: "/task-view-compliance-actions.html"
+      - title: BlueXPの分類アクションの履歴を監査します
+        url: "/task-audit-data-sense-actions.html"
+      - title: BlueXPの分類スキャン速度を下げます
+        url: "/task-reduce-scan-speed.html"
+      - title: OneDrive、SharePoint、Google Driveのアカウントを削除する
+        url: "/task-managing-compliance-deprecated.html"
   - title: 参照
     entries:
     - title: サポートされるBlueXP分類インスタンスタイプ

@@ -4,7 +4,7 @@ permalink: task-scanning-s3.html
 keywords: cloud compliance, amazon s3, s3 buckets, amazon s3 buckets, scan s3 buckets, scan amazon s3 buckets, enable compliance s3, enable compliance on s3, s3 working environment, data sense 
 summary: BlueXPの分類では、Amazon S3バケットをスキャンして、S3オブジェクトストレージに格納された個人データと機密データを特定できます。BlueXPの分類では、NetApp解決策 用に作成されたバケットかどうかに関係なく、アカウント内の任意のバケットをスキャンできます。 
 ---
-= BlueXPでAmazon S3の分類を開始します
+= Amazon S3バケットをスキャン
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,6 +16,11 @@ summary: BlueXPの分類では、Amazon S3バケットをスキャンして、S3
 [role="lead"]
 BlueXPの分類では、Amazon S3バケットをスキャンして、S3オブジェクトストレージに格納された個人データと機密データを特定できます。BlueXPの分類では、NetApp解決策 用に作成されたバケットかどうかに関係なく、アカウント内の任意のバケットをスキャンできます。
 
+[]
+====
+*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
+
+====
 
 
 == クイックスタート

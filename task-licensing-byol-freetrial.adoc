@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: task-licensing-datasense.html 
-keywords: subscribe, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, data sense, cloud data sense 
+permalink: task-licensing-byol-freetrial.html 
+keywords: subscribe, trial, marketplace, subscription, byol, bring your own license, data sense, cloud data sense 
 summary: BlueXPワークスペースでBlueXP分類によってスキャンされる最初の1TBのデータは無料です。そのあとも引き続きデータをスキャンするには、ネットアップのBYOLライセンス、またはクラウドプロバイダMarketplaceからのサブスクリプションが必要です。 
 ---
-= BlueXPの分類に合わせて従量課金制ライセンスを設定
+= BlueXPの無償トライアルをセットアップするか、お客様所有のライセンスを使用
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,18 +14,16 @@ summary: BlueXPワークスペースでBlueXP分類によってスキャンさ�
 
 
 [role="lead"]
-データをスキャンするには、従量課金制（PAYGO）サブスクリプションが必要です。
+バージョン1.30以前では、BlueXPワークスペースでBlueXP分類によってスキャンされる最初の1TBのデータは30日間無料です。そのあとも引き続きデータをスキャンするには、ネットアップのBYOLライセンス、またはクラウドプロバイダのマーケットプレイスからのサブスクリプションが必要です。
 
 []
 ====
-*注*この情報は、BlueXP分類のコアバージョン1.31以降にのみ関連しています。
+*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
 
 ====
 さらに読む前に、いくつかのメモを記入してください。
 
-* クラウドプロバイダのマーケットプレイスでBlueXPの従量課金制（PAYGO）サブスクリプションにすでに登録している場合は、BlueXPの分類にも自動的に登録されます。再度サブスクライブする必要はありません。
-
-
+* BlueXPの分類（Data Sense）であるBring-your-own-license（BYOL）は_floating_licenseです。このライセンスは、スキャンするワークスペース内のすべての作業環境とデータソースに使用できます。BlueXPデジタルウォレットには、アクティブなサブスクリプションが表示されます。
 * スキャンされるデータの量は論理ファイルサイズに基づいて計算され、Storage Efficiency機能は使用されません。
 
 
@@ -35,64 +33,17 @@ link:concept-cloud-compliance.html#cost["BlueXPの分類に関連するライセ
 
 == 30 日間の無償トライアルをご利用いただけます
 
-BlueXPワークスペースでは、BlueXPの分類によってスキャンされる最大500TBのデータを対象とした30日間の無償トライアルを利用できます。その後もデータのスキャンを継続するには、NetAppからBYOLライセンスを購入するか、クラウドプロバイダのマーケットプレイスからサブスクリプションに登録する必要があります。
+BlueXPワークスペースでは、BlueXPの分類によってスキャンされる最大1TBのデータを対象とした30日間の無償トライアルを利用できます。その後もデータのスキャンを継続するには、NetAppからBYOLライセンスを購入するか、クラウドプロバイダのマーケットプレイスからサブスクリプションに登録する必要があります。
 
-いつでも購読することができ、30日間の試用期間が終了した後でも請求されることはありません。スキャンされているデータの合計量は、BlueXPの分類Governance Dashboardでいつでも確認できます。また、 [ 今すぐサブスクライブ ] ボタンを使用すると、準備が整ったときに簡単にサブスクライブできます。
+いつでも購読できます。30日間の試用期間が終了するか、データ量が1TBを超えるまでは、料金は発生しません。スキャンされているデータの合計量は、BlueXPの分類Governance Dashboardでいつでも確認できます。また、 [ 今すぐサブスクライブ ] ボタンを使用すると、準備が整ったときに簡単にサブスクライブできます。
 
 image:screenshot_compliance_subscribe.png["スキャンされているデータの量を示すスクリーンショットと、サービスにサブスクライブするための [ サブスクライブ（ Subscribe ） ] ボタン。"]
 
 
 
-== BlueXP分類のPAYGOサブスクリプションを使用
-
-クラウドプロバイダのマーケットプレイスで提供されている従量課金制サブスクリプションを使用すると、Cloud Volumes ONTAPシステムや多くのBlueXPサービス（BlueXP分類など）のライセンスを取得できます。BlueXP分類が1つのサブスクリプションで1時間ごとにスキャンしているデータの量に応じて、クラウドプロバイダに料金を支払います。
-
-登録することで、無償トライアルの終了後にサービスが中断されることがなくなります。トライアル期間が終了しても、BlueXP Coreバージョン1.31以降の料金は請求されません。
-
-.手順
-これらの手順は、 _Account Admin_role 権限を持つユーザが実行する必要があります。
-
-. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
-+
-image:screenshot_settings_icon.gif["BlueXPの右上にあるバナーのスクリーンショットで、[設定]アイコンを選択できます。"]
-
-. [Credentials]*をクリックし、AWSインスタンスプロファイル、Azure Managed Service Identity、またはGoogle Projectのクレデンシャルを検索します。
-+
-サブスクリプションは、インスタンスプロファイル、マネージドサービス ID 、または Google プロジェクトに追加する必要があります。充電ができない。
-
-+
-以下のAWS向けBlueXPサブスクリプションをすでにお持ちの場合は、設定が完了しています。他に必要なことはありません。
-
-+
-image:screenshot_profile_subscription.gif["アクティブなサブスクリプションを持つインスタンスプロファイルを示す資格情報ページのスクリーンショット。"]
-
-. まだサブスクリプションをお持ちでない場合は、アクションメニューをクリックして*サブスクリプションの関連付け*をクリックします。
-+
-image:screenshot_add_subscription.gif["資格情報ページのメニューのスクリーンショット。サブスクリプションを資格情報に関連付けるボタンが表示されます。"]
-
-. 既存のサブスクリプションを選択し、 [* アソシエイト * ] をクリックするか、 [ * サブスクリプションの追加 * ] をクリックして、手順を実行します。
-+
-次のビデオでは、を関連付ける方法を示します https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4["AWS Marketplace"^] AWS サブスクリプションへのサブスクリプション：
-
-+
-video::video_subscribing_aws.mp4[width=848,height=480]
-+
-次のビデオでは、を関連付ける方法を示します https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace で入手できます"^] Azure サブスクリプションへのサブスクリプション：
-
-+
-video::video_subscribing_azure.mp4[width=848,height=480]
-+
-次のビデオでは、を関連付ける方法を示します https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project["Google Cloud Marketplace"^] GCP サブスクリプションへのサブスクリプション：
-
-+
-video::video_subscribing_gcp.mp4[width=848,height=480]
-
-
-
-
 == 年間契約を使用する
 
-BlueXPは、年単位の契約で分類されています。期間は1年、2年、3年から選択できます。
+BlueXP分類の料金は、年単位の契約を購入して年単位で支払います。期間は1年、2年、3年から選択できます。
 
 市場で年間契約を結んでいるパートナー様は、BlueXPの分類データスキャンの料金がその契約に対して請求されます。BYOLでは、年単位のマーケットプレイス契約を組み合わせることはできません。
 

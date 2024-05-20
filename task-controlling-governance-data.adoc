@@ -45,11 +45,10 @@ _Saving Opportunities 領域内の項目を調査して、削除または階層�
 
 
 * * 重複ファイル * - スキャンしているデータソース内の他の場所に複製されているファイル。 link:task-investigate-data.html#view-all-duplicated-files["表示される重複ファイルの種類を確認します"]。
-+
-注:: いずれかのデータソースでデータ階層化が実装されている場合は、オブジェクトストレージにすでに存在する古いデータを_Stale Data_categoryで特定できます。
 
 
 
+NOTE: いずれかのデータソースでデータ階層化が実装されている場合は、オブジェクトストレージにすでに存在する古いデータを_Stale Data_categoryで特定できます。
 
 
 
@@ -82,23 +81,6 @@ _Top Data Repositories by Sensitivity Level_領域には、最も機密性の高
 
 
 
-=== 機密性と幅広い権限に基づいてリストされたデータ
-
-_Sensitive DataおよびWide Permissions_領域には、機密データ（機密性の高い個人データと機密性の高い個人データの両方を含む）が含まれ、過度に許容されるファイルのヒートマップが表示されます。これにより、機密データを含むリスクがある場所を確認できます。
-
-ファイルは、X軸（最小から最大）上のファイルへのアクセス権を持つユーザの数、およびY軸（最小から最大）上のファイル内の機密識別子の数に基づいて評価されます。ブロックは、X軸とY軸のアイテムに一致するファイルの数を表します。明るい色のブロックは適切で、ファイルにアクセスできるユーザーが少なく、ファイルごとの機密識別子が少なくなります。濃いブロックは、調査する項目です。たとえば、下の画面には、濃い青色のブロックのマウスオーバーテキストが表示されます。751-100ユーザがアクセスできるファイルが1、500個あり、ファイルごとに501-100の機密識別子があることが示されています。
-
-image:screenshot_compliance_sensitive_data.png["このパネル内の要素にカーソルを合わせると表示されるデータを示すスクリーンショット。"]
-
-[調査]ページで、影響を受けるファイルのフィルタリングされた結果を表示するには、対象となるブロックをクリックします。これにより、詳細な調査が可能になります。
-
-アイデンティティサービスをBlueXP分類に統合していない場合、このパネルにデータは表示されません。 link:task-add-active-directory-datasense.html["Active DirectoryサービスとBlueXPの分類を統合する方法をご紹介します"^]。
-
-
-TIP: このパネルでは、CIFS共有、OneDrive、SharePointのデータソースのファイルをサポートしています。現在、データベース、Googleドライブ、Amazon S3、汎用オブジェクトストレージはサポートされていません。
-
-
-
 === オープンアクセス権のタイプ別に一覧表示されるデータ
 
 _Open Permissions_ 領域には、スキャンされるすべてのファイルに存在する各タイプの権限の割合が表示されます。このチャートには、次の種類の権限が表示されます。
@@ -121,17 +103,16 @@ _Age および _Size_Graphs の項目を調査して、削除または階層化�
 
 * *Age of Data グラフ *- データが作成された時刻、アクセスされた最終時刻、またはデータが変更された最終時刻に基づいてデータを分類します。
 * * データサイズグラフ * - サイズに基づいてデータを分類します。
-+
-注:: いずれかのデータソースでデータ階層化が実装されている場合は、オブジェクトストレージにすでに存在する古いデータをData_graphの_Ageで特定できます。
 
 
 
+NOTE: いずれかのデータソースでデータ階層化が実装されている場合は、オブジェクトストレージにすでに存在する古いデータをData_graphの_Ageで特定できます。
 
 
 
 === 最も識別されているデータ分類
 
-_Classification_area には ' 最も識別されたリストが表示されます link:task-controlling-private-data.html#view-files-by-categories["カテゴリ"^]、 link:task-controlling-private-data.html#view-files-by-file-types["ファイルの種類"^]および link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP ラベル"^] をスキャンしたデータに保存します。
+_Classification_area には ' 最も識別されたリストが表示されます link:task-controlling-private-data.html#view-files-by-categories["カテゴリ"^] および link:task-controlling-private-data.html#view-files-by-file-types["ファイルの種類"^] をスキャンしたデータに保存します。
 
 
 
@@ -148,14 +129,6 @@ _Classification_area には ' 最も識別されたリストが表示されま�
 ファイルタイプを確認すると、特定のファイルタイプが正しく保存されない可能性があるため、機密データを制御するのに役立ちます。
 
 を参照してください link:task-controlling-private-data.html#view-files-by-file-types["ファイルタイプを表示しています"^] を参照してください。
-
-
-
-==== AIP ラベル
-
-Azure Information Protection （ AIP ）に加入している場合は、コンテンツにラベルを適用することで、ドキュメントとファイルを分類して保護できます。ファイルに割り当てられている最も使用されている AIP ラベルを確認すると、ファイルで最も使用されているラベルを確認できます。
-
-を参照してください link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP ラベル"^] を参照してください。
 
 
 
@@ -244,5 +217,3 @@ image:screenshot_compliance_data_discovery_report_button.png["ガバナンスダ
 
 .結果
 BlueXPの分類によってPDFレポートが生成されます。このレポートを確認して、必要に応じて他のグループに送信できます。
-
-BlueXPの分類ページの上部にあるをクリックすると、レポートの最初のページに表示される会社名をカスタマイズできます image:screenshot_gallery_options.gif["[詳細]ボタン"] [会社名の変更]をクリックします。次回レポートを生成するときに、新しい名前が含まれます。

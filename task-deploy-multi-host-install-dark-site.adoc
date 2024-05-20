@@ -1,0 +1,89 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-multi-host-install-dark-site.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade, private mode, docker, podman, bluexp classification, classification, install 
+summary: インターネットアクセスがないオンプレミスサイト（「プライベートモード」とも呼ばれます）のLinuxホストにBlueXP分類をインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。 
+---
+= インターネットにアクセスしない大規模構成の場合は、複数のホストにBlueXP分類をインストールする
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+インターネットアクセスがないオンプレミスサイト（_private mode_とも呼ばれます）の複数のホストにBlueXP分類をインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。
+
+インターネットにアクセスできないサイトのペタバイト規模のデータをスキャンする非常に大規模な構成では、複数のホストを追加して処理能力を高めることができます。複数のホストシステムを使用する場合、プライマリシステムは _Managernode_name と呼ばれ、追加の処理能力を提供する追加システムは _Scanner Node_と 呼ばれます。
+
+オフライン環境の複数のオンプレミスホストにBlueXP分類ソフトウェアをインストールする場合は、次の手順に従います。
+
+[]
+====
+*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
+
+====
+.必要なもの
+* ManagerノードとスキャナノードのすべてのLinuxシステムがホストの要件を満たしていることを確認します。
+* 前提条件となる2つのソフトウェアパッケージ（Docker EngineまたはPodman、およびPython 3）がインストールされていることを確認します。
+* Linux システムに対する root 権限があることを確認してください。
+* オフライン環境が必要な権限と接続を満たしていることを確認します。
+* 使用するスキャナノードホストの IP アドレスを確認しておく必要があります。
+* すべてのホストで次のポートとプロトコルを有効にする必要があります。
++
+[cols="15,20,55"]
+|===
+| ポート | プロトコル | 説明 
+
+
+| 2377 | TCP | クラスタ管理通信 
+
+
+| 7946 | tcp 、 udp です | ノード間通信 
+
+
+| 4789 | UDP | オーバーレイネットワークトラフィック 
+
+
+| 50 | ESP | 暗号化された IPsec オーバーレイネットワーク（ ESP ）トラフィック 
+
+
+| 111 | tcp 、 udp です | ホスト間でファイルを共有するための NFS サーバ（各スキャナノードからマネージャノードに必要） 
+
+
+| 2049 | tcp 、 udp です | ホスト間でファイルを共有するための NFS サーバ（各スキャナノードからマネージャノードに必要） 
+|===
+
+
+.手順
+. から手順 1~8 を実行します link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["シングルホストインストール"] マネージャーノード。
+. 手順 9 に示すように、インストーラからプロンプトが表示されたら、一連のプロンプトで必要な値を入力するか、必要なパラメータをコマンドライン引数としてインストーラに指定することができます。
++
+シングルホストのインストールで使用できる変数に加えて、新しいオプション * -n <Node_IP> * を使用してスキャナノードの IP アドレスを指定します。複数のノードの IP をカンマで区切って指定します。
+
++
+たとえば、次のコマンドは3つのスキャナノードを追加します。
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> *-n <node_ip1>,<node_ip2>,<node_ip3>* --no-proxy --darksite`
+
+. マネージャノードのインストールが完了する前に、スキャナノードに必要なインストールコマンドがダイアログに表示されます。コマンドをコピーします（例： `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`）を入力し、テキストファイルに保存します。
+. 各 * スキャナノードホストで：
++
+.. データセンスインストーラファイル（* cc_onpm_installer.tar.gz *）をホストマシンにコピーします。
+.. インストーラファイルを解凍します。
+.. 手順 3 でコピーしたコマンドを貼り付けて実行します。
++
+すべてのスキャナノードでインストールが完了し、それらのノードがマネージャノードに参加したら、マネージャノードのインストールも完了します。
+
+
+
+
+
+.結果
+BlueXP分類インストーラがパッケージのインストールを完了し、インストールを登録します。インストールには 15 ～ 25 分かかる場合があります。
+
+.次のステップ
+設定ページからローカルを選択できます link:task-getting-started-compliance.html["オンプレミスの ONTAP クラスタ"] および local です link:task-scanning-databases.html["データベース"] をスキャンします。
+
+また可能です link:task-licensing-datasense.html["BlueXP分類用のBYOLライセンスをセットアップ"] （この時点ではBlueXPのデジタルウォレットページから）。30日間の無料トライアルが終了しても、料金は請求されません。

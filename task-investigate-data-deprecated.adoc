@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: task-investigate-data-deprecated.html 
+keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
+summary: '[データ調査]ページで詳細を表示すると、組織のデータを調査できます。このページには、ガバナンスダッシュボードやコンプライアンスダッシュボードなど、BlueXPの分類UIのさまざまな領域から移動できます。' 
+---
+= [Data Investigation]ページに保存されているデータを調査する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+[データ調査]ページで詳細を表示すると、組織のデータを調査できます。このページには、ガバナンスダッシュボードやコンプライアンスダッシュボードなど、BlueXPの分類UIのさまざまな領域から移動できます。
+
+
+NOTE: このセクションで説明する機能は、データソースに対して完全な分類スキャンを実行することを選択した場合にのみ使用できます。マッピングのみのスキャンを実行したデータソースでは、ファイルレベルの詳細は表示されません。
+
+
+
+== [Data Investigation]ページでのデータのフィルタリング
+
+調査ページの内容をフィルタリングして、表示する結果のみを表示できます。これは非常に強力な機能です。データをリファインした後、ページ上部のボタンバーを使用して、ファイルのコピー、ファイルの移動、ファイルへのタグまたはAIPラベルの追加など、さまざまなアクションを実行できます。
+
+
+
+=== タグ、ラベル、割り当てられたユーザ、およびポリシーでデータをフィルタリングします
+
+タグ、AIPラベル、割り当てられたユーザ、またはポリシー別にデータを表示するには、次のフィルタを使用します。
+
+[]
+====
+*注*タグ、ラベル、割り当てられたユーザでフィルタリングする機能は、バージョン1.30以前のBlueXP分類にのみ関係します。
+
+====
+[cols="30,60"]
+|===
+| フィルタ | 詳細 
+
+
+| ポリシー | ポリシーを選択します。実行します link:task-using-policies.html["こちらをご覧ください"^] をクリックして、既存のポリシーのリストを表示し、独自のカスタムポリシーを作成します。 
+
+
+| ラベル | 選択するオプション link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP ラベル"] ファイルに割り当てられます。 
+
+
+| タグ | 選択するオプション link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["タグ"] ファイルに割り当てられます。 
+
+
+| 割り当て先 | ファイルが割り当てられているユーザーの名前を選択します。 
+|===
+
+
+== データ調査レポートの作成
+
+Data Investigation Reportは、Data Investigationページのフィルタリングされた内容をダウンロードしたものです。
+
+レポートには、次の2つの形式があります。
+
+* ローカルマシンに保存できる.csvファイル。
++
+このレポートには、最大10,000行のデータを含めることができます。
+
+* NFS共有にエクスポートする.jsonファイルとして指定します。
++
+25万行を超えるデータがある場合は、追加の.jsonファイルが作成されます。
+
++
+ファイル共有にエクスポートする場合は、BlueXPの分類にエクスポートアクセス用の正しい権限が割り当てられていることを確認してください。
+
++
+[]
+====
+*注*でレポートを生成する機能。 JSON形式は、BlueXPのバージョン1.30以前でのみ使用できます。
+
+====
+
+
+BlueXPの分類でファイル（非構造化データ）、ディレクトリ（フォルダとファイル共有）、データベース（構造化データ）をスキャンしている場合は、最大3つのレポートファイルをダウンロードできます。
+
+.手順
+. [データ調査]ページで、をクリックします image:button_download.png["[ ダウンロード ] ボタン"] ボタンをクリックします。
+. データの.csvレポートと.jsonレポートのどちらをダウンロードするかを選択し、*レポートのダウンロード*をクリックします。
++
+JSONレポートを選択するときは、レポートをダウンロードするNFS共有の名前を「<host_name>：/<share_path>`」の形式で入力します。
+
++
+JSONレポートの生成の進捗状況は、で確認できます link:task-view-compliance-actions.html["[ アクションステータス（ Actions Status ） ] パネル"]。
+
++
+[]
+====
+*注*タグ、ラベル、割り当てられたユーザでフィルタリングする機能は、バージョン1.30以前のBlueXP分類にのみ関係します。
+
+====
+

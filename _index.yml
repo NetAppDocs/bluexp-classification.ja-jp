@@ -11,17 +11,13 @@ indexpage:
       url: concept-cloud-compliance.html
     - title: 新機能
       url: whats-new.html
+    - title: 無料版と有料版で利用可能な機能
+      url: reference-free-paid.html
     - title: BlueXPを使用してBlueXP分類をクラウドに導入します
       url: task-deploy-cloud-compliance.html
     - title: インターネットを使用するLinuxホストにBlueXP分類をインストールします
       url: task-deploy-compliance-onprem.html
-    - title: インターネットを使用せずに、BlueXPの分類をオンプレミスにインストール
-      url: task-deploy-compliance-dark-site.html
-    - title: Active Directory を統合します
-      url: task-add-active-directory-datasense.html
-    - title: ライセンスをセットアップする
-      url: task-licensing-datasense.html
-  - title: 作業環境をスキャンします
+  - title: データソースのスキャン
     links:
     - title: Cloud Volumes ONTAP ボリューム
       url: task-getting-started-compliance.html
@@ -31,22 +27,10 @@ indexpage:
       url: task-scanning-anf.html
     - title: ONTAP ボリュームの Amazon FSX
       url: task-scanning-fsx.html
-    - title: Amazon S3 バケット
-      url: task-scanning-s3.html
-  - title: 他のデータソースをスキャンします
-    links:
-    - title: 汎用の S3 バケット
-      url: task-scanning-object-storage.html
     - title: ネットアップ以外のファイル共有
       url: task-scanning-file-shares.html
     - title: データベーススキーマ
       url: task-scanning-databases.html
-    - title: OneDrive アカウント
-      url: task-scanning-onedrive.html
-    - title: SharePoint アカウント
-      url: task-scanning-sharepoint.html
-    - title: Googleドライブアカウント
-      url: task-scanning-google-drive.html
   - title: データの詳細を表示します
     links:
     - title: プライベート情報を含むファイルを表示します
@@ -59,28 +43,14 @@ indexpage:
       url: task-using-policies.html
     - title: コンプライアンスレポートを生成します
       url: task-generating-compliance-reports.html
-  - title: プライベートデータを整理します
-    links:
-    - title: 注意が必要なファイルにタグと所有者を適用します
-      url: task-org-private-data.html#apply-tags-to-manage-your-scanned-files
-    - title: AIP ラベルを使用してデータを分類します
-      url: task-org-private-data.html#categorize-your-data-using-aip-labels
-    - title: 独自のカスタム個人データ識別子を追加します
-      url: task-managing-data-fusion.html
-    - title: 特定のディレクトリをスキャン対象から除外する
-      url: task-exclude-scan-paths.html
-  - title: プライベートデータを管理
-    links:
-    - title: ソースファイルをコピーします
-      url: task-managing-highlights.html#copy-source-files
-    - title: ソースファイルを移動します
-      url: task-managing-highlights.html#move-source-files-to-an-nfs-share
-    - title: ソースファイルを削除します
-      url: task-managing-highlights.html#delete-source-files
     - title: 準拠していないデータが見つかった場合にアラートを E メールで送信
-      url: task-using-policies.html#send-email-alerts-when-non-compliant-data-is-found
+      url: task-using-policies.html
     - title: データサブジェクトのアクセス要求に応答します
       url: task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports
+  - title: 廃止された機能
+    links:
+    - title: 廃止された機能のリスト
+      url: reference-free-paid.html
   - title: ブログとコミュニティ
     links:
     - title: ネットアップコミュニティ

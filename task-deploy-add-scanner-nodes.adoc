@@ -1,0 +1,206 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-add-scanner-nodes.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman, install bluexp classification 
+summary: インターネットにアクセスできるクラウド内のLinuxホストにスキャナノードを追加するには、いくつかの手順を実行します。 
+---
+= 既存の環境にスキャナノードを追加する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+インターネットにアクセスできるLinuxホストの既存の環境にスキャナノードを追加できます。
+
+データソースのスキャンに必要なスキャン処理能力が増えた場合は、スキャナノードを追加することができます。マネージャノードをインストールした直後にスキャナノードを追加することも、後でスキャナノードを追加することもできます。たとえば、1つのデータソースのデータ量が6カ月後に2倍または3倍になったことがわかった場合は、データスキャンに役立つ新しいスキャナノードを追加できます。
+
+[]
+====
+*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
+
+====
+スキャナノードを追加するには、次の2つの方法があります。
+
+* すべてのデータソースのスキャンに使用するノードを追加します
+* 特定のデータソース、または特定のデータソースグループ（通常は場所に基づく）のスキャンに役立つノードを追加する
+
+
+デフォルトでは、追加した新しいスキャナノードはすべて、スキャンリソースの一般的なプールに追加されます。これを「デフォルトスキャナグループ」と呼びます。次の図では、6つすべてのデータソースからすべてのデータをスキャンする「デフォルト」グループに、1つのManagerノードと3つのスキャナノードがあります。
+
+image:diagram_onprem_scanner_groups_default.png["デフォルトのスキャナグループに含まれている場合に、BlueXP分類スキャナがデータソースをスキャンする仕組みの図。"]
+
+スキャナノードがデータソースに物理的に近いデータソースでスキャンするデータソースがある場合は、スキャナノードまたはスキャナノードのグループを定義して、特定のデータソースまたはデータソースのグループをスキャンできます。次の図では、1つのマネージャーノードと3つのスキャナーノードがあります。
+
+* Managerノードは「デフォルト」グループにあり、1つのデータソースをスキャンしています
+* スキャナノード1は「United States」グループに属し、2つのデータソースをスキャンしています
+* スキャナノード2および3は「ヨーロッパ」グループに属し、3つのデータソースのスキャンタスクを共有します
+
+
+image:diagram_onprem_scanner_groups.png["BlueXP分類スキャナが複数のスキャナグループに割り当てられている場合にデータソースをスキャンする仕組みの図。"]
+
+BlueXPの分類スキャナグループは、データが格納される個別の地理的領域として定義できます。BlueXP分類スキャナノードは世界中に複数導入でき、ノードごとにスキャナグループを選択できます。このようにすると、各スキャナノードは最も近いデータをスキャンします。スキャナノードがデータに近いほど、データのスキャン時のネットワークレイテンシができるだけ低減されるため、データの読み取り速度が向上します。
+
+BlueXPの分類に追加するスキャナグループとその名前を選択できます。BlueXPの分類では、「Europe」という名前のスキャナグループにマッピングされたノードがヨーロッパに導入されるわけではありません。
+
+追加のBlueXP分類スキャナノードをインストールするには、次の手順を実行します。
+
+. スキャナノードとして機能するLinuxホストシステムを準備します
+. これらのLinuxシステムにデータセンスソフトウェアをダウンロードします
+. Managerノードでコマンドを実行して、スキャナノードを特定します
+. 次の手順に従って、スキャナノードにソフトウェアを展開します（また、特定のスキャナノードに対してオプションで「スキャナグループ」を定義します）。
+. スキャナグループを定義した場合は、Managerノードで次の手順を実行します。
++
+.. 「Working _environment To _ scanner _group_config.yml」ファイルを開き、各スキャナグループでスキャンされる作業環境を定義します
+.. 次のスクリプトを実行して、このマッピング情報をすべてのスキャナノードに登録します。 `update_we_scanner_group_from_config_file.sh`
+
+
+
+
+.必要なもの
+* スキャナノード用のすべてのLinuxシステムがホスト要件を満たしていることを確認します。
+* システムに前提条件となる2つのソフトウェアパッケージ（Docker EngineまたはPodman、およびPython 3）がインストールされていることを確認します。
+* Linux システムに対する root 権限があることを確認してください。
+* 環境が必要な権限と接続を満たしていることを確認します。
+* 追加するスキャナノードホストのIPアドレスを確認しておく必要があります。
+* BlueXP Classification ManagerノードのホストシステムのIPアドレスが必要です
+* コネクタシステムのIPアドレスまたはホスト名、ネットアップアカウントID、コネクタクライアントID、およびユーザアクセストークンが必要です。スキャナグループを使用する場合は、アカウントの各データソースの作業環境IDを確認しておく必要があります。この情報を取得するには、以下の*_必要条件ステップ_*を参照してください。
+* すべてのホストで次のポートとプロトコルを有効にする必要があります。
++
+[cols="15,20,55"]
+|===
+| ポート | プロトコル | 説明 
+
+
+| 2377 | TCP | クラスタ管理通信 
+
+
+| 7946 | tcp 、 udp です | ノード間通信 
+
+
+| 4789 | UDP | オーバーレイネットワークトラフィック 
+
+
+| 50 | ESP | 暗号化された IPsec オーバーレイネットワーク（ ESP ）トラフィック 
+
+
+| 111 | tcp 、 udp です | ホスト間でファイルを共有するための NFS サーバ（各スキャナノードからマネージャノードに必要） 
+
+
+| 2049 | tcp 、 udp です | ホスト間でファイルを共有するための NFS サーバ（各スキャナノードからマネージャノードに必要） 
+|===
+* 使用するポート `firewalld` BlueXP分類マシンでは、BlueXP分類をインストールする前に有効にすることを推奨します。次のコマンドを実行して設定します `firewalld` BlueXPと互換性があることを確認します。
++
+....
+firewall-cmd --permanent --add-service=http
+firewall-cmd --permanent --add-service=https
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --permanent --add-port=8080/tcp
+firewall-cmd --permanent --add-port=443/tcp
+firewall-cmd --permanent --add-port=2377/tcp
+firewall-cmd --permanent --add-port=7946/udp
+firewall-cmd --permanent --add-port=7946/tcp
+firewall-cmd --permanent --add-port=4789/udp
+firewall-cmd --reload
+....
++
+を有効または更新するたびに、DockerまたはPodmanを再起動する必要があることに注意してください。 `firewalld` 設定：
+
+
+
+.事前に必要な手順
+次の手順に従って、スキャナノードの追加に必要なネットアップアカウントID、コネクタクライアントID、コネクタサーバ名、およびユーザアクセストークンを取得します。
+
+. BlueXPのメニューバーで、*アカウント>アカウントの管理*をクリックします。
++
+image:screenshot_account_id.png["BlueXPアカウントの詳細のスクリーンショット。"]
+
+. _アカウントID_をコピーします。
+. BlueXPメニューバーで、[ヘルプ]>[サポート]>[ BlueXPコネクタ*]をクリックします。
++
+image:screenshot_connector_client_id.png["BlueXP Connectorの構成設定のスクリーンショット"]
+
+. Connector_Client ID_と_サーバ名_をコピーします。
+. スキャナグループを使用する場合は、BlueXP分類の[設定]タブで、スキャナグループに追加する各作業環境の作業環境IDをコピーします。
++
+image:screenshot_work_env_id.png["BlueXPの分類の[Configuration]ページに表示されるWorking Environment IDのスクリーンショット。"]
+
+. にアクセスします https://services.cloud.netapp.com/developer-hub["APIドキュメント開発者ハブ"^] [*Learn how to authenticate*(認証方法を確認する)]をクリック
++
+image:screenshot_client_access_token.png["APIドキュメントページのスクリーンショット。認証手順へのリンクが表示されています。"]
+
+. 「ユーザー名」と「パスワード」パラメータのアカウント管理者のユーザー名とパスワードを使用して、認証手順に従ってください。
+. 次に、応答から_access token_をコピーします。
+
+
+.手順
+. BlueXP Classification Managerノードで、スクリプト「add_scanner_node.sh」を実行します。たとえば、次のコマンドはスキャナノードを2つ追加します。
++
+`sudo ./add_scanner_node.sh -a <account_id> -c <client_id> -m <cm_host> -h <ds_manager_ip> *-n <node_private_ip_1,node_private_ip_2>* -t <user_token>`
+
++
+変数値：
+
++
+** _account_id _ = ネットアップアカウント ID
+** _client_id_=コネクタクライアントID（前提条件ステップでコピーしたクライアントIDに接尾辞「clients」を追加）
+** _cm_host_=コネクタシステムのIPアドレスまたはホスト名
+** _DS_manager_IP_= BlueXP Classification ManagerノードシステムのプライベートIPアドレス
+** _node_private_IP_= BlueXP分類スキャナノードシステムのIPアドレス（複数のスキャナノードIPはカンマで区切ります）
+** _user_token_= JWTユーザーアクセストークン
+
+
+. add_scanner_nodeスクリプトが完了する前に、スキャナノードに必要なインストールコマンドを示すダイアログが表示されます。コマンドをコピーします（例： `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF1s35212 -u red95467j`）を入力し、テキストファイルに保存します。
+. 各 * スキャナノードホストで：
++
+.. データセンスインストーラファイル(*DATASENSE-installer -<version> .tar.gz*)をホストマシンにコピーします(scpなどの方法を使用)。
+.. インストーラファイルを解凍します。
+.. 手順2でコピーしたコマンドを貼り付けて実行します。
+.. スキャナノードを「スキャナグループ」に追加する場合は、パラメータ*-r <scanner_group_name>*をコマンドに追加します。それ以外の場合は、スキャナノードが「デフォルト」グループに追加されます。
++
+すべてのスキャナノードでインストールが完了し、それらのノードがマネージャノードに参加したら、「add_scanner_node.sh」スクリプトも終了します。インストールには10~20分かかることがあります。
+
+
+
+. スキャナグループにスキャナノードを追加した場合は、マネージャノードに戻り、次の2つのタスクを実行します。
++
+.. 「/opt/netapp/config/custom _configuration/working_environment_to_scanner_group_config.yml」ファイルを開き、スキャナグループが特定の作業環境をスキャンするマッピングを入力します。データソースごとに_Working Environment ID_が必要になります。たとえば、次のエントリでは、2つの作業環境を「ヨーロッパ」スキャナグループに、2つを「United States」スキャナグループに追加します。
++
+....
+scanner_groups:
+ europe:
+   working_environments:
+     - "working_environment_id1"
+     - "working_environment_id2"
+ united_states:
+   working_environments:
+     - "working_environment_id3"
+     - "working_environment_id4"
+....
++
+リストに追加されていない作業環境は、「デフォルト」グループによってスキャンされます。「デフォルト」グループには、少なくとも1つのマネージャまたはスキャナノードが必要です。
+
+.. 次のスクリプトを実行して、このマッピング情報をすべてのスキャナノードに登録します。
+`/opt/netapp/Datasense/tools/update_we_scanner_group_from_config_file.sh`
+
+
+
+
+.結果
+BlueXPの分類は、ManagerノードとScannerノードで設定され、すべてのデータソースがスキャンされます。
+
+.次のステップ
+設定ページで、スキャンするデータソースを選択できます（まだ選択していない場合）。スキャナグループを作成した場合は、各データソースがそれぞれのグループのスキャナノードによってスキャンされます。
+
+各作業環境のスキャナグループ名は、設定ページに表示されます。
+
+image:screenshot_work_env_id.png["BlueXPの分類の[Configuration]ページに表示されるWorking Environment IDのスクリーンショット。"]
+
+また、すべてのスキャナグループのリスト、および[設定]ページの下部にあるグループ内の各スキャナノードのIPアドレスとステータスを表示することもできます。
+
+image:screenshot_scanner_groups.png["すべてのスキャナグループと、グループ内の各スキャナノードのIPアドレスを示すスクリーンショット。"]
+
+可能です link:task-licensing-datasense.html["BlueXP分類用のライセンスをセットアップ"] 現時点では、30日間の無料トライアルが終了するまで、料金はかかりません。

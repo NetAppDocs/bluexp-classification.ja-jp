@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: task-managing-compliance-deprecated.html 
+keywords: remove, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, deactivate, deactivating cloud compliance, data sense 
+summary: 必要に応じて、BlueXPの分類によって1つ以上の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、Google Driveアカウント、 またはSharePointアカウント。 
+---
+= BlueXPの分類からOneDrive、SharePoint、Google Driveのアカウントを削除する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+特定のOneDriveアカウント、特定のSharePointアカウント、またはGoogle Driveアカウントからユーザファイルをスキャンする必要がなくなった場合は、BlueXP分類インターフェイスからアカウントを削除して、すべてのスキャンを停止できます。
+
+.手順
+. [_Configuration_] ページで、をクリックします image:screenshot_gallery_options.gif["[ 詳細 ] ボタン"] OneDrive、SharePoint、Google Driveアカウントの行にあるボタンをクリックし、* OneDriveアカウントの削除*、* SharePointアカウントの削除*、または* Googleドライブアカウントの削除*をクリックします。
++
+image:screenshot_compliance_remove_onedrive.png["[ スキャン構成 ] ページから [OneDrive を削除 ] ボタンのスクリーンショット。"]
+
+. 確認ダイアログで * アカウントの削除 * をクリックします。
+

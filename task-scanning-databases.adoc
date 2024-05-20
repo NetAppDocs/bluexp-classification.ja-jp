@@ -16,8 +16,6 @@ summary: いくつかの手順を実行して、BlueXPの分類を使用した�
 [role="lead"]
 いくつかの手順を実行して、BlueXPの分類を使用したデータベーススキーマのスキャンを開始します。
 
-データベーススキャンを有効にすると、すべてのデータソースでデータベースの特定の列に基づいて識別される一意の識別子を追加できます。これは_Data Fusionフィーチャーと呼ばれます。 link:task-managing-data-fusion.html#add-custom-personal-data-identifiers-from-your-databases["データベースからカスタム個人データ識別子を追加する方法"^]。
-
 
 
 == クイックスタート

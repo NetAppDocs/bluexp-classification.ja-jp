@@ -23,6 +23,9 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["BlueXP Conn
 BlueXPの分類インストールスクリプトでは、まず、システムと環境が必要な前提条件を満たしているかどうかが確認されます。前提条件がすべて満たされている場合は、インストールが開始されます。BlueXP分類のインストールとは別に前提条件を確認する場合は、前提条件のみをテストする別のソフトウェアパッケージをダウンロードできます。 link:task-test-linux-system.html["LinuxホストでBlueXPのインストール準備が完了しているかどうかを確認する方法を説明します"]。
 
 
+NOTE: 以前のバージョン1.30以前で複数のホストにBlueXP分類をインストールする必要がある場合は、を参照してください。 link:task-deploy-multi-host-install-dark-site.html["インターネットアクセスのない複数のホストにBlueXP分類をインストールする"]。
+
+
 
 == サポートされているデータソース
 
@@ -30,12 +33,10 @@ BlueXPの分類インストールスクリプトでは、まず、システム�
 
 * オンプレミスの ONTAP システム
 * データベーススキーマ
-* SharePointオンプレミスアカウント(SharePoint Server)
 * ネットアップ以外の NFS または CIFS ファイル共有
-* Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージ
 
 
-現在、Cloud Volumes ONTAP、Azure NetApp Files、FSx for ONTAP、AWS S3、Googleドライブのスキャンはサポートされていません。 BlueXP分類がプライベートモードで導入されている場合は、OneDriveまたはSharePoint Onlineアカウント。
+現時点では、BlueXPの分類がプライベートモードで導入されている場合、Cloud Volumes ONTAP、Azure NetApp Files、FSx for ONTAPのアカウントのスキャンはサポートされていません。
 
 
 
@@ -43,14 +44,11 @@ BlueXPの分類インストールスクリプトでは、まず、システム�
 
 BlueXPのほとんどの分類機能は、インターネットアクセスのないサイトに導入した場合に機能します。ただし、インターネットアクセスを必要とする特定の機能はサポートされていません。たとえば、次のような機能があります。
 
-* Microsoft Azure Information Protection （ AIP ）ラベルの管理
-* 特定の重要なポリシーの結果が返されたときに、BlueXPユーザーに電子メールアラートを送信する
 * 異なるユーザーのBlueXPロールの設定(アカウント管理者やCompliance Viewerなど)
 * BlueXPのコピーと同期を使用したソースファイルのコピーと同期
-* ユーザからのフィードバックを受け取る
 * BlueXPからの自動ソフトウェアアップグレード
 +
-BlueXP ConnectorとBlueXPのどちらも、新機能を有効にするために定期的な手動アップグレードが必要になります。BlueXP分類バージョンは、BlueXP分類UIページの下部で確認できます。を確認します link:whats-new.html["BlueXPの分類に関するリリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["BlueXP Connectorをアップグレードします"^] および <<BlueXP分類ソフトウェアをアップグレードします,BlueXP分類ソフトウェアをアップグレードします>>。
+BlueXP ConnectorとBlueXPのどちらも、新機能を有効にするために定期的な手動アップグレードが必要になります。BlueXP分類バージョンは、BlueXP分類UIページの下部で確認できます。を確認します link:whats-new.html["BlueXPの分類に関するリリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["BlueXP Connectorをアップグレードします"^] および <<BlueXP分類ソフトウェアをアップグレードします,BlueXP分類ソフトウェアをアップグレードします>>。
 
 
 
@@ -74,7 +72,7 @@ NetApp Support Site からBlueXP分類ソフトウェアをダウンロードし
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] BlueXP分類サービスにサブスクライブします
 [role="quick-margin-para"]
-BlueXPで分類されてスキャンされる最初の1TBのデータは、30日間無料です。そのあともデータのスキャンを続行するには、ネットアップの BYOL ライセンスが必要です。
+BlueXPで分類されてスキャンされる最初の500TBのデータは、30日間無料です。そのあともデータのスキャンを続行するには、ネットアップの BYOL ライセンスが必要です。BlueXPコアバージョン1.31は無償で提供されます。
 
 
 
@@ -283,17 +281,15 @@ Active Directory の次の情報が必要です。
 
 
 |===
-複数のBlueXP分類ホストを使用してデータソースのスキャンに必要な処理能力を提供している場合は、追加のポート/プロトコルを有効にする必要があります。 link:task-deploy-compliance-dark-site.html#multi-host-installation-for-large-configurations["追加のポート要件を参照してください"]。
+複数のBlueXP分類ホストを使用してデータソースのスキャンに必要な処理能力を提供している場合は、追加のポート/プロトコルを有効にする必要があります。 link:task-deploy-compliance-dark-site.html["追加のポート要件を参照してください"]。
 
 
 
 == オンプレミスのLinuxホストにBlueXP分類をインストールします
 
-一般的な構成では、ソフトウェアを 1 台のホストシステムにインストールします。 link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["これらの手順を参照してください"]。
+一般的な構成では、ソフトウェアを 1 台のホストシステムにインストールします。
 
 image:diagram_deploy_onprem_single_host_no_internet.png["インターネットアクセスなしでオンプレミスに導入された単一のBlueXP分類インスタンスを使用している場合にスキャンできるデータソースの場所を示す図。"]
-
-ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。 link:task-deploy-compliance-dark-site.html#multi-host-installation-for-large-configurations["これらの手順を参照してください"]。
 
 image:diagram_deploy_onprem_multi_host_no_internet.png["オンプレミスにインターネットアクセスなしで導入された複数のBlueXP分類インスタンスを使用している場合にスキャンできるデータソースの場所を示す図。"]
 
@@ -303,7 +299,7 @@ image:diagram_deploy_onprem_multi_host_no_internet.png["オンプレミスにイ
 
 オフライン環境の単一のオンプレミスホストにBlueXP分類ソフトウェアをインストールする場合は、次の手順に従います。
 
-BlueXP分類をインストールすると、すべてのインストールアクティビティがログに記録されます。インストール中に問題が発生した場合は、インストール監査ログの内容を表示できます。に書き込まれます。 `/opt/netapp/install_logs/`。 link:task-audit-data-sense-actions.html#access-the-log-files["詳細はこちら"]。
+BlueXP分類をインストールすると、すべてのインストールアクティビティがログに記録されます。インストール中に問題が発生した場合は、インストール監査ログの内容を表示できます。に書き込まれます。 `/opt/netapp/install_logs/`。 link:task-audit-data-sense-actions.html["詳細はこちら"]。
 
 .必要なもの
 * Linux システムがを満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
@@ -380,78 +376,7 @@ BlueXP分類インストーラは、パッケージをインストールして�
 .次のステップ
 設定ページからローカルを選択できます link:task-getting-started-compliance.html["オンプレミスの ONTAP クラスタ"] および link:task-scanning-databases.html["データベース"] をスキャンします。
 
-また可能です link:task-licensing-datasense.html#use-a-bluexp-classification-byol-license["BlueXP分類用のBYOLライセンスをセットアップ"] （この時点ではBlueXPのデジタルウォレットページから）。30日間の無料トライアルが終了するまで、料金はかかりません。
-
-
-
-=== 大規模構成向けのマルチホストインストール
-
-ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。複数のホストシステムを使用する場合、プライマリシステムは _Managernode_name と呼ばれ、追加の処理能力を提供する追加システムは _Scanner Node_と 呼ばれます。
-
-オフライン環境の複数のオンプレミスホストにBlueXP分類ソフトウェアをインストールする場合は、次の手順に従います。
-
-.必要なもの
-* Manager ノードと Scanner ノードのすべての Linux システムが、を満たしていることを確認します <<Linux ホストシステムを準備,ホストの要件>>。
-* 前提条件となる2つのソフトウェアパッケージ（Docker EngineまたはPodman、およびPython 3）がインストールされていることを確認します。
-* Linux システムに対する root 権限があることを確認してください。
-* オフライン環境が要件を満たしていることを確認します <<BlueXPとBlueXPの分類の前提条件を確認,権限と接続>>。
-* 使用するスキャナノードホストの IP アドレスを確認しておく必要があります。
-* すべてのホストで次のポートとプロトコルを有効にする必要があります。
-+
-[cols="15,20,55"]
-|===
-| ポート | プロトコル | 説明 
-
-
-| 2377 | TCP | クラスタ管理通信 
-
-
-| 7946 | tcp 、 udp です | ノード間通信 
-
-
-| 4789 | UDP | オーバーレイネットワークトラフィック 
-
-
-| 50 | ESP | 暗号化された IPsec オーバーレイネットワーク（ ESP ）トラフィック 
-
-
-| 111 | tcp 、 udp です | ホスト間でファイルを共有するための NFS サーバ（各スキャナノードからマネージャノードに必要） 
-
-
-| 2049 | tcp 、 udp です | ホスト間でファイルを共有するための NFS サーバ（各スキャナノードからマネージャノードに必要） 
-|===
-
-
-.手順
-. から手順 1~8 を実行します link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["シングルホストインストール"] マネージャーノード。
-. 手順 9 に示すように、インストーラからプロンプトが表示されたら、一連のプロンプトで必要な値を入力するか、必要なパラメータをコマンドライン引数としてインストーラに指定することができます。
-+
-シングルホストのインストールで使用できる変数に加えて、新しいオプション * -n <Node_IP> * を使用してスキャナノードの IP アドレスを指定します。複数のノードの IP をカンマで区切って指定します。
-
-+
-たとえば、次のコマンドは3つのスキャナノードを追加します。
-`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> *-n <node_ip1>,<node_ip2>,<node_ip3>* --no-proxy --darksite`
-
-. マネージャノードのインストールが完了する前に、スキャナノードに必要なインストールコマンドがダイアログに表示されます。コマンドをコピーします（例： `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`）を入力し、テキストファイルに保存します。
-. 各 * スキャナノードホストで：
-+
-.. データセンスインストーラファイル（* cc_onpm_installer.tar.gz *）をホストマシンにコピーします。
-.. インストーラファイルを解凍します。
-.. 手順 3 でコピーしたコマンドを貼り付けて実行します。
-+
-すべてのスキャナノードでインストールが完了し、それらのノードがマネージャノードに参加したら、マネージャノードのインストールも完了します。
-
-
-
-
-
-.結果
-BlueXP分類インストーラがパッケージのインストールを完了し、インストールを登録します。インストールには 15 ～ 25 分かかる場合があります。
-
-.次のステップ
-設定ページからローカルを選択できます link:task-getting-started-compliance.html["オンプレミスの ONTAP クラスタ"] および local です link:task-scanning-databases.html["データベース"] をスキャンします。
-
-また可能です link:task-licensing-datasense.html#use-a-bluexp-classification-byol-license["BlueXP分類用のBYOLライセンスをセットアップ"] （この時点ではBlueXPのデジタルウォレットページから）。30日間の無料トライアルが終了するまで、料金はかかりません。
+また可能です link:task-licensing-datasense.html["BlueXP分類用のBYOLライセンスをセットアップ"] （この時点ではBlueXPのデジタルウォレットページから）。30日間の無料トライアルが終了するまで、料金はかかりません。
 
 
 
@@ -460,7 +385,7 @@ BlueXP分類インストーラがパッケージのインストールを完了�
 BlueXPの分類ソフトウェアは定期的に新機能で更新されるため、定期的に新しいバージョンをチェックして、最新のソフトウェアや機能を使用しているかどうかを確認する必要があります。自動的にアップグレードを実行するためのインターネット接続がないため、BlueXP分類ソフトウェアは手動でアップグレードする必要があります。
 
 .作業を開始する前に
-* BlueXP Connectorソフトウェアを最新バージョンにアップグレードすることを推奨します。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["コネクタのアップグレード手順を参照してください"^]。
+* BlueXP Connectorソフトウェアを最新バージョンにアップグレードすることを推奨します。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["コネクタのアップグレード手順を参照してください"^]。
 * BlueXP分類バージョン1.24以降では、ソフトウェアの将来のバージョンへのアップグレードを実行できます。
 +
 BlueXP分類ソフトウェアで1.24より前のバージョンが実行されている場合、一度にアップグレードできるメジャーバージョンは1つだけです。たとえば、バージョン1.21.xがインストールされている場合は、1.22.xにのみアップグレードできます。いくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。

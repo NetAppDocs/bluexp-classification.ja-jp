@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, bluexp, bluexp classification' 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, cloud data sense, bluexp, bluexp classification' 
 summary: BlueXPの新機能をご紹介します。 
 ---
 = BlueXP分類の新機能
@@ -15,6 +15,18 @@ summary: BlueXPの新機能をご紹介します。
 
 [role="lead"]
 BlueXP分類の新機能（Cloud Data Sense）をご紹介します。
+
+
+
+== 2024年5月15日（バージョン1.31）
+
+
+
+=== BlueXPでは無償のサービスとして分類を利用可能
+
+BlueXPのコア機能として、最大500TiBのスキャンデータを追加料金なしでBlueXPの分類を利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。今回の新バージョンでは、BlueXPの分類機能をNetAppストレージシステムのスキャンに重点を置いているため、一部のレガシー機能は、以前にライセンス料金を支払ったお客様のみが利用できます。これらのレガシー機能の使用は、有料契約が終了日に達すると期限切れになります。
+
+link:reference-free-paid.html["廃止された機能の詳細"]。
 
 
 
@@ -92,9 +104,9 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 
 このリリースには、いくつかのマイナーな機能拡張が含まれ
 
-また、次のオプションも一時的に削除されました。
+このリリースでは、次のオプションも削除されました。
 
-* 監査ログ収集をアクティブ化するオプションが無効になりました。を参照してください link:task-manage-file-access-events.html["ファイルアクセスイベントを監視および管理します"]。
+* 監査ログ収集をアクティブ化するオプションが無効になりました。
 * ディレクトリ調査中に、ディレクトリごとの個人識別情報（PII）データの数を計算するオプションは使用できません。を参照してください link:task-investigate-data.html#filter-data-by-sensitivity-and-content["組織に保存されているデータを調査します"]。
 * Azure Information Protection（AIP）ラベルを使用してデータを統合するオプションが無効になりました。を参照してください link:task-org-private-data.html["プライベートデータを整理します"]。
 
@@ -207,7 +219,7 @@ Red Hatでは前提条件であるDockerがサポートされなくなるため�
 
 === BlueXPの分類は、ONTAPシステムからFPolicyイベントを受信するFPolicyコレクタとして設定できます
 
-作業環境内のボリュームで検出されたファイルアクセスイベントについて、BlueXP分類システムでファイルアクセス監査ログの収集を有効にすることができます。BlueXPの分類では、次のタイプのFPolicyイベントと、ファイルに対してアクションを実行したユーザ（Create、Read、Write、Delete、Rename、 所有者/権限を変更し、SACL/DACLを変更します。 https://docs.netapp.com/us-en/bluexp-classification/task-manage-file-access-events.html["ファイルアクセスイベントを監視および管理する方法を参照してください"]。
+作業環境内のボリュームで検出されたファイルアクセスイベントについて、BlueXP分類システムでファイルアクセス監査ログの収集を有効にすることができます。BlueXPの分類では、次のタイプのFPolicyイベントと、ファイルに対してアクションを実行したユーザ（Create、Read、Write、Delete、Rename、 所有者/権限を変更し、SACL/DACLを変更します。
 
 
 
