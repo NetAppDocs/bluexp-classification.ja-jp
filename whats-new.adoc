@@ -42,6 +42,8 @@ link:reference-free-paid.html["廃止された機能の詳細"]。
 
 の詳細を確認してください https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXPの分類環境の概要"]。
 
+BlueXPの分類は、オンプレミスのRHEL 8または9ホストにコネクタをインストールする場合にサポートされます。RHEL 8または9ホストがAWS、Azure、Google Cloudにある場合はサポートされません。
+
 
 
 === 監査ログ収集をアクティブ化するオプションが削除されました
