@@ -3545,4 +3545,5 @@
   <block id="08a8e0f5e4c7d91e565955cb7f30b215" category="sidebar">ガバナンスダッシュボードでデータに関するガバナンスの詳細を表示する</block>
   <block id="aeb69ebcaffd7e18cd55db906e582bf5" category="sidebar">OneDrive、SharePoint、Google Driveのアカウントを削除する</block>
   <block id="b6417b62aacc6d16c1ae7a79d851d413" category="paragraph">BlueXPの分類は、オンプレミスのRHEL 8または9ホストにコネクタをインストールする場合にサポートされます。RHEL 8または9ホストがAWS、Azure、Google Cloudにある場合はサポートされません。</block>
+  <block id="cfe5d63c50c4794111fa6f65b931e130" category="cell">調査からCSVにデータをエクスポート</block>
 </blocks>
