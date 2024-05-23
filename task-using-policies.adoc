@@ -55,7 +55,7 @@ image:screenshot_compliance_save_as_highlight.png["フィルタされたクエ�
 .. 必要に応じて、このチェックボックスをオンにすると、ポリシーパラメータに一致するファイルが自動的に削除されます。
 .. [ ポリシーの作成 *] をクリックします。
 +
-image:screenshot_compliance_save_highlight.png["ポリシーを設定して保存する方法を示すスクリーンショット。"]
+image:screenshot_compliance_save_highlight2.png["ポリシーを設定して保存する方法を示すスクリーンショット。"]
 
 
 

@@ -600,7 +600,6 @@
   <block id="9d85612840e00794629f6dce90aa22fa" category="inline-link-macro">AIP ラベル</block>
   <block id="fdc2c96185d2a7c98ab81a927c827edb" category="list-text">[ ポリシーの作成 *] をクリックします。</block>
   <block id="ab3a166dafa7696427031860a8ba2694" category="inline-image-macro">ポリシーを設定して保存する方法を示すスクリーンショット。</block>
-  <block id="23e34b6c117b6fd91abb568e48195e27" category="paragraph"><block ref="23e34b6c117b6fd91abb568e48195e27" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f124f85896ac18194a54f85b2d21b888" category="paragraph">[ ポリシー ] タブに新しいポリシーが表示されます。</block>
   <block id="ba7f20906bacf4fde87c14d7628aaec2" category="inline-image-macro">ポリシーに対して送信する E メール基準を選択する方法を示すスクリーンショット。</block>
   <block id="9cc0943710c206f20a91720ffe09f7bf" category="paragraph"><block ref="9cc0943710c206f20a91720ffe09f7bf" category="inline-image-macro-rx" type="image"></block></block>
@@ -3498,7 +3497,6 @@
   <block id="e2175eca7cd7227e608f98540d53af5e" category="paragraph">このリリースでは、次のオプションも削除されました。</block>
   <block id="cf39647f74e2ee71e92d2dcb020dab2d" category="paragraph">作業環境内のボリュームで検出されたファイルアクセスイベントについて、BlueXP分類システムでファイルアクセス監査ログの収集を有効にすることができます。BlueXPの分類では、次のタイプのFPolicyイベントと、ファイルに対してアクションを実行したユーザ（Create、Read、Write、Delete、Rename、 所有者/権限を変更し、SACL/DACLを変更します。</block>
   <block id="06e3e3e8a40062c8a44b3bead8f60ccb" category="list-text">OneDriveアカウントとSharePointアカウント（旧バージョン1.30以前の場合）</block>
-  <block id="a0c44cafcacc5478c539dba887219bc9" category="sidebar">無料版と有料版で利用可能な機能</block>
   <block id="2cb8839a5444b5db421bd5b52586dd24" category="sidebar">データソースのスキャン</block>
   <block id="98f9f8a11a148aec70c39965293ea9b3" category="sidebar">廃止された機能</block>
   <block id="dd6f713e594790101284e68ce9ae76f7" category="sidebar">廃止された機能のリスト</block>
@@ -3529,4 +3527,6 @@
   <block id="ff9a5988c9084ed8f91f339a8c5730ef" category="sidebar">BlueXPの分類に関する廃止措置の導入</block>
   <block id="08504eba0f24252abaffadf616e91d7c" category="sidebar">スキャンデータの非推奨化</block>
   <block id="58b46c120f259bfcd0cbe13c84945204" category="sidebar">データの廃止を管理する</block>
+  <block id="9b07697830dbb49b6ea67bff8f36ad42" category="paragraph"><block ref="9b07697830dbb49b6ea67bff8f36ad42" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="39ba3e6e56f553f6665e61fc4be73bd0" category="sidebar">BlueXPのコアバージョンとレガシーバージョンで利用可能な機能</block>
 </blocks>

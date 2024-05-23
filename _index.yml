@@ -11,7 +11,7 @@ indexpage:
       url: concept-cloud-compliance.html
     - title: 新機能
       url: whats-new.html
-    - title: 無料版と有料版で利用可能な機能
+    - title: BlueXPのコアバージョンとレガシーバージョンで利用可能な機能
       url: reference-free-paid.html
     - title: BlueXPを使用してBlueXP分類をクラウドに導入します
       url: task-deploy-cloud-compliance.html
