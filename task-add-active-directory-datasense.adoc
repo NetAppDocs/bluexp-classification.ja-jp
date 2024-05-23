@@ -38,7 +38,6 @@ Active DirectoryとBlueXPの統合では、次のデータソースからデー�
 * Cloud Volumes ONTAP
 * Azure NetApp Files の特長
 * FSX for ONTAP の略
-* ネットアップ以外のCIFSファイル共有（NFSファイル共有は除く）
 * OneDriveアカウントとSharePointアカウント（旧バージョン1.30以前の場合）
 
 

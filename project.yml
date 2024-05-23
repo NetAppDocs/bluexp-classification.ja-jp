@@ -84,7 +84,7 @@ sidebar:
     entries:
     - title: 廃止された機能のリスト
       url: "/reference-free-paid.html"
-    - title: BlueXP分類を導入します
+    - title: BlueXPの分類に関する廃止措置の導入
       entries:
       - title: インターネットアクセスのない複数のホストにBlueXP分類をインストールする
         url: "/task-deploy-multi-host-install-dark-site.html"
@@ -92,7 +92,7 @@ sidebar:
         url: "/task-deploy-add-scanner-nodes.html"
       - title: 無償トライアルをセットアップするか、お客様所有のライセンスを使用
         url: "/task-licensing-byol-freetrial.html"
-    - title: スキャンデータ
+    - title: スキャンデータの非推奨化
       entries:
       - title: Amazon S3バケットをスキャン
         url: "/task-scanning-s3.html"
@@ -104,7 +104,7 @@ sidebar:
         url: "/task-scanning-google-drive.html"
       - title: S3プロトコルを使用するオブジェクトストレージをスキャンする
         url: "/task-scanning-object-storage.html"
-    - title: データの管理
+    - title: データの廃止を管理する
       entries:
       - title: ガバナンスダッシュボードでデータに関するガバナンスの詳細を表示する
         url: "/task-controlling-governance-dashboard-deprecated.html"

@@ -70,7 +70,7 @@ BlueXPの分類はBlueXPの一部として機能し、AWS、Azure、GCPをサポ
 
 === BlueXPにはREST APIがありますか？また、他社製ツールと連携できますか？
 
-BlueXPは、サービスのREST API機能をサポートしています。BlueXPの管理が推奨されない場合は、REST APIを使用してBlueXPの分類などのサービスを使用することもできます。すべてのユーザアクションには、サードパーティのシステムと統合できるREST APIがあります。を参照してください link:api-classification.html["BlueXP分類API"^] を参照してください。
+いいえ。BlueXPにはREST APIはありません。
 
 
 
@@ -200,22 +200,6 @@ BlueXPの分類では、コールドデータがオブジェクトストレー�
 
 
 
-=== BlueXPの分類から組織に通知を送信できますか？
-
-はい。ポリシー機能と組み合わせることで、BlueXPユーザー(毎日、毎週、または毎月)、またはポリシーが結果を返したときに電子メールアラートを送信して、データを保護するための通知を受け取ることができます。の詳細を確認してください link:task-using-policies.html["ポリシー"^]。
-
-また、 [ ガバナンス ] ページと [ 調査 ] ページからステータスレポートをダウンロードして、組織内で共有することもできます。
-
-
-
-=== BlueXPの分類は、ファイルに埋め込まれたAIPラベルでも機能しますか？
-
-はい。サブスクライブ済みの場合は、BlueXP分類でスキャンするファイルでAIPラベルを管理できます https://azure.microsoft.com/en-us/services/information-protection/["Azure 情報保護（ AIP ）"^]。既にファイルに割り当てられているラベルを表示したり、ファイルにラベルを追加したり、既存のラベルを変更したりできます。
-
-link:task-org-private-data.html#categorize-your-data-using-aip-labels["詳細はこちら。"^]。
-
-
-
 == ソースシステムとデータタイプのタイプ
 
 スキャン可能なストレージのタイプ、およびスキャンするデータのタイプに関連する情報を次に示します。
@@ -226,26 +210,7 @@ link:task-org-private-data.html#categorize-your-data-using-aip-labels["詳細は
 
 BlueXPの分類では、BlueXP Canvasに追加した作業環境や、BlueXPの分類がネットワーク経由でアクセスできるさまざまな種類の構造化/非構造化データソースのデータをスキャンできます。
 
-* 作業環境： *
-
-* Cloud Volumes ONTAP （ AWS 、 Azure 、 GCP に導入）
-* オンプレミスの ONTAP クラスタ
-* Azure NetApp Files の特長
-* ONTAP 対応の Amazon FSX
-* Amazon S3
-
-
-* データソース： *
-
-* ネットアップ以外のファイル共有
-* オブジェクトストレージ（ S3 プロトコルを使用）
-* データベース（Amazon RDS、MongoDB、MySQL、Oracle、PostgreSQL、 SAP HANA、SQL Serverなど）
-* OneDrive アカウント
-* SharePoint Onlineアカウントとオンプレミスアカウント
-* Googleドライブアカウント
-
-
-BlueXPの分類では、NFSバージョン3.xとCIFSバージョン1.x、2.0、2.1、3.0がサポートされます。
+を参照してください link:concept-cloud-compliance.html["サポートされている作業環境とデータソース"]。
 
 
 
@@ -253,6 +218,11 @@ BlueXPの分類では、NFSバージョン3.xとCIFSバージョン1.x、2.0、2
 
 BlueXPの分類は、コネクタが政府機関のリージョン（AWS GovCloud、Azure Gov、Azure DoD）（「制限モード」とも呼ばれます）に導入されている場合にサポートされます。この方法で導入した場合、BlueXPには次の制限があります。
 
+[]
+====
+*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
+
+====
 * OneDriveアカウント、SharePointアカウント、Googleドライブアカウントはスキャンできません。
 * Microsoft Azure Information Protection（AIP）ラベル機能を統合できません。
 
@@ -265,10 +235,10 @@ BlueXPの分類では、オンプレミスサイトのローカルなデータ�
 
 * オンプレミスの ONTAP システム
 * データベーススキーマ
-* SharePointオンプレミスアカウント(SharePoint Server)
-* ネットアップ以外の NFS または CIFS ファイル共有
 * Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージ
 
+
+を参照してください link:concept-cloud-compliance.html["サポートされている作業環境とデータソース"]。
 
 
 
@@ -352,19 +322,7 @@ BlueXPの分類では、Elasticsearchに格納されたデータにAPI呼び出�
 
 === BlueXPの分類にはどれくらいのコストがかかりますか？
 
-BlueXPの分類を使用するコストは、スキャンするデータの量によって異なります。BlueXPワークスペースでBlueXPの分類によってスキャンされる最初の1TBのデータは30日間無料です。いずれかの制限に達すると、データのスキャンを続行するために次のいずれかが必要になります。
-
-* クラウドプロバイダからのBlueXP Marketplaceへのサブスクリプション、または
-* ネットアップが提供するお客様所有のライセンス（BYOL）
-
-
-を参照してください https://bluexp.netapp.com/pricing["価格設定"^] を参照してください。
-
-
-
-=== BYOLの容量制限に達した場合はどうなりますか？
-
-BYOLの容量が上限に達すると、BlueXPの分類は引き続き実行されますが、ダッシュボードへのアクセスはブロックされるため、スキャンしたデータに関する情報を表示できません。スキャンするボリューム数を減らして容量の使用率をライセンスの上限まで下げる場合は、設定ページのみが表示されます。BlueXPの分類にフルアクセスできるようにするには、BYOLライセンスを更新する必要があります。
+BlueXPはBlueXPのコア機能であり、料金は発生しません。
 
 
 
