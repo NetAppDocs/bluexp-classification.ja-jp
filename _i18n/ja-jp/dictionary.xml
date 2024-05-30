@@ -471,11 +471,8 @@
   <block id="51d9478e8b1c7fd3b915c3258ca90c5f" category="cell">80% ~ 95%</block>
   <block id="1f11d46635a2bb0b45eb74583d762a6b" category="cell">20% ~ 30%</block>
   <block id="fcfb74f2666b695b8ad53eb3d1e156ff" category="cell">90% ~ 97%</block>
-  <block id="3cba68afa7ab7242fd51494aeb5d8d7b" category="list-text">データコンプライアンスやプライバシーの規制に準拠</block>
   <block id="29c9ae62d38a9d393cc687207b213fa5" category="list-text">データ保持ポリシーに準拠</block>
-  <block id="22e218023aca4f3c1af5339aa10fd3f1" category="list-text">GDPR 、 CCPA 、 HIPAA 、その他のデータプライバシー規制の要件に応じて、データ主体に応じて特定のデータを容易に検索し、レポートを作成できます。</block>
   <block id="6858b5f69ec006bf6e2de7960deffea9" category="list-text">個人識別情報（ PII ）を識別します。</block>
-  <block id="75561c13a7f1550c1d376b995ed2e83f" category="list-text">データプライバシーに関する新しい規制や今後の規制に対応できます。</block>
   <block id="cb1df3001d7e0d737bf8af8bf621fee0" category="inline-link-macro">スキャンの仕組みを説明します</block>
   <block id="37f3de5c9ae041a1644d4b78c54dcf40" category="section-title">サポートされているクラウドプロバイダを教えてください。</block>
   <block id="3cf31c18e1b66993cf63511a5ea327f3" category="paragraph">いつ <block ref="63b25124667f9a48140e6efc7dc1fd70" category="inline-link-macro-rx"></block>：</block>
@@ -914,7 +911,6 @@
   <block id="a54d3bccf6c646c46c072ad1fc403cb6" category="inline-link">コネクタをオンプレミスに導入</block>
   <block id="94ee7072c2750da1997438a715efb7d4" category="section-title">コネクタを作成します</block>
   <block id="ee9e25ed53166b2db3af20cf43c4404e" category="paragraph">特定のクラウドプロバイダに導入されているコネクタを使用する必要がある場合は、次のような状況があります。</block>
-  <block id="bd36c37245d1af16de2a713e0208a229" category="list-text">AWS 、 Amazon FSX for ONTAP 、または AWS S3 バケット内の Cloud Volumes ONTAP のデータをスキャンするときは、 AWS のコネクタを使用します。</block>
   <block id="f19eaef4d9d109ffcf1717f49dd5d48b" category="list-text">Azure または Azure NetApp Files で Cloud Volumes ONTAP 内のデータをスキャンする場合は、 Azure のコネクタを使用します。</block>
   <block id="51604d985a41a8e2115db8de3eb4b40f" category="list-text">GCP の Cloud Volumes ONTAP でデータをスキャンする場合は、 GCP のコネクタを使用します。</block>
   <block id="267b476717c1665614f57e91725c67ff" category="inline-link">複数のコネクタ</block>
@@ -1057,7 +1053,6 @@
   <block id="71802feecdbf246a5878ffd0776c9188" category="paragraph"><block ref="71802feecdbf246a5878ffd0776c9188" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e2fac2c70d1c0b8b442edf54cdc057a1" category="paragraph">既存のグループにファイル共有を追加する場合は、 * 共有の追加 * をクリックします。</block>
   <block id="320628295265baf9bb69f0998f0f2fff" category="inline-image-macro">グループに共有を追加するための [ 共有の追加 ] ボタンを示すスクリーンショット。</block>
-  <block id="35307f7c2f311ec0462c4df13d4da801" category="paragraph"><block ref="35307f7c2f311ec0462c4df13d4da801" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f1defe21c2a372d658838710c3847b34" category="list-text">追加するファイル共有のプロトコルを選択し、スキャンするファイル共有を 1 行に 1 つ追加して、「 * Continue * 」をクリックします。</block>
   <block id="eb78bc82dacf7ba8a0b44a1fcffc4ddf" category="paragraph">CIFS （ SMB ）共有を追加する場合は、共有への読み取りアクセスを提供する Active Directory クレデンシャルを入力する必要があります。admin クレデンシャルが優先されます。</block>
   <block id="ea83a70e9aaa2fe5cdb89ca736c3f60f" category="inline-image-macro">［ ファイル共有の追加 ］ ページのスクリーンショット。スキャンする共有を追加できます。</block>
@@ -1137,7 +1132,6 @@
   <block id="b445de53411a165e9c56da6430c38d59" category="inline-link">Azure のコネクタのルール</block>
   <block id="dc3d679737d761f6e72564d962617ffa" category="paragraph">多くのユーザは、この機能を気に入っています。たとえば、より多くの調査が必要なデータソースをすばやくスキャンして特定したうえで、必要なデータソースやボリュームに対してのみ分類スキャンを有効にする必要があるからです。</block>
   <block id="a29f21b4143f28dd101eaaa1fe82fd69" category="inline-xref">以下の一覧を参照してください</block>
-  <block id="ddc3aba4eccf7778417b3605919f552e" category="list-text">従来型システムからクラウドへデータを移行</block>
   <block id="1e99ed6a00e6ef3956359cd96c54b66c" category="section-title">ソースシステムとデータタイプのタイプ</block>
   <block id="9648ab08d5b3fccc9c9ca3160e445cda" category="paragraph">スキャン可能なストレージのタイプ、およびスキャンするデータのタイプに関連する情報を次に示します。</block>
   <block id="0adefa52dc5e774fb8bd1c62fec82b84" category="paragraph">「+.csv」、「.dcm」、「.dom」、「.DOC」、「.DOCX」、 .json、.pdf、.PPTX、.rtf、.TXT、 .XLS、.xlsx、Docs、Sheets、Slides +`</block>
@@ -1148,7 +1142,6 @@
   <block id="f56912566696fa3cc8524bcac5febbeb" category="section-title">コネクタの展開</block>
   <block id="c6dbaaf1bef168a38de37623edb997f7" category="section-title">コネクタは何ですか？</block>
   <block id="417cf0f3678f81efde443c4a85c2acb8" category="section-title">コネクタはどこに取り付ける必要がありますか？</block>
-  <block id="f4fb039a49b8c7eb94cbf1c2e74a625f" category="list-text">オンプレミスのONTAP システム、ネットアップ以外のファイル共有、汎用のS3オブジェクトストレージ、データベース、OneDriveフォルダ、SharePointアカウント、Google Driveアカウント内のデータをスキャンする場合、これらのクラウド環境ではコネクタを使用できます。</block>
   <block id="0908d2929b9ac231d6e9a69ca517b2e3" category="section-title">コネクタを自分のホストに導入できますか。</block>
   <block id="729ba1cfab33ecb7cda6d642c21b247d" category="section-title">インターネットにアクセスできないセキュアなサイトはどうでしょうか。</block>
   <block id="b783177554ae1d03f46ea830d39a7822" category="section-title">データ調査レポート</block>
@@ -1930,7 +1923,6 @@
   <block id="652d29fc9fdc8e0b507bb9eeecca952e" category="list-text">_cloud_provider_=クラウドインスタンスにインストールする場合は、クラウドプロバイダに応じて「AWS」、「Azure」、または「GCP」を入力します。</block>
   <block id="9e7ff0af4669feb5e45b838a89143e27" category="paragraph">インストール監査ログファイルがに書き込まれます<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block></block>
   <block id="e08c39eeecbac5d5f73dff71e2512def" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> ファイル共有をグループに追加します</block>
-  <block id="1c23c4b7c88b3335b15ccab5f09de226" category="list-text">共有は、クラウド内やオンプレミスなど、どこでもホストできます。ほとんどの場合、これらはネットアップ以外のストレージシステムに存在するファイル共有です。ただし、古いNetApp 7-ModeストレージシステムのCIFS共有はファイル共有としてスキャンできます。</block>
   <block id="a6ca0e2e27cafcb7c34af13f7d19c004" category="paragraph">スキャンによってコールドデータが加熱されることはなく、コールドデータはオブジェクトストレージに残ります。</block>
   <block id="312ffbf4bf2c65989ebbd000c725c369" category="list-text">いずれかのデータソースでデータ階層化が実装されている場合は、オブジェクトストレージにすでに存在する古いデータを_Stale Data_categoryで特定できます。</block>
   <block id="66d08fa5ddeba835b1d01655713b9120" category="admonition">このパネルでは、CIFS共有、OneDrive、SharePointのデータソースのファイルをサポートしています。現在、データベース、Googleドライブ、Amazon S3、汎用オブジェクトストレージはサポートされていません。</block>
@@ -1950,9 +1942,7 @@
   <block id="66d6758c1474f6b831dd835dbec91562" category="paragraph">導入されているインスタンスがない場合は、BlueXP分類を導入します。</block>
   <block id="d040d135cea4209ef4244e9d6e171fee" category="inline-link-macro">BlueXPの分類機能をクラウドに導入します</block>
   <block id="9ee91e4270461c0df610bce432a6527d" category="inline-link-macro">インターネットにアクセスできるオンプレミスの場所にBlueXPの分類を導入します</block>
-  <block id="5293c70d5ea1ef3d44d61b35516c53fc" category="paragraph">インターネット経由でアクセス可能な、ネットアップ以外の NFS または CIFS ファイル共有をスキャンする場合は、を実行します <block ref="8faa540c15177bc62b151869f0948a64" category="inline-link-macro-rx"></block> または <block ref="15df3adeb2abcc06430d6dc64cee819e" category="inline-link-macro-rx"></block>。</block>
   <block id="b6c0a0e9e7e33313825824c0729f8062" category="inline-link-macro">インターネットアクセスのないオンプレミスと同じ場所にBlueXPの分類を導入します</block>
-  <block id="be09c78e6d21282211ee75333d0774b6" category="paragraph">インターネットにアクセスできないダークサイトにインストールされているネットアップ以外の NFS または CIFS ファイル共有をスキャンする場合は、が必要です <block ref="3beeea1c5d12940092999048e1c30313" category="inline-link-macro-rx"></block>。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。</block>
   <block id="6be9e736bffe3ff19cc1d1527b2af101" category="paragraph">インスタンスがインターネットに接続されていれば、BlueXP分類ソフトウェアへのアップグレードは自動で実行されます。</block>
   <block id="a5847332edc397d8726675e5b89d4f7a" category="paragraph">ファイル共有グループにファイル共有を追加して、それらの共有内のファイルがBlueXPの分類でスキャンされるようにします。共有は、の形式で追加します<block ref="5d0795d5bd729889f583de7b0928eaea" prefix=" " category="inline-code"></block>。</block>
   <block id="81242ae208378634d2437d68837ba560" category="paragraph">「属性の書き込み」権限がない場合にスキャンする*のページ上部のスイッチは、デフォルトでは無効になっています。つまり、BlueXPの分類にCIFSの属性への書き込み権限やNFSの書き込み権限がない場合、BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、ファイルはスキャンされません。最終アクセス時間がリセットされても構わない場合は、スイッチをオンにすると、権限に関係なくすべてのファイルがスキャンされます。 <block ref="62855d79cc7b1c143d998d83fe5addab" category="inline-link-macro-rx"></block>。</block>
@@ -2248,7 +2238,6 @@
   <block id="ec0631d303344ddf5e8847c240ebaf7d" category="paragraph">BlueXPの分類では、AIを使用してデータのコンテキストを把握し、正確な検出と分類を実現します。AIは、最新のデータタイプと拡張性を考慮して設計されているため、この目的はAIによって推進されます。また、データコンテキストを理解して、強力で正確な検出と分類を提供します。</block>
   <block id="f017155aed79417a0a3f81b29dd1e6dd" category="inline-link-macro">BlueXPの分類の仕組みについて詳しくは、こちらをご覧ください</block>
   <block id="5443d0bbbf3c65783aa8ff115d84afd8" category="paragraph"><block ref="6984153574af8acd30cf16c47f7727f6" category="inline-link-macro-rx"></block>。</block>
-  <block id="e3f6f3fc066d3be15e6a093f55c5df1a" category="section-title">BlueXPに分類される一般的なユースケースを教えてください。</block>
   <block id="84869a8fd0e55b1142c336faf2aa6794" category="inline-link">BlueXP分類のユースケースの詳細については、こちらをご覧ください</block>
   <block id="a1e79fa90d2c4d08e4e3fee15391f900" category="paragraph"><block ref="90f6ceedc5aafd07687f764c72c6fb1c" category="inline-link-rx"></block>。</block>
   <block id="dc7fadd7e7f28b26fb9ae94db1b83b8f" category="section-title">BlueXPのアーキテクチャはどうですか？</block>
@@ -2264,8 +2253,6 @@
   <block id="afc513a3724d36f6d8c4fc99c59325b5" category="section-title">BlueXPの分類を使用してデータを検索できますか。</block>
   <block id="09491c07cd2dfaa3838ed0ef6f3b7af0" category="paragraph">BlueXPは、幅広い検索機能を備えており、接続されているすべてのソースから特定のファイルやデータを簡単に検索できます。BlueXPの分類機能を使用すると、メタデータに反映される情報よりも詳細な情報を検索できます。言語に依存しないサービスで、ファイルを読み取ったり、名前やIDなどの機密データの種類を多数分析したりすることもできます。たとえば、構造化データストアと非構造化データストアの両方を検索して、企業ポリシーに違反してデータベースからユーザファイルに漏れた可能性のあるデータを見つけることができます。検索は後で保存できます。ポリシーを作成して、設定した頻度で結果を検索してアクションを実行できます。</block>
   <block id="ce529b051aa9ebc4101b6a54911240a8" category="paragraph">対象となるファイルが見つかったら、タグ、作業環境アカウント、バケット、ファイルパス、 カテゴリ（分類から）、ファイルサイズ、最終変更、権限ステータス、重複、 感度レベル、個人データ、ファイル内の機密データタイプ、所有者、ファイルタイプ、ファイルサイズ、作成時刻、 ファイルハッシュ、注意を求めているユーザーにデータが割り当てられたかどうかなど。フィルタを適用して、適切でないスクリーンアウト特性を適用できます。BlueXPの分類では、適切な権限があればファイルの移動や削除を許可するRBACも用意されています。適切な権限がない場合は、適切な権限を持つ組織内のユーザーにタスクを割り当てることができます。</block>
-  <block id="87638ea8808069d9fbd32cddb1a4d4a7" category="section-title">BlueXPの分類では、どのような種類の分析が可能ですか？</block>
-  <block id="6a4d70c8dbf4260425fe714f100afb4e" category="paragraph">データソースを視覚的に表現したり、リレーションシップを定義して視覚的に表現したりできます。たとえば、企業内のすべてのデータソース（オンプレミスのシステム、データベース、ファイル共有、S3ストア、OneDrive、 など）。データのコピー、移動、削除、管理が可能になり、ストレージコストを最適化してリスクを軽減できます。ユーザは、どのような機密データが公開されるかを確認することでリスクを軽減でき、強力なデータ保護を実現するための権限を管理するジョブを作成できます。BlueXPの分類では、すべてのタイプのデータも分類されるため、管理者はデータをタイプ別に調査し、そのデータに対してどのようなアクションが実行されたか、いつ実行されたかを確認できます。</block>
   <block id="d095e6f9eb9e0116dd2770cfc6896fff" category="section-title">BlueXPの分類ではレポートが提供されますか？</block>
   <block id="57bfc848a81decccc2c84f613fe93312" category="paragraph">はい。BlueXPの分類によって提供される情報は、組織内の他の関係者に関連性があるため、レポートを生成して分析情報を共有できます。BlueXPの分類で使用できるレポートは次のとおりです。</block>
   <block id="fc0325f4af61a33abeb25a3ce71542e3" category="inline-link-macro">BlueXP分類インスタンス</block>
@@ -2277,7 +2264,6 @@
   <block id="cc595e0116e3ea401ed2deba0cb5fe9f" category="paragraph">まず、BlueXP分類のインスタンスをBlueXPまたはオンプレミスシステムに導入する必要があります。インスタンスが実行されると、*[設定]*タブから、または特定の作業環境を選択して、既存の作業環境、データベース、およびその他のデータソースに対してサービスを有効にできます。</block>
   <block id="9c8ec203a4decddb8e9b0be1fb76ba06" category="admonition">データソースでBlueXPの分類をアクティブ化すると、すぐに初回スキャンが実行されます。スキャン結果はすぐ後に表示されます。</block>
   <block id="cf10ed09d1b432e00f7d40ae089eff17" category="section-title">BlueXPの分類を無効にする方法を教えてください。</block>
-  <block id="f4cb5ae42dd1805db0c4abe550526c1f" category="paragraph">BlueXPの分類設定ページでは、個 々 の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、またはSharePointアカウントをスキャンして、BlueXPの分類を無効にすることができます。</block>
   <block id="51da61c9b4199dc02176673546f1121d" category="admonition">BlueXP分類インスタンスを完全に削除するには、クラウドプロバイダのポータルまたはオンプレミスの場所からBlueXP分類インスタンスを手動で削除します。</block>
   <block id="65e3729b16ea2f0aa958f3b977a42b91" category="paragraph">BlueXPは分類されているため、すぐに使用できる分析情報をデータに提供します。これらの分析情報を抽出して、組織のニーズに活用できます。</block>
   <block id="b2a009fe641242daa8ff4cc2e848a015" category="paragraph">さらに、BlueXPの分類では、BlueXPの分類によってスキャンで識別される「個人データ」のカスタムリストを追加することができます。これにより、機密性の高いデータが_all_組織のファイル内のどこにあるかを全体的に把握できます。</block>
@@ -3356,14 +3342,10 @@
   <block id="13871df601ad6fe31ca70129438c5986" category="list-text">BlueXPの分類では、データベースデータソースから「最終アクセス時刻」は抽出されません。</block>
   <block id="52c31809bdb836acfc2de3ee032c0faa" category="paragraph">バージョン1.30以前では、ペタバイト規模のデータをスキャンする非常に大規模な構成では、複数のホストを追加して処理能力を高めることができます。複数のホストシステムを使用する場合、プライマリシステムは_Manager node_と呼ばれ、追加の処理能力を提供する追加システムは_Scanner Node_と 呼ばれます。</block>
   <block id="166af9c4abcdeaeaa01f2df7fcd961a7" category="inline-link-macro">インターネットアクセスのない複数のホストにBlueXP分類をインストールする</block>
-  <block id="c7b12c8155232c80e9aca6bc1eb67427" category="paragraph">バージョン1.30以前で複数のホストにBlueXP分類をインストールする必要がある場合は、を参照してください。 <block ref="94ed65ad8557cbd4dade332ad2e77a61" category="inline-link-macro-rx"></block>。</block>
   <block id="0dcde9bea70f4948a25486523fde4e97" category="paragraph">また可能です <block ref="76c224cc80265848284829e2886db42b" category="inline-link-macro-rx"></block> 完全にセキュアなサイトに。</block>
   <block id="85aa6acd6442a61f72e7d0ea942bae6f" category="admonition">旧バージョン1.30以前でスキャナノードを追加するには、を参照してください。 <block ref="6201a969fc4638d8cfca1139fbc49a51" category="inline-link-macro-rx"></block>。</block>
   <block id="7cc60b2d044c80070664df0b3bdf1a77" category="paragraph">BlueXPをインストールして使用するには、BlueXPコネクタが必要です。ほとんどの場合、BlueXPの分類をアクティブ化する前にコネクタがセットアップされていることがほとんどです<block ref="4b65067251af1a04ab5f187e9a47f47a" category="inline-link-rx"></block>ただし、ここで設定する必要がある場合もあります。</block>
   <block id="d91ed5bff9bd13eee5c43964bbe67be4" category="list-text">AWSのCloud Volumes ONTAPまたはAmazon FSx for ONTAPでデータをスキャンする場合は、AWSのコネクタを使用します。</block>
-  <block id="f7ddb3fae62084df9775f83831fce054" category="paragraph">オンプレミスのONTAPシステム、ネットアップ以外のファイル共有、データベースアカウントは、次のいずれかのクラウドコネクタを使用してスキャンできます。</block>
-  <block id="b42e6291cc6a037ddc6ee554887f32db" category="paragraph">ご覧のように、を使用する必要がある状況もあります<block ref="60e68d53c84b484e2f34cc068011138d" category="inline-link-rx"></block>。</block>
-  <block id="572512a4612a49492403a6507fd8298a" category="paragraph">複数のBlueXP分類ホストを使用してデータソースのスキャンに必要な処理能力を提供している場合は、追加のポート/プロトコルを有効にする必要があります。 <block ref="b9fe4b9748c1443c9180192248fc010d" category="inline-link-macro-rx"></block>。</block>
   <block id="428a85a15f039350823864cdd9f6711b" category="paragraph">ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。詳細はこちらlink：task-deploy-multi-host-install-dark-site.html&gt;大規模な構成での複数ホストへのインストールについて</block>
   <block id="758de85e3f025a37293713e5735825a9" category="admonition">現在、BlueXPの分類では、S3バケット、Azure NetApp Files 、FSx for ONTAP がオンプレミスにインストールされている場合はスキャンできません。このような場合は、BlueXP分類のコネクタとインスタンスを別 々 にクラウドとに導入する必要があります<block ref="3cd9b819ecbc63be3401566b7b7cbf66" category="inline-link-rx"></block> データソースごとに異なる。</block>
   <block id="f221652320e994dc66aab1d5d6da5fb7" category="paragraph">BlueXP分類をインストールすると、すべてのインストールアクティビティがログに記録されます。インストール中に問題が発生した場合は、インストール監査ログの内容を表示できます。に書き込まれます。<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block>。 <block ref="c7911c51adef419f386feff4cec8acf6" category="inline-link-macro-rx"></block>。</block>
@@ -3432,8 +3414,6 @@
   <block id="d1d0b0240f763b10942cc206a4f4e980" category="paragraph">BlueXPは分類され、次のシステム定義のポリシーが用意されています。</block>
   <block id="551ae439eb74eb4d9463c5592e518e13" category="doc">BlueXPの分類に合わせて従量課金制ライセンスを設定</block>
   <block id="bbf3f1b670e986bdd66666003ca90040" category="paragraph">データをスキャンするには、従量課金制（PAYGO）サブスクリプションが必要です。</block>
-  <block id="ef36f15af4b7e51baf5bf0e08d78a021" category="paragraph">*注*この情報は、BlueXP分類のコアバージョン1.31以降にのみ関連しています。</block>
-  <block id="aa03ad3837e520978aceb5f3f06e3acc" category="paragraph">BlueXPワークスペースでは、BlueXPの分類によってスキャンされる最大500TBのデータを対象とした30日間の無償トライアルを利用できます。その後もデータのスキャンを継続するには、NetAppからBYOLライセンスを購入するか、クラウドプロバイダのマーケットプレイスからサブスクリプションに登録する必要があります。</block>
   <block id="bb0dfe0b54c3baac2c6710b8940b4744" category="paragraph">いつでも購読することができ、30日間の試用期間が終了した後でも請求されることはありません。スキャンされているデータの合計量は、BlueXPの分類Governance Dashboardでいつでも確認できます。また、 [ 今すぐサブスクライブ ] ボタンを使用すると、準備が整ったときに簡単にサブスクライブできます。</block>
   <block id="f5e624878bf9762aa2d37e975ce44226" category="paragraph">登録することで、無償トライアルの終了後にサービスが中断されることがなくなります。トライアル期間が終了しても、BlueXP Coreバージョン1.31以降の料金は請求されません。</block>
   <block id="98700edb399fd9cd3004efe19dd93686" category="doc">Googleドライブアカウントのスキャン</block>
@@ -3476,7 +3456,6 @@
   <block id="b532da7497718d74daf0199075ee34b0" category="admonition">この環境BlueXP分類バージョン1.30以前。</block>
   <block id="87c1c448997235b59b248a48144bb882" category="section-title">AIPラベルが表示されたダッシュボードの分類領域</block>
   <block id="1fb90b34e92ce998c65c8899830aa15f" category="paragraph">ダッシュボードの_Classification_areaには、スキャンしたデータで最も識別されたAzure Information Protection（AIP）ラベルのリストが表示されます。</block>
-  <block id="e02905cfda9904851c15f359bae91eb8" category="admonition">ファイル共有を追加することは、Google Cloud NetApp Volumeからデータをスキャンする唯一の方法です。</block>
   <block id="fd9e0b72c2e1965f70f191bf060f0c35" category="doc">インターネットにアクセスしない大規模構成の場合は、複数のホストにBlueXP分類をインストールする</block>
   <block id="ff50a558849a2e68c9f240f475cf7b94" category="paragraph">インターネットアクセスがないオンプレミスサイト（_private mode_とも呼ばれます）の複数のホストにBlueXP分類をインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。</block>
   <block id="6e154273e95ff921bb43e9896a26d6bb" category="paragraph">インターネットにアクセスできないサイトのペタバイト規模のデータをスキャンする非常に大規模な構成では、複数のホストを追加して処理能力を高めることができます。複数のホストシステムを使用する場合、プライマリシステムは _Managernode_name と呼ばれ、追加の処理能力を提供する追加システムは _Scanner Node_と 呼ばれます。</block>
@@ -3511,7 +3490,6 @@
   <block id="2930994d2cff6bdaceb544c2a0169659" category="paragraph">を参照してください <block ref="fb235327a04124182aad24d53e898b94" category="inline-link-macro-rx"></block>。</block>
   <block id="3270840fec1d1272ecdf8fa5dacfe375" category="paragraph">BlueXPはBlueXPのコア機能であり、料金は発生しません。</block>
   <block id="1f5565609924c19f8cc66ee9b3e5ff8b" category="paragraph">クラウドプロバイダのMarketplaceからBlueXPサブスクリプションを購入する必要があります。</block>
-  <block id="07005138abd2ab6bc21bd0ca8dd1552a" category="paragraph">これらのクラウドコネクタを使用すると、オンプレミスのONTAPシステム、NetAppファイル共有、汎用のS3オブジェクトストレージ、データベースをスキャンできます。</block>
   <block id="178bf9bf543decf7d7b3739b703708f1" category="paragraph">AIPラベルを管理するには、既存のAzureアカウントにサインインして、AIPラベル機能をBlueXPの分類に統合する必要があります。有効にすると、すべてのファイルの AIP ラベルを管理できます <block ref="9f69f043f42f5e941f29feed1ea9caea" category="inline-link-macro-rx"></block> を選択します。</block>
   <block id="25c24221a948a50ce66f8d4fb0f6d79c" category="paragraph">クラウドプロバイダのMarketplaceへのサブスクリプションが必要です。</block>
   <block id="147b35ab5352426bba38d99d810db4ed" category="list-text">ライセンスファイルはNetApp Support Siteから取得できます。</block>
@@ -3529,4 +3507,17 @@
   <block id="58b46c120f259bfcd0cbe13c84945204" category="sidebar">データの廃止を管理する</block>
   <block id="9b07697830dbb49b6ea67bff8f36ad42" category="paragraph"><block ref="9b07697830dbb49b6ea67bff8f36ad42" category="inline-image-macro-rx" type="image"></block></block>
   <block id="39ba3e6e56f553f6665e61fc4be73bd0" category="sidebar">BlueXPのコアバージョンとレガシーバージョンで利用可能な機能</block>
+  <block id="0110688ab0278eb10777e6346a3407b7" category="paragraph">BlueXPの分類の設定ページでは、個 々 の作業環境、データベース、またはファイル共有グループがスキャンされないように設定できます。</block>
+  <block id="fd3479aa2412da82a5c0ec56898d7547" category="list-text">AWSのCloud Volumes ONTAPまたはAmazon FSx for ONTAPでデータをスキャンする場合は、AWSのコネクタを使用します。</block>
+  <block id="4ed8051d33f972fa0cc6d75e4ab1b870" category="list-text">オンプレミスのONTAPシステム、NetAppファイル共有、データベースのデータをスキャンする場合は、これらのクラウドのいずれかでコネクタを使用できます。</block>
+  <block id="7d6fb1ca0011c57644b1d2a7f6e4b92f" category="paragraph">これらのクラウドコネクタを使用すると、オンプレミスのONTAPシステム、NetAppファイル共有、データベースをスキャンできます。</block>
+  <block id="45c3f94e2c6cdec1b996f63c1e4f35d4" category="paragraph">オンプレミスのONTAPシステム、NetAppファイル共有、データベースアカウントは、次のいずれかのクラウドコネクタを使用してスキャンできます。</block>
+  <block id="66bad41fed356683067822a39c0f9de3" category="paragraph">*注*この情報は、BlueXP分類のコアバージョン1.31以降にのみ関連しています。以前のバージョン1.30以前の場合は、BYOLライセンスを使用することもできます。</block>
+  <block id="354edbe327cd09667a9ea94c49b976f7" category="paragraph">BlueXPワークスペースでは、BlueXPの分類によってスキャンされる最大500TBのデータを対象とした30日間の無償トライアルを利用できます。その後もデータのスキャンを継続するには、クラウドプロバイダーのマーケットプレイスからサブスクリプションにサインアップする必要があります。</block>
+  <block id="e134a6a7927c694ae4d422caedd41a01" category="section-title">以前のバージョンのBlueXP分類BYOLライセンスを更新する</block>
+  <block id="3001385112718c67b07ae5d62555bd7e" category="section-title">旧バージョンのBYOLライセンスに関する考慮事項</block>
+  <block id="12a96925a3b6ebd1419915c8b0bfada9" category="paragraph">いくつかの手順を実行して、Google Cloud NetApp Volumeおよび古いNetApp 7-ModeシステムからNFSまたはCIFSファイル共有のスキャンを開始します。これらのファイル共有は、オンプレミスでもクラウドでもかまいません。</block>
+  <block id="f146ec0537a829117da7d3ce3e588d3b" category="admonition">ネットアップ以外のファイル共有からのデータのスキャンは、BlueXP分類コアバージョンではサポートされていません。</block>
+  <block id="d809bb142c0a96aef201dfc891e977e3" category="list-text">共有は、クラウド内やオンプレミスなど、どこでもホストできます。古いNetApp 7-ModeストレージシステムのCIFS共有は、ファイル共有としてスキャンできます。</block>
+  <block id="8fedda70275ec7ba2bbf1cf099d2a559" category="paragraph"><block ref="8fedda70275ec7ba2bbf1cf099d2a559" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

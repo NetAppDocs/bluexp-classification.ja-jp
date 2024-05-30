@@ -30,7 +30,8 @@ image:diagram_deploy_onprem_cloud_instance.png["必要なBlueXPとネットワ�
 
 バージョン1.30以前では、ペタバイト規模のデータをスキャンする非常に大規模な構成では、複数のホストを追加して処理能力を高めることができます。複数のホストシステムを使用する場合、プライマリシステムは_Manager node_と呼ばれ、追加の処理能力を提供する追加システムは_Scanner Node_と 呼ばれます。
 
-バージョン1.30以前で複数のホストにBlueXP分類をインストールする必要がある場合は、を参照してください。 link:task-deploy-multi-host-install-dark-site.html["インターネットアクセスのない複数のホストにBlueXP分類をインストールする"]。
+
+NOTE: 以前のバージョン1.30以前で複数のホストにBlueXP分類をインストールする必要がある場合は、を参照してください。 link:task-deploy-multi-host-install-dark-site.html["インターネットアクセスのない複数のホストにBlueXP分類をインストールする"]。
 
 また可能です link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスサイトにBlueXPの分類をインストールします"] 完全にセキュアなサイトに。
 
@@ -83,11 +84,9 @@ Azure NetApp Files の場合は、スキャンするボリュームと同じ領�
 * GCP の Cloud Volumes ONTAP でデータをスキャンする場合は、 GCP のコネクタを使用します。
 
 
-オンプレミスのONTAPシステム、ネットアップ以外のファイル共有、データベースアカウントは、次のいずれかのクラウドコネクタを使用してスキャンできます。
+オンプレミスのONTAPシステム、NetAppファイル共有、データベースアカウントは、次のいずれかのクラウドコネクタを使用してスキャンできます。
 
 また、次のことも可能です https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスに導入"^] ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。BlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。
-
-ご覧のように、を使用する必要がある状況もあります https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["複数のコネクタ"]。
 
 BlueXP分類をインストールするときは、コネクタシステムのIPアドレスまたはホスト名が必要です。この情報は、コネクタをオンプレミスにインストールした場合に表示されます。コネクタがクラウドに導入されている場合は、BlueXPコンソールで[ヘルプ]アイコンをクリックし、[*サポート]を選択して、[* BlueXPコネクタ*]をクリックします。
 
@@ -316,8 +315,6 @@ Active Directory の次の情報が必要です。
 
 
 |===
-複数のBlueXP分類ホストを使用してデータソースのスキャンに必要な処理能力を提供している場合は、追加のポート/プロトコルを有効にする必要があります。 link:task-deploy-compliance-onprem.html["追加のポート要件を参照してください"]。
-
 
 
 == LinuxホストにBlueXP分類をインストールします
