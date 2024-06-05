@@ -65,19 +65,19 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 
 | *大きい* | 16 CPU | 64GBのRAM | 500GiB SSDオン/、または
 -100GiBは/optで利用可能
--395GiBは/var/lib/dockerで使用可能
+-395GiBは/var/lib/docker、Podman/var/lib/containers、またはPodman/var/lib/containersで使用可能
 -5GiB（/tmp 
 
 
 | *中* | 8 CPU | 32GBのRAM | 200GiB SSDオン/、または
 -50GiBは/optで利用可能
--145GiBは/var/lib/dockerで使用可能
+-145GiBは/var/lib/dockerまたはPodman/var/lib/containersで使用可能
 -5GiB（/tmp 
 
 
 | *小さい* | 8 CPU | 16GB の RAM | 100GiB SSDオン/、または
 -50GiBは/optで利用可能
--45GiBは/var/lib/dockerで使用可能
+-45GiBは/var/lib/dockerまたはPodman/var/lib/containersで使用可能
 -5GiB（/tmp 
 |===
 +
@@ -85,7 +85,7 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 
 * BlueXP分類インストール用にコンピューティングインスタンスをクラウドに導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。
 +
-** * AWS EC2インスタンスタイプ*：「m6i.4xlarge」を推奨します。 link:reference-instance-types.html#aws-instance-types["その他のAWSインスタンスタイプを参照してください"^]。
+** * Amazon Elastic Compute Cloud（Amazon EC2）インスタンスタイプ*：「m6i.4xlarge」を推奨します。 link:reference-instance-types.html#aws-instance-types["その他のAWSインスタンスタイプを参照してください"^]。
 ** * Azure VMのサイズ*：「Standard_D16s_v3」を推奨します。 link:reference-instance-types.html#azure-instance-types["その他のAzureインスタンスタイプを参照してください"^]。
 ** *GCPマシンタイプ*:「n2-standard-16」をお勧めします。 link:reference-instance-types.html#gcp-instance-types["追加のGCPインスタンスタイプを参照してください"^]。
 

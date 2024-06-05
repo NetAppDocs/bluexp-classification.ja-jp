@@ -52,7 +52,7 @@ BlueXPの分類では「最終アクセス日時」を元のタイムスタン�
 
 image:screenshot_scan_missing_permissions.png["最終アクセス時間を元のタイムスタンプに戻すための適切な権限がない場合でも、BlueXP分類でファイルをスキャンするために使用できるスイッチのスクリーンショット。"]
 
-この機能は、オンプレミスのONTAP システム、Cloud Volumes ONTAP 、Azure NetApp Files 、FSx for ONTAP 、ネットアップ以外のファイル共有に適用されます。
+この機能は、オンプレミスのONTAPシステム、Cloud Volumes ONTAP、Azure NetApp Files、FSx for ONTAP、サードパーティのファイル共有に適用されます。
 
 [Investigation]ページには、_Scan Analysis Event_というフィルタがあります。BlueXPの分類では最終アクセス時刻を元に戻すことができなかったため、分類されなかったファイルを表示できます。 または、BlueXPの分類で最終アクセス時間を元に戻すことができなかったにもかかわらず、分類されたファイル。
 
