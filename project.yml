@@ -51,8 +51,6 @@ sidebar:
         url: "/task-scanning-file-shares.html"
     - title: Active Directory を統合します
       url: "/task-add-active-directory-datasense.html"
-    - title: ライセンスをセットアップする
-      url: "/task-licensing-datasense.html"
     - title: よく寄せられる質問
       url: "/faq-cloud-compliance.html"
   - title: BlueXP分類を使用
@@ -91,8 +89,6 @@ sidebar:
         url: "/task-deploy-multi-host-install-dark-site.html"
       - title: 既存の環境にスキャナノードを追加する
         url: "/task-deploy-add-scanner-nodes.html"
-      - title: 無償トライアルをセットアップするか、お客様所有のライセンスを使用
-        url: "/task-licensing-byol-freetrial.html"
     - title: スキャンデータの非推奨化
       entries:
       - title: Amazon S3バケットをスキャン

@@ -202,5 +202,3 @@ image:screenshot_work_env_id.png["BlueXPの分類の[Configuration]ページに�
 また、すべてのスキャナグループのリスト、および[設定]ページの下部にあるグループ内の各スキャナノードのIPアドレスとステータスを表示することもできます。
 
 image:screenshot_scanner_groups.png["すべてのスキャナグループと、グループ内の各スキャナノードのIPアドレスを示すスクリーンショット。"]
-
-可能です link:task-licensing-datasense.html["BlueXP分類用のライセンスをセットアップ"] 現時点では、30日間の無料トライアルが終了するまで、料金はかかりません。

@@ -39,10 +39,6 @@ BlueXP分類をクラウドに導入するには、いくつかの手順を実�
 [role="quick-margin-para"]
 インストールウィザードを起動して、BlueXP分類インスタンスをクラウドに導入します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] BlueXP分類サービスにサブスクライブします
-[role="quick-margin-para"]
-クラウドプロバイダのMarketplaceからBlueXPサブスクリプションを購入する必要があります。
-
 
 
 == コネクタを作成します
@@ -257,5 +253,3 @@ BlueXPは、BlueXP分類インスタンスをクラウドプロバイダに導�
 
 .次のステップ
 設定ページで、スキャンするデータソースを選択できます。
-
-また可能です link:task-licensing-datasense.html["BlueXP分類用のライセンスをセットアップ"] 現時点では、30日間の無料トライアルが終了するまで、料金はかかりません。

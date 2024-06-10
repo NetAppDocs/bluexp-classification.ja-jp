@@ -16,6 +16,9 @@ summary: グローバルなActive DirectoryとBlueXPの分類を統合すると�
 [role="lead"]
 グローバルなActive DirectoryとBlueXPの分類を統合すると、BlueXPの分類で報告されるファイル所有者や、どのユーザやグループがファイルにアクセスできるかについての結果を強化できます。
 
+
+NOTE: Active Directoryとの統合は、BlueXP分類コアバージョンではサポートされていません。
+
 BlueXPでCIFSボリュームをスキャンするためには、特定のデータソース（以下を参照）を設定するときにActive Directoryのクレデンシャルを入力する必要があります。この統合により、BlueXPの分類に、それらのデータソースに存在するデータのファイル所有者と権限の詳細が表示されます。これらのデータソースに対して入力するActive Directoryは、ここで入力するグローバルActive Directory資格情報とは異なる場合があります。BlueXPの分類では、統合されているすべてのActive Directoryでユーザと権限の詳細が確認されます。
 
 この統合により、BlueXPでは次の場所で追加情報 が提供されます。

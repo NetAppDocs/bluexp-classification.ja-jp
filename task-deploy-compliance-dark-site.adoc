@@ -69,10 +69,6 @@ Linux システムがを満たしていることを確認します <<Linux ホ�
 [role="quick-margin-para"]
 NetApp Support Site からBlueXP分類ソフトウェアをダウンロードし、使用するLinuxホストにインストーラファイルをコピーします。インストールウィザードを起動し、画面の指示に従ってBlueXP分類インスタンスを導入します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] BlueXP分類サービスにサブスクライブします
-[role="quick-margin-para"]
-クラウドプロバイダのMarketplaceへのサブスクリプションが必要です。
-
 
 
 == BlueXPコネクタを取り付けます
@@ -375,8 +371,6 @@ BlueXP分類インストーラは、パッケージをインストールして�
 .次のステップ
 設定ページからローカルを選択できます link:task-getting-started-compliance.html["オンプレミスの ONTAP クラスタ"] および link:task-scanning-databases.html["データベース"] をスキャンします。
 
-また可能です link:task-licensing-datasense.html["BlueXP分類用のBYOLライセンスをセットアップ"] （この時点ではBlueXPのデジタルウォレットページから）。30日間の無料トライアルが終了するまで、料金はかかりません。
-
 
 
 == BlueXP分類ソフトウェアをアップグレードします
@@ -422,7 +416,5 @@ start_darksite_upgrade.sh
 
 .結果
 ホストでBlueXP分類ソフトウェアがアップグレードされます。更新には 5 ～ 10 分かかる場合があります。
-
-大規模な構成をスキャンするために複数のホストシステムにBlueXP分類を導入している場合は、スキャナノードでアップグレードする必要はありません。
 
 BlueXP分類UIページの下部でバージョンを確認すると、ソフトウェアが更新されたことを確認できます。

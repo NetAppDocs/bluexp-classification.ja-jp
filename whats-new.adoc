@@ -24,34 +24,6 @@ BlueXP分類の新機能（Cloud Data Sense）をご紹介します。
 
 
 
-=== マッピングスキャンによるメタデータの収集
-
-マッピングスキャン中にファイルから次のメタデータが抽出され、Governance、Compliance、Investigationの各ダッシュボードに表示されます。
-
-* 作業環境
-* 作業環境のタイプ
-* ストレージリポジトリ
-* ファイルタイプ
-* 使用済み容量
-* ファイル数
-* ファイルサイズ
-* ファイル作成
-* ファイルの最終アクセス
-* ファイルの最終変更日
-* ファイル検出時刻
-* 権限の抽出
-
-
-
-
-=== タツシユホトノツイカテタ
-
-このリリースでは、マッピングスキャン中にGovernance、Compliance、およびInvestigationの各ダッシュボードに表示されるデータが更新されます。
-
-詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングスキャンと分類スキャンの違い"]
-
-
-
 === [Configuration]ページの新しい[Mapping status]列
 
 このリリースでは、[Configuration]ページに新しい[Mapping status]列が表示されるようになりました。新しい列では、マッピングが実行中、キューに登録済み、一時停止中、またはそれ以上であるかどうかを確認できます。

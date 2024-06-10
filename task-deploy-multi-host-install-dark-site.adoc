@@ -85,5 +85,3 @@ BlueXP分類インストーラがパッケージのインストールを完了�
 
 .次のステップ
 設定ページからローカルを選択できます link:task-getting-started-compliance.html["オンプレミスの ONTAP クラスタ"] および local です link:task-scanning-databases.html["データベース"] をスキャンします。
-
-また可能です link:task-licensing-datasense.html["BlueXP分類用のBYOLライセンスをセットアップ"] （この時点ではBlueXPのデジタルウォレットページから）。30日間の無料トライアルが終了しても、料金は請求されません。
