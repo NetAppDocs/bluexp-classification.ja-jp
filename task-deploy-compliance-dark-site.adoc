@@ -47,7 +47,7 @@ BlueXPのほとんどの分類機能は、インターネットアクセスの�
 * BlueXPのコピーと同期を使用したソースファイルのコピーと同期
 * BlueXPからの自動ソフトウェアアップグレード
 +
-BlueXP ConnectorとBlueXPのどちらも、新機能を有効にするために定期的な手動アップグレードが必要になります。BlueXP分類バージョンは、BlueXP分類UIページの下部で確認できます。を確認します link:whats-new.html["BlueXPの分類に関するリリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["BlueXP Connectorをアップグレードします"^] および <<BlueXP分類ソフトウェアをアップグレードします,BlueXP分類ソフトウェアをアップグレードします>>。
+BlueXP ConnectorとBlueXPのどちらも、新機能を有効にするために定期的な手動アップグレードが必要になります。BlueXP分類バージョンは、BlueXP分類UIページの下部で確認できます。を確認します link:whats-new.html["BlueXPの分類に関するリリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["BlueXP Connectorをアップグレードします"^] および <<BlueXP分類ソフトウェアをアップグレードします,BlueXP分類ソフトウェアをアップグレードします>>。
 
 
 
@@ -378,7 +378,7 @@ BlueXP分類インストーラは、パッケージをインストールして�
 BlueXPの分類ソフトウェアは定期的に新機能で更新されるため、定期的に新しいバージョンをチェックして、最新のソフトウェアや機能を使用しているかどうかを確認する必要があります。自動的にアップグレードを実行するためのインターネット接続がないため、BlueXP分類ソフトウェアは手動でアップグレードする必要があります。
 
 .作業を開始する前に
-* BlueXP Connectorソフトウェアを最新バージョンにアップグレードすることを推奨します。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["コネクタのアップグレード手順を参照してください"^]。
+* BlueXP Connectorソフトウェアを最新バージョンにアップグレードすることを推奨します。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["コネクタのアップグレード手順を参照してください"^]。
 * BlueXP分類バージョン1.24以降では、ソフトウェアの将来のバージョンへのアップグレードを実行できます。
 +
 BlueXP分類ソフトウェアで1.24より前のバージョンが実行されている場合、一度にアップグレードできるメジャーバージョンは1つだけです。たとえば、バージョン1.21.xがインストールされている場合は、1.22.xにのみアップグレードできます。いくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。
