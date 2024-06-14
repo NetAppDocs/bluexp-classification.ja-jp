@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman, install bluexp classification, cloud data sense 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman, install bluexp classification, cloud data sense, cds 
 summary: いくつかの手順を実行して、ネットワーク内のLinuxホスト、またはインターネットにアクセスできるクラウド内のLinuxホストにBlueXP分類をインストールします。このインストールの一環として、Linuxホストをネットワークまたはクラウドに手動で導入する必要があります。 
 ---
 = インターネットにアクセスできるホストにBlueXP分類をインストールします
@@ -95,7 +95,7 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 BlueXPの分類を継続して実行できることを確認します。BlueXP分類マシンは、データを継続的にスキャンするためにオンのままにする必要があります。
 
 * BlueXPの分類は、他のアプリケーションと共有するホストではサポートされません。専用のホストである必要があります。
-* オンプレミスでホストシステムを構築する場合は、BlueXP分類スキャンを実行するデータセットのサイズに応じて、3つのシステムサイズの中から選択できます。
+* オンプレミスでホストシステムを構築する場合は、BlueXP分類スキャンを実行するデータセットのサイズに応じて、これらのシステムサイズの中から選択できます。
 +
 [cols="17,17,27,31"]
 |===
@@ -112,22 +112,7 @@ BlueXPの分類を継続して実行できることを確認します。BlueXP�
 -100GiBは/optで利用可能
 -395GiBは/var/lib/docker、Podman/var/lib/containers、またはPodman/var/lib/containersで使用可能
 -5GiB（/tmp 
-
-
-| *中* | 8 CPU | 32GBのRAM | 200GiB SSDオン/、または
--50GiBは/optで利用可能
--145GiBは/var/lib/dockerまたはPodman/var/lib/containersで使用可能
--5GiB（/tmp 
-
-
-| *小さい* | 8 CPU | 16GB の RAM | 100GiB SSDオン/、または
--50GiBは/optで利用可能
--45GiBは/var/lib/dockerまたはPodman/var/lib/containersで使用可能
--5GiB（/tmp 
 |===
-+
-小規模なシステムを使用する場合は制限があることに注意してください。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
-
 * BlueXP分類インストール用にコンピューティングインスタンスをクラウドに導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。
 +
 ** * Amazon Elastic Compute Cloud（Amazon EC2）インスタンスタイプ*：「m6i.4xlarge」を推奨します。 link:reference-instance-types.html#aws-instance-types["その他のAWSインスタンスタイプを参照してください"^]。

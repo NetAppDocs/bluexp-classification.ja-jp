@@ -1812,9 +1812,6 @@
   <block id="3a69b34ce86dacb205936a8094f6c743" category="cell">大規模</block>
   <block id="dc8179e6e72156a5578bf35cf9574540" category="cell">16 CPU</block>
   <block id="5a1fdf37d5cd85436f7504641d78b95f" category="cell">64GBのRAM</block>
-  <block id="bef6aed074693bd02885fa89c8b418f0" category="cell">8 CPU</block>
-  <block id="70eb72cfa1dbdb5556e79344f161d62a" category="cell">32GBのRAM</block>
-  <block id="e706090ac76b3e56523819912497e0f6" category="cell">16GB の RAM</block>
   <block id="3080c7bbf6707274907b8ec2e97fb7a8" category="list-text">インターネットへのアクセスにプロキシを使用している場合：</block>
   <block id="872a9ee7c158e8dd5094c5c93dcffc57" category="list-text">プロキシサーバー情報(IPアドレスまたはホスト名、接続ポート、接続スキーム: httpsまたはhttp、ユーザー名とパスワード)が必要です。</block>
   <block id="829124a47242d374aed9d0704a781736" category="paragraph">社内_のLinuxホスト_への一般的なインストールには、次のコンポーネントと接続があります。</block>
@@ -1863,8 +1860,6 @@
   <block id="088be43867eaac29f74142859d1e2a13" category="paragraph">前提条件スクリプトを実行するときに、コネクタシステムのIPアドレスまたはホスト名が必要になります。この情報は、コネクタをオンプレミスにインストールした場合に表示されます。コネクタがクラウドに導入されている場合は、BlueXPコンソールで[ヘルプ]アイコンをクリックし、[*サポート]を選択して、[* BlueXPコネクタ*]をクリックします。</block>
   <block id="93144470251168b3e5488b736447f48f" category="section-title">ホストの要件を確認</block>
   <block id="c1b7308083354b8b60760460bcce3ccc" category="cell">*大きい*</block>
-  <block id="f3e6e184202c9901024fa409f2c24cb1" category="cell">*中*</block>
-  <block id="e8ae9f0392263b55e4580177a75c948e" category="cell">*小さい*</block>
   <block id="e6414c92b8fa46238f4135e4d3e45674" category="inline-link-macro">その他のAWSインスタンスタイプを参照してください</block>
   <block id="130a6b20e1175876fb22c9520aa18c8c" category="inline-link-macro">その他のAzureインスタンスタイプを参照してください</block>
   <block id="d713d26696157989a3e54d75e186ddb9" category="list-text">* Azure VMのサイズ*：「Standard_D16s_v3」を推奨します。 <block ref="600a0a16acacbb97202eae2cd680ce79" category="inline-link-macro-rx"></block>。</block>
@@ -3053,7 +3048,6 @@
 -100GiBは/optで利用可能
 -895GiBを/var/lib/dockerで使用可能
 -5GiB（/tmp</block>
-  <block id="7e6ae7e8de71f1a36043487bc45a85eb" category="paragraph">小規模なシステムを使用する場合は制限があることに注意してください。を参照してください <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="7644f60fe7823935bde3cbe9f9e82bf8" category="section-title">AIP ラベルを使用してデータを分類します</block>
   <block id="0ed54f1d736772cdfa10d041612c19cc" category="section-title">ワークスペースにAIPラベルを統合</block>
   <block id="dc868ca3e5d8a2a78f0a032d630be98e" category="section-title">ファイル内のAIPラベルの表示</block>
@@ -3126,7 +3120,6 @@
   <block id="f72e4f10556fdc1e84c715407cbda16b" category="sidebar">プライベート情報を含むファイルを表示します</block>
   <block id="53aba5c7ba7952b6d58e9dfb83a4516e" category="sidebar">ストレージに複製されているファイルを表示します</block>
   <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">データをフィルタして、特定のファイルを表示します</block>
-  <block id="40af1406afc061038f5851961a636714" category="sidebar">準拠していないデータが見つかった場合にアラートを E メールで送信</block>
   <block id="9293f14feca10eb970a136a34ecc9d8c" category="sidebar">データサブジェクトのアクセス要求に応答します</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログとコミュニティ</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
@@ -3484,18 +3477,9 @@
   <block id="7478ade8cfb34d944424b511227fdfa2" category="paragraph">レポートが1MBを超える場合、.pdfファイルはBlueXP分類インスタンスに保持され、正確な場所に関するポップアップメッセージが表示されます。BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、.pdfファイルに直接移動できます。BlueXP分類をクラウドに導入したら、BlueXP分類インスタンスにSSHでアクセスして.pdfファイルをダウンロードする必要があります。 <block ref="21695d5d9eec77c608b7fe7666155715" category="inline-link-macro-rx"></block>。</block>
   <block id="a271d225cad25b912ce5858124897ffe" category="paragraph">Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、システムの調査結果を強調し、懸念領域と潜在的な修復手順を示します。結果は、データのマッピングと分類の両方に基づいています。このレポートの目的は、データセットの次の3つの重要な側面についての認知度を高めることです。</block>
   <block id="a5c44a10e9c98a0d20204951c490574b" category="paragraph">この機能は、オンプレミスのONTAPシステム、Cloud Volumes ONTAP、Azure NetApp Files、FSx for ONTAP、サードパーティのファイル共有に適用されます。</block>
-  <block id="cd0e4d172a3c3cc49c7d48effd234198" category="list-text">オンプレミスでホストシステムを構築する場合は、BlueXP分類スキャンを実行するデータセットのサイズに応じて、3つのシステムサイズの中から選択できます。</block>
   <block id="30786f70a10900b6a9d4fd46363a55cb" category="cell">500GiB SSDオン/、または
 -100GiBは/optで利用可能
 -395GiBは/var/lib/docker、Podman/var/lib/containers、またはPodman/var/lib/containersで使用可能
--5GiB（/tmp</block>
-  <block id="fb7aa8c3ffe50126e6eca8378926faad" category="cell">200GiB SSDオン/、または
--50GiBは/optで利用可能
--145GiBは/var/lib/dockerまたはPodman/var/lib/containersで使用可能
--5GiB（/tmp</block>
-  <block id="276dee9bc704113bddf51474d12b15ff" category="cell">100GiB SSDオン/、または
--50GiBは/optで利用可能
--45GiBは/var/lib/dockerまたはPodman/var/lib/containersで使用可能
 -5GiB（/tmp</block>
   <block id="b5f08a168a732355a95d9acdc430dcaf" category="list-text">* Amazon Elastic Compute Cloud（Amazon EC2）インスタンスタイプ*：「m6i.4xlarge」を推奨します。 <block ref="2fad631c28a07a1344ecdbaabb5084bf" category="inline-link-macro-rx"></block>。</block>
   <block id="797b21f4662c52d1572473764912397d" category="paragraph">内容は可能である<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block> の実行後に実際にコミットされたものとは異なる構成ファイル<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block> スクリプト：BlueXPの分類に追加したグループIDの現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer _configuration/data_providers」から次のコマンドを実行します。</block>
@@ -3559,4 +3543,5 @@
   <block id="ee817e39b08fa171d62efb8f7b4143b2" category="admonition">Active Directoryとの統合は、BlueXP分類コアバージョンではサポートされていません。</block>
   <block id="14aa1b744a832a1cebfb9dd4d34b809d" category="paragraph">BlueXP ConnectorとBlueXPのどちらも、新機能を有効にするために定期的な手動アップグレードが必要になります。BlueXP分類バージョンは、BlueXP分類UIページの下部で確認できます。を確認します <block ref="4cc8c968e2438af740515443c2861b36" category="inline-link-macro-rx"></block> 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します<block ref="29c5c6557943f5249ffe666c6e468ce9" category="inline-link-rx"></block> および <block ref="b1d8f2a5489be1789530a7fc668375fb" category="inline-xref-macro-rx"></block>。</block>
   <block id="8a39158958544ff49d3dc95bad3f3a82" category="list-text">BlueXP Connectorソフトウェアを最新バージョンにアップグレードすることを推奨します。<block ref="4abf459c8cfa6d4ca98cecc130eefa9a" category="inline-link-rx"></block>。</block>
+  <block id="914179b3d4545ce8b8e8ba122c53f4d9" category="list-text">オンプレミスでホストシステムを構築する場合は、BlueXP分類スキャンを実行するデータセットのサイズに応じて、これらのシステムサイズの中から選択できます。</block>
 </blocks>

@@ -50,7 +50,7 @@ BlueXPをインストールして使用するには、BlueXPコネクタが必�
 BlueXP分類ソフトウェアは、特定のオペレーティングシステム要件、RAM要件、ソフトウェア要件などを満たすホストで実行する必要があります。
 
 * BlueXPの分類は、他のアプリケーションと共有するホストではサポートされません。専用のホストである必要があります。
-* オンプレミスでホストシステムを構築する場合は、BlueXP分類スキャンを実行するデータセットのサイズに応じて、3つのシステムサイズの中から選択できます。
+* オンプレミスでホストシステムを構築する場合は、BlueXP分類スキャンを実行するデータセットのサイズに応じて、これらのシステムサイズの中から選択できます。
 +
 [cols="17,17,27,31"]
 |===
@@ -67,22 +67,7 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 -100GiBは/optで利用可能
 -395GiBは/var/lib/docker、Podman/var/lib/containers、またはPodman/var/lib/containersで使用可能
 -5GiB（/tmp 
-
-
-| *中* | 8 CPU | 32GBのRAM | 200GiB SSDオン/、または
--50GiBは/optで利用可能
--145GiBは/var/lib/dockerまたはPodman/var/lib/containersで使用可能
--5GiB（/tmp 
-
-
-| *小さい* | 8 CPU | 16GB の RAM | 100GiB SSDオン/、または
--50GiBは/optで利用可能
--45GiBは/var/lib/dockerまたはPodman/var/lib/containersで使用可能
--5GiB（/tmp 
 |===
-+
-小規模なシステムを使用する場合は制限があることに注意してください。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
-
 * BlueXP分類インストール用にコンピューティングインスタンスをクラウドに導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。
 +
 ** * Amazon Elastic Compute Cloud（Amazon EC2）インスタンスタイプ*：「m6i.4xlarge」を推奨します。 link:reference-instance-types.html#aws-instance-types["その他のAWSインスタンスタイプを参照してください"^]。

@@ -43,8 +43,6 @@ indexpage:
       url: task-using-policies.html
     - title: コンプライアンスレポートを生成します
       url: task-generating-compliance-reports.html
-    - title: 準拠していないデータが見つかった場合にアラートを E メールで送信
-      url: task-using-policies.html
     - title: データサブジェクトのアクセス要求に応答します
       url: task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports
   - title: 廃止された機能
