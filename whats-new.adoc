@@ -18,6 +18,46 @@ BlueXP分類の新機能（Cloud Data Sense）をご紹介します。
 
 
 
+== 2024年7月1日（バージョン1.33）
+
+このリリースには、次の更新が含まれています。
+
+
+
+=== Ubuntuのサポート
+
+このリリースでは、Ubuntu 24.04 Linuxプラットフォームがサポートされます。
+
+
+
+=== マッピングスキャンによるメタデータの収集
+
+マッピングスキャン中にファイルから次のメタデータが抽出され、Governance、Compliance、Investigationの各ダッシュボードに表示されます。
+
+* 作業環境
+* 作業環境のタイプ
+* ストレージリポジトリ
+* ファイルタイプ
+* 使用済み容量
+* ファイル数
+* ファイルサイズ
+* ファイル作成
+* ファイルの最終アクセス
+* ファイルの最終変更日
+* ファイル検出時刻
+* 権限の抽出
+
+
+
+
+=== タツシユホトノツイカテタ
+
+このリリースでは、マッピングスキャン中にGovernance、Compliance、およびInvestigationの各ダッシュボードに表示されるデータが更新されます。
+
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングスキャンと分類スキャンの違い"]
+
+
+
 == 2024年6月5日（バージョン1.32）
 
 このリリースには、次の更新が含まれています。

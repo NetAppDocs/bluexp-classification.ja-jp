@@ -4,7 +4,7 @@ permalink: task-controlling-private-data.html
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
 summary: 組織内の個人データと機密性の高い個人データに関する詳細を表示することで、個人データを管理できます。BlueXPで分類されたデータのカテゴリやファイルタイプを確認することで、データを可視化することもできます。 
 ---
-= 組織に保存されているデータに関するコンプライアンスの詳細を表示する
+= 組織に保存されているプライベートデータに関するコンプライアンスの詳細を表示する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 組織内の個人データと機密性の高い個人データに関�
 
 
 [role="lead"]
-組織内の個人データと機密性の高い個人データに関する詳細を表示することで、個人データを管理できます。BlueXPで分類されたデータのカテゴリやファイルタイプを確認することで、データを可視化することもできます。
+組織内の個人データ(PII)と機密性の高い個人データ(SPII)の詳細を表示することで、個人データを制御できます。BlueXPで分類されたデータのカテゴリやファイルタイプを確認することで、データを可視化することもできます。
 
 
 NOTE: このセクションで説明する機能は、データソースに対して完全な分類スキャンを実行することを選択した場合にのみ使用できます。マッピングのみのスキャンを実行したデータソースでは、ファイルレベルの詳細は表示されません。
