@@ -79,7 +79,7 @@ RHEL 8.xおよびRHEL 9.xを使用している場合、次の機能は現在サ�
 +
 https://youtu.be/Ogoufel1q6c["こちらのビデオをご覧ください"^] では、CentOSへのDockerのインストールの簡単なデモをご覧ください。
 
-*** Podmanバージョン4以降。Podmanをインストールするには、システムパッケージを更新します。 (`sudo yum update -y`）をクリックし、Podmanをインストールします。 (`sudo yum install netavark -y`）。
+*** Podmanバージョン4以降。Podmanをインストールするには、と入力し (`sudo yum install podman netavark -y`ます）。
 
 
 
