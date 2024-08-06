@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-test-linux-system.html 
-keywords: cloud compliance, data sense, get started, deploy, bluexp classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman, dark site, bluexp 
+keywords: cloud compliance, bluexp, data sense, get started, deploy, bluexp classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman, ubuntu, rhel, dark site, bluexp 
 summary: LinuxホストにBlueXPの分類を手動でインストールする前に、ホストでスクリプトを実行して、BlueXPの分類をインストールするための前提条件がすべて揃っていることを確認することができます。このスクリプトは、ネットワーク内のLinuxホストまたはクラウド内のLinuxホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイトに配置することもできます。 
 ---
 = LinuxホストでBlueXP分類をインストールできる状態になっていることを確認します
@@ -98,8 +98,8 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 ** 次のオペレーティングシステムでは、Dockerコンテナエンジンを使用する必要があります。
 +
 *** Red Hat Enterprise Linuxバージョン7.8および7.9
-*** CentOSバージョン7.8および7.9
 *** Ubuntu 22.04（BlueXP分類バージョン1.23以降が必要）
+*** Ubuntu 24.04（BlueXP分類バージョン1.23以降が必要）
 
 
 ** 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.30以降が必要です。

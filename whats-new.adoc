@@ -18,6 +18,20 @@ BlueXP分類の新機能（Cloud Data Sense）をご紹介します。
 
 
 
+== 2024年8月5日（バージョン1.34）
+
+このBlueXP  分類リリースには、次の更新が含まれています。
+
+
+
+=== CentOSからUbuntuへの変更
+
+BlueXP  の分類により、Microsoft AzureおよびGoogle Cloud Platform (GCP)用のLinuxオペレーティングシステムがCentOS 7.9からUbuntu 22.04に更新されました。
+
+導入の詳細については、を参照して https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html#prepare-the-linux-host-system["インターネットにアクセスできるLinuxホストにインストールし、Linuxホストシステムを準備する"]ください。
+
+
+
 == 2024年7月1日（バージョン1.33）
 
 このリリースには、次の更新が含まれています。
