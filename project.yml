@@ -39,16 +39,18 @@ sidebar:
         url: "/task-test-linux-system.html"
     - title: データソースでスキャンをアクティブ化します
       entries:
-      - title: Cloud Volumes ONTAP とオンプレミス ONTAP
-        url: "/task-getting-started-compliance.html"
       - title: Azure NetApp Files の特長
         url: "/task-scanning-anf.html"
       - title: ONTAP 対応の Amazon FSX
         url: "/task-scanning-fsx.html"
+      - title: Cloud Volumes ONTAP とオンプレミス ONTAP
+        url: "/task-getting-started-compliance.html"
       - title: データベーススキーマ
         url: "/task-scanning-databases.html"
       - title: ファイル共有
         url: "/task-scanning-file-shares.html"
+      - title: StorageGRID
+        url: "/task-scanning-storagegrid.html"
     - title: Active Directory を統合します
       url: "/task-add-active-directory-datasense.html"
     - title: よく寄せられる質問

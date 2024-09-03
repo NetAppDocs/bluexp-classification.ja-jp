@@ -373,8 +373,6 @@ BlueXPを使用すると、オンプレミス、クラウド、ハイブリッ�
 * GCPでは、BlueXPの分類は、500GiB Standard永続ディスクを搭載したn2-standard-16 VMで実行されます。
 
 
-CPUとRAMの数が少ないシステムにBlueXPの分類を導入できますが、これらのシステムを使用する場合は制限があります。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
-
 link:concept-cloud-compliance.html["BlueXPの分類の仕組みについて詳しくは、こちらをご覧ください"^]。
 
 

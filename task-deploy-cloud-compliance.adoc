@@ -173,8 +173,6 @@ vCPU の制限の詳細については、次のリンクを参照してくださ
 * https://cloud.google.com/compute/quotas["Google Cloud のドキュメント：リソースクォータ"^]
 
 
-CPUとRAMの数が少ないAWSクラウド環境のインスタンスにBlueXP分類を導入できますが、これらのシステムの使用には制限があります。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
-
 --
 
 

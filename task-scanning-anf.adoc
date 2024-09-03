@@ -4,7 +4,7 @@ permalink: task-scanning-anf.html
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, azure netApp files, data sense 
 summary: いくつかの手順を実行して、Azure NetApp Files 向けBlueXPの分類を開始してください。 
 ---
-= BlueXPでAzure NetApp Files の分類を開始します
+= Azure NetApp FilesのBlueXP  分類を開始する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -59,7 +59,7 @@ BlueXPの分類が有効になったので、すべてのボリュームにア�
 
 
 
-== スキャンする Azure NetApp Files システムを検出しています
+== スキャンするAzure NetApp Filesシステムを検出します。
 
 スキャンするAzure NetApp Files システムが作業環境としてまだBlueXPにない場合は、この時点でキャンバスに追加できます。
 
@@ -67,7 +67,7 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["B
 
 
 
-== BlueXP分類インスタンスの導入
+== BlueXP分類インスタンスを導入します
 
 link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
 
@@ -79,7 +79,7 @@ Azure NetApp Files ボリュームのスキャン時にBlueXP分類がクラウ�
 
 
 
-== 作業環境でBlueXPの分類を有効にする
+== 作業環境でのBlueXP  分類の有効化
 
 Azure NetApp Files ボリュームでBlueXP分類を有効にすることができます。
 
@@ -93,7 +93,7 @@ image:screenshot_cloud_compliance_anf_scan_config.png["BlueXP分類インスタ�
 ** すべてのボリュームをマップして分類するには、 * すべてのボリュームをマップして分類 * をクリックします。
 ** 各ボリュームのスキャンをカスタマイズするには、「 * 」をクリックするか、各ボリュームのスキャンタイプを選択してから、マッピングまたは分類するボリュームを選択します。
 +
-を参照してください <<ボリュームのコンプライアンススキャンの有効化と無効化,ボリュームのコンプライアンススキャンの有効化と無効化>> を参照してください。
+詳細は、を参照してください <<ボリュームのコンプライアンススキャンの有効化と無効化,ボリュームのコンプライアンススキャンの有効化と無効化>> 。
 
 
 
@@ -112,7 +112,7 @@ image:screenshot_cloud_compliance_anf_scan_config.png["BlueXP分類インスタ�
 ====
 
 
-== BlueXPの分類でボリュームにアクセスできることを確認する
+== BlueXP  分類でボリュームにアクセスできることを確認する
 
 ネットワーク、セキュリティグループ、およびエクスポートポリシーをチェックして、BlueXPの分類でボリュームにアクセスできることを確認します。CIFSボリュームにアクセスできるように、BlueXPの分類にCIFSクレデンシャルを指定する必要があります。
 

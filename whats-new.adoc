@@ -18,6 +18,20 @@ BlueXP分類の新機能（Cloud Data Sense）をご紹介します。
 
 
 
+== 2024年9月2日（バージョン1.35）
+
+このBlueXP  分類リリースには、次の更新が含まれています。
+
+
+
+=== StorageGRIDデータのスキャン
+
+BlueXP  分類でStorageGRIDのデータをスキャンできるようになりました。
+
+詳細については、を参照してください link:task-scanning-storagegrid.html["StorageGRIDデータのスキャン"]。
+
+
+
 == 2024年8月5日（バージョン1.34）
 
 このBlueXP  分類リリースには、次の更新が含まれています。

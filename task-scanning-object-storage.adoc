@@ -4,7 +4,7 @@ permalink: task-scanning-object-storage.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
 summary: いくつかの手順を実行して、BlueXPの分類を使用してオブジェクトストレージ内のデータの直接スキャンを開始します。BlueXPの分類では、Simple Storage Service（S3）プロトコルを使用する任意のオブジェクトストレージサービスのデータをスキャンできます。これには、NetApp StorageGRID 、IBM Cloud Object Store、Linode、B2クラウドストレージ、Amazon S3などが含まれます。 
 ---
-= S3プロトコルを使用するオブジェクトストレージをスキャンする
+= StorageGRIDデータのスキャン
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -18,7 +18,7 @@ summary: いくつかの手順を実行して、BlueXPの分類を使用して�
 
 []
 ====
-*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
+*注*コアBlueXP  の一部であるBlueXP  分類を使用して、StorageGRIDデータをスキャンできるようになりました。を参照してください。link:task-scanning-storagegrid.html["StorageGRIDデータのスキャン"]ここに記載されている残りの情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連しています。
 
 ====
 

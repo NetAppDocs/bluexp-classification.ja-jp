@@ -1,0 +1,124 @@
+---
+sidebar: sidebariance, privacy, compliance, object storage, data sense 
+permalink: task-scanning-storagegrid.html 
+keywords: cloud compliance, enable cloud compl 
+summary: いくつかの手順を実行して、BlueXP  分類を使用してStorageGRID内のデータの直接スキャンを開始します。 
+---
+= StorageGRIDデータのスキャンを開始する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+いくつかの手順を実行して、BlueXP  分類を使用してStorageGRID内のデータの直接スキャンを開始します。
+
+
+
+== クイックスタート
+
+これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] オブジェクトストレージの前提条件を確認する
+[role="quick-margin-para"]
+オブジェクトストレージサービスに接続するには、エンドポイント URL が必要です。
+
+[role="quick-margin-para"]
+BlueXP  分類でバケットにアクセスできるように、StorageGRIDのアクセスキーとシークレットキーが必要です。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] オブジェクトストレージサービスを追加します
+[role="quick-margin-para"]
+StorageGRIDサービスをBlueXP  分類に追加します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] スキャンするバケットを選択します
+[role="quick-margin-para"]
+スキャンするバケットを選択すると、BlueXPの分類によってスキャンが開始されます。
+
+
+
+== StorageGRIDの要件を確認する
+
+BlueXPの分類を有効にする前に、次の前提条件を確認して、サポートされる構成があることを確認してください。
+
+* オブジェクトストレージサービスに接続するには、エンドポイント URL が必要です。
+* BlueXP  分類でバケットにアクセスできるように、StorageGRIDのアクセスキーとシークレットキーが必要です。
+
+
+
+
+== BlueXP分類インスタンスを導入します
+
+導入されているインスタンスがない場合は、BlueXP分類を導入します。
+
+インターネット経由でアクセス可能なStorageGRIDからデータをスキャンする場合はlink:task-deploy-cloud-compliance.html["BlueXPの分類機能をクラウドに導入します"^]、またはを使用できますlink:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所にBlueXPの分類を導入します"^]。
+
+インターネットにアクセスできないダークサイトにインストールされているStorageGRIDからデータをスキャンする場合は、を実行する必要がありますlink:task-deploy-compliance-dark-site.html["インターネットアクセスのないオンプレミスと同じ場所にBlueXPの分類を導入します"^]。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。
+
+インスタンスがインターネットに接続されていれば、BlueXP  分類ソフトウェアへのアップグレードは自動化されます。
+
+
+
+== StorageGRIDサービスをBlueXP  分類に追加する
+
+StorageGRIDサービスを追加します。
+
+.手順
+. [ 作業環境の構成 ] ページで、 [ * データソースの追加 *>* オブジェクトストレージサービスの追加 *] をクリックします。
++
+image:screenshot_compliance_add_object_storage_button.png["［ スキャン設定 ］ ページのスクリーンショットで、 ［ ファイル共有グループの追加 ］ ボタンをクリックします。"]
+
+. [オブジェクトストレージサービスの追加]ダイアログで、StorageGRIDサービスの詳細を入力し、*[続行]*をクリックします。
++
+.. 作業環境に使用する名前を入力します。この名前には、接続先のStorageGRIDサービスの名前が反映されている必要があります。
+.. エンドポイントの URL を入力してオブジェクトストレージサービスにアクセスします。
+.. BlueXP  分類がStorageGRID内のバケットにアクセスできるように、[Access Key]と[Secret Key]を入力します。
++
+image:screenshot_compliance_add_object_storage.png["オブジェクトストレージサービスにアクセスするための値を入力するダイアログのスクリーンショット。"]
+
+
+
+
+
+.結果
+StorageGRIDが作業環境のリストに追加されます。
+
+
+
+== StorageGRIDバケットでコンプライアンススキャンを有効または無効にする
+
+StorageGRIDでBlueXP  分類を有効にしたら、次の手順でスキャンするバケットを設定します。BlueXPの分類により、該当するバケットが検出され、作成した作業環境に表示されます。
+
+.手順
+. [Configuration]ページで、StorageGRID作業環境から*[Configuration]*をクリックします。
++
+image:screenshot_compliance_object_storage_config.png["スキャンするバケットを選択できるように、作業環境の設定をクリックするスクリーンショット。"]
+
+. バケットでマッピング専用スキャン、またはマッピングスキャンと分類スキャンを有効にします。
++
+image:screenshot_compliance_object_storage_select_buckets.png["スキャンするオブジェクトストレージバケットを選択するスクリーンショット。"]
+
++
+[cols="45,45"]
+|===
+| 終了： | 手順： 
+
+
+| バケットでマッピングのみのスキャンを有効にする | [* マップ * ] をクリックします 
+
+
+| バケットでフルスキャンを有効にします | [ マップと分類 *] をクリックします 
+
+
+| バケットに対するスキャンを無効にする | [ * Off * ] をクリックします 
+|===
+
+
+.結果
+BlueXPの分類で、有効にしたバケットのスキャンが開始されます。エラーが発生した場合は、エラーを修正するために必要なアクションとともに、 [ ステータス ] 列に表示されます。

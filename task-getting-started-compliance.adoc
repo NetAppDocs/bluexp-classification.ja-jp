@@ -4,7 +4,7 @@ permalink: task-getting-started-compliance.html
 keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense 
 summary: いくつかの手順を実行して、BlueXPの分類を使用してCloud Volumes ONTAP ボリュームとオンプレミスONTAP ボリュームのスキャンを開始します。 
 ---
-= BlueXPでCloud Volumes ONTAP とオンプレミスのONTAP を分類してみましょう
+= Cloud Volumes ONTAPとオンプレミスONTAPのBlueXP  分類を開始する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -65,7 +65,7 @@ BlueXPの分類が有効になったので、すべてのボリュームにア�
 
 
 
-== スキャンするデータソースを検出しています
+== スキャンするデータソースを検出します
 
 スキャンするデータソースがまだBlueXP環境にない場合は、この時点でキャンバスに追加できます。
 
@@ -73,7 +73,7 @@ BlueXPの分類が有効になったので、すべてのボリュームにア�
 
 
 
-== BlueXP分類インスタンスの導入
+== BlueXP分類インスタンスを導入します
 
 導入されているインスタンスがない場合は、BlueXP分類を導入します。
 
@@ -85,7 +85,7 @@ BlueXPの分類が有効になったので、すべてのボリュームにア�
 
 
 
-== 作業環境でBlueXPの分類を有効にする
+== 作業環境でのBlueXP  分類の有効化
 
 BlueXPの分類は、サポートされている任意のクラウドプロバイダのCloud Volumes ONTAP システムとオンプレミスのONTAP クラスタで有効にすることができます。
 
@@ -99,7 +99,7 @@ image:screenshot_cloud_compliance_we_scan_config.png["BlueXP分類インスタ�
 ** すべてのボリュームをマップして分類するには、 * すべてのボリュームをマップして分類 * をクリックします。
 ** 各ボリュームのスキャンをカスタマイズするには、「 * 」をクリックするか、各ボリュームのスキャンタイプを選択してから、マッピングまたは分類するボリュームを選択します。
 +
-を参照してください <<ボリュームのコンプライアンススキャンの有効化と無効化,ボリュームのコンプライアンススキャンの有効化と無効化>> を参照してください。
+詳細は、を参照してください <<ボリュームのコンプライアンススキャンの有効化と無効化,ボリュームのコンプライアンススキャンの有効化と無効化>> 。
 
 
 
@@ -118,7 +118,7 @@ image:screenshot_cloud_compliance_we_scan_config.png["BlueXP分類インスタ�
 ====
 
 
-== BlueXPの分類でボリュームにアクセスできることを確認する
+== BlueXP  分類でボリュームにアクセスできることを確認する
 
 ネットワーク、セキュリティグループ、およびエクスポートポリシーをチェックして、BlueXPの分類でボリュームにアクセスできることを確認します。CIFSボリュームにアクセスできるように、BlueXPの分類にCIFSクレデンシャルを指定する必要があります。
 
@@ -205,7 +205,7 @@ NOTE: 作業環境に追加された新しいボリュームは、見出し領�
 
 
 
-== データ保護ボリュームをスキャンしています
+== データ保護ボリュームをスキャンする
 
 データ保護（DP）ボリュームは外部に公開されず、BlueXPの分類ではアクセスできないため、デフォルトではスキャンされません。オンプレミスの ONTAP システムまたは Cloud Volumes ONTAP システムからの SnapMirror 処理のデスティネーションボリュームです。
 
