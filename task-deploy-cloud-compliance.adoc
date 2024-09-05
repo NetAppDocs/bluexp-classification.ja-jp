@@ -182,7 +182,7 @@ vCPU の制限の詳細については、次のリンクを参照してくださ
 
 BlueXP分類のインスタンスをクラウドに導入するには、次の手順を実行します。コネクタはインスタンスをクラウドに導入し、そのインスタンスにBlueXP分類ソフトウェアをインストールします。
 
-AWS環境でBlueXPコネクタからBlueXPの分類を導入する場合は、デフォルトのインスタンスサイズを選択するか、2つの小さいインスタンスタイプから選択できます。 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用可能なインスタンスタイプと制限事項を参照してください"]。デフォルトのインスタンスタイプを使用できない地域では、BlueXPの分類はで実行されます link:reference-instance-types.html["代替インスタンスタイプ"]。
+デフォルトのインスタンスタイプを使用できない地域では、BlueXP  分類はで実行されますlink:reference-instance-types.html["代替インスタンスタイプ"]。
 
 [role="tabbed-block"]
 ====

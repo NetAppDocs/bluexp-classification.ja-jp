@@ -260,7 +260,7 @@ BlueXPの分類では、個人情報（PII）や機密性の高い個人情報�
 
 また、BlueXPの分類設定を管理せずに、特定のユーザにBlueXPの分類スキャン結果だけを表示させる場合は、それらのユーザにCloud Compliance Viewerロールを割り当てることができます。
 
-link:concept-cloud-compliance.html#user-access-to-compliance-information["詳細はこちら。"^]。
+link:concept-cloud-compliance.html["詳細はこちら。"^]です。
 
 
 
