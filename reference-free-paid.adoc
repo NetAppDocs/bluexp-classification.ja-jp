@@ -33,7 +33,7 @@ BlueXPの分類は、BlueXPの中核機能として追加料金なしで利用�
 | オンプレミスの ONTAP クラスタ | はい。 | はい。 
 
 
-| StorageGRID | はい。 | いいえ 
+| StorageGRID | はい。 | はい。 
 
 
 | Azure NetApp Files の特長 | はい。 | はい。 
