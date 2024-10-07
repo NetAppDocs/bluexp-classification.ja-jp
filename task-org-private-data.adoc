@@ -74,9 +74,9 @@ BlueXPの分類では、.DOC、.DOCX、.PDF、.PPTX、.XLSの各ファイルタ�
 ====
 
 
-=== ワークスペースにAIPラベルを統合
+=== プロジェクトまたはワークスペースへのAIPラベルの統合
 
-AIPラベルを管理するには、既存のAzureアカウントにサインインして、AIPラベル機能をBlueXPの分類に統合する必要があります。有効にすると、すべてのファイルの AIP ラベルを管理できます link:concept-cloud-compliance.html["データソース"^] を選択します。
+AIPラベルを管理するには、既存のAzureアカウントにサインインして、AIPラベル機能をBlueXPの分類に統合する必要があります。有効にすると、BlueXP  プロジェクトまたはワークスペースのすべてのファイル内のAIPラベルを管理できますlink:concept-cloud-compliance.html["データソース"^]。
 
 .要件
 * アカウントと Azure Information Protection のライセンスが必要です。

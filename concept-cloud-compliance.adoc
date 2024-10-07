@@ -448,11 +448,8 @@ SaaSモードでBlueXPを使用している場合、BlueXPへの接続はHTTPS�
 
 == BlueXP  分類でのユーザロール
 
-各ユーザに割り当てられたロールは、BlueXPとBlueXPで異なる機能を提供します。
+各ユーザに割り当てられたロールは、BlueXP  内およびBlueXP  分類内で異なる機能を提供します。詳細については、次を参照してください。
 
-* * アカウント管理者 * は、コンプライアンス設定を管理し、すべての作業環境のコンプライアンス情報を表示できます。
-* * ワークスペース管理者 * は、アクセス権を持つシステムについてのみ、コンプライアンス設定を管理し、コンプライアンス情報を表示できます。ワークスペース管理者がBlueXPの作業環境にアクセスできない場合、BlueXPの分類タブには作業環境のコンプライアンス情報が表示されません。
-* コンプライアンスビューア * の役割を持つユーザーは、アクセス権を持つシステムのコンプライアンス情報を表示し、レポートを生成することのみができます。これらのユーザは、ボリューム、バケット、またはデータベーススキーマのスキャンを有効または無効にすることはできません。
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["BlueXP  IAMロール"]（標準モードでBlueXP  を使用している場合）
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-user-roles.html["BlueXP  アカウントノロール"^]（制限モードまたはプライベートモードでBlueXP  を使用する場合）
 
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-user-roles.html["BlueXPの役割の詳細をご覧ください"^] そして方法 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-netapp-accounts.html#adding-users["特定のロールのユーザを追加します"^]。
