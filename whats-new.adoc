@@ -100,7 +100,7 @@ BlueXP  の分類により、Microsoft AzureおよびGoogle Cloud Platform (GCP
 
 
 
-=== タツシユホトノツイカテタ
+=== ダッシュボードの追加データ
 
 このリリースでは、マッピングスキャン中にGovernance、Compliance、およびInvestigationの各ダッシュボードに表示されるデータが更新されます。
 
