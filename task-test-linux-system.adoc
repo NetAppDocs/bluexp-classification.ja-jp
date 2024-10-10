@@ -104,15 +104,7 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 
 ** 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.30以降が必要です。
 +
-*** Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3
-+
-RHEL 8.xおよびRHEL 9.xを使用している場合、次の機能は現在サポートされていません。
-
-+
-**** タアクサイトテノセツチ
-**** 分散スキャン（マスタースキャナノードとリモートスキャナノードを使用）
-
-
+*** Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3、9.4
 
 
 
@@ -123,9 +115,6 @@ RHEL 8.xおよびRHEL 9.xを使用している場合、次の機能は現在サ�
 ** 使用しているOSに応じて、次のいずれかのコンテナエンジンをインストールする必要があります。
 +
 *** Docker Engineバージョン19.3.1以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
-+
-https://youtu.be/Ogoufel1q6c["こちらのビデオをご覧ください"^] では、CentOSへのDockerのインストールの簡単なデモをご覧ください。
-
 *** Podmanバージョン4以降。Podmanをインストールするには、と入力し (`sudo yum install podman netavark -y`ます）。
 
 
@@ -190,9 +179,6 @@ TIP: このセクションは、インターネットに接続されていない
 
 
 | https://github.com/docker https://download.docker.com | Dockerのインストールに必要なパッケージを提供します。 
-
-
-| http://mirror.centos.org http://mirrorlist.centos.org http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | CentOSのインストールに必要なパッケージを提供します。 
 
 
 | \http://packages.ubuntu.com/

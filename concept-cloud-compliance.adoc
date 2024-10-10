@@ -129,8 +129,8 @@ image:diagram_cloud_compliance_instance.png["クラウドプロバイダで実�
 デフォルトのインスタンスについては、次の点に注意してください。
 
 * AWSでは、BlueXPの分類はで実行されます https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlargeインスタンス"^] 500GiBのgp2ディスクを使用した場合。オペレーティングシステムイメージは Amazon Linux 2 です。AWSに導入した場合、少量のデータをスキャンする場合は、インスタンスサイズを小さくすることができます。
-* Azureでは、BlueXPの分類はで実行されます link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] 500GiBのディスクオペレーティングシステムイメージは CentOS 7.9 です。
-* GCPでは、BlueXPの分類はで実行されます link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["N2-standard-16 VM"^] 500GiB Standard永続ディスクを使用した場合。オペレーティングシステムイメージは CentOS 7.9 です。
+* Azureでは、BlueXP  分類は、ディスクが500GiBのAで実行されlink:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^]ます。オペレーティングシステムのイメージはUbuntu 22.04です。
+* GCPでは、BlueXP  分類は500GiB標準永続ディスクを備えた上で実行されlink:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["N2-standard-16 VM"^]ます。オペレーティングシステムのイメージはUbuntu 22.04です。
 * デフォルトのインスタンスを使用できない地域では、BlueXPの分類は別のインスタンスで実行されます。 link:reference-instance-types.html["別のインスタンスタイプを参照してください"]。
 * インスタンスの名前は _CloudCompliancy_with で、生成されたハッシュ（ UUID ）を連結しています。例： _CloudCompliion-16bb6564-38ad-40802-9a92-36f5fd2f71c7_
 * コネクタごとに導入されるBlueXP分類インスタンスは1つだけです。
