@@ -18,7 +18,7 @@ BlueXP分類を使用してGoogleドライブアカウントのユーザファ�
 
 []
 ====
-*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
+*注*この情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。
 
 ====
 
@@ -27,19 +27,19 @@ BlueXP分類を使用してGoogleドライブアカウントのユーザファ�
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] Googleドライブの前提条件を確認します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]Googleドライブの前提条件を確認する
 [role="quick-margin-para"]
 Googleドライブアカウントにログインするための管理者資格情報があることを確認します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類を導入します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]Deploy BlueXP  Classification
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^]インスタンスがまだデプロイされていない場合。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] Googleドライブアカウントにログインします
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]Googleドライブアカウントにログインする
 [role="quick-margin-para"]
 Adminユーザのクレデンシャルを使用して、アクセスするGoogle Driveアカウントにログインし、新しいデータソースとして追加します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] ユーザファイルのスキャンタイプを選択します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]ユーザーファイルのスキャンタイプを選択します
 [role="quick-margin-para"]
 ユーザファイルで実行するスキャンのタイプ（マッピングまたはマッピングおよび分類）を選択します。
 
@@ -68,7 +68,7 @@ BlueXPの次の分類機能は、現在Google Driveファイルではサポー�
 
 導入されているインスタンスがない場合は、BlueXP分類を導入します。
 
-BlueXPには次のように分類できます link:task-deploy-cloud-compliance.html["クラウドに導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^]。
+BlueXP  分類には、またはをlink:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^]使用できますlink:task-deploy-cloud-compliance.html["クラウドに導入"^]。
 
 インスタンスがインターネットに接続されていれば、BlueXP分類ソフトウェアへのアップグレードは自動で実行されます。
 
@@ -107,7 +107,7 @@ image:screenshot_compliance_google_drive_select_scan.png["Googleドライブの�
 +
 [cols="45,45"]
 |===
-| 終了： | 手順： 
+| 宛先： | 手順： 
 
 
 | ファイルのマッピングのみのスキャンを有効にします | [* マップ * ] をクリックします 
@@ -127,4 +127,4 @@ BlueXPの分類により、追加したGoogle Driveアカウント内のファ�
 
 == Google Driveアカウントをコンプライアンススキャンから削除する
 
-1人のユーザーのGoogleドライブファイルのみが1つのGoogleドライブアカウントの一部であるため、ユーザーのGoogleドライブアカウントからのファイルのスキャンを停止する場合は、次の手順を実行します link:task-managing-compliance.html["BlueXP分類からGoogle Driveアカウントを削除します"]。
+1つのGoogleドライブアカウントには1人のユーザーのGoogleドライブファイルしか含まれないため、ユーザーのGoogleドライブアカウントからのファイルのスキャンを停止する場合は、次のlink:task-managing-compliance.html["BlueXP分類からGoogle Driveアカウントを削除します"]手順を実行します。

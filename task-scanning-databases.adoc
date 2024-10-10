@@ -22,19 +22,19 @@ summary: いくつかの手順を実行して、BlueXPの分類を使用した�
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] データベースの前提条件を確認する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]データベースの前提条件の確認
 [role="quick-margin-para"]
 データベースがサポートされていること、およびデータベースへの接続に必要な情報があることを確認します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]BlueXP  分類インスタンスの導入
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^]インスタンスがまだデプロイされていない場合。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] データベースサーバを追加します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]データベースサーバの追加
 [role="quick-margin-para"]
 アクセスするデータベースサーバを追加します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] スキーマを選択します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]スキーマの選択
 [role="quick-margin-para"]
 スキャンするスキーマを選択します。
 
@@ -53,9 +53,9 @@ BlueXPの分類では、次のデータベースからスキーマをスキャ�
 * Amazon リレーショナルデータベースサービス（ Amazon RDS ）
 * MongoDB
 * MySQL
-* Oracle の場合
+* Oracle
 * PostgreSQL
-* SAP HANA のサポート
+* SAP HANA
 * SQL Server （ MSSQL ）
 
 
@@ -85,9 +85,9 @@ BlueXP分類インスタンスに接続されているデータベースは、�
 
 導入されているインスタンスがない場合は、BlueXP分類を導入します。
 
-インターネット経由でアクセス可能なデータベーススキーマをスキャンする場合は、を実行します link:task-deploy-cloud-compliance.html["BlueXPの分類機能をクラウドに導入します"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所にBlueXPの分類を導入します"^]。
+インターネット経由でアクセス可能なデータベーススキーマをスキャンする場合は、またはを使用できますlink:task-deploy-cloud-compliance.html["BlueXPの分類機能をクラウドに導入します"^]link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所にBlueXPの分類を導入します"^]。
 
-インターネットにアクセスできないダークサイトにインストールされているデータベーススキーマをスキャンする場合は、が必要です link:task-deploy-compliance-dark-site.html["インターネットアクセスのないオンプレミスと同じ場所にBlueXPの分類を導入します"^]。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。
+インターネットにアクセスできないダークサイトにインストールされているデータベーススキーマをスキャンする場合は、を実行する必要がありますlink:task-deploy-compliance-dark-site.html["インターネットアクセスのないオンプレミスと同じ場所にBlueXPの分類を導入します"^]。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。
 
 インスタンスがインターネットに接続されていれば、BlueXP分類ソフトウェアへのアップグレードは自動で実行されます。
 

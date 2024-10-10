@@ -29,15 +29,15 @@ StorageGRIDサービスに接続するには、エンドポイントのURLが必
 [role="quick-margin-para"]
 BlueXP  分類でバケットにアクセスできるように、StorageGRIDのアクセスキーとシークレットキーが必要です。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]BlueXP  分類インスタンスの導入
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^]インスタンスがまだデプロイされていない場合。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]StorageGRIDサービスの追加
 [role="quick-margin-para"]
 StorageGRIDサービスをBlueXP  分類に追加します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] スキャンするバケットを選択します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]スキャンするバケットを選択
 [role="quick-margin-para"]
 スキャンするバケットを選択すると、BlueXPの分類によってスキャンが開始されます。
 
@@ -107,7 +107,7 @@ image:screenshot-scanning-add-storagegrid-buckets.png["スキャンするStorage
 +
 [cols="45,45"]
 |===
-| 終了： | 手順： 
+| 宛先： | 手順： 
 
 
 | バケットでマッピングのみのスキャンを有効にする | [* マップ * ] をクリックします 

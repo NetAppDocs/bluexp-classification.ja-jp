@@ -33,7 +33,7 @@ NOTE: このセクションで説明する機能は、データソースに対�
 
 []
 ====
-*注*タグ、ラベル、割り当てられたユーザでフィルタリングする機能は、バージョン1.30以前のBlueXP分類にのみ関係します。
+*注*タグ、ラベル、割り当てられたユーザーでフィルタリングする機能は、バージョン1.30以前のBlueXP  分類にのみ関係します。
 
 ====
 [cols="30,60"]
@@ -41,13 +41,13 @@ NOTE: このセクションで説明する機能は、データソースに対�
 | フィルタ | 詳細 
 
 
-| ポリシー | ポリシーを選択します。実行します link:task-using-policies.html["こちらをご覧ください"^] をクリックして、既存のポリシーのリストを表示し、独自のカスタムポリシーを作成します。 
+| ポリシー | ポリシーを選択します。link:task-using-policies.html["ここをクリック"^]既存のポリシーのリストを表示し、独自のカスタムポリシーを作成します。 
 
 
-| ラベル | 選択するオプション link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP ラベル"] ファイルに割り当てられます。 
+| ラベル | ファイルに割り当てられているを選択しますlink:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP ラベル"]。 
 
 
-| タグ | 選択するオプション link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["タグ"] ファイルに割り当てられます。 
+| タグ | ファイルに割り当てられているを選択しますlink:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["タグ"]。 
 
 
 | 割り当て先 | ファイルが割り当てられているユーザーの名前を選択します。 
@@ -74,7 +74,7 @@ Data Investigation Reportは、Data Investigationページのフィルタリン�
 +
 []
 ====
-*注*でレポートを生成する機能。 JSON形式は、BlueXPのバージョン1.30以前でのみ使用できます。
+*注*.json形式でレポートを生成する機能は、バージョン1.30以前のBlueXP  分類にのみ関係します。
 
 ====
 
@@ -82,18 +82,18 @@ Data Investigation Reportは、Data Investigationページのフィルタリン�
 BlueXPの分類でファイル（非構造化データ）、ディレクトリ（フォルダとファイル共有）、データベース（構造化データ）をスキャンしている場合は、最大3つのレポートファイルをダウンロードできます。
 
 .手順
-. [データ調査]ページで、をクリックします image:button_download.png["[ ダウンロード ] ボタン"] ボタンをクリックします。
+. [Data Investigation]ページで、ページの右上にあるボタンをクリックしimage:button_download.png["[ ダウンロード ] ボタン"]ます。
 . データの.csvレポートと.jsonレポートのどちらをダウンロードするかを選択し、*レポートのダウンロード*をクリックします。
 +
-JSONレポートを選択するときは、レポートをダウンロードするNFS共有の名前を「<host_name>：/<share_path>`」の形式で入力します。
+.jsonレポートを選択する場合は、レポートをダウンロードするNFS共有の名前をの形式で入力し `<host_name>:/<share_path>`ます。
 
 +
-JSONレポートの生成の進捗状況は、で確認できます link:task-view-compliance-actions.html["[ アクションステータス（ Actions Status ） ] パネル"]。
+JSONレポート生成の進捗状況はで確認できますlink:task-view-compliance-actions.html["[ アクションステータス（ Actions Status ） ] パネル"]。
 
 +
 []
 ====
-*注*タグ、ラベル、割り当てられたユーザでフィルタリングする機能は、バージョン1.30以前のBlueXP分類にのみ関係します。
+*注*タグ、ラベル、割り当てられたユーザーでフィルタリングする機能は、バージョン1.30以前のBlueXP  分類にのみ関係します。
 
 ====
 

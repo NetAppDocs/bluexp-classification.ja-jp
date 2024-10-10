@@ -27,22 +27,22 @@ summary: いくつかの手順を実行して、BlueXPの分類を使用して�
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] オブジェクトストレージの前提条件を確認する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]オブジェクトストレージの前提条件の確認
 [role="quick-margin-para"]
 オブジェクトストレージサービスに接続するには、エンドポイント URL が必要です。
 
 [role="quick-margin-para"]
 BlueXP分類でバケットにアクセスできるように、オブジェクトストレージプロバイダのアクセスキーとシークレットキーが必要です。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]BlueXP  分類インスタンスの導入
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^]インスタンスがまだデプロイされていない場合。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] オブジェクトストレージサービスを追加します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]オブジェクトストレージサービスの追加
 [role="quick-margin-para"]
 オブジェクトストレージサービスをBlueXP分類に追加します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] スキャンするバケットを選択します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]スキャンするバケットを選択
 [role="quick-margin-para"]
 スキャンするバケットを選択すると、BlueXPの分類によってスキャンが開始されます。
 
@@ -62,9 +62,9 @@ BlueXPの分類を有効にする前に、次の前提条件を確認して、�
 
 導入されているインスタンスがない場合は、BlueXP分類を導入します。
 
-インターネット経由でアクセス可能な S3 オブジェクトストレージからデータをスキャンする場合は、を実行します link:task-deploy-cloud-compliance.html["BlueXPの分類機能をクラウドに導入します"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所にBlueXPの分類を導入します"^]。
+インターネット経由でアクセス可能なS3オブジェクトストレージからデータをスキャンする場合は、またはを実行できますlink:task-deploy-cloud-compliance.html["BlueXPの分類機能をクラウドに導入します"^]link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所にBlueXPの分類を導入します"^]。
 
-インターネットにアクセスできないダークサイトにインストールされている S3 オブジェクトストレージからデータをスキャンする場合は、が必要です link:task-deploy-compliance-dark-site.html["インターネットアクセスのないオンプレミスと同じ場所にBlueXPの分類を導入します"^]。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。
+インターネットにアクセスできないダークサイトにインストールされているS3オブジェクトストレージからデータをスキャンする場合は、を実行する必要がありますlink:task-deploy-compliance-dark-site.html["インターネットアクセスのないオンプレミスと同じ場所にBlueXPの分類を導入します"^]。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。
 
 インスタンスがインターネットに接続されていれば、BlueXP分類ソフトウェアへのアップグレードは自動で実行されます。
 
@@ -112,7 +112,7 @@ image:screenshot_compliance_object_storage_select_buckets.png["スキャンす�
 +
 [cols="45,45"]
 |===
-| 終了： | 手順： 
+| 宛先： | 手順： 
 
 
 | バケットでマッピングのみのスキャンを有効にする | [* マップ * ] をクリックします 

@@ -25,19 +25,19 @@ NOTE: ネットアップ以外のファイル共有からのデータのスキ�
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] ファイル共有の前提条件を確認する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]ファイル共有の前提条件の確認
 [role="quick-margin-para"]
 CIFS （ SMB ）共有の場合は、共有にアクセスするためのクレデンシャルがあることを確認しておきます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]BlueXP  分類インスタンスの導入
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^]インスタンスがまだデプロイされていない場合。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ファイル共有を保持するグループを作成します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]ファイル共有を保持するグループを作成する
 [role="quick-margin-para"]
 このグループは、スキャンするファイル共有のコンテナであり、これらのファイル共有の作業環境名として使用されます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] ファイル共有をグループに追加します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]グループにファイル共有を追加します。
 [role="quick-margin-para"]
 スキャンするファイル共有のリストを追加し、スキャンのタイプを選択します。一度に最大 100 個のファイル共有を追加できます。
 
@@ -54,7 +54,7 @@ BlueXPの分類では、7-Modeシステムから権限や「最終アクセス�
 * BlueXP分類インスタンスと共有の間にネットワーク接続が必要です。
 * 次のポートがBlueXP分類インスタンスに対して開いていることを確認します。
 +
-** NFS –ポート 111 および 2049 。
+** NFS の場合 - ポート 111 および 2049
 ** CIFS の場合 - ポート 139 および 445
 
 
@@ -63,7 +63,7 @@ BlueXPの分類では、7-Modeシステムから権限や「最終アクセス�
 +
 BlueXPの分類スキャンでファイルの「最終アクセス日時」が変更されないようにするには、CIFSではWrite Attributes権限、NFSではwrite権限を持つことを推奨します。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。
 
-* 追加する共有のリストは、「 <host_name> ： /<share_path>` 」の形式で指定する必要があります。共有は個別に入力することも、スキャンするファイル共有の行区切りリストを指定することもできます。
+* 追加する共有のリストをの形式で指定する必要があり `<host_name>:/<share_path>`ます。共有は個別に入力することも、スキャンするファイル共有の行区切りリストを指定することもできます。
 
 
 
@@ -96,7 +96,7 @@ image:screenshot_compliance_add_fileshares_button.png["［ スキャン設定 �
 
 == グループにファイル共有を追加する
 
-ファイル共有グループにファイル共有を追加して、それらの共有内のファイルがBlueXPの分類でスキャンされるようにします。共有は、の形式で追加します `<host_name>:/<share_path>`。
+ファイル共有グループにファイル共有を追加して、それらの共有内のファイルがBlueXPの分類でスキャンされるようにします。共有は、の形式で追加し `<host_name>:/<share_path>`ます。
 
 個々のファイル共有を追加することも、スキャンするファイル共有を 1 行で区切って指定することもできます。一度に最大 100 個の共有を追加できます。
 
@@ -134,7 +134,7 @@ image:screenshot_compliance_fileshares_add_file_shares.png["［ ファイル共�
 +
 [cols="45,45"]
 |===
-| 終了： | 手順： 
+| 宛先： | 手順： 
 
 
 | ファイル共有でマッピングのみのスキャンを有効にします | [* マップ * ] をクリックします 
@@ -146,7 +146,7 @@ image:screenshot_compliance_fileshares_add_file_shares.png["［ ファイル共�
 | ファイル共有でのスキャンを無効にします | [ * Off * ] をクリックします 
 |===
 +
-「属性の書き込み」権限がない場合にスキャンする*のページ上部のスイッチは、デフォルトでは無効になっています。つまり、BlueXPの分類にCIFSの属性への書き込み権限やNFSの書き込み権限がない場合、BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、ファイルはスキャンされません。最終アクセス時間がリセットされても構わない場合は、スイッチをオンにすると、権限に関係なくすべてのファイルがスキャンされます。 link:reference-collected-metadata.html#last-access-time-timestamp["詳細はこちら。"^]。
+「属性の書き込み」権限がない場合にスキャンする*のページ上部のスイッチは、デフォルトでは無効になっています。つまり、BlueXPの分類にCIFSの属性への書き込み権限やNFSの書き込み権限がない場合、BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、ファイルはスキャンされません。最終アクセス時間がリセットされても構わない場合は、スイッチをオンにすると、権限に関係なくすべてのファイルがスキャンされます。link:reference-collected-metadata.html#last-access-time-timestamp["詳細"^]です。
 
 
 

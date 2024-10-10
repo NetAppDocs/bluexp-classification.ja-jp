@@ -18,7 +18,7 @@ BlueXPの分類では、Amazon S3バケットをスキャンして、S3オブジ
 
 []
 ====
-*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
+*注*この情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。
 
 ====
 
@@ -27,19 +27,19 @@ BlueXPの分類では、Amazon S3バケットをスキャンして、S3オブジ
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] クラウド環境で S3 の要件を設定します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]クラウド環境でのS3要件の設定
 [role="quick-margin-para"]
-お使いのクラウド環境がBlueXPの分類要件を満たしていることを確認します。これには、IAMロールの準備やBlueXPの分類からS3への接続の設定などが含まれます。 <<S3 の前提条件の確認,すべてのリストを参照してください>>。
+お使いのクラウド環境がBlueXPの分類要件を満たしていることを確認します。これには、IAMロールの準備やBlueXPの分類からS3への接続の設定などが含まれます。<<S3 の前提条件の確認,すべてのリストを参照してください>>です。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]BlueXP  分類インスタンスの導入
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^]インスタンスがまだデプロイされていない場合。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] S3作業環境でBlueXP分類をアクティブ化します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]S3作業環境でBlueXP  分類をアクティブ化
 [role="quick-margin-para"]
 Amazon S3 作業環境を選択し、 * Enable * をクリックして、必要な権限を含む IAM ロールを選択します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] スキャンするバケットを選択します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]スキャンするバケットを選択
 [role="quick-margin-para"]
 スキャンするバケットを選択すると、BlueXPの分類によってスキャンが開始されます。
 
@@ -88,7 +88,7 @@ BlueXP分類からAmazon S3への接続を提供します:: BlueXPの分類に�
 --
 VPCエンドポイントを作成するときは、BlueXP分類インスタンスに対応するリージョン、VPC、およびルーティングテーブルを選択してください。S3 エンドポイントへのトラフィックを有効にする発信 HTTPS ルールを追加するには、セキュリティグループも変更する必要があります。そうしないと、BlueXPの分類からS3サービスに接続できません。
 
-問題が発生した場合は、を参照してください https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWSのサポートナレッジセンター：ゲートウェイVPCエンドポイントを使用してS3バケットに接続できないのはなぜですか。"^]
+問題が発生した場合は、を参照してください。 https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWSのサポートナレッジセンター：ゲートウェイVPCエンドポイントを使用してS3バケットに接続できないのはなぜですか。"^]
 
 別の方法として、 NAT ゲートウェイを使用して接続を提供する方法があります。
 
@@ -102,7 +102,7 @@ NOTE: インターネット経由で S3 にアクセスするためにプロキ�
 
 == BlueXP分類インスタンスの導入
 
-link:task-deploy-cloud-compliance.html["BlueXPでBlueXP分類を導入します"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXPでBlueXP分類を導入します"^]インスタンスがまだデプロイされていない場合。
 
 AWSに導入されているコネクタを使用してインスタンスを導入する必要があります。これにより、BlueXPはこのAWSアカウント内のS3バケットを自動的に検出し、Amazon S3作業環境に表示します。
 
@@ -126,7 +126,7 @@ image:screenshot_s3_we.gif["Amazon S3 作業環境アイコンのスクリーン
 +
 image:screenshot_s3_enable_compliance.png["[サービス]パネルでBlueXP分類サービスを有効にするスクリーンショット"]
 
-. プロンプトが表示されたら、を含むBlueXP分類インスタンスにIAMロールを割り当てます <<S3 の前提条件の確認,必要な権限>>。
+. プロンプトが表示されたら、を持つBlueXP  分類インスタンスにIAMロールを割り当てます<<S3 の前提条件の確認,必要な権限>>。
 +
 image:screenshot_s3_compliance_iam_role.png["BlueXP分類用のAWS IAMロールを入力するスクリーンショット"]
 
@@ -134,7 +134,7 @@ image:screenshot_s3_compliance_iam_role.png["BlueXP分類用のAWS IAMロール�
 
 
 
-TIP: また、作業環境のコンプライアンススキャンを有効にすることもできます Configuration ページでをクリックします image:screenshot_gallery_options.gif["3つの点"] ボタンをクリックし、*[BlueXP分類のアクティブ化]*を選択します。
+TIP: [Configuration]ページで、ボタンをクリックして*[Activate BlueXP  classification]*を選択し、作業環境のコンプライアンススキャンを有効にすることもできますimage:screenshot_gallery_options.gif["3つの点"]。
 
 .結果
 BlueXPは、インスタンスにIAMロールを割り当てます。
@@ -147,7 +147,7 @@ Amazon S3でBlueXPの分類を有効にしたら、次にスキャンするバ�
 
 スキャンするS3バケットを含むAWSアカウントでBlueXPを実行している場合、そのバケットが検出され、Amazon S3作業環境で表示されます。
 
-BlueXPに分類することもできます <<追加の AWS アカウントからバケットをスキャンする,別々の AWS アカウントにある S3 バケットをスキャンします>>。
+BlueXP  分類も可能です<<追加の AWS アカウントからバケットをスキャンする,別々の AWS アカウントにある S3 バケットをスキャンします>>。
 
 .手順
 . Amazon S3 作業環境を選択します。
@@ -162,7 +162,7 @@ image:screenshot_s3_select_buckets.png["目的の S3 バケットを選択する
 +
 [cols="45,45"]
 |===
-| 終了： | 手順： 
+| 宛先： | 手順： 
 
 
 | バケットでマッピングのみのスキャンを有効にする | [* マップ * ] をクリックします 

@@ -5,7 +5,7 @@ indexpage:
   keywords: bluexp, classification, cloud data sense, data sense, compliance, security
   lead: BlueXPの分類（Cloud Data Sense）を使用すると、組織のハイブリッドマルチクラウド全体にわたってデータをスキャンして分類できます。分類では、AIベースの自然言語処理（NLP）を活用してコンテキストに応じたデータの分析とカテゴリ化を行い、データに関する実用的な分析情報を提供して、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の高速化を実現します。
   tiles:
-  - title: はじめに
+  - title: 開始する
     links:
     - title: BlueXPの分類について説明します
       url: concept-cloud-compliance.html
@@ -51,7 +51,7 @@ indexpage:
       url: reference-free-paid.html
   - title: ブログとコミュニティ
     links:
-    - title: ネットアップコミュニティ
+    - title: NetAppコミュニティ
       url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
     - title: BlueXPの分類のユースケース
       url: https://bluexp.netapp.com/netapp-cloud-data-sense

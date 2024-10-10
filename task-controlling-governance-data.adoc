@@ -33,7 +33,7 @@ image:screenshot_compliance_governance_dashboard.png["BlueXPの分類Governance�
 _Saving Opportunities 領域内の項目を調査して、削除または階層化してより安価なオブジェクトストレージにする必要があるデータがないかどうかを確認できます。各項目をクリックすると、 ［ 調査 ］ ページにフィルタリングされた結果が表示されます。
 
 * *Stale Data*- 3 年前に最後に変更されたデータ。
-* * ビジネス以外のデータ * - カテゴリまたはファイルタイプに基づいて、ビジネスに関連していないと見なされるデータ。これには、次のもの
+* * ビジネス以外のデータ * - カテゴリまたはファイルタイプに基づいて、ビジネスに関連していないと見なされるデータ。これには、
 +
 ** アプリケーションデータ
 ** 音声
@@ -44,7 +44,7 @@ _Saving Opportunities 領域内の項目を調査して、削除または階層�
 ** その他（一般的な「その他」カテゴリ）
 
 
-* * 重複ファイル * - スキャンしているデータソース内の他の場所に複製されているファイル。 link:task-investigate-data.html#view-all-duplicated-files["表示される重複ファイルの種類を確認します"]。
+* * 重複ファイル * - スキャンしているデータソース内の他の場所に複製されているファイル。link:task-investigate-data.html#view-all-duplicated-files["表示される重複ファイルの種類を確認します"]です。
 
 
 
@@ -56,13 +56,13 @@ NOTE: いずれかのデータソースでデータ階層化が実装されて�
 
 [_Policies]領域では、結果の数が最も多いポリシーがリストの先頭に表示されます。[調査]ページに結果を表示するには、ポリシーの名前をクリックします。[ すべて表示 *] をクリックして、使用可能なすべてのポリシーのリストを表示します。
 
-をクリックします link:task-using-policies.html["こちらをご覧ください"] ポリシーの詳細については、を参照してください。
+ポリシーの詳細については、をクリックしlink:task-using-policies.html["ここをクリック"]てください。
 
 
 
 === データの概要
 
-Data Overview_Sectionには、スキャンされるすべてのデータの概要が表示されます。ボタンをクリックして、使用容量、経過時間、データサイズ、すべての作業環境およびデータソースのファイルタイプを含むデータマッピングレポートをダウンロードします。を参照してください <<データマッピングレポート,データマッピングレポート>> 詳細については、を参照してください。
+Data Overview_Sectionには、スキャンされるすべてのデータの概要が表示されます。ボタンをクリックして、使用容量、経過時間、データサイズ、すべての作業環境およびデータソースのファイルタイプを含むデータマッピングレポートをダウンロードします。このレポートの詳細については、を参照してください<<データマッピングレポート,データマッピングレポート>>。
 
 
 
@@ -112,7 +112,7 @@ NOTE: いずれかのデータソースでデータ階層化が実装されて�
 
 === 最も識別されているデータ分類
 
-_Classification_area には ' 最も識別されたリストが表示されます link:task-controlling-private-data.html#view-files-by-categories["カテゴリ"^] および link:task-controlling-private-data.html#view-files-by-file-types["ファイルの種類"^] をスキャンしたデータに保存します。
+_Classification_areaには、スキャンしたデータの中で最も識別されたとのlink:task-controlling-private-data.html#view-files-by-file-types["ファイルの種類"^]リストが表示されlink:task-controlling-private-data.html#view-files-by-categories["カテゴリ"^]ます。
 
 
 
@@ -120,7 +120,7 @@ _Classification_area には ' 最も識別されたリストが表示されま�
 
 カテゴリを使用すると、保有している情報の種類を表示して、データの状況を把握することができます。たとえば、「履歴書」や「従業員契約書」などのカテゴリには機密データを含めることができます。結果を調査すると、従業員の契約が安全でない場所に保存されていることがわかります。その後、その問題を修正できます。
 
-を参照してください link:task-controlling-private-data.html#view-files-by-categories["カテゴリ別にファイルを表示します"^] を参照してください。
+詳細については、を参照してください link:task-controlling-private-data.html#view-files-by-categories["カテゴリ別にファイルを表示します"^] 。
 
 
 
@@ -128,7 +128,7 @@ _Classification_area には ' 最も識別されたリストが表示されま�
 
 ファイルタイプを確認すると、特定のファイルタイプが正しく保存されない可能性があるため、機密データを制御するのに役立ちます。
 
-を参照してください link:task-controlling-private-data.html#view-files-by-file-types["ファイルタイプを表示しています"^] を参照してください。
+詳細については、を参照してください link:task-controlling-private-data.html#view-files-by-file-types["ファイルタイプを表示しています"^] 。
 
 
 
@@ -140,7 +140,7 @@ _Classification_area には ' 最も識別されたリストが表示されま�
 
 [cols="25,65"]
 |===
-| カテゴリ | 説明 
+| カテゴリ | 製品説明 
 
 
 | 使用容量 | すべての作業環境：各作業環境のファイル数と使用済み容量が表示されます。単一の作業環境の場合：容量が最も多いファイルが表示されます。 
@@ -171,9 +171,9 @@ image:screenshot_compliance_data_mapping_report_button.png["データマッピ�
 .結果
 BlueXPの分類によって.pdfレポートが生成されます。このレポートを確認して、必要に応じて他のグループに送信できます。
 
-レポートが1MBを超える場合、.pdfファイルはBlueXP分類インスタンスに保持され、正確な場所に関するポップアップメッセージが表示されます。BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、.pdfファイルに直接移動できます。BlueXP分類をクラウドに導入したら、BlueXP分類インスタンスにSSHでアクセスして.pdfファイルをダウンロードする必要があります。 link:task-audit-data-sense-actions.html#access-the-log-files["「分類インスタンスのデータにアクセスする方法」を参照してください"^]。
+レポートが1MBを超える場合、.pdfファイルはBlueXP分類インスタンスに保持され、正確な場所に関するポップアップメッセージが表示されます。BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、.pdfファイルに直接移動できます。BlueXP分類をクラウドに導入したら、BlueXP分類インスタンスにSSHでアクセスして.pdfファイルをダウンロードする必要があります。link:task-audit-data-sense-actions.html#access-the-log-files["「分類インスタンスのデータにアクセスする方法」を参照してください"^]です。
 
-BlueXPの分類ページの上部にあるをクリックすると、レポートの最初のページに表示される会社名をカスタマイズできます image:screenshot_gallery_options.gif["[詳細]ボタン"] [会社名の変更]をクリックします。次回レポートを生成するときに、新しい名前が含まれます。
+BlueXP  分類ページの上部からレポートの最初のページに表示される会社名をカスタマイズするには、をクリックしimage:screenshot_gallery_options.gif["[詳細]ボタン"]、*会社名の変更*をクリックします。次回レポートを生成するときに、新しい名前が含まれます。
 
 
 
@@ -183,7 +183,7 @@ Data Discovery Assessment Reportでは、スキャンされた環境の概要を
 
 [cols="25,65"]
 |===
-| フィーチャー（ Feature ） | 説明 
+| 機能 | 製品説明 
 
 
 | データガバナンスの懸念 | 所有しているすべてのデータと、コストを節約するためにデータ量を削減できる可能性のある領域の詳細な画像。 

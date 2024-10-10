@@ -29,7 +29,7 @@ BlueXPの分類スキャンから特定のディレクトリを除外するこ�
 * オンプレミスのONTAP
 * Cloud Volumes ONTAP
 * NetApp ONTAP 対応の Amazon FSX
-* Azure NetApp Files の特長
+* Azure NetApp Files
 * 一般的なファイル共有
 
 
@@ -37,7 +37,7 @@ BlueXPの分類スキャンから特定のディレクトリを除外するこ�
 
 == スキャン対象から除外するディレクトリを定義する
 
-分類のスキャン対象からディレクトリを除外するには、構成ファイルを編集してスクリプトを実行できるように、BlueXP分類システムにログインする必要があります。方法を参照してください link:reference-log-in-to-instance.html["BlueXP分類システムにログインする"] ソフトウェアを手動でLinuxマシンにインストールしたか、インスタンスをクラウドに導入したかによって異なります。
+分類のスキャン対象からディレクトリを除外するには、構成ファイルを編集してスクリプトを実行できるように、BlueXP分類システムにログインする必要があります。ソフトウェアを手動でLinuxマシンにインストールしたか、インスタンスをクラウドに導入したかに応じて、の方法を参照してください。link:reference-log-in-to-instance.html["BlueXP分類システムにログインする"]
 
 [NOTE]
 ====
@@ -47,7 +47,7 @@ BlueXPの分類スキャンから特定のディレクトリを除外するこ�
 
 ====
 .手順
-. BlueXP分類システムで、「/opt/netapp/config/custom _configuration」に移動してファイルを開きます。 `data_provider.yaml`。
+. BlueXP  分類システムで、「/opt/ NetApp /config/custom_configuration」に移動してファイルを開きます `data_provider.yaml`。
 . 「data_providers」セクションの「exclude：」行の下に、除外するディレクトリパスを入力します。例：
 +
 ....
@@ -85,9 +85,9 @@ data_providers:
    - "folder1"
 ....
 .除外するパスの想定される結果：
-* /CVO1/folder1
+* /CVO1/フォルダ1
 * /CVO1/folder1name
-* /CVO1/folder10
+* /CVO1/フォルダ10
 * /CVO1/*フォルダ1
 * /CVO1/+ folder1name
 * /CVO1/notfolder10
@@ -137,9 +137,9 @@ data_providers:
 
 
 .除外されないパスの例：
-* /CVO1/folder1
+* /CVO1/フォルダ1
 * /CVO1/folder1name
-* /CVO1/folder10
+* /CVO1/フォルダ10
 
 
 
@@ -159,6 +159,6 @@ EXCLUDEファイルの構文： `"\\*not_to_scan"`
 
 == 現在の除外リストを表示する
 
-内容は可能である `data_provider.yaml` の実行後に実際にコミットされたものとは異なる構成ファイル `update_data_providers_from_config_file.sh` スクリプト：BlueXPの分類スキャンの対象から除外したディレクトリの現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer _configuration/data_providers」で次のコマンドを実行します。
+設定ファイルの内容が、スクリプトの実行後に実際にコミットされた内容と異なる `update_data_providers_from_config_file.sh`場合があり `data_provider.yaml`ます。BlueXPの分類スキャンの対象から除外したディレクトリの現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer _configuration/data_providers」で次のコマンドを実行します。
 
  get_data_providers_configuration.sh

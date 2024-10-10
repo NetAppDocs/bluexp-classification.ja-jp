@@ -20,7 +20,7 @@ summary: 組織のストレージリソース上のデータに関連するコ�
 
 []
 ====
-*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
+*注*この情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。
 
 ====
 
@@ -38,7 +38,7 @@ image:screenshot_compliance_sensitive_data.png["このパネル内の要素に�
 
 [調査]ページで、影響を受けるファイルのフィルタリングされた結果を表示するには、対象となるブロックをクリックします。これにより、詳細な調査が可能になります。
 
-アイデンティティサービスをBlueXP分類に統合していない場合、このパネルにデータは表示されません。 link:task-add-active-directory-datasense.html["Active DirectoryサービスとBlueXPの分類を統合する方法をご紹介します"^]。
+アイデンティティサービスをBlueXP分類に統合していない場合、このパネルにデータは表示されません。link:task-add-active-directory-datasense.html["Active DirectoryサービスとBlueXPの分類を統合する方法をご紹介します"^]です。
 
 
 TIP: このパネルでは、CIFS共有、OneDrive、SharePointのデータソースのファイルをサポートしています。現在、データベース、Googleドライブ、Amazon S3、汎用オブジェクトストレージはサポートされていません。
@@ -51,4 +51,4 @@ TIP: このパネルでは、CIFS共有、OneDrive、SharePointのデータソ�
 
 Azure Information Protection （ AIP ）に加入している場合は、コンテンツにラベルを適用することで、ドキュメントとファイルを分類して保護できます。ファイルに割り当てられている最も使用されている AIP ラベルを確認すると、ファイルで最も使用されているラベルを確認できます。
 
-を参照してください link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP ラベル"^] を参照してください。
+詳細については、を参照してください link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP ラベル"^] 。

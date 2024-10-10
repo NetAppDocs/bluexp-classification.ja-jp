@@ -16,17 +16,17 @@ summary: データベーススキーマをスキャンする場合、BlueXPの�
 [role="lead"]
 データベーススキーマをスキャンする場合、BlueXPの分類では使用できない機能がいくつかあります。以下のリストを参照してください。
 
-スキャン対象のBlueXP分類にデータベーススキーマを追加できます。 link:task-scanning-databases.html["ここで説明するようにします"^]。
+スキャン対象のBlueXP  分類にデータベーススキーマを追加できますlink:task-scanning-databases.html["ここで説明するようにします"^]。
 
 [cols="12,25,9,9,9,9,9,9,9"]
 |===
-| を入力します | 説明 | MongoDB | SQL Server | MySQL | Oracle の場合 | PostgreSQL | SAP HANA のサポート | Amazon RDS 
+| タイプ | 製品説明 | MongoDB | SQLサーバ | MySQL | Oracle | PostgreSQL | SAP HANA | Amazon RDS 
 
 
 .9+| アクション | ポリシーを作成する | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
 
 
-| タグ（ Tag ） | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+| タグ | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
 
 
 | 割り当て先 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  

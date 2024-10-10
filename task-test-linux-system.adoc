@@ -37,9 +37,9 @@ BlueXP分類インストールスクリプトには、前提条件となるテ�
 
 BlueXPをインストールして使用するには、BlueXPコネクタが必要です。ただし、コネクタを使用せずに前提条件スクリプトを実行することはできます。
 
-可能です https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスにインストールします"^] ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。BlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。
+ネットワーク内のLinuxホストまたはクラウド内のLinuxホストに配置できます https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスにインストールします"^]。BlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。
 
-クラウドプロバイダ環境でコネクタを作成するには、を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS でコネクタを作成する"^]、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP でコネクタを作成する"^]。
+クラウドプロバイダ環境でコネクタを作成するには、、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azure でコネクタを作成する"^]、または https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP でコネクタを作成する"^]を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS でコネクタを作成する"^]。
 
 前提条件スクリプトを実行するときに、コネクタシステムのIPアドレスまたはホスト名が必要になります。この情報は、コネクタをオンプレミスにインストールした場合に表示されます。コネクタがクラウドに導入されている場合は、BlueXPコンソールで[ヘルプ]アイコンをクリックし、[*サポート]を選択して、[* BlueXPコネクタ*]をクリックします。
 
@@ -57,22 +57,16 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 | システムサイズ | CPU | RAM（スワップメモリを無効にする必要があります） | ディスク 
 
 
-| *特大* | CPU×32 | 128GBのRAM | 1TiB SSDオン/または
--100GiBは/optで利用可能
--895GiBを/var/lib/dockerで使用可能
--5GiB（/tmp 
+| *特大* | CPU×32 | 128GBのRAM | SSDが1TiB、または-100GiBが/opt-895GiBが/var/lib/dockerで-5GiBが/tmpで利用可能 
 
 
-| *大きい* | 16 CPU | 64GBのRAM | 500GiB SSDオン/、または
--100GiBは/optで利用可能
--395GiBは/var/lib/docker、Podman/var/lib/containers、またはPodman/var/lib/containersで使用可能
--5GiB（/tmp 
+| *大きい* | CPU×16 | 64GBのRAM | 500GiB SSDオン/または-100GiBオン/opt-395GiBオン/var/lib/dockerまたはPodman/var/lib/containersまたはPodman/var/lib/containersの場合は-5GiBオン/tmp 
 |===
 * BlueXP分類インストール用にコンピューティングインスタンスをクラウドに導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。
 +
-** * Amazon Elastic Compute Cloud（Amazon EC2）インスタンスタイプ*：「m6i.4xlarge」を推奨します。 link:reference-instance-types.html#aws-instance-types["その他のAWSインスタンスタイプを参照してください"^]。
-** * Azure VMのサイズ*：「Standard_D16s_v3」を推奨します。 link:reference-instance-types.html#azure-instance-types["その他のAzureインスタンスタイプを参照してください"^]。
-** *GCPマシンタイプ*:「n2-standard-16」をお勧めします。 link:reference-instance-types.html#gcp-instance-types["追加のGCPインスタンスタイプを参照してください"^]。
+** * Amazon Elastic Compute Cloud（Amazon EC2）インスタンスタイプ*：「m6i.4xlarge」を推奨します。link:reference-instance-types.html#aws-instance-types["追加のAWSインスタンスタイプを参照してください"^]です。
+** * Azure VMのサイズ*：「Standard_D16s_v3」を推奨します。link:reference-instance-types.html#azure-instance-types["その他のAzureインスタンスタイプを参照してください"^]です。
+** *GCPマシンタイプ*:「n2-standard-16」をお勧めします。link:reference-instance-types.html#gcp-instance-types["追加のGCPインスタンスタイプを参照してください"^]です。
 
 
 * * UNIXフォルダ権限*：次の最小UNIX権限が必要です。
@@ -114,7 +108,7 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 +
 ** 使用しているOSに応じて、次のいずれかのコンテナエンジンをインストールする必要があります。
 +
-*** Docker Engineバージョン19.3.1以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
+*** Docker Engineバージョン19.3.1以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]です。
 *** Podmanバージョン4以降。Podmanをインストールするには、と入力し (`sudo yum install podman netavark -y`ます）。
 
 
@@ -122,10 +116,10 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 
 
 
-* Pythonバージョン3.6以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
+* Pythonバージョン3.6以降。 https://www.python.org/downloads/["インストール手順を確認します"^]です。
 +
 ** * NTPに関する考慮事項*：NetAppでは、ネットワークタイムプロトコル（NTP）サービスを使用するようにBlueXP分類システムを設定することを推奨しています。BlueXP分類システムとBlueXP Connectorシステムの間で時刻が同期されている必要があります。
-** *ファイアウォールの考慮事項*:使用を計画している場合 `firewalld`は、BlueXP分類をインストールする前に有効にすることを推奨します。次のコマンドを実行して設定します `firewalld` BlueXPと互換性があることを確認します。
+** * firewalldの考慮事項*：を使用する場合は `firewalld`、BlueXP  分類をインストールする前に有効にすることをお勧めします。次のコマンドを実行して、BlueXP  分類と互換性があるようにを設定し `firewalld`ます。
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -146,7 +140,7 @@ firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 ....
 +
-を有効または更新するたびに、DockerまたはPodmanを再起動する必要があることに注意してください。 `firewalld` 設定：
+設定を有効または更新するたびに、DockerまたはPodmanを再起動する必要があります `firewalld`。
 
 
 
@@ -169,20 +163,19 @@ TIP: このセクションは、インターネットに接続されていない
 | \ https://api.bluexp.netapp.com | ネットアップアカウントを含むBlueXPサービスとの通信 
 
 
-| ¥ https://netapp-cloud-account.auth0.com ¥ https://auth0.com | BlueXP Webサイトとの通信により、ユーザ認証を一元化。 
+| \https:// NetApp -cloud-account.auth0.com \https://auth0.com | BlueXP Webサイトとの通信により、ユーザ認証を一元化。 
 
 
-| https://support.compliance.api.bluexp.netapp.com/\ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/\ https://dseasb33srnrn.cloudfront.net/\ https://production.cloudflare.docker.com/ | ソフトウェアイメージ、マニフェスト、テンプレートへのアクセス、およびログとメトリックの送信を提供します。 
+| \ https://support.compliance.api BlueXP . NetApp . com /\https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | ソフトウェアイメージ、マニフェスト、テンプレートへのアクセス、およびログとメトリックの送信を提供します。 
 
 
-| \ https://support.compliance.api.bluexp.netapp.com/ | ネットアップが監査レコードからデータをストリーミングできるようにします。 
+| \ https://support.compliance.api BlueXP . NetApp . com/ | ネットアップが監査レコードからデータをストリーミングできるようにします。 
 
 
 | https://github.com/docker https://download.docker.com | Dockerのインストールに必要なパッケージを提供します。 
 
 
-| \http://packages.ubuntu.com/
-\http://archive.ubuntu.com | Ubuntuのインストールに必要なパッケージを提供します。 
+| \http://packages.ubuntu.com/ \http://archive.ubuntu.com | Ubuntuのインストールに必要なパッケージを提供します。 
 |===
 
 
@@ -192,7 +185,7 @@ TIP: このセクションは、インターネットに接続されていない
 
 [cols="25,25,50"]
 |===
-| 接続タイプ | ポート | 説明 
+| 接続タイプ | ポート | 製品説明 
 
 
 | コネクタ<> BlueXPの分類 | 8080（TCP）、443（TCP）、および80。9000 | コネクタのファイアウォールルールまたはルーティングルールで、ポート443を介したBlueXP分類インスタンスとの間のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。ポート8080が開いていることを確認し、BlueXPでインストールの進行状況を確認します。Linuxホストでファイアウォールが使用されている場合は、Ubuntuサーバ内の内部プロセスにポート9000が必要です。 
@@ -208,17 +201,17 @@ BlueXPはHTTPSを使用してONTAP クラスタを検出しましたカスタム
 
 BlueXPの分類の前提条件スクリプトを実行するには、次の手順を実行します。
 
-https://youtu.be/_RCYpuLXiV0?si=QLGUw8mqPrz9qs4B["こちらのビデオをご覧ください"^] 前提条件スクリプトの実行方法と結果の解釈方法を確認します。
+https://youtu.be/_RCYpuLXiV0?si=QLGUw8mqPrz9qs4B["こちらのビデオをご覧ください"^]前提条件スクリプトの実行方法と結果の解釈方法を確認します。
 
 .必要なもの
-* Linux システムがを満たしていることを確認します <<ホストの要件を確認,ホストの要件>>。
+* Linuxシステムがを満たしていることを確認します<<ホストの要件を確認,ホストの要件>>。
 * システムに前提条件となる2つのソフトウェアパッケージ（Docker EngineまたはPodman、およびPython 3）がインストールされていることを確認します。
 * Linux システムに対する root 権限があることを確認してください。
 
 
 .手順
-. からBlueXPの分類のPrerequisitesスクリプトをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は* standalone-pre-requisite-tester-tester*<version> です。
-. 使用するLinuxホストにファイルをコピーします（を使用） `scp` またはその他の方法を使用してください）。
+. からBlueXP  classification Prerequisitesスクリプトをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetAppサポートサイト"^]。選択するファイルの名前は* standalone-pre-requisite-tester-tester*<version> です。
+. 使用するLinuxホストにファイルをコピーします（またはその他の方法を使用 `scp`）。
 . スクリプトを実行する権限を割り当てます。
 +
 [source, cli]
@@ -245,7 +238,7 @@ chmod +x standalone-pre-requisite-tester-v1.25.0
 ** コネクタが取り付けられている場合は、「* Y *」と入力します。をクリックし、テストスクリプトで接続をテストできるように、BlueXPコネクタのIPアドレスまたはホスト名を入力します。
 
 
-. このスクリプトでは、システムに対してさまざまなテストが実行され、処理が進むにつれて結果が表示されます。終了すると、セッションのログがという名前のファイルに書き込まれます `prerequisites-test-<timestamp>.log` をクリックします `/opt/netapp/install_logs`。
+. このスクリプトでは、システムに対してさまざまなテストが実行され、処理が進むにつれて結果が表示されます。終了すると、セッションのログがディレクトリ内の `/opt/netapp/install_logs`という名前のファイルに書き込まれ `prerequisites-test-<timestamp>.log`ます。
 
 
 .結果

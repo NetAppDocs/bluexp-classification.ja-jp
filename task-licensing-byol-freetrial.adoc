@@ -18,7 +18,7 @@ summary: BlueXP  分類がBlueXP  プロジェクトまたはワークスペ�
 
 []
 ====
-*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
+*注*この情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。
 
 ====
 さらに読む前に、いくつかのメモを記入してください。
@@ -27,11 +27,11 @@ summary: BlueXP  分類がBlueXP  プロジェクトまたはワークスペ�
 * スキャンされるデータの量は論理ファイルサイズに基づいて計算され、Storage Efficiency機能は使用されません。
 
 
-link:concept-cloud-compliance.html#cost["BlueXPの分類に関連するライセンスとコストの詳細については、こちらをご覧ください"]。
+link:concept-cloud-compliance.html#cost["BlueXPの分類に関連するライセンスとコストの詳細については、こちらをご覧ください"]です。
 
 
 
-== 30 日間の無償トライアルをご利用いただけます
+== 30日間の無償トライアル
 
 BlueXP  プロジェクトまたはワークスペースでBlueXP  分類によってスキャンされる最大1TBのデータを対象とした30日間の無償トライアルを利用できます。その後もデータのスキャンを継続するには、NetAppからBYOLライセンスを購入するか、クラウドプロバイダのマーケットプレイスからサブスクリプションに登録する必要があります。
 
@@ -47,8 +47,8 @@ BlueXP分類の料金は、年単位の契約を購入して年単位で支払�
 
 市場で年間契約を結んでいるパートナー様は、BlueXPの分類データスキャンの料金がその契約に対して請求されます。BYOLでは、年単位のマーケットプレイス契約を組み合わせることはできません。
 
-* AWS https://aws.amazon.com/marketplace/pp/prodview-q7dg6zwszplri["価格の詳細については、BlueXP Marketplaceのサービスを参照してください"^]。
-* Azure https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-bluexp["価格の詳細については、BlueXP Marketplaceのサービスを参照してください"^]。
+* AWS： https://aws.amazon.com/marketplace/pp/prodview-q7dg6zwszplri["価格の詳細については、BlueXP Marketplaceのサービスを参照してください"^]
+* Azure： https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-bluexp["価格の詳細については、BlueXP Marketplaceのサービスを参照してください"^]
 * Google Cloud：年間契約の購入については、NetAppの営業担当者にお問い合わせください。この契約は、Google Cloud Marketplaceでのプライベートオファーとして利用できます。NetAppからプライベートオファーが提供されたら、BlueXPの分類をアクティブ化する際にGoogle Cloud Marketplaceからサブスクライブする際に年間プランを選択できます。
 
 
@@ -64,7 +64,7 @@ BlueXP分類ライセンスをお持ちでない場合は、弊社までお問�
 * ライセンスをリクエストするには、BlueXPの右下にあるチャットアイコンをクリックします。
 
 
-必要に応じて、使用しないCloud Volumes ONTAP の未割り当てのノードベースライセンスがある場合は、同じ金額、同じ有効期限のBlueXP分類ライセンスに変換できます。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["詳細については、こちらをご覧ください"^]。
+必要に応じて、使用しないCloud Volumes ONTAPの未割り当てのノードベースライセンスがある場合は、同じ金額で同じ有効期限のBlueXP  分類ライセンスに変換できます。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["詳細については、こちらをご覧ください"^]です。
 
 BlueXPデジタルウォレットを使用して、BlueXP分類のBYOLライセンスを管理します。BlueXPデジタルウォレットから、新しいライセンスの追加、既存ライセンスの更新、ライセンスステータスの表示を行うことができます。
 
@@ -74,9 +74,9 @@ BlueXPデジタルウォレットを使用して、BlueXP分類のBYOLライセ�
 
 BlueXP分類（Data Sense）ライセンスを購入したら、BlueXP分類のシリアル番号とNetApp Support Site（NSS）アカウントを入力するか、NetAppライセンスファイル（NLF）をアップロードして、BlueXPでライセンスをアクティブ化します。次の手順は、 NLF ライセンスファイルを取得する方法を示しています。
 
-インターネットにアクセスできないオンプレミスサイトのホストにBlueXP分類を導入している（つまりBlueXPコネクタを https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["プライベートモード"^]では、インターネットに接続されたシステムからライセンスファイルを取得する必要があります。プライベートモードのインストールでは、シリアル番号とNSSアカウントを使用してライセンスをアクティブ化することはできません。
+インターネットにアクセスできないオンプレミスサイトのホストにBlueXP  分類を展開している場合、つまりにBlueXP  Connectorを展開している場合は https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["プライベートモード"^]、インターネットに接続されたシステムからライセンスファイルを取得する必要があります。プライベートモードのインストールでは、シリアル番号とNSSアカウントを使用してライセンスをアクティブ化することはできません。
 
-.作業を開始する前に
+.開始する前に
 開始する前に、次の情報が必要です。
 
 * BlueXP分類のシリアル番号
@@ -90,7 +90,7 @@ BlueXPアカウントIDを確認するには、BlueXPの上部にある[*Account
 
 
 .手順
-. にサインインします https://mysupport.netapp.com["ネットアップサポートサイト"^] [ システム ] 、 [ ソフトウェアライセンス ] の順にクリックします。
+. にサインインし https://mysupport.netapp.com["NetAppサポートサイト"^]、*[システム]>[ソフトウェアライセンス]*をクリックします。
 . BlueXP分類ライセンスのシリアル番号を入力します。
 +
 image:screenshot_cloud_tiering_license_step1.gif["シリアル番号で検索したあとのライセンスの一覧を示すスクリーンショット。"]
@@ -115,7 +115,7 @@ BlueXPアカウント用のBlueXP分類（Data Sense）ライセンスを購入�
 +
 ** BlueXP分類ライセンスのシリアル番号があり、NSSアカウントがわかっている場合は、*[シリアル番号の入力]*オプションを選択してその情報を入力します。
 +
-お使いのNetApp Support Siteのアカウントがドロップダウンリストにない場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["NSSアカウントをBlueXPに追加します"^]。
+NetAppサポートサイトのアカウントがドロップダウンリストに表示されない場合は、を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["NSSアカウントをBlueXPに追加します"^]。
 
 ** BlueXP分類ライセンスファイル（ダークサイトにインストールされている場合に必要）がある場合は、*[Upload License File]*オプションを選択し、プロンプトに従ってファイルを添付します。
 +
@@ -136,7 +136,7 @@ BlueXPにライセンスが追加され、BlueXP分類サービスがアクテ�
 
 image:screenshot_services_license_expire_cc1.png["BlueXPの分類ページの有効期限が近いライセンスを示すスクリーンショット。"]
 
-このステータスは、BlueXPのデジタルウォレットや https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center["通知"^]。
+このステータスは、BlueXP  デジタルウォレットおよびにも表示され https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center["通知"^]ます。
 
 image:screenshot_services_license_expire_cc2.png["BlueXPのデジタルウォレットページの有効期限が近いライセンスを示すスクリーンショット。"]
 
@@ -149,8 +149,8 @@ BlueXP分類ライセンスは、有効期限が切れる前に更新できる�
 
 . BlueXPがライセンスを自動的に更新できない場合(たとえば、ダークサイトにインストールされている場合)、ライセンスファイルを手動でアップロードする必要があります。
 +
-.. 可能です <<BlueXP分類ライセンスファイルを入手します,ライセンスファイルをネットアップサポートサイトから入手します>>。
-.. BlueXPデジタルウォレットページの[Data Services Licenses]タブで、をクリックします image:screenshot_horizontal_more_button.gif["[ 詳細 ] アイコン"] 更新するサービスシリアル番号の場合は、 ［ * ライセンスの更新 * ］ をクリックします。
+.. できます<<BlueXP分類ライセンスファイルを入手します,ライセンスファイルをNetApp Support Siteから入手します>>。
+.. BlueXP  デジタルウォレットページの_Data Services Licenses_タブで、更新するサービスのシリアル番号をクリックし、* Update License *をクリックしimage:screenshot_horizontal_more_button.gif["[ 詳細 ] アイコン"]ます。
 +
 image:screenshot_services_license_update.png["特定のサービスの [ ライセンスの更新 ] ボタンを選択するスクリーンショット。"]
 
@@ -176,7 +176,7 @@ BlueXP分類（Data Sense）BYOLライセンスを使用している場合、ス
 
 ライセンスの有効期限が切れた場合、またはBYOLの上限に達した場合でも、BlueXPの分類は引き続き実行されますが、ダッシュボードへのアクセスはブロックされるため、スキャンしたデータに関する情報を表示できません。スキャンするボリューム数を減らして容量の使用量をライセンスの上限までにする場合は、 _Configuration_page だけを使用できます。
 
-BYOLライセンスを更新すると、BlueXPデジタルウォレットのライセンスが自動的に更新され、すべてのダッシュボードにフルアクセスできるようになります。BlueXPが安全なインターネット接続経由でライセンスファイルにアクセスできない場合(たとえば、ダークサイトにインストールされている場合)は、自分でファイルを取得してBlueXPに手動でアップロードできます。手順については、を参照してください <<BlueXP分類のBYOLライセンスを更新します,BlueXP分類ライセンスを更新する方法>>。
+BYOLライセンスを更新すると、BlueXPデジタルウォレットのライセンスが自動的に更新され、すべてのダッシュボードにフルアクセスできるようになります。BlueXPが安全なインターネット接続経由でライセンスファイルにアクセスできない場合(たとえば、ダークサイトにインストールされている場合)は、自分でファイルを取得してBlueXPに手動でアップロードできます。手順については、を参照してください<<BlueXP分類のBYOLライセンスを更新します,BlueXP分類ライセンスを更新する方法>>。
 
 
 NOTE: 使用しているアカウントがBYOLライセンスとPAYGOサブスクリプションの両方を所有している場合、BYOLライセンスの有効期限が切れた時点でBlueXP classification_はPAYGOサブスクリプションに移行しません。BYOL ライセンスを更新する必要があります。

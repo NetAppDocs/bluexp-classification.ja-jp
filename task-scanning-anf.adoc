@@ -22,19 +22,19 @@ summary: いくつかの手順を実行して、Azure NetApp Files 向けBlueXP�
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] スキャンするAzure NetApp Files システムを検出します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]スキャンするAzure NetApp Filesシステムの検出
 [role="quick-margin-para"]
-Azure NetApp Files ボリュームをスキャンする前に、 https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["構成を検出するには、BlueXPを設定する必要があります"^]。
+Azure NetApp Filesボリュームをスキャンする前に、を参照してください https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["構成を検出するには、BlueXPを設定する必要があります"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]BlueXP  分類インスタンスの導入
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["BlueXPでBlueXP分類を導入します"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXPでBlueXP分類を導入します"^]インスタンスがまだデプロイされていない場合。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] BlueXP分類を有効にし、スキャンするボリュームを選択します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]BlueXP  分類を有効にし、スキャンするボリュームを選択
 [role="quick-margin-para"]
 コンプライアンス * をクリックし、 * 構成 * タブを選択して、特定の作業環境でボリュームのコンプライアンススキャンを有効にします。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] ボリュームへのアクセスを確認
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]ボリュームへのアクセスを確保
 [role="quick-margin-para"]
 BlueXPの分類が有効になったので、すべてのボリュームにアクセスできることを確認します。
 
@@ -42,7 +42,7 @@ BlueXPの分類が有効になったので、すべてのボリュームにア�
 * BlueXP分類インスタンスには、各Azure NetApp Files サブネットへのネットワーク接続が必要です。
 * 次のポートがBlueXP分類インスタンスに対して開いていることを確認します。
 +
-** NFS –ポート 111 および 2049 。
+** NFS の場合 - ポート 111 および 2049
 ** CIFS の場合 - ポート 139 および 445
 
 
@@ -53,7 +53,7 @@ BlueXPの分類が有効になったので、すべてのボリュームにア�
 
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"] スキャンするボリュームを管理します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]スキャンするボリュームを管理します。
 [role="quick-margin-para"]
 スキャンするボリュームを選択または選択解除すると、BlueXP分類によってスキャンが開始または停止されます。
 
@@ -63,13 +63,13 @@ BlueXPの分類が有効になったので、すべてのボリュームにア�
 
 スキャンするAzure NetApp Files システムが作業環境としてまだBlueXPにない場合は、この時点でキャンバスに追加できます。
 
-https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["BlueXPでAzure NetApp Files システムを検出する方法を参照してください"^]。
+https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["BlueXPでAzure NetApp Files システムを検出する方法を参照してください"^]です。
 
 
 
 == BlueXP分類インスタンスを導入します
 
-link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^]インスタンスがまだデプロイされていない場合。
 
 Azure NetApp Files ボリュームのスキャン時にBlueXP分類がクラウドに導入され、スキャンするボリュームと同じリージョンに導入されている必要があります。
 
@@ -87,7 +87,7 @@ Azure NetApp Files ボリュームでBlueXP分類を有効にすることがで�
 +
 image:screenshot_cloud_compliance_anf_scan_config.png["BlueXP分類インスタンスを導入した直後の[Configuration]タブのスクリーンショット。"]
 
-. 各作業環境でボリュームをスキャンする方法を選択します。 link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングおよび分類スキャンについて説明します"]：
+. 各作業環境でボリュームをスキャンする方法を選択します。link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングおよび分類スキャンについて説明します"]：
 +
 ** すべてのボリュームをマップするには、 * すべてのボリュームをマップ * をクリックします。
 ** すべてのボリュームをマップして分類するには、 * すべてのボリュームをマップして分類 * をクリックします。
@@ -106,7 +106,7 @@ image:screenshot_cloud_compliance_anf_scan_config.png["BlueXP分類インスタ�
 [NOTE]
 ====
 * BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、CIFSでは属性の書き込み権限やNFSでの書き込み権限がない場合、デフォルトではボリューム内のファイルはスキャンされません。最終アクセス時間をリセットしても構わない場合は、*をクリックするか、各ボリュームのスキャンタイプ*を選択します。表示されるページで設定を有効にすると、権限に関係なくBlueXP分類でボリュームがスキャンされます。
-* BlueXPは、1つのボリュームに含まれるファイル共有を1つだけスキャンします。ボリュームに複数の共有がある場合は、それらの他の共有を共有グループとして個別にスキャンする必要があります。 link:reference-limitations.html#bluexp-classification-scans-only-one-share-under-a-volume["BlueXPの分類に関するこの制限の詳細を参照してください"^]。
+* BlueXPは、1つのボリュームに含まれるファイル共有を1つだけスキャンします。ボリュームに複数の共有がある場合は、それらの他の共有を共有グループとして個別にスキャンする必要があります。link:reference-limitations.html#bluexp-classification-scans-only-one-share-under-a-volume["BlueXPの分類に関するこの制限の詳細を参照してください"^]です。
 
 
 ====
@@ -124,7 +124,7 @@ NOTE: Azure NetApp Files では、BlueXPの分類でスキャンできるのはB
 
 . BlueXP分類インスタンスに対して次のポートが開いていることを確認します。
 +
-** NFS –ポート 111 および 2049 。
+** NFS の場合 - ポート 111 および 2049
 ** CIFS の場合 - ポート 139 および 445
 
 
@@ -165,13 +165,13 @@ image:screenshot_compliance_volume_details.gif["スキャン設定の[View Detai
 
 設定ページからは、作業環境でマッピング専用スキャンまたはマッピングおよび分類スキャンをいつでも開始または停止できます。マッピングのみのスキャンからマッピングおよび分類スキャンに変更することもできます。また、マッピングのみのスキャンからマッピングおよび分類スキャンに変更することもできます。すべてのボリュームをスキャンすることを推奨します。
 
-「属性の書き込み」権限がない場合にスキャンする*のページ上部のスイッチは、デフォルトでは無効になっています。つまり、BlueXPの分類にCIFSの属性への書き込み権限やNFSの書き込み権限がない場合、BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、ファイルはスキャンされません。最終アクセス時間がリセットされても構わない場合は、スイッチをオンにすると、権限に関係なくすべてのファイルがスキャンされます。 link:reference-collected-metadata.html#last-access-time-timestamp["詳細はこちら。"^]。
+「属性の書き込み」権限がない場合にスキャンする*のページ上部のスイッチは、デフォルトでは無効になっています。つまり、BlueXPの分類にCIFSの属性への書き込み権限やNFSの書き込み権限がない場合、BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、ファイルはスキャンされません。最終アクセス時間がリセットされても構わない場合は、スイッチをオンにすると、権限に関係なくすべてのファイルがスキャンされます。link:reference-collected-metadata.html#last-access-time-timestamp["詳細"^]です。
 
 image:screenshot_volume_compliance_selection.png["個々のボリュームのスキャンを有効または無効にできる設定ページのスクリーンショット。"]
 
 [cols="45,45"]
 |===
-| 終了： | 手順： 
+| 宛先： | 手順： 
 
 
 | ボリュームに対してマッピングのみのスキャンを有効にします | ボリューム領域で、 * マップ * をクリックします 

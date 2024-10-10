@@ -26,7 +26,7 @@ summary: この FAQ は、質問に対する簡単な回答を探している場
 
 === BlueXPの分類とは何ですか？
 
-BlueXPは、人工知能（AI）ベースのテクノロジを使用して、データのコンテキストを把握し、ストレージシステム全体で機密データを特定できるクラウドサービスです。システムには、BlueXP Canvasに追加した作業環境や、BlueXPの分類でネットワーク経由でアクセスできるさまざまな種類のデータソースを使用できます。 link:faq-cloud-compliance.html#what-sources-of-data-can-be-scanned-with-bluexp-classification["以下の一覧を参照してください"]。
+BlueXPは、人工知能（AI）ベースのテクノロジを使用して、データのコンテキストを把握し、ストレージシステム全体で機密データを特定できるクラウドサービスです。システムには、BlueXP Canvasに追加した作業環境や、BlueXPの分類でネットワーク経由でアクセスできるさまざまな種類のデータソースを使用できます。link:faq-cloud-compliance.html#what-sources-of-data-can-be-scanned-with-bluexp-classification["以下の一覧を参照してください"]です。
 
 BlueXPは分類されるため、事前定義されたパラメータ（機密情報のタイプやカテゴリなど）を使用して、データプライバシーと機密性に関する新しいデータコンプライアンス規制（GDPR、CCPA、HIPAAなど）に対応できます。
 
@@ -38,9 +38,9 @@ BlueXPは、人工知能のもう1つのレイヤを、BlueXPシステムやス�
 
 BlueXPの分類では、AIを使用してデータのコンテキストを把握し、正確な検出と分類を実現します。AIは、最新のデータタイプと拡張性を考慮して設計されているため、この目的はAIによって推進されます。また、データコンテキストを理解して、強力で正確な検出と分類を提供します。
 
-link:concept-cloud-compliance.html["BlueXPの分類の仕組みについて詳しくは、こちらをご覧ください"^]。
+link:concept-cloud-compliance.html["BlueXPの分類の仕組みについて詳しくは、こちらをご覧ください"^]です。
 
-https://bluexp.netapp.com/netapp-cloud-data-sense["BlueXP分類のユースケースの詳細については、こちらをご覧ください"^]。
+https://bluexp.netapp.com/netapp-cloud-data-sense["BlueXP分類のユースケースの詳細については、こちらをご覧ください"^]です。
 
 
 
@@ -78,11 +78,11 @@ BlueXPの分類はBlueXPの一部として機能し、AWS、Azure、GCPをサポ
 
 データの最初のスキャンには少し時間がかかることがありますが、その後のスキャンでは増分変更のみが検査されるため、システムスキャン時間が短縮されます。BlueXPの分類では、データがラウンドロビン方式で継続的にスキャンされ、一度に6つのリポジトリがスキャンされるため、変更されたすべてのデータが非常に迅速に分類されます。
 
-link:concept-cloud-compliance.html#how-scans-work["スキャンの仕組みを説明します"]。
+link:concept-cloud-compliance.html#how-scans-work["スキャンの仕組みを説明します"]です。
 
 BlueXPの分類では、データベースが1日に1回しかスキャンされません。データベースは、他のデータソースのように継続的にスキャンされるわけではありません。
 
-データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響がごくわずかであっても問題が発生する場合は、「低速」スキャンを実行するようにBlueXPの分類を設定できます。 link:task-reduce-scan-speed.html["スキャン速度を下げる方法を参照してください"]。
+データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響がごくわずかであっても問題が発生する場合は、「低速」スキャンを実行するようにBlueXPの分類を設定できます。link:task-reduce-scan-speed.html["スキャン速度を下げる方法を参照してください"]です。
 
 
 
@@ -98,22 +98,22 @@ BlueXPは、幅広い検索機能を備えており、接続されているす�
 
 はい。BlueXPの分類によって提供される情報は、組織内の他の関係者に関連性があるため、レポートを生成して分析情報を共有できます。BlueXPの分類で使用できるレポートは次のとおりです。
 
-プライバシーリスクアセスメントレポート:: データからプライバシーに関する情報を収集し、プライバシーリスクスコアを取得します。 link:task-generating-compliance-reports.html#privacy-risk-assessment-report["詳細はこちら。"^]。
-Data Subject Access Request レポート:: データ主体の特定の名前または個人IDに関する情報を含むすべてのファイルのレポートを抽出できます link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["詳細はこちら。"^]。
-PCI DSS レポート:: クレジットカード情報のファイルへの配布を識別するのに役立ちます。 link:task-generating-compliance-reports.html#pci-dss-report["詳細はこちら。"^]。
-HIPAA レポート:: 健常性情報がファイルにどのように分散されているかを確認できます。 link:task-generating-compliance-reports.html#hipaa-report["詳細はこちら。"^]。
-データマッピングレポート:: 作業環境内のファイルのサイズと数について説明します。これには、使用容量、データの経過時間、データのサイズ、ファイルタイプが含まれます。 link:task-controlling-governance-data.html#data-mapping-report["詳細はこちら。"^]。
-Data Discovery Assessmentレポート:: スキャンされた環境の高度な分析を行い、システムの調査結果を強調し、懸念すべき領域と潜在的な修復手順を示します。 link:task-controlling-governance-data.html#data-discovery-assessment-report["学習モード"^]。
-特定の情報タイプに関するレポート:: 個人データや機密性の高い個人データを含む、特定されたファイルの詳細を含むレポートを利用できます。カテゴリおよびファイルタイプ別に分類されたファイルを表示することもできます。 link:task-controlling-private-data.html["詳細はこちら。"^]。
+プライバシーリスクアセスメントレポート:: データからプライバシーに関する情報を収集し、プライバシーリスクスコアを取得します。link:task-generating-compliance-reports.html#privacy-risk-assessment-report["詳細"^]です。
+Data Subject Access Request レポート:: データ主体の特定の名前または個人IDに関する情報を含むすべてのファイルのレポートを抽出できますlink:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["詳細"^]です。
+PCI DSS レポート:: クレジットカード情報のファイルへの配布を識別するのに役立ちます。link:task-generating-compliance-reports.html#pci-dss-report["詳細"^]です。
+HIPAAレポート:: 健常性情報がファイルにどのように分散されているかを確認できます。link:task-generating-compliance-reports.html#hipaa-report["詳細"^]です。
+データマッピングレポート:: 作業環境内のファイルのサイズと数について説明します。これには、使用容量、データの経過時間、データのサイズ、ファイルタイプが含まれます。link:task-controlling-governance-data.html#data-mapping-report["詳細"^]です。
+Data Discovery Assessmentレポート:: スキャンされた環境の高度な分析を行い、システムの調査結果を強調し、懸念すべき領域と潜在的な修復手順を示します。link:task-controlling-governance-data.html#data-discovery-assessment-report["学習モード"^]です。
+特定の情報タイプに関するレポート:: 個人データや機密性の高い個人データを含む、特定されたファイルの詳細を含むレポートを利用できます。カテゴリおよびファイルタイプ別に分類されたファイルを表示することもできます。link:task-controlling-private-data.html["詳細"^]です。
 
 
 
 
 === スキャンのパフォーマンスは変化しますか？
 
-スキャンのパフォーマンスは、環境内のネットワーク帯域幅と平均ファイルサイズによって異なります。また、（クラウドまたはオンプレミスの）ホストシステムのサイズ特性にも左右されます。を参照してください link:concept-cloud-compliance.html#the-bluexp-classification-instance["BlueXP分類インスタンス"^] および link:task-deploy-cloud-compliance.html["BlueXP分類の導入"^] を参照してください。
+スキャンのパフォーマンスは、環境内のネットワーク帯域幅と平均ファイルサイズによって異なります。また、（クラウドまたはオンプレミスの）ホストシステムのサイズ特性にも左右されます。詳細については、およびを参照してください link:concept-cloud-compliance.html#the-bluexp-classification-instance["BlueXP分類インスタンス"^] link:task-deploy-cloud-compliance.html["BlueXP分類の導入"^] 。
 
-新しいデータソースを最初に追加するときに、「分類」のフルスキャンではなく「マッピング」スキャンのみを実行するように選択することもできます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。 link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングスキャンと分類スキャンの違いを参照してください"^]。
+新しいデータソースを最初に追加するときに、「分類」のフルスキャンではなく「マッピング」スキャンのみを実行するように選択することもできます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングスキャンと分類スキャンの違いを参照してください"^]です。
 
 
 
@@ -127,7 +127,7 @@ Data Discovery Assessmentレポート:: スキャンされた環境の高度な�
 
 まず、BlueXP分類のインスタンスをBlueXPまたはオンプレミスシステムに導入する必要があります。インスタンスが実行されると、*[設定]*タブから、または特定の作業環境を選択して、既存の作業環境、データベース、およびその他のデータソースに対してサービスを有効にできます。
 
-link:task-getting-started-compliance.html["開始方法をご確認ください"^]。
+link:task-getting-started-compliance.html["開始方法をご確認ください"^]です。
 
 
 NOTE: データソースでBlueXPの分類をアクティブ化すると、すぐに初回スキャンが実行されます。スキャン結果はすぐ後に表示されます。
@@ -138,7 +138,7 @@ NOTE: データソースでBlueXPの分類をアクティブ化すると、す�
 
 BlueXPの分類の設定ページでは、個 々 の作業環境、データベース、またはファイル共有グループがスキャンされないように設定できます。
 
-link:task-managing-compliance.html["詳細はこちら。"^]。
+link:task-managing-compliance.html["詳細"^]です。
 
 
 NOTE: BlueXP分類インスタンスを完全に削除するには、クラウドプロバイダのポータルまたはオンプレミスの場所からBlueXP分類インスタンスを手動で削除します。
@@ -156,7 +156,7 @@ BlueXPは分類されているため、データの分析情報が得られま�
 * カスタムパターンは、正規表現（regex）を使用して追加できます。
 
 
-link:task-managing-data-fusion.html["詳細はこちら。"^]。
+link:task-managing-data-fusion.html["詳細"^]です。
 
 
 
@@ -164,13 +164,13 @@ link:task-managing-data-fusion.html["詳細はこちら。"^]。
 
 はい。BlueXPの分類で、特定のデータソースディレクトリにあるスキャンデータを除外するには、そのリストを分類エンジンに指定します。この変更を適用すると、BlueXPの分類によって、指定したディレクトリ内のスキャンデータが除外されます。
 
-link:task-exclude-scan-paths.html["詳細はこちら。"^]。
+link:task-exclude-scan-paths.html["詳細"^]です。
 
 
 
 === ONTAPボリュームにあるSnapshotはスキャンされますか？
 
-いいえBlueXPの分類ではSnapshotはスキャンされません。これは、コンテンツがボリューム内のコンテンツと同じであるためです。
+いいえ。コンテンツがボリューム内のコンテンツと同じであるため、BlueXP  分類ではSnapshotはスキャンされません。
 
 
 
@@ -192,7 +192,7 @@ BlueXPの分類では、コールドデータがオブジェクトストレー�
 
 BlueXPの分類では、BlueXP Canvasに追加した作業環境や、BlueXPの分類がネットワーク経由でアクセスできるさまざまな種類の構造化/非構造化データソースのデータをスキャンできます。
 
-を参照してください link:concept-cloud-compliance.html["サポートされている作業環境とデータソース"]。
+を参照して link:concept-cloud-compliance.html["サポートされている作業環境とデータソース"]
 
 
 
@@ -202,7 +202,7 @@ BlueXPの分類は、コネクタが政府機関のリージョン（AWS GovClou
 
 []
 ====
-*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
+*注*この情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。
 
 ====
 * OneDriveアカウント、SharePointアカウント、Googleドライブアカウントはスキャンできません。
@@ -220,7 +220,7 @@ BlueXPの分類では、オンプレミスサイトのローカルなデータ�
 * Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージ
 
 
-を参照してください link:concept-cloud-compliance.html["サポートされている作業環境とデータソース"]。
+を参照して link:concept-cloud-compliance.html["サポートされている作業環境とデータソース"]
 
 
 
@@ -230,7 +230,7 @@ BlueXPの分類は、すべてのファイルをスキャンしてカテゴリ�
 
 BlueXPの分類でPersonal Identifiable Information（PII）が検出された場合、またはDSAR検索が実行された場合、サポートされるファイル形式は次のとおりです。
 
-「+.csv」、「.dcm」、「.dom」、「.DOC」、「.DOCX」、 .json、.pdf、.PPTX、.rtf、.TXT、 .XLS、.xlsx、Docs、Sheets、Slides +`
+`+.CSV, .DCM, .DICOM, .DOC, .DOCX, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
 
 
 
@@ -238,11 +238,11 @@ BlueXPの分類でPersonal Identifiable Information（PII）が検出された�
 
 BlueXPの分類を使用すると、一般的な「マッピング」スキャンまたは完全な「分類」スキャンをデータソースに対して実行できます。マッピングではデータの概要のみが示され、分類ではデータの詳細なスキャンが提供されます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。
 
-* *データマッピングスキャン*：BlueXPの分類により、メタデータのみがスキャンされます。これは、全体的なデータ管理とガバナンス、プロジェクトの迅速な範囲設定、非常に大規模な環境、優先順位付けに役立ちます。データマッピングはメタデータに基づいており、*高速*スキャンとみなされます。
+* *データマッピングスキャン*：BlueXP  分類はメタデータのみをスキャンします。これは、全体的なデータ管理とガバナンス、プロジェクトの迅速な範囲設定、非常に大規模な環境、優先順位付けに役立ちます。データマッピングはメタデータに基づいており、*高速*スキャンとみなされます。
 +
 高速スキャンの後、データマッピングレポートを生成できます。このレポートは、企業データソースに保存されているデータの概要を示しており、リソースの使用率、移行、バックアップ、セキュリティ、コンプライアンスの各プロセスに関する決定に役立ちます。
 
-* *データ分類（ディープ）スキャン*：BlueXPの分類スキャンでは、標準プロトコルと読み取り専用権限を使用して環境全体をスキャンします。一部のファイルは、ビジネスに関連する機密データ、プライベート情報、ランサムウェアに関連する問題の有無をチェックして開きます。
+* *データ分類（ディープ）スキャン*：環境全体で標準プロトコルと読み取り専用権限を使用して、BlueXP  分類スキャンを実行します。一部のファイルは、ビジネスに関連する機密データ、プライベート情報、ランサムウェアに関連する問題の有無をチェックして開きます。
 +
 フルスキャン後は、[Data Investigation]ページでのデータの表示と絞り込み、ファイル内の名前の検索、ソースファイルのコピー、移動、削除など、データに適用できるBlueXPの分類機能が多数用意されています。
 
@@ -250,7 +250,7 @@ BlueXPの分類を使用すると、一般的な「マッピング」スキャ�
 
 BlueXPの分類では、ファイル名、権限、作成日時、最終アクセス、最終変更日時などのメタデータがキャプチャされます。これには、[Data Investigation Details]ページおよび[Data Investigation Reports]に表示されるすべてのメタデータが含まれます。
 
-BlueXPの分類では、個人情報（PII）や機密性の高い個人情報（SPii）など、さまざまなタイプのプライベートデータを特定できます。プライベートデータの詳細については、を参照してください。 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["BlueXPの分類でスキャンされるプライベートデータのカテゴリ"]。
+BlueXP  の分類は、個人情報(PII)や機密性の高い個人情報(SPII)など、多くの種類の個人データを識別することができます。プライベートデータの詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["BlueXPの分類でスキャンされるプライベートデータのカテゴリ"]。
 
 
 
@@ -260,13 +260,13 @@ BlueXPの分類では、個人情報（PII）や機密性の高い個人情報�
 
 また、特定のユーザーがBlueXP  分類設定を管理する機能を持たずにBlueXP  分類スキャン結果のみを表示できるようにする場合は、それらのユーザーに*分類ビューア*ロール（標準モードでBlueXP  を使用している場合）または*コンプライアンスビューア*ロール（制限モードでBlueXP  を使用している場合）を割り当てることができます。
 
-link:concept-cloud-compliance.html["詳細はこちら。"^]です。
+link:concept-cloud-compliance.html["詳細"^]です。
 
 
 
 === ブラウザとBlueXPの分類の間で送信されたプライベートデータに誰でもアクセスできますか？
 
-いいえブラウザとBlueXP分類インスタンスの間で送信されるプライベートデータは、TLS 1.2を使用したエンドツーエンドの暗号化で保護されます。つまり、NetAppやネットアップ以外のユーザはデータを読み取ることができません。BlueXPの分類では、アクセスをリクエストして承認しないかぎり、ネットアップとデータや結果が共有されることはありません。
+いいえ。ブラウザとBlueXP  分類インスタンスの間で送信されるプライベートデータは、TLS 1.2を使用したエンドツーエンドの暗号化で保護されています。これは、NetAppと非NetAppの関係者がそれを読み取ることができないことを意味します。BlueXPの分類では、アクセスをリクエストして承認しないかぎり、ネットアップとデータや結果が共有されることはありません。
 
 スキャンされたデータは環境内に保持されます。
 
@@ -322,7 +322,7 @@ Connectorは、クラウドアカウントまたはオンプレミスのいず�
 * オンプレミスのONTAPシステム、NetAppファイル共有、データベースのデータをスキャンする場合は、これらのクラウドのいずれかでコネクタを使用できます。
 
 
-そのため、これらの場所の多くにデータがある場合は、を使用する必要があります https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["複数のコネクタ"^]。
+したがって、これらの多くの場所にデータがある場合は、を使用する必要があり https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["複数のコネクタ"^]ます。
 
 
 
@@ -336,7 +336,7 @@ BlueXPはデータプレーンのクレデンシャル（CIFSクレデンシャ�
 
 === コネクタを自分のホストに導入できますか。
 
-はい。可能です https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["コネクタをオンプレミスに導入"^] ネットワーク内のLinuxホストまたはクラウド内のホスト。BlueXP分類をオンプレミスに導入する予定の場合は、コネクタもオンプレミスにインストールすることを推奨しますが、必須ではありません。
+はい。ネットワーク内のLinuxホストまたはクラウド内のホストに配置できます https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["コネクタをオンプレミスに導入"^]。BlueXP分類をオンプレミスに導入する予定の場合は、コネクタもオンプレミスにインストールすることを推奨しますが、必須ではありません。
 
 
 
@@ -348,7 +348,7 @@ BlueXPはデータプレーンのクレデンシャル（CIFSクレデンシャ�
 
 === インターネットにアクセスできないセキュアなサイトはどうでしょうか。
 
-はい、サポートされています。可能です https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["インターネットにアクセスできないオンプレミスのLinuxホストにコネクタを導入します"^]。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["これは「プライベートモード」とも呼ばれます。"^]。その後、オンプレミスのONTAP クラスタとその他のローカルデータソースを検出し、BlueXPの分類を使用してデータをスキャンできます。
+はい、サポートされています。できます https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["インターネットにアクセスできないオンプレミスのLinuxホストにコネクタを導入します"^]。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["これは「プライベートモード」とも呼ばれます。"^]です。その後、オンプレミスのONTAP クラスタとその他のローカルデータソースを検出し、BlueXPの分類を使用してデータをスキャンできます。
 
 
 
@@ -366,23 +366,23 @@ BlueXPを使用すると、オンプレミス、クラウド、ハイブリッ�
 
 === BlueXPの分類には、どのようなタイプのインスタンスやVMが必要ですか？
 
-いつ link:task-deploy-cloud-compliance.html["クラウドに導入"]：
+link:task-deploy-cloud-compliance.html["クラウドに導入"]次の場合：
 
 * AWSでは、BlueXPの分類は、500GiBのgp2ディスクを含むm6i.4xlargeインスタンスで実行されます。導入時に小さいインスタンスタイプを選択できます。
 * Azureでは、BlueXPの分類は、ディスクが500GiBのStandard_D16s_v3 VMで実行されます。
 * GCPでは、BlueXPの分類は、500GiB Standard永続ディスクを搭載したn2-standard-16 VMで実行されます。
 
 
-link:concept-cloud-compliance.html["BlueXPの分類の仕組みについて詳しくは、こちらをご覧ください"^]。
+link:concept-cloud-compliance.html["BlueXPの分類の仕組みについて詳しくは、こちらをご覧ください"^]です。
 
 
 
 === BlueXP分類を独自のホストに導入できますか。
 
-はい。ネットワークまたはクラウドでインターネットにアクセスできるLinuxホストにBlueXP分類ソフトウェアをインストールできます。すべてが同じように動作し、BlueXPを使用してスキャン設定と結果を引き続き管理できます。を参照してください link:task-deploy-compliance-onprem.html["BlueXPの分類をオンプレミスに導入"] を参照してください。
+はい。ネットワークまたはクラウドでインターネットにアクセスできるLinuxホストにBlueXP分類ソフトウェアをインストールできます。すべてが同じように動作し、BlueXPを使用してスキャン設定と結果を引き続き管理できます。システム要件およびインストールの詳細については、を参照してくださいlink:task-deploy-compliance-onprem.html["BlueXPの分類をオンプレミスに導入"]。
 
 
 
 === インターネットにアクセスできないセキュアなサイトはどうでしょうか。
 
-はい、サポートされています。可能です link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスサイトにBlueXPを分類して導入します"] 完全にセキュアなサイトに。
+はい、サポートされています。あなたは完全に安全なサイトのためにできますlink:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスサイトにBlueXPを分類して導入します"]。

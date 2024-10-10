@@ -20,7 +20,7 @@ summary: インターネットにアクセスできるクラウド内のLinuxホ
 
 []
 ====
-*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
+*注*この情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。
 
 ====
 スキャナノードを追加するには、次の2つの方法があります。
@@ -72,13 +72,13 @@ BlueXPの分類に追加するスキャナグループとその名前を選択�
 +
 [cols="15,20,55"]
 |===
-| ポート | プロトコル | 説明 
+| ポート | プロトコル | 製品説明 
 
 
 | 2377 | TCP | クラスタ管理通信 
 
 
-| 7946 | tcp 、 udp です | ノード間通信 
+| 7946 | TCP、UDP | ノード間通信 
 
 
 | 4789 | UDP | オーバーレイネットワークトラフィック 
@@ -87,12 +87,12 @@ BlueXPの分類に追加するスキャナグループとその名前を選択�
 | 50 | ESP | 暗号化された IPsec オーバーレイネットワーク（ ESP ）トラフィック 
 
 
-| 111 | tcp 、 udp です | ホスト間でファイルを共有するための NFS サーバ（各スキャナノードからマネージャノードに必要） 
+| 111 | TCP、UDP | ホスト間でファイルを共有するための NFS サーバ（各スキャナノードからマネージャノードに必要） 
 
 
-| 2049 | tcp 、 udp です | ホスト間でファイルを共有するための NFS サーバ（各スキャナノードからマネージャノードに必要） 
+| 2049 | TCP、UDP | ホスト間でファイルを共有するための NFS サーバ（各スキャナノードからマネージャノードに必要） 
 |===
-* 使用するポート `firewalld` BlueXP分類マシンでは、BlueXP分類をインストールする前に有効にすることを推奨します。次のコマンドを実行して設定します `firewalld` BlueXPと互換性があることを確認します。
+* BlueXP  分類マシンでを使用している場合は `firewalld`、BlueXP  分類をインストールする前に有効にすることをお勧めします。次のコマンドを実行して、BlueXP  分類と互換性があるようにを設定し `firewalld`ます。
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -107,7 +107,7 @@ firewall-cmd --permanent --add-port=4789/udp
 firewall-cmd --reload
 ....
 +
-を有効または更新するたびに、DockerまたはPodmanを再起動する必要があることに注意してください。 `firewalld` 設定：
+設定を有効または更新するたびに、DockerまたはPodmanを再起動する必要があります `firewalld`。
 
 
 
@@ -128,7 +128,7 @@ image:screenshot_connector_client_id.png["BlueXP Connectorの構成設定のス�
 +
 image:screenshot_work_env_id.png["BlueXPの分類の[Configuration]ページに表示されるWorking Environment IDのスクリーンショット。"]
 
-. にアクセスします https://services.cloud.netapp.com/developer-hub["APIドキュメント開発者ハブ"^] [*Learn how to authenticate*(認証方法を確認する)]をクリック
+. に移動し https://services.cloud.netapp.com/developer-hub["APIドキュメント開発者ハブ"^]、*[Learn how to authenticate]*をクリックします。
 +
 image:screenshot_client_access_token.png["APIドキュメントページのスクリーンショット。認証手順へのリンクが表示されています。"]
 
@@ -137,7 +137,7 @@ image:screenshot_client_access_token.png["APIドキュメントページのス�
 
 
 .手順
-. BlueXP Classification Managerノードで、スクリプト「add_scanner_node.sh」を実行します。たとえば、次のコマンドはスキャナノードを2つ追加します。
+. BlueXP Classification Managerノードで、スクリプト「add_scanner_node.sh」を実行します。たとえば、次のコマンドは2つのスキャナノードを追加します。
 +
 `sudo ./add_scanner_node.sh -a <account_id> -c <client_id> -m <cm_host> -h <ds_manager_ip> *-n <node_private_ip_1,node_private_ip_2>* -t <user_token>`
 
@@ -153,10 +153,10 @@ image:screenshot_client_access_token.png["APIドキュメントページのス�
 ** _user_token_= JWTユーザーアクセストークン
 
 
-. add_scanner_nodeスクリプトが完了する前に、スキャナノードに必要なインストールコマンドを示すダイアログが表示されます。コマンドをコピーします（例： `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF1s35212 -u red95467j`）を入力し、テキストファイルに保存します。
+. add_scanner_nodeスクリプトが完了する前に、スキャナノードに必要なインストールコマンドを示すダイアログが表示されます。コマンド（例：）をコピーし `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF1s35212 -u red95467j`、テキストファイルに保存します。
 . 各 * スキャナノードホストで：
 +
-.. データセンスインストーラファイル(*DATASENSE-installer -<version> .tar.gz*)をホストマシンにコピーします(scpなどの方法を使用)。
+.. Data Senseインストーラファイル（* DATASENSE-INSTALLER -<version>.tar.gz *）をホストマシンにコピーします（またはその他の方法を使用します `scp`）。
 .. インストーラファイルを解凍します。
 .. 手順2でコピーしたコマンドを貼り付けて実行します。
 .. スキャナノードを「スキャナグループ」に追加する場合は、パラメータ*-r <scanner_group_name>*をコマンドに追加します。それ以外の場合は、スキャナノードが「デフォルト」グループに追加されます。

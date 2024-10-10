@@ -18,7 +18,7 @@ BlueXP分類を使用して、ユーザーのOneDriveフォルダ内のファイ
 
 []
 ====
-*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
+*注*この情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。
 
 ====
 
@@ -27,19 +27,19 @@ BlueXP分類を使用して、ユーザーのOneDriveフォルダ内のファイ
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] OneDrive の前提条件を確認します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]OneDriveの前提条件を確認する
 [role="quick-margin-para"]
 OneDrive アカウントにログインするための管理者資格情報があることを確認してください。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]BlueXP  分類インスタンスの導入
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^]インスタンスがまだデプロイされていない場合。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] OneDrive アカウントを追加します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]OneDriveアカウントを追加する
 [role="quick-margin-para"]
 Admin ユーザクレデンシャルを使用して、アクセスする OneDrive アカウントにログインし、新しい作業環境として追加します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] ユーザを追加して、スキャンのタイプを選択します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]ユーザーを追加し、スキャンのタイプを選択します。
 [role="quick-margin-para"]
 スキャンするユーザのリストを OneDrive アカウントから追加し、スキャンのタイプを選択します。一度に最大 100 人のユーザを追加できます。
 
@@ -59,7 +59,7 @@ BlueXPの分類を有効にする前に、次の前提条件を確認して、�
 
 導入されているインスタンスがない場合は、BlueXP分類を導入します。
 
-BlueXPには次のように分類できます link:task-deploy-cloud-compliance.html["クラウドに導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^]。
+BlueXP  分類には、またはをlink:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^]使用できますlink:task-deploy-cloud-compliance.html["クラウドに導入"^]。
 
 インスタンスがインターネットに接続されていれば、BlueXP分類ソフトウェアへのアップグレードは自動で実行されます。
 
@@ -115,7 +115,7 @@ image:screenshot_compliance_onedrive_add_email_addresses.png["スキャンする
 +
 [cols="45,45"]
 |===
-| 終了： | 手順： 
+| 宛先： | 手順： 
 
 
 | ユーザファイルに対してマッピングのみのスキャンを有効にします | [* マップ * ] をクリックします 

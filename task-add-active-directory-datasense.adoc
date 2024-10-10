@@ -20,9 +20,9 @@ BlueXPでCIFSボリュームをスキャンするためには、特定のデー�
 
 この統合により、BlueXPでは次の場所で追加情報 が提供されます。
 
-* 「ファイル所有者」を使用できます。 link:task-investigate-data.html#filter-data-in-the-data-investigation-page["フィルタ"] [調査]ペインで、ファイルのメタデータの結果を確認できます。SID （セキュリティ ID ）を含むファイル所有者ではなく、実際のユーザ名が入力されます。
-* を参照してください link:task-investigate-data.html#view-permissions-for-files-and-directories["フルファイル権限"] [すべてのアクセス許可の表示]ボタンをクリックしたときに、各ファイルおよびディレクトリについて、
-* を参照してください link:task-controlling-governance-data.html["ガバナンスダッシュボード"]を選択すると、 [ アクセス許可 ] パネルに、データに関するより詳細な情報が表示されます。
+* [File Owner]を使用すると、[Investigation]ペインでファイルのメタデータの結果を確認できますlink:task-investigate-data.html#filter-data-in-the-data-investigation-page["フィルタ"]。SID （セキュリティ ID ）を含むファイル所有者ではなく、実際のユーザ名が入力されます。
+* [すべての権限を表示]ボタンをクリックすると、各ファイルとディレクトリが表示されますlink:task-investigate-data.html#view-permissions-for-files-and-directories["フルファイル権限"]。
+* ではlink:task-controlling-governance-data.html["ガバナンスダッシュボード"]、[開く権限（Open Permissions）]パネルに、データに関するより詳細な情報が表示されます。
 
 
 
@@ -36,7 +36,7 @@ Active DirectoryとBlueXPの統合では、次のデータソースからデー�
 
 * オンプレミスの ONTAP システム
 * Cloud Volumes ONTAP
-* Azure NetApp Files の特長
+* Azure NetApp Files
 * FSX for ONTAP の略
 * OneDriveアカウントとSharePointアカウント（旧バージョン1.30以前の場合）
 
@@ -74,7 +74,7 @@ LDAP サーバの IP アドレス、または複数の IP アドレス
 +
 [cols="20,20,30,30"]
 |===
-| プロトコル | ポート | 宛先 | 目的 
+| プロトコル | ポート | デスティネーション | 目的 
 
 
 | TCP および UDP | 389 | Active Directory | LDAP 
@@ -116,4 +116,4 @@ image:screenshot_compliance_active_directory_added.png["BlueXPに統合された
 
 Active Directory 統合の値を変更する必要がある場合は、 * Edit * ボタンをクリックして変更を行います。
 
-不要になった統合は、をクリックして削除することもできます image:screenshot_gallery_options.gif["[ 詳細 ] ボタン"] ボタンをクリックして、 * Active Directory を削除 * をクリックします。
+不要になった統合を削除するには、ボタンをクリックして* Active Directoryの削除*をクリックしimage:screenshot_gallery_options.gif["[ 詳細 ] ボタン"]ます。

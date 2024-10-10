@@ -18,7 +18,7 @@ BlueXPは、さまざまな方法でプライベートデータを管理でき�
 
 []
 ====
-*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
+*注*この情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。
 
 ====
 * 特定のデータのコピーを作成して別の NFS の場所に移動する場合は、デスティネーションの NFS 共有にファイルをコピーできます。
@@ -47,11 +47,11 @@ BlueXP分類でスキャンしている任意のソースファイルをコピ�
 
 * * ONTAP ボリュームのクローンを同じアグリゲート内の新しいボリュームに作成します。新しいクローンボリュームには、ソースボリュームから選択されたファイルのみを含めます。
 +
-これは、データを移行する際に元のボリュームから特定のファイルを除外する場合に便利です。このアクションではを使用します https://docs.netapp.com/us-en/ontap/volumes/flexclone-efficient-copies-concept.html["NetApp FlexClone"^] ボリュームをすばやく複製し、 * 選択しなかったファイルを削除する機能。
+これは、データを移行する際に元のボリュームから特定のファイルを除外する場合に便利です。この操作では、この機能を使用して https://docs.netapp.com/us-en/ontap/volumes/flexclone-efficient-copies-concept.html["NetApp FlexClone"^]ボリュームをすばやく複製し、*選択しなかった*ファイルを削除します*。
 
 * * 単一のソースリポジトリ（ ONTAP ボリューム、 S3 バケット、 NFS 共有など）から特定のデスティネーション（ターゲット）にあるディレクトリにファイルをコピーして同期します。
 +
-これは、あるソースシステムから別のシステムにデータを移行する場合に便利です。最初のコピーの後、設定したスケジュールに基づいて変更されたデータが同期されます。このアクションではを使用します https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["NetApp BlueXPのコピーと同期"^] データをソースからターゲットにコピーおよび同期する機能。
+これは、あるソースシステムから別のシステムにデータを移行する場合に便利です。最初のコピーの後、設定したスケジュールに基づいて変更されたデータが同期されます。このアクションでは、機能を使用して https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["NetApp BlueXPのコピーと同期"^]ソースからターゲットにデータをコピーおよび同期します。
 
 
 
@@ -59,7 +59,7 @@ BlueXP分類でスキャンしている任意のソースファイルをコピ�
 
 === ソースファイルをNFS共有にコピーする
 
-BlueXP分類でスキャンしているソースファイルは、任意のNFS共有にコピーできます。NFS共有をBlueXPに統合する必要はありません。選択したすべてのファイルがコピーされるNFS共有の名前を指定するだけです `<host_name>:/<share_path>`。
+BlueXP分類でスキャンしているソースファイルは、任意のNFS共有にコピーできます。NFS共有をBlueXP  分類と統合する必要はありません。選択したすべてのファイルがの形式でコピーされるNFS共有の名前を知っておく必要があります。 `<host_name>:/<share_path>`
 
 
 TIP: データベースに存在するファイルはコピーできません。
@@ -76,22 +76,22 @@ TIP: データベースに存在するファイルはコピーできません。
 image:screenshot_compliance_copy_multi_files.png["[ データ調査 ] ページからコピーするファイルを選択する方法と、 [ コピー ] ボタンを示すスクリーンショット。"]
 
 +
-** 個々のファイルを選択するには、各ファイル（image:button_backup_1_volume.png[""]）。
-** 現在のページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）。
-** すべてのページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）をクリックし、ポップアップメッセージにと入力します image:screenshot_select_all_items.png["すべてのファイルの選択について"]をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。
+** 個 々 のファイルを選択するには、各ファイル（）のチェックボックスをオンにしますimage:button_backup_1_volume.png[""]。
+** 現在のページのすべてのファイルを選択するには、タイトル行（）のボックスをオンにしますimage:button_select_all_files.png[""]。
+** すべてのページのすべてのファイルを選択するには、タイトル行（）のチェックボックスをオンにしimage:button_select_all_files.png[""]image:screenshot_select_all_items.png["すべてのファイルの選択について"]、ポップアップメッセージで*[リスト内のすべてのアイテムを選択（xxxアイテム）]*をクリックします。
 
 
 . _ ファイルのコピー _ ダイアログで * 標準コピー * タブを選択します。
 +
 image:screenshot_compliance_copy_files_dialog.png["選択したすべてのファイルのコピー先となる NFS 共有の名前を指定できる、ファイルのコピーダイアログを示すスクリーンショット。"]
 
-. 選択したすべてのファイルをコピーする NFS 共有の名前を「 <host_name> ： /<share_path>` 」の形式で入力し、「 * Copy * 」をクリックします。
+. 選択したすべてのファイルをコピーするNFS共有の名前をの形式で入力し `<host_name>:/<share_path>`、*[コピー]*をクリックします。
 +
 コピー処理のステータスを示すダイアログが表示されます。
 
 
 
-コピー処理の進捗状況はで確認できます link:task-view-compliance-actions.html["[ アクションステータス（ Actions Status ） ] パネル"]。
+コピー処理の進捗状況はで確認できますlink:task-view-compliance-actions.html["[ アクションステータス（ Actions Status ） ] パネル"]。
 
 ファイルのメタデータの詳細を表示するときに、個々のファイルをコピーすることもできます。[ ファイルのコピー ] をクリックします。
 
@@ -112,7 +112,7 @@ BlueXPでスキャンしている既存のONTAP ボリュームは、netapp_Flex
 * 少なくとも20個のファイルを選択する必要があります。
 * 選択したファイルはすべて同じボリュームにあり、ボリュームがオンラインである必要があります。
 * ボリュームは、 Cloud Volumes ONTAP またはオンプレミスの ONTAP システムから選択する必要があります。他のデータソースは現在サポートされていません。
-* クラスタに FlexClone ライセンスがインストールされている必要があります。このライセンスは、 Cloud Volumes ONTAP システムにデフォルトでインストールされます。
+* クラスタにFlexCloneライセンスがインストールされている必要があります。このライセンスは、 Cloud Volumes ONTAP システムにデフォルトでインストールされます。
 
 
 .手順
@@ -128,9 +128,9 @@ image:screenshot_compliance_filter_1_repo.png["単一の作業環境内の単一
 image:screenshot_compliance_copy_multi_files.png["[ データ調査 ] ページからコピーするファイルを選択する方法と、 [ コピー ] ボタンを示すスクリーンショット。"]
 
 +
-** 個々のファイルを選択するには、各ファイル（image:button_backup_1_volume.png[""]）。
-** 現在のページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）。
-** すべてのページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）をクリックし、ポップアップメッセージにと入力します image:screenshot_select_all_items.png["すべてのファイルの選択について"]をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。
+** 個 々 のファイルを選択するには、各ファイル（）のチェックボックスをオンにしますimage:button_backup_1_volume.png[""]。
+** 現在のページのすべてのファイルを選択するには、タイトル行（）のボックスをオンにしますimage:button_select_all_files.png[""]。
+** すべてのページのすべてのファイルを選択するには、タイトル行（）のチェックボックスをオンにしimage:button_select_all_files.png[""]image:screenshot_select_all_items.png["すべてのファイルの選択について"]、ポップアップメッセージで*[リスト内のすべてのアイテムを選択（xxxアイテム）]*をクリックします。
 
 
 . _ ファイルのコピー _ ダイアログで * FlexClone * タブを選択します。このページには、ボリュームからクローニングされるファイル（選択したファイル）の総数と、クローンボリュームに含まれている / 削除されていないファイル（選択しなかったファイル）の数が表示されます。
@@ -146,17 +146,17 @@ image:screenshot_compliance_clone_files_dialog.png["ソースボリュームか�
 .結果
 新しいクローンボリュームは、ソースボリュームと同じアグリゲート内に作成されます。
 
-クローニング処理の進捗状況はで確認できます link:task-view-compliance-actions.html["[ アクションステータス（ Actions Status ） ] パネル"]。
+クローニング処理の進捗状況はで確認できますlink:task-view-compliance-actions.html["[ アクションステータス（ Actions Status ） ] パネル"]。
 
-ソースボリュームが配置されている作業環境でBlueXPの分類を有効にしたときに最初に*[すべてのボリュームをマッピングして分類]*を選択した場合は、新しいクローンボリュームが自動的にスキャンされます。最初にこれらのいずれかを使用しなかった場合は、この新しいボリュームをスキャンする必要があります link:task-getting-started-compliance.html["ボリュームのスキャンを手動で有効にします"]。
+ソースボリュームが配置されている作業環境でBlueXPの分類を有効にしたときに最初に*[すべてのボリュームをマッピングして分類]*を選択した場合は、新しいクローンボリュームが自動的にスキャンされます。これらのいずれかを最初に使用しなかった場合は、この新しいボリュームをスキャンする必要がありますlink:task-getting-started-compliance.html["ボリュームのスキャンを手動で有効にします"]。
 
 
 
 === ソースファイルをターゲットシステムにコピーして同期する
 
-BlueXP分類でスキャンしているソースファイルを、サポートされている非構造化データソースから特定のターゲットデスティネーションの場所にあるディレクトリにコピーできます (https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["BlueXPのコピーと同期でサポートされるターゲットの場所"^]）。最初のコピー後、ファイル内で変更されたデータは、設定したスケジュールに基づいて同期されます。
+BlueXP  分類がスキャンしているソースファイルを、サポートされている非構造化データソースから特定のターゲットデスティネーションの場所にあるディレクトリにコピーでき(https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["BlueXPのコピーと同期でサポートされるターゲットの場所"^]ます）。最初のコピー後、ファイル内で変更されたデータは、設定したスケジュールに基づいて同期されます。
 
-これは、あるソースシステムから別のシステムにデータを移行する場合に便利です。このアクションではを使用します https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["NetApp BlueXPのコピーと同期"^] データをソースからターゲットにコピーおよび同期する機能。
+これは、あるソースシステムから別のシステムにデータを移行する場合に便利です。このアクションでは、機能を使用して https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["NetApp BlueXPのコピーと同期"^]ソースからターゲットにデータをコピーおよび同期します。
 
 
 TIP: データベース、 OneDrive アカウント、 SharePoint アカウントにあるファイルはコピーおよび同期できません。
@@ -165,7 +165,7 @@ TIP: データベース、 OneDrive アカウント、 SharePoint アカウン�
 * ファイルをコピーおよび同期する権限が必要です。link:concept-cloud-compliance.html#user-roles["コンプライアンス情報へのユーザアクセスについて"]です。
 * 少なくとも20個のファイルを選択する必要があります。
 * 選択したファイルはすべて、同じソースリポジトリ（ ONTAP ボリューム、 S3 バケット、 NFS 共有、 CIFS 共有など）にある必要があります。
-* BlueXPのコピーおよび同期サービスをアクティブ化し、ソースシステムとターゲットシステム間でファイルを転送するためのデータブローカーを少なくとも1つ設定する必要があります。から、BlueXPのコピーと同期の要件を確認します https://docs.netapp.com/us-en/bluexp-copy-sync/task-quick-start.html["Quick Start 概要 の略"^]。
+* BlueXPのコピーおよび同期サービスをアクティブ化し、ソースシステムとターゲットシステム間でファイルを転送するためのデータブローカーを少なくとも1つ設定する必要があります。から、BlueXP  コピーと同期の要件を確認します https://docs.netapp.com/us-en/bluexp-copy-sync/task-quick-start.html["Quick Start 概要 の略"^]。
 +
 BlueXPのコピーおよび同期サービスでは、同期関係ごとにサービス料金が別途発生します。データブローカーをクラウドに導入した場合はリソース料金が発生します。
 
@@ -179,7 +179,7 @@ image:screenshot_compliance_filter_1_repo.png["単一の作業環境内の単一
 +
 他のフィルタを適用して、コピー先システムに同期するファイルだけが表示されるようにします。
 
-. [ 調査結果 ] ウィンドウ枠で、タイトル行のボックスをオンにして、すべてのページのすべてのファイルを選択します（image:button_select_all_files.png[""]）をクリックし、ポップアップメッセージに入力します image:screenshot_select_all_items.png["すべてのファイルの選択について"] [ リスト内のすべての項目を選択（ * xxx 項目） ] をクリックし、 [ * コピー * ] をクリックします。
+. [Investigation results]ペインで、タイトル行（）のボックスをオンにしてすべてのページのすべてのファイルを選択しimage:button_select_all_files.png[""]、ポップアップメッセージimage:screenshot_select_all_items.png["すべてのファイルの選択について"]で*[Select all items in list（xxx items）]*をクリックし、*[Copy]*をクリックします。
 +
 image:screenshot_compliance_sync_multi_files.png["[ データ調査 ] ページからコピーするファイルを選択する方法と、 [ コピー ] ボタンを示すスクリーンショット。"]
 
@@ -194,7 +194,7 @@ BlueXPのコピーと同期のUIがBlueXPで開きます。
 +
 同期関係を定義するよう求められます。ソースシステムには、BlueXPの分類で選択したリポジトリとファイルがあらかじめ設定されています。
 
-. ターゲットシステムを選択し、使用するデータブローカーを選択（または作成）する必要があります。から、BlueXPのコピーと同期の要件を確認します link:https://docs.netapp.com/us-en/bluexp-copy-sync/task-quick-start.html["Quick Start 概要 の略"^]。
+. ターゲットシステムを選択し、使用するデータブローカーを選択（または作成）する必要があります。から、BlueXP  コピーと同期の要件を確認しますlink:https://docs.netapp.com/us-en/bluexp-copy-sync/task-quick-start.html["Quick Start 概要 の略"^]。
 
 
 .結果
@@ -212,7 +212,7 @@ BlueXPの分類から起動すると、通常のBlueXPのコピー処理と同�
 
 BlueXP分類でスキャンするソースファイルを任意のNFS共有に移動できます。NFS共有をBlueXPの分類と統合する必要はありません。
 
-必要に応じて、移動したファイルの場所にブレッドクラムファイルを残すことができます。ブレッドクラムファイルは、ファイルが元の場所から移動された理由をユーザーが理解するのに役立ちます。移動された各ファイルについて、システムは「<filename>-ブレッドクラム-<date>.txt」という名前のソース位置にブレッドクラムファイルを作成します。ダイアログボックスで、ブレッドクラムファイルに追加されるテキストを追加して、ファイルが移動された場所とファイルを移動したユーザを示すことができます。
+必要に応じて、移動したファイルの場所にブレッドクラムファイルを残すことができます。ブレッドクラムファイルは、ファイルが元の場所から移動された理由をユーザーが理解するのに役立ちます。移動されたファイルごとに、システムはという名前のソースの場所にブレッドクラムファイルを作成します `<filename>-breadcrumb-<date>.txt`。ダイアログボックスで、ブレッドクラムファイルに追加されるテキストを追加して、ファイルが移動された場所とファイルを移動したユーザを示すことができます。
 
 ソースファイルのサブディレクトリ構造は、ファイルの移動時に移動先の共有に再作成されるため、ファイルの移動元がわかりやすくなります。同じ名前のファイルがコピー先に存在する場合、そのファイルは移動されません。
 
@@ -233,16 +233,16 @@ TIP: データベースに存在するファイルは移動できません。
 image:screenshot_compliance_move_multi_files.png["移動するファイルを選択する方法を示すスクリーンショット。 [ データの調査 ] ページから [ 移動 ] ボタンをクリックします。"]
 
 +
-** 個々のファイルを選択するには、各ファイル（image:button_backup_1_volume.png[""]）。
-** 現在のページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）。
-** すべてのページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）をクリックし、ポップアップメッセージにと入力します image:screenshot_select_all_items.png["すべてのファイルの選択について"]をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。
+** 個 々 のファイルを選択するには、各ファイル（）のチェックボックスをオンにしますimage:button_backup_1_volume.png[""]。
+** 現在のページのすべてのファイルを選択するには、タイトル行（）のボックスをオンにしますimage:button_select_all_files.png[""]。
+** すべてのページのすべてのファイルを選択するには、タイトル行（）のチェックボックスをオンにしimage:button_select_all_files.png[""]image:screenshot_select_all_items.png["すべてのファイルの選択について"]、ポップアップメッセージで*[リスト内のすべてのアイテムを選択（xxxアイテム）]*をクリックします。
 
 
 . ボタンバーで、 * 移動 * をクリックします。
 +
 image:screenshot_compliance_move_files_dialog.png["選択したすべてのファイルを移動する NFS 共有の名前を指定できるように、ファイルの移動ダイアログを示すスクリーンショット。"]
 
-. _Move Files_Dialogに、選択したすべてのファイルを移動するNFS共有の名前を「<host_name>：/<share_path>`」の形式で入力します。
+. [_Move Files_dialog]で、選択したすべてのファイルを移動するNFS共有の名前をの形式で入力し `<host_name>:/<share_path>`ます。
 . ブレッドクラムファイルを残す場合は、_ブレッドクラム履歴_ボックスをオンにします。ダイアログボックスにテキストを入力して、ファイルが移動された場所、ファイルを移動したユーザー、およびファイルが移動された理由などのその他の情報を指定できます。
 . 「*ファイルの移動*」をクリックします。
 
@@ -257,7 +257,7 @@ image:screenshot_compliance_move_file.png["[ データ調査 ] ページのフ�
 
 ストレージ・システムに残すのに安全でない ' またはリスクが高すぎるソース・ファイルを完全に削除したり ' 重複として識別したソース・ファイルを削除したりすることができますこの操作は永続的であり、元に戻すことも復元することもできません。
 
-［調査］ペインから手動でファイルを削除することも、手動でファイルを削除することもできます link:task-using-policies.html["ポリシーを使用して自動的に作成"^]。
+ファイルは、[Investigation]ペイン、またはから手動で削除できますlink:task-using-policies.html["ポリシーを使用して自動的に作成"^]。
 
 
 TIP: データベースに存在するファイルは削除できません。その他のすべてのデータソースがサポートされます。
@@ -266,7 +266,7 @@ TIP: データベースに存在するファイルは削除できません。そ
 
 * NFSデータの場合-書き込み権限でエクスポートポリシーを定義する必要があります。
 * CIFSデータの場合- CIFSクレデンシャルに書き込み権限が必要です。
-* S3 データの場合 - IAM ロールに次の権限を含める必要があります。「 3 ： DeleteObject 」
+* S3データの場合- IAMロールには次の権限が含まれている必要があります `s3:DeleteObject`。
 
 
 
@@ -284,16 +284,16 @@ TIP: データベースに存在するファイルは削除できません。そ
 image:screenshot_compliance_delete_multi_files.png["削除するファイルを選択する方法を示すスクリーンショット。 [ データ調査 ] ページの [ 削除 ] ボタン。"]
 
 +
-** 個々のファイルを選択するには、各ファイル（image:button_backup_1_volume.png[""]）。
-** 現在のページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）。
-** すべてのページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）をクリックし、ポップアップメッセージにと入力します image:screenshot_select_all_items.png["すべてのファイルの選択について"]をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。
+** 個 々 のファイルを選択するには、各ファイル（）のチェックボックスをオンにしますimage:button_backup_1_volume.png[""]。
+** 現在のページのすべてのファイルを選択するには、タイトル行（）のボックスをオンにしますimage:button_select_all_files.png[""]。
+** すべてのページのすべてのファイルを選択するには、タイトル行（）のチェックボックスをオンにしimage:button_select_all_files.png[""]image:screenshot_select_all_items.png["すべてのファイルの選択について"]、ポップアップメッセージで*[リスト内のすべてのアイテムを選択（xxxアイテム）]*をクリックします。
 
 
 . ボタンバーで、 * 削除 * をクリックします。
 . 削除操作は永続的であるため ' 後続の _Delete File_Dialog に「 * permanently delete * 」と入力し ' * ファイルの削除 * をクリックする必要があります
 
 
-削除処理の進捗状況はで確認できます link:task-view-compliance-actions.html["[ アクションステータス（ Actions Status ） ] パネル"]。
+削除処理の進捗状況はで確認できますlink:task-view-compliance-actions.html["[ アクションステータス（ Actions Status ） ] パネル"]。
 
 ファイルのメタデータの詳細を表示するときに、個々のファイルを削除することもできます。[ ファイルの削除 ] をクリックします。
 

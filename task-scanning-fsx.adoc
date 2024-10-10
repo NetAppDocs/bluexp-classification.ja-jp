@@ -18,7 +18,7 @@ summary: いくつかの手順を実行して、BlueXPに分類されたAmazon F
 
 
 
-== 作業を開始する前に
+== 開始する前に
 
 * BlueXP分類を導入して管理するには、AWSにアクティブコネクタが必要です。
 * 作業環境の作成時に選択したセキュリティグループで、BlueXP分類インスタンスからのトラフィックを許可する必要があります。関連付けられたセキュリティグループは、 FSX for ONTAP ファイルシステムに接続されている ENI を使用して検索し、 AWS 管理コンソールを使用して編集できます。
@@ -39,19 +39,19 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS Elastic 
 
 以下の手順を実行してすぐに作業を開始するか、下にスクロールして詳細を確認してください。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] スキャンするONTAP ファイルシステムのFSXを検出します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]スキャンするFSx for ONTAPファイルシステムを確認します
 [role="quick-margin-para"]
-FSX で ONTAP ボリュームをスキャンする前に、 https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html["ボリュームが設定された FSX 作業環境が必要です"^]。
+FSx for ONTAPボリュームをスキャンする前に、を参照してください https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html["ボリュームが設定された FSX 作業環境が必要です"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]BlueXP  分類インスタンスの導入
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["BlueXPでBlueXP分類を導入します"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXPでBlueXP分類を導入します"^]インスタンスがまだデプロイされていない場合。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] BlueXP分類を有効にし、スキャンするボリュームを選択します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]BlueXP  分類を有効にし、スキャンするボリュームを選択
 [role="quick-margin-para"]
 [Configuration]*タブを選択し、特定の作業環境のボリュームのコンプライアンススキャンをアクティブ化します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] ボリュームへのアクセスを確認
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]ボリュームへのアクセスを確保
 [role="quick-margin-para"]
 BlueXPの分類が有効になったので、すべてのボリュームにアクセスできることを確認します。
 
@@ -59,7 +59,7 @@ BlueXPの分類が有効になったので、すべてのボリュームにア�
 * BlueXP分類インスタンスには、FSx for ONTAP の各サブネットへのネットワーク接続が必要です。
 * 次のポートがBlueXP分類インスタンスに対して開いていることを確認します。
 +
-** NFS –ポート 111 および 2049 。
+** NFS の場合 - ポート 111 および 2049
 ** CIFS の場合 - ポート 139 および 445
 
 
@@ -67,7 +67,7 @@ BlueXPの分類が有効になったので、すべてのボリュームにア�
 * BlueXPの分類では、CIFSボリュームのスキャンにActive Directoryのクレデンシャルが必要です。+ コンプライアンス * > * 構成 * > * CIFS クレデンシャルの編集 * をクリックし、クレデンシャルを入力します。
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"] スキャンするボリュームを管理します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]スキャンするボリュームを管理します。
 [role="quick-margin-para"]
 スキャンするボリュームを選択または選択解除すると、BlueXP分類によってスキャンが開始または停止されます。
 
@@ -77,13 +77,13 @@ BlueXPの分類が有効になったので、すべてのボリュームにア�
 
 スキャンするFSX for ONTAP ファイルシステムが作業環境としてまだBlueXPにない場合は、この時点でキャンバスに追加できます。
 
-https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html["BlueXPでONTAP ファイルシステムのFSXを検出または作成する方法を参照してください"^]。
+https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html["BlueXPでONTAP ファイルシステムのFSXを検出または作成する方法を参照してください"^]です。
 
 
 
 == BlueXP分類インスタンスを導入します
 
-link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^]インスタンスがまだデプロイされていない場合。
 
 BlueXP分類は、Connector for AWSおよびスキャンするFSxボリュームと同じAWSネットワークに導入する必要があります。
 
@@ -101,7 +101,7 @@ FSx for ONTAP ボリュームに対してBlueXPの分類を有効にすること
 +
 image:screenshot_fsx_scanning_activate.png["BlueXP分類インスタンスを導入した直後の[Configuration]タブのスクリーンショット。"]
 
-. 各作業環境でボリュームをスキャンする方法を選択します。 link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングおよび分類スキャンについて説明します"]：
+. 各作業環境でボリュームをスキャンする方法を選択します。link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングおよび分類スキャンについて説明します"]：
 +
 ** すべてのボリュームをマップするには、 * すべてのボリュームをマップ * をクリックします。
 ** すべてのボリュームをマップして分類するには、 * すべてのボリュームをマップして分類 * をクリックします。
@@ -120,7 +120,7 @@ image:screenshot_fsx_scanning_activate.png["BlueXP分類インスタンスを導
 [NOTE]
 ====
 * BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、CIFSでは属性の書き込み権限やNFSでの書き込み権限がない場合、デフォルトではボリューム内のファイルはスキャンされません。最終アクセス時間をリセットしても構わない場合は、*をクリックするか、各ボリュームのスキャンタイプ*を選択します。表示されるページで設定を有効にすると、権限に関係なくBlueXP分類でボリュームがスキャンされます。
-* BlueXPは、1つのボリュームに含まれるファイル共有を1つだけスキャンします。ボリュームに複数の共有がある場合は、それらの他の共有を共有グループとして個別にスキャンする必要があります。 link:reference-limitations.html#bluexp-classification-scans-only-one-share-under-a-volume["BlueXPの分類に関するこの制限の詳細を参照してください"^]。
+* BlueXPは、1つのボリュームに含まれるファイル共有を1つだけスキャンします。ボリュームに複数の共有がある場合は、それらの他の共有を共有グループとして個別にスキャンする必要があります。link:reference-limitations.html#bluexp-classification-scans-only-one-share-under-a-volume["BlueXPの分類に関するこの制限の詳細を参照してください"^]です。
 
 
 ====
@@ -147,7 +147,7 @@ NOTE: FSx for ONTAP では、BlueXPの分類でスキャンできるのはBlueXP
 
 . 次のポートがBlueXP分類インスタンスに対して開いていることを確認します。
 +
-** NFS –ポート 111 および 2049 。
+** NFS の場合 - ポート 111 および 2049
 ** CIFS の場合 - ポート 139 および 445
 
 
@@ -175,13 +175,13 @@ BlueXPの分類スキャンでファイルの「最終アクセス日時」が�
 
 設定ページからは、作業環境でマッピング専用スキャンまたはマッピングおよび分類スキャンをいつでも開始または停止できます。マッピングのみのスキャンからマッピングおよび分類スキャンに変更することもできます。また、マッピングのみのスキャンからマッピングおよび分類スキャンに変更することもできます。すべてのボリュームをスキャンすることを推奨します。
 
-「属性の書き込み」権限がない場合にスキャンする*のページ上部のスイッチは、デフォルトでは無効になっています。つまり、BlueXPの分類にCIFSの属性への書き込み権限やNFSの書き込み権限がない場合、BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、ファイルはスキャンされません。最終アクセス時間がリセットされても構わない場合は、スイッチをオンにすると、権限に関係なくすべてのファイルがスキャンされます。 link:reference-collected-metadata.html#last-access-time-timestamp["詳細はこちら。"^]。
+「属性の書き込み」権限がない場合にスキャンする*のページ上部のスイッチは、デフォルトでは無効になっています。つまり、BlueXPの分類にCIFSの属性への書き込み権限やNFSの書き込み権限がない場合、BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、ファイルはスキャンされません。最終アクセス時間がリセットされても構わない場合は、スイッチをオンにすると、権限に関係なくすべてのファイルがスキャンされます。link:reference-collected-metadata.html#last-access-time-timestamp["詳細"^]です。
 
 image:screenshot_volume_compliance_selection.png["個々のボリュームのスキャンを有効または無効にできる設定ページのスクリーンショット。"]
 
 [cols="45,45"]
 |===
-| 終了： | 手順： 
+| 宛先： | 手順： 
 
 
 | ボリュームに対してマッピングのみのスキャンを有効にします | ボリューム領域で、 * マップ * をクリックします 
@@ -230,7 +230,7 @@ image:screenshot_compliance_dp_cifs_volumes.png["CIFS のデータ保護ボリ�
 
 
 
-. スキャンする各 DP ボリュームをアクティブ化します <<ボリュームのコンプライアンススキャンの有効化と無効化,他のボリュームも有効にした場合と同じです>>。
+. スキャンする各DPボリュームをアクティブ化し<<ボリュームのコンプライアンススキャンの有効化と無効化,他のボリュームも有効にした場合と同じです>>ます。
 
 
 .結果

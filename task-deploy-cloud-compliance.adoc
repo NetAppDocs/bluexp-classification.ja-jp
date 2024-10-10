@@ -16,7 +16,7 @@ summary: BlueXP分類をクラウドに導入するには、いくつかの手�
 [role="lead"]
 BlueXP分類をクラウドに導入するには、いくつかの手順を実行します。BlueXPでは、BlueXPコネクタと同じクラウドプロバイダネットワークにBlueXP分類インスタンスが導入されます。
 
-また、次のことも可能です link:task-deploy-compliance-onprem.html["インターネットにアクセスできるLinuxホストにBlueXP分類をインストールします"]。このタイプのインストールは、同じくオンプレミスにあるBlueXP分類インスタンスを使用してオンプレミスのONTAP システムをスキャンする場合に適したオプションですが、これは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。
+また、可能であることに注意してlink:task-deploy-compliance-onprem.html["インターネットにアクセスできるLinuxホストにBlueXP分類をインストールします"]ください。このタイプのインストールは、同じくオンプレミスにあるBlueXP分類インスタンスを使用してオンプレミスのONTAP システムをスキャンする場合に適したオプションですが、これは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。
 
 
 
@@ -24,18 +24,18 @@ BlueXP分類をクラウドに導入するには、いくつかの手順を実�
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] コネクタを作成します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]コネクターの作成
 [role="quick-margin-para"]
-コネクタがない場合は、ここでコネクタを作成します。を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS でコネクタを作成する"^]、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP でコネクタを作成する"^]。
+コネクタがない場合は、ここでコネクタを作成します。、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azure でコネクタを作成する"^]、または https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP でコネクタを作成する"^]を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS でコネクタを作成する"^]。
 
 [role="quick-margin-para"]
-また可能です https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスにインストールします"^] ネットワーク内のLinuxホストまたはクラウド内のLinuxホスト。
+ネットワーク内のLinuxホストやクラウド内のLinuxホストにも対応できます https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスにインストールします"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] 前提条件を確認する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"] 前提条件の確認
 [role="quick-margin-para"]
-環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、コネクタとBlueXPのポート443経由の分類間の接続などが含まれます。 <<前提条件を確認する,すべてのリストを参照してください>>。
+環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、コネクタとBlueXPのポート443経由の分類間の接続などが含まれます。<<前提条件を確認する,すべてのリストを参照してください>>です。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] BlueXP分類を導入します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]Deploy BlueXP  Classification
 [role="quick-margin-para"]
 インストールウィザードを起動して、BlueXP分類インスタンスをクラウドに導入します。
 
@@ -43,7 +43,7 @@ BlueXP分類をクラウドに導入するには、いくつかの手順を実�
 
 == コネクタを作成します
 
-コネクタがない場合は、クラウドプロバイダでコネクタを作成します。を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS でコネクタを作成する"^] または https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP でコネクタを作成する"^]。ほとんどの場合、BlueXPの分類をアクティブ化する前にコネクタがセットアップされていることがほとんどです https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-a-connector-is-required["BlueXPの機能にはコネクタが必要です"]ただし、ここで設定する必要がある場合もあります。
+コネクタがない場合は、クラウドプロバイダでコネクタを作成します。または、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP でコネクタを作成する"^]を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS でコネクタを作成する"^]。ほとんどの場合、BlueXP  分類をアクティブ化する前にコネクタが設定されている可能性があります。ほとんどの場合、コネクタを今すぐ設定する必要がある場合があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-a-connector-is-required["BlueXPの機能にはコネクタが必要です"]
 
 特定のクラウドプロバイダに導入されているコネクタを使用する必要がある場合は、次のような状況があります。
 
@@ -58,9 +58,9 @@ BlueXP分類をクラウドに導入するには、いくつかの手順を実�
 
 これらのクラウドコネクタを使用すると、オンプレミスのONTAPシステム、NetAppファイル共有、データベースをスキャンできます。
 
-また、次のことも可能です https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスにインストールします"^] 自社ネットワーク内またはクラウド内の Linux ホストBlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。
+ネットワーク内またはクラウド内のLinuxホストでも実行できます https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["コネクタをオンプレミスにインストールします"^]。BlueXP分類をオンプレミスにインストールすることを計画している一部のユーザは、コネクタをオンプレミスにインストールすることもできます。
 
-ご覧のように、を使用する必要がある状況もあります https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#multiple-connectors["複数のコネクタ"]。
+ご覧のとおり、使用する必要がある状況がある場合があり https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#multiple-connectors["複数のコネクタ"]ます。
 
 
 
@@ -68,7 +68,7 @@ BlueXP分類をクラウドに導入するには、いくつかの手順を実�
 
 BlueXPの分類は、コネクタが政府機関のリージョン（AWS GovCloud、Azure Gov、Azure DoD）に導入されている場合にサポートされます。この方法で導入した場合、BlueXPには次の制限があります。
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.html["政府地域へのコネクタの配置の詳細については、を参照してください"^]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.html["政府地域へのコネクタの配置の詳細については、を参照してください"^]です。
 
 
 
@@ -96,16 +96,16 @@ AWS、Azure、GCPのいずれにBlueXP分類を導入するかに応じて、次
 | \ https://api.bluexp.netapp.com | ネットアップアカウントを含むBlueXPサービスとの通信 
 
 
-| ¥ https://netapp-cloud-account.auth0.com ¥ https://auth0.com | BlueXP Webサイトとの通信により、ユーザ認証を一元化。 
+| \https:// NetApp -cloud-account.auth0.com \https://auth0.com | BlueXP Webサイトとの通信により、ユーザ認証を一元化。 
 
 
-| https://cloud-compliance-support-netapp.s3.us-west-2.amazonaws.com \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | ソフトウェアイメージ、マニフェスト、およびテンプレートにアクセスできます。 
+| https://cloud-compliance-support- NetApp .s3.us-west-2.amazonaws.com \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | ソフトウェアイメージ、マニフェスト、およびテンプレートにアクセスできます。 
 
 
-| \ https://kinesis.us-east-1.amazonaws.com | ネットアップが監査レコードからデータをストリーミングできるようにします。 
+| \https://kinesis.us-east-1.amazonaws.com | ネットアップが監査レコードからデータをストリーミングできるようにします。 
 
 
-| ¥ https://cognito-idp.us-east-1.amazonaws.com ¥ https://cognito-identity.us-east-1.amazonaws.com ¥ https://user-feedback-store-prod.s3.us-west-2.amazonaws.com ¥ https://customer-data-production.s3.us-west-2.amazonaws.com | BlueXPでは、マニフェストやテンプレートへのアクセスとダウンロード、ログや指標の送信が可能です。 
+| \https://cognito-idp.us-east-1.amazonaws.com \https://cognito-identity.us-east-1.amazonaws.com \https://user-feedback-store-prod.s3.us-west-2.amazonaws.com \https://customer-data-production.s3.us-west-2.amazonaws.com | BlueXPでは、マニフェストやテンプレートへのアクセスとダウンロード、ログや指標の送信が可能です。 
 |===
 --
 .Azureに必要なエンドポイント
@@ -118,13 +118,13 @@ AWS、Azure、GCPのいずれにBlueXP分類を導入するかに応じて、次
 | \ https://api.bluexp.netapp.com | ネットアップアカウントを含むBlueXPサービスとの通信 
 
 
-| ¥ https://netapp-cloud-account.auth0.com ¥ https://auth0.com | BlueXP Webサイトとの通信により、ユーザ認証を一元化。 
+| \https:// NetApp -cloud-account.auth0.com \https://auth0.com | BlueXP Webサイトとの通信により、ユーザ認証を一元化。 
 
 
-| https://support.compliance.api.bluexp.netapp.com/\ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/\ https://dseasb33srnrn.cloudfront.net/\ https://production.cloudflare.docker.com/ | ソフトウェアイメージ、マニフェスト、テンプレートへのアクセス、およびログとメトリックの送信を提供します。 
+| \ https://support.compliance.api BlueXP . NetApp . com /\https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | ソフトウェアイメージ、マニフェスト、テンプレートへのアクセス、およびログとメトリックの送信を提供します。 
 
 
-| \ https://support.compliance.api.bluexp.netapp.com/ | ネットアップが監査レコードからデータをストリーミングできるようにします。 
+| \ https://support.compliance.api BlueXP . NetApp . com/ | ネットアップが監査レコードからデータをストリーミングできるようにします。 
 |===
 --
 .GCPに必要なエンドポイント
@@ -137,23 +137,23 @@ AWS、Azure、GCPのいずれにBlueXP分類を導入するかに応じて、次
 | \ https://api.bluexp.netapp.com | ネットアップアカウントを含むBlueXPサービスとの通信 
 
 
-| ¥ https://netapp-cloud-account.auth0.com ¥ https://auth0.com | BlueXP Webサイトとの通信により、ユーザ認証を一元化。 
+| \https:// NetApp -cloud-account.auth0.com \https://auth0.com | BlueXP Webサイトとの通信により、ユーザ認証を一元化。 
 
 
-| https://support.compliance.api.bluexp.netapp.com/\ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/\ https://dseasb33srnrn.cloudfront.net/\ https://production.cloudflare.docker.com/ | ソフトウェアイメージ、マニフェスト、テンプレートへのアクセス、およびログとメトリックの送信を提供します。 
+| \ https://support.compliance.api BlueXP . NetApp . com /\https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | ソフトウェアイメージ、マニフェスト、テンプレートへのアクセス、およびログとメトリックの送信を提供します。 
 
 
-| \ https://support.compliance.api.bluexp.netapp.com/ | ネットアップが監査レコードからデータをストリーミングできるようにします。 
+| \ https://support.compliance.api BlueXP . NetApp . com/ | ネットアップが監査レコードからデータをストリーミングできるようにします。 
 |===
 --
 ====
-BlueXPに必要な権限があることを確認します:: BlueXPにリソースを導入し、BlueXP分類インスタンスのセキュリティグループを作成する権限があることを確認します。BlueXPの最新の権限は、で確認できます https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["ネットアップが提供するポリシー"^]。
+BlueXPに必要な権限があることを確認します:: BlueXPにリソースを導入し、BlueXP分類インスタンスのセキュリティグループを作成する権限があることを確認します。最新のBlueXP  権限については、を参照し https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["ネットアップが提供するポリシー"^]てください。
 BlueXPコネクタからBlueXP分類にアクセスできることを確認します:: コネクタとBlueXP分類インスタンスが接続されていることを確認します。コネクタのセキュリティグループで、ポート443を介したBlueXP分類インスタンスとの間のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。この接続により、BlueXP分類インスタンスを導入し、[Compliance]タブと[Governance]タブに情報を表示できます。BlueXPの分類は、AWSとAzureの政府機関のリージョンでサポートされます。
 +
 --
-AWSおよびAWS GovCloud環境では、追加のインバウンドおよびアウトバウンドのセキュリティグループルールが必要です。を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWS のコネクタのルール"^] を参照してください。
+AWSおよびAWS GovCloud環境では、追加のインバウンドおよびアウトバウンドのセキュリティグループルールが必要です。詳細は、を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWS のコネクターのルール"^]。
 
-AzureおよびAzure Government環境には、追加のインバウンドおよびアウトバウンドのセキュリティグループルールが必要です。を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure のコネクタのルール"^] を参照してください。
+AzureおよびAzure Government環境には、追加のインバウンドおよびアウトバウンドのセキュリティグループルールが必要です。詳細は、を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure のコネクタのルール"^]。
 
 --
 BlueXPの分類を継続して実行できることを確認します:: データを継続的にスキャンするには、BlueXP分類インスタンスを引き続き使用する必要があります。
@@ -163,7 +163,7 @@ WebブラウザからBlueXPに接続できることを確認します:: BlueXP�
 BlueXP分類インスタンスでは、プライベートIPアドレスを使用して、インデックス化されたデータにインターネットからアクセスできないようにします。そのため、BlueXPへのアクセスに使用するWebブラウザには、そのプライベートIPアドレスへの接続が必要です。この接続は、クラウドプロバイダへの直接接続（VPNなど）から行うことも、BlueXP分類インスタンスと同じネットワーク内のホストから行うこともできます。
 
 --
-vCPU の制限を確認してください:: クラウドプロバイダのvCPU制限で、必要な数のコアを含むインスタンスの導入が許可されていることを確認してください。BlueXPを実行している地域の関連するインスタンスファミリのvCPU制限を確認する必要があります。 link:concept-cloud-compliance.html#the-bluexp-classification-instance["必要なインスタンスタイプを参照してください"]。
+vCPU の制限を確認してください:: クラウドプロバイダのvCPU制限で、必要な数のコアを含むインスタンスの導入が許可されていることを確認してください。BlueXPを実行している地域の関連するインスタンスファミリのvCPU制限を確認する必要があります。link:concept-cloud-compliance.html#the-bluexp-classification-instance["必要なインスタンスタイプを参照してください"]です。
 +
 --
 vCPU の制限の詳細については、次のリンクを参照してください。

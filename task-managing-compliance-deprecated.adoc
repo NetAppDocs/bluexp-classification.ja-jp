@@ -17,7 +17,7 @@ summary: 必要に応じて、BlueXPの分類によって1つ以上の作業環�
 特定のOneDriveアカウント、特定のSharePointアカウント、またはGoogle Driveアカウントからユーザファイルをスキャンする必要がなくなった場合は、BlueXP分類インターフェイスからアカウントを削除して、すべてのスキャンを停止できます。
 
 .手順
-. [_Configuration_] ページで、をクリックします image:screenshot_gallery_options.gif["[ 詳細 ] ボタン"] OneDrive、SharePoint、Google Driveアカウントの行にあるボタンをクリックし、* OneDriveアカウントの削除*、* SharePointアカウントの削除*、または* Googleドライブアカウントの削除*をクリックします。
+. [_Configuration_]ページで、OneDrive、SharePoint、またはGoogle Driveアカウントの行にあるボタンをクリックしimage:screenshot_gallery_options.gif["[ 詳細 ] ボタン"]、*[OneDriveアカウントの削除]*、*[SharePointアカウントの削除]*、または*[Googleドライブアカウントの削除]*をクリックします。
 +
 image:screenshot_compliance_remove_onedrive.png["[ スキャン構成 ] ページから [OneDrive を削除 ] ボタンのスクリーンショット。"]
 

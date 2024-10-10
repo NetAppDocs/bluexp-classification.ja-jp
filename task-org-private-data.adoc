@@ -18,10 +18,10 @@ BlueXPの分類では、プライベートデータをさまざまな方法で�
 
 []
 ====
-*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。2023年12月（v1.26.6）リリースでは、Azure Information Protection（AIP）ラベルを使用してデータを統合するオプションが削除されました。
+*注*この情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。2023年12月（v1.26.6）リリースでは、Azure Information Protection（AIP）ラベルを使用してデータを統合するオプションが削除されました。
 
 ====
-* に登録している場合は https://azure.microsoft.com/en-us/services/information-protection/["Azure 情報保護（ AIP ）"^] ファイルを分類して保護するには、BlueXPの分類を使用してAIPラベルを管理します。
+* にサブスクライブしてファイルを分類および保護している場合 https://azure.microsoft.com/en-us/services/information-protection/["Azure 情報保護（ AIP ）"^]は、BlueXP  分類を使用してこれらのAIPラベルを管理できます。
 * 組織または特定の種類のフォローアップのためにマークするファイルにタグを追加できます。
 * BlueXPユーザーを特定のファイルまたは複数のファイルに割り当てることで、ユーザーがファイルの管理を担当できるようになります。
 * 「ポリシー」機能を使用すると、 1 つのボタンをクリックして簡単に結果を表示できるように、独自のカスタム検索クエリを作成できます。
@@ -60,7 +60,7 @@ NOTE: このセクションで説明する機能は、データソースに対�
 
 == AIP ラベルを使用してデータを分類します
 
-サブスクライブ済みの場合は、BlueXP分類でスキャンするファイルでAIPラベルを管理できます https://azure.microsoft.com/en-us/services/information-protection/["Azure 情報保護（ AIP ）"^]。AIP を使用すると、コンテンツにラベルを適用することで、ドキュメントやファイルを分類して保護できます。BlueXPでは、ファイルにすでに割り当てられているラベルの表示、ファイルへのラベルの追加、既存のラベルの変更を行うことができます。
+サブスクライブしている場合は、BlueXP  分類がスキャンしているファイルのAIPラベルを管理できます https://azure.microsoft.com/en-us/services/information-protection/["Azure 情報保護（ AIP ）"^]。AIP を使用すると、コンテンツにラベルを適用することで、ドキュメントやファイルを分類して保護できます。BlueXPでは、ファイルにすでに割り当てられているラベルの表示、ファイルへのラベルの追加、既存のラベルの変更を行うことができます。
 
 BlueXPの分類では、.DOC、.DOCX、.PDF、.PPTX、.XLSの各ファイルタイプでAIPラベルがサポートされます。 .XLSX。
 
@@ -81,7 +81,7 @@ AIPラベルを管理するには、既存のAzureアカウントにサインイ
 .要件
 * アカウントと Azure Information Protection のライセンスが必要です。
 * Azure アカウントのログインクレデンシャルが必要です。
-* Amazon S3 バケット内のファイルのラベルを変更する場合は、権限「 3 ： PutObject 」が IAM ロールに含まれていることを確認します。を参照してください link:task-scanning-s3.html#reviewing-s3-prerequisites["IAM ロールを設定します"^]。
+* Amazon S3バケット内のファイルのラベルを変更する場合は、権限がIAMロールに含まれていることを確認して `s3:PutObject`ください。を参照して link:task-scanning-s3.html#reviewing-s3-prerequisites["IAM ロールを設定します"^]
 
 
 .手順
@@ -107,7 +107,7 @@ AIP ラベルは、 ［ 調査 ］ ページの結果ペインで表示および
 
 ファイルに割り当てられている現在の AIP ラベルを表示できます。
 
-[ データ調査結果 ] ペインで、をクリックします image:button_down_caret.png["下キャレット"] をクリックします。
+[Data Investigation results]ペインで、ファイルのをクリックしimage:button_down_caret.png["下キャレット"]てファイルメタデータの詳細を展開します。
 
 image:screenshot_compliance_show_label.png["割り当てられた AIP ラベルを含む、単一ファイルのメタデータの詳細を示すスクリーンショット。"]
 
@@ -120,7 +120,7 @@ BlueXPの分類を使用して、ファイルのAIPラベルを追加、変更�
 AIP ラベルを 1 つのファイルに割り当てる手順は、次のとおりです。
 
 .手順
-. [ データ調査結果 ] ペインで、をクリックします image:button_down_caret.png["下キャレット"] をクリックします。
+. [Data Investigation results]ペインで、ファイルのをクリックしimage:button_down_caret.png["下キャレット"]てファイルメタデータの詳細を展開します。
 +
 image:screenshot_compliance_add_label_manually.png["[ データ調査 ] ページのファイルのメタデータの詳細を示すスクリーンショット。"]
 
@@ -138,8 +138,8 @@ AIPラベルを複数のファイルに割り当てる手順は、次のとお�
 image:screenshot_compliance_tag_multi_files.png["ラベル付けするファイルの選択方法を示すスクリーンショットと、 [ データ調査 ] ページの [ ラベル ] ボタン。"]
 
 +
-** 個々のファイルを選択するには、各ファイル（image:button_backup_1_volume.png[""]）。
-** 現在のページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）。
+** 個 々 のファイルを選択するには、各ファイル（）のチェックボックスをオンにしますimage:button_backup_1_volume.png[""]。
+** 現在のページのすべてのファイルを選択するには、タイトル行（）のボックスをオンにしますimage:button_select_all_files.png[""]。
 
 
 . ボタンバーの * Label * をクリックし、 AIP ラベルを選択します。
@@ -205,7 +205,7 @@ image:screenshot_compliance_filter_status.png["[ フィルタ ] ペインから�
 タグを 1 つのファイルに追加するには：
 
 .手順
-. [ データ調査結果 ] ペインで、をクリックします image:button_down_caret.png["下キャレット"] をクリックします。
+. [Data Investigation results]ペインで、ファイルのをクリックしimage:button_down_caret.png["下キャレット"]てファイルメタデータの詳細を展開します。
 . [* タグ * （ * Tags * ） ] フィールドをクリックすると、現在割り当てられているタグが表示されます。
 . タグを追加します。
 +
@@ -229,9 +229,9 @@ image:screenshot_compliance_add_status_manually.png["[ データ調査 ] ペー�
 image:screenshot_compliance_tag_multi_files.png["[ データ調査 ] ページから、タグを付けるファイルの選択方法と [ タグ ] ボタンを示すスクリーンショット。"]
 
 +
-** 個々のファイルを選択するには、各ファイル（image:button_backup_1_volume.png[""]）。
-** 現在のページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）。
-** すべてのページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）をクリックし、ポップアップメッセージにと入力します image:screenshot_select_all_items.png[""]をクリックし、リスト（ xxx 項目）のすべての項目を選択 * をクリックします。
+** 個 々 のファイルを選択するには、各ファイル（）のチェックボックスをオンにしますimage:button_backup_1_volume.png[""]。
+** 現在のページのすべてのファイルを選択するには、タイトル行（）のボックスをオンにしますimage:button_select_all_files.png[""]。
+** すべてのページのすべてのファイルを選択するには、タイトル行（）のチェックボックスをオンにしimage:button_select_all_files.png[""]image:screenshot_select_all_items.png[""]、ポップアップメッセージで*[リスト内のすべてのアイテムを選択（xxxアイテム）]*をクリックします。
 +
 一度に最大100,000個のファイルにタグを適用できます。
 
@@ -277,7 +277,7 @@ BlueXPユーザーを特定のファイルまたは複数のファイルに割�
 ユーザを単一のファイルに割り当てる手順は、次のとおりです。
 
 .手順
-. [ データ調査結果 ] ペインで、をクリックします image:button_down_caret.png["下キャレット"] をクリックします。
+. [Data Investigation results]ペインで、ファイルのをクリックしimage:button_down_caret.png["下キャレット"]てファイルメタデータの詳細を展開します。
 . [*Assigned To*] フィールドをクリックして、ユーザ名を選択します。
 +
 image:screenshot_compliance_add_user_manually.png["[ データ調査 ] ページでファイルにユーザーを割り当てる方法を示すスクリーンショット。"]
@@ -295,8 +295,8 @@ image:screenshot_compliance_add_user_manually.png["[ データ調査 ] ページ
 image:screenshot_compliance_tag_multi_files.png["[ データ調査 ] ページから、ユーザーに割り当てるファイルの選択方法と [ 割り当て先 ] ボタンを示すスクリーンショット。"]
 
 +
-** 個々のファイルを選択するには、各ファイル（image:button_backup_1_volume.png[""]）。
-** 現在のページのすべてのファイルを選択するには、タイトル行（image:button_select_all_files.png[""]）。
+** 個 々 のファイルを選択するには、各ファイル（）のチェックボックスをオンにしますimage:button_backup_1_volume.png[""]。
+** 現在のページのすべてのファイルを選択するには、タイトル行（）のボックスをオンにしますimage:button_select_all_files.png[""]。
 
 
 . ボタンバーで * Assign to * をクリックし、ユーザー名を選択します。

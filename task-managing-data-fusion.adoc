@@ -18,7 +18,7 @@ BlueXPの分類では、今後のスキャンでBlueXPの分類によって特�
 
 []
 ====
-*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
+*注*この情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。
 
 ====
 * スキャンするデータベース内の特定の列に基づいて一意の識別子を追加できます。
@@ -45,7 +45,7 @@ image:diagram_compliance_data_fusion.png["データベースのコンテンツ�
 独自のデータベースをスキャンするため、データが保存されている言語に関係なく、今後のBlueXP分類スキャンでデータを識別するために使用されることに注意してください。
 
 .手順
-が必要です link:task-scanning-databases.html#add-the-database-server["データベースサーバを少なくとも 1 つ追加しました"^] データFusion ソースを追加する前に、をBlueXPの分類に追加する必要があります。
+データFusionソースを追加するには、BlueXP  分類が必要link:task-scanning-databases.html#add-the-database-server["データベースサーバを少なくとも 1 つ追加しました"^]です。
 
 . [ 構成 ] ページで、ソースデータが存在するデータベースの [ データ Fusion の管理 ] をクリックします。
 +
@@ -72,7 +72,7 @@ image:screenshot_compliance_data_fusion_list.png["Data Fusion で設定したす
 
 
 .結果
-次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。分類子に使用した名前がフィルタリストに表示されます。例： `Customers.CustomerID`。
+次のスキャンの後、この新しい情報は、［個人の結果］セクションの［コンプライアンスダッシュボード］と［個人データ］フィルタの［調査］ページに表示されます。たとえば、分類子に使用した名前がフィルタリストに表示されます `Customers.CustomerID`。
 
 image:screenshot_add_data_fusion_result.png["［調査結果］ペインに表示されるData Fusion の結果の例を示すスクリーンショット。"]
 
@@ -140,7 +140,7 @@ image:screenshot_add_keywords_result.png["[調査結果]ペインにカスタム
 
 正規表現を追加すると、BlueXPの分類によってすべてのデータソースのスキャンが再開されます。スキャンが完了すると、BlueXP分類コンプライアンスダッシュボードの[Personal Results]セクションと[Investigation]ページの[Personal Data]フィルタに新しい結果が表示されます。
 
-正規表現の作成についてサポートが必要な場合は、を参照してください。 https://regex101.com/["正規表現101"^]。フレーバーに「* Python *」を選択すると、BlueXPの分類が正規表現と一致する結果のタイプが表示されます。。 https://pythonium.net/regex["Python Regex Testerページ"^] パターンをグラフィカルに表示することもできます。
+正規表現の作成についてサポートが必要な場合は、を参照してください https://regex101.com/["正規表現101"^]。フレーバーに「* Python *」を選択すると、BlueXPの分類が正規表現と一致する結果のタイプが表示されます。は、 https://pythonium.net/regex["Python Regex Testerページ"^]パターンのグラフィック表現を表示する場合にも便利です。
 
 
 NOTE: 現在、正規表現を作成するときにパターンフラグを使用することは許可されていません。これは、"/"を使用しないことを意味します。
@@ -181,7 +181,7 @@ image:screenshot_personal_info_regex_added.png["スキャンを実行中の新�
 
 == カスタムカテゴリを追加します
 
-BlueXPは、スキャンしたデータをさまざまなカテゴリに分類して分類します。カテゴリは、各ファイルのコンテンツとメタデータの人工知能分析に基づくトピックです。 link:reference-private-data-categories.html#types-of-categories["事前定義されたカテゴリのリストを参照してください"]。
+BlueXPは、スキャンしたデータをさまざまなカテゴリに分類して分類します。カテゴリは、各ファイルのコンテンツとメタデータの人工知能分析に基づくトピックです。link:reference-private-data-categories.html#types-of-categories["事前定義されたカテゴリのリストを参照してください"]です。
 
 カテゴリを使用すると、保有している情報の種類を表示して、データの状況を把握することができます。たとえば、_resumes_or_employee contracts_のようなカテゴリには、機密データが含まれている場合があります。結果を調査すると、従業員契約が安全でない場所に保存されていることがわかります。その後、その問題を修正できます。
 
@@ -189,7 +189,7 @@ BlueXPの分類にカスタムカテゴリを追加すると、データ資産�
 
 たとえば、必要に応じて削除できるように、.gz形式の圧縮インストールファイルがファイル内のどこにあるかを確認することができます。
 
-カスタムカテゴリを更新すると、BlueXPの分類によってすべてのデータソースのスキャンが再開されます。スキャンが完了すると、BlueXP分類コンプライアンスダッシュボードの[カテゴリ]セクションと[カテゴリ]フィルタの[調査]ページに新しい結果が表示されます。 link:task-controlling-private-data.html#view-files-by-categories["カテゴリ別にファイルを表示する方法を参照してください"]。
+カスタムカテゴリを更新すると、BlueXPの分類によってすべてのデータソースのスキャンが再開されます。スキャンが完了すると、BlueXP分類コンプライアンスダッシュボードの[カテゴリ]セクションと[カテゴリ]フィルタの[調査]ページに新しい結果が表示されます。link:task-controlling-private-data.html#view-files-by-categories["カテゴリ別にファイルを表示する方法を参照してください"]です。
 
 .必要なもの
 BlueXPの分類で認識するデータカテゴリのサンプルを含むトレーニングファイルを少なくとも25個作成する必要があります。次のファイルタイプがサポートされています。
@@ -235,7 +235,7 @@ image:screenshot_category_files_added.png["BlueXP分類で新しいカテゴリ�
 
 image:screenshot_add_regex_result.png["［調査結果］ペインに表示される、カスタム正規表現の結果の例を示すスクリーンショット。"]
 
-をクリックします image:button_arrow_investigate.png["矢印の付いた円"] ボタンをクリックすると、詳細な結果が[調査]ページに表示されます。
+ボタンをクリックするimage:button_arrow_investigate.png["矢印の付いた円"]と、[Investigation]ページに詳細な結果が表示されます。
 
 さらに、カスタム分類子の結果はすべて[カスタム分類子]タブに表示され、上位6つのカスタム分類子の結果が[コンプライアンスダッシュボード]に表示されます。
 

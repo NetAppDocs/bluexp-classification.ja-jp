@@ -18,7 +18,7 @@ BlueXPで分類されたSharePoint OnlineアカウントとSharePointオンプ�
 
 []
 ====
-*注*この情報は、BlueXPの旧バージョン1.30以前の分類にのみ関連します。
+*注*この情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。
 
 ====
 
@@ -27,19 +27,19 @@ BlueXPで分類されたSharePoint OnlineアカウントとSharePointオンプ�
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] SharePointの前提条件を確認する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]SharePointの前提条件の確認
 [role="quick-margin-para"]
 SharePointアカウントにログインするための資格を持つ資格情報があり、スキャンするSharePointサイトのURLがあることを確認します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXP分類インスタンスを導入します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]BlueXP  分類インスタンスの導入
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^] インスタンスが展開されていない場合。
+link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^]インスタンスがまだデプロイされていない場合。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] SharePointアカウントにログインします
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]SharePointアカウントにログインする
 [role="quick-margin-para"]
 資格のあるユーザクレデンシャルを使用して、アクセスするSharePointアカウントにログインし、新しいデータソース/作業環境として追加します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] スキャンするSharePointサイトのURLを追加します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]スキャンするSharePointサイトURLを追加する
 [role="quick-margin-para"]
 SharePoint アカウントでスキャンする SharePoint サイト URL のリストを追加し、スキャンの種類を選択します。一度に最大100個のURLを追加でき、アカウントごとに合計1,000個のサイトを追加できます。
 
@@ -64,11 +64,11 @@ SharePointアカウントでBlueXP分類をアクティブ化する準備がで�
 
 導入されているインスタンスがない場合は、BlueXP分類を導入します。
 
-* SharePoint Onlineでは、BlueXPは次のように分類できます link:task-deploy-cloud-compliance.html["クラウドに導入"^]。
-* オンプレミスのSharePointの場合は、BlueXPの分類をインストールできます link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^] または link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスの場所"^]。
+* SharePoint Onlineの場合、BlueXP  分類はにすることができますlink:task-deploy-cloud-compliance.html["クラウドに導入"^]。
+* オンプレミスのSharePointでは、BlueXP  分類をインストールすることも、インストールすることもできますlink:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^]link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスの場所"^]。
 
 
-インターネットにアクセスできないサイトにBlueXP分類がインストールされている場合は、インターネットにアクセスできない同じサイトにもBlueXP Connectorをインストールする必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["詳細はこちら。"^]。
+インターネットにアクセスできないサイトにBlueXP  分類がインストールされている場合は、インターネットにアクセスできない同じサイトにBlueXP  Connectorもインストールする必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["詳細"^]です。
 
 インスタンスがインターネットに接続されていれば、BlueXP分類ソフトウェアへのアップグレードは自動で実行されます。
 
@@ -150,7 +150,7 @@ image:screenshot_compliance_sharepoint_add_site.png["スキャン対象のサイ
 +
 [cols="45,45"]
 |===
-| 終了： | 手順： 
+| 宛先： | 手順： 
 
 
 | ファイルのマッピングのみのスキャンを有効にします | [* マップ * ] をクリックします 
@@ -174,4 +174,4 @@ BlueXPの分類により、追加したSharePointサイト内のファイルの�
 
 image:screenshot_compliance_sharepoint_remove_site.png["単一の SharePoint サイトを削除してファイルをスキャンする方法を示すスクリーンショット。"]
 
-できることに注意してください link:task-managing-compliance.html["BlueXP分類からSharePointアカウント全体を削除します"] SharePointアカウントからユーザーデータをスキャンする必要がなくなった場合。
+SharePointアカウントからユーザーデータをスキャンする必要がなくなった場合は、できることに注意してlink:task-managing-compliance.html["BlueXP分類からSharePointアカウント全体を削除します"]ください。

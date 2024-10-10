@@ -23,19 +23,19 @@ NOTE: このセクションで説明する機能は、データソースに対�
 
 image:screenshot_compliance_dashboard.png["BlueXP分類ダッシュボードのスクリーンショット"]
 
-一部の作業環境のデータだけを表示する場合は、 <<特定の作業環境のダッシュボードデータを表示する,それらの作業環境を選択します>>。
+一部の作業環境のデータのみを表示する場合は、を<<特定の作業環境のダッシュボードデータを表示する,それらの作業環境を選択します>>参照してください。
 
-また、 [ データ調査 ] ページから結果をフィルタリングして、結果のレポートを CSV ファイルとしてダウンロードすることもできます。を参照してください link:task-investigate-data.html#filter-data-in-the-data-investigation-page["[ データ調査 ] ページでデータをフィルタリングします"] を参照してください。
+また、 [ データ調査 ] ページから結果をフィルタリングして、結果のレポートを CSV ファイルとしてダウンロードすることもできます。詳細は、を参照してください link:task-investigate-data.html#filter-data-in-the-data-investigation-page["[ データ調査 ] ページでデータをフィルタリングします"] 。
 
 
 
 == 個人データを含むファイルを表示する
 
-BlueXPの分類では、データ内の特定の単語、文字列、パターン（正規表現）が自動的に識別されます。たとえば、個人識別情報（ PII ）、クレジットカード番号、社会保障番号、銀行口座番号、パスワード、 その他。 link:reference-private-data-categories.html#types-of-personal-data["すべてのリストを参照してください"^]。BlueXPの分類では、個 々 のファイル、ディレクトリ（共有とフォルダ）内のファイル、およびデータベーステーブルでこのような情報が識別されます。
+BlueXPの分類では、データ内の特定の単語、文字列、パターン（正規表現）が自動的に識別されます。たとえば、個人識別情報（ PII ）、クレジットカード番号、社会保障番号、銀行口座番号、パスワード、 その他。link:reference-private-data-categories.html#types-of-personal-data["すべてのリストを参照してください"^]です。BlueXPの分類では、個 々 のファイル、ディレクトリ（共有とフォルダ）内のファイル、およびデータベーステーブルでこのような情報が識別されます。
 
-また、スキャン対象のデータベースサーバを追加した場合、 Data Fusion の機能を使用してファイルをスキャンし、データベースから一意の識別子がこれらのファイルまたは他のデータベースのいずれに存在するかを特定できます。を参照してください link:task-managing-data-fusion.html["Data Fusion を使用して個人データ識別子を追加する"^] を参照してください。
+また、スキャン対象のデータベースサーバを追加した場合、 Data Fusion の機能を使用してファイルをスキャンし、データベースから一意の識別子がこれらのファイルまたは他のデータベースのいずれに存在するかを特定できます。詳細は、を参照してください link:task-managing-data-fusion.html["Data Fusion を使用して個人データ識別子を追加する"^] 。
 
-BlueXPの分類では、一部のタイプの個人データについて、_proximity validation_を使用して検出結果が検証されます。検証は、見つかった個人データに近接した 1 つまたは複数の定義済みキーワードを検索することによって行われます。たとえば、BlueXPは米国を表しますソーシャルセキュリティ番号（ SSN ）は、 IT の横に近接語（ _SSN_or_social security_ など）が表示されている場合、 SSN として表示されます。 link:reference-private-data-categories.html#types-of-personal-data["個人データのテーブル"^] は、BlueXPの分類で近接検証を使用する状況を示しています。
+BlueXPの分類では、一部のタイプの個人データについて、_proximity validation_を使用して検出結果が検証されます。検証は、見つかった個人データに近接した 1 つまたは複数の定義済みキーワードを検索することによって行われます。たとえば、BlueXP  分類では、米国の社会保障番号（SSN）の隣に近接語（_ssn_or_social security_など）が表示される場合、SSNとして識別されます。link:reference-private-data-categories.html#types-of-personal-data["個人データのテーブル"^]BlueXP  分類でプロキシミティ検証が使用されるタイミングを示します。
 
 .手順
 . BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックし、* Compliance *タブをクリックします。
@@ -63,7 +63,7 @@ image:screenshot_compliance_investigation_page_directory.png["[調査結果]を�
 
 == 機密性の高い個人データを含むファイルを表示する
 
-BlueXPは、などのプライバシー規制で定義されている特別な種類の機密個人情報を自動的に識別します https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["GDPR の第 9 、 10 記事"^]。たとえば、人の健康、民族の起源、性的指向に関する情報などです。 link:reference-private-data-categories.html#types-of-sensitive-personal-data["すべてのリストを参照してください"^]。BlueXPの分類では、個 々 のファイル、ディレクトリ（共有とフォルダ）内のファイル、およびデータベーステーブルでこのような情報が識別されます。
+BlueXP  の分類は、などのプライバシー規制で定義されているように、特別な種類の機密個人情報を自動的に識別します https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["GDPR の第 9 、 10 記事"^]。たとえば、人の健康、民族の起源、性的指向に関する情報などです。link:reference-private-data-categories.html#types-of-sensitive-personal-data["すべてのリストを参照してください"^]です。BlueXPの分類では、個 々 のファイル、ディレクトリ（共有とフォルダ）内のファイル、およびデータベーステーブルでこのような情報が識別されます。
 
 BlueXPは、人工知能（AI）、自然言語処理（NLP）、機械学習（ML）、コグニティブコンピューティング（CC）を使用してスキャンするコンテンツの意味を理解し、エンティティを抽出して適切に分類します。
 
@@ -89,7 +89,7 @@ image:screenshot_sensitive_personal_files.gif["個人データの種類の横に
 
 == カテゴリ別にファイルを表示
 
-BlueXPは、スキャンしたデータをさまざまなカテゴリに分類します。カテゴリは、各ファイルのコンテンツとメタデータの AI 分析に基づくトピックです。 link:reference-private-data-categories.html#types-of-categories["カテゴリのリストを参照してください"^]。
+BlueXPは、スキャンしたデータをさまざまなカテゴリに分類します。カテゴリは、各ファイルのコンテンツとメタデータの AI 分析に基づくトピックです。link:reference-private-data-categories.html#types-of-categories["カテゴリのリストを参照してください"^]です。
 
 カテゴリを使用すると、保有している情報の種類を表示して、データの状況を把握することができます。たとえば、履歴書や従業員契約などのカテゴリには機密データを含めることができます。結果を調査すると、従業員の契約が安全でない場所に保存されていることがわかります。その後、その問題を修正できます。
 
@@ -109,7 +109,7 @@ image:screenshot_categories.gif["カテゴリダイアログボックスのス�
 
 == ファイルタイプ別のファイルの表示
 
-BlueXPは、スキャンしたデータをファイルタイプ別に分類して分類します。ファイルタイプを確認すると、特定のファイルタイプが正しく保存されない可能性があるため、機密データを制御するのに役立ちます。 link:reference-private-data-categories.html#types-of-files["ファイルタイプのリストを参照してください"^]。
+BlueXPは、スキャンしたデータをファイルタイプ別に分類して分類します。ファイルタイプを確認すると、特定のファイルタイプが正しく保存されない可能性があるため、機密データを制御するのに役立ちます。link:reference-private-data-categories.html#types-of-files["ファイルタイプのリストを参照してください"^]です。
 
 たとえば ' 組織に関する非常に機密性の高い情報を含む CAD ファイルを保存する場合がありますセキュリティで保護されていない場合は、権限を制限するか、ファイルを別の場所に移動することで、機密データを制御できます。
 

@@ -24,7 +24,7 @@ BlueXP分類ソフトウェアをアンインストールして、問題をト�
 
 BlueXP分類を使用する必要がなくなった場合は、クラウドプロバイダ環境からBlueXP分類インスタンスをアンインストールして削除できます。
 
-. BlueXPの分類ページの上部にあるをクリックします image:screenshot_gallery_options.gif["[ 詳細 ] ボタン"] 次に、[データセンスのアンインストール]をクリックします。
+. [Data Sense]分類ページの上部BlueXP  でをクリックしimage:screenshot_gallery_options.gif["[ 詳細 ] ボタン"]、*[Uninstall Data Sense]*をクリックします。
 +
 image:screenshot_compliance_uninstall.png["BlueXP分類ソフトウェアをアンインストールするボタンのスクリーンショット。"]
 
@@ -41,12 +41,12 @@ image:screenshot_compliance_uninstall.png["BlueXP分類ソフトウェアをア�
 
 BlueXP分類を使用する必要がなくなった場合や、問題 の再インストールが必要な場合は、ホストからBlueXPをアンインストールできます。
 
-. BlueXPの分類ページの上部にあるをクリックします image:screenshot_gallery_options.gif["[ 詳細 ] ボタン"] 次に、[データセンスのアンインストール]をクリックします。
+. [Data Sense]分類ページの上部BlueXP  でをクリックしimage:screenshot_gallery_options.gif["[ 詳細 ] ボタン"]、*[Uninstall Data Sense]*をクリックします。
 +
 image:screenshot_compliance_uninstall.png["BlueXP分類ソフトウェアをアンインストールするボタンのスクリーンショット。"]
 
 . [_Uninstall Data Sense_]ダイアログで、「* uninstall *」と入力してBlueXPコネクタからBlueXP分類インスタンスを切断することを確認し、*[アンインストール]*をクリックします。
-. ホストからソフトウェアをアンインストールするには、 `cleanup.sh` ホストマシン上のスクリプト。例：
+. ホストからソフトウェアをアンインストールするには、ホストマシンで次のようなスクリプトを実行し `cleanup.sh`ます。
 +
 [source, cli]
 ----
@@ -54,4 +54,4 @@ cleanup.sh
 ----
 
 
-方法を参照してください link:reference-log-in-to-instance.html["BlueXP分類ホストマシンにログインします。"]。
+方法を参照してくださいlink:reference-log-in-to-instance.html["BlueXP分類ホストマシンにログインします。"]。

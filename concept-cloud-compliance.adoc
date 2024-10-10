@@ -22,18 +22,18 @@ BlueXPの分類（Cloud Data Sense）は、BlueXP向けのデータガバナン�
 
 2024年5月にバージョン1.31から、BlueXPのコア機能としてBlueXPの分類が追加料金なしで利用できるようになりました。分類ライセンスまたはサブスクリプションは必要ありません。また、BlueXPの分類機能もNetAppストレージシステムに重点を置いているため、一部の未使用の機能やあまり使用されていない機能は廃止されました。
 
-link:reference-free-paid.html["廃止された機能の一覧を見る"]。
+link:reference-free-paid.html["廃止された機能の一覧を見る"]です。
 
 旧バージョン1.30以前を使用していたユーザーは、サブスクリプションが期限切れになるまでそのバージョンを引き続き使用できます。
 
 ====
 
 
-== の機能
+== 特徴
 
 BlueXPの分類では、人工知能（AI）、自然言語処理（NLP）、機械学習（ML）を使用してスキャンされるコンテンツを把握し、エンティティを抽出し、それに応じてコンテンツを分類します。これにより、BlueXPでは次の機能が提供されます。
 
-https://bluexp.netapp.com/netapp-cloud-data-sense["BlueXP分類のユースケースの詳細については、こちらをご覧ください"^]。
+https://bluexp.netapp.com/netapp-cloud-data-sense["BlueXP分類のユースケースの詳細については、こちらをご覧ください"^]です。
 
 .コンプライアンスを維持
 BlueXPには、コンプライアンスへの取り組みに役立ついくつかのツールが用意されています。BlueXPの分類を使用すると、次の処理を実行できます。
@@ -56,7 +56,7 @@ BlueXPでは、犯罪目的でアクセスされるリスクのあるデータ�
 BlueXPは、ストレージの総所有コスト（TCO）に役立つツールを備えています。BlueXPの分類を使用すると、次の処理を実行できます。
 
 * 重複データやビジネス以外のデータを特定することで、ストレージ効率を向上させます。
-* アクセス頻度の低いデータを低コストのオブジェクトストレージに階層化できるため、ストレージコストを削減できます。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["Cloud Volumes ONTAP システムからの階層化の詳細については、こちらをご覧ください"^]。 https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["オンプレミスのONTAP システムからの階層化の詳細については、こちらをご覧ください"^]。
+* アクセス頻度の低いデータを特定して低コストのオブジェクトストレージに階層化できるため、ストレージコストを削減できます。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["Cloud Volumes ONTAP システムからの階層化の詳細については、こちらをご覧ください"^]です。 https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["オンプレミスのONTAP システムからの階層化の詳細については、こちらをご覧ください"^]です。
 
 
 
@@ -70,8 +70,8 @@ BlueXPは、次のタイプの作業環境とデータソースから構造化�
 * Cloud Volumes ONTAP （ AWS 、 Azure 、 GCP に導入）
 * オンプレミスの ONTAP クラスタ
 * StorageGRID
-* Azure NetApp Files の特長
-* ONTAP 対応の Amazon FSX
+* Azure NetApp Files
+* Amazon FSx for ONTAP
 * Google Cloud NetAppボリューム
 
 
@@ -83,9 +83,9 @@ BlueXPは、次のタイプの作業環境とデータソースから構造化�
 ** Amazon リレーショナルデータベースサービス（ Amazon RDS ）
 ** MongoDB
 ** MySQL
-** Oracle の場合
+** Oracle
 ** PostgreSQL
-** SAP HANA のサポート
+** SAP HANA
 ** SQL Server （ MSSQL ）
 
 
@@ -103,7 +103,7 @@ BlueXPの分類機能を無料で使用できるようになりました。分�
 
 === インフラコスト
 
-* BlueXPをクラウドにインストールするにはクラウドインスタンスを導入する必要があるため、導入先のクラウドプロバイダから料金が請求されます。を参照してください <<BlueXP分類インスタンス,各クラウドに導入されるインスタンスのタイプ プロバイダ>>。BlueXP分類をオンプレミスシステムにインストールすればコストはかかりません。
+* BlueXPをクラウドにインストールするにはクラウドインスタンスを導入する必要があるため、導入先のクラウドプロバイダから料金が請求されます。を参照して <<BlueXP分類インスタンス,各クラウドに導入されるインスタンスのタイプ プロバイダ>>BlueXP分類をオンプレミスシステムにインストールすればコストはかかりません。
 * BlueXPに分類されるためには、BlueXPコネクタが導入されている必要があります。多くの場合、BlueXPで使用している他のストレージとサービスのためにコネクタが既に存在します。Connector インスタンスを使用すると、導入先のクラウドプロバイダから料金が発生します。を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["クラウドプロバイダごとに導入されるインスタンスのタイプ"^]。コネクタをオンプレミスシステムにインストールしても、コストはかかりません。
 
 
@@ -114,7 +114,7 @@ BlueXPの分類機能を無料で使用できるようになりました。分�
 データ転送のコストは設定によって異なります。BlueXP分類インスタンスとデータソースが同じアベイラビリティゾーンとリージョンにある場合、データ転送コストは発生しません。ただし、Cloud Volumes ONTAPシステムなどのデータソースが_ different_アベイラビリティゾーンまたはリージョンにある場合、データ転送のコストはクラウドプロバイダから請求されます。詳細については、次のリンクを参照してください。
 
 * https://aws.amazon.com/ec2/pricing/on-demand/["AWS：Amazon Elastic Compute Cloud（Amazon EC2）の価格設定"^]
-* https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure ： Bandwidth Pricing Details 』"^]
+* https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure ： Bandwidth Pricing Details"^]
 * https://cloud.google.com/storage-transfer/pricing["Google Cloud ：ストレージ転送サービスの価格"^]
 
 
@@ -122,16 +122,16 @@ BlueXPの分類機能を無料で使用できるようになりました。分�
 
 == BlueXP分類インスタンス
 
-BlueXP分類をクラウドに導入すると、BlueXPはコネクタと同じサブネットにインスタンスを導入します。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コネクタの詳細については、こちらをご覧ください。"^]
+BlueXP  分類をクラウドに導入すると、BlueXP  はコネクタと同じサブネットにインスタンスを導入します。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コネクタの詳細については、こちらをご覧ください。"^]
 
 image:diagram_cloud_compliance_instance.png["クラウドプロバイダで実行されているBlueXPインスタンスとBlueXP分類インスタンスを示す図。"]
 
 デフォルトのインスタンスについては、次の点に注意してください。
 
-* AWSでは、BlueXPの分類はで実行されます https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlargeインスタンス"^] 500GiBのgp2ディスクを使用した場合。オペレーティングシステムイメージは Amazon Linux 2 です。AWSに導入した場合、少量のデータをスキャンする場合は、インスタンスサイズを小さくすることができます。
+* AWSでは、BlueXP  分類は500GiBのgp2ディスクを搭載したで実行され https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlargeインスタンス"^]ます。オペレーティングシステムイメージは Amazon Linux 2 です。AWSに導入した場合、少量のデータをスキャンする場合は、インスタンスサイズを小さくすることができます。
 * Azureでは、BlueXP  分類は、ディスクが500GiBのAで実行されlink:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^]ます。オペレーティングシステムのイメージはUbuntu 22.04です。
 * GCPでは、BlueXP  分類は500GiB標準永続ディスクを備えた上で実行されlink:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["N2-standard-16 VM"^]ます。オペレーティングシステムのイメージはUbuntu 22.04です。
-* デフォルトのインスタンスを使用できない地域では、BlueXPの分類は別のインスタンスで実行されます。 link:reference-instance-types.html["別のインスタンスタイプを参照してください"]。
+* デフォルトのインスタンスを使用できない地域では、BlueXPの分類は別のインスタンスで実行されます。link:reference-instance-types.html["別のインスタンスタイプを参照してください"]です。
 * インスタンスの名前は _CloudCompliancy_with で、生成されたハッシュ（ UUID ）を連結しています。例： _CloudCompliion-16bb6564-38ad-40802-9a92-36f5fd2f71c7_
 * コネクタごとに導入されるBlueXP分類インスタンスは1つだけです。
 
@@ -143,11 +143,11 @@ TIP: BlueXPの分類ではデータが継続的にスキャンされるため、
 
 *さまざまなインスタンスタイプに導入*
 
-BlueXP分類は、CPUとRAMの数が少ないシステムに導入できます。
+BlueXP  分類は、CPUとRAMの数が少ないシステムに導入できます。
 
 [cols="18,31,51"]
 |===
-| システムサイズ | 仕様 | 制限 
+| システムサイズ | 仕様 | 制限事項 
 
 
 | 特大 | CPU×32、128GB RAM、1TiB SSD | 最大5億個のファイルをスキャンできます。 
@@ -155,7 +155,7 @@ BlueXP分類は、CPUとRAMの数が少ないシステムに導入できます�
 
 | Large （デフォルト） | CPU×16、64GB RAM、500GiB SSD | 最大2億5、000万個のファイルをスキャンできます。 
 |===
-AzureまたはGCPにBlueXPの分類を導入する際に、より小さいインスタンスタイプを使用する場合は、ng-contact-data-sense@netapp.comまでEメールで支援を要請してください。
+AzureまたはGCPにBlueXP  分類を導入する際に、より小さいインスタンスタイプを使用する場合は、ng-contact-data-sense@ NetApp .comまでEメールで支援を要請してください。
 
 
 
@@ -195,7 +195,7 @@ BlueXPの分類を使用すると、選択したデータソースに対して�
 
 [cols="47,18,18"]
 |===
-| フィーチャー（ Feature ） | 分類 | マッピング 
+| 機能 | 分類 | マッピング 
 
 
 | スキャン速度 | 遅い | 高速 
@@ -207,31 +207,31 @@ BlueXPの分類を使用すると、選択したデータソースに対して�
 | 容量 | 最大500TB | 最大500TB 
 
 
-| ファイルタイプと使用済み容量のリスト | はい。 | はい。 
+| ファイルタイプと使用済み容量のリスト | はい | はい 
 
 
-| ファイル数と使用済み容量 | はい。 | はい。 
+| ファイル数と使用済み容量 | はい | はい 
 
 
-| ファイルの経過時間とサイズ | はい。 | はい。 
+| ファイルの経過時間とサイズ | はい | はい 
 
 
-| を実行する機能 link:task-controlling-governance-data.html#data-mapping-report["データマッピングレポート"] | はい。 | はい。 
+| を実行する機能link:task-controlling-governance-data.html#data-mapping-report["データマッピングレポート"] | はい | はい 
 
 
-| [ データ調査 ] ページでファイルの詳細を確認します | はい。 | いいえ 
+| [ データ調査 ] ページでファイルの詳細を確認します | はい | いいえ 
 
 
-| ファイル内の名前を検索します | はい。 | いいえ 
+| ファイル内の名前を検索します | はい | いいえ 
 
 
-| 作成 link:task-using-policies.html["ポリシー"] カスタムの検索結果が表示されます | はい。 | いいえ 
+| カスタム検索結果を提供する作成link:task-using-policies.html["ポリシー"] | はい | いいえ 
 
 
-| 他のレポートを実行できます | はい。 | いいえ 
+| 他のレポートを実行できます | はい | いいえ 
 
 
-| ファイルからメタデータを表示する機能* | いいえ | はい。 
+| ファイルからメタデータを表示する機能* | いいえ | はい 
 |===
 *マッピングスキャン中に、次のメタデータがファイルから抽出されます。
 
@@ -254,49 +254,49 @@ BlueXPの分類を使用すると、選択したデータソースに対して�
 ====
 [cols="40,25,25"]
 |===
-| フィーチャー（ Feature ） | マッピングと分類 | マップ 
+| 機能 | マッピングと分類 | マップ 
 
 
-| 古いデータ | はい。 | はい。 
+| 古いデータ | はい | はい 
 
 
-| ビジネス以外のデータ | はい。 | はい。 
+| ビジネス以外のデータ | はい | はい 
 
 
-| 重複ファイル | はい。 | はい。 
+| 重複ファイル | はい | はい 
 
 
-| 事前定義済みポリシー | はい。 | いいえ 
+| 事前定義済みポリシー | はい | いいえ 
 
 
-| カスタムポリシー | はい。 | はい。 
+| カスタムポリシー | はい | はい 
 
 
-| DDAレポート | はい。 | はい。 
+| DDAレポート | はい | はい 
 
 
-| マッピングレポート | はい。 | はい。 
+| マッピングレポート | はい | はい 
 
 
-| 感度レベル検出 | はい。 | いいえ 
+| 感度レベル検出 | はい | いいえ 
 
 
-| 幅広い権限を持つ機密データ | はい。 | いいえ 
+| 幅広い権限を持つ機密データ | はい | いいえ 
 
 
-| オープンアクセス権 | はい。 | はい。 
+| オープンアクセス権 | はい | はい 
 
 
-| データの使用年数 | はい。 | はい。 
+| データの使用年数 | はい | はい 
 
 
-| データのサイズ | はい。 | はい。 
+| データのサイズ | はい | はい 
 
 
-| カテゴリ | はい。 | いいえ 
+| カテゴリ | はい | いいえ 
 
 
-| ファイルの種類 | はい。 | はい。 
+| ファイルの種類 | はい | はい 
 |===
 ====
 .コンプライアンスダッシュボードの違い：
@@ -304,22 +304,22 @@ BlueXPの分類を使用すると、選択したデータソースに対して�
 ====
 [cols="40,25,25"]
 |===
-| フィーチャー（ Feature ） | マッピングと分類 | マップ 
+| 機能 | マッピングと分類 | マップ 
 
 
-| 個人情報 | はい。 | いいえ 
+| 個人情報 | はい | いいえ 
 
 
-| 機密性の高い個人情報 | はい。 | いいえ 
+| 機密性の高い個人情報 | はい | いいえ 
 
 
-| プライバシーリスクアセスメントレポート | はい。 | いいえ 
+| プライバシーリスクアセスメントレポート | はい | いいえ 
 
 
-| HIPAA レポート | はい。 | いいえ 
+| HIPAAレポート | はい | いいえ 
 
 
-| PCI DSS レポート | はい。 | いいえ 
+| PCI DSS レポート | はい | いいえ 
 |===
 ====
 .調査フィルタの違い：
@@ -327,85 +327,85 @@ BlueXPの分類を使用すると、選択したデータソースに対して�
 ====
 [cols="40,25,25"]
 |===
-| フィーチャー（ Feature ） | マッピングと分類 | マップ 
+| 機能 | マッピングと分類 | マップ 
 
 
-| ポリシー | はい。 | はい。 
+| ポリシー | はい | はい 
 
 
-| 作業環境のタイプ | はい。 | はい。 
+| 作業環境のタイプ | はい | はい 
 
 
-| 作業環境 | はい。 | はい。 
+| 作業環境 | はい | はい 
 
 
-| ストレージリポジトリ | はい。 | はい。 
+| ストレージリポジトリ | はい | はい 
 
 
-| ファイルタイプ | はい。 | はい。 
+| ファイルタイプ | はい | はい 
 
 
-| ファイルサイズ | はい。 | はい。 
+| ファイルサイズ | はい | はい 
 
 
-| 時刻を作成しました | はい。 | はい。 
+| 時刻を作成しました | はい | はい 
 
 
-| 検出時刻 | はい。 | はい。 
+| 検出時刻 | はい | はい 
 
 
-| 最終更新日 | はい。 | はい。 
+| 最終更新日 | はい | はい 
 
 
-| 最終アクセス | はい。 | はい。 
+| 最終アクセス | はい | はい 
 
 
-| オープンアクセス権 | はい。 | はい。 
+| オープンアクセス権 | はい | はい 
 
 
-| ファイルディレクトリパス | はい。 | はい。 
+| ファイルディレクトリパス | はい | はい 
 
 
-| カテゴリ | はい。 | いいえ 
+| カテゴリ | はい | いいえ 
 
 
-| 感度レベル | はい。 | いいえ 
+| 感度レベル | はい | いいえ 
 
 
-| IDの数 | はい。 | いいえ 
+| IDの数 | はい | いいえ 
 
 
-| 個人データ | はい。 | いいえ 
+| 個人データ | はい | いいえ 
 
 
-| 機密性の高い個人データ | はい。 | いいえ 
+| 機密性の高い個人データ | はい | いいえ 
 
 
-| データ主体 | はい。 | いいえ 
+| データ主体 | はい | いいえ 
 
 
-| 重複 | はい。 | はい。 
+| 重複 | はい | はい 
 
 
-| 分類ステータス | はい。 | ステータスは常に「限定的なインサイト」です。 
+| 分類ステータス | はい | ステータスは常に「限定的なインサイト」です。 
 
 
-| スキャン分析イベント | はい。 | はい。 
+| スキャン分析イベント | はい | はい 
 
 
-| ファイルハッシュ | はい。 | はい。 
+| ファイルハッシュ | はい | はい 
 
 
-| アクセス権を持つユーザの数 | はい。 | はい。 
+| アクセス権を持つユーザの数 | はい | はい 
 
 
-| ユーザ/グループの権限 | はい。 | はい。 
+| ユーザ/グループの権限 | はい | はい 
 
 
-| ファイルの所有者 | はい。 | はい。 
+| ファイルの所有者 | はい | はい 
 
 
-| ディレクトリタイプ | はい。 | はい。 
+| ディレクトリタイプ | はい | はい 
 |===
 ====
 
@@ -425,11 +425,11 @@ BlueXPの分類を使用すると、選択したデータソースに対して�
 BlueXPの分類では、データ（ファイル）の収集とインデックス作成が行われ、カテゴリが割り当てられます。BlueXP分類のインデックスには、次のデータが含まれています。
 
 * *標準メタデータ*ファイルについて：ファイルの種類、サイズ、作成日、変更日など。
-* *個人データ*:メールアドレス、識別番号、クレジットカード番号などの個人識別情報(PII)。 link:task-controlling-private-data.html#view-files-that-contain-personal-data["個人データの詳細については、こちらをご覧ください"^]。
-* *機密性の高い個人データ*: GDPRおよびその他のプライバシー規制で定義されている、健康データ、民族起源、政治的意見などの特別な種類の機密個人情報(SPii)。 link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["機密性の高い個人データの詳細をご覧ください"^]。
-* *カテゴリ*：BlueXPの分類では、スキャンしたデータをさまざまなカテゴリに分類します。カテゴリは、各ファイルのコンテンツとメタデータの AI 分析に基づくトピックです。 link:task-controlling-private-data.html#view-files-by-categories["カテゴリの詳細については、こちらをご覧ください"^]。
-* *タイプ*：BlueXPの分類では、スキャンしたデータがファイルタイプ別に分類されます。 link:task-controlling-private-data.html#view-files-by-file-types["タイプの詳細については、こちらをご覧ください"^]。
-* *名前エンティティの認識*：BlueXPの分類では、AIを使用してドキュメントから人の自然な名前を抽出します。 link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["データ主体のアクセスリクエストへの対応について説明します"^]。
+* *個人データ*:メールアドレス、識別番号、クレジットカード番号などの個人識別情報(PII)。link:task-controlling-private-data.html#view-files-that-contain-personal-data["個人データの詳細については、こちらをご覧ください"^]です。
+* *機密性の高い個人データ*: GDPRおよびその他のプライバシー規制で定義されている、健康データ、民族起源、政治的意見などの特別な種類の機密個人情報(SPii)。link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["機密性の高い個人データの詳細をご覧ください"^]です。
+* *カテゴリ*: BlueXP  分類は、スキャンしたデータをさまざまなカテゴリに分類します。カテゴリは、各ファイルのコンテンツとメタデータの AI 分析に基づくトピックです。link:task-controlling-private-data.html#view-files-by-categories["カテゴリの詳細については、こちらをご覧ください"^]です。
+* *types*: BlueXP  分類では、スキャンしたデータをファイルの種類別に分類します。link:task-controlling-private-data.html#view-files-by-file-types["タイプの詳細については、こちらをご覧ください"^]です。
+* *名前エンティティ認識*: BlueXP  分類は、AIを使用してドキュメントから人の自然な名前を抽出します。link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["データ主体のアクセスリクエストへの対応について説明します"^]です。
 
 
 
@@ -442,7 +442,7 @@ SaaSモードでBlueXPを使用している場合、BlueXPへの接続はHTTPS�
 
 アウトバウンドルールは完全にオープンです。BlueXP分類ソフトウェアのインストールとアップグレード、使用状況の指標の送信には、インターネットアクセスが必要です。
 
-ネットワーク要件が厳しい場合は、 link:task-deploy-cloud-compliance.html#review-prerequisites["BlueXP分類の連絡先となるエンドポイントについて説明します"^]。
+ネットワークに関する厳しい要件がある場合は、をlink:task-deploy-cloud-compliance.html#review-prerequisites["BlueXP分類の連絡先となるエンドポイントについて説明します"^]参照してください。
 
 
 
