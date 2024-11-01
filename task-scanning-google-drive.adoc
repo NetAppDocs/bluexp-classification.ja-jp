@@ -97,8 +97,7 @@ BlueXPで分類されるユーザのデータに対して実行するスキャ�
 
 .手順
 . _Configuration_pageで、Google Driveアカウントの* Configuration *ボタンをクリックします。
-+
-image:screenshot_compliance_google_drive_add_sites.png["Configuration（設定）ボタンを選択できるConfiguration（設定）ページのスクリーンショット。"]
+
 
 . Google Driveアカウントのファイルに対して、マッピング専用スキャンまたはマッピングおよび分類スキャンを有効にします。
 +

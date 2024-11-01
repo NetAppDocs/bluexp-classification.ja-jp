@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, cloud data sense, bluexp, bluexp classification' 
 summary: BlueXPの新機能をご紹介します。 
 ---
-= BlueXP分類の新機能
+= BlueXP  分類の新機能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,17 +14,49 @@ summary: BlueXPの新機能をご紹介します。
 
 
 [role="lead"]
-BlueXP分類の新機能（Cloud Data Sense）をご紹介します。
+BlueXPの新機能をご紹介します。
 
 
 
-== 2024年10月10日（バージョン1.36）
+== 2024年11月4日
+
+
+
+=== バージョン1.37
 
 このBlueXP  分類リリースには、次の更新が含まれています。
 
 
 
-=== RHEL 9.4のサポート
+==== RHEL 8.10のサポート
+
+このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v8.10もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。
+
+次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があり、BlueXP  分類バージョン1.30以降が必要です。Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、および9.4。
+
+詳細については https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類"]、をご覧ください。
+
+
+
+==== NFS v4.1のサポート
+
+このリリースでは、以前のサポートバージョンに加えて、NFS v4.1もサポートされます。
+
+詳細については https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類"]、をご覧ください。
+
+
+
+== 2024年10月10日
+
+
+
+=== バージョン1.36
+
+このBlueXP  分類リリースには、次の更新が含まれています。
+
+
+
+==== RHEL 9.4のサポート
 
 このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v9.4もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。
 
@@ -34,23 +66,27 @@ BlueXP分類の新機能（Cloud Data Sense）をご紹介します。
 
 
 
-=== スキャンパフォーマンスの向上
+==== スキャンパフォーマンスの向上
 
 このリリースでは、スキャンパフォーマンスが向上しています。
 
 
 
-== 2024年9月2日（バージョン1.35）
+== 2024年9月2日
+
+
+
+=== バージョン1.35
 
 このBlueXP  分類リリースには、次の更新が含まれています。
 
 
 
-=== StorageGRIDデータのスキャン
+==== StorageGRIDデータのスキャン
 
 BlueXP  分類でStorageGRIDのデータをスキャンできるようになりました。
 
-詳細については、を参照してください link:task-scanning-storagegrid.html["StorageGRIDデータのスキャン"]。
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-scanning-storagegrid.html["StorageGRIDデータのスキャン"]。
 
 
 
@@ -331,7 +367,7 @@ Red Hatでは前提条件であるDockerがサポートされなくなるため�
 
 === ダークサイトでData Sense BYOLライセンスがサポートされるようになりました
 
-ダークサイトのBlueXP  デジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。 https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["Data Sense BYOLライセンスの入手方法とアップロード方法をご確認ください"]です。
+ダークサイトのBlueXPデジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。
 
 
 

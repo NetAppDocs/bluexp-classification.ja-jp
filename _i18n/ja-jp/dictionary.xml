@@ -130,7 +130,6 @@
   <block id="399bd1ee587245ecac6f39beaa99886f" category="list-text">PostgreSQL</block>
   <block id="86083f3ea21c2385b4f013aae3c57858" category="list-text">SAP HANA</block>
   <block id="0db2daf3d07a81feeb571f78c0af87fa" category="list-text">SQL Server （ MSSQL ）</block>
-  <block id="bf9330c0401cb1794286325e86e14bc1" category="paragraph">BlueXPの分類では、NFSバージョン3.xとCIFSバージョン1.x、2.0、2.1、3.0がサポートされます。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">コスト</block>
   <block id="1d4f5c4d2298eeba0567ba65029151d4" category="paragraph">BlueXPの分類機能を無料で使用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。</block>
   <block id="bcf2e25b0a67b74f2ef04fa33cb52b61" category="section-title">インフラコスト</block>
@@ -1103,40 +1102,8 @@
   <block id="6033e7117e1fdf38561d007aabe17e6b" category="list-text">フィルタドロップダウンをクリックし、データを表示する作業環境を選択して、 * 表示 * をクリックします。</block>
   <block id="47b574d50f0f0cc7ac6ae3ba6d39951f" category="inline-image-macro">特定の作業環境で調査結果をフィルタリングする方法を示すスクリーンショット。</block>
   <block id="7675f7474f9e9ad03c6a7bb35d2d9fad" category="paragraph"><block ref="7675f7474f9e9ad03c6a7bb35d2d9fad" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="236c6909a2aaaf6c54865574731a2519" category="summary">インターネットにアクセスできるクラウド内のLinuxホストにスキャナノードを追加するには、いくつかの手順を実行します。</block>
-  <block id="054d10b91a2e5ce49cf12f8ebacd96f3" category="doc">既存の環境にスキャナノードを追加する</block>
-  <block id="cbbd546102a0bc266daf8b091654a2b4" category="paragraph">インターネットにアクセスできるLinuxホストの既存の環境にスキャナノードを追加できます。</block>
-  <block id="0a4316eaec4759a96358821b3d6d871e" category="paragraph">データソースのスキャンに必要なスキャン処理能力が増えた場合は、スキャナノードを追加することができます。マネージャノードをインストールした直後にスキャナノードを追加することも、後でスキャナノードを追加することもできます。たとえば、1つのデータソースのデータ量が6カ月後に2倍または3倍になったことがわかった場合は、データスキャンに役立つ新しいスキャナノードを追加できます。</block>
-  <block id="f114439eeb05a82baaead56da0d70a54" category="paragraph">スキャナノードを追加するには、次の2つの方法があります。</block>
-  <block id="5df28ba528c6160d29730e9d7fc50471" category="list-text">すべてのデータソースのスキャンに使用するノードを追加します</block>
-  <block id="610e28574a4dbf2d34e497e3ed7bd822" category="list-text">特定のデータソース、または特定のデータソースグループ（通常は場所に基づく）のスキャンに役立つノードを追加する</block>
-  <block id="0047b4042b118692c1d7c579abdeaefe" category="paragraph">デフォルトでは、追加した新しいスキャナノードはすべて、スキャンリソースの一般的なプールに追加されます。これを「デフォルトスキャナグループ」と呼びます。次の図では、6つすべてのデータソースからすべてのデータをスキャンする「デフォルト」グループに、1つのManagerノードと3つのスキャナノードがあります。</block>
-  <block id="a58267ce752204348883eaa09d46e8e1" category="inline-image-macro">デフォルトのスキャナグループに含まれている場合に、BlueXP分類スキャナがデータソースをスキャンする仕組みの図。</block>
-  <block id="8b726f585c8d35d4b9fa6c080b6cf5c3" category="paragraph"><block ref="8b726f585c8d35d4b9fa6c080b6cf5c3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="69aeb258470eedf7afb44d66a993f4d8" category="paragraph">スキャナノードがデータソースに物理的に近いデータソースでスキャンするデータソースがある場合は、スキャナノードまたはスキャナノードのグループを定義して、特定のデータソースまたはデータソースのグループをスキャンできます。次の図では、1つのマネージャーノードと3つのスキャナーノードがあります。</block>
-  <block id="96990c600d9debe09076ef4bcf06d1eb" category="list-text">Managerノードは「デフォルト」グループにあり、1つのデータソースをスキャンしています</block>
-  <block id="042304bf8365f5eb21d79ca01b78d44d" category="list-text">スキャナノード1は「United States」グループに属し、2つのデータソースをスキャンしています</block>
-  <block id="fce59aaa378d30cc0381e7eefc22f0ca" category="list-text">スキャナノード2および3は「ヨーロッパ」グループに属し、3つのデータソースのスキャンタスクを共有します</block>
-  <block id="b2e82a12fe141edcc3076d819a99c43d" category="inline-image-macro">BlueXP分類スキャナが複数のスキャナグループに割り当てられている場合にデータソースをスキャンする仕組みの図。</block>
-  <block id="165f08a0e944c5264c6cfcb58cf6d842" category="paragraph"><block ref="165f08a0e944c5264c6cfcb58cf6d842" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2ae436bff38e681584b2d98366a60d53" category="paragraph">BlueXPの分類スキャナグループは、データが格納される個別の地理的領域として定義できます。BlueXP分類スキャナノードは世界中に複数導入でき、ノードごとにスキャナグループを選択できます。このようにすると、各スキャナノードは最も近いデータをスキャンします。スキャナノードがデータに近いほど、データのスキャン時のネットワークレイテンシができるだけ低減されるため、データの読み取り速度が向上します。</block>
-  <block id="b07c98462d1539c2be49d642a4205223" category="paragraph">BlueXPの分類に追加するスキャナグループとその名前を選択できます。BlueXPの分類では、「Europe」という名前のスキャナグループにマッピングされたノードがヨーロッパに導入されるわけではありません。</block>
-  <block id="e813ef1a90bc3c33aa7351454a0f3d1d" category="paragraph">追加のBlueXP分類スキャナノードをインストールするには、次の手順を実行します。</block>
-  <block id="f8655d78a4818956ec9919a65a7f089b" category="list-text">スキャナノードとして機能するLinuxホストシステムを準備します</block>
-  <block id="c9680eb28f36717df9004e52c8105d05" category="list-text">これらのLinuxシステムにデータセンスソフトウェアをダウンロードします</block>
-  <block id="c65de7b0c08505f3e13c93ead522765f" category="list-text">Managerノードでコマンドを実行して、スキャナノードを特定します</block>
-  <block id="b2fe6e75aa67d3e83769c7fce0162b2e" category="list-text">次の手順に従って、スキャナノードにソフトウェアを展開します（また、特定のスキャナノードに対してオプションで「スキャナグループ」を定義します）。</block>
-  <block id="37151576493b3aebc74476f19e767278" category="list-text">スキャナグループを定義した場合は、Managerノードで次の手順を実行します。</block>
-  <block id="5a838e350187be3ad79ae1b63fe95a2b" category="list-text">「Working _environment To _ scanner _group_config.yml」ファイルを開き、各スキャナグループでスキャンされる作業環境を定義します</block>
-  <block id="23dcbd39a65a485d50a0307dbfaed624" category="list-text">次のスクリプトを実行して、このマッピング情報をすべてのスキャナノードに登録します。<block ref="095075046e7ff767d3fd56d02f6fdfdb" prefix=" " category="inline-code"></block></block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">必要なもの</block>
-  <block id="c9e3afc5b6aaffe6ac686b4597beb1c2" category="list-text">スキャナノード用のすべてのLinuxシステムがホスト要件を満たしていることを確認します。</block>
-  <block id="70982664d9f01c2eb3895d455947c83d" category="list-text">システムに前提条件となる2つのソフトウェアパッケージ（Docker EngineまたはPodman、およびPython 3）がインストールされていることを確認します。</block>
   <block id="95476067517016e17d42573817f40913" category="list-text">Linux システムに対する root 権限があることを確認してください。</block>
-  <block id="b265c78ad0089ab8d45e4e16de6c955f" category="list-text">環境が必要な権限と接続を満たしていることを確認します。</block>
-  <block id="b24a973a5aa3fefd5ec9cba471feff39" category="list-text">追加するスキャナノードホストのIPアドレスを確認しておく必要があります。</block>
-  <block id="7516f4f6c5fbdf54b5b78be3de1b7d8a" category="list-text">BlueXP Classification ManagerノードのホストシステムのIPアドレスが必要です</block>
-  <block id="3fe624f4914417740fe3cf68a4327554" category="list-text">コネクタシステムのIPアドレスまたはホスト名、ネットアップアカウントID、コネクタクライアントID、およびユーザアクセストークンが必要です。スキャナグループを使用する場合は、アカウントの各データソースの作業環境IDを確認しておく必要があります。この情報を取得するには、以下の*_必要条件ステップ_*を参照してください。</block>
   <block id="03004a9b42bb90f829b688b381ea2e84" category="list-text">すべてのホストで次のポートとプロトコルを有効にする必要があります。</block>
   <block id="9985b4390c40137573e6da05caf85874" category="cell">プロトコル</block>
   <block id="269d837afada308dd4aeab28ca2d57e4" category="cell">2377</block>
@@ -1153,54 +1120,13 @@
   <block id="698d51a19d8a121ce581499d7b701668" category="cell">111</block>
   <block id="edcc6720ea7c450bc260e04210895e7c" category="cell">ホスト間でファイルを共有するための NFS サーバ（各スキャナノードからマネージャノードに必要）</block>
   <block id="06b1338ba02add2b5d2da67663b19ebe" category="cell">2049</block>
-  <block id="af7b7b7195a95f1ff1362b8290d4942b" category="list-text">BlueXP  分類マシンでを使用している場合は<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block>、BlueXP  分類をインストールする前に有効にすることをお勧めします。次のコマンドを実行して、BlueXP  分類と互換性があるようにを設定し<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block>ます。</block>
   <block id="ab7a4d49b4e814b44fcc2e4e34cdc29b" category="paragraph">設定を有効または更新するたびに、DockerまたはPodmanを再起動する必要があります<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block>。</block>
-  <block id="a27db93614949e38a138b99356391903" category="paragraph-title">事前に必要な手順</block>
-  <block id="e498e68245d2d68d5d4b94b2fd3a608f" category="paragraph">次の手順に従って、スキャナノードの追加に必要なネットアップアカウントID、コネクタクライアントID、コネクタサーバ名、およびユーザアクセストークンを取得します。</block>
-  <block id="eabdc901feba22c87ee7a01af9e34801" category="list-text">BlueXPのメニューバーで、*アカウント&gt;アカウントの管理*をクリックします。</block>
-  <block id="f5ffeabde3d0f311232b751083215871" category="inline-image-macro">BlueXPアカウントの詳細のスクリーンショット。</block>
-  <block id="fa64916819288af5c8c616d80ff8c824" category="paragraph"><block ref="fa64916819288af5c8c616d80ff8c824" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="146d19c418f2c6c81536f28aa8c7bf6c" category="list-text">_アカウントID_をコピーします。</block>
-  <block id="854bcb8a525626fd08f8d87ffe0c041a" category="list-text">BlueXPメニューバーで、[ヘルプ]&gt;[サポート]&gt;[ BlueXPコネクタ*]をクリックします。</block>
-  <block id="91b88d5bc6686e901520c8c6a109242f" category="inline-image-macro">BlueXP Connectorの構成設定のスクリーンショット</block>
-  <block id="1b2f697aae0e3b9b314fa04d847f3c19" category="paragraph"><block ref="1b2f697aae0e3b9b314fa04d847f3c19" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c65db7be59edaf2b09cc38b7c56763c6" category="list-text">Connector_Client ID_と_サーバ名_をコピーします。</block>
-  <block id="65377fdf29d2c6ab4f8df0a9d2506c57" category="list-text">スキャナグループを使用する場合は、BlueXP分類の[設定]タブで、スキャナグループに追加する各作業環境の作業環境IDをコピーします。</block>
-  <block id="7b919e251245304b6a04299b541b6ef0" category="inline-image-macro">BlueXPの分類の[Configuration]ページに表示されるWorking Environment IDのスクリーンショット。</block>
-  <block id="73aa6f158c137c1058a103cdeac0a40e" category="paragraph"><block ref="73aa6f158c137c1058a103cdeac0a40e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b082b3834881d0e39e85d933337fa35f" category="inline-link">APIドキュメント開発者ハブ</block>
-  <block id="e3aca1bee4b16554fd364b73482af4f3" category="list-text">に移動し<block ref="100b541e6046352c2cfaf3c9e6ddaf4d" category="inline-link-rx"></block>、*[Learn how to authenticate]*をクリックします。</block>
-  <block id="7ef314f37951a4ffae65aed3439a8da1" category="inline-image-macro">APIドキュメントページのスクリーンショット。認証手順へのリンクが表示されています。</block>
-  <block id="e7897b39cbb592afc0430305aca32cc1" category="paragraph"><block ref="e7897b39cbb592afc0430305aca32cc1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="81ca64cf8cdaf987cf8d5efa54a4b6fd" category="list-text">「ユーザー名」と「パスワード」パラメータのアカウント管理者のユーザー名とパスワードを使用して、認証手順に従ってください。</block>
-  <block id="1edd72049e168646cdf62fc97f08f63c" category="list-text">次に、応答から_access token_をコピーします。</block>
-  <block id="b63ac9fcb193ee06e327c293934aaba4" category="list-text">BlueXP Classification Managerノードで、スクリプト「add_scanner_node.sh」を実行します。たとえば、次のコマンドは2つのスキャナノードを追加します。</block>
-  <block id="1480262c4a9656977a70cff8c21b5dc0" category="paragraph"><block ref="0d45fd4edeb386e475963435f8cc230a" prefix="" category="inline-code"></block></block>
   <block id="99a5b8fe9eadd5739e3e760584c579fc" category="paragraph">変数値：</block>
   <block id="82fbba9871c4c69830c0ea5c2c6fa6f8" category="list-text">_account_id _ = ネットアップアカウント ID</block>
-  <block id="79dad5af8e7ba04bd45d58a3d10d4209" category="list-text">_client_id_=コネクタクライアントID（前提条件ステップでコピーしたクライアントIDに接尾辞「clients」を追加）</block>
-  <block id="5d0fd32ac4fe744d7966c459776a6b4c" category="list-text">_cm_host_=コネクタシステムのIPアドレスまたはホスト名</block>
-  <block id="9d303bf713b934df67ac3fc8db55e1df" category="list-text">_DS_manager_IP_= BlueXP Classification ManagerノードシステムのプライベートIPアドレス</block>
-  <block id="63cd14dda48c5ae594fd32586e8adbe6" category="list-text">_node_private_IP_= BlueXP分類スキャナノードシステムのIPアドレス（複数のスキャナノードIPはカンマで区切ります）</block>
   <block id="33b07d0ffb66d0a6cd8a0162e20adca4" category="list-text">_user_token_= JWTユーザーアクセストークン</block>
-  <block id="3aa548170d376264933f54bb0d2c3ad6" category="list-text">add_scanner_nodeスクリプトが完了する前に、スキャナノードに必要なインストールコマンドを示すダイアログが表示されます。コマンド（例：）をコピーし<block ref="7c95eda18e13e25941273928f0d149ba" prefix=" " category="inline-code"></block>、テキストファイルに保存します。</block>
   <block id="611c763bf4c9dbb7098d6afa814b754f" category="list-text">各 * スキャナノードホストで：</block>
-  <block id="67fe0972cc96651c7684b8e71ee21edd" category="list-text">Data Senseインストーラファイル（* DATASENSE-INSTALLER -&lt;version&gt;.tar.gz *）をホストマシンにコピーします（またはその他の方法を使用します<block ref="8a444a43bdf534c0c6338bb7809659b3" prefix=" " category="inline-code"></block>）。</block>
   <block id="d3d41a6c99806d8a969b69a369935644" category="list-text">インストーラファイルを解凍します。</block>
-  <block id="b0c80b9aebe2393782fd3bb0680a791b" category="list-text">手順2でコピーしたコマンドを貼り付けて実行します。</block>
-  <block id="4ab1272ad311bec96f677d25b0901105" category="list-text">スキャナノードを「スキャナグループ」に追加する場合は、パラメータ*-r &lt;scanner_group_name&gt;*をコマンドに追加します。それ以外の場合は、スキャナノードが「デフォルト」グループに追加されます。</block>
-  <block id="8dd42ed78b27180f93de7913ecab156f" category="paragraph">すべてのスキャナノードでインストールが完了し、それらのノードがマネージャノードに参加したら、「add_scanner_node.sh」スクリプトも終了します。インストールには10~20分かかることがあります。</block>
-  <block id="ced90f42fe9747f4578603471ea454a3" category="list-text">スキャナグループにスキャナノードを追加した場合は、マネージャノードに戻り、次の2つのタスクを実行します。</block>
-  <block id="3b78d440a5ebfde1b671393949a4e52a" category="list-text">「/opt/netapp/config/custom _configuration/working_environment_to_scanner_group_config.yml」ファイルを開き、スキャナグループが特定の作業環境をスキャンするマッピングを入力します。データソースごとに_Working Environment ID_が必要になります。たとえば、次のエントリでは、2つの作業環境を「ヨーロッパ」スキャナグループに、2つを「United States」スキャナグループに追加します。</block>
-  <block id="f76b6e3dc68f5a15976b3f64aae23646" category="paragraph">リストに追加されていない作業環境は、「デフォルト」グループによってスキャンされます。「デフォルト」グループには、少なくとも1つのマネージャまたはスキャナノードが必要です。</block>
-  <block id="b77072323352dd1724df6d20002eb9f2" category="list-text">次のスクリプトを実行して、このマッピング情報をすべてのスキャナノードに登録します。<block ref="f484d7848213083a72fafef02f452b57" prefix=" " category="inline-code"></block></block>
-  <block id="66860472392a03bca0e5ca8e62545a3d" category="paragraph">BlueXPの分類は、ManagerノードとScannerノードで設定され、すべてのデータソースがスキャンされます。</block>
   <block id="ad5480f838ed67e92fecf7af3cef120d" category="paragraph-title">次のステップ</block>
-  <block id="1d4c3c5a59e200a8cf6bd280a00b8b39" category="paragraph">設定ページで、スキャンするデータソースを選択できます（まだ選択していない場合）。スキャナグループを作成した場合は、各データソースがそれぞれのグループのスキャナノードによってスキャンされます。</block>
-  <block id="00c5c673cfa296bce54ec77743dbf5a5" category="paragraph">各作業環境のスキャナグループ名は、設定ページに表示されます。</block>
-  <block id="1f3259fd3977a2467ab298df6a6d44d1" category="paragraph">また、すべてのスキャナグループのリスト、および[設定]ページの下部にあるグループ内の各スキャナノードのIPアドレスとステータスを表示することもできます。</block>
-  <block id="e1f976f12c87e7d413491bc2ea717ca3" category="inline-image-macro">すべてのスキャナグループと、グループ内の各スキャナノードのIPアドレスを示すスクリーンショット。</block>
-  <block id="254be716f61cb4173917688092391cd9" category="paragraph"><block ref="254be716f61cb4173917688092391cd9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6e18247604a8052dc71602b0c7f668f1" category="summary">BlueXP分類をクラウドに導入するには、いくつかの手順を実行します。BlueXPでは、BlueXPコネクタと同じクラウドプロバイダネットワークにBlueXP分類インスタンスが導入されます。</block>
   <block id="f17567dce8b42196f094527d71dfd823" category="doc">BlueXPを使用してBlueXP分類をクラウドに導入します</block>
   <block id="7db569d61b5920a213ff0ee64b30da31" category="inline-link-macro">インターネットにアクセスできるLinuxホストにBlueXP分類をインストールします</block>
@@ -1445,7 +1371,6 @@
   <block id="52c31809bdb836acfc2de3ee032c0faa" category="paragraph">バージョン1.30以前では、ペタバイト規模のデータをスキャンする非常に大規模な構成では、複数のホストを追加して処理能力を高めることができます。複数のホストシステムを使用する場合、プライマリシステムは_Manager node_と呼ばれ、追加の処理能力を提供する追加システムは_Scanner Node_と 呼ばれます。</block>
   <block id="84055ee6e3998954234f68ebc7991766" category="inline-link-macro">インターネットにアクセスできないオンプレミスサイトにBlueXPの分類をインストールします</block>
   <block id="0dcde9bea70f4948a25486523fde4e97" category="paragraph">完全に安全なサイトのためにもできます<block ref="76c224cc80265848284829e2886db42b" category="inline-link-macro-rx"></block>。</block>
-  <block id="85aa6acd6442a61f72e7d0ea942bae6f" category="admonition">旧バージョン1.30以前でスキャナノードを追加するには、を参照してください<block ref="6201a969fc4638d8cfca1139fbc49a51" category="inline-link-macro-rx"></block>。</block>
   <block id="bb928959b278e9a5a488494ff139d0d9" category="paragraph">コネクタがない場合、<block ref="8635e4adecf532f5cc2442da36c54c5a" category="inline-link-rx"></block>ネットワーク内のLinuxホスト、またはクラウド内のLinuxホスト。</block>
   <block id="7b80abc0703fcbc544c0ea34a81361df" category="paragraph">クラウドプロバイダを使用してコネクタを作成することもできます。、<block ref="f57cc468ab9bea4198c876368a971c60" category="inline-link-rx"></block>、または<block ref="4ed2379781d8ba33fa9fe0959039a8e2" category="inline-link-rx"></block>を参照してください<block ref="43c354a9e10c487e79b72ac55319f506" category="inline-link-rx"></block>。</block>
   <block id="336bcdf5ccce2f7faf69504d6bb691bc" category="paragraph">環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、コネクタとBlueXPのポート443経由の分類間の接続などが含まれます。<block ref="ccadfe94f5aed3b0ce58eed3720936a8" category="inline-xref-macro-rx"></block>です。</block>
@@ -1882,8 +1807,6 @@
   <block id="7c0a9b3e555cf595d3d01d33df76df82" category="list-text">ソース ONTAP システムで最初に CIFS ボリュームとして作成されたボリュームでは、それらの DP ボリュームをスキャンするために CIFS クレデンシャルを入力する必要があります。Active Directoryクレデンシャルを入力してBlueXP分類でCIFSボリュームをスキャンできるようにした場合は、それらのクレデンシャルを使用することも、別の管理者クレデンシャルのセットを指定することもできます。</block>
   <block id="65ba2ff339305392b787952e007185f1" category="inline-image-macro">CIFS のデータ保護ボリュームを有効にする 2 つのオプションのスクリーンショット。</block>
   <block id="044f0d646b3277f06b2a18a6e8980572" category="paragraph"><block ref="044f0d646b3277f06b2a18a6e8980572" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c47a93a4db0f3326b39699f2c268ed84" category="inline-xref">他のボリュームも有効にした場合と同じです</block>
-  <block id="2061db071134423faf2176bf292d0b95" category="list-text">スキャンする各DPボリュームをアクティブ化し<block ref="86192a8c12894873fcc3d879f4018d85" category="inline-xref-macro-rx"></block>ます。</block>
   <block id="b9061f396efcc4df381ceed3ac729d32" category="paragraph">有効にすると、スキャン対象としてアクティブ化された各DPボリュームからNFS共有が作成されます。共有のエクスポートポリシーでは、BlueXP分類インスタンスからのみアクセスが許可されます。</block>
   <block id="abcdab0f1cbbe968798a52245b476c30" category="paragraph">* 注： DP ボリュームへのアクセスを最初に有効にしたときに CIFS データ保護ボリュームがない場合は、あとで追加しても、 CIFS DP の有効化ボタン * が設定ページの上部に表示されます。このボタンをクリックして、 CIFS DP ボリュームへのアクセスを有効にする CIFS クレデンシャルを追加します。</block>
   <block id="21118277527dde4297826bff350dbf36" category="admonition">Active Directory クレデンシャルは、最初の CIFS DP ボリュームの Storage VM にのみ登録されているため、その SVM 上のすべての DP ボリュームがスキャンされます。他の SVM 上のボリュームには Active Directory クレデンシャルが登録されないため、これらの DP ボリュームはスキャンされません。</block>
@@ -2768,8 +2691,6 @@
   <block id="18b57e2e68f1be182173d49ffbcd4e0c" category="paragraph">*注：* FSxボリュームのスキャン時にオンプレミス環境へのBlueXP分類の導入は現在サポートされていません。</block>
   <block id="3ae736236dde2535cad4ec42745a0cbd" category="paragraph">FSx for ONTAP ボリュームに対してBlueXPの分類を有効にすることができます。</block>
   <block id="2cc6e87dfb5a6f87bc1fcbd217a498de" category="paragraph"><block ref="2cc6e87dfb5a6f87bc1fcbd217a498de" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9fa58f0e5c00772b9262b1da0ff9f2cb" category="inline-xref">ボリュームのコンプライアンススキャンの有効化と無効化</block>
-  <block id="415692946bae6c6ee848f8732518a045" category="paragraph">詳細は、を参照してください <block ref="30e9b0cd02d911bb04c0ac893b6f8372" category="inline-xref-macro-rx"></block> 。</block>
   <block id="6bc94b69811d2b0b701e915104066612" category="paragraph">ネットワーク、セキュリティグループ、およびエクスポートポリシーをチェックして、BlueXPの分類でボリュームへのアクセスが許可されていることを確認します。</block>
   <block id="24f2d84d2538ae621015886e3ec8b0c0" category="paragraph">CIFSボリュームにアクセスできるように、BlueXPの分類にCIFSクレデンシャルを指定する必要があります。</block>
   <block id="d7f427e021c7b93fd75b9364e170beaa" category="list-text">_Configuration_page で、 *View Details* をクリックしてステータスを確認し、エラーを修正します。</block>
@@ -2811,8 +2732,6 @@
   <block id="0e7a5e9d36355cf131cc56b8f94ae787" category="section-title">ユーザデータのスキャンのタイプを選択します</block>
   <block id="1afc2fddca51ee5a2748c87f10b983f8" category="paragraph">BlueXPで分類されるユーザのデータに対して実行するスキャンのタイプを選択します。</block>
   <block id="00d7735cfe1be11b0d6c0c162ce477f6" category="list-text">_Configuration_pageで、Google Driveアカウントの* Configuration *ボタンをクリックします。</block>
-  <block id="0dc1656c50d90854618395b6a5005845" category="inline-image-macro">Configuration（設定）ボタンを選択できるConfiguration（設定）ページのスクリーンショット。</block>
-  <block id="9d94963dd1bda0d610b26873050a7b25" category="paragraph"><block ref="9d94963dd1bda0d610b26873050a7b25" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a546beb16c321b4c611cf0b9c297e9de" category="list-text">Google Driveアカウントのファイルに対して、マッピング専用スキャンまたはマッピングおよび分類スキャンを有効にします。</block>
   <block id="301798d9c3ea0ac63d5929808bf55c03" category="inline-image-macro">Googleドライブのデータに対してBlueXP分類で実行するスキャンの種類を選択する方法を示すスクリーンショット。</block>
   <block id="7ae746a0d79985b2b808dae0d29bf230" category="paragraph"><block ref="7ae746a0d79985b2b808dae0d29bf230" category="inline-image-macro-rx" type="image"></block></block>
@@ -3310,9 +3229,6 @@
   <block id="c8607e69aac6730ea98a4ebb489331b1" category="paragraph"><block ref="c8607e69aac6730ea98a4ebb489331b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d64089f867aa0c6a5cf811a28ddf72cc" category="paragraph">アクションの名前をクリックすると、その操作に対応する詳細を表示できます。</block>
   <block id="08aececdd8070f547d2aa65ea8c35446" category="summary">BlueXPの新機能をご紹介します。</block>
-  <block id="406ca16c022fe122c7920a69664a84f2" category="doc">BlueXP分類の新機能</block>
-  <block id="b05347ded7555dfe4b18afd3dfa678f3" category="paragraph">BlueXP分類の新機能（Cloud Data Sense）をご紹介します。</block>
-  <block id="e75804de09e19a35ad3cd360d45cd0fb" category="section-title">2024年10月10日（バージョン1.36）</block>
   <block id="e5450ac8535429efc574bc7d9388dd9a" category="paragraph">このBlueXP  分類リリースには、次の更新が含まれています。</block>
   <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">RHEL 9.4のサポート</block>
   <block id="409886e91bb1c98ce7537a6ea025aa8e" category="paragraph">このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v9.4もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。</block>
@@ -3321,10 +3237,8 @@
   <block id="b7f7cb3b83ae19c923f62035dd4305fd" category="paragraph">詳細については<block ref="cea7a7dae9f7d88b97fa434e79201c9b" category="inline-link-rx"></block>、をご覧ください。</block>
   <block id="7062dd46798946172bc9078744756dfc" category="section-title">スキャンパフォーマンスの向上</block>
   <block id="8455b67ff73ad2f75c922d81e0449780" category="paragraph">このリリースでは、スキャンパフォーマンスが向上しています。</block>
-  <block id="597f26a63507bfee99f67909c68d5354" category="section-title">2024年9月2日（バージョン1.35）</block>
   <block id="70d1ac1a529ac546d3e60b81ee464a1d" category="paragraph">このBlueXP  分類リリースには、次の更新が含まれています。</block>
   <block id="83bceb987dd495cde1a148944580e473" category="paragraph">BlueXP  分類でStorageGRIDのデータをスキャンできるようになりました。</block>
-  <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">詳細については、を参照してください <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。</block>
   <block id="a5ac20c838605b872613985f5c302c61" category="section-title">2024年8月5日（バージョン1.34）</block>
   <block id="44a73383773bebac3194e73bd06397a8" category="section-title">CentOSからUbuntuへの変更</block>
   <block id="6a1611bc2c4a6c8c16154f81c0323dc2" category="paragraph">BlueXP  の分類により、Microsoft AzureおよびGoogle Cloud Platform (GCP)用のLinuxオペレーティングシステムがCentOS 7.9からUbuntu 22.04に更新されました。</block>
@@ -3422,8 +3336,6 @@
   <block id="b5ba343fa4469021dbdf64181a67e909" category="section-title">BlueXPの分類は、ONTAPシステムからFPolicyイベントを受信するFPolicyコレクタとして設定できます</block>
   <block id="cf39647f74e2ee71e92d2dcb020dab2d" category="paragraph">作業環境内のボリュームで検出されたファイルアクセスイベントについて、BlueXP分類システムでファイルアクセス監査ログの収集を有効にすることができます。BlueXPの分類では、次のタイプのFPolicyイベントと、ファイルに対してアクションを実行したユーザ（Create、Read、Write、Delete、Rename、 所有者/権限を変更し、SACL/DACLを変更します。</block>
   <block id="e1161f065b10936afc930fd3d9d0c76f" category="section-title">ダークサイトでData Sense BYOLライセンスがサポートされるようになりました</block>
-  <block id="1ab65443ec0af7e5e1aee32a3cf59dcc" category="inline-link">Data Sense BYOLライセンスの入手方法とアップロード方法をご確認ください</block>
-  <block id="645f5675426bc396b45b524635e93bc7" category="paragraph">ダークサイトのBlueXP  デジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。<block ref="bd823f9b4dce457c0ea2a8dcca6e749f" category="inline-link-rx"></block>です。</block>
   <block id="f42926ae5eb2834453e4706e43354d5c" category="section-title">2023年4月3日（バージョン1.22）</block>
   <block id="e4279e9f497576fcde3caeb67ed0f96d" category="section-title">新しいデータ検出評価レポート</block>
   <block id="5b9233dec22bab321ca47a360d9950b6" category="inline-link">Data Discovery Assessment Reportを生成して使用する方法を説明します</block>
@@ -3539,4 +3451,23 @@
   <block id="aeb69ebcaffd7e18cd55db906e582bf5" category="sidebar">OneDrive、SharePoint、Google Driveのアカウントを削除する</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">参考文献</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
+  <block id="33131c83033941e511576a90476300a6" category="paragraph">BlueXPの分類では、NFSバージョン3.x、4.0、4.1、CIFSバージョン1.x、2.0、2.1、3.0がサポートされます。</block>
+  <block id="5f9318195cc151f5faab62105798a8f9" category="list-text">スキャンする各DPボリュームをアクティブ化します。</block>
+  <block id="2940154367c6f9a7ec39da3423e3eb0a" category="paragraph">詳細については、ボリュームでのコンプライアンススキャンの有効化と無効化を参照してください。</block>
+  <block id="713b2126f7ad5917ea8d35b725b0aacf" category="doc">BlueXP  分類の新機能</block>
+  <block id="8339f3b73dd5a0afa74d7cfbebd1b2c2" category="section-title">2024年11月4日</block>
+  <block id="c1922490c576eff789b323f98c667589" category="section-title">バージョン1.37</block>
+  <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">RHEL 8.10のサポート</block>
+  <block id="52ff638e6cd24bd3aebc0578d753181c" category="paragraph">このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v8.10もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。</block>
+  <block id="d4f80552d7e61deedef657200662a6be" category="paragraph">次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があり、BlueXP  分類バージョン1.30以降が必要です。Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、および9.4。</block>
+  <block id="4cc849f381058f76f6b72a1c4279393d" category="inline-link">BlueXPの分類</block>
+  <block id="2b569c1a8e17ba534c2e1f57f9d1bbe9" category="paragraph">詳細については<block ref="491ed29a13fdb2b66f8e1bbeefef79a5" category="inline-link-rx"></block>、をご覧ください。</block>
+  <block id="a7e418c0221e06b9bb3fa8ebc082ece2" category="section-title">NFS v4.1のサポート</block>
+  <block id="f1a9c2f106d86fe27271e4f8f0c0bd59" category="paragraph">このリリースでは、以前のサポートバージョンに加えて、NFS v4.1もサポートされます。</block>
+  <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">2024年10月10日</block>
+  <block id="5413a43995a4a97a249b7b24fbf3e785" category="section-title">バージョン1.36</block>
+  <block id="28dc8814bfe656bc8e29052d1508b999" category="section-title">2024年9月2日</block>
+  <block id="2808185c0a48de3cd5dcc0d92f453531" category="section-title">バージョン1.35</block>
+  <block id="1aa327f677148af5679dfc598fb8f539" category="paragraph">詳細については、を参照してください<block ref="3e1b901b9270f6f4c97e16e88c4e3161" category="inline-link-rx"></block>。</block>
+  <block id="164199ecac7ab88714ff0c68b5fb98f0" category="paragraph">ダークサイトのBlueXPデジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。</block>
 </blocks>

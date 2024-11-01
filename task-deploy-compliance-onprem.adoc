@@ -36,9 +36,6 @@ NOTE: レガシーバージョン1.30以前で、複数のホストにBlueXP  �
 完全に安全なサイトのためにもできますlink:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスサイトにBlueXPの分類をインストールします"]。
 
 
-NOTE: 旧バージョン1.30以前でスキャナノードを追加するには、を参照してくださいlink:task-deploy-add-scanner-nodes.html["既存の環境にスキャナノードを追加する"]。
-
-
 
 == クイックスタート
 

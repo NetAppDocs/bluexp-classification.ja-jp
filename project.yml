@@ -89,8 +89,6 @@ sidebar:
       entries:
       - title: インターネットアクセスのない複数のホストにBlueXP分類をインストールする
         url: "/task-deploy-multi-host-install-dark-site.html"
-      - title: 既存の環境にスキャナノードを追加する
-        url: "/task-deploy-add-scanner-nodes.html"
     - title: スキャンデータの非推奨化
       entries:
       - title: Amazon S3バケットをスキャン
