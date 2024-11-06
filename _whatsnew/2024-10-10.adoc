@@ -1,0 +1,17 @@
+= バージョン1.36
+:allow-uri-read: 
+
+
+
+
+=== バージョン1.36
+
+.RHEL 9.4のサポート
+このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v9.4もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。
+
+次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP  分類バージョン1.30以降（Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3、9.4）が必要です。
+
+詳細については https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXPの分類環境の概要"]、をご覧ください。
+
+.スキャンパフォーマンスの向上
+このリリースでは、スキャンパフォーマンスが向上しています。

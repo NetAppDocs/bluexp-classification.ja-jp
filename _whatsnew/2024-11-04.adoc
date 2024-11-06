@@ -1,0 +1,21 @@
+= バージョン1.37
+:allow-uri-read: 
+
+
+
+
+=== バージョン1.37
+
+このBlueXP  分類リリースには、次の更新が含まれています。
+
+.RHEL 8.10のサポート
+このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v8.10もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。
+
+次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があり、BlueXP  分類バージョン1.30以降が必要です。Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、および9.4。
+
+詳細については https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類"]、をご覧ください。
+
+.NFS v4.1のサポート
+このリリースでは、以前のサポートバージョンに加えて、NFS v4.1もサポートされます。
+
+詳細については https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類"]、をご覧ください。

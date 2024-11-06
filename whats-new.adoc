@@ -26,20 +26,14 @@ BlueXPの新機能をご紹介します。
 
 このBlueXP  分類リリースには、次の更新が含まれています。
 
-
-
-==== RHEL 8.10のサポート
-
+.RHEL 8.10のサポート
 このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v8.10もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。
 
 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があり、BlueXP  分類バージョン1.30以降が必要です。Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、および9.4。
 
 詳細については https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類"]、をご覧ください。
 
-
-
-==== NFS v4.1のサポート
-
+.NFS v4.1のサポート
 このリリースでは、以前のサポートバージョンに加えて、NFS v4.1もサポートされます。
 
 詳細については https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類"]、をご覧ください。
@@ -52,22 +46,14 @@ BlueXPの新機能をご紹介します。
 
 === バージョン1.36
 
-このBlueXP  分類リリースには、次の更新が含まれています。
-
-
-
-==== RHEL 9.4のサポート
-
+.RHEL 9.4のサポート
 このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v9.4もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。
 
 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP  分類バージョン1.30以降（Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3、9.4）が必要です。
 
 詳細については https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXPの分類環境の概要"]、をご覧ください。
 
-
-
-==== スキャンパフォーマンスの向上
-
+.スキャンパフォーマンスの向上
 このリリースでは、スキャンパフォーマンスが向上しています。
 
 
@@ -78,46 +64,38 @@ BlueXPの新機能をご紹介します。
 
 === バージョン1.35
 
-このBlueXP  分類リリースには、次の更新が含まれています。
-
-
-
-==== StorageGRIDデータのスキャン
-
+.StorageGRIDデータのスキャン
 BlueXP  分類でStorageGRIDのデータをスキャンできるようになりました。
 
-詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-scanning-storagegrid.html["StorageGRIDデータのスキャン"]。
+詳細については、を参照してください link:task-scanning-storagegrid.html["StorageGRIDデータのスキャン"]。
 
 
 
-== 2024年8月5日（バージョン1.34）
+== 2024年8月5日
+
+
+
+=== バージョン1.34
 
 このBlueXP  分類リリースには、次の更新が含まれています。
 
-
-
-=== CentOSからUbuntuへの変更
-
+.CentOSからUbuntuへの変更
 BlueXP  の分類により、Microsoft AzureおよびGoogle Cloud Platform (GCP)用のLinuxオペレーティングシステムがCentOS 7.9からUbuntu 22.04に更新されました。
 
 導入の詳細については、を参照して https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html#prepare-the-linux-host-system["インターネットにアクセスできるLinuxホストにインストールし、Linuxホストシステムを準備する"]ください。
 
 
 
-== 2024年7月1日（バージョン1.33）
-
-このリリースには、次の更新が含まれています。
+== 2024年7月1日
 
 
 
-=== Ubuntuのサポート
+=== バージョン1.33
 
+.Ubuntuのサポート
 このリリースでは、Ubuntu 24.04 Linuxプラットフォームがサポートされます。
 
-
-
-=== マッピングスキャンによるメタデータの収集
-
+.マッピングスキャンによるメタデータの収集
 マッピングスキャン中にファイルから次のメタデータが抽出され、Governance、Compliance、Investigationの各ダッシュボードに表示されます。
 
 * 作業環境
@@ -134,48 +112,46 @@ BlueXP  の分類により、Microsoft AzureおよびGoogle Cloud Platform (GCP
 * 権限の抽出
 
 
-
-
-=== ダッシュボードの追加データ
-
+.ダッシュボードの追加データ
 このリリースでは、マッピングスキャン中にGovernance、Compliance、およびInvestigationの各ダッシュボードに表示されるデータが更新されます。
 
 詳細については、 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングスキャンと分類スキャンの違い"]
 
 
 
-== 2024年6月5日（バージョン1.32）
-
-このリリースには、次の更新が含まれています。
+== 2024年6月5日
 
 
 
-=== [Configuration]ページの新しい[Mapping status]列
+=== バージョン1.32
 
+.[Configuration]ページの新しい[Mapping status]列
 このリリースでは、[Configuration]ページに新しい[Mapping status]列が表示されるようになりました。新しい列では、マッピングが実行中、キューに登録済み、一時停止中、またはそれ以上であるかどうかを確認できます。
 
 ステータスの説明については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html["スキャン設定を変更します"]。
 
 
 
-== 2024年5月15日（バージョン1.31）
+== 2024年5月15日
 
 
 
-=== BlueXPではコアサービスとして分類を利用可能
+=== バージョン1.31
 
+.BlueXPではコアサービスとして分類を利用可能
 BlueXPのコア機能として、最大500TiBのスキャンデータを追加料金なしでBlueXPの分類を利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。今回の新バージョンでは、BlueXPの分類機能をNetAppストレージシステムのスキャンに重点を置いているため、一部のレガシー機能は、以前にライセンス料金を支払ったお客様のみが利用できます。これらのレガシー機能の使用は、有料契約が終了日に達すると期限切れになります。
 
 link:reference-free-paid.html["廃止された機能の詳細"]です。
 
 
 
-== 2024年4月1日（バージョン1.30）
+== 2024年4月1日
 
 
 
-=== RHEL v8.8およびv9.3 BlueXPの分類のサポートの追加
+=== バージョン1.30
 
+.RHEL v8.8およびv9.3 BlueXPの分類のサポートの追加
 このリリースでは、以前サポートされていた9.xに加えて、Red Hat Enterprise Linux v8.8およびv9.3がサポートされます。9.xにはDockerエンジンではなくPodmanが必要です。これは、手動でオンプレミスにBlueXPをインストールした場合にも当てはまります。
 
 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.30以降（Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3）が必要です。
@@ -184,65 +160,56 @@ link:reference-free-paid.html["廃止された機能の詳細"]です。
 
 BlueXPの分類は、オンプレミスのRHEL 8または9ホストにコネクタをインストールする場合にサポートされます。RHEL 8または9ホストがAWS、Azure、Google Cloudにある場合はサポートされません。
 
-
-
-=== 監査ログ収集をアクティブ化するオプションが削除されました
-
+.監査ログ収集をアクティブ化するオプションが削除されました
 監査ログ収集をアクティブ化するオプションが無効になりました。
 
-
-
-=== スキャン速度の向上
-
+.スキャン速度の向上
 セカンダリスキャナノードでのスキャンパフォーマンスが改善されました。スキャンの処理能力を高める必要がある場合は、スキャナノードを追加できます。詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["インターネットにアクセスできるホストにBlueXP分類をインストールします"]。
 
-
-
-=== ジドウアップグレード
-
+.ジドウアップグレード
 インターネットにアクセスできるシステムにBlueXP分類を導入している場合は、システムが自動的にアップグレードされます。以前は、最後のユーザアクティビティから特定の時間が経過したあとにアップグレードが実行されていました。このリリースでは、ローカル時間が午前1時から午前5時の間の場合、BlueXP  分類が自動的にアップグレードされます。ローカル時間がこの時間外の場合は、最後のユーザアクティビティから特定の時間が経過したあとにアップグレードが実行されます。詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["インターネットにアクセスできるLinuxホストにインストールします"]。
 
 インターネットアクセスを使用せずにBlueXP分類を導入した場合は、手動でアップグレードする必要があります。詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["インターネットアクセスのないLinuxホストにBlueXP分類をインストールする"]。
 
 
 
-== 2024年3月4日（バージョン1.29）
+== 2024年3月4日
 
 
 
-=== 特定のデータソースディレクトリにあるスキャンデータを除外できるようになりました。
+=== バージョン1.29
 
+.特定のデータソースディレクトリにあるスキャンデータを除外できるようになりました。
 BlueXPの分類で、特定のデータソースディレクトリにあるスキャンデータを除外する場合は、BlueXPの分類で処理する構成ファイルにこれらのディレクトリ名を追加します。この機能を使用すると、不要なディレクトリや、個人データの誤検出結果が返されるディレクトリのスキャンを回避できます。
 
 https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html["詳細"]です。
 
-
-
-=== 特大規模インスタンスのサポートが認定されました
-
+.特大規模インスタンスのサポートが認定されました
 BlueXPの分類で2億5、000万を超えるファイルをスキャンする必要がある場合は、クラウド環境またはオンプレミス環境で特大規模なインスタンスを使用できます。このタイプのシステムは、最大5億個のファイルをスキャンできます。
 
 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["詳細"]です。
 
 
 
-== 2024年1月10日（バージョン1.27）
+== 2024年1月10日
 
 
 
-=== 調査ページの結果に、項目の合計数に加えて合計サイズが表示されるようになりました。
+=== バージョン1.27
 
+.調査ページの結果に、項目の合計数に加えて合計サイズが表示されるようになりました。
 [Investigation]ページでフィルタ処理された結果に、ファイルの合計数に加えてアイテムの合計サイズが表示されるようになりました。これは、ファイルの移動、ファイルの削除などを行うときに役立ちます。
 
-
-
-=== 追加のグループIDを[Open to Organization]として設定します。
-
+.追加のグループIDを[Open to Organization]として設定します。
 グループに最初にその権限が設定されていなかった場合に、BlueXPの分類から直接、NFSのグループIDを「Open to Organization」とみなされるように設定できるようになりました。これらのグループIDが添付されているファイルおよびフォルダは、[Investigation Details]ページで[Open to Organization]として表示されます。方法を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["追加のグループIDを「組織にオープン」として追加"]。
 
 
 
-== 2023年12月14日（バージョン1.26.6）
+== 2023年12月14日
+
+
+
+=== バージョン1.26.6
 
 このリリースには、いくつかのマイナーな機能拡張が含まれ
 
@@ -255,11 +222,13 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 
 
 
-== 2023年11月6日（バージョン1.26.3）
+== 2023年11月6日
 
 
 
-=== このリリースで解決された問題は次のとおりです。
+=== バージョン1.26.3
+
+このリリースで解決された問題は次のとおりです。
 
 * システムによってスキャンされたファイル数をダッシュボードに表示する際の不一致を修正しました。
 * 名前とメタデータに特殊文字が含まれるファイルとディレクトリを処理およびレポートすることで、スキャンの動作が改善されました。
@@ -267,46 +236,43 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 
 
 
-== 2023年10月4日（バージョン1.26）
+== 2023年10月4日
 
 
 
-=== RHELバージョン9でのBlueXP分類のオンプレミスインストールのサポート
+=== バージョン1.26
 
+.RHELバージョン9でのBlueXP分類のオンプレミスインストールのサポート
 Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインストールに必要なDockerエンジンをサポートしていません。コンテナインフラとしてPodmanバージョン4以降を使用したRHEL 9.0、9.1、9.2でのBlueXP分類のインストールがサポートされるようになりました。最新バージョンのRHELを使用する必要がある環境では、Podmanを使用する際にBlueXP分類（バージョン1.26以降）をインストールできるようになりました。
 
 現時点では、RHEL 9.xを使用している場合、ダークサイトのインストールや分散スキャン環境（マスターノードとリモートスキャナノードを使用）はサポートされていません。
 
 
 
-== 2023年9月5日（バージョン1.25）
+== 2023年9月5日
 
 
 
-=== 小規模および中規模の導入が一時的に利用できない
+=== バージョン1.25
 
+.小規模および中規模の導入が一時的に利用できない
 現時点では、BlueXP分類のインスタンスをAWSに導入する場合、*[Deploy]>[Configuration]*を選択してSmallまたはMedium sizedインスタンスを選択するオプションは使用できません。[Deploy]>[Deploy]*を選択して、大きなインスタンスサイズを使用してインスタンスを導入することもできます。
 
-
-
-=== [Investigation Results]ページから最大100,000項目にタグを適用
-
+.[Investigation Results]ページから最大100,000項目にタグを適用
 これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。 https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assign-tags-to-files["方法を参照してください"]です。
 
-
-
-=== 最小ファイルサイズが1MBの重複ファイルを特定する
-
+.最小ファイルサイズが1MBの重複ファイルを特定する
 BlueXPの分類では、ファイルが50MB以上の場合にのみ重複ファイルが特定されます。1MBで始まる重複ファイルを識別できるようになりました。[Investigation]ページフィルタの[File Size]と[Duplicates]を使用して、環境内で特定のサイズのファイルが重複しているかどうかを確認できます。
 
 
 
-== 2023年7月17日（バージョン1.24）
+== 2023年7月17日
 
 
 
-=== BlueXPの分類では、ドイツの2つの新しいタイプの個人データが特定されています。
+=== バージョン1.24
 
+.BlueXPの分類では、ドイツの2つの新しいタイプの個人データが特定されています。
 BlueXPの分類では、次のタイプのデータを含むファイルを特定して分類できます。
 
 * ドイツ語ID（Personalausweisnummer）
@@ -315,116 +281,83 @@ BlueXPの分類では、次のタイプのデータを含むファイルを特�
 
 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["BlueXPの分類によってデータから特定できるすべてのタイプの個人データを確認できます"]です。
 
-
-
-=== BlueXPの分類は制限モードとプライベートモードで完全にサポートされています。
-
+.BlueXPの分類は制限モードとプライベートモードで完全にサポートされています。
 BlueXP  分類は、インターネットアクセスがないサイト（プライベートモード）およびアウトバウンドインターネットアクセスが制限されているサイト（制限モード）で完全にサポートされるようになりました。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["コネクタのBlueXP導入モードの詳細"^]です。
 
-
-
-=== BlueXP分類のプライベートモードインストールをアップグレードするときにバージョンをスキップする機能
-
+.BlueXP分類のプライベートモードインストールをアップグレードするときにバージョンをスキップする機能
 シーケンシャルでなくても、新しいバージョンのBlueXP分類にアップグレードできるようになりました。つまり、BlueXPの分類を1つのバージョンにアップグレードするという現行の制限は不要になりました。この機能は、バージョン1.24以降で該当します。
 
-
-
-=== BlueXP分類APIを利用できるようになりました
-
+.BlueXP分類APIを利用できるようになりました
 BlueXP分類APIを使用すると、スキャンするデータに関する操作の実行、クエリの作成、情報のエクスポートを行うことができます。Swaggerを使用して対話型ドキュメントを利用できます。ドキュメントは、調査、コンプライアンス、ガバナンス、構成など、複数のカテゴリに分かれています。各カテゴリは、BlueXP分類用UIのタブを表しています。
 
 https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["BlueXP分類APIの詳細"]です。
 
 
 
-== 2023年6月6日（バージョン1.23）
+== 2023年6月6日
 
 
 
-=== データ主体名の検索で日本語がサポートされるようになりました
+=== バージョン1.23
 
+.データ主体名の検索で日本語がサポートされるようになりました
 データ主体アクセス要求（DSAR）に応答して、被験者の名前を検索する際に日本語名を入力できるようになりました。結果の情報を使用してを生成できます https://docs.netapp.com/us-en/bluexp-classification/task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Data Subject Access Request レポート"]。に日本語の名前を入力して、サブジェクトの名前を含むファイルを識別することもできます https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filter-data-by-sensitivity-and-content["[Data Investigation]ページの[Data Subject]フィルタ"]。
 
-
-
-=== Ubuntuがサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました
-
+.Ubuntuがサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました
 Ubuntu 22.04は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXP  分類は、ネットワーク内のUbuntu Linuxホストにインストールすることも、バージョン1.23のインストーラを使用している場合はクラウド内のLinuxホストにインストールすることもできます。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["UbuntuがインストールされているホストにBlueXP分類をインストールする方法を参照してください"]です。
 
-
-
-=== 新しいBlueXP分類のインストールでは、Red Hat Enterprise Linux 8.6および8.7はサポートされなくなりました
-
+.新しいBlueXP分類のインストールでは、Red Hat Enterprise Linux 8.6および8.7はサポートされなくなりました
 Red Hatでは前提条件であるDockerがサポートされなくなるため、新規導入ではこれらのバージョンはサポートされません。RHEL 8.6または8.7で既存のBlueXP分類マシンを実行している場合、NetAppでは引き続き構成がサポートされます。
 
-
-
-=== BlueXPの分類は、ONTAPシステムからFPolicyイベントを受信するFPolicyコレクタとして設定できます
-
+.BlueXPの分類は、ONTAPシステムからFPolicyイベントを受信するFPolicyコレクタとして設定できます
 作業環境内のボリュームで検出されたファイルアクセスイベントについて、BlueXP分類システムでファイルアクセス監査ログの収集を有効にすることができます。BlueXPの分類では、次のタイプのFPolicyイベントと、ファイルに対してアクションを実行したユーザ（Create、Read、Write、Delete、Rename、 所有者/権限を変更し、SACL/DACLを変更します。
 
-
-
-=== ダークサイトでData Sense BYOLライセンスがサポートされるようになりました
-
-ダークサイトのBlueXPデジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。
+.ダークサイトでData Sense BYOLライセンスがサポートされるようになりました
+ダークサイトのBlueXP  デジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。 https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["Data Sense BYOLライセンスの入手方法とアップロード方法をご確認ください"]です。
 
 
 
-== 2023年4月3日（バージョン1.22）
+== 2023年4月3日
 
 
 
-=== 新しいデータ検出評価レポート
+=== バージョン1.22
 
+.新しいデータ検出評価レポート
 Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、システムの調査結果を強調し、懸念領域と潜在的な修復手順を示します。このレポートの目的は、データガバナンスの懸念、データセキュリティの危険性、データセットのデータコンプライアンスギャップに対する認識を高めることです。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html#data-discovery-assessment-report["Data Discovery Assessment Reportを生成して使用する方法を説明します"]です。
 
-
-
-=== クラウド内の小規模インスタンスにBlueXPの分類機能を導入できます
-
+.クラウド内の小規模インスタンスにBlueXPの分類機能を導入できます
 AWS環境のBlueXP ConnectorからBlueXPの分類を導入する際に、デフォルトのインスタンスよりも小さい2つのインスタンスタイプから選択できるようになりました。小規模な環境をスキャンする場合は、クラウドコストを節約できます。ただし、小さいインスタンスを使用する場合はいくつかの制限があります。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["使用可能なインスタンスタイプと制限事項を参照してください"]です。
 
-
-
-=== BlueXPの分類をインストールする前に、スタンドアロンスクリプトを使用してLinuxシステムを認定できるようになりました
-
+.BlueXPの分類をインストールする前に、スタンドアロンスクリプトを使用してLinuxシステムを認定できるようになりました
 BlueXP  分類インストールの実行とは別に、Linuxシステムがすべての前提条件を満たしていることを確認する場合は、前提条件のテストのみを行う別のスクリプトをダウンロードできます。 https://docs.netapp.com/us-en/bluexp-classification/task-test-linux-system.html["LinuxホストでBlueXPのインストール準備が完了しているかどうかを確認する方法を説明します"]です。
 
 
 
-== 2023年3月7日（バージョン1.21）
+== 2023年3月7日
 
 
 
-=== BlueXPの分類UIから独自のカスタムカテゴリを追加する新機能
+=== バージョン1.21
 
+.BlueXPの分類UIから独自のカスタムカテゴリを追加する新機能
 BlueXPの分類で独自のカスタムカテゴリを追加できるようになりました。これにより、それらのカテゴリに該当するファイルがBlueXPの分類で識別されます。BlueXP  分類には多数の種類がある https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-categories["事前定義されたカテゴリ"]ため、この機能を使用すると、組織固有の情報がデータ内のどこにあるかを特定するためのカスタムカテゴリを追加できます。
 
 https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-categories["詳細"^]です。
 
-
-
-=== BlueXPの分類UIからカスタムキーワードを追加できるようになりました
-
+.BlueXPの分類UIからカスタムキーワードを追加できるようになりました
 BlueXPの分類では、今後のスキャンでBlueXPの分類によって特定されるカスタムキーワードを追加できます。ただし、BlueXP分類Linuxホストにログインし、コマンドラインインターフェイスを使用してキーワードを追加する必要がありました。今回のリリースでは、BlueXPの分類UIでカスタムキーワードを追加できるようになり、キーワードの追加や編集が非常に簡単になりました。
 
 https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-keywords-from-a-list-of-words["BlueXPの分類UIからカスタムキーワードを追加する方法については、こちらをご覧ください"^]です。
 
-
-
-=== 「最終アクセス時間」が変更されるときに、BlueXPの分類*がファイルをスキャンすることはできません
-
+.「最終アクセス時間」が変更されるときに、BlueXPの分類*がファイルをスキャンすることはできません
 デフォルトでは、BlueXPの分類に適切な「書き込み」権限がないと、BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、ボリューム内のファイルはスキャンされません。ただし、最終アクセス時刻がファイルの元の時刻にリセットされていてもかまわない場合は、[設定]ページでこの動作を無効にして、権限に関係なくBlueXPの分類でボリュームがスキャンされるようにすることができます。
 
 この機能と併せて、「Scan Analysis Event」という新しいフィルタが追加され、BlueXPの分類で最終アクセス時刻を元に戻すことができなかったために分類されなかったファイルや、BlueXPの分類で最終アクセス時刻を元に戻すことができなかったにもかかわらず分類されたファイルを表示できるようになりました。
 
 https://docs.netapp.com/us-en/bluexp-classification/reference-collected-metadata.html#last-access-time-timestamp["「最終アクセス時間のタイムスタンプ」とBlueXPの分類に必要な権限について詳しくは、こちらをご覧ください"]です。
 
-
-
-=== BlueXPは、3つの新しいタイプの個人データを分類しています
-
+.BlueXPは、3つの新しいタイプの個人データを分類しています
 BlueXPの分類では、次のタイプのデータを含むファイルを特定して分類できます。
 
 * ボツワナIDカード（Omang）番号
@@ -434,74 +367,55 @@ BlueXPの分類では、次のタイプのデータを含むファイルを特�
 
 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["BlueXPの分類によってデータから特定できるすべてのタイプの個人データを確認できます"]です。
 
-
-
-=== ディレクトリの機能が更新されました
-
+.ディレクトリの機能が更新されました
 * データ調査レポートの[Light CSV Report]オプションに、ディレクトリからの情報が含まれるようになりました。
 * [Last Accessed]時間フィルタに、ファイルとディレクトリの両方の最終アクセス時刻が表示されるようになりました。
 
 
-
-
-=== インストールの機能拡張
-
+.インストールの機能拡張
 * インターネットアクセスがないサイト（ダークサイト）用のBlueXP分類インストーラで、インストールを成功させるためにシステムとネットワークの要件が満たされていることを確認するための事前チェックが実行されるようになりました。
 * インストール監査ログファイルは保存され、に書き込まれます。 `/ops/netapp/install_logs`
 
 
 
 
-== 2023年2月5日（バージョン1.20）
+== 2023年2月5日
 
 
 
-=== 任意のEメールアドレスにポリシーベースの通知Eメールを送信できます
+=== バージョン1.20
 
+.任意のEメールアドレスにポリシーベースの通知Eメールを送信できます
 以前のバージョンのBlueXP分類では、特定のクリティカルポリシーが結果を返したときに、アカウントのBlueXPユーザにEメールアラートを送信できました。この機能を使用すると、オンラインでないときにデータを保護するための通知を受け取ることができます。また、ポリシーから、BlueXPアカウントに登録されていない最大20個の電子メールアドレスを持つ他のユーザーに電子メールアラートを送信することもできます。
 
 https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#send-email-alerts-when-non-compliant-data-is-found["ポリシーの結果に基づいて電子メールアラートを送信する方法については、こちらをご覧ください"]です。
 
-
-
-=== BlueXPの分類UIから個人用パターンを追加できるようになりました
-
+.BlueXPの分類UIから個人用パターンを追加できるようになりました
 BlueXPの分類では、カスタムの「個人データ」を追加できるようになりました。BlueXPの分類で今後のスキャンで特定できるようになります。ただし、BlueXP分類Linuxホストにログインし、コマンドラインを使用してカスタムパターンを追加する必要がありました。このリリースでは、BlueXPの分類UIで正規表現を使用して個人用パターンを追加できるようになり、カスタムパターンの追加と編集が非常に簡単になりました。
 
 https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex["BlueXPの分類UIからカスタムパターンを追加する方法については、こちらをご覧ください"^]です。
 
-
-
-=== BlueXPの分類を使用して1、500万個のファイルを移動できます
-
+.BlueXPの分類を使用して1、500万個のファイルを移動できます
 これまで、BlueXPの分類では、最大100、000個のソースファイルを任意のNFS共有に移動できました。これで、一度に最大1500万個のファイルを移動できます。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#move-source-files-to-an-nfs-share["BlueXPによる分類を使用したソースファイルの移動の詳細については、こちらをご覧ください"]です。
 
-
-
-=== SharePoint Onlineファイルへのアクセス権を持つユーザーの数を表示する機能
-
+.SharePoint Onlineファイルへのアクセス権を持つユーザーの数を表示する機能
 フィルタ「アクセス権を持つユーザー数」で、SharePoint Onlineリポジトリに保存されているファイルがサポートされるようになりました。これまでは、CIFS共有上のファイルのみがサポートされていました。現時点では、Active DirectoryベースでないSharePointグループはこのフィルタにカウントされません。
 
-
-
-=== 新しい「部分的成功」ステータスがアクションステータスパネルに追加されました
-
+.新しい「部分的成功」ステータスがアクションステータスパネルに追加されました
 新しい「Partial Success」ステータスは、BlueXPの分類処理が完了し、一部の項目が失敗し、一部の項目が成功したことを示します（100個のファイルを移動または削除する場合など）。さらに、「終了」ステータスが「成功」に変更されました。以前は、「終了」ステータスに成功した処理と失敗した処理が表示されることがありました。これで、「成功」ステータスは、すべてのアクションがすべてのアイテムで成功したことを意味します。 https://docs.netapp.com/us-en/bluexp-classification/task-view-compliance-actions.html["アクションステータスパネルの表示方法を参照してください"]です。
 
 
 
-== 2023年1月9日（バージョン1.19）
+== 2023年1月9日
 
 
 
-=== 機密データが含まれ、過度に許容されるファイルのグラフを表示する機能
+=== バージョン1.19
 
+.機密データが含まれ、過度に許容されるファイルのグラフを表示する機能
 Governanceダッシュボードには、機密データ（機密性の高い個人データと機密性の高い個人データの両方を含む）を含むファイルのヒートマップを提供するnew_sensitive DataおよびWide Permissive_areaが追加されています。これにより、機密データに関するリスクがどこにあるかを確認できます。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html#data-listed-by-sensitivity-and-wide-permissions["詳細"]です。
 
-
-
-=== Data Investigationページでは、3つの新しいフィルタを使用できます
-
+.Data Investigationページでは、3つの新しいフィルタを使用できます
 [データ調査]ページに表示する結果を絞り込むための新しいフィルタを使用できます。
 
 * 「アクセス権を持つユーザの数」フィルタは、特定の数のユーザに対して開かれているファイルやフォルダを表示します。数値の範囲を選択して結果を絞り込むことができます。たとえば、51~100ユーザがアクセスできるファイルを確認できます。
@@ -511,8 +425,5 @@ Governanceダッシュボードには、機密データ（機密性の高い個�
 
 https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filter-data-in-the-data-investigation-page["データの調査に使用できるすべてのフィルタのリストを確認します"]です。
 
-
-
-=== BlueXPの分類では、日本の個人番号を識別できます
-
+.BlueXPの分類では、日本の個人番号を識別できます
 BlueXPの分類では、日本語の個人番号（「マイナンバー」とも呼ばれます）を含むファイルを特定して分類できます。これには、個人番号と会社のマイ番号の両方が含まれます。 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["BlueXPの分類によってデータから特定できるすべてのタイプの個人データを確認できます"]です。

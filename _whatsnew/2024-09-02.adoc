@@ -1,0 +1,12 @@
+= バージョン1.35
+:allow-uri-read: 
+
+
+
+
+=== バージョン1.35
+
+.StorageGRIDデータのスキャン
+BlueXP  分類でStorageGRIDのデータをスキャンできるようになりました。
+
+詳細については、を参照してください link:task-scanning-storagegrid.html["StorageGRIDデータのスキャン"]。
