@@ -28,12 +28,10 @@ cloud_内のLinuxホストへの一般的なインストールには、次のコ
 
 image:diagram_deploy_onprem_cloud_instance.png["必要なBlueXPとネットワークコンポーネント、および関連する接続の図。"]
 
-バージョン1.30以前では、ペタバイト規模のデータをスキャンする非常に大規模な構成では、複数のホストを追加して処理能力を高めることができます。複数のホストシステムを使用する場合、プライマリシステムは_Manager node_と呼ばれ、追加の処理能力を提供する追加システムは_Scanner Node_と 呼ばれます。
-
 
 NOTE: レガシーバージョン1.30以前で、複数のホストにBlueXP  分類をインストールする必要がある場合は、を参照してくださいlink:task-deploy-multi-host-install-dark-site.html["インターネットアクセスのない複数のホストにBlueXP分類をインストールする"]。
 
-完全に安全なサイトのためにもできますlink:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスサイトにBlueXPの分類をインストールします"]。
+あなたもできますlink:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスサイトにBlueXPの分類をインストールします"]。
 
 
 
@@ -279,10 +277,6 @@ Active Directory の次の情報が必要です。
 一般的な構成では、ソフトウェアを 1 台のホストシステムにインストールします。<<一般的な構成でのシングルホストインストール,これらの手順を参照してください>>です。
 
 image:diagram_deploy_onprem_single_host_internet.png["オンプレミスに導入された1つのBlueXP分類インスタンスをインターネットアクセスで使用している場合にスキャンできるデータソースの場所を示す図。"]
-
-ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。詳細はこちらlink：task-deploy-multi-host-install-dark-site.html>大規模な構成での複数ホストへのインストールについて
-
-image:diagram_deploy_onprem_multi_host_internet.png["オンプレミスに導入された複数のBlueXP分類インスタンスをインターネットアクセスで使用している場合にスキャンできるデータソースの場所を示す図。"]
 
 BlueXP  分類を導入する前の要件については、および<<BlueXPの分類からアウトバウンドのインターネットアクセスを有効にします,前提条件の確認>>を参照してください<<Linux ホストシステムを準備,Linux ホストシステムの準備>>。
 

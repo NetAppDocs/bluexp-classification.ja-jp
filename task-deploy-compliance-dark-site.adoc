@@ -14,7 +14,7 @@ summary: インターネットアクセスがないオンプレミスサイト�
 
 
 [role="lead"]
-インターネットアクセスがないオンプレミスサイト（_private mode_とも呼ばれます）のLinuxホストにBlueXP分類をインストールするには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。
+インターネットアクセスがないオンプレミスサイト（_private mode_とも呼ばれます）のLinuxホストにBlueXP分類をインストールするには、いくつかの手順を実行します。インストールスクリプトを使用するこのタイプのインストールでは、BlueXP  SaaSレイヤには接続されません。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["BlueXP ConnectorとBlueXPの分類のさまざまな導入モードについて説明します。"^]です。
 
@@ -248,8 +248,6 @@ Active Directory の次の情報が必要です。
 
 | Linuxホストでファイアウォールを使用する場合 | 9000 | Ubuntuサーバ内の内部プロセスに必要です。 
 |===
-複数のBlueXP分類ホストを使用してデータソースのスキャンに必要な処理能力を提供している場合は、追加のポート/プロトコルを有効にする必要があります。link:task-deploy-compliance-dark-site.html["追加のポート要件を参照してください"]です。
-
 
 
 == オンプレミスのLinuxホストにBlueXP分類をインストールします
@@ -257,8 +255,6 @@ Active Directory の次の情報が必要です。
 一般的な構成では、ソフトウェアを 1 台のホストシステムにインストールします。
 
 image:diagram_deploy_onprem_single_host_no_internet.png["インターネットアクセスなしでオンプレミスに導入された単一のBlueXP分類インスタンスを使用している場合にスキャンできるデータソースの場所を示す図。"]
-
-image:diagram_deploy_onprem_multi_host_no_internet.png["オンプレミスにインターネットアクセスなしで導入された複数のBlueXP分類インスタンスを使用している場合にスキャンできるデータソースの場所を示す図。"]
 
 
 
