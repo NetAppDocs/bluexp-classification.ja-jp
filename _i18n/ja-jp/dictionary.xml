@@ -3478,4 +3478,7 @@
   <block id="d201913c731a2c485562d2197234ff40" category="paragraph">インターネットアクセスがないオンプレミスサイト（_private mode_とも呼ばれます）のLinuxホストにBlueXP分類をインストールするには、いくつかの手順を実行します。インストールスクリプトを使用するこのタイプのインストールでは、BlueXP  SaaSレイヤには接続されません。</block>
   <block id="eea715e21fdd29a12f087199006074c7" category="paragraph">あなたもできます<block ref="76c224cc80265848284829e2886db42b" category="inline-link-macro-rx"></block>。</block>
   <block id="6ff9945c9b8d3c1700dad8f9a06d2ab2" category="list-text"><block ref="7ec82fd84f3aea81a9c6badedcfda318" category="inline-link-macro-rx"></block>は、_privateモードとも呼ばれます。_インストールスクリプトを使用するこのタイプのインストールは、BlueXP  SaaSレイヤに接続されません。</block>
+  <block id="5ae300808387123005a76abbd5a99f46" category="doc">バージョン1.38</block>
+  <block id="074f06822cc9864b1be34066c52ec21d" category="paragraph">このBlueXP  分類リリースには、全般的な改善とバグ修正が含まれています。</block>
+  <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">2024年12月16日</block>
 </blocks>
