@@ -46,7 +46,7 @@ BlueXP分類を使用する必要がなくなった場合や、問題 の再イ�
 image:screenshot_compliance_uninstall.png["BlueXP分類ソフトウェアをアンインストールするボタンのスクリーンショット。"]
 
 . [_Uninstall Data Sense_]ダイアログで、「* uninstall *」と入力してBlueXPコネクタからBlueXP分類インスタンスを切断することを確認し、*[アンインストール]*をクリックします。
-. ホストからソフトウェアをアンインストールするには、ホストマシンで次のようなスクリプトを実行し `cleanup.sh`ます。
+. ホストからソフトウェアをアンインストールするには、BlueXP  分類ホストマシンで次のようなスクリプトを実行し `cleanup.sh`ます。
 +
 [source, cli]
 ----

@@ -67,12 +67,11 @@ BlueXPは、次のタイプの作業環境とデータソースから構造化�
 
 *作業環境*
 
+* Amazon FSx for ONTAP
+* Azure NetApp Files
 * Cloud Volumes ONTAP （ AWS 、 Azure 、 GCP に導入）
 * オンプレミスの ONTAP クラスタ
 * StorageGRID
-* Azure NetApp Files
-* Amazon FSx for ONTAP
-* Google Cloud NetAppボリューム
 
 
 *データソース*

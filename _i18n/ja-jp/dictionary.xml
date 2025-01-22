@@ -691,7 +691,6 @@
   <block id="3b6b18ad7909031011a3960e81ac99e4" category="paragraph">BlueXP  の分類では、次の2種類の個人データが識別されます。</block>
   <block id="85542d81e9687ba10d962e859cdaf35a" category="list-text">*個人識別情報（PII）*</block>
   <block id="874a594310f3c66b96cad8a1ef4af095" category="list-text">*機密性の高い個人情報（SPii）*</block>
-  <block id="092e6dee95258860d663bccecea3a137" category="admonition">国別ID番号や医療用IDなど、他のプライベートデータタイプを識別するためにBlueXPの分類が必要な場合は、ng-contact-data-sense@netapp.comまでリクエストをEメールで送信してください。</block>
   <block id="10ff4e7c2ffc1fd426aa6f784a05da66" category="section-title">個人データの種類</block>
   <block id="664f12aee95db5001901ada82a66a117" category="inline-link-macro">近接性検証</block>
   <block id="185a6c810ca281a80052f73d8e326953" category="paragraph">ファイルに含まれる個人データ、または_個人識別情報_（PII）は、一般的な個人データまたは国の識別子です。次の表の3番目の列は、BlueXP  分類が識別子の所見を検証するためにを使用するかどうかを示してい<block ref="af3f1f2f9514770a1cfe0f9a422e763d" category="inline-link-macro-rx"></block>ます。</block>
@@ -1959,23 +1958,16 @@
   <block id="bcd3dc09170e331762d1f098247c3974" category="paragraph">BlueXPの分類では、ハッシュテクノロジを使用して重複ファイルが特定されます。ハッシュコードが別のファイルと同じファイルがある場合、ファイル名が異なる場合でも、ファイルが完全に重複していることを 100% 確認できます。</block>
   <block id="fc9033d933e9132cc23bfe396744d214" category="inline-link-macro">ファイルを削除します</block>
   <block id="e6bbcb2826ce1a4f58fd341c4f5ae5f3" category="paragraph">重複ファイルのリストをダウンロードし、ストレージ管理者に送信して、削除可能なファイルをユーザが判別できるようにします。または、ファイルの特定のバージョンが必要ないと確信している場合は、自分で行うことができます<block ref="53c8cd880d15e2953a8e763d6f4dff0c" category="inline-link-macro-rx"></block>。</block>
-  <block id="11b431a799ad33cee933ceccc5de850c" category="section-title">重複ファイルをすべて表示</block>
   <block id="5b00edf3a5903017b22e268ae58998c0" category="paragraph">スキャンする作業環境およびデータソースで複製されているすべてのファイルのリストが必要な場合は、 [ データの調査 ] ページで、 [ 重複 ] &gt; [ 重複しているもの ] というフィルタを使用できます。</block>
   <block id="285a3049428c6b155fde44a18621f551" category="paragraph">複製されたすべてのファイルが結果ページに表示されます。</block>
-  <block id="3c4c508b343b43aeeceba1d0993025fc" category="section-title">特定のファイルが重複しているかどうかを表示する</block>
   <block id="481ee5e06ca7a72cfe4a783b39c7d0e3" category="paragraph">1つのファイルに重複があるかどうかを確認するには、[Data Investigation Results]ペインで任意のファイルのをクリックし<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>てファイルのメタデータを表示します。特定のファイルが重複している場合、この情報は _Duplicats_field の横に表示されます。</block>
   <block id="b478c70cc88f62deb519e4d41609fff2" category="paragraph">重複したファイルとその場所のリストを表示するには、 [ * 詳細の表示 * ] をクリックします。次のページで、 [ 重複の表示 *] をクリックして、 [ 調査 ] ページでファイルを表示します。</block>
   <block id="68309bcfd455803ffbae49714037b789" category="inline-image-macro">重複するファイルが配置されている場所を確認する方法を示すスクリーンショット。</block>
   <block id="0dc6d718adece3621c4a40fa3b4b2a82" category="paragraph"><block ref="0dc6d718adece3621c4a40fa3b4b2a82" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">このページで指定されている「ファイルハッシュ」値を使用して、 ［ 調査 ］ ページに直接入力すると、特定の重複ファイルをいつでも検索できます。また、ポリシーで使用することもできます。</block>
   <block id="b783177554ae1d03f46ea830d39a7822" category="section-title">データ調査レポート</block>
-  <block id="fbc24f64c5cfaa3ec5851bea3459db25" category="paragraph">レポートはとして使用できます。 ローカルマシンに保存できるCSVファイル。</block>
-  <block id="d9f65abd84f27877cbba1b5ea828d53d" category="section-title">データ調査レポートの生成</block>
-  <block id="707592628336b767af6468130ccb5f10" category="list-text">をダウンロードする場合に選択します。 データのCSVレポートを入力し、*[Download Report]*をクリックします。</block>
   <block id="02b8107c002e6577adbfdfd6d6f1b208" category="inline-image-macro">調査レポートのダウンロードページのスクリーンショット。複数のオプションがあります。</block>
-  <block id="0b0eacf696b45d65c53ff1b5473edb39" category="paragraph"><block ref="0b0eacf696b45d65c53ff1b5473edb39" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c7fa83e1836cada62d287dfbba3779c2" category="paragraph">レポートをダウンロード中であることを示すメッセージがダイアログに表示されます。</block>
-  <block id="376c2577995f32a4c8892e8aefb140ba" category="section-title">データ調査レポートの内容</block>
   <block id="6dc6bf0d1023a1b5714c777b474cce12" category="paragraph">非構造化ファイルデータレポート*には、ファイルに関する次の情報が含まれています。</block>
   <block id="34082694d21dbdcfc31e6e32d9fb2b9f" category="list-text">ファイル名</block>
   <block id="8c16f0464e311229da94de789324309e" category="list-text">場所のタイプ</block>
@@ -3117,7 +3109,6 @@
   <block id="961ca08e58e9f85191f5707bc4dac07a" category="paragraph">これにより、BlueXPの分類によって収集されたインスタンスと関連するすべてのデータが削除されます。</block>
   <block id="a3b42cd70d6e63a58b881566f7a8992b" category="section-title">オンプレミス環境からBlueXP分類をアンインストールします</block>
   <block id="19699e7aed7e972e489e53b7a581039d" category="paragraph">BlueXP分類を使用する必要がなくなった場合や、問題 の再インストールが必要な場合は、ホストからBlueXPをアンインストールできます。</block>
-  <block id="2c81bcce32daace3a1e27ca8e62dfd40" category="list-text">ホストからソフトウェアをアンインストールするには、ホストマシンで次のようなスクリプトを実行し<block ref="cc561bef4dbd2996ec2b2478f3e1042d" prefix=" " category="inline-code"></block>ます。</block>
   <block id="2556206d42384bb829190e0aafdb0def" category="inline-link-macro">BlueXP分類ホストマシンにログインします。</block>
   <block id="3d156543c6fce54302812044d96a7f13" category="paragraph">方法を参照してください<block ref="4d88ed2399fdae83afcc83672f5b6c79" category="inline-link-macro-rx"></block>。</block>
   <block id="bf9282cd68ceb267317aa336c787020b" category="summary">ポリシーは、よく要求されるコンプライアンスクエリーの [ 調査 ] ページで検索結果を表示するカスタムフィルタのお気に入りリストのようなものです。BlueXPは分類されており、一般的なお客様の要望に基づいて一連のポリシーが事前定義されています。組織固有の検索結果を提供するカスタムポリシーを作成できます。</block>
@@ -3437,7 +3428,6 @@
   <block id="8d097e38d6920ece5917d57da5699e5c" category="sidebar">オンプレミスの ONTAP ボリューム</block>
   <block id="c7596ffa8d20a8a14d1f631c94185f72" category="sidebar">Azure NetApp Files ボリューム</block>
   <block id="fd2fd9101d9dde8ab7090da05f8117ff" category="sidebar">ONTAP ボリュームの Amazon FSX</block>
-  <block id="34a23f91ee1733d5151d67d6f922e573" category="sidebar">ネットアップ以外のファイル共有</block>
   <block id="3305adbdafef990b45e1b0ded7f5a486" category="sidebar">データの詳細を表示します</block>
   <block id="f72e4f10556fdc1e84c715407cbda16b" category="sidebar">プライベート情報を含むファイルを表示します</block>
   <block id="53aba5c7ba7952b6d58e9dfb83a4516e" category="sidebar">ストレージに複製されているファイルを表示します</block>
@@ -3481,4 +3471,28 @@
   <block id="aeb69ebcaffd7e18cd55db906e582bf5" category="sidebar">OneDrive、SharePoint、Google Driveのアカウントを削除する</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">参考文献</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
+  <block id="0a401367ec8a2cd84bb197e6d12c99af" category="doc">バージョン1.39</block>
+  <block id="1a58f9988f87b599ed71b9c7430034c2" category="paragraph">このBlueXP  分類リリースでは、データ調査レポートのエクスポートプロセスが更新されます。このエクスポートの更新は、データに対して追加の分析を実行したり、データに追加の視覚化を作成したり、データ調査の結果を他のユーザーと共有したりするのに役立ちます。</block>
+  <block id="a4a7057d917e03803441c79badd6d519" category="paragraph">以前は、データ調査レポートのエクスポートは10,000行に制限されていました。このリリースでは、すべてのデータをエクスポートできるように制限が解除されました。この変更により、Data Investigationレポートからより多くのデータをエクスポートできるようになり、データ分析の柔軟性が向上します。</block>
+  <block id="72fa9e7ff6f311a170ad8d720dff3f2f" category="paragraph">作業環境、ボリューム、デスティネーションフォルダ、JSON形式またはCSV形式を選択できます。エクスポートされたファイル名には、データがいつエクスポートされたかを識別するのに役立つタイムスタンプが含まれています。</block>
+  <block id="7afa5ec6a3f715e47b3c6fa2655f18b0" category="paragraph">サポートされる作業環境は次のとおりです。</block>
+  <block id="253b40ae359ba25b56231803430c4873" category="list-text">ONTAP</block>
+  <block id="a512cd9b163bcb1be6bf96aa95fdfe74" category="list-text">共有グループ</block>
+  <block id="d3fdc77553ad7d05684cea9b7806dac8" category="paragraph">Data Investigationレポートからのデータのエクスポートには、次の制限事項があります。</block>
+  <block id="d33a90467b78849917ec44b3e694a192" category="list-text">ダウンロードするレコードの最大数は5億個です（ファイル、ディレクトリ、およびテーブル）。</block>
+  <block id="9720aabb6c8d5eb9cfcffd189ef86ed1" category="list-text">100万レコードの輸出には約35分かかると予想されている。</block>
+  <block id="e7b42111154b9b878df538017c7943a0" category="inline-link">組織に保存されているデータの調査</block>
+  <block id="e771ad044e30754f4af0addbc217531d" category="paragraph">データ調査とレポートの詳細については、を参照してください<block ref="5490a248bca38f18b55b559976dbad47" category="inline-link-rx"></block>。</block>
+  <block id="251452e49ab5b88b5d8545e58cd46509" category="admonition">追加の国家ID番号や医療IDなど、他のプライベートデータタイプを識別するためにBlueXP  分類が必要な場合は、アカウントマネージャにお問い合わせください。</block>
+  <block id="2a09f412ecce26a24c17d782c064aa73" category="paragraph">[データ調査]ページで詳細を表示すると、組織のデータを調査できます。このページには、ガバナンスダッシュボードやコンプライアンスダッシュボードなど、BlueXPの分類UIのさまざまな領域から移動できます。データをCSVファイルまたはJSONファイルにエクスポートして、さらに分析したり、他のユーザーと共有したりすることができます。</block>
+  <block id="b995ac679338c896401b451552e5d419" category="paragraph">*重複ファイルをすべて表示*</block>
+  <block id="ee27fa3e6dfe09f89a9d57742c167aa9" category="paragraph">*特定のファイルが重複している場合に表示*</block>
+  <block id="47b72e580332bb9da872607466b406bc" category="paragraph">レポートは.csvファイルまたは.jsonファイルとして使用でき、ローカルマシンに保存できます。</block>
+  <block id="f257e5460f3ab87ec47290dc11518fc8" category="paragraph">*データ調査レポートの内容*</block>
+  <block id="f3f4c1edbf92907aa9051152a36ae4cc" category="list-title">レポートを生成する手順</block>
+  <block id="868f49e80cf5d3f7ac26cbec13a8d0be" category="list-text">選択してデータの.csvまたは.jsonレポートをダウンロードし、*[Download Report]*をクリックします。</block>
+  <block id="8b93cae59bfdd9d1f5373c4f243f1891" category="paragraph"><block ref="8b93cae59bfdd9d1f5373c4f243f1891" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1f22985ba0d865da0fb0dc1149ac8684" category="list-text">ホストからソフトウェアをアンインストールするには、BlueXP  分類ホストマシンで次のようなスクリプトを実行し<block ref="cc561bef4dbd2996ec2b2478f3e1042d" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="009d2060a609114df262eff04e83f241" category="section-title">2025年1月22日</block>
+  <block id="987a49b32f868f747d862315b00a6b36" category="sidebar">ファイル共有（CIFS、NFS）</block>
 </blocks>

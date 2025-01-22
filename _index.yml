@@ -19,18 +19,20 @@ indexpage:
       url: task-deploy-compliance-onprem.html
   - title: データソースのスキャン
     links:
-    - title: Cloud Volumes ONTAP ボリューム
-      url: task-getting-started-compliance.html
-    - title: オンプレミスの ONTAP ボリューム
-      url: task-getting-started-compliance.html
-    - title: Azure NetApp Files ボリューム
-      url: task-scanning-anf.html
     - title: ONTAP ボリュームの Amazon FSX
       url: task-scanning-fsx.html
-    - title: ネットアップ以外のファイル共有
-      url: task-scanning-file-shares.html
+    - title: Azure NetApp Files ボリューム
+      url: task-scanning-anf.html
+    - title: Cloud Volumes ONTAP ボリューム
+      url: task-getting-started-compliance.html
     - title: データベーススキーマ
       url: task-scanning-databases.html
+    - title: ファイル共有（CIFS、NFS）
+      url: task-scanning-file-shares.html
+    - title: オンプレミスの ONTAP ボリューム
+      url: task-getting-started-compliance.html
+    - title: StorageGRID
+      url: task-scanning-storagegrid.html
   - title: データの詳細を表示します
     links:
     - title: プライベート情報を含むファイルを表示します
