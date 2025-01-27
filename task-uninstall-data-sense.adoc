@@ -52,6 +52,9 @@ image:screenshot_compliance_uninstall.png["BlueXP分類ソフトウェアをア�
 ----
 cleanup.sh
 ----
++
+スクリプトはディレクトリにあり `/install/light_probe/onprem_installer/cleanup.sh`ます。
+
 
 
 方法を参照してくださいlink:reference-log-in-to-instance.html["BlueXP分類ホストマシンにログインします。"]。
