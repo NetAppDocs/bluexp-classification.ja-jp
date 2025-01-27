@@ -11,11 +11,9 @@
   <block id="acff74627293e3e739a3c24e5fec03c2" category="cell">*特大*</block>
   <block id="8a0a1142229b3b639f68556794cbd985" category="cell">CPU×32</block>
   <block id="228d50520d6c2a627ecce76f2775d5e1" category="cell">128GBのRAM</block>
-  <block id="92194a80ea376740e10d5ee7343f171c" category="cell">SSDが1TiB、または-100GiBが/opt-895GiBが/var/lib/dockerで-5GiBが/tmpで利用可能</block>
   <block id="c1b7308083354b8b60760460bcce3ccc" category="cell">*大きい*</block>
   <block id="dc8179e6e72156a5578bf35cf9574540" category="cell">CPU×16</block>
   <block id="5a1fdf37d5cd85436f7504641d78b95f" category="cell">64GBのRAM</block>
-  <block id="30786f70a10900b6a9d4fd46363a55cb" category="cell">500GiB SSDオン/または-100GiBオン/opt-395GiBオン/var/lib/dockerまたはPodman/var/lib/containersまたはPodman/var/lib/containersの場合は-5GiBオン/tmp</block>
   <block id="d5c832490c0ab9dcb105acd9ee7b4709" category="list-text">BlueXP分類インストール用にコンピューティングインスタンスをクラウドに導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。</block>
   <block id="e6414c92b8fa46238f4135e4d3e45674" category="inline-link-macro">追加のAWSインスタンスタイプを参照してください</block>
   <block id="b5f08a168a732355a95d9acdc430dcaf" category="list-text">* Amazon Elastic Compute Cloud（Amazon EC2）インスタンスタイプ*：「m6i.4xlarge」を推奨します。<block ref="2fad631c28a07a1344ecdbaabb5084bf" category="inline-link-macro-rx"></block>です。</block>
@@ -1235,7 +1233,6 @@
   <block id="05e22c2c931d6a4218f029a72eeb9206" category="inline-link">BlueXP ConnectorとBlueXPの分類のさまざまな導入モードについて説明します。</block>
   <block id="3c86f5b7f0c9db7841cc30ae9d32c2c2" category="paragraph"><block ref="a9635649936a46cf7723db5b3c00a913" category="inline-link-rx"></block>です。</block>
   <block id="4f7157701d2db96edcc01457067a6771" category="inline-link-macro">インターネットにアクセスできるオンプレミスサイトにBlueXPの分類を導入します</block>
-  <block id="90815e3d99ff61b4887b2f941fff4e46" category="paragraph">また、可能であることに注意して<block ref="1a9c56cdde8c9a93a744fbe95f12b64a" category="inline-link-macro-rx"></block>ください。</block>
   <block id="e75f898f4dbad5388881095e9582c693" category="inline-link-macro">LinuxホストでBlueXPのインストール準備が完了しているかどうかを確認する方法を説明します</block>
   <block id="e883a1e45b8fba8675ed0e79f4a46200" category="paragraph">BlueXPの分類インストールスクリプトでは、まず、システムと環境が必要な前提条件を満たしているかどうかが確認されます。前提条件がすべて満たされている場合は、インストールが開始されます。BlueXP分類のインストールとは別に前提条件を確認する場合は、前提条件のみをテストする別のソフトウェアパッケージをダウンロードできます。<block ref="18e558c0c5f7db863c39638301013423" category="inline-link-macro-rx"></block>です。</block>
   <block id="166af9c4abcdeaeaa01f2df7fcd961a7" category="inline-link-macro">インターネットアクセスのない複数のホストにBlueXP分類をインストールする</block>
@@ -1362,7 +1359,6 @@
   <block id="c22cac5d13be450c907e1e287edd3bb0" category="paragraph">BlueXP分類UIページの下部でバージョンを確認すると、ソフトウェアが更新されたことを確認できます。</block>
   <block id="7d2b76399031094bccc00e1ddb38ac56" category="summary">いくつかの手順を実行して、ネットワーク内のLinuxホスト、またはインターネットにアクセスできるクラウド内のLinuxホストにBlueXP分類をインストールします。このインストールの一環として、Linuxホストをネットワークまたはクラウドに手動で導入する必要があります。</block>
   <block id="0989b495229f449df36968cf973306ca" category="doc">インターネットにアクセスできるホストにBlueXP分類をインストールします</block>
-  <block id="945fde4f1ebdd85f6388e97e6bcab270" category="paragraph">オンプレミス環境は、同じくオンプレミスにあるBlueXP分類インスタンスを使用してオンプレミスのONTAP システムをスキャンする場合に適したオプションですが、これは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。</block>
   <block id="829124a47242d374aed9d0704a781736" category="paragraph">社内_のLinuxホスト_への一般的なインストールには、次のコンポーネントと接続があります。</block>
   <block id="f1250c9b73cd8f5ef391e449f0b5dcb4" category="inline-image-macro">必要なBlueXPとネットワークコンポーネント、および関連する接続の図。</block>
   <block id="0b0f1899ec6aba7470224b92502a86ac" category="paragraph"><block ref="0b0f1899ec6aba7470224b92502a86ac" category="inline-image-macro-rx" type="image"></block></block>
@@ -3060,7 +3056,6 @@
   <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">ログイン資格情報トークンを更新する必要がある場合は、メニューに*資格情報の更新*オプションもあり <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> ます。</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">このオプションを使用すると、再度ログインするように求められます。これらのアカウントのトークンは90日後に期限切れになります。このことを通知する通知が投稿されます。</block>
   <block id="11f000270c03dc2a6cc3e9a5e9262aa8" category="summary">LinuxホストにBlueXPの分類を手動でインストールする前に、ホストでスクリプトを実行して、BlueXPの分類をインストールするための前提条件がすべて揃っていることを確認することができます。このスクリプトは、ネットワーク内のLinuxホストまたはクラウド内のLinuxホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイトに配置することもできます。</block>
-  <block id="5f0111c9b1c6f9cd6124c008eaaa60d2" category="paragraph">LinuxホストにBlueXPの分類を手動でインストールする前に、ホストでスクリプトを実行して、BlueXPの分類をインストールするための前提条件がすべて揃っていることを確認することができます。このスクリプトは、ネットワーク内のLinuxホストまたはクラウド内のLinuxホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイト（a_dark site_）に配置することもできます。</block>
   <block id="b739631d891333c2d4cfa4c6421ccdcb" category="paragraph">BlueXP分類インストールスクリプトには、前提条件となるテストスクリプトも含まれています。ここで説明するスクリプトは、BlueXP分類のインストールスクリプトとは別にLinuxホストを検証するユーザ向けに設計されています。</block>
   <block id="bf647454e36069fd16f1a7a35cf6a865" category="section-title">はじめに</block>
   <block id="88a37f7fbc3214e9153d0377c4db9ded" category="paragraph">次のタスクを実行します。</block>
@@ -3496,4 +3491,16 @@
   <block id="009d2060a609114df262eff04e83f241" category="section-title">2025年1月22日</block>
   <block id="987a49b32f868f747d862315b00a6b36" category="sidebar">ファイル共有（CIFS、NFS）</block>
   <block id="0476d890c406400d4a4b0337b0492ab6" category="paragraph">スクリプトはディレクトリにあり<block ref="ef7bc183495180bf03292b7d03184b05" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="74110511ebf4f8eea597c953392110f9" category="list-text">SSDは1TiB、またはオプションで100GiBを利用可能</block>
+  <block id="4056804c808441484593a6cd5998f06e" category="list-text">895GiBを/var/lib/dockerで使用可能</block>
+  <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">/tmp 上で 5 GiB</block>
+  <block id="79d1a6d2ec5f279b488952c279f36449" category="list-text">* Podmanの場合、/tmpで5 GB *</block>
+  <block id="0e1cb4b06a070e11230e1c8de75a1db8" category="list-text">* Podmanの場合、/var/tmpに30GB *</block>
+  <block id="16b9e4a3843d82aedd78ddf5568f32cc" category="list-text">500GiB SSDオン/オプションまたは100GiBオン/オプション</block>
+  <block id="7d5ad3bf21c571c611eed766c4a188c1" category="list-text">395GiBは/var/lib/docker、Podman/var/lib/containers、またはPodman/var/lib/containersで使用可能</block>
+  <block id="155acacab86f1c55608330de83b4e05f" category="paragraph">あなたもできます<block ref="1a9c56cdde8c9a93a744fbe95f12b64a" category="inline-link-macro-rx"></block>。</block>
+  <block id="f9cb03d21a26b2f64053d2e527396790" category="paragraph">オンプレミスインストールは、オンプレミスにあるBlueXP  分類インスタンスを使用してオンプレミスのONTAPシステムをスキャンする場合に適したオプションですが、これは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。</block>
+  <block id="ee8870d1e0595ddae329cf8ef1ee89fa" category="paragraph">調査ページの内容をフィルタリングして、表示する結果のみを表示できます。</block>
+  <block id="260af28d48ba051bd7cdd887380f9ece" category="paragraph">LinuxホストにBlueXP  分類を手動でインストールする前に、必要に応じてホストでスクリプトを実行して、BlueXP  分類をインストールするためのすべての前提条件が満たされていることを確認します。このスクリプトは、ネットワーク内のLinuxホストまたはクラウド内のLinuxホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイト（a_dark site_）に配置することもできます。</block>
+  <block id="b64eea97fe56778b0e28c568854873ed" category="paragraph">問題のトラブルシューティングを行う場合、またはホストからソフトウェアを完全に削除する場合は、BlueXP  分類ソフトウェアをアンインストールします。インスタンスを削除すると、インデックス付きデータが格納されている関連ディスクも削除されます。BlueXP分類によってスキャンされたすべての情報が完全に削除されます。</block>
 </blocks>

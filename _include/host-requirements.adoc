@@ -10,10 +10,24 @@
 | システムサイズ | CPU | RAM（スワップメモリを無効にする必要があります） | ディスク 
 
 
-| *特大* | CPU×32 | 128GBのRAM | SSDが1TiB、または-100GiBが/opt-895GiBが/var/lib/dockerで-5GiBが/tmpで利用可能 
+| *特大* | CPU×32 | 128GBのRAM  a| 
+** SSDは1TiB、またはオプションで100GiBを利用可能
+** 895GiBを/var/lib/dockerで使用可能
+** /tmp 上で 5 GiB
+** * Podmanの場合、/tmpで5 GB *
+** * Podmanの場合、/var/tmpに30GB *
 
 
-| *大きい* | CPU×16 | 64GBのRAM | 500GiB SSDオン/または-100GiBオン/opt-395GiBオン/var/lib/dockerまたはPodman/var/lib/containersまたはPodman/var/lib/containersの場合は-5GiBオン/tmp 
+
+
+| *大きい* | CPU×16 | 64GBのRAM  a| 
+** 500GiB SSDオン/オプションまたは100GiBオン/オプション
+** 395GiBは/var/lib/docker、Podman/var/lib/containers、またはPodman/var/lib/containersで使用可能
+** /tmp 上で 5 GiB
+** * Podmanの場合、/tmpで5 GB *
+** * Podmanの場合、/var/tmpに30GB *
+
+
 |===
 * BlueXP分類インストール用にコンピューティングインスタンスをクラウドに導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。
 +
