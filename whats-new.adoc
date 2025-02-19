@@ -18,6 +18,48 @@ BlueXPの新機能をご紹介します。
 
 
 
+== 2025年2月19日
+
+
+
+=== バージョン1.40
+
+このBlueXP  分類リリースには、次の更新が含まれています。
+
+.RHEL 9.5のサポート
+このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v9.5もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。
+
+次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があり、BlueXP  分類バージョン1.30以降が必要です。Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5。
+
+.スキャンの優先順位付け
+マッピングのみのスキャンを実行する場合は、最も重要なスキャンに優先順位を付けることができます。この機能は、多数の作業環境があり、優先度の高いスキャンを先に完了させたい場合に役立ちます。
+
+デフォルトでは、スキャンは開始順序に基づいてキューに入れられます。スキャンに優先順位を付ける機能により、スキャンをキューの先頭に移動できるようになりました。複数のスキャンに優先順位を付けることができます。優先順位は、先入れ先出し順で指定されます。つまり、最初に優先順位を付けたスキャンがキューの先頭に移動し、2番目に優先順位を付けたスキャンがキューの2番目に移動します。
+
+優先度は1回だけ付与されます。マッピングデータの自動再スキャンは、デフォルトの順序で実行されます。
+
+優先順位付けはに限定されlink:concept-cloud-compliance.md#whats-the-difference-between-mapping-and-classification-scans["マッピングのみのスキャン"]、マップスキャンおよび分類スキャンでは使用できません。
+
+優先度を変更するには：
+
+. BlueXP  分類メニューから*設定*を選択します。
+. 優先順位を付けるリソースを選択します。
+. [Actions...]オプションから、*[Prioritize scan]*を選択します。
+
+
+.すべてのスキャンを再試行
+BlueXP  分類では、失敗したすべてのスキャンをバッチ再試行できるようになりました。
+
+**すべて再試行**機能を使用して、バッチ操作でスキャンを再試行できるようになりました。ネットワークの停止などの一時的な問題が原因で分類スキャンが失敗した場合は、個 々 に再試行するのではなく、ボタン1つですべてのスキャンを同時に再試行できます。スキャンは必要に応じて何度でも再試行できます。
+
+すべてのスキャンを再試行するには：
+
+. BlueXP  分類メニューから*設定*を選択します。
+. 失敗したスキャンをすべて再試行するには、*[すべてのスキャンを再試行]*を選択します。
+
+
+
+
 == 2025年1月22日
 
 
@@ -155,7 +197,7 @@ BlueXP  の分類により、Microsoft AzureおよびGoogle Cloud Platform (GCP
 .ダッシュボードの追加データ
 このリリースでは、マッピングスキャン中にGovernance、Compliance、およびInvestigationの各ダッシュボードに表示されるデータが更新されます。
 
-詳細については、 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングスキャンと分類スキャンの違い"]
+詳細については、link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングスキャンと分類スキャンの違い"]
 
 
 
@@ -353,7 +395,7 @@ Red Hatでは前提条件であるDockerがサポートされなくなるため�
 作業環境内のボリュームで検出されたファイルアクセスイベントについて、BlueXP分類システムでファイルアクセス監査ログの収集を有効にすることができます。BlueXPの分類では、次のタイプのFPolicyイベントと、ファイルに対してアクションを実行したユーザ（Create、Read、Write、Delete、Rename、 所有者/権限を変更し、SACL/DACLを変更します。
 
 .ダークサイトでData Sense BYOLライセンスがサポートされるようになりました
-ダークサイトのBlueXP  デジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。 https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["Data Sense BYOLライセンスの入手方法とアップロード方法をご確認ください"]です。
+ダークサイトのBlueXP  デジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。 https://docs.netapp.com/us-en/bluexp-classification/task-licensing-byol-freetrial.html#obtain-your-bluexp-classification-license-file["Data Sense BYOLライセンスの入手方法とアップロード方法をご確認ください"]です。
 
 
 

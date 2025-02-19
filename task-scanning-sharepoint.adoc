@@ -23,28 +23,6 @@ BlueXPで分類されたSharePoint OnlineアカウントとSharePointオンプ�
 ====
 
 
-== クイックスタート
-
-これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]SharePointの前提条件の確認
-[role="quick-margin-para"]
-SharePointアカウントにログインするための資格を持つ資格情報があり、スキャンするSharePointサイトのURLがあることを確認します。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]BlueXP  分類インスタンスの導入
-[role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^]インスタンスがまだデプロイされていない場合。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]SharePointアカウントにログインする
-[role="quick-margin-para"]
-資格のあるユーザクレデンシャルを使用して、アクセスするSharePointアカウントにログインし、新しいデータソース/作業環境として追加します。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]スキャンするSharePointサイトURLを追加する
-[role="quick-margin-para"]
-SharePoint アカウントでスキャンする SharePoint サイト URL のリストを追加し、スキャンの種類を選択します。一度に最大100個のURLを追加でき、アカウントごとに合計1,000個のサイトを追加できます。
-
-
-
 == SharePointの要件を確認する
 
 SharePointアカウントでBlueXP分類をアクティブ化する準備ができていることを確認するには、次の前提条件を確認してください。

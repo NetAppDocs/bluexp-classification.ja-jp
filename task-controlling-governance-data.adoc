@@ -44,7 +44,7 @@ _Saving Opportunities 領域内の項目を調査して、削除または階層�
 ** その他（一般的な「その他」カテゴリ）
 
 
-* * 重複ファイル * - スキャンしているデータソース内の他の場所に複製されているファイル。link:task-investigate-data.html#view-all-duplicated-files["表示される重複ファイルの種類を確認します"]です。
+* * 重複ファイル * - スキャンしているデータソース内の他の場所に複製されているファイル。link:task-investigate-data.html#filter-data-by-duplicates["表示される重複ファイルの種類を確認します"]です。
 
 
 

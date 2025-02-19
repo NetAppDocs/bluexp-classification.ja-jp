@@ -18,28 +18,6 @@ summary: いくつかの手順を実行して、BlueXPの分類を使用した�
 
 
 
-== クイックスタート
-
-これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]データベースの前提条件の確認
-[role="quick-margin-para"]
-データベースがサポートされていること、およびデータベースへの接続に必要な情報があることを確認します。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]BlueXP  分類インスタンスの導入
-[role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^]インスタンスがまだデプロイされていない場合。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]データベースサーバの追加
-[role="quick-margin-para"]
-アクセスするデータベースサーバを追加します。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]スキーマの選択
-[role="quick-margin-para"]
-スキャンするスキーマを選択します。
-
-
-
 == 前提条件を確認する
 
 BlueXPの分類を有効にする前に、次の前提条件を確認して、サポートされる構成があることを確認してください。
@@ -89,18 +67,14 @@ BlueXP分類インスタンスに接続されているデータベースは、�
 
 インターネットにアクセスできないダークサイトにインストールされているデータベーススキーマをスキャンする場合は、を実行する必要がありますlink:task-deploy-compliance-dark-site.html["インターネットアクセスのないオンプレミスと同じ場所にBlueXPの分類を導入します"^]。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。
 
-インスタンスがインターネットに接続されていれば、BlueXP分類ソフトウェアへのアップグレードは自動で実行されます。
-
 
 
 == データベースサーバを追加します
 
 スキーマが存在するデータベース・サーバを追加します。
 
-. [ 作業環境の構成 ] ページで、 [ * データソースの追加 *>* データベースサーバーの追加 * ] をクリックします。
-+
-image:screenshot_compliance_add_db_server_button.png["［ Scan Configuration ］ ページのスクリーンショットで、 ［ Add DB Server ］ ボタンをクリックします。"]
-
+. BlueXP  分類メニューから*設定*を選択します。
+. [Configuration]ページで、*[Add Working Environment]*>*[Add Database Server]*を選択します。
 . データベースサーバを識別するために必要な情報を入力します。
 +
 .. データベースタイプを選択します。
@@ -126,7 +100,7 @@ image:screenshot_compliance_add_db_server_dialog.png["データベースを識�
 
 TIP: データベーススキーマに対してマッピングのみのスキャンを選択するオプションはありません。
 
-. _Configuration_page で、設定するデータベースの *Configuration* ボタンをクリックします。
+. [設定]ページで、設定するデータベースの*[設定]*ボタンを選択します。
 +
 image:screenshot_compliance_db_server_config.png["設定ボタンを選択できるスキャン設定ページのスクリーンショット。"]
 
@@ -139,4 +113,4 @@ image:screenshot_compliance_select_schemas.png["スキャンするスキーマ�
 .結果
 BlueXPの分類で、有効にしたデータベーススキーマのスキャンが開始されます。エラーが発生した場合は、エラーを修正するために必要なアクションとともに、 [ ステータス ] 列に表示されます。
 
-BlueXPの分類では、データベースが1日に1回スキャンされます。データベースは、他のデータソースのように継続的にスキャンされるわけではありません。
+BlueXP  分類では、データベースが1日に1回スキャンされます。データベースは、他のデータソースのように継続的にスキャンされることはありません。

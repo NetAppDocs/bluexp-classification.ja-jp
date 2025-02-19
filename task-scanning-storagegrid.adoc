@@ -18,31 +18,6 @@ summary: いくつかの手順を実行して、BlueXP  分類を使用してSt
 
 
 
-== クイックスタート
-
-これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]StorageGRIDの前提条件の確認
-[role="quick-margin-para"]
-StorageGRIDサービスに接続するには、エンドポイントのURLが必要です。
-
-[role="quick-margin-para"]
-BlueXP  分類でバケットにアクセスできるように、StorageGRIDのアクセスキーとシークレットキーが必要です。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]BlueXP  分類インスタンスの導入
-[role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["BlueXP分類を導入します"^]インスタンスがまだデプロイされていない場合。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]StorageGRIDサービスの追加
-[role="quick-margin-para"]
-StorageGRIDサービスをBlueXP  分類に追加します。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]スキャンするバケットを選択
-[role="quick-margin-para"]
-スキャンするバケットを選択すると、BlueXPの分類によってスキャンが開始されます。
-
-
-
 == StorageGRIDの要件を確認する
 
 BlueXPの分類を有効にする前に、次の前提条件を確認して、サポートされる構成があることを確認してください。
@@ -61,8 +36,6 @@ BlueXPの分類を有効にする前に、次の前提条件を確認して、�
 
 インターネットにアクセスできないダークサイトにインストールされているStorageGRIDからデータをスキャンする場合は、を実行する必要がありますlink:task-deploy-compliance-dark-site.html["インターネットアクセスのないオンプレミスと同じ場所にBlueXPの分類を導入します"^]。また、BlueXPコネクタがオンプレミスの同じ場所に配置されている必要があります。
 
-インスタンスがインターネットに接続されていれば、BlueXP  分類ソフトウェアへのアップグレードは自動化されます。
-
 
 
 == StorageGRIDサービスをBlueXP  分類に追加する
@@ -70,10 +43,8 @@ BlueXPの分類を有効にする前に、次の前提条件を確認して、�
 StorageGRIDサービスを追加します。
 
 .手順
-. [Working Environments Configuration]ページで、*[Add Data Source]*>*[Add StorageGRID *をクリックします。
-+
-image:screenshot-scanning-add-storagegrid.png["[Add StorageGRID（スキャン設定）]ボタンをクリックできる[Scan Configuration（スキャン設定）]ページのスクリーンショット。"]
-
+. BlueXP  classificationメニューから、* Configuration *オプションを選択します。
+. [Configuration]ページで、*[Add Working Environment]*>*[Add StorageGRID *]を選択します。
 . [Add StorageGRID Service]ダイアログで、StorageGRIDサービスの詳細を入力し、*[Continue]*をクリックします。
 +
 .. 作業環境に使用する名前を入力します。この名前には、接続先のStorageGRIDサービスの名前が反映されている必要があります。
@@ -96,28 +67,18 @@ StorageGRIDが作業環境のリストに追加されます。
 StorageGRIDでBlueXP  分類を有効にしたら、次の手順でスキャンするバケットを設定します。BlueXPの分類により、該当するバケットが検出され、作成した作業環境に表示されます。
 
 .手順
-. [Configuration]ページで、StorageGRID作業環境から*[Configuration]*をクリックします。
-+
-image:screenshot-scanning-storagegrid-configuration.png["スキャンするバケットを選択できるように、作業環境の設定をクリックするスクリーンショット。"]
-
-. バケットでマッピング専用スキャン、またはマッピングスキャンと分類スキャンを有効にします。
+. [Configuration]ページで、StorageGRID作業環境を探します。
+. StorageGRID Working Environmentタイルで、* Configuration *を選択します。
 +
 image:screenshot-scanning-add-storagegrid-buckets.png["スキャンするStorageGRIDバケットの選択のスクリーンショット。"]
 
+. スキャンを有効または無効にするには、次のいずれかの手順を実行します。
 +
-[cols="45,45"]
-|===
-| 宛先： | 手順： 
+** バケットでマッピングのみのスキャンを有効にするには、* Map *を選択します。
+** バケットでフルスキャンを有効にするには、* Map & Classify *を選択します。
+** バケットでのスキャンを無効にするには、*オフ*を選択します。
 
 
-| バケットでマッピングのみのスキャンを有効にする | [* マップ * ] をクリックします 
-
-
-| バケットでフルスキャンを有効にします | [ マップと分類 *] をクリックします 
-
-
-| バケットに対するスキャンを無効にする | [ * Off * ] をクリックします 
-|===
 
 
 .結果
