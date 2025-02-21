@@ -3306,7 +3306,6 @@
   <block id="ee8870d1e0595ddae329cf8ef1ee89fa" category="paragraph">調査ページの内容をフィルタリングして、表示する結果のみを表示できます。</block>
   <block id="260af28d48ba051bd7cdd887380f9ece" category="paragraph">LinuxホストにBlueXP  分類を手動でインストールする前に、必要に応じてホストでスクリプトを実行して、BlueXP  分類をインストールするためのすべての前提条件が満たされていることを確認します。このスクリプトは、ネットワーク内のLinuxホストまたはクラウド内のLinuxホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイト（a_dark site_）に配置することもできます。</block>
   <block id="b64eea97fe56778b0e28c568854873ed" category="paragraph">問題のトラブルシューティングを行う場合、またはホストからソフトウェアを完全に削除する場合は、BlueXP  分類ソフトウェアをアンインストールします。インスタンスを削除すると、インデックス付きデータが格納されている関連ディスクも削除されます。BlueXP分類によってスキャンされたすべての情報が完全に削除されます。</block>
-  <block id="378c20222de970dbe3321fec8e32e947" category="list-text">Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3、9.4、9.5</block>
   <block id="6b9d9a04ff593ff427731819f0c3618f" category="doc">バージョン1.40</block>
   <block id="dc4b47101650865122105745fe8d0a2c" category="paragraph-title">RHEL 9.5のサポート</block>
   <block id="1d26b47b0bf4a8a52ca8e66bcb8661dc" category="paragraph">このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v9.5もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。</block>
@@ -3394,4 +3393,6 @@
   <block id="79043fd5ff3b61216207b60882cd72cd" category="section-title">2025年2月19日</block>
   <block id="5904eed2db8ef4855e1fd04bcf8b7d97" category="paragraph">詳細については、<block ref="45d8326cb72a8fa1d7ca8c887062a7ee" category="inline-link-macro-rx"></block></block>
   <block id="279961977f7de811c4eeee90a2454c87" category="paragraph">ダークサイトのBlueXP  デジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。<block ref="3e32e5c3cf84ce7c25efff198a230761" category="inline-link-rx"></block>です。</block>
+  <block id="84ea0db5b42f134872fbf35016e39cf9" category="list-text">Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5</block>
+  <block id="e69d7b651771ff110228ddae78e71631" category="list-text">Advanced Vector Extensions（AVX）がホストシステムで有効になっている必要があります。</block>
 </blocks>

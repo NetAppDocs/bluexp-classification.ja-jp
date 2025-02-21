@@ -144,9 +144,10 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 
 ** 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.30以降が必要です。
 +
-*** Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3、9.4、9.5
+*** Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5
 
 
+** Advanced Vector Extensions（AVX）がホストシステムで有効になっている必要があります。
 
 
 * * Red Hat Subscription Management *：ホストはRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、システムはインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
@@ -165,7 +166,11 @@ BlueXP分類ソフトウェアは、特定のオペレーティングシステ�
 * Pythonバージョン3.6以降。 https://www.python.org/downloads/["インストール手順を確認します"^]です。
 +
 ** * NTPに関する考慮事項*：NetAppでは、ネットワークタイムプロトコル（NTP）サービスを使用するようにBlueXP分類システムを設定することを推奨しています。BlueXP分類システムとBlueXP Connectorシステムの間で時刻が同期されている必要があります。
-** * firewalldの考慮事項*：を使用する場合は `firewalld`、BlueXP  分類をインストールする前に有効にすることをお勧めします。次のコマンドを実行して、BlueXP  分類と互換性があるようにを設定し `firewalld`ます。
+
+
+
+
+* * firewalldの考慮事項*：を使用する場合は `firewalld`、BlueXP  分類をインストールする前に有効にすることをお勧めします。次のコマンドを実行して、BlueXP  分類と互換性があるようにを設定し `firewalld`ます。
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -177,8 +182,6 @@ firewall-cmd --reload
 ....
 +
 設定を有効または更新するたびに、DockerまたはPodmanを再起動する必要があります `firewalld`。
-
-
 
 
 

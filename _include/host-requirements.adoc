@@ -65,9 +65,10 @@
 
 ** 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.30以降が必要です。
 +
-*** Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3、9.4、9.5
+*** Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5
 
 
+** Advanced Vector Extensions（AVX）がホストシステムで有効になっている必要があります。
 
 
 * * Red Hat Subscription Management *：ホストはRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、システムはインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
