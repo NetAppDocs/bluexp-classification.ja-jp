@@ -3395,4 +3395,6 @@
   <block id="279961977f7de811c4eeee90a2454c87" category="paragraph">ダークサイトのBlueXP  デジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。<block ref="3e32e5c3cf84ce7c25efff198a230761" category="inline-link-rx"></block>です。</block>
   <block id="84ea0db5b42f134872fbf35016e39cf9" category="list-text">Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5</block>
   <block id="e69d7b651771ff110228ddae78e71631" category="list-text">Advanced Vector Extensions（AVX）がホストシステムで有効になっている必要があります。</block>
+  <block id="70c351474b2828e2c0dff97793686bc4" category="paragraph-title">カテゴリ化モデルの精度の向上</block>
+  <block id="f436ec850a6acc51f2281d01c1b289da" category="paragraph">の機械学習モデルの精度は<block ref="fff0603fda0aac9c86fd12605ac8a06f" category="inline-link-macro-rx"></block>11%向上しました。</block>
 </blocks>
