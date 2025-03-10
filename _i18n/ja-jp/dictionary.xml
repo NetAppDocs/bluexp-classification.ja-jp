@@ -1734,7 +1734,6 @@
   <block id="5c4a0511ffaeef83ec4f6f814c84e1f5" category="inline-xref">ボリュームのコンプライアンススキャンの有効化と無効化</block>
   <block id="c0c91d6f7c9b085f79f701932b3d9cc7" category="paragraph">詳細は、を参照してください <block ref="95ce3baacaaadbae6a6ffc1a8884d40a" category="inline-xref-macro-rx"></block> 。</block>
   <block id="d5e967f01610f01cb30183e6b342e630" category="list-text">確認のダイアログボックスで、*[承認]*をクリックして、BlueXP分類でボリュームのスキャンを開始します。</block>
-  <block id="b0dab6dc992c93096b218e009d2afb00" category="paragraph">作業環境で選択したボリュームのスキャンが開始されます。結果は、BlueXPの分類による初回スキャンが終了するとすぐに[Compliance]ダッシュボードに表示されます。所要時間はデータ量によって異なります。数分から数時間かかる場合もあります。</block>
   <block id="e636b4a892ea62f67be639b3661d6897" category="list-text">BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、CIFSでは属性の書き込み権限やNFSでの書き込み権限がない場合、デフォルトではボリューム内のファイルはスキャンされません。最終アクセス時間をリセットしても構わない場合は、*をクリックするか、各ボリュームのスキャンタイプ*を選択します。表示されるページで設定を有効にすると、権限に関係なくBlueXP分類でボリュームがスキャンされます。</block>
   <block id="dbc6be69ce4e1e10bc890167fa46f18b" category="inline-link-macro">BlueXPの分類に関するこの制限の詳細を参照してください</block>
   <block id="9b39a17b00cb629e1990cbdcbad1001d" category="list-text">BlueXPは、1つのボリュームに含まれるファイル共有を1つだけスキャンします。ボリュームに複数の共有がある場合は、それらの他の共有を共有グループとして個別にスキャンする必要があります。<block ref="5dac6ccd725a941d49a9e107a98eb409" category="inline-link-macro-rx"></block>です。</block>
@@ -2465,7 +2464,6 @@
   <block id="b1f7c7e36d5ee01af131dd25c658e41f" category="list-text">スライダを右に移動して、スキャンするスキーマを選択します。</block>
   <block id="cc939570e2fbb3d7e526d9e3e757a5f0" category="inline-image-macro">スキャンするスキーマを選択できる [Scan Configuration] ページのスクリーンショット。</block>
   <block id="46e57bba2892a9df10ae0b7ae9e43f45" category="paragraph"><block ref="46e57bba2892a9df10ae0b7ae9e43f45" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e7161999dbadbbf09541cb6606d43f78" category="paragraph">BlueXPの分類で、有効にしたデータベーススキーマのスキャンが開始されます。エラーが発生した場合は、エラーを修正するために必要なアクションとともに、 [ ステータス ] 列に表示されます。</block>
   <block id="c4758ec8f4163fa99b08557425a59f56" category="summary">ネットアップ以外のNFSまたはCIFSファイル共有のスキャンをBlueXPで直接開始するには、いくつかの手順を実行します。これらのファイル共有は、オンプレミスでもクラウドでもかまいません。</block>
   <block id="b5e00ff2b7559dfa6fc6fe96058ede54" category="doc">BlueXP  分類によるファイル共有のスキャン</block>
   <block id="12a96925a3b6ebd1419915c8b0bfada9" category="paragraph">いくつかの手順を実行して、Google Cloud NetApp Volumeおよび古いNetApp 7-ModeシステムからNFSまたはCIFSファイル共有のスキャンを開始します。これらのファイル共有は、オンプレミスでもクラウドでもかまいません。</block>
@@ -2501,7 +2499,6 @@
   <block id="ae70ae1b93c56367429b7d2bb0ece139" category="cell">[* マップ * ] をクリックします</block>
   <block id="c8f32db0b52a7b7e31ee04bd02eddbb6" category="cell">[ マップと分類 *] をクリックします</block>
   <block id="a988b0977fb89f6574cfc55d252b1cf9" category="cell">[ * Off * ] をクリックします</block>
-  <block id="07ada1e73188e64ef4fd43b06b4a2a48" category="paragraph">BlueXPの分類により、追加したファイル共有内のファイルのスキャンが開始され、結果がダッシュボードと他の場所に表示されます。</block>
   <block id="0eb30c84638dc32a52a08e70a70b2a55" category="section-title">コンプライアンススキャンからファイル共有を削除する</block>
   <block id="90777a343fd7f5c83c97f473d59a2af2" category="inline-image-macro">単一のファイル共有をスキャン対象から削除する方法を示すスクリーンショット。</block>
   <block id="c8716632d7055f530ad579b6f751cf3a" category="paragraph"><block ref="c8716632d7055f530ad579b6f751cf3a" category="inline-image-macro-rx" type="image"></block></block>
@@ -3397,4 +3394,15 @@
   <block id="e69d7b651771ff110228ddae78e71631" category="list-text">Advanced Vector Extensions（AVX）がホストシステムで有効になっている必要があります。</block>
   <block id="70c351474b2828e2c0dff97793686bc4" category="paragraph-title">カテゴリ化モデルの精度の向上</block>
   <block id="f436ec850a6acc51f2281d01c1b289da" category="paragraph">の機械学習モデルの精度は<block ref="fff0603fda0aac9c86fd12605ac8a06f" category="inline-link-macro-rx"></block>11%向上しました。</block>
+  <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="doc">バージョン1.41</block>
+  <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">このBlueXP  分類リリースには、全般的な改善とバグ修正が含まれています。次の内容も含まれます。</block>
+  <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">スキャンステータス</block>
+  <block id="9f4be2ee88f8d600b3db6a9021b88d97" category="paragraph">BlueXP  分類では、ボリューム上の_initial_mappingスキャンと分類スキャンのリアルタイムの進行状況が追跡されるようになりました。個別のプログレッシブバーはマッピングスキャンと分類スキャンを追跡し、スキャンされたファイルの割合を示します。進行状況バーにカーソルを合わせると、スキャンされたファイル数と合計ファイル数を表示することもできます。スキャンのステータスを追跡することで、スキャンの進捗状況をより詳細に把握できるため、スキャンの計画やリソースの割り当てをより適切に把握できます。</block>
+  <block id="dea24de819351c63f66685576d21ee25" category="paragraph">スキャンのステータスを表示するには、BlueXP  分類で** Configuration **に移動し、** Working Environment構成**を選択します。進行状況はボリュームごとに1行に表示されます。</block>
+  <block id="801fd0ca68a5867228784d88be71f1fd" category="paragraph">作業環境で選択したボリュームのスキャンが開始されます。結果は、BlueXP  分類が最初のスキャンを終了するとすぐにComplianceダッシュボードに表示されます。所要時間はデータ量によって異なります。数分から数時間かかる場合もあります。最初のスキャンの進行状況を追跡するには、[**構成*]メニューに移動し、[**作業環境構成*]を選択します。各スキャンの進行状況が進行状況バーとして表示されます。進行状況バーにカーソルを合わせると、ボリューム内の合計ファイル数を基準にスキャンされたファイル数を確認することもできます。</block>
+  <block id="794d07bb17fcda62a163d4acc32a2c19" category="paragraph">作業環境で選択したボリュームのスキャンが開始されます。結果は、BlueXPの分類による初回スキャンが終了するとすぐに[Compliance]ダッシュボードに表示されます。所要時間はデータ量によって異なります。数分から数時間かかる場合もあります。最初のスキャンの進行状況を追跡するには、[**構成*]メニューに移動し、[**作業環境構成*]を選択します。各スキャンの進行状況が進行状況バーとして表示されます。進行状況バーにカーソルを合わせると、ボリューム内の合計ファイル数を基準にスキャンされたファイル数を確認することもできます。</block>
+  <block id="04bcd6818aecd8c0fe46b7d49aa8b39a" category="paragraph">BlueXPの分類で、有効にしたデータベーススキーマのスキャンが開始されます。最初のスキャンの進行状況を追跡するには、[**構成*]メニューに移動し、[**作業環境構成*]を選択します。各スキャンの進行状況が進行状況バーとして表示されます。進行状況バーにカーソルを合わせると、ボリューム内の合計ファイル数を基準にスキャンされたファイル数を確認することもできます。エラーが発生した場合は、エラーを修正するために必要なアクションとともに、 [ ステータス ] 列に表示されます。</block>
+  <block id="92b3b54a8e8438f0bd12202608c4ab34" category="paragraph">BlueXPの分類により、追加したファイル共有内のファイルのスキャンが開始され、結果がダッシュボードと他の場所に表示されます。最初のスキャンの進行状況を追跡するには、[**構成*]メニューに移動し、[**作業環境構成*]を選択します。各スキャンの進行状況が進行状況バーとして表示されます。進行状況バーにカーソルを合わせると、ボリューム内の合計ファイル数を基準にスキャンされたファイル数を確認することもできます。</block>
+  <block id="ed8331881c930d67b63a6ed99c045b28" category="paragraph">BlueXPの分類で、有効にしたバケットのスキャンが開始されます。最初のスキャンの進行状況を追跡するには、[**構成*]メニューに移動し、[**作業環境構成*]を選択します。各スキャンの進行状況が進行状況バーとして表示されます。進行状況バーにカーソルを合わせると、ボリューム内の合計ファイル数を基準にスキャンされたファイル数を確認することもできます。エラーが発生した場合は、エラーを修正するために必要なアクションとともに、 [ ステータス ] 列に表示されます。</block>
+  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025年3月10日</block>
 </blocks>
