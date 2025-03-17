@@ -1809,7 +1809,6 @@
   <block id="24a56762deabf31ff2c2a9b817d1ffbe" category="paragraph">JSONレポート生成の進捗状況はで確認できます<block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
   <block id="499dd7659f4fa7b600ca3796c449e41b" category="doc">組織に保存されているデータを調査します</block>
   <block id="615e6d6aa74682391d600dc61fe1090c" category="inline-xref">データ調査レポートの詳細については、こちらをご覧ください</block>
-  <block id="56de383365196dfaf32d315a2b4b3cae" category="paragraph">ページの内容をリファインした後にレポートとしてダウンロードする場合は、ボタンをクリックし<block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block>ます。<block ref="99402c37b738da126a6c16dce45a83da" category="inline-xref-macro-rx"></block>です。</block>
   <block id="d3720958611294d50237fe72870e0c02" category="inline-image-macro">調査ページで結果を絞り込むときに使用できるフィルタのスクリーンショット。</block>
   <block id="3fd10935177bff66373986bc384c0307" category="paragraph"><block ref="3fd10935177bff66373986bc384c0307" category="inline-image-macro-rx" type="image"></block></block>
   <block id="31d2b3f1b10e9877e365a14d5f9212e4" category="list-text">トップレベルのタブでは、ファイル（非構造化データ）、ディレクトリ（フォルダおよびファイル共有）、またはデータベース（構造化データ）のデータを表示できます。</block>
@@ -1887,20 +1886,16 @@
   <block id="936baf22f04cffa654fef2a2806e8fcd" category="cell">リポジトリ内でファイルを複製するかどうかを選択します。</block>
   <block id="d9ff86959e1f6d2016c4db58114184ab" category="section-title">ファイルメタデータの表示</block>
   <block id="ddd53e8927c624ebcbf44e804dd39950" category="inline-image-macro">下キャレット</block>
-  <block id="f934a72c8aa162f28cd2451333d31995" category="paragraph">[Data Investigation results]ペインでは、任意の単一ファイルのをクリックしてファイルのメタデータを表示できます<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>。</block>
   <block id="04a8c17bf0b1e2cd69db6fba82b59dc0" category="inline-image-macro">[ データ調査 ] ページのファイルのメタデータの詳細を示すスクリーンショット。</block>
   <block id="c545ce144b1f4d763f30d9b729c1590c" category="paragraph"><block ref="c545ce144b1f4d763f30d9b729c1590c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="aa4ba8b621d22449a2723e4175ff5c9d" category="inline-link-macro">ポリシーを作成します</block>
   <block id="d2b1e6329082b8cf29999896b3d3d744" category="paragraph">メタデータには、ファイルが配置されている作業環境とボリュームだけでなく、ファイル権限、ファイル所有者、このファイルの重複の有無など、さらに多くの情報が表示されます。この情報は、データのフィルタリングに使用できるすべての情報を表示できるため、計画している場合に役立ち<block ref="8c7af7ec06ac1cea6800f7cd16a5f7c0" category="inline-link-macro-rx"></block>ます。</block>
   <block id="9538e6335cc9662b264dd0870f2ca091" category="paragraph">すべてのデータソースについて、すべての情報が表示されるわけではなく、そのデータソースに適した情報だけが表示されることに注意してください。たとえば、ボリューム名と権限はデータベースファイルには関係ありません。</block>
   <block id="fffb468d89636ef35919bda57df8f0bc" category="section-title">ファイルおよびディレクトリの権限を表示する</block>
-  <block id="6fa893a1485524675ae044e22dd04d02" category="paragraph">ファイルまたはディレクトリへのアクセス権を持つすべてのユーザーまたはグループのリスト、およびそれらが持っているアクセス権のタイプを表示するには、*すべてのアクセス権を表示*をクリックします。このボタンは、CIFS共有のデータに対してのみ使用できます。</block>
   <block id="70762168244eed6d4b30ab53961acada" category="inline-link-macro">詳細については、「方法」を参照してください</block>
   <block id="50cdf86b563a0d781f053c4a23d816c2" category="paragraph">ユーザ名とグループ名の代わりにSID（セキュリティ識別子）が表示される場合は、Active DirectoryをBlueXPに統合する必要があります。<block ref="a543108cc451095d486457d9ff215fd0" category="inline-link-macro-rx"></block>です。</block>
   <block id="47b3f14316e807b37aaa42895464d283" category="inline-image-macro">詳細なファイル権限を示すスクリーンショット。</block>
   <block id="33b3bef30743bda1b0909a4417b45583" category="paragraph"><block ref="33b3bef30743bda1b0909a4417b45583" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ba7710e66e983f5d109ee54ee938f343" category="paragraph">任意のグループのをクリックすると<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>、そのグループに属するユーザのリストが表示されます。</block>
-  <block id="b242cddbb1cb85737a2fd06f1d715934" category="paragraph">さらに、 ユーザまたはグループの名前をクリックすると、[調査]ページにそのユーザまたはグループの名前が表示され、[ユーザ/グループの権限]フィルタに入力されます。これにより、そのユーザまたはグループがアクセスできるすべてのファイルとディレクトリを表示できます。</block>
   <block id="33f1c68834e7b02c4c8b3b9dc4f796d3" category="section-title">ストレージシステム内の重複ファイルのチェック</block>
   <block id="5180c6809f41234a64af29e1a7ad708c" category="paragraph">重複ファイルがストレージシステムに保存されているかどうかを確認できます。これは、ストレージスペースを節約できる領域を特定する場合に便利です。また、特定の権限や機密情報を持つファイルが、ストレージシステム内で不必要に重複しないようにすることもできます。</block>
   <block id="bfd42c156b2ca871cd12ee8e72e55e95" category="paragraph">1MB以上で、個人情報または機密情報を含むすべてのファイル（データベースを除く）が比較され、重複がないかどうかが確認されます。[Investigation]ページフィルタの[File Size]と[Duplicates]を使用して、環境内で特定のサイズ範囲のどのファイルが重複しているかを確認できます。</block>
@@ -1909,8 +1904,6 @@
   <block id="e6bbcb2826ce1a4f58fd341c4f5ae5f3" category="paragraph">重複ファイルのリストをダウンロードし、ストレージ管理者に送信して、削除可能なファイルをユーザが判別できるようにします。または、ファイルの特定のバージョンが必要ないと確信している場合は、自分で行うことができます<block ref="53c8cd880d15e2953a8e763d6f4dff0c" category="inline-link-macro-rx"></block>。</block>
   <block id="5b00edf3a5903017b22e268ae58998c0" category="paragraph">スキャンする作業環境およびデータソースで複製されているすべてのファイルのリストが必要な場合は、 [ データの調査 ] ページで、 [ 重複 ] &gt; [ 重複しているもの ] というフィルタを使用できます。</block>
   <block id="285a3049428c6b155fde44a18621f551" category="paragraph">複製されたすべてのファイルが結果ページに表示されます。</block>
-  <block id="481ee5e06ca7a72cfe4a783b39c7d0e3" category="paragraph">1つのファイルに重複があるかどうかを確認するには、[Data Investigation Results]ペインで任意のファイルのをクリックし<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>てファイルのメタデータを表示します。特定のファイルが重複している場合、この情報は _Duplicats_field の横に表示されます。</block>
-  <block id="b478c70cc88f62deb519e4d41609fff2" category="paragraph">重複したファイルとその場所のリストを表示するには、 [ * 詳細の表示 * ] をクリックします。次のページで、 [ 重複の表示 *] をクリックして、 [ 調査 ] ページでファイルを表示します。</block>
   <block id="68309bcfd455803ffbae49714037b789" category="inline-image-macro">重複するファイルが配置されている場所を確認する方法を示すスクリーンショット。</block>
   <block id="0dc6d718adece3621c4a40fa3b4b2a82" category="paragraph"><block ref="0dc6d718adece3621c4a40fa3b4b2a82" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">このページで指定されている「ファイルハッシュ」値を使用して、 ［ 調査 ］ ページに直接入力すると、特定の重複ファイルをいつでも検索できます。また、ポリシーで使用することもできます。</block>
@@ -3285,7 +3278,6 @@
   <block id="47b72e580332bb9da872607466b406bc" category="paragraph">レポートは.csvファイルまたは.jsonファイルとして使用でき、ローカルマシンに保存できます。</block>
   <block id="f257e5460f3ab87ec47290dc11518fc8" category="paragraph">*データ調査レポートの内容*</block>
   <block id="f3f4c1edbf92907aa9051152a36ae4cc" category="list-title">レポートを生成する手順</block>
-  <block id="868f49e80cf5d3f7ac26cbec13a8d0be" category="list-text">選択してデータの.csvまたは.jsonレポートをダウンロードし、*[Download Report]*をクリックします。</block>
   <block id="8b93cae59bfdd9d1f5373c4f243f1891" category="paragraph"><block ref="8b93cae59bfdd9d1f5373c4f243f1891" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1f22985ba0d865da0fb0dc1149ac8684" category="list-text">ホストからソフトウェアをアンインストールするには、BlueXP  分類ホストマシンで次のようなスクリプトを実行し<block ref="cc561bef4dbd2996ec2b2478f3e1042d" prefix=" " category="inline-code"></block>ます。</block>
   <block id="009d2060a609114df262eff04e83f241" category="section-title">2025年1月22日</block>
@@ -3405,4 +3397,15 @@
   <block id="92b3b54a8e8438f0bd12202608c4ab34" category="paragraph">BlueXPの分類により、追加したファイル共有内のファイルのスキャンが開始され、結果がダッシュボードと他の場所に表示されます。最初のスキャンの進行状況を追跡するには、[**構成*]メニューに移動し、[**作業環境構成*]を選択します。各スキャンの進行状況が進行状況バーとして表示されます。進行状況バーにカーソルを合わせると、ボリューム内の合計ファイル数を基準にスキャンされたファイル数を確認することもできます。</block>
   <block id="ed8331881c930d67b63a6ed99c045b28" category="paragraph">BlueXPの分類で、有効にしたバケットのスキャンが開始されます。最初のスキャンの進行状況を追跡するには、[**構成*]メニューに移動し、[**作業環境構成*]を選択します。各スキャンの進行状況が進行状況バーとして表示されます。進行状況バーにカーソルを合わせると、ボリューム内の合計ファイル数を基準にスキャンされたファイル数を確認することもできます。エラーが発生した場合は、エラーを修正するために必要なアクションとともに、 [ ステータス ] 列に表示されます。</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025年3月10日</block>
+  <block id="b7daace328e6741286f27d2ac5e2f47a" category="paragraph">ページの内容をリファインした後にレポートとしてダウンロードする場合は、ボタンを選択し<block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block>ます。<block ref="99402c37b738da126a6c16dce45a83da" category="inline-xref-macro-rx"></block>です。</block>
+  <block id="126d0a183cd7ef5a42d98232cfc78c9e" category="admonition">[Data Investigation]ページでは、スキャンの最初の10,000件（500ページ）の結果のみを表示できます。</block>
+  <block id="d70c15611bfee94500d72ff7b26a3246" category="paragraph">[Data Investigation results]ペインで、ファイルのメタデータを表示する単一のファイルのダウンキャレットボタンを選択し<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>ます。</block>
+  <block id="9fb67493aa2d989d001de2e7c4462b4e" category="paragraph">ファイルまたはディレクトリへのアクセス権を持つすべてのユーザまたはグループのリストと、それらの権限のタイプを表示するには、*[すべての権限を表示]*を選択します。このボタンは、CIFS共有のデータに対してのみ使用できます。</block>
+  <block id="65e8d4fae364cb5c5e1a2304c301a6ad" category="paragraph">任意のグループの下キャレットボタンを選択する<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>と、そのグループに属するユーザのリストが表示されます。</block>
+  <block id="21f378c3412ff535e51a7de907a17ad8" category="paragraph">ユーザまたはグループの名前を選択すると、[Investigation]ページが更新され、そのユーザまたはグループがアクセスできるすべてのファイルとディレクトリが表示されます。</block>
+  <block id="b646744a4cb3933c62e69361ab1b0fb9" category="paragraph">1つのファイルに重複があるかどうかを確認するには、[Data Investigation Results]ペインで、ファイルのメタデータを表示する単一のファイルのを選択します<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>。特定のファイルが重複している場合、この情報は _Duplicats_field の横に表示されます。</block>
+  <block id="6085b17a40397d5797aee31606263dda" category="paragraph">重複ファイルのリストとその場所を表示するには、*詳細を表示*を選択します。次のページで、[View Duplicates]を選択して、[Investigation]ページにファイルを表示します。</block>
+  <block id="9dbaf2723509754918929e09594f8800" category="list-text">[Data Investigation]ページで、ページの右上にあるボタンを選択します<block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="c290efd7814d022961f943c1af408a6f" category="list-text">レポートタイプ（CSVまたはJSON）を選択し、**レポート名**を指定します。**作業環境**および**ボリューム**を選択し、**宛先フォルダパス**を指定します。</block>
+  <block id="8c574751ceb947fcd2a71198a9109d98" category="list-text">[**Download Report]**を選択します。</block>
 </blocks>
