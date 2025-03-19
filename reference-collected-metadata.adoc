@@ -4,7 +4,7 @@ permalink: reference-collected-metadata.html
 keywords: compliance, metadata, permissions, time stamps, privacy, last access time 
 summary: BlueXPの分類では、データソースや作業環境からのデータに対して分類スキャンを実行する際に、特定のメタデータが収集されます。BlueXPの分類では、データを分類するために必要なメタデータのほとんどにアクセスできますが、一部のソースでは必要なデータにアクセスできない場合があります。 
 ---
-= データソースから収集されたメタデータ
+= BlueXP  分類でデータソースから収集されるメタデータ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

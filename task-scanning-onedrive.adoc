@@ -4,7 +4,7 @@ permalink: task-scanning-onedrive.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, onedrive, data sense 
 summary: BlueXP分類を使用して、ユーザーのOneDriveフォルダ内のファイルのスキャンを開始するには、いくつかの手順を実行します。 
 ---
-= OneDriveアカウントのスキャン
+= BlueXP  分類を使用してOneDriveアカウントをスキャンする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

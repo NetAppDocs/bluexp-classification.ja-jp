@@ -4,7 +4,7 @@ permalink: task-scanning-google-drive.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, google drive, data sense 
 summary: BlueXP分類を使用してGoogleドライブアカウントのユーザファイルのスキャンを開始するには、いくつかの手順を実行します。 
 ---
-= Googleドライブアカウントのスキャン
+= BlueXP  分類を使用してGoogleドライブアカウントをスキャンする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: task-using-policies-deprecated.html
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
 summary: 'ポリシーは、よく要求されるコンプライアンスクエリーの [ 調査 ] ページで検索結果を表示するカスタムフィルタのお気に入りリストのようなものです。BlueXPは分類されており、一般的なお客様の要望に基づいて一連のポリシーが事前定義されています。組織固有の検索結果を提供するカスタムポリシーを作成できます。' 
 ---
-= 準拠していないデータが見つかった場合にEメールアラートを送信
+= BlueXP  の分類で非準拠データが検出された場合に電子メールアラートを送信する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

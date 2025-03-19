@@ -4,7 +4,7 @@ permalink: reference-limitations.html
 keywords: limitations, data sense, classification, bluexp, scan shares 
 summary: 既知の制限事項には、このリリースの製品でサポートされていない機能、またはこのリリースと正しく相互運用できない機能が記載されています。これらの制限事項をよく確認してください。 
 ---
-= 既知の制限事項
+= BlueXP  分類における既知の制限事項
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

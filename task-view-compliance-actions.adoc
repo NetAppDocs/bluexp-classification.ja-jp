@@ -4,7 +4,7 @@ permalink: task-view-compliance-actions.html
 keywords: compliance, actions, view progress 
 summary: 'たとえば、 100 個のファイルを削除するなど、多くのファイルで [ 調査結果 ] ペインからアクションを実行する場合、プロセスには時間がかかることがあります。アクションステータスペインでこれらの非同期アクションのステータスを監視して、すべてのファイルにいつ適用されたかを確認できます。' 
 ---
-= コンプライアンスアクションのステータスを表示します
+= BlueXP  分類でコンプライアンスアクションのステータスを表示する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

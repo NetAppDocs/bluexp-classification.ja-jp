@@ -4,7 +4,7 @@ permalink: task-managing-repo-scanning.html
 keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan, cloud data sense, bluexp classification, bluexp 
 summary: BlueXPに分類された作業環境とデータソースのそれぞれで、データのスキャン方法を管理できます。変更は「リポジトリ」単位で行うことができます。つまり、ボリューム、バケット、共有、スキーマ、ユーザ、 など、スキャンするデータソースの種類によって異なります。 
 ---
-= リポジトリのスキャン設定の変更
+= リポジトリのBlueXP  分類スキャン設定の変更
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

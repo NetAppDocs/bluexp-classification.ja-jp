@@ -4,7 +4,7 @@ permalink: task-generating-compliance-reports.html
 keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file, dsar 
 summary: BlueXPの分類では、組織のデータプライバシープログラムのステータスを詳しく把握するために使用できるレポートが提供されます。 
 ---
-= コンプライアンスレポートを表示する
+= BlueXP  分類コンプライアンスレポートの表示
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

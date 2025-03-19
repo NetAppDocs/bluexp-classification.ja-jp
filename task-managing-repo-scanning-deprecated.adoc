@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-managing-repo-scanning-deprecated.html 
 keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan 
-summary: それぞれの作業環境やデータソースでのデータのスキャン方法を管理できます。変更は「リポジトリ」単位で行うことができます。つまり、ボリューム、バケット、共有、スキーマ、ユーザ、 など、スキャンするデータソースの種類によって異なります。 
+summary: それぞれの作業環境やデータソースでのデータのスキャン方法を管理できます。変更はリポジトリ単位で行うことができます。つまり、スキャンするデータソースのタイプに応じて、ボリューム、バケット、共有、スキーマ、ユーザなどを変更できます。 
 ---
-= 既存のリポジトリのデータを再スキャン
+= BlueXP  分類を使用して既存のリポジトリのデータを再スキャンする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

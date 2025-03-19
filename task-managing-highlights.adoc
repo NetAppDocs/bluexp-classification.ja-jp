@@ -4,7 +4,7 @@ permalink: task-managing-highlights.html
 keywords: compliance, privacy, filter data, delete files, move files, copy files, clone files, sync files, data sense, migration 
 summary: BlueXPは、さまざまな方法でプライベートデータを管理できます。一部の機能を使用すると、データの移行準備が簡単になります。また、他の機能を使用してデータを変更することもできます。 
 ---
-= プライベートデータを管理
+= BlueXP  による分類でプライベートデータを管理
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

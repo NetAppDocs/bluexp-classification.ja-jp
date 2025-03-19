@@ -4,7 +4,7 @@ permalink: task-controlling-governance-data.html
 keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies 
 summary: 組織のストレージリソース上のデータに関連するコストを管理できます。BlueXPは分類されるため、システム内の古いデータ、ビジネス以外のデータ、重複ファイル、大容量ファイルの量が特定されるため、一部のファイルを削除するか、低コストのオブジェクトストレージに階層化するかを判断できます。 
 ---
-= 組織に保存されているデータに関するガバナンスの詳細を表示する
+= BlueXP  分類を使用して、組織に保存されているデータに関するガバナンスの詳細を表示する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

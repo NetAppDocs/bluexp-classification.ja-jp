@@ -4,7 +4,7 @@ permalink: task-investigate-data.html
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
 summary: '[データ調査]ページで詳細を表示すると、組織のデータを調査できます。このページには、ガバナンスダッシュボードやコンプライアンスダッシュボードなど、BlueXPの分類UIのさまざまな領域から移動できます。' 
 ---
-= 組織に保存されているデータを調査します
+= BlueXP  分類を使用して、組織に保存されているデータを調査する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
