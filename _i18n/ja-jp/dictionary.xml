@@ -592,7 +592,6 @@
   <block id="6505506a35d1d959ffb20a74a4238de6" category="cell">オンデマンドでデータを再スキャン</block>
   <block id="5f571f0f56802124061d64f7f5dac503" category="cell">カスタム分類子の作成</block>
   <block id="c7d804294d8fa0d1ba6bfc80ead25ca0" category="cell">ディレクトリをスキャン対象から除外</block>
-  <block id="46771ec1582c3b0b4aebfc19d6356451" category="cell">調査からNFSにデータをエクスポート</block>
   <block id="cfe5d63c50c4794111fa6f65b931e130" category="cell">調査からCSVにデータをエクスポート</block>
   <block id="5b161cf169bcf6263a5f04b0a0b391d6" category="cell">複数のスキャナをサポート</block>
   <block id="81ef4cd6c60d70e2956f5aceef3493d2" category="cell">Active Directory を統合します</block>
@@ -3437,4 +3436,8 @@
   <block id="ca304384fad03eae82a8e99a165128d0" category="section-title">最も特定されたファイルタイプを確認する</block>
   <block id="5af3bad2ce7ed86124fdaa43b19e15c1" category="list-text">Governanceダッシュボード&gt; Classificationセクション&gt; File Typesタイルで、ファイルタイプの詳細を表示するには、GovernanceダッシュボードのFile Typesセクションでファイルタイプを選択します。[Investigation]ページには、そのファイルタイプだけでフィルタリングされたデータが表示されます。</block>
   <block id="3b879833e0c35c3e97d6bcec57a9aad0" category="list-text">すべてのファイルタイプを表示するには、*すべて表示*を選択します。</block>
+  <block id="93a41f9744586b4edf90898527b71531" category="cell">調査からNFS/CIFSへのデータのエクスポート</block>
+  <block id="81aef4d88b3543fe7ce12740f599c026" category="paragraph">ファイルは、一定の行数またはレコード数を持つファイルに分割されます。</block>
+  <block id="65c07610fb212d644f234075537bbc84" category="list-text">CSV - 200,000レコード</block>
+  <block id="8897cd6292ab12bb81d8704c400fca96" category="list-text">JSON - 100、000レコード</block>
 </blocks>
