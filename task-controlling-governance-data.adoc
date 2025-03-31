@@ -16,6 +16,8 @@ summary: 組織のストレージリソース上のデータに関連するコ�
 [role="lead"]
 組織のストレージリソース上のデータに関連するコストを管理できます。BlueXPは分類されるため、システム内の古いデータ、ビジネス以外のデータ、重複ファイル、大容量ファイルの量が特定されるため、一部のファイルを削除するか、低コストのオブジェクトストレージに階層化するかを判断できます。
 
+ここからあなたの研究を始めるべきです。Governanceダッシュボードから、さらに調査する領域を選択できます。
+
 さらに、オンプレミスの場所からクラウドにデータを移行する場合は、データのサイズと、機密情報が含まれているデータがあるかどうかを移動前に確認できます。
 
 
@@ -42,7 +44,7 @@ _Saving Opportunities 領域内の項目を調査して、削除または階層�
 
 .手順
 . BlueXP  classificationメニューから、* Governance *を選択します。
-. Governanceダッシュボードの[Savings Opportunities]タイルごとに*[Optimize Storage]*を選択して、フィルタリングされた結果を[Investigation]ページに表示します。
+. Governanceダッシュボードの[Savings Opportunities]タイルごとに*[Optimize Storage]*を選択して、フィルタリングされた結果を[Investigation]ページに表示します。_Saving Opportunities 領域内の項目を調査して、削除または階層化してより安価なオブジェクトストレージにする必要があるデータがないかどうかを確認できます。
 +
 ** *Stale Data*- 3 年前に最後に変更されたデータ。
 ** * ビジネス以外のデータ * - カテゴリまたはファイルタイプに基づいて、ビジネスに関連していないと見なされるデータ。これには、
@@ -62,7 +64,7 @@ _Saving Opportunities 領域内の項目を調査して、削除または階層�
 
 
 
-NOTE: いずれかのデータソースでデータ階層化が実装されている場合は、オブジェクトストレージにすでに存在する古いデータを_Stale Data_categoryで特定できます。
+NOTE: データ階層化を実装しているデータソースがある場合は、オブジェクトストレージにすでに存在する古いデータを_Stale Data_categoryで特定できます。
 
 
 
@@ -70,13 +72,13 @@ NOTE: いずれかのデータソースでデータ階層化が実装されて�
 
 [Policies_]領域には、結果の数が最も多いポリシーがリストの一番上に表示されます。
 
+ポリシーの詳細については、を参照してくださいlink:task-using-policies.html["データにポリシーを割り当てます"]。
+
 .手順
 . BlueXP  classificationメニューから、* Governance *を選択します。
-. [Goveranceダッシュボード> Policies]タイルで、でポリシーの名前を選択し、[Investigation]ページに結果を表示します。
-. 使用可能なすべてのポリシーのリストを表示するには、*[すべて表示]*を選択します。
+. [Goveranceダッシュボード> Policies]タイルで、[Investigation]ページに結果を表示するポリシーの名前を選択します。
+. 使用可能なすべてのポリシーのリストを表示するには、*[すべて表示]*を選択します。[Policies_]領域には、結果の数が最も多いポリシーがリストの一番上に表示されます。
 
-
-ポリシーの詳細については、を参照してくださいlink:task-using-policies.html["データにポリシーを割り当てます"]。
 
 
 
@@ -99,14 +101,15 @@ Data Discovery Assessment Reportでは、スキャンされた環境の概要を
 |===
 このレポートを使用すると、次の操作を実行できます。
 
-* 保持ポリシーを変更したり、特定のデータ（古いデータ、重複データ、ビジネス以外のデータ）を移動または削除したりすることで、ストレージコストを削減できます。
-* グローバルグループ管理ポリシーを改訂して、幅広い権限を持つデータを保護します。
-* PIIをより安全なデータストアに移動することで、個人情報または機密性の高い個人情報を含むデータを保護します。
+* 保持ポリシーを変更したり、特定のデータ（古いデータ、重複データ、ビジネス以外のデータ）を移動または削除したりすることで、ストレージコストを削減
+* グローバルグループ管理ポリシーを改訂して、幅広い権限を持つデータを保護します
+* PIIをより安全なデータストアに移動することで、個人情報または機密性の高い個人情報を含むデータを保護します
 
 
 .手順
-. BlueXP  classificationメニューから、* Governance *を選択します。
-. Governanceダッシュボード> Data Overviewセクションで、* Data Discovery Assessment Report *ボタンを選択します。
+. BlueXP  メニューから、* Governance > Classification *を選択します。
+. [ガバナンス]*を選択します。
+. [Data Discovery Assessment Report]*を選択します。
 +
 image:screenshot-compliance-report-buttons.png["ガバナンスダッシュボードのスクリーンショット。Data Discovery Assessment Reportを起動する方法が示されています。"]
 
@@ -140,12 +143,13 @@ BlueXPの分類によって.pdfレポートが生成されます。このレポ�
 | ファイルの種類 | 作業環境に保存されているファイルタイプごとのファイルの総数と使用容量が表示されます。 
 |===
 .手順
-. BlueXP  classificationメニューから、* Governance *を選択します。
-. Governanceダッシュボード> Data Overviewセクションで、* Full Data Mapping Overview Report *ボタンを選択します。
+. BlueXP  メニューから、* Governance > Classification *を選択します。
+. [ガバナンス]*を選択します。
+. [Full Data Mapping Overview Report]*を選択します。
 +
 image:screenshot-compliance-report-buttons.png["データマッピングレポートの起動方法を示すGovernance Dashboardのスクリーンショット。"]
 
-. レポートの最初のページに表示される会社名をカスタマイズするには、BlueXP  分類ページの上部でを選択しますimage:screenshot_gallery_options.gif["[詳細]ボタン"]。次に、*[会社名の変更]*を選択します。次回レポートを生成するときに、新しい名前が含まれます。
+. レポートの最初のページに表示される会社名をカスタマイズするには、BlueXP  分類ページの右上にあるを選択しますimage:screenshot_gallery_options.gif["[詳細]ボタン"]。次に、*[会社名の変更]*を選択します。次回レポートを生成するときに、新しい名前が含まれます。
 
 
 .結果
@@ -155,7 +159,7 @@ BlueXPの分類によって.pdfレポートが生成されます。このレポ�
 
 
 
-== データの機密性別に表示される上位のデータリポジトリを確認する
+=== データの機密性別に表示される上位のデータリポジトリを確認する
 
 _Top Data Repositories by Sensitivity Level_領域には、最も機密性の高い項目を含む上位4つのデータリポジトリ（作業環境およびデータソース）が表示されます。各作業環境の棒グラフは、次のように分割されています。
 
@@ -165,14 +169,13 @@ _Top Data Repositories by Sensitivity Level_領域には、最も機密性の高
 
 
 .手順
-. BlueXP  classificationメニューから、* Governance *を選択します。
-. Governanceダッシュボード> Data Overviewセクションで、各カテゴリの項目の合計数を確認するには、バーの各セクションにカーソルを合わせます。
+. 各カテゴリの項目の合計数を表示するには、バーの各セクションにカーソルを合わせます。
 . [Investigation]ページに表示される結果をフィルタリングするには、バーの各領域を選択してさらに調査します。
 
 
 
 
-== 機密データと幅広い権限を確認
+=== 機密データと幅広い権限を確認
 
 _Sensitive DataおよびWide Permissions_領域には、機密データを含み、広い権限を持つファイルの割合が表示されます。このチャートには、次の種類の権限が表示されます。
 
@@ -181,14 +184,13 @@ _Sensitive DataおよびWide Permissions_領域には、機密データを含み
 
 
 .手順
-. BlueXP  classificationメニューから、* Governance *を選択します。
-. Governanceダッシュボード> Sensitive Data and Wide Permissionsセクションで、各カテゴリのファイルの総数を確認するには、各ボックスの上にカーソルを置きます。
+. 各カテゴリのファイルの総数を表示するには、各ボックスの上にカーソルを置きます。
 . [Investigation]ページに表示される結果をフィルタリングするには、ボックスを選択してさらに調査します。
 
 
 
 
-== 開いている権限のタイプ別にリストされたデータを確認する
+=== 開いている権限のタイプ別にリストされたデータを確認する
 
 _Open Permissions_ 領域には、スキャンされるすべてのファイルに存在する各タイプの権限の割合が表示されます。このチャートには、次の種類の権限が表示されます。
 
@@ -199,20 +201,18 @@ _Open Permissions_ 領域には、スキャンされるすべてのファイル�
 
 
 .手順
-. BlueXP  classificationメニューから、* Governance *を選択します。
-. Governanceダッシュボード> Open Permissionsセクションで、各カテゴリのファイルの総数を確認するには、各ボックスの上にカーソルを置きます。
+. 各カテゴリのファイルの総数を表示するには、各ボックスの上にカーソルを置きます。
 . [Investigation]ページに表示される結果をフィルタリングするには、ボックスを選択してさらに調査します。
 
 
 
 
-== データの経過時間とサイズを確認する
+=== データの経過時間とサイズを確認する
 
 _Age_and_Size_graph内の項目を調べて、削除または低コストのオブジェクトストレージに階層化する必要があるデータがないかどうかを確認できます。
 
 .手順
-. BlueXP  classificationメニューから、* Governance *を選択します。
-. Governanceダッシュボードの[Age of Data]グラフで、データの経過時間の詳細を確認するには、グラフ内のポイントにカーソルを合わせます。
+. [Age of Data]グラフで、データの経過時間の詳細を表示するには、グラフ内のポイントにカーソルを合わせます。
 . 年齢またはサイズ範囲でフィルタリングするには、その年齢またはサイズを選択します。
 +
 ** *Age of Data グラフ *- データが作成された時刻、アクセスされた最終時刻、またはデータが変更された最終時刻に基づいてデータを分類します。
@@ -226,34 +226,18 @@ NOTE: いずれかのデータソースでデータ階層化が実装されて�
 
 
 
-== データの中で最も特定されたデータ分類を確認する
+=== データの中で最も特定されたデータ分類を確認する
 
 _Classification_areaには、スキャンしたデータの中で最も識別されたとのlink:task-controlling-private-data.html#view-files-by-file-types["ファイルの種類"^]リストが表示されlink:task-controlling-private-data.html#view-files-by-categories["カテゴリ"^]ます。
-
-
-
-=== 最も特定された分類カテゴリを確認する
 
 カテゴリを使用すると、保有している情報の種類を表示して、データの状況を把握することができます。たとえば、「履歴書」や「従業員契約書」などのカテゴリには機密データを含めることができます。結果を調査すると、従業員の契約が安全でない場所に保存されていることがわかります。その後、その問題を修正できます。
 
 詳細については、を参照してください link:task-controlling-private-data.html#view-files-by-categories["カテゴリ別にファイルを表示します"^] 。
 
 .手順
-. BlueXP  classificationメニューから、* Governance *を選択します。
-. Governanceダッシュボード> Classificationセクション> Categoriesタイルで、カテゴリの詳細を表示するには、カテゴリを選択します。[Investigation]ページには、そのカテゴリだけでフィルタリングされたデータが表示されます。
-. すべてのカテゴリを表示するには、*すべて表示*を選択します。
+. BlueXPメニューで、* Governance > Classification *をクリックします。
+. Governance（ガバナンス）*をクリックし、* Data Discovery Assessment Report（データ検出評価レポート）*ボタンをクリックします。
 
 
-
-
-=== 最も特定されたファイルタイプを確認する
-
-ファイルタイプを確認すると、特定のファイルタイプが正しく保存されない可能性があるため、機密データを制御するのに役立ちます。
-
-詳細については、を参照してください link:task-controlling-private-data.html#view-files-by-file-types["ファイルタイプを表示しています"^] 。
-
-.手順
-. BlueXP  classificationメニューから、* Governance *を選択します。
-. Governanceダッシュボード> Classificationセクション> File Typesタイルで、ファイルタイプの詳細を表示するには、GovernanceダッシュボードのFile Typesセクションでファイルタイプを選択します。[Investigation]ページには、そのファイルタイプだけでフィルタリングされたデータが表示されます。
-. すべてのファイルタイプを表示するには、*すべて表示*を選択します。
-
+.結果
+BlueXPの分類によって.pdfレポートが生成されます。このレポートを確認して、必要に応じて他のグループに送信できます。

@@ -39,6 +39,8 @@ sidebar:
         url: "/task-test-linux-system.html"
     - title: データソースでスキャンをアクティブ化します
       entries:
+      - title: データソーススキャンの概要
+        url: "/task-scanning-overview.html"
       - title: Azure NetApp Files
         url: "/task-scanning-anf.html"
       - title: Amazon FSx for ONTAP
