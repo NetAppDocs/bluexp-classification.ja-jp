@@ -201,7 +201,7 @@ BlueXPの分類では、データ（ファイル）の収集とインデック�
 * *機密性の高い個人データ*: GDPRおよびその他のプライバシー規制で定義されている、健康データ、民族起源、政治的意見などの特別な種類の機密個人情報(SPII)。link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["機密性の高い個人データの詳細をご覧ください"^]です。
 * *カテゴリ*: BlueXP  分類は、スキャンしたデータをさまざまなカテゴリに分類します。カテゴリは、各ファイルのコンテンツとメタデータの AI 分析に基づくトピックです。link:task-controlling-private-data.html#view-files-by-categories["カテゴリの詳細については、こちらをご覧ください"^]です。
 * *types*: BlueXP  分類では、スキャンしたデータをファイルの種類別に分類します。link:task-controlling-private-data.html#view-files-by-file-types["タイプの詳細については、こちらをご覧ください"^]です。
-* *名前エンティティ認識*: BlueXP  分類は、AIを使用してドキュメントから人の自然な名前を抽出します。link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["データ主体のアクセスリクエストへの対応について説明します"^]です。
+* *名前エンティティ認識*: BlueXP  分類は、AIを使用してドキュメントから人の自然な名前を抽出します。link:task-generating-compliance-reports.html["データ主体のアクセスリクエストへの対応について説明します"^]です。
 
 
 
@@ -222,8 +222,4 @@ BlueXP  をSaaSモードで使用する場合、BlueXP  への接続はHTTPS�
 
 == BlueXP  分類でのユーザロール
 
-各ユーザに割り当てられたロールは、BlueXP  内およびBlueXP  分類内で異なる機能を提供します。詳細については、次を参照してください。
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["BlueXP  IAMロール"]（標準モードでBlueXP  を使用している場合）
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-user-roles.html["BlueXP  アカウントノロール"^]（制限モードまたはプライベートモードでBlueXP  を使用する場合）
-
+各ユーザに割り当てられたロールは、BlueXP  内およびBlueXP  分類内で異なる機能を提供します。詳細については、を参照して https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["BlueXP  IAMロール"]ください（標準モードでBlueXP  を使用する場合）。

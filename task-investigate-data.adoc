@@ -63,7 +63,7 @@ NOTE: [Data Investigation]ページでは、スキャンの最初の10,000件（
 | 機密性の高い個人データ | を選択します。 
 
 
-| データの件名 | データ主体のフルネームまたは既知の識別子を入力しますlink:task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports["データ主体の詳細については、こちらをご覧ください"^]です。 
+| データの件名 | データ主体のフルネームまたは既知の識別子を入力しますlink:task-generating-compliance-reports.html["データ主体の詳細については、こちらをご覧ください"^]です。 
 |===
 
 

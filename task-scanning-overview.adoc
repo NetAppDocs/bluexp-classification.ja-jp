@@ -55,7 +55,7 @@ BlueXP  分類では、次の2種類のスキャンを実行できます。
 | ファイルの経過時間とサイズ | はい | はい 
 
 
-| を実行する機能link:task-controlling-governance-data.html#data-mapping-report["データマッピングレポート"] | はい | はい 
+| を実行する機能link:task-controlling-governance-data.html["データマッピングレポート"] | はい | はい 
 
 
 | [ データ調査 ] ページでファイルの詳細を確認します | はい | いいえ 

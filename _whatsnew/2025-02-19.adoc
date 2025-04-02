@@ -20,7 +20,7 @@
 
 優先度は1回だけ付与されます。マッピングデータの自動再スキャンは、デフォルトの順序で実行されます。
 
-優先順位付けはに限定されlink:concept-cloud-compliance.md#whats-the-difference-between-mapping-and-classification-scans["マッピングのみのスキャン"]、マップスキャンおよび分類スキャンでは使用できません。
+優先順位付けはに限定されlink:concept-cloud-compliance.html["マッピングのみのスキャン"]、マップスキャンおよび分類スキャンでは使用できません。
 
 優先度を変更するには：
 
