@@ -155,13 +155,13 @@ image:screenshot-compliance-report-buttons.png["データマッピングレポ�
 .結果
 BlueXPの分類によって.pdfレポートが生成されます。このレポートを確認して、必要に応じて他のグループに送信できます。
 
-レポートが1MBを超える場合、.pdfファイルはBlueXP分類インスタンスに保持され、正確な場所に関するポップアップメッセージが表示されます。BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、.pdfファイルに直接移動できます。BlueXP分類をクラウドに導入したら、BlueXP分類インスタンスにSSHでアクセスして.pdfファイルをダウンロードする必要があります。link:task-audit-data-sense-actions.html#access-the-log-files["「分類インスタンスのデータにアクセスする方法」を参照してください"^]です。
+レポートが1MBを超える場合、.pdfファイルはBlueXP分類インスタンスに保持され、正確な場所に関するポップアップメッセージが表示されます。BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、.pdfファイルに直接移動できます。BlueXP分類をクラウドに導入したら、BlueXP分類インスタンスにSSHでアクセスして.pdfファイルをダウンロードする必要があります。
 
 
 
 === データの機密性別に表示される上位のデータリポジトリを確認する
 
-_Top Data Repositories by Sensitivity Level_領域には、最も機密性の高い項目を含む上位4つのデータリポジトリ（作業環境およびデータソース）が表示されます。各作業環境の棒グラフは、次のように分割されています。
+Data Mapping Overviewレポートの_Top Data Repositories by Sensitivity Level_領域には、最も機密性の高い項目を含む上位4つのデータリポジトリ（作業環境とデータソース）が表示されます。各作業環境の棒グラフは、次のように分割されています。
 
 * 機密性のないデータ
 * 個人データ
@@ -177,7 +177,7 @@ _Top Data Repositories by Sensitivity Level_領域には、最も機密性の高
 
 === 機密データと幅広い権限を確認
 
-_Sensitive DataおよびWide Permissions_領域には、機密データを含み、広い権限を持つファイルの割合が表示されます。このチャートには、次の種類の権限が表示されます。
+Data Mapping Overviewレポートの_Sensitive DataおよびWide Permissions_領域 には、機密データを含み、幅広い権限を持つファイルの割合が表示されます。このチャートには、次の種類の権限が表示されます。
 
 * ノスト制限的な権限から水平軸の最も許容的な制限まで。
 * 最も感度の低いデータから、最も機密性の高いデータまで、縦軸に表示されます。
@@ -192,7 +192,7 @@ _Sensitive DataおよびWide Permissions_領域には、機密データを含み
 
 === 開いている権限のタイプ別にリストされたデータを確認する
 
-_Open Permissions_ 領域には、スキャンされるすべてのファイルに存在する各タイプの権限の割合が表示されます。このチャートには、次の種類の権限が表示されます。
+Data Mapping Overviewレポートの_Open Permissions_領域には、スキャンされているすべてのファイルに存在する権限のタイプごとのパーセンテージが表示されます。このチャートには、次の種類の権限が表示されます。
 
 * オープンアクセス権がありません
 * 組織に開く（ Open to Organization ）
@@ -209,7 +209,7 @@ _Open Permissions_ 領域には、スキャンされるすべてのファイル�
 
 === データの経過時間とサイズを確認する
 
-_Age_and_Size_graph内の項目を調べて、削除または低コストのオブジェクトストレージに階層化する必要があるデータがないかどうかを確認できます。
+[Data Mapping Overview]レポートの_Age_and_Size_graph内の項目を調べて、削除または低コストのオブジェクトストレージに階層化する必要があるデータがないかどうかを確認できます。
 
 .手順
 . [Age of Data]グラフで、データの経過時間の詳細を表示するには、グラフ内のポイントにカーソルを合わせます。
@@ -228,11 +228,11 @@ NOTE: いずれかのデータソースでデータ階層化が実装されて�
 
 === データの中で最も特定されたデータ分類を確認する
 
-_Classification_areaには、スキャンしたデータの中で最も識別されたとのlink:task-controlling-private-data.html#view-files-by-file-types["ファイルの種類"^]リストが表示されlink:task-controlling-private-data.html#view-files-by-categories["カテゴリ"^]ます。
+Data Mapping Overviewレポートの_Classification_領域には、スキャンされたデータの中で最も識別されたとのlink:task-controlling-private-data.html["ファイルの種類"]リストが表示されlink:task-controlling-private-data.html["カテゴリ"]ます。
 
 カテゴリを使用すると、保有している情報の種類を表示して、データの状況を把握することができます。たとえば、「履歴書」や「従業員契約書」などのカテゴリには機密データを含めることができます。結果を調査すると、従業員の契約が安全でない場所に保存されていることがわかります。その後、その問題を修正できます。
 
-詳細については、を参照してください link:task-controlling-private-data.html#view-files-by-categories["カテゴリ別にファイルを表示します"^] 。
+詳細については、を参照してください link:task-controlling-private-data.html["カテゴリ別にファイルを表示します"] 。
 
 .手順
 . BlueXPメニューで、* Governance > Classification *をクリックします。

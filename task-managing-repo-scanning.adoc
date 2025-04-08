@@ -16,7 +16,7 @@ summary: BlueXPに分類された作業環境とデータソースのそれぞ�
 [role="lead"]
 それぞれの作業環境やデータソースでのデータのスキャン方法を管理できます。変更は「リポジトリ」ベースで行うことができます。つまり、スキャンするデータソースのタイプに応じて、ボリューム、スキーマ、ユーザなどを変更できます。
 
-変更できる点には、リポジトリがスキャンされるかどうか、およびBlueXP  分類でが実行されているかどうかがありますlink:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングスキャンまたはマッピング"]。また、ボリュームのスキャンを一定期間停止する必要がある場合などに、スキャンを一時停止して再開することもできます。
+変更できる点には、リポジトリがスキャンされるかどうか、およびBlueXP  分類でが実行されているかどうかがありますlink:concept-cloud-compliance.html["マッピングスキャンまたはマッピング"]。また、ボリュームのスキャンを一定期間停止する必要がある場合などに、スキャンを一時停止して再開することもできます。
 
 
 
@@ -37,17 +37,17 @@ BlueXPで分類されてスキャンされている個 々 のリポジトリ（
 
 
 .手順
-. [構成（Configuration）]タブで、作業環境の[*構成*（* Configuration *）]ボタンをクリックします。
+. BlueXP  分類メニューから*設定*を選択します。
 +
 image:screenshot_compliance_config_button.png["作業環境の設定ボタンをクリックする方法を示すスクリーンショット。"]
 
-. [Scan Configuration]ページでは、すべてのリポジトリのスキャン設定を表示できます。
+. [Configuration]タブで、作業環境の*[Configuration]*ボタンを選択します。
+. [Scan Configuration]ページで、すべてのリポジトリのスキャン設定を表示します。
 +
 image:screenshot_compliance_repo_scan_settings.png["バケットがスキャンされているかどうか、および現在のスキャンステータスを示すスクリーンショット。"]
 
+. [Mapping Status_]列のグラフにカーソルを合わせると、各リポジトリ（この例ではバケット）にマッピングまたは分類されたままであるファイルの数が表示されます。
 
-
-[Mapping Status_]列のグラフにカーソルを合わせると、各リポジトリ（この例ではバケット）にマッピングまたは分類されたままであるファイルの数を確認できます。
 
 
 
@@ -59,21 +59,25 @@ image:screenshot_compliance_repo_scan_settings.png["バケットがスキャン�
 TIP: データベースをマッピング専用スキャンに設定することはできません。データベーススキャンはオフまたはオンにできます。ここで、OnはMap & Classifyと同じです。
 
 .手順
-. [構成（Configuration）]タブで、作業環境の[*構成*（* Configuration *）]ボタンをクリックします。
+. BlueXP  分類メニューから*設定*を選択します。
+. [Configuration]タブで、作業環境の*[Configuration]*ボタンを選択します。
 +
 image:screenshot_compliance_config_button.png["作業環境の設定ボタンをクリックする方法を示すスクリーンショット。"]
 
-. [Scan Configuration]ページでは、任意のリポジトリ（この例ではバケット）を変更して、*Map*スキャンまたは*Map & Classify*スキャンを実行できます。
+. [Scan Configuration]ページで、任意のリポジトリ（この例ではバケット）を変更して、*Map*スキャンまたは*Map & Classify*スキャンを実行します。
 +
 image:screenshot_compliance_repo_scan_settings.png["バケットのスキャンのタイプを選択する方法を示すスクリーンショット。"]
 
-
-
++
 特定の作業環境では、ページ上部のボタンバーを使用して、すべてのリポジトリのスキャンタイプをグローバルに変更できます。これは、ONTAP システム用のCloud Volumes ONTAP 、オンプレミスONTAP 、Azure NetApp Files 、およびAmazon FSXに有効です。
 
++
 次の例は、Azure NetApp Files システムのボタンバーを示しています。
 
++
 image:screenshot_compliance_repo_scan_all.png["作業環境内のすべてのボリュームに同じスキャン設定を行う方法を示すスクリーンショット。"]
+
+
 
 
 
@@ -82,13 +86,14 @@ image:screenshot_compliance_repo_scan_all.png["作業環境内のすべてのボ
 リポジトリ（ボリュームなど）のコンプライアンスを監視する必要がなくなった場合は、リポジトリのスキャンを停止できます。これを行うには、スキャンを「オフ」にします。スキャンをオフにすると、そのボリュームに関するすべてのインデックスと情報がシステムから削除され、データをスキャンするための課金が停止します。
 
 .手順
-. [構成（Configuration）]タブで、作業環境の[*構成*（* Configuration *）]ボタンをクリックします。
+. BlueXP  分類メニューから*設定*を選択します。
+. [Configuration]タブで、作業環境の*[Configuration]*ボタンを選択します。
 +
 image:screenshot_compliance_config_button.png["作業環境の設定ボタンをクリックする方法を示すスクリーンショット。"]
 
 . 特定のバケットのスキャンを停止するには、[Scan Configuration]ページで*[Off]*を選択します。
 +
-image:screenshot_compliance_stop_repo_scanning.png["バケットのスキャンのタイプを選択する方法を示すスクリーンショット。"]
+image:screenshot_compliance_repo_scan_settings.png["バケットのスキャンのタイプを選択する方法を示すスクリーンショット。"]
 
 
 
@@ -101,18 +106,11 @@ image:screenshot_compliance_stop_repo_scanning.png["バケットのスキャン�
 スキャンはいつでも再開できます。
 
 .手順
-. [構成（Configuration）]タブで、作業環境の[*構成*（* Configuration *）]ボタンをクリックします。
+. BlueXP  分類メニューから*設定*を選択します。
+. [Configuration]タブで、作業環境の*[Configuration]*ボタンを選択します。
 +
 image:screenshot_compliance_config_button.png["作業環境の設定ボタンをクリックする方法を示すスクリーンショット。"]
 
-. スキャン設定ページで、一時停止ボタンをクリックしてボリュームのスキャンを一時停止するか、再開ボタンを押して以前に一時停止したボリュームのスキャンを再開します。
-+
-image:screenshot_compliance_repo_pause_resume.png["ボリューム上でスキャンを一時停止および再開する方法を示すスクリーンショット。"]
-
-+
-一部のデータソースでは、SharePointサイトで以下に示すように、メニューに[一時停止]および[再開]機能が用意されています。
-
-+
-image:screenshot_compliance_repo_pause_resume2.png["SharePointサイトでスキャンを一時停止および再開する方法を示すスクリーンショット。"]
-
+. [Scan Configuration]ページで、[Actions]アイコンを選択しimage:button-actions-horizontal.png["アクションアイコン"]ます。
+. ボリュームのスキャンを一時停止する場合は*[一時停止]*を選択し、以前一時停止していたボリュームのスキャンを再開する場合は*[再開]*を選択します。
 

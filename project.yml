@@ -70,7 +70,7 @@ sidebar:
     - title: データにポリシーを割り当てます
       url: "/task-using-policies.html"
     - title: スキャン設定を変更します
-      url: task-managing-repo-scanning.html
+      url: "/task-managing-repo-scanning.html"
     - title: コンプライアンスレポートを生成します
       url: "/task-generating-compliance-reports.html"
   - title: BlueXPの分類を管理します

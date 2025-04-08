@@ -45,10 +45,11 @@ BlueXPの分類[Compliance]ダッシュボードの内容をフィルタリン�
 ダッシュボードをフィルタすると、BlueXPの分類によって、選択した作業環境のみに準拠データとレポートの範囲が限定されます。
 
 .手順
-. フィルタドロップダウンを選択し、作業環境を選択します。
+. BlueXP  分類メニューから、「*コンプライアンス*」を選択します。
+. [Working Environments]フィルタドロップダウンを選択し、[Working Environments]を選択します。
 . [表示]*を選択します。
 +
-image:screenshot_cloud_compliance_filter.gif["実行するレポートの作業環境を選択するスクリーンショット。"]
+image:screenshot_cloud_compliance_filter.png["実行するレポートの作業環境を選択するスクリーンショット。"]
 
 
 
@@ -77,8 +78,8 @@ NOTE: 現時点では、データベース内でのデータの件名検索は�
 NOTE: データ主体の名前を検索する際には、英語、ドイツ語、日本語、スペイン語がサポートされています。言語のサポートは、あとで追加されます。
 
 .手順
-. BlueXP  メニューから、* Governance > Classification *を選択します。
-. [データサブジェクト]*を選択します。
+. BlueXP  分類メニューから、「*コンプライアンス*」を選択します。
+. [Compliance]ページでスクロールダウンし、*[Data Subjects]*を選択します。
 . データ主体のフルネームまたは既知の識別子を検索します
 +
 次の例では、 name _John doe_: を検索しています。
@@ -125,8 +126,9 @@ Health Insurance Portability and Accountability Act （ HIPAA ：医療保険の
 コンプライアンスタブに移動してレポートを生成します。
 
 .手順
-. BlueXP  メニューから、* Governance > Classification *を選択します。
-. * Compliance *を選択し、* Reports *の* HIPAA Report *の横にあるダウンロードアイコンを選択します。
+. BlueXP  分類メニューから、「*コンプライアンス*」を選択します。
+. 下にスクロールして、* Reports *ペインを探します。
+. * HIPAA Report *の横にあるダウンロードアイコンを選択します。
 +
 image:screenshot_hipaa.gif["HIPAAをクリックできるReportsペインを示すBlueXPのComplianceタブのスクリーンショット。"]
 
@@ -155,8 +157,9 @@ Payment Card Industry Data Security Standard （ PCI DSS ） Report は、クレ
 コンプライアンスタブに移動してレポートを生成します。
 
 .手順
-. BlueXP  メニューから、* Governance > Classification *を選択します。
-. * Compliance *を選択し、* Reports *の* PCI DSS Report *の横にあるダウンロードアイコンを選択します。
+. BlueXP  分類メニューから、「*コンプライアンス*」を選択します。
+. 下にスクロールして、* Reports *ペインを探します。
+. [PCI DSS Report]*の横にあるダウンロードアイコンを選択します。
 +
 image:screenshot_pci_dss.gif["BlueXPの[遵守]タブのスクリーンショット。[レポート]ペインに、[プライバシーリスクアセスメント]をクリックできることが示されています。"]
 
@@ -183,8 +186,9 @@ BlueXPの分類によってPDFレポートが生成されます。このレポ�
 コンプライアンスタブに移動してレポートを生成します。
 
 .手順
-. BlueXP  メニューから、* Governance > Classification *を選択します。
-. * Compliance *を選択し、* Reports *の* Privacy Risk Assessment *の横にあるダウンロードアイコンを選択します。
+. BlueXP  分類メニューから、「*コンプライアンス*」を選択します。
+. 下にスクロールして、* Reports *ペインを探します。
+. プライバシーリスク評価*の横にあるダウンロードアイコンを選択します。
 +
 image:screenshot_privacy_risk_assessment.gif["BlueXPの[遵守]タブのスクリーンショット。[レポート]ペインに、[プライバシーリスクアセスメント]をクリックできることが示されています。"]
 
