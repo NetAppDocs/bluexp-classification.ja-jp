@@ -1588,25 +1588,16 @@
   <block id="615e6d6aa74682391d600dc61fe1090c" category="inline-xref">データ調査レポートの詳細については、こちらをご覧ください</block>
   <block id="d3720958611294d50237fe72870e0c02" category="inline-image-macro">調査ページで結果を絞り込むときに使用できるフィルタのスクリーンショット。</block>
   <block id="3fd10935177bff66373986bc384c0307" category="paragraph"><block ref="3fd10935177bff66373986bc384c0307" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="31d2b3f1b10e9877e365a14d5f9212e4" category="list-text">トップレベルのタブでは、ファイル（非構造化データ）、ディレクトリ（フォルダおよびファイル共有）、またはデータベース（構造化データ）のデータを表示できます。</block>
-  <block id="2decf56c6b11817a8a3b1d8d3feeba96" category="list-text">各列の上部にあるコントロールを使用して、結果を数値またはアルファベット順に並べ替えることができます。</block>
-  <block id="d5b86a40c04ed9239e06725e520aff4c" category="list-text">左側のペインフィルタを使用すると、以降のセクションで説明する属性を選択して、結果を絞り込むことができます。</block>
-  <block id="c4b676d6d1ca1e1490e2a24787adad27" category="section-title">感度と内容でデータをフィルタリングします</block>
   <block id="1be522c5c4e210c9a7f92f7f83637d7e" category="paragraph">データに含まれている機密情報の量を表示するには、次のフィルタを使用します。</block>
   <block id="dad25b649a281b9705d7fbdfc91bb96c" category="inline-link-macro">カテゴリのタイプ</block>
-  <block id="01c40954af185b794e35d719875d3a7a" category="cell">を選択します。</block>
   <block id="86171ac828a961155f1ccf4dfa1eb93f" category="cell">感度レベル</block>
   <block id="cc8f113115a15a733dabb8452c0006ca" category="cell">感度レベルを選択します。個人レベル、個人レベル、または非機密レベルを選択します。</block>
-  <block id="224bbd10a45d7fdcbbb8075666b6c93a" category="cell">検出された機密識別子のファイルごとの範囲を選択します。個人データと機密性の高い個人データが含まれます。ディレクトリでフィルタリングする場合、BlueXPの分類では、各フォルダ（およびサブフォルダ）内のすべてのファイルに一致するものが合計されます。注: 2023年12月(バージョン1.26.6)リリースでは、ディレクトリごとの個人識別情報(PII)データの数を計算するオプションが削除されました。</block>
   <block id="d0902d27bce16ddeb2cb9c788db8ddcd" category="cell">個人データ</block>
   <block id="7a3dcbf3ed229470d34578d4f4f6fc43" category="inline-link-macro">個人データの種類</block>
-  <block id="858f7504093c180b7179d29d8e1200d9" category="cell">を選択します。</block>
   <block id="7c65cc06bc9ebcd449c8956bcf440d87" category="cell">機密性の高い個人データ</block>
   <block id="22d9005388d9e535daefed3f2e693f8c" category="inline-link-macro">機密性の高い個人データのタイプ</block>
-  <block id="efbc704c741274e96fb34f9918eea9bc" category="cell">を選択します。</block>
   <block id="6e264db6b651951b08b9d4e4d7a39d66" category="cell">データの件名</block>
   <block id="ae4d468f55febeccb4eff973d9b635ff" category="inline-link-macro">データ主体の詳細については、こちらをご覧ください</block>
-  <block id="987fbe649715077616c7db868bf36786" category="section-title">ユーザの所有者とユーザの権限でデータをフィルタリングします</block>
   <block id="67d3d4113dc052ac6827e9faba9e9a7b" category="paragraph">次のフィルタを使用して、ファイルの所有者とデータにアクセスするための権限を表示します。</block>
   <block id="ce7a0235b268c4eaa207fb036462b6a0" category="cell">[ アクセス許可 ] を開きます</block>
   <block id="a33f1b61e65aad9cca86d3578cf3028a" category="cell">データ内およびフォルダ/共有内の権限のタイプを選択します。</block>
@@ -1615,7 +1606,6 @@
   <block id="7593aaae27016a1a6e673834742f688c" category="cell">ファイルの所有者</block>
   <block id="ff149397e3b0b14099015d624d39c42d" category="cell">ファイル所有者名を入力します。</block>
   <block id="0ffaed104783fa77dca7b463b63d6a3d" category="cell">1つまたは複数のカテゴリ範囲を選択して、特定の数のユーザーに対してどのファイルおよびフォルダが開かれているかを表示します。</block>
-  <block id="dbe1efde4ceae1caa66442472d4dd3d0" category="section-title">時間でデータをフィルタリングします</block>
   <block id="8999d4891e9704c8ef8ab57f28c53a69" category="paragraph">次のフィルタを使用して、条件に基づいてデータを表示します。</block>
   <block id="171f0707519d57cefcbb271e1ecffd3c" category="cell">作成時刻</block>
   <block id="9b5e1fda139121eaa435619d67e14fd7" category="cell">ファイルを作成したときの期間を選択します。カスタムの期間を指定して、検索結果をさらに絞り込むこともできます。</block>
@@ -1625,8 +1615,6 @@
   <block id="55e421a96ef89113e0aa27aebfaa73aa" category="cell">ファイルが最後に変更された時間範囲を選択します。カスタムの期間を指定して、検索結果をさらに絞り込むこともできます。</block>
   <block id="a9f801b2760a798eee18ba63dccf3ba6" category="cell">最終アクセス日時</block>
   <block id="ed50439b6d76225c4473b3e79754891d" category="paragraph">ファイルまたはディレクトリ（CIFSまたはNFSのみ）が最後にアクセスされた時間範囲を選択します。カスタムの期間を指定して、検索結果をさらに絞り込むこともできます。BlueXP分類でスキャンされるファイルの種類については、BlueXP分類でファイルがスキャンされるのはこれが最後です。</block>
-  <block id="c3e061f64826624fb21952c760e39065" category="paragraph">BlueXPの分類では、SharePoint Online、SharePointオンプレミス（SharePoint Server）、OneDrive、Google Drive、Amazon S3の各データソースから「最終アクセス時刻」は抽出されません。</block>
-  <block id="0a1a0230a16dc669f221a6646040ec73" category="section-title">メタデータでデータをフィルタリングします</block>
   <block id="f20fdaad431988cc576541dc5f1e5aa1" category="paragraph">次のフィルタを使用して、場所、サイズ、およびディレクトリまたはファイルタイプに基づいてデータを表示します。</block>
   <block id="5da9dcd1cb9325e60a8744a544371fd3" category="cell">ファイルパス</block>
   <block id="38047badba2a7d1889fc338e16f28ba7" category="cell">クエリに含めるか除外するパスの一部または全部を20個まで入力します。対象パスと除外パスの両方を入力すると、対象パス内のすべてのファイルが最初に検出され、除外パスからファイルが削除されて結果が表示されます。このフィルタで「*」を使用しても効果はなく、特定のフォルダをスキャンから除外することはできません。設定された共有の下にあるすべてのディレクトリとファイルがスキャンされます。</block>
@@ -1634,12 +1622,10 @@
   <block id="6dd0ccfe2edc5e0affb1f92d200d803f" category="cell">ディレクトリタイプとして「共有」または「フォルダ」を選択します。</block>
   <block id="e539fd665e202f536325140d87d7bf72" category="cell">ファイルタイプ</block>
   <block id="928f61e49cd944376fa6750b67a9050e" category="inline-link-macro">ファイルのタイプ</block>
-  <block id="af1d33c2d159e6129aa8d5cec06d9e66" category="cell">を選択します。</block>
   <block id="a00fe904aecabd4bff74d8776e6da2c5" category="cell">ファイルサイズ</block>
   <block id="7e1e60231552d76c5626d3b5ad9519d3" category="cell">ファイルサイズの範囲を選択します。</block>
   <block id="116279f96a5a5a07b36a9ed5e3b30ae8" category="cell">ファイル・ハッシュ</block>
   <block id="6c19be59705b1afb4e5b6315b9a0d84e" category="cell">ファイルのハッシュを入力し、名前が異なる場合でも特定のファイルを検索します。</block>
-  <block id="0cfb1731e1c39d3c830bd61d60a23ce9" category="section-title">ストレージタイプでデータをフィルタリングします</block>
   <block id="f0eecb698de174ba50c884e569ff3bf3" category="paragraph">ストレージタイプ別にデータを表示するには、次のフィルタを使用します。</block>
   <block id="d9104233b7c0bd37d4c7d710debdd552" category="cell">作業環境タイプ（ Working Environment Type ）</block>
   <block id="78ed85a2b36b215d69761df3caf130df" category="cell">作業環境のタイプを選択します。OneDrive、SharePoint、Google Driveは、[アプリ]に分類されます。</block>
@@ -1647,17 +1633,13 @@
   <block id="c670f11fe2007eb5c3be88dd2f27af16" category="cell">特定の作業環境を選択します。</block>
   <block id="5da8b466834d55ddcdf18f51655016b9" category="cell">ストレージリポジトリ</block>
   <block id="5bf1893d83226372ff2fad4fcb1c9ae2" category="cell">ボリュームやスキーマなどのストレージリポジトリを選択します。</block>
-  <block id="216fb8584b339721b139cb0692689dde" category="section-title">ポリシーでデータをフィルタリング</block>
   <block id="19797a891bd45c541e59f0948f6e102b" category="paragraph">ポリシー別にデータを表示するには、次のフィルタを使用します。</block>
-  <block id="158e99247d19480d767e25e00d129553" category="section-title">分析ステータスでデータをフィルタリングします</block>
   <block id="2cc5511704a792153e3bfc286f24901a" category="paragraph">次のフィルタを使用して、BlueXPの分類スキャンステータス別にデータを表示します。</block>
   <block id="d55969f99169fb1ccecedd45e530342d" category="cell">解析ステータス（Analysis Status）</block>
   <block id="133617814b053dc465cdc57c432b1756" category="cell">オプションを選択して、[最初のスキャン保留中]、[スキャン完了]、[再スキャン保留中]、または[スキャンに失敗しました]のファイルのリストを表示します。</block>
   <block id="42942f3489af451c9c0c8a2e6cc0b756" category="cell">スキャン分析イベント</block>
   <block id="7d1696fb9cd67d3f50bae50111c3ca63" category="cell">BlueXPの分類で最終アクセス時刻を復元できなかったために分類されなかったファイルを表示するか、BlueXPの分類で最終アクセス時刻を復元できなかったにもかかわらず分類されたファイルを表示するかを選択します。</block>
   <block id="0f609c3035a725a4b4c05c34c154b6a8" category="inline-link-macro">「最終アクセス時刻」のタイムスタンプの詳細を参照してください</block>
-  <block id="cdbe480dc11409647fd956762112b463" category="paragraph"><block ref="cb955744923a641be9b94cbcd31ea046" category="inline-link-macro-rx"></block>スキャン分析イベントを使用してフィルタリングするときに[Investigation]ページに表示される項目の詳細については、を参照してください。</block>
-  <block id="21ed6b8b65a14c2b031742eda9665bec" category="section-title">重複でデータをフィルタリングします</block>
   <block id="9c7541a95b9333c21b847910917cc789" category="paragraph">ストレージ内で複製されているファイルを表示するには、次のフィルタを使用します。</block>
   <block id="936baf22f04cffa654fef2a2806e8fcd" category="cell">リポジトリ内でファイルを複製するかどうかを選択します。</block>
   <block id="d9ff86959e1f6d2016c4db58114184ab" category="section-title">ファイルメタデータの表示</block>
@@ -1665,25 +1647,17 @@
   <block id="04a8c17bf0b1e2cd69db6fba82b59dc0" category="inline-image-macro">[ データ調査 ] ページのファイルのメタデータの詳細を示すスクリーンショット。</block>
   <block id="c545ce144b1f4d763f30d9b729c1590c" category="paragraph"><block ref="c545ce144b1f4d763f30d9b729c1590c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="aa4ba8b621d22449a2723e4175ff5c9d" category="inline-link-macro">ポリシーを作成します</block>
-  <block id="d2b1e6329082b8cf29999896b3d3d744" category="paragraph">メタデータには、ファイルが配置されている作業環境とボリュームだけでなく、ファイル権限、ファイル所有者、このファイルの重複の有無など、さらに多くの情報が表示されます。この情報は、データのフィルタリングに使用できるすべての情報を表示できるため、計画している場合に役立ち<block ref="8c7af7ec06ac1cea6800f7cd16a5f7c0" category="inline-link-macro-rx"></block>ます。</block>
-  <block id="9538e6335cc9662b264dd0870f2ca091" category="paragraph">すべてのデータソースについて、すべての情報が表示されるわけではなく、そのデータソースに適した情報だけが表示されることに注意してください。たとえば、ボリューム名と権限はデータベースファイルには関係ありません。</block>
-  <block id="fffb468d89636ef35919bda57df8f0bc" category="section-title">ファイルおよびディレクトリの権限を表示する</block>
   <block id="70762168244eed6d4b30ab53961acada" category="inline-link-macro">詳細については、「方法」を参照してください</block>
   <block id="50cdf86b563a0d781f053c4a23d816c2" category="paragraph">ユーザ名とグループ名の代わりにSID（セキュリティ識別子）が表示される場合は、Active DirectoryをBlueXPに統合する必要があります。<block ref="a543108cc451095d486457d9ff215fd0" category="inline-link-macro-rx"></block>です。</block>
   <block id="47b3f14316e807b37aaa42895464d283" category="inline-image-macro">詳細なファイル権限を示すスクリーンショット。</block>
   <block id="33b3bef30743bda1b0909a4417b45583" category="paragraph"><block ref="33b3bef30743bda1b0909a4417b45583" category="inline-image-macro-rx" type="image"></block></block>
   <block id="33f1c68834e7b02c4c8b3b9dc4f796d3" category="section-title">ストレージシステム内の重複ファイルのチェック</block>
   <block id="5180c6809f41234a64af29e1a7ad708c" category="paragraph">重複ファイルがストレージシステムに保存されているかどうかを確認できます。これは、ストレージスペースを節約できる領域を特定する場合に便利です。また、特定の権限や機密情報を持つファイルが、ストレージシステム内で不必要に重複しないようにすることもできます。</block>
-  <block id="bfd42c156b2ca871cd12ee8e72e55e95" category="paragraph">1MB以上で、個人情報または機密情報を含むすべてのファイル（データベースを除く）が比較され、重複がないかどうかが確認されます。[Investigation]ページフィルタの[File Size]と[Duplicates]を使用して、環境内で特定のサイズ範囲のどのファイルが重複しているかを確認できます。</block>
   <block id="bcd3dc09170e331762d1f098247c3974" category="paragraph">BlueXPの分類では、ハッシュテクノロジを使用して重複ファイルが特定されます。ハッシュコードが別のファイルと同じファイルがある場合、ファイル名が異なる場合でも、ファイルが完全に重複していることを 100% 確認できます。</block>
   <block id="fc9033d933e9132cc23bfe396744d214" category="inline-link-macro">ファイルを削除します</block>
-  <block id="e6bbcb2826ce1a4f58fd341c4f5ae5f3" category="paragraph">重複ファイルのリストをダウンロードし、ストレージ管理者に送信して、削除可能なファイルをユーザが判別できるようにします。または、ファイルの特定のバージョンが必要ないと確信している場合は、自分で行うことができます<block ref="53c8cd880d15e2953a8e763d6f4dff0c" category="inline-link-macro-rx"></block>。</block>
-  <block id="5b00edf3a5903017b22e268ae58998c0" category="paragraph">スキャンする作業環境およびデータソースで複製されているすべてのファイルのリストが必要な場合は、 [ データの調査 ] ページで、 [ 重複 ] &gt; [ 重複しているもの ] というフィルタを使用できます。</block>
-  <block id="285a3049428c6b155fde44a18621f551" category="paragraph">複製されたすべてのファイルが結果ページに表示されます。</block>
   <block id="68309bcfd455803ffbae49714037b789" category="inline-image-macro">重複するファイルが配置されている場所を確認する方法を示すスクリーンショット。</block>
   <block id="0dc6d718adece3621c4a40fa3b4b2a82" category="paragraph"><block ref="0dc6d718adece3621c4a40fa3b4b2a82" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">このページで指定されている「ファイルハッシュ」値を使用して、 ［ 調査 ］ ページに直接入力すると、特定の重複ファイルをいつでも検索できます。また、ポリシーで使用することもできます。</block>
-  <block id="b783177554ae1d03f46ea830d39a7822" category="section-title">データ調査レポート</block>
   <block id="02b8107c002e6577adbfdfd6d6f1b208" category="inline-image-macro">調査レポートのダウンロードページのスクリーンショット。複数のオプションがあります。</block>
   <block id="c7fa83e1836cada62d287dfbba3779c2" category="paragraph">レポートをダウンロード中であることを示すメッセージがダイアログに表示されます。</block>
   <block id="6dc6bf0d1023a1b5714c777b474cce12" category="paragraph">非構造化ファイルデータレポート*には、ファイルに関する次の情報が含まれています。</block>
@@ -3005,8 +2979,6 @@
   <block id="e7b42111154b9b878df538017c7943a0" category="inline-link">組織に保存されているデータの調査</block>
   <block id="e771ad044e30754f4af0addbc217531d" category="paragraph">データ調査とレポートの詳細については、を参照してください<block ref="5490a248bca38f18b55b559976dbad47" category="inline-link-rx"></block>。</block>
   <block id="251452e49ab5b88b5d8545e58cd46509" category="admonition">追加の国家ID番号や医療IDなど、他のプライベートデータタイプを識別するためにBlueXP  分類が必要な場合は、アカウントマネージャにお問い合わせください。</block>
-  <block id="2a09f412ecce26a24c17d782c064aa73" category="paragraph">[データ調査]ページで詳細を表示すると、組織のデータを調査できます。このページには、ガバナンスダッシュボードやコンプライアンスダッシュボードなど、BlueXPの分類UIのさまざまな領域から移動できます。データをCSVファイルまたはJSONファイルにエクスポートして、さらに分析したり、他のユーザーと共有したりすることができます。</block>
-  <block id="b995ac679338c896401b451552e5d419" category="paragraph">*重複ファイルをすべて表示*</block>
   <block id="ee27fa3e6dfe09f89a9d57742c167aa9" category="paragraph">*特定のファイルが重複している場合に表示*</block>
   <block id="47b72e580332bb9da872607466b406bc" category="paragraph">レポートは.csvファイルまたは.jsonファイルとして使用でき、ローカルマシンに保存できます。</block>
   <block id="f257e5460f3ab87ec47290dc11518fc8" category="paragraph">*データ調査レポートの内容*</block>
@@ -3118,16 +3090,10 @@
   <block id="04bcd6818aecd8c0fe46b7d49aa8b39a" category="paragraph">BlueXPの分類で、有効にしたデータベーススキーマのスキャンが開始されます。最初のスキャンの進行状況を追跡するには、[**構成*]メニューに移動し、[**作業環境構成*]を選択します。各スキャンの進行状況が進行状況バーとして表示されます。進行状況バーにカーソルを合わせると、ボリューム内の合計ファイル数を基準にスキャンされたファイル数を確認することもできます。エラーが発生した場合は、エラーを修正するために必要なアクションとともに、 [ ステータス ] 列に表示されます。</block>
   <block id="ed8331881c930d67b63a6ed99c045b28" category="paragraph">BlueXPの分類で、有効にしたバケットのスキャンが開始されます。最初のスキャンの進行状況を追跡するには、[**構成*]メニューに移動し、[**作業環境構成*]を選択します。各スキャンの進行状況が進行状況バーとして表示されます。進行状況バーにカーソルを合わせると、ボリューム内の合計ファイル数を基準にスキャンされたファイル数を確認することもできます。エラーが発生した場合は、エラーを修正するために必要なアクションとともに、 [ ステータス ] 列に表示されます。</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025年3月10日</block>
-  <block id="b7daace328e6741286f27d2ac5e2f47a" category="paragraph">ページの内容をリファインした後にレポートとしてダウンロードする場合は、ボタンを選択し<block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block>ます。<block ref="99402c37b738da126a6c16dce45a83da" category="inline-xref-macro-rx"></block>です。</block>
   <block id="126d0a183cd7ef5a42d98232cfc78c9e" category="admonition">[Data Investigation]ページでは、スキャンの最初の10,000件（500ページ）の結果のみを表示できます。</block>
-  <block id="d70c15611bfee94500d72ff7b26a3246" category="paragraph">[Data Investigation results]ペインで、ファイルのメタデータを表示する単一のファイルのダウンキャレットボタンを選択し<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>ます。</block>
   <block id="9fb67493aa2d989d001de2e7c4462b4e" category="paragraph">ファイルまたはディレクトリへのアクセス権を持つすべてのユーザまたはグループのリストと、それらの権限のタイプを表示するには、*[すべての権限を表示]*を選択します。このボタンは、CIFS共有のデータに対してのみ使用できます。</block>
   <block id="65e8d4fae364cb5c5e1a2304c301a6ad" category="paragraph">任意のグループの下キャレットボタンを選択する<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>と、そのグループに属するユーザのリストが表示されます。</block>
-  <block id="21f378c3412ff535e51a7de907a17ad8" category="paragraph">ユーザまたはグループの名前を選択すると、[Investigation]ページが更新され、そのユーザまたはグループがアクセスできるすべてのファイルとディレクトリが表示されます。</block>
-  <block id="b646744a4cb3933c62e69361ab1b0fb9" category="paragraph">1つのファイルに重複があるかどうかを確認するには、[Data Investigation Results]ペインで、ファイルのメタデータを表示する単一のファイルのを選択します<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>。特定のファイルが重複している場合、この情報は _Duplicats_field の横に表示されます。</block>
-  <block id="6085b17a40397d5797aee31606263dda" category="paragraph">重複ファイルのリストとその場所を表示するには、*詳細を表示*を選択します。次のページで、[View Duplicates]を選択して、[Investigation]ページにファイルを表示します。</block>
   <block id="9dbaf2723509754918929e09594f8800" category="list-text">[Data Investigation]ページで、ページの右上にあるボタンを選択します<block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block>。</block>
-  <block id="c290efd7814d022961f943c1af408a6f" category="list-text">レポートタイプ（CSVまたはJSON）を選択し、**レポート名**を指定します。**作業環境**および**ボリューム**を選択し、**宛先フォルダパス**を指定します。</block>
   <block id="8c574751ceb947fcd2a71198a9109d98" category="list-text">[**Download Report]**を選択します。</block>
   <block id="ac388a00980404a1045abf70041973da" category="doc">BlueXP  分類でデータソースから収集されるメタデータ</block>
   <block id="ded3f24219262642ca838641453e4d1b" category="doc">BlueXP  分類でサポートされるデータベース機能とサポートされないデータベース機能</block>
@@ -3222,7 +3188,6 @@
   <block id="07e08dea25bfa1156af7557f74e53774" category="paragraph">マッピングのみのスキャンではコールドデータは加熱されず、コールドデータはオブジェクトストレージに残ります。一方、Map &amp; Classifyスキャンを実行すると、一部の構成でコールドデータが加熱される可能性があります。</block>
   <block id="1908b16f68b0cb8d9e1d9c407168a2b9" category="paragraph">BlueXPの分類は、コネクタが政府機関のリージョン（AWS GovCloud、Azure Gov、Azure DoD）（「制限モード」とも呼ばれます）に導入されている場合にサポートされます。</block>
   <block id="a84227330ab0b4642315d9a874aace3b" category="list-text">*データマッピングスキャン（マッピングのみスキャン）*：BlueXP  分類はメタデータのみをスキャンします。これは、全体的なデータ管理とガバナンス、プロジェクトの迅速な範囲設定、非常に大規模な環境、優先順位付けに役立ちます。データマッピングはメタデータに基づいており、*高速*スキャンとみなされます。</block>
-  <block id="f9eaf41b503c7b3eb24b8b8e481a6bfc" category="list-text">*データ分類（ディープ）スキャン（マップおよび分類スキャン）*：環境全体で標準プロトコルと読み取り専用権限を使用して、BlueXP  分類スキャンを実行します。一部のファイルは、ビジネスに関連する機密データ、プライベート情報、ランサムウェアに関連する問題の有無をチェックして開きます。</block>
   <block id="2ec8b134bb6f73f9323b67682c3f3696" category="paragraph">BlueXPの分類では、ファイル名、権限、作成日時、最終アクセス、最終変更日時などのメタデータがキャプチャされます。これには、[Data Investigatcdion Details]ページおよび[Data Investigation Reports]に表示されるすべてのメタデータが含まれます。</block>
   <block id="bc689be7b5780fe5de6454939079a821" category="paragraph">BlueXP  の分類は、個人情報(PII)や機密個人情報(SPII)など、多くの種類の個人データを識別することができます。プライベートデータの詳細については、を参照してください<block ref="56427cf32f2481dc2470f5e57414e198" category="inline-link-rx"></block>。</block>
   <block id="bbb4fed25c4c7e3a56537ad9198aa68c" category="paragraph">また、特定のユーザーがBlueXP  分類設定を管理する機能を持たずにBlueXP  分類スキャン結果のみを表示できるようにする場合は、それらのユーザーに*分類ビューア*ロール（標準モードでBlueXP  を使用している場合）または*コンプライアンスビューア*ロール（制限モードでBlueXP  を使用している場合）を割り当てることができます。<block ref="90248cd9043c9e38adbcda32b8273783" category="inline-link-macro-rx"></block>です。</block>
@@ -3335,7 +3300,6 @@
   <block id="c00e1d18d877d030ee92aec3422b1aeb" category="paragraph">優先順位付けはに限定され<block ref="377ae34afcc76614c5602798befc8a4b" category="inline-link-macro-rx"></block>、マップスキャンおよび分類スキャンでは使用できません。</block>
   <block id="fc9679220132eb8e0f499680bbe8909a" category="list-text">*名前エンティティ認識*: BlueXP  分類は、AIを使用してドキュメントから人の自然な名前を抽出します。<block ref="8e814e02dddb19e3bb4166c15fc34470" category="inline-link-macro-rx"></block>です。</block>
   <block id="e888dadabb0f55fe5c317b3b6754087e" category="paragraph">各ユーザに割り当てられたロールは、BlueXP  内およびBlueXP  分類内で異なる機能を提供します。詳細については、を参照して<block ref="9e5b18f30859b96d93203df427b4bd3d" category="inline-link-rx"></block>ください（標準モードでBlueXP  を使用する場合）。</block>
-  <block id="d4b632c51605e0651196fc5f65069cfa" category="cell">データ主体のフルネームまたは既知の識別子を入力します<block ref="71815f3f7b8d4b4b725578d3162c5d1a" category="inline-link-macro-rx"></block>です。</block>
   <block id="6f0ff027a4b5c5cccc90c166290d3013" category="cell">を実行する機能<block ref="c2177dc55e01ee229f523014b3bacb31" category="inline-link-macro-rx"></block></block>
   <block id="a7e6da043e68990d1e9627e5da9319c2" category="paragraph">詳細については、を参照してください <block ref="8df90f52b87f57dd64f76114b6c4e6a8" category="inline-link-macro-rx"></block>。</block>
   <block id="3d0a52f701c42fc59411425fdc2a4746" category="paragraph">データ主体アクセス要求（DSAR）に応答して、被験者の名前を検索する際に日本語名を入力できるようになりました。結果の情報を使用してを生成できます<block ref="413db830e9f14a03bda795e0ca85886f" category="inline-link-rx"></block>。に日本語の名前を入力して、サブジェクトの名前を含むファイルを識別することもできます<block ref="dc85c6bd448621c7d3e7987af7ac2483" category="inline-link-rx"></block>。</block>
@@ -3403,4 +3367,62 @@
   <block id="c708db8afe21d20708d3b9f9c1103713" category="list-text">[Scan Configuration]ページで、任意のリポジトリ（この例ではバケット）を変更して、*Map*スキャンまたは*Map &amp; Classify*スキャンを実行します。</block>
   <block id="ceb02fa059b59b1ab250e24b23e83492" category="list-text">[Scan Configuration]ページで、[Actions]アイコンを選択し<block ref="9599256bd913e17dd34fce684015b2f9" category="inline-image-macro-rx" type="image"></block>ます。</block>
   <block id="d7530ec47cb0f60bf26bff38cfcd4f1f" category="list-text">ボリュームのスキャンを一時停止する場合は*[一時停止]*を選択し、以前一時停止していたボリュームのスキャンを再開する場合は*[再開]*を選択します。</block>
+  <block id="e28f00b8dd55b4a2626bbd4233f326a1" category="list-text">*データ分類ディープスキャン（マップおよび分類スキャン）*：標準プロトコルと読み取り専用権限を使用して、環境全体でBlueXP  分類スキャンを実行します。一部のファイルは、ビジネスに関連する機密データ、プライベート情報、ランサムウェアに関連する問題の有無をチェックして開きます。</block>
+  <block id="e90444baa59788bd6471cf703b12a16e" category="summary">[データ調査]ページで詳細を表示すると、組織のデータを調査できます。ここでは、Governanceダッシュボードを見た後も、研究を続けることができます。</block>
+  <block id="43b0fcc067500dde9cd348cfb2a4fb95" category="paragraph">[データ調査]ページで詳細を表示すると、組織のデータを調査できます。ここでは、Governanceダッシュボードを見た後も、研究を続けることができます。[Investigation]ページでは、多数のフィルタのいずれかを使用してデータをフィルタリングし、必要な結果のみを表示できます。また、ファイルメタデータ、ファイルおよびディレクトリの権限を表示したり、ストレージシステム内の重複ファイルを確認したりすることもできます。</block>
+  <block id="b7f6a3bebde141b211f7f03ea94b59a0" category="paragraph">このページには、Governance and Complianceダッシュボードなど、BlueXP  分類UIのさまざまな領域から移動できます。これらのページでは、すでにフィルタが選択されています。データをCSVファイルまたはJSONファイルにエクスポートして、さらに分析したり、他のユーザーと共有したりすることができます。</block>
+  <block id="503f38415f575979b1abb29789cbda50" category="list-text">BlueXP  分類メニューから*調査*を選択します。</block>
+  <block id="262bd6cb4081a4bb1d5b7bb69c91cf84" category="list-text">[Data Investigation]ページで、次のいずれかの操作を行います。</block>
+  <block id="9dd4d7f07b73e6aaac505f7417738860" category="list-text">リファイン後にページの内容をレポートとしてダウンロードするには、ボタンを選択し<block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block>ます。<block ref="99402c37b738da126a6c16dce45a83da" category="inline-xref-macro-rx"></block>です。</block>
+  <block id="112a92421a821122ddfd7d3b0735b4ec" category="list-text">ファイル（非構造化データ）、ディレクトリ（フォルダとファイル共有）、またはデータベース（構造化データ）のデータを表示するには、上部のいずれかのタブを選択します。</block>
+  <block id="de1f3a62aada6a5e03bde4ce908b4d24" category="list-text">結果を数値またはアルファベット順にソートするには、各列の上部にあるコントロールを選択します。</block>
+  <block id="3575ec00f80ae9ff26cf47ff8300221a" category="list-text">結果をさらに絞り込むには、左側の[Filter]ペインで複数のフィルタのいずれかを選択します。</block>
+  <block id="a8d1bb5ba95108ab3a2f0fd87ebd3b07" category="paragraph">*機密性と内容でデータをフィルタリング*</block>
+  <block id="33399d32771439fb4356bebcb3641046" category="cell">を選択します。</block>
+  <block id="529289f3a4b107ecb94c76e23fe0459f" category="cell">検出された機密識別子のファイルごとの範囲を選択します。個人データと機密性の高い個人データが含まれます。ディレクトリでフィルタリングする場合、BlueXPの分類では、各フォルダ（およびサブフォルダ）内のすべてのファイルに一致するものが合計されます。注: 2023年12月(バージョン1.26.6)リリースでは、ディレクトリごとの個人識別情報(PII)データの数を計算するオプションが削除されました。</block>
+  <block id="65b6b7baa7e4d65af02da4a28d7e4bab" category="cell">を選択します。</block>
+  <block id="aa7dd09dc91fb2b7579c570bb8503fc1" category="cell">を選択します。</block>
+  <block id="070396a1b27d6204768841e19470e47e" category="cell">データ主体のフルネームまたは既知の識別子を入力します<block ref="0985c0b127f694a4306132f04f30036d" category="inline-link-macro-rx"></block>です。</block>
+  <block id="ee280a3521123fa6ae2208b6c18ce269" category="paragraph">*ユーザー所有者とユーザー権限でデータをフィルタリング*</block>
+  <block id="e52157656c10d29bc569f6690f63d9c3" category="paragraph">*時間でデータをフィルタリング*</block>
+  <block id="770ad37e7b6dccf816f59000b32376eb" category="paragraph">BlueXPの分類では、SharePoint Online、SharePointオンプレミス（SharePoint Server）、OneDrive、Google Drive、Amazon S3の各データソースから「最終アクセス時刻」は抽出されません。</block>
+  <block id="93df112866b7972d001a7d5a43ee807d" category="paragraph">*メタデータでデータをフィルタリング*</block>
+  <block id="8e1a5e11bb2fb28b8b6dcec568a360c4" category="cell">を選択します。</block>
+  <block id="bf49fd74a7f1e071ae8d9037d850229b" category="paragraph">*ストレージタイプでデータをフィルタリング*</block>
+  <block id="1931b0be2f819fbc984873eab7604c0e" category="paragraph">*ポリシーでデータをフィルタリング*</block>
+  <block id="6926f90beadfdb901f306772787c7f05" category="paragraph">*分析ステータスでデータをフィルタリング*</block>
+  <block id="0fdacc8c067979a1926a265cd399f05a" category="paragraph"><block ref="d865d9e7da9a534ddb8c0b18eca2435c" category="inline-link-macro-rx"></block>スキャン分析イベントを使用してフィルタリングするときに[Investigation]ページに表示される項目の詳細については、を参照してください。</block>
+  <block id="c2d41b84903ff9433b055cd311767824" category="paragraph">*重複データでデータをフィルタリング*</block>
+  <block id="deb92d356adf2bc4203235e994269d9a" category="paragraph">メタデータには、ファイルが配置されている作業環境とボリュームだけでなく、ファイル権限、ファイル所有者、このファイルの重複の有無など、さらに多くの情報が表示されます。この情報は、データのフィルタリングに使用できるすべての情報を表示できるため、計画している場合に役立ち<block ref="ea156c161a340e4bbece1f1483afe558" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="1f54ce0e770f5c76ff9e305bb20ea41a" category="paragraph">すべての情報がすべてのデータソースで利用できるわけではありません。そのデータソースに適した情報だけが対象です。たとえば、ボリューム名と権限はデータベースファイルには関係ありません。</block>
+  <block id="efcf64fabaf1cd0d5d0c35cfea3e25d9" category="list-text">右側の[Data Investigation]リストで、ファイルのメタデータを表示する単一ファイルの右側の下キャレットを選択します<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="887f8cc0eb69a50c3835261bb514ecb7" category="section-title">ファイルおよびディレクトリに対するユーザの権限を表示する</block>
+  <block id="50f624bdefacfa8c1da9ed79642cacaa" category="list-text">ファイルまたはディレクトリへのアクセス権を持つすべてのユーザーまたはグループのリストと、それらが持つアクセス権の種類を表示するには、[アクセス権を開く]フィールドで*[すべてのアクセス権を表示]*を選択します。</block>
+  <block id="ae18ef4e8ebb0e7f89b69a1d9c3d0f0f" category="admonition">BlueXP  分類では、最大100人のユーザがリストに表示されます。</block>
+  <block id="f60e204b581c5d2d22e4d6b4119efdeb" category="admonition">グループの1つのレベルを展開すると、そのグループに属するユーザを表示できます。</block>
+  <block id="293d9f51d90274c3eb6f28b88bdf5b95" category="list-text">ユーザまたはグループの名前を選択して[Investigation]ページを更新すると、そのユーザまたはグループがアクセスできるすべてのファイルとディレクトリが表示されます。</block>
+  <block id="6c8f43fb3633672815a9819858118a4c" category="paragraph">1MB以上のファイル、または個人情報または機密性の高い個人情報を含むすべてのファイル（データベースを除く）が比較され、重複がないかどうかが確認されます。</block>
+  <block id="7f90d40f25a1214f4536e03c0a2ef47a" category="list-text">左側の[Investigation]ページの[Filters]ペインで、[File Size]と[Duplicates]（[Has Duplicates]）を選択して、環境内で特定のサイズ範囲のどのファイルが複製されているかを確認します。</block>
+  <block id="7de24db523b93565f747bc5d9df1a823" category="list-text">必要に応じて、重複ファイルのリストをダウンロードしてストレージ管理者に送信し、削除可能なファイルがある場合はストレージ管理者が決定できるようにします。</block>
+  <block id="3d2ab943bd4816ddebc5f9e0511599c9" category="list-text">必要に応じて、<block ref="98798b8dd7c03920eae7ec175a7a3ceb" category="inline-link-macro-rx"></block>ファイルの特定のバージョンが必要ないと確信している場合は、自分自身。</block>
+  <block id="232e219814cfdc03793357852446d7a9" category="paragraph">1つのファイルに重複があるかどうかを確認できます。</block>
+  <block id="0b6b27e33fc9a47830519ca8d98e5327" category="list-text">[Data Investigation]リストで、ファイルのメタデータを表示する単一ファイルの右側にあるを選択し<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>ます。</block>
+  <block id="1c02a0bc34965940f9a4a14c7adac1b2" category="paragraph">ファイルに重複が存在する場合、この情報は_Duplicates_フィールドの横に表示されます。</block>
+  <block id="c96bf252030be7d77f32e236939f6da2" category="list-text">重複ファイルのリストとその場所を表示するには、*詳細を表示*を選択します。</block>
+  <block id="5e6ec4e1f88d65eaeb13fa82313d9809" category="list-text">次のページで、[View Duplicates]を選択して、[Investigation]ページにファイルを表示します。</block>
+  <block id="b9cf7636c1458813ea2386a78b8774cd" category="list-text">レポートタイプ（CSVまたはJSON）を選択します。</block>
+  <block id="fc4f6fceccd6c5f18eabd79aacf08023" category="list-text">**レポート名**を入力します。</block>
+  <block id="ef151ce6e85f07953f9567895b0703e3" category="list-text">**作業環境**および**ボリューム**を選択します。</block>
+  <block id="cb013f85229d9d37e97ad54696f24544" category="list-text">**インストール先フォルダのパス**を指定します。</block>
+  <block id="3acd7c6848524cfd6cd39d023db6c391" category="section-title">選択したフィルタに基づいてポリシーを作成する</block>
+  <block id="dbcfe39ddc3ef4e14d4b8ff904564614" category="paragraph">[データ調査]ページで選択したフィルタをポリシーとして保存すると便利です。このようにして、同じフィルタを再選択せずにいつでも実行できます。</block>
+  <block id="461f18298523b9780c64f7622a558e72" category="list-text">[Data Investigation]ページで、ポリシーの作成に使用するフィルタを選択します。</block>
+  <block id="7b3efd4315afe81c069931074b6b2bcf" category="list-text">[Filter]ペインの下部にある*[Create policy from this search]*を選択します。</block>
+  <block id="02732823805cfd3fcc35939ca3602379" category="list-text">ポリシーの名前と説明を入力します。</block>
+  <block id="aac46765e6c078c569d11a06fa32886b" category="list-text">次のいずれかを選択します。</block>
+  <block id="7a93f17737c434a658952da4ac61c2e7" category="list-text">*このポリシーに一致するファイルを自動的に削除する（毎日）：ポリシーに一致するファイルを削除する場合に選択します。</block>
+  <block id="03679c9c05b6548cd278d5dc9b22d06d" category="list-text">*このポリシーに関する電子メールの更新をこのアカウントのBlueXP  ユーザーに送信するすべての&lt;day/week/month&gt;*：このアカウントのBlueXP  ユーザーにポリシーに関する電子メールの更新を送信する場合は、これを選択します。</block>
+  <block id="2a4930d89395c66bd221720bcaae06e3" category="list-text">*&lt;Day&gt;ごとに&lt;email address&gt;にメールを送信*：&lt;Day&gt;ごとに特定のメールアドレスにメールを送信する場合は、このオプションを選択します。</block>
+  <block id="41025e9c551610edae39a167ecbe1b73" category="list-text">[ * ポリシーの作成 * ] を選択します。</block>
+  <block id="97079a3b4a44ca52d28b2807f91a5ec0" category="admonition">結果が[Policies]ページに表示されるまでに最大15分かかることがあります。</block>
 </blocks>
