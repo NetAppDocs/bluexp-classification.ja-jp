@@ -22,12 +22,7 @@
 
 優先順位付けはに限定されlink:concept-cloud-compliance.html["マッピングのみのスキャン"]、マップスキャンおよび分類スキャンでは使用できません。
 
-優先度を変更するには：
-
-. BlueXP  分類メニューから*設定*を選択します。
-. 優先順位を付けるリソースを選択します。
-. [Actions...]オプションから、*[Prioritize scan]*を選択します。
-
+詳細については、を参照してください link:task-managing-repo-scanning.html#prioritize-scans["スキャンの優先順位付け"]。
 
 .すべてのスキャンを再試行
 BlueXP  分類では、失敗したすべてのスキャンをバッチ再試行できるようになりました。

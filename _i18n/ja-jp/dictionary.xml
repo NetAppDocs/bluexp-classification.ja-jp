@@ -3023,11 +3023,9 @@
   <block id="8e66898002589c26f968e6fd94a57988" category="list-text">失敗したスキャンをすべて再試行するには、*[すべてのスキャンを再試行]*を選択します。</block>
   <block id="a2cf857a70e312df7b376e0516470728" category="list-text">特定のスキャンを再試行するには、リソースを選択し、[アクション]オプションから*[スキャンの再試行]*を選択します。</block>
   <block id="e59c558837a0bee73ac15f544f275cae" category="paragraph">スキャンは、元のスキャンと同じ設定で再試行されます。スキャンが再度失敗した場合は、必要に応じて何度でも再試行できます。</block>
-  <block id="c05a4c0b45b0c78ba3771a3530738f78" category="paragraph">マッピングのみのスキャンを実行する場合は、最も重要なスキャンに優先順位を付けることができます。この機能は、多数の作業環境があり、優先度の高いスキャンを先に完了させたい場合に役立ちます。</block>
   <block id="03b61f1818fbb0c7e0a356c942abdc31" category="paragraph">デフォルトでは、スキャンは開始順序に基づいてキューに入れられます。スキャンに優先順位を付ける機能により、スキャンをキューの先頭に移動できるようになりました。複数のスキャンに優先順位を付けることができます。優先順位は、先入れ先出し順で指定されます。つまり、最初に優先順位を付けたスキャンがキューの先頭に移動し、2番目に優先順位を付けたスキャンがキューの2番目に移動します。</block>
   <block id="e04ee48d980fd3722fe28400afcc0416" category="paragraph">優先度は1回だけ付与されます。マッピングデータの自動再スキャンは、デフォルトの順序で実行されます。</block>
   <block id="c92ddb2e7e35e5bd406e62b822c22b14" category="inline-link-macro">マッピングのみのスキャン</block>
-  <block id="42968807986d9cd74ea7703d63bf3408" category="paragraph">優先度を変更するには：</block>
   <block id="c3f4889bec03e0a3ba10184db92b3b07" category="paragraph-title">すべてのスキャンを再試行</block>
   <block id="06243660aeb549bac73e7c160d2d2a70" category="paragraph">BlueXP  分類では、失敗したすべてのスキャンをバッチ再試行できるようになりました。</block>
   <block id="18dfe95c4c66dde6d275ff14f1c99ea9" category="paragraph">**すべて再試行**機能を使用して、バッチ操作でスキャンを再試行できるようになりました。ネットワークの停止などの一時的な問題が原因で分類スキャンが失敗した場合は、個 々 に再試行するのではなく、ボタン1つですべてのスキャンを同時に再試行できます。スキャンは必要に応じて何度でも再試行できます。</block>
@@ -3411,9 +3409,6 @@
   <block id="c96bf252030be7d77f32e236939f6da2" category="list-text">重複ファイルのリストとその場所を表示するには、*詳細を表示*を選択します。</block>
   <block id="5e6ec4e1f88d65eaeb13fa82313d9809" category="list-text">次のページで、[View Duplicates]を選択して、[Investigation]ページにファイルを表示します。</block>
   <block id="b9cf7636c1458813ea2386a78b8774cd" category="list-text">レポートタイプ（CSVまたはJSON）を選択します。</block>
-  <block id="fc4f6fceccd6c5f18eabd79aacf08023" category="list-text">**レポート名**を入力します。</block>
-  <block id="ef151ce6e85f07953f9567895b0703e3" category="list-text">**作業環境**および**ボリューム**を選択します。</block>
-  <block id="cb013f85229d9d37e97ad54696f24544" category="list-text">**インストール先フォルダのパス**を指定します。</block>
   <block id="3acd7c6848524cfd6cd39d023db6c391" category="section-title">選択したフィルタに基づいてポリシーを作成する</block>
   <block id="dbcfe39ddc3ef4e14d4b8ff904564614" category="paragraph">[データ調査]ページで選択したフィルタをポリシーとして保存すると便利です。このようにして、同じフィルタを再選択せずにいつでも実行できます。</block>
   <block id="461f18298523b9780c64f7622a558e72" category="list-text">[Data Investigation]ページで、ポリシーの作成に使用するフィルタを選択します。</block>
@@ -3425,4 +3420,22 @@
   <block id="2a4930d89395c66bd221720bcaae06e3" category="list-text">*&lt;Day&gt;ごとに&lt;email address&gt;にメールを送信*：&lt;Day&gt;ごとに特定のメールアドレスにメールを送信する場合は、このオプションを選択します。</block>
   <block id="41025e9c551610edae39a167ecbe1b73" category="list-text">[ * ポリシーの作成 * ] を選択します。</block>
   <block id="97079a3b4a44ca52d28b2807f91a5ec0" category="admonition">結果が[Policies]ページに表示されるまでに最大15分かかることがあります。</block>
+  <block id="bc19fc1fb9d36ac2eec32fb81f6e5cca" category="paragraph">マッピングのみのスキャンを実行する場合は、最も重要なスキャンに優先順位を付けることができます。この機能は、多数の作業環境があり、優先度の高いスキャンを先に完了させたい場合に役立ちます。</block>
+  <block id="2e41eb33226717a4730fa2131336dc5a" category="paragraph">詳細については、を参照してください <block ref="9493b318b51f384796e93c6ba74f5935" category="inline-link-macro-rx"></block>。</block>
+  <block id="33fc2a8f6921fec02571495993aa2c6c" category="doc">バージョン1.42</block>
+  <block id="83962582dc3c189ba60063fe7990755c" category="paragraph">このBlueXP  分類リリースの内容は次のとおりです。</block>
+  <block id="2dcf334efa4f886393cac0e44ff5a917" category="paragraph-title">作業環境の一括スキャン</block>
+  <block id="57e954d06c81eea089fcb04e61b1c429" category="paragraph">BlueXP  の分類で、作業環境の一括操作がサポートされるようになりました。マッピングスキャンの有効化、スキャンのマッピングと分類の有効化、スキャンの無効化、または作業環境内のボリューム間でのカスタム構成の作成を選択できます。個 々 のボリュームを選択した場合は、一括選択よりも優先されます。一括操作を実行するには'**Configuration**ページに移動して選択します</block>
+  <block id="7c021042892d25e3e5d4271749e03344" category="paragraph-title">調査レポートをローカルにダウンロード</block>
+  <block id="a8539b02096aea65d2e102c01a482c71" category="paragraph">BlueXP  分類では、データ調査レポートをローカルにダウンロードしてブラウザで表示できるようになりました。ローカルオプションを選択した場合、データ調査はCSV形式でのみ使用でき、最初の10,000行のデータのみが表示されます。</block>
+  <block id="95403a677c140fea03f157c2edb41c85" category="paragraph">詳細については、を参照してください <block ref="55ff936b35b23a6f6693627bfb444c62" category="inline-link-macro-rx"></block>。</block>
+  <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">分類スキャンの優先順位付け</block>
+  <block id="a9da1537a3e6bfb032d6a352bc5d82a7" category="paragraph">BlueXP  分類では、マッピングのみのスキャンに加えて、マップおよびスキャンの分類を優先する機能がサポートされるようになりました。MapおよびClassifyスキャンの優先順位付けは、スキャンの開始中および開始前にサポートされます。進行中のスキャンに優先順位を付けることを選択した場合は、マッピングスキャンと分類スキャンの両方に優先順位が付けられます。</block>
+  <block id="84acc1c8e6e80bda04b6eac437f19154" category="admonition">CSVファイルのバージョンをダウンロードして、このブラウザで表示できます。このバージョンは10,000レコードに制限されています。</block>
+  <block id="05035e3bc31af3e060bb6a5ed03e7988" category="list-text">**レポート名**を入力します。</block>
+  <block id="1381344c0ad4a60786998569e040cb72" category="list-text">レポートタイプとしてCSVを選択した場合は、[**Local*]を選択して、ブラウザにレポートをダウンロードします。メモこのオプションでは、レポートは最初の10,000行に制限されます。このオプションでは、他のオプションは必要ありません。</block>
+  <block id="b73d8086c4fa1a5d2c97351fb3604a12" category="paragraph">レポート全体を表示するには、**作業環境**を選択し、それぞれのドロップダウンメニューから**作業環境**および**ボリューム**を選択します。**インストール先フォルダのパス**を指定します。</block>
+  <block id="345e1412843bf20361636f064c2a0359" category="paragraph">最も重要なスキャン（マッピングのみ、またはマップと分類）に優先順位を付けることができます。スキャンの優先順位を設定できるため、優先度の高いスキャンを先に完了させることができます。</block>
+  <block id="634cb969225c406dc49fde5e0df02409" category="list-text">[アクション]オプションから<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>、*[スキャンの優先順位付け]*を選択します。</block>
+  <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025年4月14日</block>
 </blocks>
