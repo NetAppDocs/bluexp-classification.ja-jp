@@ -194,11 +194,11 @@ BlueXP  分類では、次の2種類のスキャンを実行できます。
 
 == BlueXP  分類によって分類される情報
 
-BlueXPの分類では、データ（ファイル）の収集とインデックス作成が行われ、カテゴリが割り当てられます。BlueXP分類のインデックスには、次のデータが含まれています。
+BlueXP  分類では、次のデータを収集してインデックスを作成し、カテゴリを割り当てます。
 
 * *標準メタデータ*ファイルについて：ファイルの種類、サイズ、作成日、変更日など。
-* *個人データ*:メールアドレス、識別番号、クレジットカード番号などの個人識別情報(PII)。link:task-controlling-private-data.html#view-files-that-contain-personal-data["個人データの詳細については、こちらをご覧ください"^]です。
-* *機密性の高い個人データ*: GDPRおよびその他のプライバシー規制で定義されている、健康データ、民族起源、政治的意見などの特別な種類の機密個人情報(SPII)。link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["機密性の高い個人データの詳細をご覧ください"^]です。
+* *個人データ*：電子メールアドレス、識別番号、クレジットカード番号などの個人識別情報（PII）。BlueXP  分類では、ファイル内の特定の単語、文字列、パターンを使用して識別されます。link:task-controlling-private-data.html#view-files-that-contain-personal-data["個人データの詳細については、こちらをご覧ください"^]です。
+* *機密性の高い個人データ*:一般データ保護規則(GDPR)およびその他のプライバシー規制で定義されている、健康データ、民族起源、政治的意見などの特別な種類の機密個人情報(SPII)。link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["機密性の高い個人データの詳細をご覧ください"^]です。
 * *カテゴリ*: BlueXP  分類は、スキャンしたデータをさまざまなカテゴリに分類します。カテゴリは、各ファイルのコンテンツとメタデータの AI 分析に基づくトピックです。link:task-controlling-private-data.html#view-files-by-categories["カテゴリの詳細については、こちらをご覧ください"^]です。
 * *types*: BlueXP  分類では、スキャンしたデータをファイルの種類別に分類します。link:task-controlling-private-data.html#view-files-by-file-types["タイプの詳細については、こちらをご覧ください"^]です。
 * *名前エンティティ認識*: BlueXP  分類は、AIを使用してドキュメントから人の自然な名前を抽出します。link:task-generating-compliance-reports.html["データ主体のアクセスリクエストへの対応について説明します"^]です。

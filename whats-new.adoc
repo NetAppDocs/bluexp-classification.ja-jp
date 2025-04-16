@@ -329,7 +329,7 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 このリリースでは、次のオプションも削除されました。
 
 * 監査ログ収集をアクティブ化するオプションが無効になりました。
-* ディレクトリ調査中に、ディレクトリごとの個人識別情報（PII）データの数を計算するオプションは使用できません。を参照してください link:task-investigate-data.html#filter-data-by-sensitivity-and-content["組織に保存されているデータを調査します"]。
+* ディレクトリ調査中に、ディレクトリごとの個人識別情報（PII）データの数を計算するオプションは使用できません。を参照してください link:task-investigate-data.html["組織に保存されているデータを調査します"]。
 * Azure Information Protection（AIP）ラベルを使用してデータを統合するオプションが無効になりました。を参照してください link:task-org-private-data.html["プライベートデータを整理します"]。
 
 
