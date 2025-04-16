@@ -356,7 +356,7 @@ BlueXPの分類は、すべてのファイルをスキャンしてカテゴリ�
 
 ただし、BlueXPの分類でPersonal Identifiable Information（PII）が検出された場合や、DSAR検索が実行された場合は、次のファイル形式のみがサポートされます。
 
-`+.CSV, .DCM, .DICOM, .DOC, .DOCX, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
+`+.CSV, .DCM, .DOC, .DOCX, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
 
 
 

@@ -340,7 +340,6 @@
   <block id="5f4ceba489dc56da6edff02213d6e21c" category="section-title">サポートされているファイルタイプはどれですか。</block>
   <block id="bc90c1660d729d86ab10b8018a956932" category="paragraph">BlueXPの分類は、すべてのファイルをスキャンしてカテゴリやメタデータの分析情報を取得し、ダッシュボードの[File Types]セクションにすべてのファイルタイプを表示します。</block>
   <block id="6352911cc42108d1f16863e618ef84d4" category="paragraph">BlueXPの分類でPersonal Identifiable Information（PII）が検出された場合、またはDSAR検索が実行された場合、サポートされるファイル形式は次のとおりです。</block>
-  <block id="0adefa52dc5e774fb8bd1c62fec82b84" category="paragraph"><block ref="0b3e64f511542d0a580dfbeb6d666614" prefix="" category="inline-code"></block></block>
   <block id="d288c89eadda3d7c229b7316faf2209a" category="section-title">BlueXPの分類では、どのような種類のデータやメタデータがキャプチャされますか？</block>
   <block id="724ba2aee906c26a6c05f56bbf0dd434" category="paragraph">BlueXPの分類を使用すると、一般的な「マッピング」スキャンまたは完全な「分類」スキャンをデータソースに対して実行できます。マッピングではデータの概要のみが示され、分類ではデータの詳細なスキャンが提供されます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。</block>
   <block id="00fb8639b6c2826bd3fceaa0d36399d8" category="paragraph">高速スキャンの後、データマッピングレポートを生成できます。このレポートは、企業データソースに保存されているデータの概要を示しており、リソースの使用率、移行、バックアップ、セキュリティ、コンプライアンスの各プロセスに関する決定に役立ちます。</block>
@@ -3438,4 +3437,5 @@
   <block id="b07926c5eabcf7b05f3a674e478e6b18" category="inline-link-macro">ポリシーの作成</block>
   <block id="3ee1fee226155df3d1aec325193a3b4a" category="paragraph">メタデータには、ファイルが配置されている作業環境とボリュームだけでなく、ファイル権限、ファイル所有者、このファイルの重複の有無など、さらに多くの情報が表示されます。この情報は、データのフィルタリングに使用できるすべての情報を表示できるため、計画している場合に役立ち<block ref="e4856c4af761ccf18001e0febd54584c" category="inline-link-macro-rx"></block>ます。</block>
   <block id="1c3cd11405c2cc34d1b337f6a930a0e5" category="list-text">ディレクトリ調査中に、ディレクトリごとの個人識別情報（PII）データの数を計算するオプションは使用できません。を参照してください <block ref="0b922dd9827c419654172323345089b8" category="inline-link-macro-rx"></block>。</block>
+  <block id="993d0cb387fd8414eea2cd1b17bc3b81" category="paragraph"><block ref="52b8cfc50608d81c1431f72921eeb174" prefix="" category="inline-code"></block></block>
 </blocks>
