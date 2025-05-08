@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-using-policies.html 
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
-summary: 'ポリシーは、よく要求されるコンプライアンスクエリーの [ 調査 ] ページで検索結果を表示するカスタムフィルタのお気に入りリストのようなものです。BlueXPは分類されており、一般的なお客様の要望に基づいて一連のポリシーが事前定義されています。組織固有の検索結果を提供するカスタムポリシーを作成できます。' 
+summary: 'ポリシーは、よく要求されるコンプライアンスクエリーの[Investigation]ページで検索結果を提供するカスタムフィルタです。BlueXP  分類では、一般的な要求に基づいて事前定義されたポリシーのセットが提供されます。また、独自のポリシーを作成することもできます。' 
 ---
 = BlueXP  分類を使用してデータにポリシーを割り当てる
 :hardbreaks:
@@ -25,15 +25,15 @@ summary: 'ポリシーは、よく要求されるコンプライアンスクエ�
 
 コンプライアンスダッシュボードの*[ポリシー]*タブには、BlueXP分類のこのインスタンスで使用可能な事前定義済みポリシーとカスタムポリシーがすべて表示されます。
 
-image:screenshot_compliance_highlights_tab.png["BlueXP分類ダッシュボードの[Policies]タブのスクリーンショット。"]
+ポリシーは、[Investigation]ページのフィルタのリストにも表示されます。
 
-また、[Investigation]ページのフィルタのリストにポリシーが表示されます。
+image:screenshot_compliance_highlights_tab.png["BlueXP分類ダッシュボードの[Policies]タブのスクリーンショット。"]
 
 
 
 == [Investigation]ページでのポリシー結果の表示
 
-[Investigation]ページにポリシーの結果を表示するには、特定のポリシーのボタンをクリックしimage:screenshot_gallery_options.gif["[ 詳細 ] ボタン"]、*[Investigate Results]*を選択します。
+[Investigation]ページにポリシーの結果を表示するには、特定のポリシーのボタンを選択しimage:screenshot_gallery_options.gif["[ 詳細 ] ボタン"]、[Investigate Results]*を選択します。
 
 image:screenshot_compliance_highlights_investigate.png["[Policies]タブで特定のポリシーの[Investigate Results]を選択したスクリーンショット。"]
 
@@ -44,16 +44,16 @@ image:screenshot_compliance_highlights_investigate.png["[Policies]タブで特�
 組織固有の検索結果を提供する独自のカスタムポリシーを作成できます。検索条件に一致するすべてのファイルとディレクトリ（共有とフォルダ）の結果が返されます。
 
 .手順
-. [ データ調査 ] ページで、使用するすべてのフィルタを選択して検索を定義します。詳細は、を参照してください link:task-investigate-data.html["[ データ調査 ] ページでデータをフィルタリングします"^] 。
-. 必要な方法でフィルタ特性をすべて設定したら、 [ この検索からポリシーを作成する *] をクリックします。
+. [Investigation]タブで、使用するフィルタを選択して検索を定義します。詳細は、を参照してください link:task-investigate-data.html["[Investigation]ページでのデータのフィルタリング"] 。
+. すべてのフィルタ特性を好みに合わせて設定したら、*この検索からポリシーを作成*を選択します。
 +
-image:screenshot_compliance_save_as_highlight.png["フィルタされたクエリをポリシーとして保存する方法を示すスクリーンショット。"]
+image:screenshot_compliance_save_as_highlight.png["フィルタリングされたクエリをポリシーとして保存する方法を示すスクリーンショット。"]
 
 . ポリシーに名前を付け、ポリシーで実行できるその他の操作を選択します。
 +
 .. 一意の名前と説明を入力します。
 .. 必要に応じて、このチェックボックスをオンにすると、ポリシーパラメータに一致するファイルが自動的に削除されます。
-.. [ ポリシーの作成 *] をクリックします。
+.. [ * ポリシーの作成 * ] を選択します。
 +
 image:screenshot_compliance_save_highlight2.png["ポリシーを設定して保存する方法を示すスクリーンショット。"]
 
@@ -68,30 +68,27 @@ image:screenshot_compliance_save_highlight2.png["ポリシーを設定して保�
 
 == ポリシーの編集
 
-前の手順で作成した既存のポリシーの条件を変更できます。これは、特定のパラメータを追加または削除するためにクエリ（フィルタを使用して定義した項目）を変更する場合に特に便利です。
+既存のポリシーの条件を変更して、クエリ（フィルタを使用して定義した項目）を変更し、特定のパラメータを追加または削除できます。
 
-事前定義されたポリシーについては、Eメール通知を送信するかどうか、およびAIPラベルを追加するかどうかのみを変更できます。その他の値は変更できません。
+事前定義されたポリシーは変更できません。
 
 .手順
-. [ポリシーリスト]ページで、変更するポリシーの*Edit*をクリックします。
+. [ポリシーリスト]ページで、変更するポリシーの*[ポリシーの編集]*を選択します。
 +
 image:screenshot_compliance_edit_policy_button.png["既存のポリシーの編集を開始する方法を示すスクリーンショット。"]
 
-. このページの項目（名前、概要 、電子メール通知が送信されているかどうか、およびAIPラベルが追加されているかどうか）を変更する場合は、変更を行って*ポリシーの保存*をクリックします。
+. 名前フィールドと説明フィールドを変更します。これらのフィールドのみを変更するには、*[ポリシーの保存]*を選択します。
 +
-保存されたクエリのフィルタを変更する場合は、[クエリの編集]をクリックします。
+保存したクエリのフィルタを変更するには、*[クエリの編集]*を選択します。
 
 +
 image:screenshot_compliance_edit_policy_dialog.png["[ポリシーの編集]ページの[クエリの編集]ボタンを選択するスクリーンショット。"]
 
-. そのクエリーを定義する[調査]ページで、フィルタを追加、削除、またはカスタマイズしてクエリーを編集し、[変更の保存*]をクリックします。
+. そのクエリを定義する[Investigation]ページで、フィルタを追加、削除、またはカスタマイズしてクエリを編集し、*[Save Changes]*を選択します。
 +
 image:screenshot_compliance_edit_policy_query.png["フィルタ設定を変更してクエリを編集する方法を示すスクリーンショット。"]
 
 
-
-.結果
-ポリシーはただちに変更されます。そのポリシーに定義されたアクションは、電子メールの送信、AIPラベルの追加、またはファイルの削除のいずれかが、次の内部で実行されます。
 
 
 
@@ -99,7 +96,7 @@ image:screenshot_compliance_edit_policy_query.png["フィルタ設定を変更�
 
 作成したカスタムポリシーが不要になった場合は削除できます。事前定義されたポリシーは削除できません。
 
-ポリシーを削除するには、特定のポリシーのボタンをクリックして*[ポリシーの削除]*をクリックしimage:screenshot_gallery_options.gif["[ 詳細 ] ボタン"]、確認ダイアログで*[ポリシーの削除]*をもう一度クリックします。
+ポリシーを削除するには、特定のポリシーのボタンを選択しimage:screenshot_gallery_options.gif["[ 詳細 ] ボタン"]て*[ポリシーの削除]*を選択し、確認ダイアログで*[ポリシーの削除]*をもう一度選択します。
 
 
 

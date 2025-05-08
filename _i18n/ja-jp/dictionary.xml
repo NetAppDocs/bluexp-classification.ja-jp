@@ -2676,36 +2676,24 @@
   <block id="e3cf1613fe34f89ac1f2966a0222877f" category="paragraph">コンプライアンスダッシュボードの*[ポリシー]*タブには、BlueXP分類のこのインスタンスで使用可能な事前定義済みポリシーとカスタムポリシーがすべて表示されます。</block>
   <block id="967b04771a3458159d11dd8932d09129" category="inline-image-macro">BlueXP分類ダッシュボードの[Policies]タブのスクリーンショット。</block>
   <block id="d44d997087e7d999102d47f4839b74ac" category="paragraph"><block ref="d44d997087e7d999102d47f4839b74ac" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="351501516e0a13df2ed4813f5d93864d" category="paragraph">また、[Investigation]ページのフィルタのリストにポリシーが表示されます。</block>
   <block id="c939d1291c3b87bc95f09e9b4065138e" category="section-title">[Investigation]ページでのポリシー結果の表示</block>
-  <block id="fb5c8861ae16ebacc4ef4cf4a3f9746a" category="paragraph">[Investigation]ページにポリシーの結果を表示するには、特定のポリシーのボタンをクリックし<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>、*[Investigate Results]*を選択します。</block>
   <block id="eade099275ce51bdec585f23e50846c7" category="inline-image-macro">[Policies]タブで特定のポリシーの[Investigate Results]を選択したスクリーンショット。</block>
   <block id="b87f575df2628b12c3d997954b369392" category="paragraph"><block ref="b87f575df2628b12c3d997954b369392" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f617da6b50728500642eb376ab97b6f4" category="section-title">カスタムポリシーを作成する</block>
   <block id="e6860b78555fc79d4429acb5534cf51b" category="paragraph">組織固有の検索結果を提供する独自のカスタムポリシーを作成できます。検索条件に一致するすべてのファイルとディレクトリ（共有とフォルダ）の結果が返されます。</block>
-  <block id="96a46d654233ac39fd6e31dda8fc4dae" category="inline-image-macro">フィルタされたクエリをポリシーとして保存する方法を示すスクリーンショット。</block>
-  <block id="9f769a1d4cd3d0c8d7378f6050100e35" category="paragraph"><block ref="9f769a1d4cd3d0c8d7378f6050100e35" category="inline-image-macro-rx" type="image"></block></block>
   <block id="19948385b78770f8de2200aa21288a6a" category="list-text">必要に応じて、このチェックボックスをオンにすると、ポリシーパラメータに一致するファイルが自動的に削除されます。</block>
   <block id="ab3a166dafa7696427031860a8ba2694" category="inline-image-macro">ポリシーを設定して保存する方法を示すスクリーンショット。</block>
   <block id="9b07697830dbb49b6ea67bff8f36ad42" category="paragraph"><block ref="9b07697830dbb49b6ea67bff8f36ad42" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f124f85896ac18194a54f85b2d21b888" category="paragraph">[ ポリシー ] タブに新しいポリシーが表示されます。</block>
   <block id="ad3a8f7c032ad4e96e6372989c781a41" category="section-title">ポリシーの編集</block>
-  <block id="ac8bfe24ca06e9a43f31e7975b6980a8" category="paragraph">前の手順で作成した既存のポリシーの条件を変更できます。これは、特定のパラメータを追加または削除するためにクエリ（フィルタを使用して定義した項目）を変更する場合に特に便利です。</block>
-  <block id="7037cf1f24072122891243e88abfb12e" category="paragraph">事前定義されたポリシーについては、Eメール通知を送信するかどうか、およびAIPラベルを追加するかどうかのみを変更できます。その他の値は変更できません。</block>
-  <block id="a12113b6b49f31212d0614b3ea69ea2b" category="list-text">[ポリシーリスト]ページで、変更するポリシーの*Edit*をクリックします。</block>
   <block id="46cca5a0b236597ecbbc433af09a7cdd" category="inline-image-macro">既存のポリシーの編集を開始する方法を示すスクリーンショット。</block>
   <block id="3056771597dc5384f17bbb61e33a97e3" category="paragraph"><block ref="3056771597dc5384f17bbb61e33a97e3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9edd844856e16adcca10bdc9965cd880" category="list-text">このページの項目（名前、概要 、電子メール通知が送信されているかどうか、およびAIPラベルが追加されているかどうか）を変更する場合は、変更を行って*ポリシーの保存*をクリックします。</block>
-  <block id="d0cb19a0fd724606f26b87b211d86b49" category="paragraph">保存されたクエリのフィルタを変更する場合は、[クエリの編集]をクリックします。</block>
   <block id="cc9419324ea7def41675382a6f26c64b" category="inline-image-macro">[ポリシーの編集]ページの[クエリの編集]ボタンを選択するスクリーンショット。</block>
   <block id="1c5fef5f58eb8467fc88591877ccc7e3" category="paragraph"><block ref="1c5fef5f58eb8467fc88591877ccc7e3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2f83e3b5da3e9770bafefd94e5a39763" category="list-text">そのクエリーを定義する[調査]ページで、フィルタを追加、削除、またはカスタマイズしてクエリーを編集し、[変更の保存*]をクリックします。</block>
   <block id="7cbe4840b4a3a2fdf1f9286da7e2b284" category="inline-image-macro">フィルタ設定を変更してクエリを編集する方法を示すスクリーンショット。</block>
   <block id="289758d7ef2e573a0ee7824d5814b945" category="paragraph"><block ref="289758d7ef2e573a0ee7824d5814b945" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6a5816406505d9f49c1bfa13c98461f7" category="paragraph">ポリシーはただちに変更されます。そのポリシーに定義されたアクションは、電子メールの送信、AIPラベルの追加、またはファイルの削除のいずれかが、次の内部で実行されます。</block>
   <block id="5d82deb8cba9afb6516c37ca8c24a8ad" category="section-title">ポリシーの削除</block>
   <block id="975f1d83956c13d06e3328fcb12a0a3f" category="paragraph">作成したカスタムポリシーが不要になった場合は削除できます。事前定義されたポリシーは削除できません。</block>
-  <block id="19d4814f3bce80460384b97290bb64be" category="paragraph">ポリシーを削除するには、特定のポリシーのボタンをクリックして*[ポリシーの削除]*をクリックし<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>、確認ダイアログで*[ポリシーの削除]*をもう一度クリックします。</block>
   <block id="91f5ccbaa42a010696c34306e0121702" category="section-title">事前定義されたポリシーのリスト</block>
   <block id="d1d0b0240f763b10942cc206a4f4e980" category="paragraph">BlueXPは分類され、次のシステム定義のポリシーが用意されています。</block>
   <block id="49ee3087348e8d44e1feda1917443987" category="cell">名前</block>
@@ -3469,4 +3457,19 @@
   <block id="bc95bc80ebf2858c233b2627b019d9e4" category="cell">カナダ社会保険番号（SIN）</block>
   <block id="00acd555cd21235c4d1b966ed1be4a74" category="cell">UK ID（Nino）</block>
   <block id="03624a0e3cf06ce697a55ae458b36245" category="cell">米国テキサス州運転免許証</block>
+  <block id="1a29dcb31a65b43c01aeec2246fa49c7" category="summary">ポリシーは、よく要求されるコンプライアンスクエリーの[Investigation]ページで検索結果を提供するカスタムフィルタです。BlueXP  分類では、一般的な要求に基づいて事前定義されたポリシーのセットが提供されます。また、独自のポリシーを作成することもできます。</block>
+  <block id="f83468943a92a9d70fe55b7e87c65a05" category="paragraph">ポリシーは、[Investigation]ページのフィルタのリストにも表示されます。</block>
+  <block id="b41d9199442d75740188052cd48beb29" category="paragraph">[Investigation]ページにポリシーの結果を表示するには、特定のポリシーのボタンを選択し<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>、[Investigate Results]*を選択します。</block>
+  <block id="9501674588409f4d41d4dd0d16106531" category="inline-link-macro">[Investigation]ページでのデータのフィルタリング</block>
+  <block id="5905cce43eb3cf5df34ad20687132905" category="list-text">[Investigation]タブで、使用するフィルタを選択して検索を定義します。詳細は、を参照してください <block ref="fc016879136ae59a01dc15bd1e0ae029" category="inline-link-macro-rx"></block> 。</block>
+  <block id="e85bfe3f1de43636e78e3933cf709057" category="list-text">すべてのフィルタ特性を好みに合わせて設定したら、*この検索からポリシーを作成*を選択します。</block>
+  <block id="f9eedf2a2f5e1bb65bd48f67cc11775f" category="inline-image-macro">フィルタリングされたクエリをポリシーとして保存する方法を示すスクリーンショット。</block>
+  <block id="74f8b507d44a9c9de5bc7494adb05585" category="paragraph"><block ref="74f8b507d44a9c9de5bc7494adb05585" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e61d888eb37f48ad33d55cec612a0679" category="paragraph">既存のポリシーの条件を変更して、クエリ（フィルタを使用して定義した項目）を変更し、特定のパラメータを追加または削除できます。</block>
+  <block id="d9a6afbd4a5c10947a68b413c4cad163" category="paragraph">事前定義されたポリシーは変更できません。</block>
+  <block id="a126111bf84a962c10c82c54b7053f09" category="list-text">[ポリシーリスト]ページで、変更するポリシーの*[ポリシーの編集]*を選択します。</block>
+  <block id="a63db0f06bb77419a1c9810effb58b9a" category="list-text">名前フィールドと説明フィールドを変更します。これらのフィールドのみを変更するには、*[ポリシーの保存]*を選択します。</block>
+  <block id="b661e4ea30af73a913aed1e7ae647f4a" category="paragraph">保存したクエリのフィルタを変更するには、*[クエリの編集]*を選択します。</block>
+  <block id="1c76b2a61ae25c65703ed4c7e9a61c05" category="list-text">そのクエリを定義する[Investigation]ページで、フィルタを追加、削除、またはカスタマイズしてクエリを編集し、*[Save Changes]*を選択します。</block>
+  <block id="fc0a103843396ed5e93bb76396799d13" category="paragraph">ポリシーを削除するには、特定のポリシーのボタンを選択し<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>て*[ポリシーの削除]*を選択し、確認ダイアログで*[ポリシーの削除]*をもう一度選択します。</block>
 </blocks>
