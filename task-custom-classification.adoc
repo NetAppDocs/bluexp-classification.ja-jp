@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: task-custom-classification.html 
+keywords: custom classification, customize, regular expression, keyword, regex 
+summary: BlueXP  分類を使用すると、機密情報の検索をカスタマイズして、組織に関連する個 々 のパターンやキーワードに合わせてサービスを調整できます。 
+---
+= BlueXP  分類でカスタム分類を作成する
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP  分類を使用すると、機密情報のカスタム検索を作成できます。検索範囲は、正規表現または近接キーワードのセットに限定できます。
+
+
+
+== カスタム分類の作成
+
+カスタム分類は、マップスキャンと分類スキャンでのみ使用でき、マッピングのみのスキャンでは使用できません。この機能は現在プレビュー中です。
+
+.手順
+. [**Custom classification**]タブを選択します。
+. [**Add New Classifier*]を選択します。
+. 新しい分類子の名前と説明を追加します。
+. カスタマイズを正規表現として追加するには、**カスタム正規表現**を選択してから、**次へ**を選択します。
++
+.. 正規表現の場合は、パターンを追加してデータの特定の情報を検出します。たとえば、201で始まる12桁のIDは\b201\f\d(9)Bになります。**検証**を選択して、エントリの構文を確認します。
+
+
+
+
+新しいカスタマイズは、次回のスケジュールされたスキャンでキャプチャされます。結果を表示するには、を参照してくださいxref:task-generating-compliance-reports.html[コンプライアンスレポートを生成します]。

@@ -65,9 +65,11 @@ sidebar:
       url: "/task-controlling-private-data.html"
     - title: プライベートデータのカテゴリ
       url: "/reference-private-data-categories.html"
+    - title: カスタムスキャンの作成
+      url: "/task-custom-classification.html"
     - title: データを調査します
       url: "/task-investigate-data.html"
-    - title: データにポリシーを割り当てます
+    - title: 保存した検索の作成
       url: "/task-using-policies.html"
     - title: スキャン設定を変更します
       url: "/task-managing-repo-scanning.html"

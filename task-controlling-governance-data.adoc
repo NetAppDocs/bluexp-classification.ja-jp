@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
-keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies, data discovery assessment report, data mapping overview report, data repositories, data sensitivity, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
+keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
 summary: 組織のストレージリソース上のデータに関連するコストを管理できます。BlueXPは分類されるため、システム内の古いデータ、ビジネス以外のデータ、重複ファイル、大容量ファイルの量が特定されるため、一部のファイルを削除するか、低コストのオブジェクトストレージに階層化するかを判断できます。 
 ---
 = BlueXP  分類を使用して、組織に保存されているデータに関するガバナンスの詳細を表示する
@@ -68,16 +68,16 @@ NOTE: データ階層化を実装しているデータソースがある場合�
 
 
 
-=== 結果が最も多いポリシーを確認する
+=== 検索結果の数が最も多い保存済み検索のレビュー
 
-[Policies_]領域には、結果の数が最も多いポリシーがリストの一番上に表示されます。
+_saved searches_タブでは、検索結果の数が最も多い検索がリストの一番上に表示されます。
 
-ポリシーの詳細については、を参照してくださいlink:task-using-policies.html["データにポリシーを割り当てます"]。
+保存された検索の詳細については、を参照してくださいlink:task-using-policies.html["保存済み検索の作成"]。
 
 .手順
 . BlueXP  classificationメニューから、* Governance *を選択します。
-. [Goveranceダッシュボード> Policies]タイルで、[Investigation]ページに結果を表示するポリシーの名前を選択します。
-. 使用可能なすべてのポリシーのリストを表示するには、*[すべて表示]*を選択します。[Policies_]領域には、結果の数が最も多いポリシーがリストの一番上に表示されます。
+. Goveranceダッシュボードで、保存した検索タイルを探します。保存した検索の名前を選択して、[Investigation]ページに結果を表示します。
+. [すべて表示]*を選択すると、使用可能なすべての保存済み検索のリストが表示されます。_saved searches_areaでは、検索結果の数が最も多い検索がリストの一番上に表示されます。
 
 
 
@@ -116,7 +116,7 @@ image:screenshot-compliance-report-buttons.png["ガバナンスダッシュボ�
 
 
 .結果
-BlueXPの分類によって.pdfレポートが生成されます。このレポートを確認して、必要に応じて他のグループに送信できます。
+BlueXPの分類によってPDFレポートが生成されます。このレポートを確認して、必要に応じて他のグループに送信できます。
 
 
 

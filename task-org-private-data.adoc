@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-org-private-data.html 
-keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
+keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, saved searches 
 summary: BlueXPの分類では、プライベートデータをさまざまな方法で管理、整理できます。これにより、最も重要なデータを簡単に確認できます。 
 ---
 = BlueXP  分類でプライベートデータを整理
@@ -16,15 +16,13 @@ summary: BlueXPの分類では、プライベートデータをさまざまな�
 [role="lead"]
 BlueXPの分類では、プライベートデータをさまざまな方法で管理、整理できます。これにより、最も重要なデータを簡単に確認できます。
 
-[]
-====
-*注*この情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。2023年12月（v1.26.6）リリースでは、Azure Information Protection（AIP）ラベルを使用してデータを統合するオプションが削除されました。
 
-====
-* にサブスクライブしてファイルを分類および保護している場合 https://azure.microsoft.com/en-us/services/information-protection/["Azure 情報保護（ AIP ）"^]は、BlueXP  分類を使用してこれらのAIPラベルを管理できます。
+NOTE: この情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。
+
+* にサブスクライブしてファイルを分類および保護している場合link:https://azure.microsoft.com/en-us/services/information-protection/["Azure 情報保護（ AIP ）"^]は、BlueXP  分類を使用してAIPラベルを管理できます。
 * 組織または特定の種類のフォローアップのためにマークするファイルにタグを追加できます。
 * BlueXPユーザーを特定のファイルまたは複数のファイルに割り当てることで、ユーザーがファイルの管理を担当できるようになります。
-* 「ポリシー」機能を使用すると、 1 つのボタンをクリックして簡単に結果を表示できるように、独自のカスタム検索クエリを作成できます。
+* 保存された検索機能を使用すると、独自のカスタム検索クエリを作成して、1つのボタンをクリックして結果を簡単に確認できます。
 * 特定の重要なポリシーの結果が返された場合は、BlueXPユーザーまたはその他の電子メールアドレスに電子メールアラートを送信できます。
 
 

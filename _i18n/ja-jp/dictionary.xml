@@ -123,7 +123,6 @@
   <block id="7aa9c47f42013735e3c5573eb7004a9d" category="list-text">組織全体またはパブリックに公開されているオープンな権限を持つすべてのファイルとディレクトリ（共有およびフォルダ）を特定します。</block>
   <block id="5e27afd1e1e5a71e7aff888767d3214a" category="list-text">初期の専用の場所以外に存在する機密データを特定します。</block>
   <block id="29c9ae62d38a9d393cc687207b213fa5" category="list-text">データ保持ポリシーに準拠</block>
-  <block id="c43934763319d8b34916e416e6cab93d" category="list-text">新しいセキュリティの問題を自動的に検出するには、_Policies_を使用します。これにより、セキュリティ担当者はすぐに対処できます。</block>
   <block id="c5f92f73b9ea92063c2fc24f82a835d2" category="paragraph-title">ストレージ使用量を最適化</block>
   <block id="f9d643ab04854145a0dd7aacf4788ad5" category="paragraph">BlueXPは、ストレージの総所有コスト（TCO）に役立つツールを備えています。BlueXPの分類を使用すると、次の処理を実行できます。</block>
   <block id="12745f1753f4a2151c5bd9d0d7cadbd9" category="list-text">重複データやビジネス以外のデータを特定することで、ストレージ効率を向上させます。</block>
@@ -221,7 +220,6 @@
   <block id="bafd7322c6e97d25b6299b5d6fe8920b" category="cell">いいえ</block>
   <block id="142b203627d7e1032702a2d19364935b" category="cell">ファイル内の名前を検索します</block>
   <block id="94422fa6b0fe23d0ab463703c0022a63" category="inline-link-macro">ポリシー</block>
-  <block id="45bb3a28f3aa6feb29d3e208dcf8e08c" category="cell">カスタム検索結果を提供する作成<block ref="70f775217afdc5846c2e8494b632caaf" category="inline-link-macro-rx"></block></block>
   <block id="2dfcc311be6fe47855e067cf6907780f" category="cell">他のレポートを実行できます</block>
   <block id="a9cec06f0851d8f2722f032a0e63c115" category="cell">ファイルからメタデータを表示する機能*</block>
   <block id="4f40caf952f66945a674f638c61be8d9" category="paragraph">*マッピングスキャン中に、次のメタデータがファイルから抽出されます。</block>
@@ -243,8 +241,6 @@
   <block id="58f9985309ad441d05540492b96a7afd" category="cell">古いデータ</block>
   <block id="60ba2191f39b045b2e7dd2bc96654d1c" category="cell">ビジネス以外のデータ</block>
   <block id="959cab1cb99ef2d51c2197ef17b2105b" category="cell">重複ファイル</block>
-  <block id="172504408a355f366017244a5b384ba8" category="cell">事前定義済みポリシー</block>
-  <block id="0b0168bee54c0e61b8aa5a962967a322" category="cell">カスタムポリシー</block>
   <block id="369cd14037692c6f09dcfda1b4ac8ed3" category="cell">DDAレポート</block>
   <block id="ea8d76cdda2904dcca99873fc91b4643" category="cell">マッピングレポート</block>
   <block id="31b12a0b18d3e31cef5bf330060e1485" category="cell">感度レベル検出</block>
@@ -454,7 +450,6 @@
   <block id="a71f76c3256e4c206a4841d8eb0fed35" category="cell">SQLサーバ</block>
   <block id="35686630aa3baddc18c904374e570233" category="cell">Amazon RDS</block>
   <block id="06df33001c1d7187fdd81ea1f5b277aa" category="cell">アクション</block>
-  <block id="af4141cf3fb8179af4deac9547c01278" category="cell">ポリシーを作成する</block>
   <block id="900eba0c97923d74bd8d9e6190e07264" category="cell">✓</block>
   <block id="c101058e7ea21bbbf2a5ac893088e90b" category="cell">タグ</block>
   <block id="773ecc684d98231f8f23773727622446" category="cell">割り当て先</block>
@@ -588,11 +583,8 @@
   <block id="93f515959ce6187b986c42fa6959168b" category="doc">プライベートデータのカテゴリ</block>
   <block id="dccdebfeec8fafe3af210e0af17af320" category="paragraph">BlueXPで分類されるボリュームやデータベースには、さまざまなタイプのプライベートデータが含まれています。</block>
   <block id="3b6b18ad7909031011a3960e81ac99e4" category="paragraph">BlueXP  の分類では、次の2種類の個人データが識別されます。</block>
-  <block id="85542d81e9687ba10d962e859cdaf35a" category="list-text">*個人識別情報（PII）*</block>
-  <block id="874a594310f3c66b96cad8a1ef4af095" category="list-text">*機密性の高い個人情報（SPii）*</block>
   <block id="10ff4e7c2ffc1fd426aa6f784a05da66" category="section-title">個人データの種類</block>
   <block id="664f12aee95db5001901ada82a66a117" category="inline-link-macro">近接性検証</block>
-  <block id="185a6c810ca281a80052f73d8e326953" category="paragraph">ファイルに含まれる個人データ、または_個人識別情報_（PII）は、一般的な個人データまたは国の識別子です。次の表の3番目の列は、BlueXP  分類が識別子の所見を検証するためにを使用するかどうかを示してい<block ref="af3f1f2f9514770a1cfe0f9a422e763d" category="inline-link-macro-rx"></block>ます。</block>
   <block id="e1a196cfa9a98106e5ba102887a0c95d" category="paragraph">これらの項目を認識できる言語が表に示されています。</block>
   <block id="29ee5d1ebcc033234938a5234f1f2075" category="cell">識別子</block>
   <block id="ed82815cd7c9b16e760f312718a9a3d3" category="cell">近接性検証：</block>
@@ -665,7 +657,6 @@
   <block id="56ee28a97ee2b5724da347257b198872" category="cell">米国ニューヨーク運転免許証</block>
   <block id="f5817b4cc67ee41de01a4a19fc33ef7d" category="cell">米国社会保障番号（ SSN ）</block>
   <block id="0ff635b15f7fdd9403b351ffc3d0c2a1" category="section-title">機密性の高い個人データのタイプ</block>
-  <block id="22535a9e2a33599f897498d121038146" category="paragraph">BlueXP  の分類では、次の機密個人情報(SPii)がファイルに含まれています。</block>
   <block id="3b3e3761409ec91318d55527674759e3" category="paragraph">このカテゴリの項目は、現時点では英語でのみ認識されます。</block>
   <block id="0327f9ba6d0f4d1eac4f3812d1dcc54d" category="list-text">*Criminal Procedures Reference *:自然人の刑事上の有罪判決および犯罪に関するデータ。</block>
   <block id="5082eafb320441003f6c8b58c5b11b66" category="list-text">*民族参照*：自然人の人種または民族起源に関するデータ。</block>
@@ -838,10 +829,8 @@
   <block id="a8c256c3bc4f2ab999fee3056f7bebab" category="paragraph"><block ref="5d86a8971ca34d1c831cc0be7e11109d" prefix="" category="inline-code"></block></block>
   <block id="5cd360d496831478b3f9cbc92cce8b43" category="list-text">日付と時刻-イベントの完全なタイムスタンプ</block>
   <block id="79480e26f983c197c4338ae916966c93" category="list-text">Status -情報、警告</block>
-  <block id="79bd49250e598bf53655f50c83b04044" category="list-text">アクションタイプ（削除、コピー、移動、ポリシーの作成、ポリシーの更新、 ファイルの再スキャン、JSONレポートのダウンロードなど）</block>
   <block id="eee2e3db044c9200dc614ed87a9c8fde" category="list-text">ファイル名（ファイルに関連するアクションの場合）</block>
   <block id="01183a42bef9f9a5314d435065cfc49d" category="list-text">アクションの詳細-何が行われたか：アクションによって異なります</block>
-  <block id="cca60f73053d584e7caacfd33a8f046e" category="list-text">ポリシー名</block>
   <block id="3c14ec40364ae096849c696c3497ff60" category="list-text">移動元と移動先のデータ用</block>
   <block id="c02ceb243337f566ebb5a2984a4d72eb" category="list-text">コピー元およびコピー先の場合</block>
   <block id="8022db3692364177695fce2a133b526b" category="list-text">tag-tag nameを指定します</block>
@@ -915,7 +904,6 @@
   <block id="15dd93dd8e5fe369d32909872743ce92" category="inline-link-macro">[ データ調査 ] ページでデータをフィルタリングします</block>
   <block id="f9643188d49ee294212ab09521305bdd" category="section-title">個人データを含むファイルを表示する</block>
   <block id="99c411b30c0d86f95c6416318f98106b" category="inline-link-macro">すべてのリストを参照してください</block>
-  <block id="8060d07e3adbf13c278991613997a8b6" category="inline-link-macro">Data Fusion を使用して個人データ識別子を追加する</block>
   <block id="ff63178a8a067a8614bbbfdf75252bf4" category="inline-link-macro">個人データのテーブル</block>
   <block id="8c17e3b1b4e627d4a92973aec9ef4ce0" category="inline-image-macro">個人ファイルダイアログボックスのスクリーンショット。個人データタイプの横にある調査結果アイコンをクリックできます。</block>
   <block id="bec06ffefcc7ab6b7882b310c3c7790a" category="list-text">特定のファイルの検索、ソート、詳細の展開、 * 調査結果 * をクリックしてマスクされた情報を表示、またはファイルリストをダウンロードして、データを調査します。</block>
@@ -1550,12 +1538,9 @@
   <block id="786452cdc534ba8395eb7a26c9ab3efc" category="summary">[データ調査]ページで詳細を表示すると、組織のデータを調査できます。このページには、ガバナンスダッシュボードやコンプライアンスダッシュボードなど、BlueXPの分類UIのさまざまな領域から移動できます。</block>
   <block id="8d2b3a00bc0d44767cf3d5dfed11884d" category="section-title">[Data Investigation]ページでのデータのフィルタリング</block>
   <block id="5ba18772d6c4efd6fedbaf5fb29d559a" category="paragraph">調査ページの内容をフィルタリングして、表示する結果のみを表示できます。これは非常に強力な機能です。データをリファインした後、ページ上部のボタンバーを使用して、ファイルのコピー、ファイルの移動、ファイルへのタグまたはAIPラベルの追加など、さまざまなアクションを実行できます。</block>
-  <block id="b3c7c4e0f0d5f23cefa1d143f9a57eb7" category="section-title">タグ、ラベル、割り当てられたユーザ、およびポリシーでデータをフィルタリングします</block>
-  <block id="df49368049d4a11c63d1acd4766aae12" category="paragraph">タグ、AIPラベル、割り当てられたユーザ、またはポリシー別にデータを表示するには、次のフィルタを使用します。</block>
   <block id="3bebc15b7ececd939dbb2e1037e2bd21" category="paragraph">*注*タグ、ラベル、割り当てられたユーザーでフィルタリングする機能は、バージョン1.30以前のBlueXP  分類にのみ関係します。</block>
   <block id="d7778d0c64b6ba21494c97f77a66885a" category="cell">フィルタ</block>
   <block id="3ec365dd533ddb7ef3d1c111186ce872" category="cell">詳細</block>
-  <block id="b6fb796ef2b473f220b609812d519181" category="cell">ポリシーを選択します。<block ref="578f763d599897de23ba32ec116d6451" category="inline-link-macro-rx"></block>既存のポリシーのリストを表示し、独自のカスタムポリシーを作成します。</block>
   <block id="9d85612840e00794629f6dce90aa22fa" category="inline-link-macro">AIP ラベル</block>
   <block id="dd6c13315898ffef83a20b77b08aee15" category="cell">ファイルに割り当てられているを選択します<block ref="9b3a58766d8c539d0ec9039695618ffe" category="inline-link-macro-rx"></block>。</block>
   <block id="f8a85ed4966ec4306b4e58f3bd439410" category="inline-link-macro">タグ</block>
@@ -1626,7 +1611,6 @@
   <block id="c670f11fe2007eb5c3be88dd2f27af16" category="cell">特定の作業環境を選択します。</block>
   <block id="5da8b466834d55ddcdf18f51655016b9" category="cell">ストレージリポジトリ</block>
   <block id="5bf1893d83226372ff2fad4fcb1c9ae2" category="cell">ボリュームやスキーマなどのストレージリポジトリを選択します。</block>
-  <block id="19797a891bd45c541e59f0948f6e102b" category="paragraph">ポリシー別にデータを表示するには、次のフィルタを使用します。</block>
   <block id="2cc5511704a792153e3bfc286f24901a" category="paragraph">次のフィルタを使用して、BlueXPの分類スキャンステータス別にデータを表示します。</block>
   <block id="d55969f99169fb1ccecedd45e530342d" category="cell">解析ステータス（Analysis Status）</block>
   <block id="133617814b053dc465cdc57c432b1756" category="cell">オプションを選択して、[最初のスキャン保留中]、[スキャン完了]、[再スキャン保留中]、または[スキャンに失敗しました]のファイルのリストを表示します。</block>
@@ -1649,7 +1633,6 @@
   <block id="fc9033d933e9132cc23bfe396744d214" category="inline-link-macro">ファイルを削除します</block>
   <block id="68309bcfd455803ffbae49714037b789" category="inline-image-macro">重複するファイルが配置されている場所を確認する方法を示すスクリーンショット。</block>
   <block id="0dc6d718adece3621c4a40fa3b4b2a82" category="paragraph"><block ref="0dc6d718adece3621c4a40fa3b4b2a82" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">このページで指定されている「ファイルハッシュ」値を使用して、 ［ 調査 ］ ページに直接入力すると、特定の重複ファイルをいつでも検索できます。また、ポリシーで使用することもできます。</block>
   <block id="02b8107c002e6577adbfdfd6d6f1b208" category="inline-image-macro">調査レポートのダウンロードページのスクリーンショット。複数のオプションがあります。</block>
   <block id="c7fa83e1836cada62d287dfbba3779c2" category="paragraph">レポートをダウンロード中であることを示すメッセージがダイアログに表示されます。</block>
   <block id="6dc6bf0d1023a1b5714c777b474cce12" category="paragraph">非構造化ファイルデータレポート*には、ファイルに関する次の情報が含まれています。</block>
@@ -1707,7 +1690,6 @@
   <block id="bc9381c1fffa85e3370bbee2fa58936b" category="list-text">カスタムカテゴリを追加して、データ内の特定のカテゴリの情報を特定できます。</block>
   <block id="0b95409e38fd76ec71d03e3e14b83763" category="paragraph">カスタムスキャン条件を追加するこれらのメカニズムはすべて、すべての言語でサポートされています。</block>
   <block id="a2c1b5d018e20e258024bece4a2d254e" category="section-title">データベースからカスタムの個人データ識別子を追加します</block>
-  <block id="e88adea3b212c154801612c8605db6d5" category="paragraph">Data Fusion _という機能を使用すると、組織のデータをスキャンして、データベースからの一意の識別子が他のいずれかのデータソースに存在するかどうかを確認できます。データベーステーブルで特定の列を選択することで、BlueXPのスキャンで検索される追加の識別子を選択できます。たとえば、次の図は、データ Fusion を使用してボリューム、バケット、およびデータベースをスキャンし、 Oracle データベースからすべての顧客 ID が出現する状況を示しています。</block>
   <block id="dac05618fc69864a6bb4607d758eba4b" category="inline-image-macro">データベースのコンテンツをソースとして使用して、同じデータを含むファイルを識別する方法を示す図。</block>
   <block id="272d016d013ea6f34fea95eb2490c955" category="paragraph"><block ref="272d016d013ea6f34fea95eb2490c955" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9e069456015ebd506621d5c53645d136" category="paragraph">このように、 2 つのボリュームと 1 つの S3 バケットにそれぞれ一意の顧客 ID が見つかりました。データベーステーブル内の一致も識別されます。</block>
@@ -1932,8 +1914,6 @@
   <block id="aea50b39bf674599cf913ca73fc8eeb2" category="paragraph"><block ref="aea50b39bf674599cf913ca73fc8eeb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="865eee83e350aaa1f9bf0c9f0c4adef0" category="section-title">ソースファイルを削除します</block>
   <block id="f00d1d6da069b57d87e693fce6b2fc27" category="paragraph">ストレージ・システムに残すのに安全でない ' またはリスクが高すぎるソース・ファイルを完全に削除したり ' 重複として識別したソース・ファイルを削除したりすることができますこの操作は永続的であり、元に戻すことも復元することもできません。</block>
-  <block id="330f8b46c48484fc9016a8247fb99ba3" category="inline-link-macro">ポリシーを使用して自動的に作成</block>
-  <block id="c63897b00e1bb7484e004dc2e1337d94" category="paragraph">ファイルは、[Investigation]ペイン、またはから手動で削除できます<block ref="189dcbbb5debf653b5fc0860b1c881e2" category="inline-link-macro-rx"></block>。</block>
   <block id="a338f19adc641be98bda63cc7a5d4741" category="admonition">データベースに存在するファイルは削除できません。その他のすべてのデータソースがサポートされます。</block>
   <block id="5415e45b4bcc0ac609070c6e72408406" category="paragraph">ファイルを削除するには、次の権限が必要です。</block>
   <block id="52cd2f737a295e43ee2f51fe52c772a4" category="list-text">NFSデータの場合-書き込み権限でエクスポートポリシーを定義する必要があります。</block>
@@ -1998,12 +1978,9 @@
   <block id="0f9fab6026fbdbed86f2befe8eae64e1" category="paragraph">スキャンはいつでも再開できます。</block>
   <block id="0b139c0236cbbe51386a48380dccef80" category="summary">BlueXPの分類では、プライベートデータをさまざまな方法で管理、整理できます。これにより、最も重要なデータを簡単に確認できます。</block>
   <block id="e87b43c3f65a9e6b5fc0f778e155e091" category="doc">プライベートデータを整理します</block>
-  <block id="f754acc189a7236fe2fb4657457fcb2c" category="paragraph">*注*この情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。2023年12月（v1.26.6）リリースでは、Azure Information Protection（AIP）ラベルを使用してデータを統合するオプションが削除されました。</block>
   <block id="2a03ec9e7d9aaa65371a523434cb5fb5" category="inline-link">Azure 情報保護（ AIP ）</block>
-  <block id="866b468ee4470d23fb5549ba61fadfa8" category="list-text">にサブスクライブしてファイルを分類および保護している場合<block ref="dc81bb027ada9d4ecc15bb9933242e3a" category="inline-link-rx"></block>は、BlueXP  分類を使用してこれらのAIPラベルを管理できます。</block>
   <block id="892f73595a08cb4eef7c3e6319b7f807" category="list-text">組織または特定の種類のフォローアップのためにマークするファイルにタグを追加できます。</block>
   <block id="4641554e9ff0ab6b08e16160ca0cf9af" category="list-text">BlueXPユーザーを特定のファイルまたは複数のファイルに割り当てることで、ユーザーがファイルの管理を担当できるようになります。</block>
-  <block id="f9f3ed5f443ba769e31426ba3b322b22" category="list-text">「ポリシー」機能を使用すると、 1 つのボタンをクリックして簡単に結果を表示できるように、独自のカスタム検索クエリを作成できます。</block>
   <block id="042d6a5acaf1a16f91ab258697afa46c" category="list-text">特定の重要なポリシーの結果が返された場合は、BlueXPユーザーまたはその他の電子メールアドレスに電子メールアラートを送信できます。</block>
   <block id="a8d43af62606e8592f9d1aabd661626f" category="section-title">タグまたはラベルを使用する必要がありますか？</block>
   <block id="3ad72e369e1a6f6b2b9b64eb74a1d971" category="paragraph">以下は、BlueXPの分類タギングとAzure Information Protectionのラベル付けの比較です。</block>
@@ -2667,50 +2644,8 @@
   <block id="f3e4dff4900974e7d6033b16c7f75179" category="paragraph"><block ref="f3e4dff4900974e7d6033b16c7f75179" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a620f7ab4fc25849a31718c76e9d7fa1" category="list-text">[ポリシーの保存]*をクリックすると、ポリシーの概要にラベルが表示されます。</block>
   <block id="bb59c9be972bc7568c57f54fdc257244" category="admonition">ポリシーにラベルが設定されていても、そのラベルがAIPから削除された場合、ラベル名はオフになり、ラベルは割り当てられなくなります。</block>
-  <block id="8ca194e9f33f192ece200a8c9ed9e621" category="doc">データにポリシーを割り当てます</block>
-  <block id="7abddc2fd9a072ced7e028f1d716b729" category="paragraph">ポリシーは、よく要求されるコンプライアンスクエリーの [ 調査 ] ページで検索結果を表示するカスタムフィルタのお気に入りリストのようなものです。BlueXPの分類では、一般的なお客様の要望に基づいて一連の事前定義されたポリシーが提供されます。組織固有の検索結果を提供するカスタムポリシーを作成できます。</block>
-  <block id="1404233f94f23148f7634e161761230b" category="paragraph">ポリシーには次の機能があります。</block>
-  <block id="223d722e1cb33bb8a31e8cc8d6efcb10" category="list-text"><block ref="3708ee7d5604e21bcf79306c2b6928c3" category="inline-xref-macro-rx"></block>ユーザ要求に基づくNetAppからのアクセス</block>
-  <block id="649da6c1fa710a382a388e465871a680" category="list-text">独自のカスタムポリシーを作成する機能</block>
-  <block id="bee2f666032ac3e06ad966dc6a8febf4" category="list-text">ポリシーの結果を含む [ 調査 ] ページを起動します ワンクリックで</block>
-  <block id="e3cf1613fe34f89ac1f2966a0222877f" category="paragraph">コンプライアンスダッシュボードの*[ポリシー]*タブには、BlueXP分類のこのインスタンスで使用可能な事前定義済みポリシーとカスタムポリシーがすべて表示されます。</block>
-  <block id="967b04771a3458159d11dd8932d09129" category="inline-image-macro">BlueXP分類ダッシュボードの[Policies]タブのスクリーンショット。</block>
-  <block id="d44d997087e7d999102d47f4839b74ac" category="paragraph"><block ref="d44d997087e7d999102d47f4839b74ac" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c939d1291c3b87bc95f09e9b4065138e" category="section-title">[Investigation]ページでのポリシー結果の表示</block>
-  <block id="eade099275ce51bdec585f23e50846c7" category="inline-image-macro">[Policies]タブで特定のポリシーの[Investigate Results]を選択したスクリーンショット。</block>
-  <block id="b87f575df2628b12c3d997954b369392" category="paragraph"><block ref="b87f575df2628b12c3d997954b369392" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f617da6b50728500642eb376ab97b6f4" category="section-title">カスタムポリシーを作成する</block>
-  <block id="e6860b78555fc79d4429acb5534cf51b" category="paragraph">組織固有の検索結果を提供する独自のカスタムポリシーを作成できます。検索条件に一致するすべてのファイルとディレクトリ（共有とフォルダ）の結果が返されます。</block>
-  <block id="19948385b78770f8de2200aa21288a6a" category="list-text">必要に応じて、このチェックボックスをオンにすると、ポリシーパラメータに一致するファイルが自動的に削除されます。</block>
-  <block id="ab3a166dafa7696427031860a8ba2694" category="inline-image-macro">ポリシーを設定して保存する方法を示すスクリーンショット。</block>
-  <block id="9b07697830dbb49b6ea67bff8f36ad42" category="paragraph"><block ref="9b07697830dbb49b6ea67bff8f36ad42" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f124f85896ac18194a54f85b2d21b888" category="paragraph">[ ポリシー ] タブに新しいポリシーが表示されます。</block>
-  <block id="ad3a8f7c032ad4e96e6372989c781a41" category="section-title">ポリシーの編集</block>
-  <block id="46cca5a0b236597ecbbc433af09a7cdd" category="inline-image-macro">既存のポリシーの編集を開始する方法を示すスクリーンショット。</block>
-  <block id="3056771597dc5384f17bbb61e33a97e3" category="paragraph"><block ref="3056771597dc5384f17bbb61e33a97e3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cc9419324ea7def41675382a6f26c64b" category="inline-image-macro">[ポリシーの編集]ページの[クエリの編集]ボタンを選択するスクリーンショット。</block>
-  <block id="1c5fef5f58eb8467fc88591877ccc7e3" category="paragraph"><block ref="1c5fef5f58eb8467fc88591877ccc7e3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7cbe4840b4a3a2fdf1f9286da7e2b284" category="inline-image-macro">フィルタ設定を変更してクエリを編集する方法を示すスクリーンショット。</block>
   <block id="289758d7ef2e573a0ee7824d5814b945" category="paragraph"><block ref="289758d7ef2e573a0ee7824d5814b945" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5d82deb8cba9afb6516c37ca8c24a8ad" category="section-title">ポリシーの削除</block>
-  <block id="975f1d83956c13d06e3328fcb12a0a3f" category="paragraph">作成したカスタムポリシーが不要になった場合は削除できます。事前定義されたポリシーは削除できません。</block>
-  <block id="91f5ccbaa42a010696c34306e0121702" category="section-title">事前定義されたポリシーのリスト</block>
-  <block id="d1d0b0240f763b10942cc206a4f4e980" category="paragraph">BlueXPは分類され、次のシステム定義のポリシーが用意されています。</block>
-  <block id="49ee3087348e8d44e1feda1917443987" category="cell">名前</block>
-  <block id="88a8fc10a4a6b28d78fc1e400182ead7" category="cell">プライベートデータ：7年以上前に停滞しています</block>
-  <block id="0658572f595df4673d537d6a8a8b1a1a" category="cell">個人情報または機密性の高い個人情報を含むファイル。最終更新日は 7 年前に変更されました。</block>
-  <block id="2e54b6ea8f6706e7beb9350d62e23178" category="cell">個人情報または機密性の高い個人情報を含むファイル。最終更新日は 7 年前に変更されました</block>
-  <block id="85198c4138d424a195c0c9dd0b22bd8f" category="cell">データ主体名-高リスク</block>
-  <block id="dc33521f475dd5a7293f3917bf0af42f" category="cell">50 を超えるデータ主体名を持つファイル。</block>
-  <block id="803f715ed99c292cad7695adc28eb9d6" category="cell">50 を超えるデータ主体名を持つファイル</block>
-  <block id="688de20ddbb7b2207a9c3999989be28b" category="cell">Eメールアドレス-リスクが高くなっています</block>
-  <block id="692c6580584ac112966355c5be17619f" category="cell">E メールアドレスが 50 を超えるファイル、または E メールアドレスを含む行の 50% を超える DB 列</block>
-  <block id="d55a6a9af72cb1355db97941acafb865" category="cell">個人データ-高いリスク</block>
-  <block id="f01867afcb6e04d62f44ff0ba1bea1a8" category="cell">個人データ識別子が 20 個を超えるファイル、または個人データ識別子を含む行の 50% を超える DB 列。</block>
-  <block id="8f08d4145d6e3a493a3fa4cd9e22247f" category="cell">20 以上の個人用のファイル、または個人を含む行の 50% を超える DB 列を持つファイル</block>
-  <block id="39dcf805c803eacb6e35a6ea5e8cb25d" category="cell">機密性の高い個人データ-高いリスク</block>
-  <block id="9b81ccdb2be13f884e301547dfac52b2" category="cell">機密性の高い個人データ識別子が 20 を超えるファイル、または機密性の高い個人データを含む行の 50% を超える DB 列。</block>
-  <block id="d3566f9763235eb9dbff68cd1220088a" category="cell">機密性の高い個人用のファイル、または機密性の高い個人を含む行の 50% 以上を含む DB 列</block>
   <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">たとえば、 100 個のファイルを削除するなど、多くのファイルで [ 調査結果 ] ペインからアクションを実行する場合、プロセスには時間がかかることがあります。アクションステータスペインでこれらの非同期アクションのステータスを監視して、すべてのファイルにいつ適用されたかを確認できます。</block>
   <block id="c06ccfe24df0bff683583f82911916e0" category="paragraph">100個のファイルの移動や削除など、多くのファイルで［調査結果］ペインから非同期アクションを実行する場合は、このプロセスに時間がかかることがあります。これらのアクションのステータスは、_Action Status_Paneで監視できるので、すべてのファイルにいつ適用されたかを知ることができます。</block>
   <block id="81e4b26a6519cffe24195e5edc407992" category="paragraph">これにより、正常に完了した操作、現在実行中の操作、および失敗した操作を確認できるため、問題を診断して修正できます。単一ファイルの移動など、短時間で完了する短時間の処理は、[操作][ステータス]ペインには表示されません。</block>
@@ -2906,7 +2841,6 @@
   <block id="f72e4f10556fdc1e84c715407cbda16b" category="sidebar">プライベート情報を含むファイルを表示します</block>
   <block id="53aba5c7ba7952b6d58e9dfb83a4516e" category="sidebar">ストレージに複製されているファイルを表示します</block>
   <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">データをフィルタして、特定のファイルを表示します</block>
-  <block id="2238095e02de090e407d911c0f0f1e9f" category="sidebar">ポリシーを作成して、上位の検索結果を表示する</block>
   <block id="becce430afb103abe05ad66b3e6cde8a" category="sidebar">コンプライアンスレポートを生成します</block>
   <block id="9293f14feca10eb970a136a34ecc9d8c" category="sidebar">データサブジェクトのアクセス要求に応答します</block>
   <block id="98f9f8a11a148aec70c39965293ea9b3" category="sidebar">廃止された機能</block>
@@ -3094,7 +3028,6 @@
   <block id="6915401740d9460ed0e142b3fd0b402c" category="doc">BlueXP  分類によるSharePointアカウントのスキャン</block>
   <block id="df3ac8bd169a771ea350cd5cc533e873" category="doc">BlueXP  サポートへの登録</block>
   <block id="c0a6118312ef4878e08365a032d30e38" category="doc">BlueXP  の分類で非準拠データが検出された場合に電子メールアラートを送信する</block>
-  <block id="d359757dd1d4d8c3ff7449e1a600e014" category="doc">BlueXP  分類を使用してデータにポリシーを割り当てる</block>
   <block id="81969dc99e0a4fcee700e3390e9e8d60" category="doc">BlueXP  分類でコンプライアンスアクションのステータスを表示する</block>
   <block id="87259e291cf73ff3b26cf61342184d7a" category="section-title">ガバナンスダッシュボードの確認</block>
   <block id="d930cabf64be47e8e8836a7ffce60dbd" category="list-text">BlueXP  メニューから、* Governance &gt; Classification *を選択します。</block>
@@ -3103,9 +3036,6 @@
   <block id="cd44aff9043f042044d20fa9200a9168" category="section-title">コスト削減の余地を確認する</block>
   <block id="64d5cdb36e33cae106a6b70c95fdc6de" category="paragraph">_Saving Opportunities 領域内の項目を調査して、削除または階層化してより安価なオブジェクトストレージにする必要があるデータがないかどうかを確認できます。</block>
   <block id="d7fc3a438d308cfbcbd8fa3231391419" category="list-text">BlueXP  classificationメニューから、* Governance *を選択します。</block>
-  <block id="b425c4e4b41334f19572d1e9e51d7b9a" category="section-title">結果が最も多いポリシーを確認する</block>
-  <block id="e026e06fb0f6082b58b19e0ae90f9015" category="paragraph">[Policies_]領域には、結果の数が最も多いポリシーがリストの一番上に表示されます。</block>
-  <block id="24c741c03fc84375fc7935a70023d0ac" category="paragraph">ポリシーの詳細については、を参照してください<block ref="eb4899a5ae2ad655555b425171c60bf8" category="inline-link-macro-rx"></block>。</block>
   <block id="9da3158754790a2bd5d492ff265be3c4" category="section-title">データ検出評価レポートの作成</block>
   <block id="310db9cf8ba2482b63b9ab1efe7fe48c" category="paragraph">Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、懸念すべき領域と潜在的な修復手順を示します。結果は、データのマッピングと分類の両方に基づいています。このレポートの目的は、データセットの次の3つの重要な側面についての認知度を高めることです。</block>
   <block id="ba8c35e924f949589fd6e14b916db6fc" category="paragraph">このレポートを使用すると、次の操作を実行できます。</block>
@@ -3174,8 +3104,6 @@
   <block id="47f5b0791caa2598c4559bb5afa675a9" category="paragraph">ここからあなたの研究を始めるべきです。Governanceダッシュボードから、さらに調査する領域を選択できます。</block>
   <block id="56bcd47afb74823d33fc490b9ced87a3" category="list-text">Governanceダッシュボードの[Savings Opportunities]タイルごとに*[Optimize Storage]*を選択して、フィルタリングされた結果を[Investigation]ページに表示します。_Saving Opportunities 領域内の項目を調査して、削除または階層化してより安価なオブジェクトストレージにする必要があるデータがないかどうかを確認できます。</block>
   <block id="dfd23906ba391609b608a93fdd40fdb2" category="admonition">データ階層化を実装しているデータソースがある場合は、オブジェクトストレージにすでに存在する古いデータを_Stale Data_categoryで特定できます。</block>
-  <block id="7c0b28ab5d3d14007833c883687fb63e" category="list-text">[Goveranceダッシュボード&gt; Policies]タイルで、[Investigation]ページに結果を表示するポリシーの名前を選択します。</block>
-  <block id="0dc58fd3e83f0422da065df1d7c6bd4e" category="list-text">使用可能なすべてのポリシーのリストを表示するには、*[すべて表示]*を選択します。[Policies_]領域には、結果の数が最も多いポリシーがリストの一番上に表示されます。</block>
   <block id="483d6c5447c876cec7c9f20a2f16d52e" category="list-text">保持ポリシーを変更したり、特定のデータ（古いデータ、重複データ、ビジネス以外のデータ）を移動または削除したりすることで、ストレージコストを削減</block>
   <block id="5672e2463aa066853c9eb4cf4b3e3fa8" category="list-text">グローバルグループ管理ポリシーを改訂して、幅広い権限を持つデータを保護します</block>
   <block id="1f4e12eb3b2fcb4ce87b8ed675d3270c" category="list-text">PIIをより安全なデータストアに移動することで、個人情報または機密性の高い個人情報を含むデータを保護します</block>
@@ -3305,7 +3233,6 @@
   <block id="f073b9ddb57cf4112d6b8af2be152237" category="paragraph">デフォルトでは、BlueXPの分類ダッシュボードには、すべての作業環境とデータベースのコンプライアンスデータが表示されます。一部の作業環境のデータのみを表示するには、データを選択します。</block>
   <block id="b9578c21a6204e25cdc3223630386356" category="paragraph">[Data Investigation]ページで結果をフィルタリングし、結果のレポートをCSVファイルとしてダウンロードします。詳細は、を参照してください <block ref="70fd9e5a2e3fb16954088b6ec652d9bc" category="inline-link-macro-rx"></block> 。</block>
   <block id="2a23e42a903ba0977e9c64da39e06413" category="paragraph">BlueXPの分類では、データ内の特定の単語、文字列、パターン（正規表現）が自動的に識別されます。たとえば、個人識別情報（ PII ）、クレジットカード番号、社会保障番号、銀行口座番号、パスワード、 その他。<block ref="b85650e1ded260986da01a502b58ab3e" category="inline-link-macro-rx"></block>です。BlueXPの分類では、個 々 のファイル、ディレクトリ（共有とフォルダ）内のファイル、およびデータベーステーブルでこのような情報が識別されます。</block>
-  <block id="d1823de7c38686a26a0767920238f395" category="paragraph">また、スキャン対象のデータベースサーバを追加した場合、_Data Fusion _ featureはファイルをスキャンして、データベースの一意の識別子がこれらのファイルまたは他のデータベースで見つかったかどうかを識別します。詳細は、を参照してください <block ref="fb1b570cbcf76e8205708b1c55761831" category="inline-link-macro-rx"></block> 。</block>
   <block id="678a3da74b0f8445758bf6169c988967" category="paragraph">BlueXPの分類では、一部のタイプの個人データについて、_proximity validation_を使用して検出結果が検証されます。検証は、見つかった個人データに近接した 1 つまたは複数の定義済みキーワードを検索することによって行われます。たとえば、BlueXP  分類では、米国の社会保障番号（SSN）の隣に近接語（_ssn_or_social security_など）が表示される場合、SSNとして識別されます。<block ref="8379e1454990bf850576c11a6bba2bd5" category="inline-link-macro-rx"></block>BlueXP  分類でプロキシミティ検証が使用されるタイミングを示します。</block>
   <block id="a38e6da6efb7dc004c87e00dfcfe4fc2" category="list-text">BlueXP  分類メニューから*コンプライアンス*タブを選択します。</block>
   <block id="b6ec249a34e065ff70b013a6023d50e9" category="list-text">すべての個人データの詳細を調査するには、個人データの割合の横にあるアイコンを選択します。</block>
@@ -3362,7 +3289,6 @@
   <block id="93df112866b7972d001a7d5a43ee807d" category="paragraph">*メタデータでデータをフィルタリング*</block>
   <block id="8e1a5e11bb2fb28b8b6dcec568a360c4" category="cell">を選択します。</block>
   <block id="bf49fd74a7f1e071ae8d9037d850229b" category="paragraph">*ストレージタイプでデータをフィルタリング*</block>
-  <block id="1931b0be2f819fbc984873eab7604c0e" category="paragraph">*ポリシーでデータをフィルタリング*</block>
   <block id="6926f90beadfdb901f306772787c7f05" category="paragraph">*分析ステータスでデータをフィルタリング*</block>
   <block id="0fdacc8c067979a1926a265cd399f05a" category="paragraph"><block ref="d865d9e7da9a534ddb8c0b18eca2435c" category="inline-link-macro-rx"></block>スキャン分析イベントを使用してフィルタリングするときに[Investigation]ページに表示される項目の詳細については、を参照してください。</block>
   <block id="c2d41b84903ff9433b055cd311767824" category="paragraph">*重複データでデータをフィルタリング*</block>
@@ -3383,17 +3309,7 @@
   <block id="c96bf252030be7d77f32e236939f6da2" category="list-text">重複ファイルのリストとその場所を表示するには、*詳細を表示*を選択します。</block>
   <block id="5e6ec4e1f88d65eaeb13fa82313d9809" category="list-text">次のページで、[View Duplicates]を選択して、[Investigation]ページにファイルを表示します。</block>
   <block id="b9cf7636c1458813ea2386a78b8774cd" category="list-text">レポートタイプ（CSVまたはJSON）を選択します。</block>
-  <block id="3acd7c6848524cfd6cd39d023db6c391" category="section-title">選択したフィルタに基づいてポリシーを作成する</block>
-  <block id="dbcfe39ddc3ef4e14d4b8ff904564614" category="paragraph">[データ調査]ページで選択したフィルタをポリシーとして保存すると便利です。このようにして、同じフィルタを再選択せずにいつでも実行できます。</block>
-  <block id="461f18298523b9780c64f7622a558e72" category="list-text">[Data Investigation]ページで、ポリシーの作成に使用するフィルタを選択します。</block>
-  <block id="7b3efd4315afe81c069931074b6b2bcf" category="list-text">[Filter]ペインの下部にある*[Create policy from this search]*を選択します。</block>
-  <block id="02732823805cfd3fcc35939ca3602379" category="list-text">ポリシーの名前と説明を入力します。</block>
   <block id="aac46765e6c078c569d11a06fa32886b" category="list-text">次のいずれかを選択します。</block>
-  <block id="7a93f17737c434a658952da4ac61c2e7" category="list-text">*このポリシーに一致するファイルを自動的に削除する（毎日）：ポリシーに一致するファイルを削除する場合に選択します。</block>
-  <block id="03679c9c05b6548cd278d5dc9b22d06d" category="list-text">*このポリシーに関する電子メールの更新をこのアカウントのBlueXP  ユーザーに送信するすべての&lt;day/week/month&gt;*：このアカウントのBlueXP  ユーザーにポリシーに関する電子メールの更新を送信する場合は、これを選択します。</block>
-  <block id="2a4930d89395c66bd221720bcaae06e3" category="list-text">*&lt;Day&gt;ごとに&lt;email address&gt;にメールを送信*：&lt;Day&gt;ごとに特定のメールアドレスにメールを送信する場合は、このオプションを選択します。</block>
-  <block id="41025e9c551610edae39a167ecbe1b73" category="list-text">[ * ポリシーの作成 * ] を選択します。</block>
-  <block id="97079a3b4a44ca52d28b2807f91a5ec0" category="admonition">結果が[Policies]ページに表示されるまでに最大15分かかることがあります。</block>
   <block id="bc19fc1fb9d36ac2eec32fb81f6e5cca" category="paragraph">マッピングのみのスキャンを実行する場合は、最も重要なスキャンに優先順位を付けることができます。この機能は、多数の作業環境があり、優先度の高いスキャンを先に完了させたい場合に役立ちます。</block>
   <block id="2e41eb33226717a4730fa2131336dc5a" category="paragraph">詳細については、を参照してください <block ref="9493b318b51f384796e93c6ba74f5935" category="inline-link-macro-rx"></block>。</block>
   <block id="33fc2a8f6921fec02571495993aa2c6c" category="doc">バージョン1.42</block>
@@ -3410,8 +3326,6 @@
   <block id="e23f3c5ee576a6a524db07af25fc5e88" category="list-text">完全なレポートをダウンロードするには、**作業環境**を選択し、それぞれのドロップダウンメニューから**作業環境**および**ボリューム**を選択します。**インストール先フォルダのパス**を指定します。</block>
   <block id="b28b21b6561b4b84c07adb24f4618993" category="paragraph">ブラウザでレポートをダウンロードするには、**Local**を選択します。メモこのオプションでは、レポートは最初の10,000行に制限され、**CSV**形式に制限されます。[**ローカル*]を選択した場合は、他のフィールドに入力する必要はありません。</block>
   <block id="9340ce8741905e7d6ff4c0ca07a7a39a" category="paragraph-title">マッピングのみのスキャンの優先順位付け</block>
-  <block id="9267a4a221ce8d9176ea70d45543abf5" category="paragraph">最も重要なマッピングのみのスキャンに優先順位を付けて、優先度の高いスキャンを先に完了させることができます。</block>
-  <block id="f869ba288edefcc198633bd9bda2d3b8" category="paragraph">デフォルトでは、スキャンは開始順序に基づいてキューに入れられます。スキャンに優先順位を付ける機能により、スキャンをキューの先頭に移動できるようになりました。複数のスキャンに優先順位を付けることができます。優先順位は、先入れ先出し順で指定されます。つまり、最初に優先順位を付けたスキャンがキューの先頭に移動し、2番目に優先順位を付けたスキャンがキューの2番目に移動します。この機能はマッピングのみのスキャンに限定されます。Map &amp; Classifyスキャンでは使用できません。</block>
   <block id="038d75fbb28c2dd7e9ed9904fea7fadc" category="paragraph">BlueXP  分類では、次のデータを収集してインデックスを作成し、カテゴリを割り当てます。</block>
   <block id="16e3e664a20bb6964ad08fde07c76933" category="list-text">*個人データ*：電子メールアドレス、識別番号、クレジットカード番号などの個人識別情報（PII）。BlueXP  分類では、ファイル内の特定の単語、文字列、パターンを使用して識別されます。<block ref="fc496cc858c0e8dff4419012ba17c358" category="inline-link-macro-rx"></block>です。</block>
   <block id="e60672f803602bf222f416a6205b3b39" category="list-text">*機密性の高い個人データ*:一般データ保護規則(GDPR)およびその他のプライバシー規制で定義されている、健康データ、民族起源、政治的意見などの特別な種類の機密個人情報(SPII)。<block ref="6221f6509a9900ea9a8146767340b3a8" category="inline-link-macro-rx"></block>です。</block>
@@ -3419,9 +3333,6 @@
   <block id="5c2ead81821547f3130352184807c230" category="list-text">[すべての権限を表示]ボタンをクリックすると、各ファイルとディレクトリが表示されます<block ref="3e9bb1533fcbed587af1c2c23ff12e21" category="inline-link-macro-rx"></block>。</block>
   <block id="5791d2ebf242b348a1cbfa550a356083" category="list-text">* 重複ファイル * - スキャンしているデータソース内の他の場所に複製されているファイル。<block ref="4f528c73ac5ca4ef85380f36d4dccad7" category="inline-link-macro-rx"></block>です。</block>
   <block id="3cdcb2a793341ff20e0d4057a0538e49" category="list-text">リファイン後にページの内容をレポートとしてダウンロードするには、ボタンを選択し<block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block>ます。</block>
-  <block id="115993abd6a23a5a17d07cec8fbc4b6e" category="cell">ポリシーを選択します。<block ref="6160b7a55bd427b3fb91de138d9f467e" category="inline-link-macro-rx"></block>既存のポリシーのリストを表示し、独自のカスタムポリシーを作成します。</block>
-  <block id="b07926c5eabcf7b05f3a674e478e6b18" category="inline-link-macro">ポリシーの作成</block>
-  <block id="3ee1fee226155df3d1aec325193a3b4a" category="paragraph">メタデータには、ファイルが配置されている作業環境とボリュームだけでなく、ファイル権限、ファイル所有者、このファイルの重複の有無など、さらに多くの情報が表示されます。この情報は、データのフィルタリングに使用できるすべての情報を表示できるため、計画している場合に役立ち<block ref="e4856c4af761ccf18001e0febd54584c" category="inline-link-macro-rx"></block>ます。</block>
   <block id="1c3cd11405c2cc34d1b337f6a930a0e5" category="list-text">ディレクトリ調査中に、ディレクトリごとの個人識別情報（PII）データの数を計算するオプションは使用できません。を参照してください <block ref="0b922dd9827c419654172323345089b8" category="inline-link-macro-rx"></block>。</block>
   <block id="993d0cb387fd8414eea2cd1b17bc3b81" category="paragraph"><block ref="52b8cfc50608d81c1431f72921eeb174" prefix="" category="inline-code"></block></block>
   <block id="c70458770b484ae39f3759b69683ab6b" category="cell">カナダの銀行情報番号-口座番号</block>
@@ -3457,19 +3368,142 @@
   <block id="bc95bc80ebf2858c233b2627b019d9e4" category="cell">カナダ社会保険番号（SIN）</block>
   <block id="00acd555cd21235c4d1b966ed1be4a74" category="cell">UK ID（Nino）</block>
   <block id="03624a0e3cf06ce697a55ae458b36245" category="cell">米国テキサス州運転免許証</block>
-  <block id="1a29dcb31a65b43c01aeec2246fa49c7" category="summary">ポリシーは、よく要求されるコンプライアンスクエリーの[Investigation]ページで検索結果を提供するカスタムフィルタです。BlueXP  分類では、一般的な要求に基づいて事前定義されたポリシーのセットが提供されます。また、独自のポリシーを作成することもできます。</block>
-  <block id="f83468943a92a9d70fe55b7e87c65a05" category="paragraph">ポリシーは、[Investigation]ページのフィルタのリストにも表示されます。</block>
-  <block id="b41d9199442d75740188052cd48beb29" category="paragraph">[Investigation]ページにポリシーの結果を表示するには、特定のポリシーのボタンを選択し<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>、[Investigate Results]*を選択します。</block>
   <block id="9501674588409f4d41d4dd0d16106531" category="inline-link-macro">[Investigation]ページでのデータのフィルタリング</block>
   <block id="5905cce43eb3cf5df34ad20687132905" category="list-text">[Investigation]タブで、使用するフィルタを選択して検索を定義します。詳細は、を参照してください <block ref="fc016879136ae59a01dc15bd1e0ae029" category="inline-link-macro-rx"></block> 。</block>
-  <block id="e85bfe3f1de43636e78e3933cf709057" category="list-text">すべてのフィルタ特性を好みに合わせて設定したら、*この検索からポリシーを作成*を選択します。</block>
-  <block id="f9eedf2a2f5e1bb65bd48f67cc11775f" category="inline-image-macro">フィルタリングされたクエリをポリシーとして保存する方法を示すスクリーンショット。</block>
-  <block id="74f8b507d44a9c9de5bc7494adb05585" category="paragraph"><block ref="74f8b507d44a9c9de5bc7494adb05585" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e61d888eb37f48ad33d55cec612a0679" category="paragraph">既存のポリシーの条件を変更して、クエリ（フィルタを使用して定義した項目）を変更し、特定のパラメータを追加または削除できます。</block>
-  <block id="d9a6afbd4a5c10947a68b413c4cad163" category="paragraph">事前定義されたポリシーは変更できません。</block>
-  <block id="a126111bf84a962c10c82c54b7053f09" category="list-text">[ポリシーリスト]ページで、変更するポリシーの*[ポリシーの編集]*を選択します。</block>
-  <block id="a63db0f06bb77419a1c9810effb58b9a" category="list-text">名前フィールドと説明フィールドを変更します。これらのフィールドのみを変更するには、*[ポリシーの保存]*を選択します。</block>
   <block id="b661e4ea30af73a913aed1e7ae647f4a" category="paragraph">保存したクエリのフィルタを変更するには、*[クエリの編集]*を選択します。</block>
   <block id="1c76b2a61ae25c65703ed4c7e9a61c05" category="list-text">そのクエリを定義する[Investigation]ページで、フィルタを追加、削除、またはカスタマイズしてクエリを編集し、*[Save Changes]*を選択します。</block>
-  <block id="fc0a103843396ed5e93bb76396799d13" category="paragraph">ポリシーを削除するには、特定のポリシーのボタンを選択し<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>て*[ポリシーの削除]*を選択し、確認ダイアログで*[ポリシーの削除]*をもう一度選択します。</block>
+  <block id="422ba0edf6ed9e7533f09398a27021dc" category="admonition">この情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。</block>
+  <block id="67840d2b3ccd99d7c6db2904273f95ef" category="doc">バージョン1.43</block>
+  <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">分類スキャンの優先順位付け</block>
+  <block id="0dc348cb820b479010800e3c6cddc127" category="paragraph">BlueXP  分類では、マッピングのみのスキャンに加えて、マップの優先順位付けとスキャンの分類がサポートされるようになり、最初に完了するスキャンを選択できるようになりました。MapおよびClassifyスキャンの優先順位付けは、スキャンの開始中および開始前にサポートされます。進行中のスキャンに優先順位を付けることを選択した場合は、マッピングスキャンと分類スキャンの両方に優先順位が付けられます。</block>
+  <block id="d58e3b3044e314bd5b914f8e22d6a0a8" category="paragraph-title">カナダの個人識別情報（PII）データカテゴリのサポート</block>
+  <block id="25afe4e8f395663d2442297e33aa8a20" category="paragraph">BlueXP  分類スキャンでは、すべての州と地域の銀行情報、パスポート番号、社会保険番号、運転免許証番号、健康カード番号について、カナダのPIIデータカテゴリを特定できるようになりました。</block>
+  <block id="841ba72ee4bfb55c34ecc91bca130388" category="inline-xref-macro">個人データのカテゴリ</block>
+  <block id="8ac2e225945f40bbf038dd67449b1841" category="paragraph">詳細については、を参照してください<block ref="918fde1c1c3c4433556923cc965488af" category="inline-xref-macro-rx"></block>。</block>
+  <block id="0faf34dc58fa8cc3526b8a0a51850b2b" category="paragraph-title">カスタム分類（プレビュー）</block>
+  <block id="e43dc9231ca750651c1b2d09176b0bc3" category="paragraph">BlueXP  分類では、MapおよびClassifyスキャンのカスタム分類がサポートされるようになりました。カスタム分類を使用すると、組織固有のデータをキャプチャするようにBlueXP  スキャンを調整して、正規表現への準拠を確保できます。この機能は現在プレビュー中です。</block>
+  <block id="68fcca37a232a8993c6b392c92803de3" category="inline-xref-macro">カスタム分類の追加</block>
+  <block id="293ef51708e6a5ff00afa3b03fc38173" category="paragraph">詳細については、を参照してください <block ref="5c3ba05e723fa646f41c75d6d8a263d3" category="inline-xref-macro-rx"></block>。</block>
+  <block id="dcc61fc6bf6aa17ea807ec107b3f9682" category="paragraph-title">[保存済み検索]タブ</block>
+  <block id="1005b3a447fe9caf1ce373cf96b4dc01" category="inline-xref-macro">**保存された検索**</block>
+  <block id="619964fa6c4dc175f106697cd53cd93b" category="paragraph">**Policies**タブの名前が変更されました<block ref="57cf69bfb5ee6dec8716152c342ad94c" category="inline-xref-macro-rx"></block>。機能は同じです。</block>
+  <block id="260ad9aa0619e900a957ec4498a7084d" category="paragraph-title">スキャンイベントを監査ログに送信</block>
+  <block id="decaf26b476fc5aad56ba857036660b7" category="inline-link-macro">BlueXP  のタイムライン</block>
+  <block id="7d71019726dccc04ceb52b94f892b7f6" category="inline-xref-macro">監査ログ</block>
+  <block id="1c6653b6dfd13a16237efa3ea5c87e2a" category="paragraph">BlueXP  スキャンイベントをに送信できるようになりました<block ref="e7616c9e5375866db0d455d96b016998" category="inline-xref-macro-rx"></block>。BlueXP  分類では、への分類イベント（スキャンの開始時と終了時）の送信もサポートされています<block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>。分類スキャンイベントのBlueXP  タイムラインへの送信は、作業環境でのみサポートされています。</block>
+  <block id="ddba4621d4e9a4c39c38ef2131834760" category="list-title">セキュリティの更新</block>
+  <block id="0a39c7bc14a0f00de22f1ead79c18b0c" category="list-text">Kerasパッケージが更新され、脆弱性（BDSA-2025-0107およびBDSA-2025-1984）が緩和されました。</block>
+  <block id="408f8b982d641a307784a27c0fb6d9c9" category="list-text">Dockerコンテナの設定が更新されました。コンテナは、未加工のネットワークパケットを作成するためのホストのネットワークインターフェイスにアクセスできなくなります。不要なアクセスを減らすことで、潜在的なセキュリティリスクを軽減します。</block>
+  <block id="4a02475d909bd7464565a63664e4dc8b" category="paragraph-title">パフォーマンスの強化</block>
+  <block id="247e7f07f0a97b367563cc22c1a529cb" category="paragraph">RAMの使用量を削減し、BlueXP  分類の全体的なパフォーマンスを向上させるために、コードの拡張が実装されています。</block>
+  <block id="2a81eb3b4a7f22fb1fdb159561b71f3f" category="paragraph-title">バグ修正</block>
+  <block id="223594359ca2e5c0c959aa756dea2d50" category="paragraph">StorageGRIDスキャンが失敗する原因となったバグ、調査ページのフィルタオプションがロードされない問題、および大量評価のためにダウンロードされないデータ検出評価が修正されました。</block>
+  <block id="ca5877ce323984fac661618517ce77b9" category="list-text">セキュリティスタッフがすぐに対処できるように、__Policies__を使用して新しいセキュリティの問題を自動的に検出します。</block>
+  <block id="b71c2ba4a810400f9f3761ce1f55bca2" category="cell">保存した検索の作成</block>
+  <block id="8f539b81d82236bcc672cf86864b0879" category="cell">保存した検索条件</block>
+  <block id="e1739395d36bb1f742ef31b1924e9399" category="list-text">*個人識別情報（PII）*</block>
+  <block id="c5c4df42720cbeb98f763efd903ab45b" category="list-text">*機密性の高い個人情報（SPII）*</block>
+  <block id="0c9d119c9d8ada956aeab1aa6be77ebb" category="paragraph">ファイルに含まれる個人データ、または_個人識別情報_（PII）は、一般的な個人データまたは国の識別子です。次の表の3番目の列は、BlueXP  分類が識別子の所見を検証するためにを使用するかどうかを示してい<block ref="af3f1f2f9514770a1cfe0f9a422e763d" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="b847d85a2efd08f20797ad45602e61e9" category="paragraph">BlueXP  の分類では、次の機密個人情報（SPII）がファイルに含まれています。</block>
+  <block id="16e486f23dded8263d11848df3764b93" category="list-text">アクションタイプ（削除、コピー、移動、保存済み検索の作成、保存済み検索の更新、ファイルの再スキャン、JSONレポートのダウンロードなど）</block>
+  <block id="3c60fc446538a7e633556a56c0270a7b" category="list-text">保存された検索名</block>
+  <block id="3d8e42b0b0efcc9caab1fb0b9309b99c" category="section-title">検索結果の数が最も多い保存済み検索のレビュー</block>
+  <block id="32362fe63acb7ffc63175566121ad596" category="paragraph">_saved searches_タブでは、検索結果の数が最も多い検索がリストの一番上に表示されます。</block>
+  <block id="1a2cb7ec85630ab674f28989b04d5180" category="inline-link-macro">保存済み検索の作成</block>
+  <block id="bb3af25bd7c0b9f324e3747796764e22" category="paragraph">保存された検索の詳細については、を参照してください<block ref="c97fce4c2b55d75df91ca91c522727ac" category="inline-link-macro-rx"></block>。</block>
+  <block id="4e4a6277c9744cd4cca07da9aa9ccae0" category="list-text">Goveranceダッシュボードで、保存した検索タイルを探します。保存した検索の名前を選択して、[Investigation]ページに結果を表示します。</block>
+  <block id="315e89aa08d31a5d6e5b7e5ee124e27f" category="list-text">[すべて表示]*を選択すると、使用可能なすべての保存済み検索のリストが表示されます。_saved searches_areaでは、検索結果の数が最も多い検索がリストの一番上に表示されます。</block>
+  <block id="b3d4fb955e1630fd4184c8964a1f4fdb" category="inline-link-macro">カスタム分類の作成</block>
+  <block id="4b760cb0a54b4c608b7deaa08d52f3c3" category="paragraph">また、組織固有の個人データを識別するためのカスタム検索用語を作成することもできます。詳細については、を参照してください <block ref="702fa1a9e503f253a2dc3aea49d5216d" category="inline-link-macro-rx"></block>。</block>
+  <block id="8158b41ed99f0be207895156b4fd03bd" category="summary">BlueXP  分類を使用すると、機密情報の検索をカスタマイズして、組織に関連する個 々 のパターンやキーワードに合わせてサービスを調整できます。</block>
+  <block id="926b3e1d2d3aa955040f8e96a0925024" category="doc">BlueXP  分類でカスタム分類を作成する</block>
+  <block id="af7f216eaafef04c270699dedfe55516" category="paragraph">BlueXP  分類を使用すると、機密情報のカスタム検索を作成できます。検索範囲は、正規表現または近接キーワードのセットに限定できます。</block>
+  <block id="166182078c23275fb3140bd76772894f" category="paragraph">カスタム分類は、マップスキャンと分類スキャンでのみ使用でき、マッピングのみのスキャンでは使用できません。この機能は現在プレビュー中です。</block>
+  <block id="b89901231bd925d9935358eec83c9df7" category="list-text">[**Custom classification**]タブを選択します。</block>
+  <block id="5d432ccfd60759dfe3a05c1d88a50e46" category="list-text">[**Add New Classifier*]を選択します。</block>
+  <block id="ea013d14af755e66761c80272239aa1e" category="list-text">新しい分類子の名前と説明を追加します。</block>
+  <block id="325f2f8229424a3bb88f7fe6dd21f8b4" category="list-text">カスタマイズを正規表現として追加するには、**カスタム正規表現**を選択してから、**次へ**を選択します。</block>
+  <block id="ddd5fb759ffdfbba04862c2c259765f4" category="list-text">正規表現の場合は、パターンを追加してデータの特定の情報を検出します。たとえば、201で始まる12桁のIDは\b201\f\d(9)Bになります。**検証**を選択して、エントリの構文を確認します。</block>
+  <block id="92dbbe7b48f44c4348b9a878f60f182e" category="paragraph">新しいカスタマイズは、次回のスケジュールされたスキャンでキャプチャされます。結果を表示するには、を参照してください<block ref="9d0d45f702bd2dff4853a9920dd0f534" category="inline-xref-macro-rx"></block>。</block>
+  <block id="e7f93c0af13ca637e6c3fbeb56fe4b0e" category="section-title">タグ、ラベル、割り当てられたユーザ、および保存された検索でデータをフィルタリング</block>
+  <block id="aee7ea78cb12c6ff572cb9b321122abb" category="paragraph">次のフィルタを使用して、タグ、AIPラベル、割り当てられたユーザ、または保存済み検索でデータを表示します。</block>
+  <block id="fd853c5dbcb2e016325507bb9c17e98d" category="cell">1つまたは複数の保存済み検索を選択します。<block ref="578f763d599897de23ba32ec116d6451" category="inline-link-macro-rx"></block>既存の検索のリストを表示するか、新しい検索を作成します。</block>
+  <block id="e1022cbccc3b15345c155a6a38bad6a8" category="paragraph">*保存された検索でデータをフィルタリング*</block>
+  <block id="32a458cdfb998f0db54c4e4f42f4dbfa" category="paragraph">次のフィルタを使用して、保存された検索でデータを表示します。</block>
+  <block id="b7758f20982aa452a9724c32f034dccd" category="cell">保存された検索</block>
+  <block id="e43b31fd42478b64143ed2d6ade8317f" category="inline-link-macro">[保存済み検索]タブ</block>
+  <block id="da44bb3119708f27655d4d058f465d00" category="cell">保存されている検索を1つまたは複数選択します。に移動して<block ref="fbc8a675a3cef48a8a5a04b84f6b3b22" category="inline-link-macro-rx"></block>、既存の保存済み検索のリストを表示し、新しい検索を作成します。</block>
+  <block id="98c6270eede2fc9afab11bef62e63c1d" category="inline-link-macro">保存済み検索の作成</block>
+  <block id="708e6da2377236d5fdba15f26dc3eadf" category="paragraph">メタデータには、ファイルが配置されている作業環境とボリュームだけでなく、ファイル権限、ファイル所有者、このファイルの重複の有無など、さらに多くの情報が表示されます。この情報は、データのフィルタリングに使用できるすべての情報を表示できるため、計画している場合に役立ち<block ref="e31c67e4781eca01921238806a0e651d" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="67737d68864b72c63e2f74e27992ac71" category="admonition">このページで提供されている「ファイルハッシュ」値を使用して、Investigationページに直接入力して、特定の重複ファイルをいつでも検索できます。または、保存された検索で使用することもできます。</block>
+  <block id="15d6f274b3e2c9c50fee5297805bd7d0" category="section-title">選択したフィルタに基づいて保存された検索を作成する</block>
+  <block id="51586951624f32f69f3b928cba0173d0" category="paragraph">[データ調査]ページで頻繁に使用する検索フィルタの保存済み検索を作成して、それらの検索クエリを簡単に複製できます。</block>
+  <block id="064f3515d1ddd57fc2fa8a2f4ef91909" category="list-text">[データ調査]ページで、保存した検索の作成に使用するフィルタを選択します。</block>
+  <block id="5eb846a7b1e1d54f3b18d4bd4573326a" category="list-text">[Filter]ペインの下部にある*[Create saved search from this search]*を選択します。</block>
+  <block id="8537255c641557154572c329fc69cdf8" category="list-text">保存した検索の名前と説明を入力します。</block>
+  <block id="3fa4e71b6c9c6e7df1000aba4aac222f" category="list-text">[保存済み検索の作成]*を選択します。</block>
+  <block id="375745e627783aeb215c99a31a08813f" category="admonition">結果が[Saved Searches]ページに表示されるまでに最大15分かかることがあります。</block>
+  <block id="88fc2a8ac10191e5b98a67bc9886a8bf" category="admonition">バージョン1.43以降でカスタム分類を作成するには、を参照してください<block ref="a756d19e50a3a2b56dcc07bcc3dd1be2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="f308766a5fb2a6b060e24d82fd98f8a4" category="paragraph">_Data Fusionを使用すると、組織のデータをスキャンして、データベースの一意の識別子が他のデータソースで見つかったかどうかを特定できます。データベーステーブルの特定の列を選択することで、BlueXP  分類がスキャンで検索する追加の識別子を選択できます。たとえば、次の図は、データ Fusion を使用してボリューム、バケット、およびデータベースをスキャンし、 Oracle データベースからすべての顧客 ID が出現する状況を示しています。</block>
+  <block id="7d6398cfd29c80719b420b6d5a303f4d" category="paragraph">最も重要なマッピングのみのスキャンに優先順位を付けることも、優先度の高いスキャンが先に完了するようにスキャンをマップおよび分類することもできます。</block>
+  <block id="29c15ffcc2bccc722e71606daa052e48" category="list-text">にサブスクライブしてファイルを分類および保護している場合<block ref="2366c206354427dcda3be6923339236d" category="inline-link-macro-rx"></block>は、BlueXP  分類を使用してAIPラベルを管理できます。</block>
+  <block id="0959b79de30b89504431013e0aece077" category="list-text">保存された検索機能を使用すると、独自のカスタム検索クエリを作成して、1つのボタンをクリックして結果を簡単に確認できます。</block>
+  <block id="cc567bbc742f39d182a6b82ce016f5fa" category="inline-link-macro">保存した検索条件</block>
+  <block id="af1b68eec0a5b97f0bf7b522de5c3fd0" category="cell">カスタム検索結果を提供する作成<block ref="9937a648cd09b9880b5d850846c6a6cc" category="inline-link-macro-rx"></block></block>
+  <block id="d3c2ae407b41f887c6ec43d35c6d5d1d" category="cell">事前定義済みの保存済み検索</block>
+  <block id="7034142182abbd946a14064d9a115c26" category="cell">デフォルトの保存済み検索条件</block>
+  <block id="29b76c227002fe0d59cb97d33a0faeb2" category="summary">保存された検索は、よく要求されるコンプライアンスクエリーの[Investigation]ページに検索結果を表示するカスタムフィルタです。BlueXP  分類には、一般的なリクエストに基づいて保存されたデフォルトの検索セットが用意されています。また、独自の検索を作成することもできます。</block>
+  <block id="bd3a41529bc49b592df10902c99718df" category="doc">BlueXP  分類による保存済み検索の管理</block>
+  <block id="3b330f91942905fd9358ccf088010a7b" category="paragraph">BlueXP  分類では、検索クエリの保存がサポートされます。保存された検索を使用すると、カスタムフィルタを作成して、データ調査ページの頻繁なクエリを並べ替えることができます。BlueXP  分類には、一般的なリクエストに基づいて事前に保存された検索も含まれます。</block>
+  <block id="cab50bfa3c1b0c473d5a06102b369f65" category="admonition">1.43より前のバージョンのBlueXP  分類では、保存された検索が呼び出されました<block ref="d181d1e4d544a4211066b470d1020a95" category="inline-xref-macro-rx"></block>。</block>
+  <block id="4d6dee7b2501600c4b2689bc1cebdb78" category="paragraph">コンプライアンスダッシュボードの*保存済み検索*タブには、このBlueXP  分類のインスタンスで使用可能なすべての事前定義済みおよびカスタム保存済み検索が一覧表示されます。</block>
+  <block id="1dc48068205abd4498c6b51623ce236a" category="paragraph">保存された検索は、[Investigation]ページのフィルタのリストにも表示されます。</block>
+  <block id="fe486103d58cea4a39fc7665524d91e6" category="inline-image-macro">BlueXP  classificationダッシュボードの[Saved searches]タブのスクリーンショット。</block>
+  <block id="dd41d48f516ceca9030eb4c406ca3b2e" category="paragraph"><block ref="dd41d48f516ceca9030eb4c406ca3b2e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c11c94eebf65aa39aa6d92e551d37495" category="section-title">保存された検索結果を[Investigation]ページで表示する</block>
+  <block id="4b6b79df55f75139d5245dc368dd69d7" category="paragraph">保存した検索の結果を[Investigation]ページに表示するには、特定の検索のボタンを選択し<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>、[Investigate Results]を選択します。</block>
+  <block id="01ce7df905c02100d7e171845d5a1d11" category="inline-image-macro">[Saced Search]タブから特定の検索の[Investigate Results]を選択したスクリーンショット。</block>
+  <block id="e664b44f91d2913f94b75e8da606bb74" category="paragraph"><block ref="e664b44f91d2913f94b75e8da606bb74" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3d060dc50372bab90fa0b80c2aadbfc5" category="section-title">カスタム保存済み検索の作成</block>
+  <block id="2dea09c1d3d4ee9b98ba67f3ee736c6a" category="paragraph">組織固有のクエリの結果を提供する独自の保存済み検索を作成できます。検索条件に一致するすべてのファイルとディレクトリ（共有とフォルダ）の結果が返されます。</block>
+  <block id="edb2c0af042dce0faebc0fd23a6ea82a" category="list-text">すべてのフィルタ特性を好みに合わせて設定したら、*保存した検索を作成*を選択します。</block>
+  <block id="18485bc3e0b2a31412421f44a7d13cd5" category="inline-image-macro">フィルタリングされたクエリを保存した検索として保存する方法を示すスクリーンショット。</block>
+  <block id="06295084cb3f7c9942a8ae945182ab11" category="paragraph"><block ref="06295084cb3f7c9942a8ae945182ab11" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2b24c965e18291acdf6309cabec1d801" category="list-text">保存した検索に名前を付け、説明を追加します。名前は一意である必要があります。</block>
+  <block id="acc1c25043aba44082aef8a6ae1f7bb7" category="inline-image-macro">保存した検索を設定して保存する方法を示すスクリーンショット。</block>
+  <block id="781917d30539d353b2392b65ccd962ee" category="paragraph"><block ref="781917d30539d353b2392b65ccd962ee" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dcc0446437d20a68ade85cece45a944d" category="paragraph">新しい保存済み検索が[保存済み検索]タブに表示されます。</block>
+  <block id="3abded291c3a14b09750019f607a5b6a" category="section-title">保存済み検索の編集</block>
+  <block id="25ab9ca41b65162f7d35a80b0fc2b62f" category="paragraph">カスタム作成された保存済み検索の条件を変更して、クエリ（フィルタを使用して定義した項目）を変更し、特定のパラメータを追加または削除できます。</block>
+  <block id="f2fb75e2f90578baaf8bd1c45bde6750" category="paragraph">デフォルトの保存済み検索は変更できません。</block>
+  <block id="8d5758ea88aa628e96b2a9850a9a3e84" category="list-text">[保存済み検索]ページで、変更する検索の*[保存済み検索の編集]*を選択します。</block>
+  <block id="58fd62d6cd14d93ae1f32c61f323f99b" category="inline-image-macro">[Edit Saved Search]のスクリーンショット。</block>
+  <block id="800f72354e7a5ac3462a802bf4f659e0" category="paragraph"><block ref="800f72354e7a5ac3462a802bf4f659e0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b8c30944f6cac36547bcb3821964aeb1" category="list-text">名前フィールドと説明フィールドを変更します。これらのフィールドのみを変更するには、*[保存]*を選択します。</block>
+  <block id="78b0d515ab4a6a13088dd6bd09b0146e" category="inline-image-macro">[Edit Saved Search]ページで[Edit Query]ボタンを選択するスクリーンショット。</block>
+  <block id="e25b5282c5072b0a5171d238083a696e" category="paragraph"><block ref="e25b5282c5072b0a5171d238083a696e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="60f69955f740d1c69cb05d0a389fa16f" category="section-title">保存した検索の削除</block>
+  <block id="c3f66c3ed396df4f45cc4a2247c6ff1a" category="paragraph">不要になったカスタム保存済み検索は削除できます。デフォルトの保存済み検索は削除できません</block>
+  <block id="0fa5b5589241b6543c9b17d2f21e75ca" category="paragraph">保存した検索を削除するには、特定の検索のボタンを選択し<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>、*保存した検索の削除*を選択してから、確認ダイアログで*検索の削除*をもう一度選択します。</block>
+  <block id="c073cb4c943cd12dd3dc252f8b94f4f4" category="section-title">デフォルトの検索</block>
+  <block id="408f496a5a85521adc16cc6b351cc71a" category="paragraph">BlueXP  分類では、次のシステム定義の検索クエリが提供されます。</block>
+  <block id="e2824fba3c46b207f277094775a6de03" category="list-text">**データ主体名-高リスク**</block>
+  <block id="2c2426ec28fe38c5a3d7589069fe8265" category="paragraph">データサブジェクト名が50を超えるファイル</block>
+  <block id="98082caf654b3a87faa12c97d6e5fef0" category="list-text">**電子メールアドレス-高リスク**</block>
+  <block id="195ca90a6bdb7a590918ea6359e71f01" category="paragraph">Eメールアドレスが50を超えるファイル、または行の50%を超えるデータベース列にEメールアドレスが含まれるファイル</block>
+  <block id="0e7fbf33b52073f6bc8f18d55796a211" category="list-text">**個人データ-高リスク**</block>
+  <block id="5197b44c8d7d1e69dc7e95558ebe5b62" category="paragraph">個人データ識別子が20を超えるファイル、または行の50%以上が個人データ識別子を含むデータベース列</block>
+  <block id="a89e4564535d2510e52bd6e6d1c99ac0" category="list-text">**プライベートデータ- 7年以上経過していない**</block>
+  <block id="f7eca6ddef457d0fdf1335d5c4ada293" category="paragraph">個人情報または機密性の高い個人情報を含むファイル（最終変更日が7年以上前）</block>
+  <block id="967750771e3d93ad96804feaaa489729" category="list-text">**保護-高**</block>
+  <block id="53532655a36720e6e89d0ee34a4b6bb5" category="paragraph">パスワード、クレジットカード情報、IBAN番号、または社会保障番号を含むファイルまたはデータベース列</block>
+  <block id="c5bcbe698a08e29f3a73f73b33178fe7" category="list-text">**保護-低**</block>
+  <block id="8942b8664e055291e5e39d816e5d46e7" category="paragraph">3年以上アクセスされていないファイル</block>
+  <block id="7b67d7b1e7fb500aff7c6f34e99b281b" category="list-text">**保護-中**</block>
+  <block id="6c15cae74da0ae1c51b06ea41b437e7d" category="paragraph">ID番号、税識別番号、運転免許証番号、医薬品ID、パスポート番号などの個人データ識別子を持つファイルまたはデータベース列を含むファイル</block>
+  <block id="67b38a87fd423cd16109e7aa22a63937" category="list-text">**機密性の高い個人データ-高リスク**</block>
+  <block id="375ac9949171e44e5a3bcb3367e9d309" category="paragraph">機密性の高い個人データ識別子が20個を超えるファイル、または行の50%を超えるデータベース列に機密性の高い個人データが含まれるファイル</block>
+  <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025年5月12日</block>
+  <block id="60be04fe141df250bce893e57d19600d" category="sidebar">保存した検索の作成</block>
+  <block id="cbace44a9d78dedfcb62fa58fee0378f" category="sidebar">カスタムスキャンの作成</block>
 </blocks>
