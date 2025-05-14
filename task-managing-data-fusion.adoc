@@ -144,7 +144,7 @@ image:screenshot_add_keywords_result.png["[調査結果]ペインにカスタム
 正規表現の作成についてサポートが必要な場合は、を参照してください https://regex101.com/["正規表現101"^]。フレーバーに「* Python *」を選択すると、BlueXPの分類が正規表現と一致する結果のタイプが表示されます。は、 https://pythonium.net/regex["Python Regex Testerページ"^]パターンのグラフィック表現を表示する場合にも便利です。
 
 
-NOTE: 現在、正規表現を作成するときにパターンフラグを使用することは許可されていません。これは、"/"を使用しないことを意味します。
+NOTE: BlueXP  分類では、正規表現の作成時にパターンフラグはサポートされません。これは、「/」を使用しないことを意味します。
 
 .手順
 . [_Classification settings]タブで*[Add New Classifier]*をクリックし、_Add Custom Classifier_wizardを起動します。
