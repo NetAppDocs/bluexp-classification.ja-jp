@@ -22,7 +22,7 @@ summary: 必要に応じて、BlueXPの分類によって1つ以上の作業環�
 
 スキャンを非アクティブ化すると、BlueXPの分類によって作業環境のデータがスキャンされなくなり、インデックス化されたコンプライアンス分析情報がBlueXPの分類インスタンスから削除されます（作業環境自体のデータは削除されません）。
 
-. [_Configuration_]ページで、作業環境の行のボタンをクリックしimage:screenshot_gallery_options.gif["[ 詳細 ] ボタン"]、*[Deactivate Data Sense]*をクリックします。
+. [_Configuration_]ページで、作業環境の行のボタンを選択し、*[Deactivate Data Sense]*を選択しimage:button-gallery-options.gif["[ 詳細 ] ボタン"]ます。
 
 
 image:screenshot_deactivate_compliance_scan.png["[Deactivate BlueXP classification]を選択できるアクションアイコンのスクリーンショット。このオプションは、キャンバスページから作業環境を選択した後で使用できます。"]
@@ -36,7 +36,7 @@ TIP: 作業環境を選択するときに、サービスパネルから作業環
 
 特定のデータベースのスキャンが不要になった場合は、BlueXPの分類インターフェイスからそのデータベースを削除して、すべてのスキャンを停止できます。
 
-. [_Configuration_]ページで、データベースの行のボタンをクリックしimage:screenshot_gallery_options.gif["[ 詳細 ] ボタン"]、*[Remove DB Server]*をクリックします。
+. [_Configuration_]ページで、データベースの行のボタンを選択し、*[Remove DB Server]*を選択しimage:button-gallery-options.gif["[ 詳細 ] ボタン"]ます。
 
 
 image:screenshot_compliance_remove_db.png["Scan Configuration ページの Remove DB Server ボタンのスクリーンショット。"]
@@ -48,7 +48,7 @@ image:screenshot_compliance_remove_db.png["Scan Configuration ページの Remov
 ファイル共有グループのユーザファイルをスキャンする必要がなくなった場合は、BlueXPの分類インターフェイスからファイル共有グループを削除して、すべてのスキャンを停止できます。
 
 .手順
-. [_Configuration_]ページで、[File Shares Group]の行のボタンをクリックしimage:screenshot_gallery_options.gif["[ 詳細 ] ボタン"]、*[Remove File Shares Group]*をクリックします。
+. [_Configuration_]ページで、[File Shares Group]の行のボタンを選択し、*[Remove File Shares Group]*を選択しimage:button-gallery-options.gif["[ 詳細 ] ボタン"]ます。
 +
 image:screenshot_compliance_remove_fileshare_group.png["スキャン設定ページからファイル共有グループを削除ボタンのスクリーンショット。"]
 

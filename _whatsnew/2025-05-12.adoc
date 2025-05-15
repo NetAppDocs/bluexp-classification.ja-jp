@@ -14,12 +14,12 @@ BlueXP  分類では、マッピングのみのスキャンに加えて、マ�
 詳細については、を参照してください link:task-managing-repo-scanning.html#prioritize-scans["スキャンの優先順位付け"]。
 
 .カナダの個人識別情報（PII）データカテゴリのサポート
-BlueXP  分類スキャンでは、すべての州と地域の銀行情報、パスポート番号、社会保険番号、運転免許証番号、健康カード番号について、カナダのPIIデータカテゴリを特定します。
+BlueXP  分類スキャンは、カナダのPIIデータカテゴリを識別します。これらのカテゴリには、カナダのすべての州と地域の銀行情報、パスポート番号、社会保険番号、運転免許証番号、健康カード番号が含まれます。
 
-詳細については、を参照してくださいxref:reference-private-data-categories.adoc#types-of-personal-data[個人データのカテゴリ]。
+詳細については、を参照してください xref:reference-private-data-categories.adoc#types-of-personal-data[個人データのカテゴリ]。
 
 .カスタム分類（プレビュー）
-BlueXP  分類では、MapおよびClassifyスキャンのカスタム分類がサポートされます。カスタム分類を使用すると、組織固有のデータをキャプチャするようにBlueXP  スキャンを調整して、正規表現への準拠を確保できます。この機能は現在プレビュー中です。
+BlueXP  分類では、MapおよびClassifyスキャンのカスタム分類がサポートされます。カスタム分類を使用すると、正規表現を使用して組織固有のデータをキャプチャするようにBlueXP  スキャンを調整できます。この機能は現在プレビュー中です。
 
 詳細については、を参照してください xref:task-custom-classification.adoc[カスタム分類の追加]。
 

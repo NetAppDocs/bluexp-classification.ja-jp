@@ -116,4 +116,4 @@ image:screenshot_compliance_active_directory_added.png["BlueXPに統合された
 
 Active Directory 統合の値を変更する必要がある場合は、 * Edit * ボタンをクリックして変更を行います。
 
-不要になった統合を削除するには、ボタンをクリックして* Active Directoryの削除*をクリックしimage:screenshot_gallery_options.gif["[ 詳細 ] ボタン"]ます。
+ボタンを選択してから* Active Directoryの削除*を選択し、統合を削除することもできますimage:button-gallery-options.gif["[ 詳細 ] ボタン"]。

@@ -149,7 +149,7 @@ BlueXPの分類によってPDFレポートが生成されます。このレポ�
 +
 image:screenshot-compliance-report-buttons.png["データマッピングレポートの起動方法を示すGovernance Dashboardのスクリーンショット。"]
 
-. レポートの最初のページに表示される会社名をカスタマイズするには、BlueXP  分類ページの右上にあるを選択しますimage:screenshot_gallery_options.gif["[詳細]ボタン"]。次に、*[会社名の変更]*を選択します。次回レポートを生成するときに、新しい名前が含まれます。
+. レポートの最初のページに表示される会社名をカスタマイズするには、BlueXP  分類ページの右上にあるを選択しますimage:button-gallery-options.gif["[詳細]ボタン"]。次に、*[会社名の変更]*を選択します。次回レポートを生成するときに、新しい名前が含まれます。
 
 
 .結果

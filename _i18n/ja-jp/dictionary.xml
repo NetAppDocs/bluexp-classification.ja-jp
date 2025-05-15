@@ -797,7 +797,6 @@
   <block id="bbc0bef191e546654d479088a63463e8" category="section-title">Active Directory統合の管理</block>
   <block id="ca3e2e8380ad6cedd810ec4fc49fa9e7" category="paragraph">Active Directory 統合の値を変更する必要がある場合は、 * Edit * ボタンをクリックして変更を行います。</block>
   <block id="024205acf9405311336c02bbd2193b70" category="inline-image-macro">[ 詳細 ] ボタン</block>
-  <block id="e0beb155f64410441b0e76c0d0350422" category="paragraph">不要になった統合を削除するには、ボタンをクリックして* Active Directoryの削除*をクリックし<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>ます。</block>
   <block id="0ee0dd7645f9fd01a3094af2719826bf" category="summary">NFSファイル共有内のファイルまたはフォルダにグループIDが添付されている場合、グループIDはファイルまたはフォルダに対する権限（組織に対して開かれているかどうかなど）を定義します。一部のグループID（GID）に「組織を開く」権限レベルが設定されていない場合は、その権限をGIDに追加して、そのGIDが添付されているファイルやフォルダが「組織に対して開かれている」とみなされるようにすることができます。</block>
   <block id="54f4d6ea6929f3157249a7232005ba31" category="paragraph">グループID（GID）がNFSファイル共有内のファイルまたはフォルダに添付される場合、グループIDはファイルまたはフォルダに対する権限（組織に対して開かれているかどうかなど）を定義します。一部のグループID（GID）に「組織を開く」権限レベルが設定されていない場合は、その権限をGIDに追加して、そのGIDが添付されているファイルやフォルダが「組織に対して開かれている」とみなされるようにすることができます。</block>
   <block id="85755c2c4a65adf46f4aed267e145acd" category="paragraph">この変更を行ってBlueXPの分類でファイルやフォルダが再スキャンされると、これらのグループIDが関連付けられているファイルやフォルダには、[調査の詳細]ページにこの権限が表示され、ファイルの権限を表示しているレポートにも表示されます。</block>
@@ -961,7 +960,6 @@
   <block id="5de07b40dee2a8b07f30a0fd66bd33fa" category="section-title">前提条件を確認する</block>
   <block id="78b65cf97b25c47011081025c212c7c0" category="paragraph">BlueXPの分類をクラウドに導入する前に、次の前提条件を確認して、サポートされる構成があることを確認してください。BlueXP分類をクラウドに導入する場合、コネクタと同じサブネットに配置されます。</block>
   <block id="a3c7cd542dbae9813f2f591e1d616bf8" category="list-text">BlueXPの分類からアウトバウンドのインターネットアクセスを有効にします</block>
-  <block id="a215e2fc4fb56a1de009d0523096d557" category="list-text">BlueXPの分類にはアウトバウンドのインターネットアクセスが必要です。仮想ネットワークまたは物理ネットワークでインターネットアクセスにプロキシサーバを使用している場合は、次のエンドポイントに接続するためのアウトバウンドのインターネットアクセスがBlueXP分類インスタンスにあることを確認してください。プロキシは非透過である必要があります。現在、透過プロキシはサポートされていません。</block>
   <block id="6a942fef40095cafe3b15d4e4f2a1ab3" category="paragraph">AWS、Azure、GCPのいずれにBlueXP分類を導入するかに応じて、次の表を参照してください。</block>
   <block id="4ea85be63fc1085d8a7d469d21ced42a" category="open-title">AWSに必要なエンドポイント</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">エンドポイント</block>
@@ -1652,7 +1650,6 @@
   <block id="4c119835311ae84a5afed96ff0102202" category="summary">必要に応じて、BlueXPの分類によって1つ以上の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、Google Driveアカウント、 またはSharePointアカウント。</block>
   <block id="1b37870dae094b28860019e52e52b4ff" category="doc">BlueXPの分類からOneDrive、SharePoint、Google Driveのアカウントを削除する</block>
   <block id="433023fd6c6c23d39387bf9b74dda504" category="paragraph">特定のOneDriveアカウント、特定のSharePointアカウント、またはGoogle Driveアカウントからユーザファイルをスキャンする必要がなくなった場合は、BlueXP分類インターフェイスからアカウントを削除して、すべてのスキャンを停止できます。</block>
-  <block id="9d1c29dc777962e9fef8dd6f8f0fd186" category="list-text">[_Configuration_]ページで、OneDrive、SharePoint、またはGoogle Driveアカウントの行にあるボタンをクリックし<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>、*[OneDriveアカウントの削除]*、*[SharePointアカウントの削除]*、または*[Googleドライブアカウントの削除]*をクリックします。</block>
   <block id="9a7ec6e6b57682d3f33ce7ea4bef0f5a" category="inline-image-macro">[ スキャン構成 ] ページから [OneDrive を削除 ] ボタンのスクリーンショット。</block>
   <block id="1bd56f7fb7715259e9afebe5fa03e87f" category="paragraph"><block ref="1bd56f7fb7715259e9afebe5fa03e87f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94c6852fcc39c16d9167a10bb916b459" category="list-text">確認ダイアログで * アカウントの削除 * をクリックします。</block>
@@ -1660,18 +1657,15 @@
   <block id="d5df7f1adc0549d5d2d0ee68a72f9535" category="paragraph">必要に応じて、BlueXPの分類によって1つ以上の作業環境、データベース、またはファイル共有グループがスキャンされないようにすることができます。</block>
   <block id="f2a38a886f233571decf9ce6bf113922" category="section-title">作業環境のコンプライアンススキャンを非アクティブ化</block>
   <block id="fc92855a6c0e88610803c1973a785908" category="paragraph">スキャンを非アクティブ化すると、BlueXPの分類によって作業環境のデータがスキャンされなくなり、インデックス化されたコンプライアンス分析情報がBlueXPの分類インスタンスから削除されます（作業環境自体のデータは削除されません）。</block>
-  <block id="b23c9bc520892f0b32a5b14652f531a4" category="list-text">[_Configuration_]ページで、作業環境の行のボタンをクリックし<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>、*[Deactivate Data Sense]*をクリックします。</block>
   <block id="a07772f300fa1187741adbb9b0ee2c93" category="inline-image-macro">[Deactivate BlueXP classification]を選択できるアクションアイコンのスクリーンショット。このオプションは、キャンバスページから作業環境を選択した後で使用できます。</block>
   <block id="10f0cbf4c3001c6cbff3244aad2777b0" category="paragraph"><block ref="10f0cbf4c3001c6cbff3244aad2777b0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="849e144b677eb32e7e98186935864d3b" category="admonition">作業環境を選択するときに、サービスパネルから作業環境のコンプライアンススキャンを無効にすることもできます。</block>
   <block id="29c23a4578d5d41743894525117283bb" category="section-title">BlueXP分類からデータベースを削除する</block>
   <block id="5f41cf1c2ac9e53c33bdb8764109a714" category="paragraph">特定のデータベースのスキャンが不要になった場合は、BlueXPの分類インターフェイスからそのデータベースを削除して、すべてのスキャンを停止できます。</block>
-  <block id="c129bc0408ce8224fad586d944537ce4" category="list-text">[_Configuration_]ページで、データベースの行のボタンをクリックし<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>、*[Remove DB Server]*をクリックします。</block>
   <block id="3d04e82ecfc4b95e7eb8eaf404dffadc" category="inline-image-macro">Scan Configuration ページの Remove DB Server ボタンのスクリーンショット。</block>
   <block id="b695958db24ae26377f1c2e3a62b14eb" category="paragraph"><block ref="b695958db24ae26377f1c2e3a62b14eb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2cc15b4049873c916d856924a44717cd" category="section-title">BlueXPの分類からファイル共有のグループを削除する</block>
   <block id="a9d369d1761364753b450ab895adcd47" category="paragraph">ファイル共有グループのユーザファイルをスキャンする必要がなくなった場合は、BlueXPの分類インターフェイスからファイル共有グループを削除して、すべてのスキャンを停止できます。</block>
-  <block id="49fae8728abc8ffde6080b69c8a80552" category="list-text">[_Configuration_]ページで、[File Shares Group]の行のボタンをクリックし<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>、*[Remove File Shares Group]*をクリックします。</block>
   <block id="899aa3cff4cde9f48d2fbceab4329349" category="inline-image-macro">スキャン設定ページからファイル共有グループを削除ボタンのスクリーンショット。</block>
   <block id="23785f6732c3c514916bbd8928a06972" category="paragraph"><block ref="23785f6732c3c514916bbd8928a06972" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4eeea4d2c00cd83e33db552c5d9445b2" category="list-text">確認ダイアログで * 共有のグループを削除 * をクリックします。</block>
@@ -2351,9 +2345,7 @@
   <block id="a9ec5ce178b0bf158cc0b058a75222be" category="list-text">プロンプトが表示されたら、を持つBlueXP  分類インスタンスにIAMロールを割り当てます<block ref="27b52f38738d689881a76b49c98ec7ec" category="inline-xref-macro-rx"></block>。</block>
   <block id="9d71010686428b63401d21389a87983b" category="inline-image-macro">BlueXP分類用のAWS IAMロールを入力するスクリーンショット</block>
   <block id="d6024ec0f0750e8f3ff480afef31e8a6" category="paragraph"><block ref="d6024ec0f0750e8f3ff480afef31e8a6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="909d8cdc7c100d1834d4de10094f43ca" category="list-text">[*Enable*] をクリックします。</block>
   <block id="0fe1279b28d533b32c08d839691ef653" category="inline-image-macro">3つの点</block>
-  <block id="e56ef2e2348492a4f0e1e9513b068cc4" category="admonition">[Configuration]ページで、ボタンをクリックして*[Activate BlueXP  classification]*を選択し、作業環境のコンプライアンススキャンを有効にすることもできます<block ref="a759a567ce9a72b21fd45f48f1f358c8" category="inline-image-macro-rx" type="image"></block>。</block>
   <block id="859a5985b2a5cefc45dc9f226a5d5ba7" category="paragraph">BlueXPは、インスタンスにIAMロールを割り当てます。</block>
   <block id="e18a75263bcb68f3fcffe930704c1b61" category="section-title">S3 バケットでの準拠スキャンの有効化と無効化</block>
   <block id="a09f1d7b84a96466ba7bd8852ed92c89" category="paragraph">Amazon S3でBlueXPの分類を有効にしたら、次にスキャンするバケットを設定します。</block>
@@ -2568,10 +2560,8 @@
   <block id="f93e118724d27bde2efdff3938b9b6df" category="paragraph">使用する必要がある手順は、BlueXPの分類をクラウドとオンプレミスのどちらのホストのどちらに導入したかによって異なります。</block>
   <block id="8d8f6d516c2b2976c4b330129843859b" category="section-title">クラウド環境からBlueXP分類をアンインストールします</block>
   <block id="809de3d4b48cba202a3e92df9b5646ca" category="paragraph">BlueXP分類を使用する必要がなくなった場合は、クラウドプロバイダ環境からBlueXP分類インスタンスをアンインストールして削除できます。</block>
-  <block id="fb718f900bda591d59ded552d9f94de8" category="list-text">[Data Sense]分類ページの上部BlueXP  でをクリックし<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>、*[Uninstall Data Sense]*をクリックします。</block>
   <block id="36c78ffc00f44e6669853141b4757135" category="inline-image-macro">BlueXP分類ソフトウェアをアンインストールするボタンのスクリーンショット。</block>
   <block id="f4b93d0f798b3e20a2411b62607f9933" category="paragraph"><block ref="f4b93d0f798b3e20a2411b62607f9933" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7b608a074398a486bc744655598680ea" category="list-text">[_Uninstall Data Sense_]ダイアログで、「* uninstall *」と入力してBlueXPコネクタからBlueXP分類インスタンスを切断することを確認し、*[アンインストール]*をクリックします。</block>
   <block id="f10f83db534963d9efae7a297e100091" category="list-text">クラウドプロバイダのコンソールに移動し、BlueXP分類インスタンスを削除します。インスタンスの名前は _CloudCompliancy_with で、生成されたハッシュ（ UUID ）を連結しています。例： _CloudCompliion-16bb6564-38ad-40802-9a92-36f5fd2f71c7_</block>
   <block id="961ca08e58e9f85191f5707bc4dac07a" category="paragraph">これにより、BlueXPの分類によって収集されたインスタンスと関連するすべてのデータが削除されます。</block>
   <block id="a3b42cd70d6e63a58b881566f7a8992b" category="section-title">オンプレミス環境からBlueXP分類をアンインストールします</block>
@@ -2627,7 +2617,6 @@
   <block id="a620f7ab4fc25849a31718c76e9d7fa1" category="list-text">[ポリシーの保存]*をクリックすると、ポリシーの概要にラベルが表示されます。</block>
   <block id="bb59c9be972bc7568c57f54fdc257244" category="admonition">ポリシーにラベルが設定されていても、そのラベルがAIPから削除された場合、ラベル名はオフになり、ラベルは割り当てられなくなります。</block>
   <block id="7cbe4840b4a3a2fdf1f9286da7e2b284" category="inline-image-macro">フィルタ設定を変更してクエリを編集する方法を示すスクリーンショット。</block>
-  <block id="289758d7ef2e573a0ee7824d5814b945" category="paragraph"><block ref="289758d7ef2e573a0ee7824d5814b945" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">たとえば、 100 個のファイルを削除するなど、多くのファイルで [ 調査結果 ] ペインからアクションを実行する場合、プロセスには時間がかかることがあります。アクションステータスペインでこれらの非同期アクションのステータスを監視して、すべてのファイルにいつ適用されたかを確認できます。</block>
   <block id="c06ccfe24df0bff683583f82911916e0" category="paragraph">100個のファイルの移動や削除など、多くのファイルで［調査結果］ペインから非同期アクションを実行する場合は、このプロセスに時間がかかることがあります。これらのアクションのステータスは、_Action Status_Paneで監視できるので、すべてのファイルにいつ適用されたかを知ることができます。</block>
   <block id="81e4b26a6519cffe24195e5edc407992" category="paragraph">これにより、正常に完了した操作、現在実行中の操作、および失敗した操作を確認できるため、問題を診断して修正できます。単一ファイルの移動など、短時間で完了する短時間の処理は、[操作][ステータス]ペインには表示されません。</block>
@@ -3084,7 +3073,6 @@
   <block id="1f4e12eb3b2fcb4ce87b8ed675d3270c" category="list-text">PIIをより安全なデータストアに移動することで、個人情報または機密性の高い個人情報を含むデータを保護します</block>
   <block id="51fa6e6a2210eb170b2beeb8f80f89c1" category="list-text">[Data Discovery Assessment Report]*を選択します。</block>
   <block id="a4d3102e7150e95ee7150787c5049f47" category="list-text">[Full Data Mapping Overview Report]*を選択します。</block>
-  <block id="163b2c36f19b004df4f67d322c1b39af" category="list-text">レポートの最初のページに表示される会社名をカスタマイズするには、BlueXP  分類ページの右上にあるを選択します<block ref="205cf72ce215a0005a3d486daae4dd1a" category="inline-image-macro-rx" type="image"></block>。次に、*[会社名の変更]*を選択します。次回レポートを生成するときに、新しい名前が含まれます。</block>
   <block id="4cbb02ef6d1ee9902b65e08b42b83a08" category="list-text">各カテゴリの項目の合計数を表示するには、バーの各セクションにカーソルを合わせます。</block>
   <block id="78e705dbea0d34c81ef33941cfdd7c20" category="list-text">各カテゴリのファイルの総数を表示するには、各ボックスの上にカーソルを置きます。</block>
   <block id="d2bc42c21eb303e3f8120f5a184e4544" category="list-text">[Age of Data]グラフで、データの経過時間の詳細を表示するには、グラフ内のポイントにカーソルを合わせます。</block>
@@ -3343,14 +3331,11 @@
   <block id="03624a0e3cf06ce697a55ae458b36245" category="cell">米国テキサス州運転免許証</block>
   <block id="9501674588409f4d41d4dd0d16106531" category="inline-link-macro">[Investigation]ページでのデータのフィルタリング</block>
   <block id="5905cce43eb3cf5df34ad20687132905" category="list-text">[Investigation]タブで、使用するフィルタを選択して検索を定義します。詳細は、を参照してください <block ref="fc016879136ae59a01dc15bd1e0ae029" category="inline-link-macro-rx"></block> 。</block>
-  <block id="b661e4ea30af73a913aed1e7ae647f4a" category="paragraph">保存したクエリのフィルタを変更するには、*[クエリの編集]*を選択します。</block>
-  <block id="1c76b2a61ae25c65703ed4c7e9a61c05" category="list-text">そのクエリを定義する[Investigation]ページで、フィルタを追加、削除、またはカスタマイズしてクエリを編集し、*[Save Changes]*を選択します。</block>
   <block id="422ba0edf6ed9e7533f09398a27021dc" category="admonition">この情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。</block>
   <block id="67840d2b3ccd99d7c6db2904273f95ef" category="doc">バージョン1.43</block>
   <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">分類スキャンの優先順位付け</block>
   <block id="d58e3b3044e314bd5b914f8e22d6a0a8" category="paragraph-title">カナダの個人識別情報（PII）データカテゴリのサポート</block>
   <block id="841ba72ee4bfb55c34ecc91bca130388" category="inline-xref-macro">個人データのカテゴリ</block>
-  <block id="8ac2e225945f40bbf038dd67449b1841" category="paragraph">詳細については、を参照してください<block ref="918fde1c1c3c4433556923cc965488af" category="inline-xref-macro-rx"></block>。</block>
   <block id="0faf34dc58fa8cc3526b8a0a51850b2b" category="paragraph-title">カスタム分類（プレビュー）</block>
   <block id="68fcca37a232a8993c6b392c92803de3" category="inline-xref-macro">カスタム分類の追加</block>
   <block id="293ef51708e6a5ff00afa3b03fc38173" category="paragraph">詳細については、を参照してください <block ref="5c3ba05e723fa646f41c75d6d8a263d3" category="inline-xref-macro-rx"></block>。</block>
@@ -3384,13 +3369,7 @@
   <block id="4b760cb0a54b4c608b7deaa08d52f3c3" category="paragraph">また、組織固有の個人データを識別するためのカスタム検索用語を作成することもできます。詳細については、を参照してください <block ref="702fa1a9e503f253a2dc3aea49d5216d" category="inline-link-macro-rx"></block>。</block>
   <block id="8158b41ed99f0be207895156b4fd03bd" category="summary">BlueXP  分類を使用すると、機密情報の検索をカスタマイズして、組織に関連する個 々 のパターンやキーワードに合わせてサービスを調整できます。</block>
   <block id="926b3e1d2d3aa955040f8e96a0925024" category="doc">BlueXP  分類でカスタム分類を作成する</block>
-  <block id="af7f216eaafef04c270699dedfe55516" category="paragraph">BlueXP  分類を使用すると、機密情報のカスタム検索を作成できます。検索範囲は、正規表現または近接キーワードのセットに限定できます。</block>
   <block id="166182078c23275fb3140bd76772894f" category="paragraph">カスタム分類は、マップスキャンと分類スキャンでのみ使用でき、マッピングのみのスキャンでは使用できません。この機能は現在プレビュー中です。</block>
-  <block id="b89901231bd925d9935358eec83c9df7" category="list-text">[**Custom classification**]タブを選択します。</block>
-  <block id="5d432ccfd60759dfe3a05c1d88a50e46" category="list-text">[**Add New Classifier*]を選択します。</block>
-  <block id="ea013d14af755e66761c80272239aa1e" category="list-text">新しい分類子の名前と説明を追加します。</block>
-  <block id="325f2f8229424a3bb88f7fe6dd21f8b4" category="list-text">カスタマイズを正規表現として追加するには、**カスタム正規表現**を選択してから、**次へ**を選択します。</block>
-  <block id="ddd5fb759ffdfbba04862c2c259765f4" category="list-text">正規表現の場合は、パターンを追加してデータの特定の情報を検出します。たとえば、201で始まる12桁のIDは\b201\f\d(9)Bになります。**検証**を選択して、エントリの構文を確認します。</block>
   <block id="92dbbe7b48f44c4348b9a878f60f182e" category="paragraph">新しいカスタマイズは、次回のスケジュールされたスキャンでキャプチャされます。結果を表示するには、を参照してください<block ref="9d0d45f702bd2dff4853a9920dd0f534" category="inline-xref-macro-rx"></block>。</block>
   <block id="e7f93c0af13ca637e6c3fbeb56fe4b0e" category="section-title">タグ、ラベル、割り当てられたユーザ、および保存された検索でデータをフィルタリング</block>
   <block id="aee7ea78cb12c6ff572cb9b321122abb" category="paragraph">次のフィルタを使用して、タグ、AIPラベル、割り当てられたユーザ、または保存済み検索でデータを表示します。</block>
@@ -3428,9 +3407,6 @@
   <block id="fe486103d58cea4a39fc7665524d91e6" category="inline-image-macro">BlueXP  classificationダッシュボードの[Saved searches]タブのスクリーンショット。</block>
   <block id="dd41d48f516ceca9030eb4c406ca3b2e" category="paragraph"><block ref="dd41d48f516ceca9030eb4c406ca3b2e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c11c94eebf65aa39aa6d92e551d37495" category="section-title">保存された検索結果を[Investigation]ページで表示する</block>
-  <block id="4b6b79df55f75139d5245dc368dd69d7" category="paragraph">保存した検索の結果を[Investigation]ページに表示するには、特定の検索のボタンを選択し<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>、[Investigate Results]を選択します。</block>
-  <block id="01ce7df905c02100d7e171845d5a1d11" category="inline-image-macro">[Saced Search]タブから特定の検索の[Investigate Results]を選択したスクリーンショット。</block>
-  <block id="e664b44f91d2913f94b75e8da606bb74" category="paragraph"><block ref="e664b44f91d2913f94b75e8da606bb74" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3d060dc50372bab90fa0b80c2aadbfc5" category="section-title">カスタム保存済み検索の作成</block>
   <block id="2dea09c1d3d4ee9b98ba67f3ee736c6a" category="paragraph">組織固有のクエリの結果を提供する独自の保存済み検索を作成できます。検索条件に一致するすべてのファイルとディレクトリ（共有とフォルダ）の結果が返されます。</block>
   <block id="edb2c0af042dce0faebc0fd23a6ea82a" category="list-text">すべてのフィルタ特性を好みに合わせて設定したら、*保存した検索を作成*を選択します。</block>
@@ -3439,19 +3415,10 @@
   <block id="2b24c965e18291acdf6309cabec1d801" category="list-text">保存した検索に名前を付け、説明を追加します。名前は一意である必要があります。</block>
   <block id="acc1c25043aba44082aef8a6ae1f7bb7" category="inline-image-macro">保存した検索を設定して保存する方法を示すスクリーンショット。</block>
   <block id="781917d30539d353b2392b65ccd962ee" category="paragraph"><block ref="781917d30539d353b2392b65ccd962ee" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="dcc0446437d20a68ade85cece45a944d" category="paragraph">新しい保存済み検索が[保存済み検索]タブに表示されます。</block>
   <block id="3abded291c3a14b09750019f607a5b6a" category="section-title">保存済み検索の編集</block>
-  <block id="25ab9ca41b65162f7d35a80b0fc2b62f" category="paragraph">カスタム作成された保存済み検索の条件を変更して、クエリ（フィルタを使用して定義した項目）を変更し、特定のパラメータを追加または削除できます。</block>
   <block id="f2fb75e2f90578baaf8bd1c45bde6750" category="paragraph">デフォルトの保存済み検索は変更できません。</block>
-  <block id="8d5758ea88aa628e96b2a9850a9a3e84" category="list-text">[保存済み検索]ページで、変更する検索の*[保存済み検索の編集]*を選択します。</block>
   <block id="58fd62d6cd14d93ae1f32c61f323f99b" category="inline-image-macro">[Edit Saved Search]のスクリーンショット。</block>
-  <block id="800f72354e7a5ac3462a802bf4f659e0" category="paragraph"><block ref="800f72354e7a5ac3462a802bf4f659e0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b8c30944f6cac36547bcb3821964aeb1" category="list-text">名前フィールドと説明フィールドを変更します。これらのフィールドのみを変更するには、*[保存]*を選択します。</block>
-  <block id="78b0d515ab4a6a13088dd6bd09b0146e" category="inline-image-macro">[Edit Saved Search]ページで[Edit Query]ボタンを選択するスクリーンショット。</block>
-  <block id="e25b5282c5072b0a5171d238083a696e" category="paragraph"><block ref="e25b5282c5072b0a5171d238083a696e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="60f69955f740d1c69cb05d0a389fa16f" category="section-title">保存した検索の削除</block>
-  <block id="c3f66c3ed396df4f45cc4a2247c6ff1a" category="paragraph">不要になったカスタム保存済み検索は削除できます。デフォルトの保存済み検索は削除できません</block>
-  <block id="0fa5b5589241b6543c9b17d2f21e75ca" category="paragraph">保存した検索を削除するには、特定の検索のボタンを選択し<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>、*保存した検索の削除*を選択してから、確認ダイアログで*検索の削除*をもう一度選択します。</block>
   <block id="c073cb4c943cd12dd3dc252f8b94f4f4" category="section-title">デフォルトの検索</block>
   <block id="408f496a5a85521adc16cc6b351cc71a" category="paragraph">BlueXP  分類では、次のシステム定義の検索クエリが提供されます。</block>
   <block id="e2824fba3c46b207f277094775a6de03" category="list-text">**データ主体名-高リスク**</block>
@@ -3482,8 +3449,6 @@
   <block id="530bfca85ebf27593e2eac002245d941" category="paragraph">BlueXP  の分類では、作業環境の一括操作がサポートされます。マッピングスキャンの有効化、スキャンのマッピングと分類の有効化、スキャンの無効化、または作業環境内のボリューム間でのカスタム構成の作成を選択できます。個 々 のボリュームを選択した場合は、一括選択よりも優先されます。一括操作を実行するには'**Configuration**ページに移動して選択します</block>
   <block id="5914525550e0efce454828b3fc5f9313" category="paragraph">BlueXP  分類では、データ調査レポートをローカルにダウンロードしてブラウザで表示する機能がサポートされています。ローカルオプションを選択した場合、データ調査はCSV形式でのみ使用でき、最初の10,000行のデータのみが表示されます。</block>
   <block id="36df48405a6f112e4df550bf1db8906b" category="paragraph">BlueXP  分類では、マッピングのみのスキャンに加えて、マップスキャンとスキャンの分類を優先する機能がサポートされており、最初に完了するスキャンを選択できます。MapおよびClassifyスキャンの優先順位付けは、スキャンの開始中および開始前にサポートされます。進行中のスキャンに優先順位を付けることを選択した場合は、マッピングスキャンと分類スキャンの両方に優先順位が付けられます。</block>
-  <block id="ae255a27ba2651659f967ba73acaf7ff" category="paragraph">BlueXP  分類スキャンでは、すべての州と地域の銀行情報、パスポート番号、社会保険番号、運転免許証番号、健康カード番号について、カナダのPIIデータカテゴリを特定します。</block>
-  <block id="99d324505a57bb8cfa4f2be38690da37" category="paragraph">BlueXP  分類では、MapおよびClassifyスキャンのカスタム分類がサポートされます。カスタム分類を使用すると、組織固有のデータをキャプチャするようにBlueXP  スキャンを調整して、正規表現への準拠を確保できます。この機能は現在プレビュー中です。</block>
   <block id="ef37a49c1c224f5d438865198ffa4329" category="paragraph">BlueXP  分類では、への分類イベント（スキャンの開始時と終了時）の送信がサポートされます<block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>。</block>
   <block id="c90892d942290d1e3f7e24962cdcf860" category="admonition">バージョン1.31以降では、BlueXP  分類がBlueXP  のコア機能として使用できます。追加料金はかかりません。分類ライセンスまたはサブスクリプションは必要ありません。</block>
   <block id="c75e25f64e8cd1943eed51ff64a1b8cf" category="paragraph">+旧バージョン1.30以前を使用していた場合は、サブスクリプションの有効期限が切れるまでそのバージョンを利用できます。<block ref="95fdf30a79e4e089c8e09026a1472ebd" category="inline-link-macro-rx"></block>です。</block>
@@ -3493,11 +3458,6 @@
   <block id="478002532c0e9d87506035f8afb96c61" category="list-text">*実行中*（緑色の点）：キューにあったスキャンタスクは、選択したストレージリポジトリでアクティブに進行中です。</block>
   <block id="2d018dff61f63f937cfb5d226fca5491" category="admonition">次の情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。</block>
   <block id="8410773aea4e8f5fda4e98ce13c101df" category="paragraph">+バージョン1.31以降では、BlueXP  分類はBlueXP  のコア製品の一部です。詳細については、を参照してください <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。</block>
-  <block id="247847c7f8a374d1ec15dd635dc10755" category="paragraph">==クイックスタート</block>
-  <block id="f502c96b3152f0f8804a4a20142b8076" category="paragraph">==オブジェクトストレージ要件の確認</block>
-  <block id="f8df4d0a70cf080f5c409b0c2484ccd3" category="paragraph">== BlueXP  分類インスタンスの導入</block>
-  <block id="587be5e803069c9a812c8a5d853e293f" category="paragraph">== BlueXP  分類にオブジェクトストレージサービスを追加する</block>
-  <block id="d84a69103d33679879ff8ef5b35b5b1e" category="paragraph">==オブジェクトストレージバケットでのコンプライアンススキャンの有効化と無効化</block>
   <block id="cdde1a1bd8cf3465f2f0be76f0538e93" category="list-text">[Maximum CLI/API session duration]*を1時間から12時間に変更します。変更を保存します。</block>
   <block id="21c270b5c383cf7064093b0641efa2a2" category="list-text">[ポリシーの適用]*を選択し、*[ポリシーの作成]*を選択します。</block>
   <block id="5e4a3a973c4b69d34bc9fa0a170ac878" category="paragraph">BlueXP  分類インスタンスプロファイルアカウントは、追加のAWSアカウントへのアクセスを受け取ります。</block>
@@ -3507,4 +3467,45 @@
   <block id="3c3eb995ad4feba61dadfbcae0576ca4" category="paragraph">ポリシーの条件を満たすファイルがある場合は、Eメールが送信されます。通知メールに個人情報は送信されません。このEメールには、ポリシー基準に一致するファイルがあることが示され、ポリシー結果へのリンクが表示されます。</block>
   <block id="fe2063e5676e0308022c99eb2466140c" category="paragraph-title">調査ページの結果には、項目の合計数に加えて合計サイズが表示されます。</block>
   <block id="6cff48344cb111c0fcdb424ba18c6bcf" category="paragraph">[Investigation]ページでフィルタ処理された結果には、ファイルの合計数に加えてアイテムの合計サイズが表示されます。これは、ファイルの移動、ファイルの削除などを行うときに役立ちます。</block>
+  <block id="162e654adac435300128c485423d9e97" category="paragraph">BlueXP  分類スキャンは、カナダのPIIデータカテゴリを識別します。これらのカテゴリには、カナダのすべての州と地域の銀行情報、パスポート番号、社会保険番号、運転免許証番号、健康カード番号が含まれます。</block>
+  <block id="24b795aa1c931b8beb71a1bad521912d" category="paragraph">詳細については、を参照してください <block ref="918fde1c1c3c4433556923cc965488af" category="inline-xref-macro-rx"></block>。</block>
+  <block id="779a8744af84c09c0b82c029307690b7" category="paragraph">BlueXP  分類では、MapおよびClassifyスキャンのカスタム分類がサポートされます。カスタム分類を使用すると、正規表現を使用して組織固有のデータをキャプチャするようにBlueXP  スキャンを調整できます。この機能は現在プレビュー中です。</block>
+  <block id="59cb665cd7462a904eefb54d13262d58" category="paragraph">ボタンを選択してから* Active Directoryの削除*を選択し、統合を削除することもできます<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="b26c3f06a8206b488da4691050c7d97f" category="list-text">レポートの最初のページに表示される会社名をカスタマイズするには、BlueXP  分類ページの右上にあるを選択します<block ref="b7ac54c4d55d285685809fbae424a873" category="inline-image-macro-rx" type="image"></block>。次に、*[会社名の変更]*を選択します。次回レポートを生成するときに、新しい名前が含まれます。</block>
+  <block id="cf137e3eb496726834d6c8c1ea2a0bb9" category="paragraph">BlueXP  分類を使用すると、機密情報のカスタム検索を作成できます。検索範囲は正規表現（regex）に限定できます。</block>
+  <block id="a5b2ff1ba11a4724aa08a612d83a1fa8" category="inline-image-macro">[Custom classification]ページのスクリーンショット。</block>
+  <block id="78a1ca571ea767a4e4a68bf118e05ad9" category="list-text">[**Custom classification**]タブを選択します。<block ref="a4efbe791c666e4d565530b58bfb78eb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="75397441bf4c14c2afae2e04e7cd5571" category="list-text">[**Add New Classifier*]ボタンを選択します。</block>
+  <block id="5b43c46ad3b2d1720177cf5a7002d748" category="list-text">新しい分類子の名前と説明を追加します。</block>
+  <block id="0290a20bef89a572b708f13b5de6010d" category="list-text">カスタマイズを正規表現として追加するには、**カスタム正規表現**を選択してから、**次へ**を選択します。</block>
+  <block id="ce6c93af63d5a72eb3c15bc99afe14ec" category="inline-image-macro">正規表現を作成するためのダイアログのスクリーンショット。</block>
+  <block id="2fbc1bcaba732168404159c46526458c" category="list-text">パターンを追加して、データの特定の情報を検出します。**検証**を選択して、エントリの構文を確認します。<block ref="931af7ddfc52cb7655deb8b332ab2e24" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6d7ee64f46753faf45fb70361a3d7659" category="list-text">**完了**を選択して、カスタム分類を作成します。</block>
+  <block id="9f1c60681d04ca50a08671f2b8c80137" category="list-text">BlueXPの分類にはアウトバウンドのインターネットアクセスが必要です。仮想ネットワークまたは物理ネットワークでインターネットアクセスにプロキシサーバを使用している場合は、次のエンドポイントに接続するためのアウトバウンドのインターネットアクセスがBlueXP分類インスタンスにあることを確認してください。プロキシは非透過的である必要があります。透過プロキシは現在サポートされていません。</block>
+  <block id="00529b4fa5e7b481a817fc96cf13bc09" category="list-text">[_Configuration_]ページで、OneDrive、SharePoint、またはGoogle Driveアカウントの行のボタンを選択し<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>、*[OneDriveアカウントの削除]*、*[SharePointアカウントの削除]*、または*[Googleドライブアカウントの削除]*を選択します。</block>
+  <block id="ff4b8a9404d87f321503ee453d569c7d" category="list-text">[_Configuration_]ページで、作業環境の行のボタンを選択し、*[Deactivate Data Sense]*を選択し<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>ます。</block>
+  <block id="33a74c27f54695807d7c17126606dd9b" category="list-text">[_Configuration_]ページで、データベースの行のボタンを選択し、*[Remove DB Server]*を選択し<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>ます。</block>
+  <block id="c16ad793ec0335438d151ae80a49d06f" category="list-text">[_Configuration_]ページで、[File Shares Group]の行のボタンを選択し、*[Remove File Shares Group]*を選択し<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>ます。</block>
+  <block id="763a21e3ec238bca68eb25847cf75843" category="section-title">オブジェクトストレージ要件の確認</block>
+  <block id="56ae4518d3461ca7113dcd16c3bba1b2" category="section-title">オブジェクトストレージサービスをBlueXP分類に追加しています</block>
+  <block id="eee95a219b81e97bc6cd4730c01adbe3" category="section-title">オブジェクトストレージバケットでの準拠スキャンの有効化と無効化</block>
+  <block id="71377237946a16cc4981e8007b83be9b" category="list-text">[ 有効 ] を選択します。</block>
+  <block id="70d6b08c88906fcec4b2b02cb10b8c51" category="admonition">[Configuration]ページでボタンを選択し、*[Activate BlueXP  classification]*を選択して、作業環境のコンプライアンススキャンを有効にすることもできます<block ref="31135726bc5ec70729152e8a36c2ff64" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="5c90cc26dd42f9d3c2debeeef6f5b7cf" category="list-text">[Data Sense]分類ページの上部BlueXP  で、*[Uninstall Data Sense]*を選択します<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="3455f1fb9a5d72859b5d3a372dc8f0fa" category="list-text">[_Uninstall Data Sense_]ダイアログで、「* uninstall *」と入力して、BlueXP  分類インスタンスをBlueXP  Connectorから切断することを確認し、* Uninstall *を選択します。</block>
+  <block id="6cf3fc600b47594541f48cafd63826ff" category="paragraph">保存した検索の結果を[Investigation]ページに表示するには、特定の検索のボタンを選択し<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>、[Investigate Results]を選択します。</block>
+  <block id="9038bf96038481d40955e45169d29a59" category="inline-image-macro">保存された検索タブから特定の検索の[Investigate Results]を選択したスクリーンショット。</block>
+  <block id="fddc772362fed7ea80a47e67e7402818" category="paragraph"><block ref="fddc772362fed7ea80a47e67e7402818" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b138d8858b38a706ce0767ce149141a0" category="paragraph">検索を作成すると、[**保存された検索*]タブに表示されます。</block>
+  <block id="a587a9446f42488cf1642071d4869a8c" category="paragraph">保存された検索の照会条件（定義済みフィルタ）を変更して、特定のパラメータを追加または削除できます。</block>
+  <block id="1f365f0c7b9035143441d12790522996" category="list-text">[保存済み検索]ページで、変更する検索の*[検索の編集]*を選択します。</block>
+  <block id="b8cea04bdaadb30a2fd83edd55a654bc" category="paragraph"><block ref="b8cea04bdaadb30a2fd83edd55a654bc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="477f1d0a65eedc4c654d176f7d5a42ac" category="list-text">名前フィールドと説明フィールドを変更します。名前フィールドと説明フィールドのみを変更するには、*検索を保存*を選択します。</block>
+  <block id="fc109e463007a1ca000c686897a1b120" category="paragraph">保存した検索のフィルタを変更するには、*[クエリの編集]*を選択します。</block>
+  <block id="80adc8081e510902a4fced484a4b4e31" category="inline-image-macro">[Edit Saved Search]ページの[Edit Query]ボタンのスクリーンショット。</block>
+  <block id="6d6f7ce4f444057f277e9b33ee68299e" category="paragraph"><block ref="6d6f7ce4f444057f277e9b33ee68299e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c2b73796ac55b3236efc8e54183ebf12" category="list-text">[Investigation]ページで、クエリを編集します。フィルタを追加、削除、または変更できます。変更を完了するには、*[この検索のクエリを保存する]*を選択します。</block>
+  <block id="ddbd2f5304c626fb501329931a8611ab" category="paragraph"><block ref="ddbd2f5304c626fb501329931a8611ab" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6fd5e575afc5674cda5e381f7413c374" category="paragraph">不要になったカスタム保存済み検索は削除できます。デフォルトの保存済み検索は削除できません。</block>
+  <block id="400d8a42346f426cc27b0acd4383c48b" category="paragraph">保存した検索を削除するには、特定の検索のボタンを選択し<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>て*検索の削除*を選択し、確認ダイアログで*検索の削除*をもう一度選択します。</block>
 </blocks>
