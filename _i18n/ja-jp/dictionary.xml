@@ -2555,13 +2555,10 @@
   <block id="b61f313d2258b7ad36db1c60e210745f" category="paragraph">すべての前提条件テストが正常に実行されたら、準備ができたらBlueXP分類をホストにインストールできます。</block>
   <block id="878e6c42479d1f6a6495aba58949d3c5" category="paragraph">問題が検出された場合は、「推奨」または「必須」に分類され、修正が必要です。通常、推奨される問題は、BlueXPの分類のスキャンとカテゴリ化のタスクの実行に時間がかかる原因となる項目です。これらの項目は修正する必要はありませんが、対処する必要があります。</block>
   <block id="b6aefc1f5bf5d61908d5d40fe783f3c9" category="paragraph">「必須」の問題がある場合は、問題を修正してから、前提条件テストスクリプトを再度実行する必要があります。</block>
-  <block id="1fd880d67ad7d5a9e1ce56b61569fe92" category="summary">BlueXP分類ソフトウェアをアンインストールして、問題をトラブルシューティングしたり、ホストからソフトウェアを完全に削除したりできます。インスタンスを削除すると、インデックス付きデータが格納されている関連ディスクも削除されます。BlueXP分類によってスキャンされたすべての情報が完全に削除されます。</block>
-  <block id="ae2fd70b5fccf0d18c6c0a33a953aa3b" category="doc">BlueXP分類をアンインストールしています</block>
   <block id="f93e118724d27bde2efdff3938b9b6df" category="paragraph">使用する必要がある手順は、BlueXPの分類をクラウドとオンプレミスのどちらのホストのどちらに導入したかによって異なります。</block>
   <block id="8d8f6d516c2b2976c4b330129843859b" category="section-title">クラウド環境からBlueXP分類をアンインストールします</block>
   <block id="809de3d4b48cba202a3e92df9b5646ca" category="paragraph">BlueXP分類を使用する必要がなくなった場合は、クラウドプロバイダ環境からBlueXP分類インスタンスをアンインストールして削除できます。</block>
   <block id="36c78ffc00f44e6669853141b4757135" category="inline-image-macro">BlueXP分類ソフトウェアをアンインストールするボタンのスクリーンショット。</block>
-  <block id="f4b93d0f798b3e20a2411b62607f9933" category="paragraph"><block ref="f4b93d0f798b3e20a2411b62607f9933" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f10f83db534963d9efae7a297e100091" category="list-text">クラウドプロバイダのコンソールに移動し、BlueXP分類インスタンスを削除します。インスタンスの名前は _CloudCompliancy_with で、生成されたハッシュ（ UUID ）を連結しています。例： _CloudCompliion-16bb6564-38ad-40802-9a92-36f5fd2f71c7_</block>
   <block id="961ca08e58e9f85191f5707bc4dac07a" category="paragraph">これにより、BlueXPの分類によって収集されたインスタンスと関連するすべてのデータが削除されます。</block>
   <block id="a3b42cd70d6e63a58b881566f7a8992b" category="section-title">オンプレミス環境からBlueXP分類をアンインストールします</block>
@@ -2881,7 +2878,6 @@
   <block id="f9cb03d21a26b2f64053d2e527396790" category="paragraph">オンプレミスインストールは、オンプレミスにあるBlueXP  分類インスタンスを使用してオンプレミスのONTAPシステムをスキャンする場合に適したオプションですが、これは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。</block>
   <block id="ee8870d1e0595ddae329cf8ef1ee89fa" category="paragraph">調査ページの内容をフィルタリングして、表示する結果のみを表示できます。</block>
   <block id="260af28d48ba051bd7cdd887380f9ece" category="paragraph">LinuxホストにBlueXP  分類を手動でインストールする前に、必要に応じてホストでスクリプトを実行して、BlueXP  分類をインストールするためのすべての前提条件が満たされていることを確認します。このスクリプトは、ネットワーク内のLinuxホストまたはクラウド内のLinuxホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイト（a_dark site_）に配置することもできます。</block>
-  <block id="b64eea97fe56778b0e28c568854873ed" category="paragraph">問題のトラブルシューティングを行う場合、またはホストからソフトウェアを完全に削除する場合は、BlueXP  分類ソフトウェアをアンインストールします。インスタンスを削除すると、インデックス付きデータが格納されている関連ディスクも削除されます。BlueXP分類によってスキャンされたすべての情報が完全に削除されます。</block>
   <block id="6b9d9a04ff593ff427731819f0c3618f" category="doc">バージョン1.40</block>
   <block id="dc4b47101650865122105745fe8d0a2c" category="paragraph-title">RHEL 9.5のサポート</block>
   <block id="1d26b47b0bf4a8a52ca8e66bcb8661dc" category="paragraph">このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v9.5もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。</block>
@@ -3491,8 +3487,6 @@
   <block id="eee95a219b81e97bc6cd4730c01adbe3" category="section-title">オブジェクトストレージバケットでの準拠スキャンの有効化と無効化</block>
   <block id="71377237946a16cc4981e8007b83be9b" category="list-text">[ 有効 ] を選択します。</block>
   <block id="70d6b08c88906fcec4b2b02cb10b8c51" category="admonition">[Configuration]ページでボタンを選択し、*[Activate BlueXP  classification]*を選択して、作業環境のコンプライアンススキャンを有効にすることもできます<block ref="31135726bc5ec70729152e8a36c2ff64" category="inline-image-macro-rx" type="image"></block>。</block>
-  <block id="5c90cc26dd42f9d3c2debeeef6f5b7cf" category="list-text">[Data Sense]分類ページの上部BlueXP  で、*[Uninstall Data Sense]*を選択します<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>。</block>
-  <block id="3455f1fb9a5d72859b5d3a372dc8f0fa" category="list-text">[_Uninstall Data Sense_]ダイアログで、「* uninstall *」と入力して、BlueXP  分類インスタンスをBlueXP  Connectorから切断することを確認し、* Uninstall *を選択します。</block>
   <block id="6cf3fc600b47594541f48cafd63826ff" category="paragraph">保存した検索の結果を[Investigation]ページに表示するには、特定の検索のボタンを選択し<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>、[Investigate Results]を選択します。</block>
   <block id="9038bf96038481d40955e45169d29a59" category="inline-image-macro">保存された検索タブから特定の検索の[Investigate Results]を選択したスクリーンショット。</block>
   <block id="fddc772362fed7ea80a47e67e7402818" category="paragraph"><block ref="fddc772362fed7ea80a47e67e7402818" category="inline-image-macro-rx" type="image"></block></block>
@@ -3508,4 +3502,9 @@
   <block id="ddbd2f5304c626fb501329931a8611ab" category="paragraph"><block ref="ddbd2f5304c626fb501329931a8611ab" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6fd5e575afc5674cda5e381f7413c374" category="paragraph">不要になったカスタム保存済み検索は削除できます。デフォルトの保存済み検索は削除できません。</block>
   <block id="400d8a42346f426cc27b0acd4383c48b" category="paragraph">保存した検索を削除するには、特定の検索のボタンを選択し<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>て*検索の削除*を選択し、確認ダイアログで*検索の削除*をもう一度選択します。</block>
+  <block id="0f7a903ff3355d4ce99a771fa2712107" category="summary">BlueXP分類ソフトウェアをアンインストールして、問題をトラブルシューティングしたり、ホストからソフトウェアを完全に削除したりできます。インスタンスを削除すると、インデックス付きデータが存在する関連ディスクも削除されます。BlueXP  分類によってスキャンされたすべての情報が完全に削除されます。</block>
+  <block id="0d5f6e7ce707545204c3452bc32c2c33" category="paragraph">BlueXP  分類をアンインストールして、問題のトラブルシューティングを行ったり、ソフトウェアをホストから完全に削除したりできます。インスタンスを削除すると、インデックス化されたデータが存在する関連ディスクも削除されます。つまり、BlueXP  分類によってスキャンされたすべての情報が完全に削除されます。</block>
+  <block id="4e256f8808c26162477f8001f045469e" category="list-text">BlueXP  分類ページの上部で、*分類のアンインストール*を選択します<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="af7b04d89717e4fa9eec9f8310536047" category="paragraph"><block ref="af7b04d89717e4fa9eec9f8310536047" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="87cb261b2c6248958390f5e6c3919b1c" category="list-text">[_Uninstall Classification_]ダイアログで、「* uninstall *」と入力して、BlueXP  分類インスタンスをBlueXP  Connectorから切断することを確認し、* Uninstall *を選択します。</block>
 </blocks>
