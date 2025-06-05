@@ -1106,7 +1106,6 @@
   <block id="c4c8ed9ed1210b4b825ecd4522c73de9" category="paragraph">オフライン環境の単一のオンプレミスホストにBlueXP分類ソフトウェアをインストールする場合は、次の手順に従います。</block>
   <block id="5c2d28b4f3a99b0fe3968b98ea7d88e5" category="inline-link-macro">詳細はこちら</block>
   <block id="f221652320e994dc66aab1d5d6da5fb7" category="paragraph">BlueXP分類をインストールすると、すべてのインストールアクティビティがログに記録されます。インストール中に問題が発生した場合は、インストール監査ログの内容を表示できます。に書き込まれ<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block>ます。<block ref="c7911c51adef419f386feff4cec8acf6" category="inline-link-macro-rx"></block>です。</block>
-  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">必要なもの</block>
   <block id="d709c500efa2b07b31dad2acb1fc7b92" category="list-text">Linuxシステムがを満たしていることを確認します<block ref="2d54aecca24274aa47c2fb620cd7d497" category="inline-xref-macro-rx"></block>。</block>
   <block id="fc33df80766251e78dbe2beb48ec9528" category="list-text">前提条件となる2つのソフトウェアパッケージ（Docker EngineまたはPodman、およびPython 3）がインストールされていることを確認します。</block>
   <block id="7e1fecc0c3cbd38b434a0a6232a69c06" category="list-text">Linux システムに対する root 権限があることを確認してください。</block>
@@ -3446,14 +3445,11 @@
   <block id="5914525550e0efce454828b3fc5f9313" category="paragraph">BlueXP  分類では、データ調査レポートをローカルにダウンロードしてブラウザで表示する機能がサポートされています。ローカルオプションを選択した場合、データ調査はCSV形式でのみ使用でき、最初の10,000行のデータのみが表示されます。</block>
   <block id="36df48405a6f112e4df550bf1db8906b" category="paragraph">BlueXP  分類では、マッピングのみのスキャンに加えて、マップスキャンとスキャンの分類を優先する機能がサポートされており、最初に完了するスキャンを選択できます。MapおよびClassifyスキャンの優先順位付けは、スキャンの開始中および開始前にサポートされます。進行中のスキャンに優先順位を付けることを選択した場合は、マッピングスキャンと分類スキャンの両方に優先順位が付けられます。</block>
   <block id="ef37a49c1c224f5d438865198ffa4329" category="paragraph">BlueXP  分類では、への分類イベント（スキャンの開始時と終了時）の送信がサポートされます<block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>。</block>
-  <block id="c90892d942290d1e3f7e24962cdcf860" category="admonition">バージョン1.31以降では、BlueXP  分類がBlueXP  のコア機能として使用できます。追加料金はかかりません。分類ライセンスまたはサブスクリプションは必要ありません。</block>
-  <block id="c75e25f64e8cd1943eed51ff64a1b8cf" category="paragraph">+旧バージョン1.30以前を使用していた場合は、サブスクリプションの有効期限が切れるまでそのバージョンを利用できます。<block ref="95fdf30a79e4e089c8e09026a1472ebd" category="inline-link-macro-rx"></block>です。</block>
   <block id="9688e61f362299cd1c72fb3dac40d459" category="paragraph">BlueXP  分類は無料で使用できます。分類ライセンスや有料サブスクリプションは必要ありません。</block>
   <block id="c9592ef6d87170043628925b775e21a9" category="list-text">プロキシは非透過的である必要があります。BlueXP  classificaitonは現在、トランスペアレントプロキシをサポートしていません。</block>
   <block id="1baa4497e4f5fcbb6d939687ae9bf242" category="admonition">BlueXP  分類では、正規表現の作成時にパターンフラグはサポートされません。これは、「/」を使用しないことを意味します。</block>
   <block id="478002532c0e9d87506035f8afb96c61" category="list-text">*実行中*（緑色の点）：キューにあったスキャンタスクは、選択したストレージリポジトリでアクティブに進行中です。</block>
   <block id="2d018dff61f63f937cfb5d226fca5491" category="admonition">次の情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。</block>
-  <block id="8410773aea4e8f5fda4e98ce13c101df" category="paragraph">+バージョン1.31以降では、BlueXP  分類はBlueXP  のコア製品の一部です。詳細については、を参照してください <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。</block>
   <block id="cdde1a1bd8cf3465f2f0be76f0538e93" category="list-text">[Maximum CLI/API session duration]*を1時間から12時間に変更します。変更を保存します。</block>
   <block id="21c270b5c383cf7064093b0641efa2a2" category="list-text">[ポリシーの適用]*を選択し、*[ポリシーの作成]*を選択します。</block>
   <block id="5e4a3a973c4b69d34bc9fa0a170ac878" category="paragraph">BlueXP  分類インスタンスプロファイルアカウントは、追加のAWSアカウントへのアクセスを受け取ります。</block>
@@ -3507,4 +3503,6 @@
   <block id="4e256f8808c26162477f8001f045469e" category="list-text">BlueXP  分類ページの上部で、*分類のアンインストール*を選択します<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>。</block>
   <block id="af7b04d89717e4fa9eec9f8310536047" category="paragraph"><block ref="af7b04d89717e4fa9eec9f8310536047" category="inline-image-macro-rx" type="image"></block></block>
   <block id="87cb261b2c6248958390f5e6c3919b1c" category="list-text">[_Uninstall Classification_]ダイアログで、「* uninstall *」と入力して、BlueXP  分類インスタンスをBlueXP  Connectorから切断することを確認し、* Uninstall *を選択します。</block>
+  <block id="699184717a21749f96a420118357783a" category="admonition">バージョン1.31以降では、BlueXP  分類がBlueXP  のコア機能として使用できます。追加料金はかかりません。分類ライセンスまたはサブスクリプションは必要ありません。+旧バージョン1.30以前を使用していた場合は、サブスクリプションの有効期限が切れるまでそのバージョンを利用できます。<block ref="95fdf30a79e4e089c8e09026a1472ebd" category="inline-link-macro-rx"></block>です。</block>
+  <block id="6dfc47fd75f488d4315e13098508d320" category="admonition">次の情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。+バージョン1.31以降では、BlueXP  分類はBlueXP  のコア製品の一部です。詳細については、を参照してください <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。</block>
 </blocks>

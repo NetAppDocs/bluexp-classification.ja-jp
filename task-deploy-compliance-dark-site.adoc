@@ -281,7 +281,7 @@ image:diagram_deploy_onprem_single_host_no_internet.png["インターネット�
 
 BlueXP分類をインストールすると、すべてのインストールアクティビティがログに記録されます。インストール中に問題が発生した場合は、インストール監査ログの内容を表示できます。に書き込まれ `/opt/netapp/install_logs/`ます。link:task-audit-data-sense-actions.html["詳細はこちら"]です。
 
-.必要なもの
+.開始する前に
 * Linuxシステムがを満たしていることを確認します<<Linux ホストシステムを準備,ホストの要件>>。
 * 前提条件となる2つのソフトウェアパッケージ（Docker EngineまたはPodman、およびPython 3）がインストールされていることを確認します。
 * Linux システムに対する root 権限があることを確認してください。

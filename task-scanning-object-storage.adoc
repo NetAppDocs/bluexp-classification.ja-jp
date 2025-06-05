@@ -17,9 +17,7 @@ summary: いくつかの手順を実行して、BlueXPの分類を使用して�
 いくつかの手順を実行して、BlueXPの分類を使用してオブジェクトストレージ内のデータの直接スキャンを開始します。BlueXPの分類では、Simple Storage Service（S3）プロトコルを使用する任意のオブジェクトストレージサービスのデータをスキャンできます。これには、NetApp StorageGRID 、IBM Cloud Object Store、Linode、B2クラウドストレージ、Amazon S3などが含まれます。
 
 
-IMPORTANT: 次の情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。
-
-+バージョン1.31以降では、BlueXP  分類はBlueXP  のコア製品の一部です。詳細については、を参照してください link:task-scanning-storagegrid.html["StorageGRIDデータのスキャン"]。
+IMPORTANT: 次の情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。+バージョン1.31以降では、BlueXP  分類はBlueXP  のコア製品の一部です。詳細については、を参照してください link:task-scanning-storagegrid.html["StorageGRIDデータのスキャン"]。
 
 
 
