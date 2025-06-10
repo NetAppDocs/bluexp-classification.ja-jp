@@ -881,7 +881,6 @@
   <block id="e22f9909ed0cc14af3ae41c9e280cf13" category="cell">作業環境の特定のサイズ範囲内に存在するファイルの数を示します。</block>
   <block id="f12b42eece54a56ffab836a42eb37488" category="cell">ファイルの種類</block>
   <block id="7d8121f1bc518fb0e6e184fba09d6b2b" category="cell">作業環境に保存されているファイルタイプごとのファイルの総数と使用容量が表示されます。</block>
-  <block id="97f34c43cfd5abbd752382f17f44c9a2" category="list-text">BlueXPメニューで、* Governance &gt; Classification *をクリックします。</block>
   <block id="fb5cbffc5e8f979523247654de6b0102" category="inline-image-macro">データマッピングレポートの起動方法を示すGovernance Dashboardのスクリーンショット。</block>
   <block id="9fdf01a1261d4a4e788383c1af9adaf2" category="paragraph">BlueXPの分類によって.pdfレポートが生成されます。このレポートを確認して、必要に応じて他のグループに送信できます。</block>
   <block id="46bd1bd2277d77e6f044cdb7a6983fc6" category="inline-image-macro">[詳細]ボタン</block>
@@ -2994,20 +2993,15 @@
   <block id="2cb533e4202a16a29d8a35f975b18546" category="list-text">[ガバナンス]*を選択します。</block>
   <block id="59fb9b8d21a1200f68a3255348e5aad7" category="paragraph">Governanceダッシュボードが表示されます。</block>
   <block id="cd44aff9043f042044d20fa9200a9168" category="section-title">コスト削減の余地を確認する</block>
-  <block id="64d5cdb36e33cae106a6b70c95fdc6de" category="paragraph">_Saving Opportunities 領域内の項目を調査して、削除または階層化してより安価なオブジェクトストレージにする必要があるデータがないかどうかを確認できます。</block>
   <block id="d7fc3a438d308cfbcbd8fa3231391419" category="list-text">BlueXP  classificationメニューから、* Governance *を選択します。</block>
   <block id="9da3158754790a2bd5d492ff265be3c4" category="section-title">データ検出評価レポートの作成</block>
   <block id="310db9cf8ba2482b63b9ab1efe7fe48c" category="paragraph">Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、懸念すべき領域と潜在的な修復手順を示します。結果は、データのマッピングと分類の両方に基づいています。このレポートの目的は、データセットの次の3つの重要な側面についての認知度を高めることです。</block>
   <block id="ba8c35e924f949589fd6e14b916db6fc" category="paragraph">このレポートを使用すると、次の操作を実行できます。</block>
   <block id="b1d35e9ba32779b24fcef34132e15f8c" category="paragraph"><block ref="b1d35e9ba32779b24fcef34132e15f8c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="96929b0f4dead0308876154107c4bcb8" category="section-title">データマッピング概要レポートの作成</block>
-  <block id="bfb48ff12b1469d0b2731ba4b39d8082" category="paragraph">データマッピングの概要レポートには、企業データソースに保存されているデータの概要が表示され、移行、バックアップ、セキュリティ、コンプライアンスの各プロセスの決定に役立ちます。このレポートには、まずすべての作業環境とデータソースの概要が表示され、次に各作業環境の分析が表示されます。</block>
   <block id="a1fe048fbf4d3c352f8807ca8e61a815" category="paragraph"><block ref="a1fe048fbf4d3c352f8807ca8e61a815" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6374c84804cec753d099290142ab1465" category="section-title">データの機密性別に表示される上位のデータリポジトリを確認する</block>
-  <block id="6a0a0aa77d6678b0ac42141cf2b473bc" category="list-text">[Investigation]ページに表示される結果をフィルタリングするには、バーの各領域を選択してさらに調査します。</block>
   <block id="b2c12a3831282ab991643e16075afb77" category="section-title">機密データと幅広い権限を確認</block>
-  <block id="dd0ba7576314f49b14e69d557e1760b4" category="list-text">ノスト制限的な権限から水平軸の最も許容的な制限まで。</block>
-  <block id="115db9a4d58348c93542384adcf071b0" category="list-text">最も感度の低いデータから、最も機密性の高いデータまで、縦軸に表示されます。</block>
   <block id="a72b82c1583cb44d3bde15fd3b45db0a" category="list-text">[Investigation]ページに表示される結果をフィルタリングするには、ボックスを選択してさらに調査します。</block>
   <block id="912072af1bc9d9c75e7bd16ebc45d2eb" category="section-title">開いている権限のタイプ別にリストされたデータを確認する</block>
   <block id="aba1ea5ecac0b70b83e6fef3deec34cf" category="section-title">データの経過時間とサイズを確認する</block>
@@ -3061,7 +3055,6 @@
   <block id="d39106ddc0b9af9f51dbea48d0d9dfca" category="list-text">オンプレミスのONTAPシステムの場合：コネクタはオンプレミスです。</block>
   <block id="04bf12fbff5cef799199f1d030acd3aa" category="paragraph">これらの場所にデータがある場合は、を使用する必要があり<block ref="bc298eaca29e4bff3f0d222b24813861" category="inline-link-rx"></block>ます。</block>
   <block id="47f5b0791caa2598c4559bb5afa675a9" category="paragraph">ここからあなたの研究を始めるべきです。Governanceダッシュボードから、さらに調査する領域を選択できます。</block>
-  <block id="56bcd47afb74823d33fc490b9ced87a3" category="list-text">Governanceダッシュボードの[Savings Opportunities]タイルごとに*[Optimize Storage]*を選択して、フィルタリングされた結果を[Investigation]ページに表示します。_Saving Opportunities 領域内の項目を調査して、削除または階層化してより安価なオブジェクトストレージにする必要があるデータがないかどうかを確認できます。</block>
   <block id="dfd23906ba391609b608a93fdd40fdb2" category="admonition">データ階層化を実装しているデータソースがある場合は、オブジェクトストレージにすでに存在する古いデータを_Stale Data_categoryで特定できます。</block>
   <block id="483d6c5447c876cec7c9f20a2f16d52e" category="list-text">保持ポリシーを変更したり、特定のデータ（古いデータ、重複データ、ビジネス以外のデータ）を移動または削除したりすることで、ストレージコストを削減</block>
   <block id="5672e2463aa066853c9eb4cf4b3e3fa8" category="list-text">グローバルグループ管理ポリシーを改訂して、幅広い権限を持つデータを保護します</block>
@@ -3071,7 +3064,6 @@
   <block id="4cbb02ef6d1ee9902b65e08b42b83a08" category="list-text">各カテゴリの項目の合計数を表示するには、バーの各セクションにカーソルを合わせます。</block>
   <block id="78e705dbea0d34c81ef33941cfdd7c20" category="list-text">各カテゴリのファイルの総数を表示するには、各ボックスの上にカーソルを置きます。</block>
   <block id="d2bc42c21eb303e3f8120f5a184e4544" category="list-text">[Age of Data]グラフで、データの経過時間の詳細を表示するには、グラフ内のポイントにカーソルを合わせます。</block>
-  <block id="1848496efeb9b0561b54c93d4ca7403e" category="list-text">Governance（ガバナンス）*をクリックし、* Data Discovery Assessment Report（データ検出評価レポート）*ボタンをクリックします。</block>
   <block id="9566c25add5b83fcc4806bd8bb57a21a" category="paragraph">BlueXPの分類ダッシュボードには、デフォルトで、すべての作業環境、データベース、データソースのコンプライアンスとガバナンスのデータが表示されます。一部の作業環境のデータのみを含むレポートを表示する場合は、フィルタを使用してレポートだけを表示できます。</block>
   <block id="2f426ddd581281bfd34e83b37e971e66" category="paragraph">BlueXPの分類で使用できるレポートは次のとおりです。</block>
   <block id="46e3b95cc12c4fba5a55ddd543dff215" category="list-text">*データ検出評価レポート*：スキャンされた環境のハイレベルな分析を提供し、システムの調査結果を強調し、懸念すべき領域と潜在的な修復手順を示します。</block>
@@ -3180,7 +3172,6 @@
   <block id="8596fbd0d6e4b9782a36919493e0f086" category="paragraph"><block ref="2d2ba3511c6805480e0a015c44902c12" category="inline-link-rx"></block>を参照して、BlueXP  分類のインストール方法を確認してください。</block>
   <block id="e3dd4dfda4973beedb5de6104236142b" category="paragraph">インストーラは事前チェックを実行して、インストールを正常に完了するためのシステム要件とネットワーク要件が満たされていることを確認します。<block ref="dea23cd1830b75045583053d44b9aee3" category="inline-link-rx"></block>事前チェックのメッセージとその影響を理解する。</block>
   <block id="7ec81e7bd855030d276d5e61de219e52" category="paragraph"><block ref="c0e59dce73248da1782dbe9a4a61e5dc" category="inline-link-rx"></block>前提条件スクリプトの実行方法と結果の解釈方法を確認します。</block>
-  <block id="f408cd0243ef931fdcfb337c2ad2d6f0" category="paragraph">レポートが1MBを超える場合、.pdfファイルはBlueXP分類インスタンスに保持され、正確な場所に関するポップアップメッセージが表示されます。BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、.pdfファイルに直接移動できます。BlueXP分類をクラウドに導入したら、BlueXP分類インスタンスにSSHでアクセスして.pdfファイルをダウンロードする必要があります。</block>
   <block id="5d438f8104cebc11a4ee47fcd2dd6a70" category="paragraph">Data Mapping Overviewレポートの_Top Data Repositories by Sensitivity Level_領域には、最も機密性の高い項目を含む上位4つのデータリポジトリ（作業環境とデータソース）が表示されます。各作業環境の棒グラフは、次のように分割されています。</block>
   <block id="2f2ce99b32f61c21863fbe7701f9ad08" category="paragraph">Data Mapping Overviewレポートの_Sensitive DataおよびWide Permissions_領域 には、機密データを含み、幅広い権限を持つファイルの割合が表示されます。このチャートには、次の種類の権限が表示されます。</block>
   <block id="5464eb098727418ca8f11c507edc4361" category="paragraph">Data Mapping Overviewレポートの_Open Permissions_領域には、スキャンされているすべてのファイルに存在する権限のタイプごとのパーセンテージが表示されます。このチャートには、次の種類の権限が表示されます。</block>
@@ -3355,10 +3346,8 @@
   <block id="16e486f23dded8263d11848df3764b93" category="list-text">アクションタイプ（削除、コピー、移動、保存済み検索の作成、保存済み検索の更新、ファイルの再スキャン、JSONレポートのダウンロードなど）</block>
   <block id="3c60fc446538a7e633556a56c0270a7b" category="list-text">保存された検索名</block>
   <block id="3d8e42b0b0efcc9caab1fb0b9309b99c" category="section-title">検索結果の数が最も多い保存済み検索のレビュー</block>
-  <block id="32362fe63acb7ffc63175566121ad596" category="paragraph">_saved searches_タブでは、検索結果の数が最も多い検索がリストの一番上に表示されます。</block>
   <block id="1a2cb7ec85630ab674f28989b04d5180" category="inline-link-macro">保存済み検索の作成</block>
   <block id="bb3af25bd7c0b9f324e3747796764e22" category="paragraph">保存された検索の詳細については、を参照してください<block ref="c97fce4c2b55d75df91ca91c522727ac" category="inline-link-macro-rx"></block>。</block>
-  <block id="4e4a6277c9744cd4cca07da9aa9ccae0" category="list-text">Goveranceダッシュボードで、保存した検索タイルを探します。保存した検索の名前を選択して、[Investigation]ページに結果を表示します。</block>
   <block id="315e89aa08d31a5d6e5b7e5ee124e27f" category="list-text">[すべて表示]*を選択すると、使用可能なすべての保存済み検索のリストが表示されます。_saved searches_areaでは、検索結果の数が最も多い検索がリストの一番上に表示されます。</block>
   <block id="b3d4fb955e1630fd4184c8964a1f4fdb" category="inline-link-macro">カスタム分類の作成</block>
   <block id="4b760cb0a54b4c608b7deaa08d52f3c3" category="paragraph">また、組織固有の個人データを識別するためのカスタム検索用語を作成することもできます。詳細については、を参照してください <block ref="702fa1a9e503f253a2dc3aea49d5216d" category="inline-link-macro-rx"></block>。</block>
@@ -3505,4 +3494,37 @@
   <block id="87cb261b2c6248958390f5e6c3919b1c" category="list-text">[_Uninstall Classification_]ダイアログで、「* uninstall *」と入力して、BlueXP  分類インスタンスをBlueXP  Connectorから切断することを確認し、* Uninstall *を選択します。</block>
   <block id="699184717a21749f96a420118357783a" category="admonition">バージョン1.31以降では、BlueXP  分類がBlueXP  のコア機能として使用できます。追加料金はかかりません。分類ライセンスまたはサブスクリプションは必要ありません。+旧バージョン1.30以前を使用していた場合は、サブスクリプションの有効期限が切れるまでそのバージョンを利用できます。<block ref="95fdf30a79e4e089c8e09026a1472ebd" category="inline-link-macro-rx"></block>です。</block>
   <block id="6dfc47fd75f488d4315e13098508d320" category="admonition">次の情報は、旧バージョン1.30以前のBlueXP  分類にのみ関連します。+バージョン1.31以降では、BlueXP  分類はBlueXP  のコア製品の一部です。詳細については、を参照してください <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。</block>
+  <block id="1c4322a2b157ac1326426ebdbd680c74" category="doc">バージョン1.44</block>
+  <block id="c7ea7ba68a180dd7fffb65d260820bdf" category="paragraph-title">ガバナンスダッシュボードの更新時間の改善</block>
+  <block id="4a225b50559fc3e5c91e7a224bca4f82" category="paragraph">ガバナンスダッシュボードの各コンポーネントの更新時間が改善されました。以下の表は、各コンポーネントの更新頻度を示しています。</block>
+  <block id="2cb05e4bb7830be982f0922fed86b4cd" category="cell">コンポーネント</block>
+  <block id="b5c592ebd16824471b1dac54611da0f9" category="cell">更新時間</block>
+  <block id="e1f57d0c474bedaae9c88fad138dcfd0" category="cell">24時間</block>
+  <block id="b70528883a2d1dce278c3b16e0f8c608" category="cell">データの概要</block>
+  <block id="4adcc26418f545df76ab44c53fc55702" category="cell">5分</block>
+  <block id="6db4df856c2ad3b66b59b98767190ee4" category="cell">重複ファイル</block>
+  <block id="6619a70f8ab8877e4131643fb8ded723" category="cell">2時間</block>
+  <block id="8c8fee331e9f3e5231bff4fd3c702b79" category="cell">非ビジネスデータ</block>
+  <block id="e804ac99d8e193e9d3e3437979ce7bdf" category="cell">保存済みの検索</block>
+  <block id="8b15c77295fd06496b4e5497d3038948" category="cell">機密データと幅広い権限</block>
+  <block id="3c321d8be960cf9c4e3de3feeb79454d" category="cell">古いデータ</block>
+  <block id="66f1eb6a68ea177f7b25f4befa2afcb5" category="cell">機密レベル別トップデータリポジトリ</block>
+  <block id="b97835ec7267635dbdb6a030bb594b9b" category="inline-xref-macro">組織に保存されているデータに関するガバナンスの詳細を表示する</block>
+  <block id="af67ad5f0d1d3f928958a66c7475e1df" category="paragraph">重複ファイル、非ビジネスデータ、保存済み検索、古いデータ、機密レベル別上位データリポジトリの各コンポーネントは、最終更新時刻の確認と手動更新が可能です。ガバナンスダッシュボードの詳細については、以下をご覧ください。 <block ref="e2440d776a494477c2f83bc685289508" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="98b92205e576b5e6498a01750fffbf6b" category="paragraph-title">パフォーマンスとセキュリティの改善</block>
+  <block id="890d5712449921f1a6ffa08636045ac2" category="paragraph">BlueXP 分類のパフォーマンス、メモリ消費、セキュリティを改善するための機能強化が行われました。</block>
+  <block id="cb000a9ed4aba8f6a1db1f518019d44e" category="paragraph">Redis がアップグレードされ、BlueXP 分類の信頼性が向上しました。BlueXP分類では、スキャン中のファイル数レポートの精度を向上させるために Elasticsearch が使用されるようになりました。</block>
+  <block id="4ce11cec26d762df6394f69d055da8f3" category="paragraph">組織のストレージ リソース上のデータに関連するコストを管理します。BlueXPは分類されるため、システム内の古いデータ、ビジネス以外のデータ、重複ファイル、大容量ファイルの量が特定されるため、一部のファイルを削除するか、低コストのオブジェクトストレージに階層化するかを判断できます。</block>
+  <block id="85e39e757382e56d6d92190ad9864b64" category="paragraph">_Saving Opportunities_ コンポーネントには、削除したり、より安価なオブジェクトストレージに階層化したりできるデータが表示されます。_SavingOpportunities_ のデータは2時間ごとに更新され、手動で更新することもできます。</block>
+  <block id="70de9418b6d77c7f4c2d4632b262c0df" category="list-text">Governanceダッシュボードの[Savings Opportunities]タイルごとに*[Optimize Storage]*を選択して、フィルタリングされた結果を[Investigation]ページに表示します。削除する必要があるデータや、より安価なストレージに移動する必要があるデータを見つけるには、「_Saving Opportunities_」を調べてください。</block>
+  <block id="cc3d8cff4beaca4e220fce51a1bf5a47" category="paragraph">_saved searches_タブでは、検索結果の数が最も多い検索がリストの一番上に表示されます。このデータは2時間ごとに更新されます。</block>
+  <block id="4fc6cd03aea7b0463c849034a115a4ed" category="list-text">ガバナンス ダッシュボードで、[保存した検索] タイルを見つけます。保存した検索の名前を選択して、[Investigation]ページに結果を表示します。</block>
+  <block id="9ba59392053c707a2008110979a1d5d3" category="paragraph">データマッピングの概要レポートには、企業データソースに保存されているデータの概要が表示され、移行、バックアップ、セキュリティ、コンプライアンスの各プロセスの決定に役立ちます。このレポートでは、すべての作業環境とデータソースを要約し、各作業環境の分析も提供しています。</block>
+  <block id="9e8b7662071d4d301b9e642a55a32479" category="paragraph">レポートが1MBを超える場合、.pdfファイルはBlueXP分類インスタンスに保持され、正確な場所に関するポップアップメッセージが表示されます。BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、.pdfファイルに直接移動できます。BlueXP 分類がクラウドにデプロイされている場合、BlueXP 分類インスタンスに SSH で接続して .pdf ファイルをダウンロードする必要があります。</block>
+  <block id="5a95c74f5018b079fee6514d5db4aaf2" category="paragraph">このデータは 2 時間ごとに更新され、手動で更新することもできます。</block>
+  <block id="6407e93c650ddb85c8f2aa5be83f216b" category="list-text">調査ページに表示される結果をフィルタリングするには、バーの各領域を選択し、さらに調査します。</block>
+  <block id="a68d116e41811f0ca6fb6aefa908afd9" category="list-text">水平軸では、最も制限の厳しい権限から最も許容度の高い制限までを示します。</block>
+  <block id="c0ff25971ba3c6cce0ab70a7e99e54ad" category="list-text">垂直軸では、最も機密性の低いデータから最も機密性の高いデータまで表示されます。</block>
+  <block id="77a197972f7313e7a09a6a077fc9f4c2" category="list-text">*ガバナンス*を選択し、*データ検出評価レポート*ボタンをクリックします。</block>
+  <block id="791d05d0e9072626d0316ef0a7cf21bc" category="section-title">2025 年 6 月 9 日</block>
 </blocks>

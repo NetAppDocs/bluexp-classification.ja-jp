@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
-keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
+keywords: savings, stale data, non-business data, duplicate data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
 summary: 組織のストレージリソース上のデータに関連するコストを管理できます。BlueXPは分類されるため、システム内の古いデータ、ビジネス以外のデータ、重複ファイル、大容量ファイルの量が特定されるため、一部のファイルを削除するか、低コストのオブジェクトストレージに階層化するかを判断できます。 
 ---
 = BlueXP  分類を使用して、組織に保存されているデータに関するガバナンスの詳細を表示する
@@ -14,7 +14,7 @@ summary: 組織のストレージリソース上のデータに関連するコ�
 
 
 [role="lead"]
-組織のストレージリソース上のデータに関連するコストを管理できます。BlueXPは分類されるため、システム内の古いデータ、ビジネス以外のデータ、重複ファイル、大容量ファイルの量が特定されるため、一部のファイルを削除するか、低コストのオブジェクトストレージに階層化するかを判断できます。
+組織のストレージ リソース上のデータに関連するコストを管理します。BlueXPは分類されるため、システム内の古いデータ、ビジネス以外のデータ、重複ファイル、大容量ファイルの量が特定されるため、一部のファイルを削除するか、低コストのオブジェクトストレージに階層化するかを判断できます。
 
 ここからあなたの研究を始めるべきです。Governanceダッシュボードから、さらに調査する領域を選択できます。
 
@@ -40,11 +40,11 @@ Governanceダッシュボードが表示されます。
 
 === コスト削減の余地を確認する
 
-_Saving Opportunities 領域内の項目を調査して、削除または階層化してより安価なオブジェクトストレージにする必要があるデータがないかどうかを確認できます。
+_Saving Opportunities_ コンポーネントには、削除したり、より安価なオブジェクトストレージに階層化したりできるデータが表示されます。_SavingOpportunities_ のデータは2時間ごとに更新され、手動で更新することもできます。
 
 .手順
 . BlueXP  classificationメニューから、* Governance *を選択します。
-. Governanceダッシュボードの[Savings Opportunities]タイルごとに*[Optimize Storage]*を選択して、フィルタリングされた結果を[Investigation]ページに表示します。_Saving Opportunities 領域内の項目を調査して、削除または階層化してより安価なオブジェクトストレージにする必要があるデータがないかどうかを確認できます。
+. Governanceダッシュボードの[Savings Opportunities]タイルごとに*[Optimize Storage]*を選択して、フィルタリングされた結果を[Investigation]ページに表示します。削除する必要があるデータや、より安価なストレージに移動する必要があるデータを見つけるには、「_Saving Opportunities_」を調べてください。
 +
 ** *Stale Data*- 3 年前に最後に変更されたデータ。
 ** * ビジネス以外のデータ * - カテゴリまたはファイルタイプに基づいて、ビジネスに関連していないと見なされるデータ。これには、
@@ -70,13 +70,13 @@ NOTE: データ階層化を実装しているデータソースがある場合�
 
 === 検索結果の数が最も多い保存済み検索のレビュー
 
-_saved searches_タブでは、検索結果の数が最も多い検索がリストの一番上に表示されます。
+_saved searches_タブでは、検索結果の数が最も多い検索がリストの一番上に表示されます。このデータは2時間ごとに更新されます。
 
 保存された検索の詳細については、を参照してくださいlink:task-using-policies.html["保存済み検索の作成"]。
 
 .手順
 . BlueXP  classificationメニューから、* Governance *を選択します。
-. Goveranceダッシュボードで、保存した検索タイルを探します。保存した検索の名前を選択して、[Investigation]ページに結果を表示します。
+. ガバナンス ダッシュボードで、[保存した検索] タイルを見つけます。保存した検索の名前を選択して、[Investigation]ページに結果を表示します。
 . [すべて表示]*を選択すると、使用可能なすべての保存済み検索のリストが表示されます。_saved searches_areaでは、検索結果の数が最も多い検索がリストの一番上に表示されます。
 
 
@@ -122,7 +122,7 @@ BlueXPの分類によってPDFレポートが生成されます。このレポ�
 
 == データマッピング概要レポートの作成
 
-データマッピングの概要レポートには、企業データソースに保存されているデータの概要が表示され、移行、バックアップ、セキュリティ、コンプライアンスの各プロセスの決定に役立ちます。このレポートには、まずすべての作業環境とデータソースの概要が表示され、次に各作業環境の分析が表示されます。
+データマッピングの概要レポートには、企業データソースに保存されているデータの概要が表示され、移行、バックアップ、セキュリティ、コンプライアンスの各プロセスの決定に役立ちます。このレポートでは、すべての作業環境とデータソースを要約し、各作業環境の分析も提供しています。
 
 このレポートには次の情報が含まれます。
 
@@ -155,7 +155,7 @@ image:screenshot-compliance-report-buttons.png["データマッピングレポ�
 .結果
 BlueXPの分類によって.pdfレポートが生成されます。このレポートを確認して、必要に応じて他のグループに送信できます。
 
-レポートが1MBを超える場合、.pdfファイルはBlueXP分類インスタンスに保持され、正確な場所に関するポップアップメッセージが表示されます。BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、.pdfファイルに直接移動できます。BlueXP分類をクラウドに導入したら、BlueXP分類インスタンスにSSHでアクセスして.pdfファイルをダウンロードする必要があります。
+レポートが1MBを超える場合、.pdfファイルはBlueXP分類インスタンスに保持され、正確な場所に関するポップアップメッセージが表示されます。BlueXP分類がオンプレミスのLinuxマシンまたはクラウドに導入したLinuxマシンにインストールされている場合は、.pdfファイルに直接移動できます。BlueXP 分類がクラウドにデプロイされている場合、BlueXP 分類インスタンスに SSH で接続して .pdf ファイルをダウンロードする必要があります。
 
 
 
@@ -168,9 +168,11 @@ Data Mapping Overviewレポートの_Top Data Repositories by Sensitivity Level_
 * 機密性の高い個人データ
 
 
+このデータは 2 時間ごとに更新され、手動で更新することもできます。
+
 .手順
 . 各カテゴリの項目の合計数を表示するには、バーの各セクションにカーソルを合わせます。
-. [Investigation]ページに表示される結果をフィルタリングするには、バーの各領域を選択してさらに調査します。
+. 調査ページに表示される結果をフィルタリングするには、バーの各領域を選択し、さらに調査します。
 
 
 
@@ -179,8 +181,8 @@ Data Mapping Overviewレポートの_Top Data Repositories by Sensitivity Level_
 
 Data Mapping Overviewレポートの_Sensitive DataおよびWide Permissions_領域 には、機密データを含み、幅広い権限を持つファイルの割合が表示されます。このチャートには、次の種類の権限が表示されます。
 
-* ノスト制限的な権限から水平軸の最も許容的な制限まで。
-* 最も感度の低いデータから、最も機密性の高いデータまで、縦軸に表示されます。
+* 水平軸では、最も制限の厳しい権限から最も許容度の高い制限までを示します。
+* 垂直軸では、最も機密性の低いデータから最も機密性の高いデータまで表示されます。
 
 
 .手順
@@ -235,8 +237,8 @@ Data Mapping Overviewレポートの_Classification_領域には、スキャン�
 詳細については、を参照してください link:task-controlling-private-data.html["カテゴリ別にファイルを表示します"] 。
 
 .手順
-. BlueXPメニューで、* Governance > Classification *をクリックします。
-. Governance（ガバナンス）*をクリックし、* Data Discovery Assessment Report（データ検出評価レポート）*ボタンをクリックします。
+. BlueXP  メニューから、* Governance > Classification *を選択します。
+. *ガバナンス*を選択し、*データ検出評価レポート*ボタンをクリックします。
 
 
 .結果
