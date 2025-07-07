@@ -687,7 +687,6 @@
   <block id="cf270e40d273f9e7fd7c3061729060c3" category="cell">トレーニング</block>
   <block id="db5eb84117d06047c97c9a0191b5fffe" category="cell">サポート</block>
   <block id="1cdcde584710eee44415045aa08434f5" category="cell">苦情やチケット</block>
-  <block id="fd23f2a479ed0b74592359ca0f2e8fc1" category="paragraph">次のメタデータも分類され、同じサポート対象言語で識別されます。</block>
   <block id="01ff99864c73c43a845fe1b26d70c372" category="list-text">アプリケーションデータ</block>
   <block id="0fa5a9c40f7f4a1f5dc486811f7a9a68" category="list-text">アーカイブファイル</block>
   <block id="b22f0418e8ac915eb66f829d262d14a2" category="list-text">音声</block>
@@ -713,8 +712,6 @@
   <block id="554cfab3938e21d9270bd6b75931f96f" category="list-text">ビデオ</block>
   <block id="6acc6b028214373f8cc2b2f2cd1be70c" category="list-text">0 バイトのファイル</block>
   <block id="ba2688508d4961c3340fa3a979e0a164" category="section-title">ファイルのタイプ</block>
-  <block id="e28941ad3ee4450d4e082c1ed4ac7223" category="paragraph">BlueXPの分類は、すべてのファイルをスキャンしてカテゴリやメタデータの分析情報を取得し、ダッシュボードの[File Types]セクションにすべてのファイルタイプを表示します。</block>
-  <block id="e4ef3ccfa363c6ab883bef97f62feda4" category="paragraph">ただし、BlueXPの分類でPersonal Identifiable Information（PII）が検出された場合や、DSAR検索が実行された場合は、次のファイル形式のみがサポートされます。</block>
   <block id="80890af19007fc709ba59342ca8b0385" category="section-title">見つかった情報の正確性</block>
   <block id="28fda5ce8d3d029d75bd23c4faaf51cb" category="paragraph">ネットアップは、BlueXPの分類によって特定される個人データや機密性の高い個人データの正確性を100%保証することはできません。必ずデータを確認して情報を検証してください。</block>
   <block id="9d203da310dab1f086a98748da39c625" category="paragraph">ネットアップのテストに基づいて、BlueXPで分類された情報の正確さを次の表に示します。精度 _ と _ リコール _ で分解します。</block>
@@ -2627,14 +2624,12 @@
   <block id="8339f3b73dd5a0afa74d7cfbebd1b2c2" category="section-title">2024年11月4日</block>
   <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">2024年10月10日</block>
   <block id="28dc8814bfe656bc8e29052d1508b999" category="section-title">2024年9月2日</block>
-  <block id="dd6b8bf5a56c8beb81b173991906c83e" category="section-title">2024年8月5日</block>
   <block id="3b506912c9fbc6e924c90fcd67f9e81d" category="section-title">バージョン1.34</block>
   <block id="70d1ac1a529ac546d3e60b81ee464a1d" category="paragraph">このBlueXP  分類リリースには、次の更新が含まれています。</block>
   <block id="44a73383773bebac3194e73bd06397a8" category="paragraph-title">CentOSからUbuntuへの変更</block>
   <block id="6a1611bc2c4a6c8c16154f81c0323dc2" category="paragraph">BlueXP  の分類により、Microsoft AzureおよびGoogle Cloud Platform (GCP)用のLinuxオペレーティングシステムがCentOS 7.9からUbuntu 22.04に更新されました。</block>
   <block id="d70ebaa1f93a5c2b07653dd485593661" category="inline-link">インターネットにアクセスできるLinuxホストにインストールし、Linuxホストシステムを準備する</block>
   <block id="e6b6c1b590b016ecf7556d1571a4309e" category="paragraph">導入の詳細については、を参照して<block ref="ba79134a77255d2e97755d6f7b772847" category="inline-link-rx"></block>ください。</block>
-  <block id="16ec862fdbc31bf15f7d944ad60dd33f" category="section-title">2024年7月1日</block>
   <block id="29ca6f4adc7aee37872328bb347b7543" category="section-title">バージョン1.33</block>
   <block id="d61892207457d808cffbfc18b9dcd8ad" category="paragraph-title">Ubuntuのサポート</block>
   <block id="0db04e76c6afbdb79f128758ee937013" category="paragraph">このリリースでは、Ubuntu 24.04 Linuxプラットフォームがサポートされます。</block>
@@ -2643,7 +2638,6 @@
   <block id="240625d3ff2ba7b1a3949f7ddfb468d3" category="paragraph-title">ダッシュボードの追加データ</block>
   <block id="43ac3190fe70b3bdb1f5d5b7083f374a" category="paragraph">このリリースでは、マッピングスキャン中にGovernance、Compliance、およびInvestigationの各ダッシュボードに表示されるデータが更新されます。</block>
   <block id="9b28a6e87457a6a3bfb03009dcd0b84a" category="inline-link">マッピングスキャンと分類スキャンの違い</block>
-  <block id="4497f9fd188a9629ea47d91a3f025c8c" category="section-title">2024年6月5日</block>
   <block id="decdab3311a7d521fe764d5d580ddd35" category="section-title">バージョン1.32</block>
   <block id="7910c8307cac3d62eca8ac0d42301b38" category="paragraph-title">[Configuration]ページの新しい[Mapping status]列</block>
   <block id="cfbaa8108dcd3c438f032a03ea5c380b" category="paragraph">このリリースでは、[Configuration]ページに新しい[Mapping status]列が表示されるようになりました。新しい列では、マッピングが実行中、キューに登録済み、一時停止中、またはそれ以上であるかどうかを確認できます。</block>
@@ -2655,7 +2649,6 @@
   <block id="ac229efd3fa61c5457dcab252996be0b" category="paragraph">BlueXPのコア機能として、最大500TiBのスキャンデータを追加料金なしでBlueXPの分類を利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。今回の新バージョンでは、BlueXPの分類機能をNetAppストレージシステムのスキャンに重点を置いているため、一部のレガシー機能は、以前にライセンス料金を支払ったお客様のみが利用できます。これらのレガシー機能の使用は、有料契約が終了日に達すると期限切れになります。</block>
   <block id="3607a722a9a09bb6d405f4d84609e858" category="inline-link-macro">廃止された機能の詳細</block>
   <block id="1a50d9154328b370f6d9bbbab041964a" category="paragraph"><block ref="671322b9b43cc49264f86b21ef88a11d" category="inline-link-macro-rx"></block>です。</block>
-  <block id="4434c8a49854e6484f6c158999be4e10" category="section-title">2024年4月1日</block>
   <block id="e6a70634d4a42783e6d5918eff0a0ab6" category="section-title">バージョン1.30</block>
   <block id="1f2986b833ebc6f322deb045aeee0ad8" category="paragraph-title">RHEL v8.8およびv9.3 BlueXPの分類のサポートの追加</block>
   <block id="bed0a63060826a7b1ed8cba91cb12ba6" category="paragraph">このリリースでは、以前サポートされていた9.xに加えて、Red Hat Enterprise Linux v8.8およびv9.3がサポートされます。9.xにはDockerエンジンではなくPodmanが必要です。これは、手動でオンプレミスにBlueXPをインストールした場合にも当てはまります。</block>
@@ -2667,7 +2660,6 @@
   <block id="747585a36be1e14a4dd3ff25c4bf1e48" category="paragraph-title">ジドウアップグレード</block>
   <block id="5908128f01988745be85a67845195980" category="paragraph">インターネットにアクセスできるシステムにBlueXP分類を導入している場合は、システムが自動的にアップグレードされます。以前は、最後のユーザアクティビティから特定の時間が経過したあとにアップグレードが実行されていました。このリリースでは、ローカル時間が午前1時から午前5時の間の場合、BlueXP  分類が自動的にアップグレードされます。ローカル時間がこの時間外の場合は、最後のユーザアクティビティから特定の時間が経過したあとにアップグレードが実行されます。詳細については、を参照してください<block ref="ec7f7d5f354f2c39e4e863a85c31a7f9" category="inline-link-rx"></block>。</block>
   <block id="7adcca7abf8ead9407a9511a195904c3" category="paragraph">インターネットアクセスを使用せずにBlueXP分類を導入した場合は、手動でアップグレードする必要があります。詳細については、を参照してください<block ref="9aedc51770264f0d93a81417a0d08768" category="inline-link-rx"></block>。</block>
-  <block id="9ee51d75827fcf6a985ed40e7418fea6" category="section-title">2024年3月4日</block>
   <block id="512d4a337ec357edd106a616e83b1a1f" category="section-title">バージョン1.29</block>
   <block id="2155776a968fa3c23d5147a57832435f" category="paragraph-title">特定のデータソースディレクトリにあるスキャンデータを除外できるようになりました。</block>
   <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">BlueXPの分類で、特定のデータソースディレクトリにあるスキャンデータを除外する場合は、BlueXPの分類で処理する構成ファイルにこれらのディレクトリ名を追加します。この機能を使用すると、不要なディレクトリや、個人データの誤検出結果が返されるディレクトリのスキャンを回避できます。</block>
@@ -2685,17 +2677,14 @@
   <block id="5cc6a6599bfa6671ce515940a0badce7" category="paragraph">このリリースには、いくつかのマイナーな機能拡張が含まれ</block>
   <block id="e2175eca7cd7227e608f98540d53af5e" category="paragraph">このリリースでは、次のオプションも削除されました。</block>
   <block id="95f502d77f0f99fc7fc8414116a3b796" category="list-text">Azure Information Protection（AIP）ラベルを使用してデータを統合するオプションが無効になりました。を参照してください <block ref="1f3e517a67b0b53387aa4b447bd4c674" category="inline-link-macro-rx"></block>。</block>
-  <block id="c8684cf4ccd502e49d1d79ff9936bc98" category="section-title">2023年11月6日</block>
   <block id="0778a32085af8830c408efb93cb7239f" category="section-title">バージョン1.26.3</block>
   <block id="e25bae53fb1951841531279fa78ee63a" category="paragraph">このリリースで解決された問題は次のとおりです。</block>
   <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">システムによってスキャンされたファイル数をダッシュボードに表示する際の不一致を修正しました。</block>
   <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">名前とメタデータに特殊文字が含まれるファイルとディレクトリを処理およびレポートすることで、スキャンの動作が改善されました。</block>
-  <block id="e5899cce271b544ee6441231f3c8cb3f" category="section-title">2023年10月4日</block>
   <block id="a7dfa38887a337aec315ca23d79dc622" category="section-title">バージョン1.26</block>
   <block id="74246010013353726bd9ff99866fa7d4" category="paragraph-title">RHELバージョン9でのBlueXP分類のオンプレミスインストールのサポート</block>
   <block id="efbacc885d0798efa8b4d06d61cb578e" category="paragraph">Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインストールに必要なDockerエンジンをサポートしていません。コンテナインフラとしてPodmanバージョン4以降を使用したRHEL 9.0、9.1、9.2でのBlueXP分類のインストールがサポートされるようになりました。最新バージョンのRHELを使用する必要がある環境では、Podmanを使用する際にBlueXP分類（バージョン1.26以降）をインストールできるようになりました。</block>
   <block id="efe06748da92e661d7225cc7ec109b32" category="paragraph">現時点では、RHEL 9.xを使用している場合、ダークサイトのインストールや分散スキャン環境（マスターノードとリモートスキャナノードを使用）はサポートされていません。</block>
-  <block id="133c04bb5f03e7d4a910bcf2f7193ebd" category="section-title">2023年9月5日</block>
   <block id="3f1982a78707e6a0e0433cad5b5a037d" category="section-title">バージョン1.25</block>
   <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="paragraph-title">小規模および中規模の導入が一時的に利用できない</block>
   <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">現時点では、BlueXP分類のインスタンスをAWSに導入する場合、*[Deploy]&gt;[Configuration]*を選択してSmallまたはMedium sizedインスタンスを選択するオプションは使用できません。[Deploy]&gt;[Deploy]*を選択して、大きなインスタンスサイズを使用してインスタンスを導入することもできます。</block>
@@ -2719,7 +2708,6 @@
   <block id="95eaa41c2e7025ac80bcfafd1710ff57" category="paragraph">BlueXP分類APIを使用すると、スキャンするデータに関する操作の実行、クエリの作成、情報のエクスポートを行うことができます。Swaggerを使用して対話型ドキュメントを利用できます。ドキュメントは、調査、コンプライアンス、ガバナンス、構成など、複数のカテゴリに分かれています。各カテゴリは、BlueXP分類用UIのタブを表しています。</block>
   <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link">BlueXP分類APIの詳細</block>
   <block id="67a7c5f0403c8f58fe4ae70a6f761ae5" category="paragraph"><block ref="6c685f385b4749ef1d91fb7e0577272e" category="inline-link-rx"></block>です。</block>
-  <block id="6a7140fd5370f297d9a834d30e26ffde" category="section-title">2023年6月6日</block>
   <block id="5a78709b3e68f78b25a72a31cfcaa8f0" category="section-title">バージョン1.23</block>
   <block id="04e04c61cd37ca8f12b83c892c2c46ea" category="paragraph-title">データ主体名の検索で日本語がサポートされるようになりました</block>
   <block id="931c126009c96d8f8ce9770df003478d" category="inline-link">[Data Investigation]ページの[Data Subject]フィルタ</block>
@@ -2731,7 +2719,6 @@
   <block id="b5ba343fa4469021dbdf64181a67e909" category="paragraph-title">BlueXPの分類は、ONTAPシステムからFPolicyイベントを受信するFPolicyコレクタとして設定できます</block>
   <block id="cf39647f74e2ee71e92d2dcb020dab2d" category="paragraph">作業環境内のボリュームで検出されたファイルアクセスイベントについて、BlueXP分類システムでファイルアクセス監査ログの収集を有効にすることができます。BlueXPの分類では、次のタイプのFPolicyイベントと、ファイルに対してアクションを実行したユーザ（Create、Read、Write、Delete、Rename、 所有者/権限を変更し、SACL/DACLを変更します。</block>
   <block id="e1161f065b10936afc930fd3d9d0c76f" category="paragraph-title">ダークサイトでData Sense BYOLライセンスがサポートされるようになりました</block>
-  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023年4月3日</block>
   <block id="288d139ea0d21561e65bec74c2f7c646" category="section-title">バージョン1.22</block>
   <block id="e4279e9f497576fcde3caeb67ed0f96d" category="paragraph-title">新しいデータ検出評価レポート</block>
   <block id="5b9233dec22bab321ca47a360d9950b6" category="inline-link">Data Discovery Assessment Reportを生成して使用する方法を説明します</block>
@@ -2739,7 +2726,6 @@
   <block id="3d81ce02b62771b2627fbe04a96419a1" category="inline-link">使用可能なインスタンスタイプと制限事項を参照してください</block>
   <block id="cb608d54d750eeb9d266241b5a1d63c7" category="paragraph-title">BlueXPの分類をインストールする前に、スタンドアロンスクリプトを使用してLinuxシステムを認定できるようになりました</block>
   <block id="46b0a8862a90d05f4f40bbcda2473af4" category="paragraph">BlueXP  分類インストールの実行とは別に、Linuxシステムがすべての前提条件を満たしていることを確認する場合は、前提条件のテストのみを行う別のスクリプトをダウンロードできます。<block ref="f7ad1b05082bb59227795c56a02d9b78" category="inline-link-rx"></block>です。</block>
-  <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">2023年3月7日</block>
   <block id="321553493f3e3f76105c5f5c5633b4c1" category="section-title">バージョン1.21</block>
   <block id="b4602fb47c1d6ee0427e2682d3a0ca06" category="paragraph-title">BlueXPの分類UIから独自のカスタムカテゴリを追加する新機能</block>
   <block id="19c8ed5c1b936813e368bc7d83dbccf2" category="inline-link">事前定義されたカテゴリ</block>
@@ -2757,7 +2743,6 @@
   <block id="013efea19f002683e016d90789038d6e" category="list-title">インストールの機能拡張</block>
   <block id="27bfd524829d2f58c611b9380403face" category="list-text">インターネットアクセスがないサイト（ダークサイト）用のBlueXP分類インストーラで、インストールを成功させるためにシステムとネットワークの要件が満たされていることを確認するための事前チェックが実行されるようになりました。</block>
   <block id="64abb83963bf9db8126f2ee52cdc0390" category="list-text">インストール監査ログファイルは保存され、に書き込まれます。<block ref="2f5e01665193c4e95e37ac69411567bb" prefix=" " category="inline-code"></block></block>
-  <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023年2月5日</block>
   <block id="4d892f9a0cb70711d12ffb41d4d77d8b" category="section-title">バージョン1.20</block>
   <block id="f0da8cded20db5ee6dce9c1c4da7bcd8" category="paragraph-title">任意のEメールアドレスにポリシーベースの通知Eメールを送信できます</block>
   <block id="af415967f6e10a35f69e4fdddc729da2" category="paragraph">以前のバージョンのBlueXP分類では、特定のクリティカルポリシーが結果を返したときに、アカウントのBlueXPユーザにEメールアラートを送信できました。この機能を使用すると、オンラインでないときにデータを保護するための通知を受け取ることができます。また、ポリシーから、BlueXPアカウントに登録されていない最大20個の電子メールアドレスを持つ他のユーザーに電子メールアラートを送信することもできます。</block>
@@ -2772,7 +2757,6 @@
   <block id="cab6c5a0928827eecbe652fb21944075" category="paragraph-title">新しい「部分的成功」ステータスがアクションステータスパネルに追加されました</block>
   <block id="d889002fb629aff0cd2d82543e5f378b" category="inline-link">アクションステータスパネルの表示方法を参照してください</block>
   <block id="451e723f277a39328c39e790b3d47ebc" category="paragraph">新しい「Partial Success」ステータスは、BlueXPの分類処理が完了し、一部の項目が失敗し、一部の項目が成功したことを示します（100個のファイルを移動または削除する場合など）。さらに、「終了」ステータスが「成功」に変更されました。以前は、「終了」ステータスに成功した処理と失敗した処理が表示されることがありました。これで、「成功」ステータスは、すべてのアクションがすべてのアイテムで成功したことを意味します。<block ref="81392bd70242cc4257015d9eb2f1d43a" category="inline-link-rx"></block>です。</block>
-  <block id="88a11892e7418e1eee8c952df9545b46" category="section-title">2023年1月9日</block>
   <block id="58080b77f4121259ffde5ce32650fff6" category="section-title">バージョン1.19</block>
   <block id="5e6d4a84337eb1e0ff5a019edf3a15d6" category="paragraph-title">機密データが含まれ、過度に許容されるファイルのグラフを表示する機能</block>
   <block id="738f7059231d5fe5c1e22879f52682fd" category="paragraph-title">Data Investigationページでは、3つの新しいフィルタを使用できます</block>
@@ -3518,7 +3502,6 @@
   <block id="a68d116e41811f0ca6fb6aefa908afd9" category="list-text">水平軸では、最も制限の厳しい権限から最も許容度の高い制限までを示します。</block>
   <block id="c0ff25971ba3c6cce0ab70a7e99e54ad" category="list-text">垂直軸では、最も機密性の低いデータから最も機密性の高いデータまで表示されます。</block>
   <block id="77a197972f7313e7a09a6a077fc9f4c2" category="list-text">*ガバナンス*を選択し、*データ検出評価レポート*ボタンをクリックします。</block>
-  <block id="791d05d0e9072626d0316ef0a7cf21bc" category="section-title">2025 年 6 月 9 日</block>
   <block id="d4113e36e86a18cdd4a4813e9e66b30e" category="list-text">ホスト システムで Advanced Vector Extensions (AVX2) を有効にする必要があります。</block>
   <block id="e07933db8e0e899d5b0b2536a835fbbe" category="summary">既知の制限事項では、このリリースの製品ではサポートされていない機能、または正しく相互運用されない機能が特定されます。これらの制限事項をよく確認してください。</block>
   <block id="74541a5ab63d560e7b65e9ce0447a3ab" category="paragraph">既知の制限事項では、このリリースではサポートされていない機能や正しく相互運用されない機能が特定されます。これらの制限事項をよく確認してください。</block>
@@ -3531,4 +3514,20 @@
   <block id="13bb1a0d5dd0d8923eac81793d8de810" category="paragraph">すべての共有を個別に追加します。例:</block>
   <block id="5215d51f00cbd59bd4f5379564dd2607" category="section-title">最終アクセスタイムスタンプ</block>
   <block id="ba9f5402880018fda0707ce102d53b4e" category="paragraph">BlueXP分類がディレクトリのスキャンを実行すると、そのスキャンはディレクトリの**最終アクセス**フィールドに影響します。**最終アクセス**フィールドを表示すると、そのメタデータにはスキャンの日時、またはユーザーがディレクトリに最後にアクセスした日時が反映されます。</block>
+  <block id="f8479f3d69c2063127c42c5c37486b19" category="paragraph">次のメタデータも同じサポートされている言語で分類および識別されます。</block>
+  <block id="efb48152c99d5498d08b6785efe95423" category="paragraph">BlueXPの分類は、すべてのファイルをスキャンしてカテゴリやメタデータの分析情報を取得し、ダッシュボードの[File Types]セクションにすべてのファイルタイプを表示します。BlueXP 分類で個人識別情報 (PII) が検出された場合、または DSAR 検索が実行された場合は、次のファイル形式のみがサポートされます。</block>
+  <block id="0e42c2b565849349fc544a0196ef1b6a" category="section-title">2025年6月10日</block>
+  <block id="d7cf77b2e56bc33512915804de4711b6" category="section-title">2024年8月5日</block>
+  <block id="65f1f74c15350fb3342360320ff8c717" category="section-title">2024年7月1日</block>
+  <block id="e4aecca06323b10cc72f8605553dacea" category="section-title">2024年6月5日</block>
+  <block id="9c0269454c5c35ffc377aed6baf6d638" category="section-title">2024年4月1日</block>
+  <block id="b8a98fcc40c83e855fb31eabe2a4360d" category="section-title">2024年3月4日</block>
+  <block id="544cac1ecf4d7d5eb4b8b563c0d90c5a" category="section-title">2023年11月6日</block>
+  <block id="d36a1ccbf2d01a1ff61c0e50416882e9" category="section-title">2023年10月4日</block>
+  <block id="b9d5019337501d72be4adcf007f7d84c" category="section-title">2023年9月5日</block>
+  <block id="40d3210136139f5fa0cdf31aed565820" category="section-title">2023年6月6日</block>
+  <block id="70c95406986fbb3626df1a393daf99ce" category="section-title">2023年4月3日</block>
+  <block id="d673bedebce5131101d3c3583efe3e40" category="section-title">2023年3月7日</block>
+  <block id="7d04cce0092e695d038c8ac0c2c6c212" category="section-title">2023年2月5日</block>
+  <block id="98dafe2aa2310496897ef8155a1d9413" category="section-title">2023年1月9日</block>
 </blocks>
