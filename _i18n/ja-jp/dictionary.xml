@@ -175,10 +175,8 @@
   <block id="555b1e52bb127041158dea54f3685aaf" category="list-text">デフォルトのインスタンスを使用できない地域では、BlueXPの分類は別のインスタンスで実行されます。<block ref="e3d4e40a766f2ed64294b1dd26c6e095" category="inline-link-macro-rx"></block>です。</block>
   <block id="005b996ef864c5e5d692c055b435643b" category="list-text">インスタンスの名前は _CloudCompliancy_with で、生成されたハッシュ（ UUID ）を連結しています。例： _CloudCompliion-16bb6564-38ad-40802-9a92-36f5fd2f71c7_</block>
   <block id="d05dbd72313077420069ae49fe175de1" category="list-text">コネクタごとに導入されるBlueXP分類インスタンスは1つだけです。</block>
-  <block id="b9542475929b3c8ff209e88bb948446b" category="paragraph">BlueXPの分類は、オンプレミスのLinuxホストや希望するクラウドプロバイダのホストに導入することもできます。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。インスタンスにインターネットアクセスがあれば、BlueXP分類ソフトウェアのアップグレードは自動で実行されます。</block>
   <block id="5509f198213f653cadd8f4de67a143bf" category="admonition">BlueXPの分類ではデータが継続的にスキャンされるため、インスタンスは常に実行されたままにしておく必要があります。</block>
   <block id="6b58a1f82ed5bb7a99f52822509a4519" category="paragraph">*さまざまなインスタンスタイプに導入*</block>
-  <block id="df08805f9a68769e5aca6dccacac7494" category="paragraph">BlueXP  分類は、CPUとRAMの数が少ないシステムに導入できます。</block>
   <block id="360d214e899b88b8fe54a260668c2f48" category="cell">仕様</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="cell">制限事項</block>
   <block id="5d4d8771b47d6c5166952822e552f082" category="cell">特大</block>
@@ -3530,4 +3528,8 @@
   <block id="d673bedebce5131101d3c3583efe3e40" category="section-title">2023年3月7日</block>
   <block id="7d04cce0092e695d038c8ac0c2c6c212" category="section-title">2023年2月5日</block>
   <block id="98dafe2aa2310496897ef8155a1d9413" category="section-title">2023年1月9日</block>
+  <block id="5545319db9091a71ae7b48d6f230c126" category="paragraph">BlueXPの分類は、オンプレミスのLinuxホストや希望するクラウドプロバイダのホストに導入することもできます。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。インスタンスがインターネットにアクセスできる限り、BlueXP 分類ソフトウェアのアップグレードは自動化されます。</block>
+  <block id="16d42e00c386e70a3a7df4333dbd3a1d" category="paragraph">インスタンス タイプについては、次の仕様を確認してください。</block>
+  <block id="b6312fd76a50f60b989ce722e432d447" category="paragraph">ボリューム レベルまたはデータベース スキーマ レベルでスキャンを有効または無効にすることができます。</block>
+  <block id="5ef007aec2cc80b49f082c5ae4dba4dc" category="list-text">**マッピングのみのスキャン**データの概要のみが表示され、選択したデータソースで実行されます。マッピングのみのスキャンでは、ファイルにアクセスして内部のデータを確認する必要がないため、マップおよび分類スキャンよりも時間がかかりません。最初にこれを実行して調査領域を特定し、それらの領域に対してMap &amp; Classifyスキャンを実行することもできます。</block>
 </blocks>
