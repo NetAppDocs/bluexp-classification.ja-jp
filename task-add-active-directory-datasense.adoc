@@ -21,6 +21,9 @@ BlueXPでCIFSボリュームをスキャンするためには、特定のデー�
 この統合により、BlueXPでは次の場所で追加情報 が提供されます。
 
 * [File Owner]を使用すると、[Investigation]ペインでファイルのメタデータの結果を確認できますlink:task-investigate-data.html["フィルタ"]。SID （セキュリティ ID ）を含むファイル所有者ではなく、実際のユーザ名が入力されます。
++
+また、ファイル所有者の詳細情報（アカウント名、メール アドレス、SAM アカウント名）を表示したり、そのユーザーが所有するアイテムを表示したりすることもできます。
+
 * [すべての権限を表示]ボタンをクリックすると、各ファイルとディレクトリが表示されますlink:task-investigate-data.html["フルファイル権限"]。
 * ではlink:task-controlling-governance-data.html["ガバナンスダッシュボード"]、[開く権限（Open Permissions）]パネルに、データに関するより詳細な情報が表示されます。
 
