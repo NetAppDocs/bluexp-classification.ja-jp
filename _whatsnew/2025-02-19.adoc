@@ -20,9 +20,9 @@
 
 優先度は1回だけ付与されます。マッピングデータの自動再スキャンは、デフォルトの順序で実行されます。
 
-優先順位付けはに限定されlink:concept-cloud-compliance.html["マッピングのみのスキャン"]、マップスキャンおよび分類スキャンでは使用できません。
+優先順位付けはに限定されlink:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["マッピングのみのスキャン"^]、マップスキャンおよび分類スキャンでは使用できません。
 
-詳細については、を参照してください link:task-managing-repo-scanning.html#prioritize-scans["スキャンの優先順位付け"]。
+詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["スキャンの優先順位付け"^]。
 
 .すべてのスキャンを再試行
 BlueXP  分類では、失敗したすべてのスキャンをバッチ再試行する機能がサポートされています。

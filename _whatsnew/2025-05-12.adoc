@@ -11,20 +11,20 @@
 .分類スキャンの優先順位付け
 BlueXP  分類では、マッピングのみのスキャンに加えて、マップスキャンとスキャンの分類を優先する機能がサポートされており、最初に完了するスキャンを選択できます。MapおよびClassifyスキャンの優先順位付けは、スキャンの開始中および開始前にサポートされます。進行中のスキャンに優先順位を付けることを選択した場合は、マッピングスキャンと分類スキャンの両方に優先順位が付けられます。
 
-詳細については、を参照してください link:task-managing-repo-scanning.html#prioritize-scans["スキャンの優先順位付け"]。
+詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["スキャンの優先順位付け"]。
 
 .カナダの個人識別情報（PII）データカテゴリのサポート
 BlueXP  分類スキャンは、カナダのPIIデータカテゴリを識別します。これらのカテゴリには、カナダのすべての州と地域の銀行情報、パスポート番号、社会保険番号、運転免許証番号、健康カード番号が含まれます。
 
-詳細については、を参照してください xref:reference-private-data-categories.adoc#types-of-personal-data[個人データのカテゴリ]。
+詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["個人データのカテゴリ"]。
 
 .カスタム分類（プレビュー）
 BlueXP  分類では、MapおよびClassifyスキャンのカスタム分類がサポートされます。カスタム分類を使用すると、正規表現を使用して組織固有のデータをキャプチャするようにBlueXP  スキャンを調整できます。この機能は現在プレビュー中です。
 
-詳細については、を参照してください xref:task-custom-classification.adoc[カスタム分類の追加]。
+詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-classification/task-custom-classification.html["カスタム分類の追加"]。
 
 .[保存済み検索]タブ
-**Policies**タブの名前が変更されましたxref:task-using-policies.html[**保存された検索**]。機能は同じです。
+**Policies**タブの名前が変更されましたlink:https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html["**保存された検索**"]。機能に変更はありません。
 
 .スキャンイベントをBlueXP  タイムラインに送信
 BlueXP  分類では、への分類イベント（スキャンの開始時と終了時）の送信がサポートされますlink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  のタイムライン"^]。
