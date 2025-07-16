@@ -202,7 +202,6 @@
   <block id="e22ac25b066b201473de7aa700ef5d92" category="cell">価格設定</block>
   <block id="b24ce0cd392a5b0b8dedc66c25213594" category="cell">無料</block>
   <block id="3b8f7696879f77dfc8c74aa8df8db24b" category="cell">容量</block>
-  <block id="1210ad5d6a7beaf8ab7fd7d0808a95ca" category="cell">最大500TB</block>
   <block id="e897ea41d67b7f4324a05104cdb193d8" category="cell">ファイルタイプと使用済み容量のリスト</block>
   <block id="93cba07454f06a4a960172bbd6e2a435" category="cell">はい</block>
   <block id="f70dc1570da6e051d772bf79c53fd19c" category="cell">ファイル数と使用済み容量</block>
@@ -2625,7 +2624,6 @@
   <block id="93716955add4f66b2af685a33bac4789" category="section-title">2024年5月15日</block>
   <block id="362a66c8caf141f86c11be1e2f936c77" category="section-title">バージョン1.31</block>
   <block id="d1e72f4d21bb915d180e5f6d1e9d4264" category="paragraph-title">BlueXPではコアサービスとして分類を利用可能</block>
-  <block id="ac229efd3fa61c5457dcab252996be0b" category="paragraph">BlueXPのコア機能として、最大500TiBのスキャンデータを追加料金なしでBlueXPの分類を利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。今回の新バージョンでは、BlueXPの分類機能をNetAppストレージシステムのスキャンに重点を置いているため、一部のレガシー機能は、以前にライセンス料金を支払ったお客様のみが利用できます。これらのレガシー機能の使用は、有料契約が終了日に達すると期限切れになります。</block>
   <block id="3607a722a9a09bb6d405f4d84609e858" category="inline-link-macro">廃止された機能の詳細</block>
   <block id="1a50d9154328b370f6d9bbbab041964a" category="paragraph"><block ref="671322b9b43cc49264f86b21ef88a11d" category="inline-link-macro-rx"></block>です。</block>
   <block id="e6a70634d4a42783e6d5918eff0a0ab6" category="section-title">バージョン1.30</block>
@@ -3553,4 +3551,11 @@
   <block id="c10aaeed86973ee0f442f2e7b73b80b8" category="paragraph">詳細については、を参照してください <block ref="c56cfb642e9d697265520a2d16e8cbad" category="inline-link-macro-rx"></block>。</block>
   <block id="4c59149345d32f10d4c1edb221d77028" category="paragraph">「調査」タブでキャプチャされたファイルの所有者に関する詳細情報を表示できるようになりました。[調査] タブでファイルのメタデータを表示するときは、ファイルの所有者を見つけて [**詳細を表示**] を選択し、ユーザー名、メール アドレス、SAM アカウント名を表示します。また、このユーザーが所有する他のアイテムも表示できます。この機能は、Active Directoryが稼働している環境でのみご利用いただけます。</block>
   <block id="476669d16044da6b8fccc04e3a65c887" category="paragraph">詳細については、を参照してください <block ref="202490d1a2feeed942d0b33752539ffd" category="inline-link-macro-rx"></block>。</block>
+  <block id="ba0582c1a4216adac557c97d2f92f869" category="inline-link-macro">別のコネクタをインストールする</block>
+  <block id="bb421402dbabe6eec32567511e69bc2a" category="inline-link-macro">別の分類インスタンスを展開する</block>
+  <block id="7473cbb9b768b471bd45e7579b544a3a" category="inline-link-macro">複数のコネクタの操作</block>
+  <block id="c430d0ad1a785912ff6e7f2d659d752f" category="paragraph">BlueXP classificationでは、スキャンできるデータ量に制限はありません。各コネクタは500TiBのデータのスキャンと表示をサポートしています。500TiBを超えるデータをスキャンするには、 <block ref="a34b864875c7f2ebc4a815c94a375e43" category="inline-link-macro-rx"></block>それから<block ref="a51ca3e7fcece55a05339015489757d6" category="inline-link-macro-rx"></block> .+ BlueXP UIは単一のコネクタからのデータを表示します。複数のコネクタからのデータを表示するヒントについては、 <block ref="5255e271b4118330c3aac09d32603a12" category="inline-link-macro-rx"></block> 。</block>
+  <block id="551fbc3b7472150a5293373b773972d7" category="cell">500 TiB に制限されます*</block>
+  <block id="acdf9d63036f9706b8165f6f6a7117da" category="paragraph">{アスタリスク} include::_include/コネクタ制限.adoc[]</block>
+  <block id="e8c9a8c8c457fc72bf3b116575089845" category="paragraph">BlueXP classificationは、コネクタごとに最大 500 TiB のスキャン データに対して、追加料金なしでBlueXP内のコア機能として利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。今回の新バージョンでは、BlueXPの分類機能をNetAppストレージシステムのスキャンに重点を置いているため、一部のレガシー機能は、以前にライセンス料金を支払ったお客様のみが利用できます。これらのレガシー機能の使用は、有料契約が終了日に達すると期限切れになります。</block>
 </blocks>

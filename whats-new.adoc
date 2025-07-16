@@ -375,7 +375,10 @@ BlueXP  の分類により、Microsoft AzureおよびGoogle Cloud Platform (GCP
 === バージョン1.31
 
 .BlueXPではコアサービスとして分類を利用可能
-BlueXPのコア機能として、最大500TiBのスキャンデータを追加料金なしでBlueXPの分類を利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。今回の新バージョンでは、BlueXPの分類機能をNetAppストレージシステムのスキャンに重点を置いているため、一部のレガシー機能は、以前にライセンス料金を支払ったお客様のみが利用できます。これらのレガシー機能の使用は、有料契約が終了日に達すると期限切れになります。
+BlueXP classificationは、コネクタごとに最大 500 TiB のスキャン データに対して、追加料金なしでBlueXP内のコア機能として利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。今回の新バージョンでは、BlueXPの分類機能をNetAppストレージシステムのスキャンに重点を置いているため、一部のレガシー機能は、以前にライセンス料金を支払ったお客様のみが利用できます。これらのレガシー機能の使用は、有料契約が終了日に達すると期限切れになります。
+
+
+NOTE: BlueXP classificationでは、スキャンできるデータ量に制限はありません。各コネクタは500TiBのデータのスキャンと表示をサポートしています。500TiBを超えるデータをスキャンするには、 link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["別のコネクタをインストールする"^]それからlink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["別の分類インスタンスを展開する"] .+ BlueXP UIは単一のコネクタからのデータを表示します。複数のコネクタからのデータを表示するヒントについては、 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコネクタの操作"^] 。
 
 link:reference-free-paid.html["廃止された機能の詳細"]です。
 
