@@ -55,8 +55,6 @@ sidebar:
         url: "/task-scanning-storagegrid.html"
     - title: Active Directory を統合します
       url: "/task-add-active-directory-datasense.html"
-    - title: よくある質問
-      url: "/faq-cloud-compliance.html"
   - title: BlueXP分類を使用
     entries:
     - title: データのガバナンスの詳細を確認できます
@@ -139,6 +137,8 @@ sidebar:
       url: "/task-support-registration.html"
     - title: ヘルプを表示します
       url: "/task-get-help.html"
+  - title: よくある質問
+    url: "/faq-cloud-compliance.html"
   - title: 法的通知
     url: "/legal-notices.html"
 product-family:

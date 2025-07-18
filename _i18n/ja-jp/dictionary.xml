@@ -2971,7 +2971,6 @@
   <block id="a5e2d801acd4eba6ae154178a10ef60b" category="paragraph">BlueXP  分類では、BlueXP  システムやストレージシステムに加えて、AIのもう1つのレイヤが導入されます。次に、ボリューム、バケット、データベース、その他のストレージアカウントのデータをスキャンして、見つかったデータ分析のインデックスを作成します。BlueXPの分類では、正規表現とパターンマッチングを中心に構築されている他のソリューションとは異なり、人工知能と自然言語処理の両方が活用されます。</block>
   <block id="05f433c1debc0d95600d02d8fe22a000" category="paragraph"><block ref="c829fae802ee8a6cfaabb6949c6dbda2" category="inline-link-macro-rx"></block>です。</block>
   <block id="7495d9f71402d3b1d20f08bd19ac6562" category="inline-link-macro">APIのドキュメント</block>
-  <block id="2f5a5a17121fb9d36eb3f88f8ea3cc54" category="paragraph">はい。BlueXP  分類には、BlueXP  コアプラットフォームの一部であるBlueXP  分類バージョンでサポートされている機能用のREST APIがあります。を参照して <block ref="66d6eeee3cdd1145e7194200ace05e36" category="inline-link-macro-rx"></block></block>
   <block id="5cc30ec93f0fd1add7230b4f102dac70" category="section-title">BlueXP  の分類は、クラウドマーケットプレイスを通じて利用できますか。</block>
   <block id="c121c2d1b519c88dba382cf2cad15a89" category="paragraph">BlueXP  の分類はBlueXP  のコア機能の一部であるため、このサービスのマーケットプレイスを使用する必要はありません。</block>
   <block id="5c724eb0add446b6c005e415e92957ed" category="paragraph">以下の質問は、BlueXP  分類スキャンのパフォーマンスと分析に関するものです。</block>
@@ -3558,4 +3557,5 @@
   <block id="551fbc3b7472150a5293373b773972d7" category="cell">500 TiB に制限されます*</block>
   <block id="acdf9d63036f9706b8165f6f6a7117da" category="paragraph">{アスタリスク} include::_include/コネクタ制限.adoc[]</block>
   <block id="e8c9a8c8c457fc72bf3b116575089845" category="paragraph">BlueXP classificationは、コネクタごとに最大 500 TiB のスキャン データに対して、追加料金なしでBlueXP内のコア機能として利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。今回の新バージョンでは、BlueXPの分類機能をNetAppストレージシステムのスキャンに重点を置いているため、一部のレガシー機能は、以前にライセンス料金を支払ったお客様のみが利用できます。これらのレガシー機能の使用は、有料契約が終了日に達すると期限切れになります。</block>
+  <block id="3c6bee2e144dcf57c21b516f9adcdfef" category="paragraph">はい。BlueXP  分類には、BlueXP  コアプラットフォームの一部であるBlueXP  分類バージョンでサポートされている機能用のREST APIがあります。を参照して <block ref="66d6eeee3cdd1145e7194200ace05e36" category="inline-link-macro-rx"></block></block>
 </blocks>
