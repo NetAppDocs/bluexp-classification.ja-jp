@@ -994,15 +994,10 @@
   <block id="7df445bf0c34cf36a966141745590030" category="open-title">AWSに導入</block>
   <block id="23c0e03df230b1dfa0e16b9d275b80ea" category="list-text">BlueXPの左ナビゲーションメニューで、* Governance &gt; Classification *をクリックします。</block>
   <block id="d33aba60d91a201fe7b4bce522f9deb7" category="inline-image-macro">BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。</block>
-  <block id="c48b9bad2a3a25d6dad223ab11c5a33e" category="paragraph"><block ref="c48b9bad2a3a25d6dad223ab11c5a33e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cce26d229722c6ca9257990a7091d9c0" category="list-text">[ データセンスを活動化（ Activate Data sense ） ] をクリックし</block>
-  <block id="2cf7dbc159875140b6f5ecc68994fa13" category="list-text">[_Installation_]ページで、*[Deploy]&gt;[Deploy]*をクリックして「Large」インスタンスサイズを使用し、クラウド導入ウィザードを開始します。</block>
   <block id="125c9895b0de4086b75bd6de17240096" category="list-text">導入手順が完了すると、ウィザードに進捗状況が表示されます。問題が発生した場合は、停止して入力を求められます。</block>
   <block id="6ccd3462f51e144ba54924a76ff58ce8" category="inline-image-macro">新しいインスタンスを導入するためのBlueXP分類ウィザードのスクリーンショット。</block>
   <block id="f7b6e8ebd5557b7030e15d04046f60e7" category="paragraph"><block ref="f7b6e8ebd5557b7030e15d04046f60e7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bdfca0a21ad4ec182fb0ff0fe7b8bc6b" category="list-text">インスタンスが導入され、BlueXP分類がインストールされたら、*[構成に進む]*をクリックして_Configuration_pageに移動します。</block>
   <block id="699be6723175322ef727a933c7b42bbd" category="open-title">Azureへの導入</block>
-  <block id="a09a5c1c3cb0d27dbac4cfa3c73c0ec8" category="list-text">[* Deploy*]をクリックして、クラウド導入ウィザードを開始します。</block>
   <block id="473b6ff5a1c62a3a028f4dc37b9cbd6c" category="inline-image-macro">BlueXP分類をクラウドに導入するためのボタンを選択したスクリーンショット。</block>
   <block id="1f61c6b070b23b20d4af173152567e3d" category="paragraph"><block ref="1f61c6b070b23b20d4af173152567e3d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="12714d8579e39a7357fefed194511b8a" category="open-title">Google Cloudに導入</block>
@@ -3558,4 +3553,28 @@
   <block id="acdf9d63036f9706b8165f6f6a7117da" category="paragraph">{アスタリスク} include::_include/コネクタ制限.adoc[]</block>
   <block id="e8c9a8c8c457fc72bf3b116575089845" category="paragraph">BlueXP classificationは、コネクタごとに最大 500 TiB のスキャン データに対して、追加料金なしでBlueXP内のコア機能として利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。今回の新バージョンでは、BlueXPの分類機能をNetAppストレージシステムのスキャンに重点を置いているため、一部のレガシー機能は、以前にライセンス料金を支払ったお客様のみが利用できます。これらのレガシー機能の使用は、有料契約が終了日に達すると期限切れになります。</block>
   <block id="3c6bee2e144dcf57c21b516f9adcdfef" category="paragraph">はい。BlueXP  分類には、BlueXP  コアプラットフォームの一部であるBlueXP  分類バージョンでサポートされている機能用のREST APIがあります。を参照して <block ref="66d6eeee3cdd1145e7194200ace05e36" category="inline-link-macro-rx"></block></block>
+  <block id="b88a97dbbf0d94d8396d856054201821" category="summary">BlueXPのサービスにアクセスして、 BlueXP classificationを開始します。</block>
+  <block id="5e2bda6842e62bee66b91379fc54ff14" category="doc">BlueXP classificationにアクセス</block>
+  <block id="18ab5404b1c9c78cdbe1208355c612b8" category="paragraph">BlueXP classificationサービスには、 NetApp BlueXPを通じてアクセスできます。</block>
+  <block id="827ffaa4071f763fcf2f165bc506ac67" category="inline-link-macro">BlueXPへのログインの詳細をご覧ください</block>
+  <block id="e85f8055ef2f47366302b6cd1e438fd5" category="paragraph">BlueXPにサインインするには、 NetAppサポート サイトの資格情報を使用するか、電子メールとパスワードを使用してNetAppクラウド ログインにサインアップすることができます。<block ref="87311a7719bd09cd8d149ce0279338dd" category="inline-link-macro-rx"></block>です。</block>
+  <block id="34397c830c77af93d96e3ed470658d45" category="inline-link-macro">すべてのサービスに対するBlueXPのアクセスロールについて学ぶ</block>
+  <block id="0a52c97ea3cc5973c99346826ec696eb" category="paragraph">特定のタスクには特定のBlueXPユーザー ロールが必要です。<block ref="8b4e96244237d791189f9a3329e43e34" category="inline-link-macro-rx"></block>です。</block>
+  <block id="7b9aeeb99181b7bca6291c8ca1c3ec58" category="inline-link-macro">BlueXPコネクタを追加する必要があります。</block>
+  <block id="4d1ee80ad087cea271c22d352e5e16cf" category="list-text"><block ref="4d1ee80ad087cea271c22d352e5e16cf" category="inline-link-macro-rx"></block></block>
+  <block id="d5686972367b277b3384920923b26bb8" category="inline-link-macro">どのBlueXP classification展開スタイルがワークロードに適しているかを理解します。</block>
+  <block id="a7d2d849071dae06891079aa8c9ed283" category="list-text"><block ref="a7d2d849071dae06891079aa8c9ed283" category="inline-link-macro-rx"></block></block>
+  <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">BlueXPコンソール</block>
+  <block id="899f21c9bd67afec8f9f3be01a8edddc" category="list-text">ウェブブラウザで、 <block ref="046fd603b18837f482287e5ec741e5ed" category="inline-link-macro-rx"></block> 。</block>
+  <block id="753e3c2055278365db83b605f29d4860" category="paragraph">NetApp BlueXPのログインページが表示されます。</block>
+  <block id="ee852dbf3a138374521be3a3b6b5413d" category="list-text">BlueXPにSign in。</block>
+  <block id="94390442839b9d41b3d61bf8fbfa3412" category="list-text">BlueXP の左側のナビゲーション メニューから、*ガバナンス* &gt; *分類* を選択します。</block>
+  <block id="9b78feb8a8a40d46d2fb12391c043b8e" category="list-text">BlueXP classificationに初めてアクセスする場合は、ランディング ページが表示されます。</block>
+  <block id="3c5000aadb8f3b41a943ceff25d45f92" category="paragraph">分類インスタンスの展開を開始するには、*オンプレミスまたはクラウドでの分類の展開*を選択します。詳細については、を参照してください。 <block ref="ac3bd67718326214ecb171be9412b196" category="inline-link-macro-rx"></block></block>
+  <block id="a65721c6a00f8c4af241338a11fd8f3f" category="paragraph"><block ref="a65721c6a00f8c4af241338a11fd8f3f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e694fa91cc3969b00d0ae997752b6422" category="paragraph">それ以外の場合は、 BlueXP classificationダッシュボードが表示されます。</block>
+  <block id="e142a6f5dd7278bd87df979071f43ac7" category="list-text">*オンプレミスまたはクラウドでの分類の展開*を選択します。</block>
+  <block id="dcc769ed0ea98e366058422f08990e15" category="list-text">_インストール_ ページで、*デプロイ &gt; デプロイ* を選択して、「大」インスタンス サイズを使用し、クラウド デプロイ ウィザードを起動します。</block>
+  <block id="6082f95d47d2b6cd46c38a484f2b2e4f" category="list-text">インスタンスがデプロイされ、 BlueXP classificationがインストールされたら、[*構成に進む*] を選択して [_構成_] ページに移動します。</block>
+  <block id="f08251ff59a66c2320f7263142413eac" category="list-text">*デプロイ* を選択して、クラウド デプロイ ウィザードを起動します。</block>
 </blocks>

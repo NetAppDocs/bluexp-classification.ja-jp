@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: task-access.html 
+keywords: log in, sign in 
+summary: BlueXPのサービスにアクセスして、 BlueXP classificationを開始します。 
+---
+= BlueXP classificationにアクセス
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/get-started/
+
+
+[role="lead"]
+BlueXP classificationサービスには、 NetApp BlueXPを通じてアクセスできます。
+
+BlueXPにサインインするには、 NetAppサポート サイトの資格情報を使用するか、電子メールとパスワードを使用してNetAppクラウド ログインにサインアップすることができます。link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["BlueXPへのログインの詳細をご覧ください"^]です。
+
+特定のタスクには特定のBlueXPユーザー ロールが必要です。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスに対するBlueXPのアクセスロールについて学ぶ"^]です。
+
+.開始する前に
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["BlueXPコネクタを追加する必要があります。"^]
+* link:task-deploy-cloud-compliance.html["どのBlueXP classification展開スタイルがワークロードに適しているかを理解します。"]
+
+
+.手順
+. ウェブブラウザで、 link:https://console.bluexp.netapp.com/["BlueXPコンソール"^] 。
++
+NetApp BlueXPのログインページが表示されます。
+
+. BlueXPにSign in。
+. BlueXP の左側のナビゲーション メニューから、*ガバナンス* > *分類* を選択します。
+. BlueXP classificationに初めてアクセスする場合は、ランディング ページが表示されます。
++
+分類インスタンスの展開を開始するには、*オンプレミスまたはクラウドでの分類の展開*を選択します。詳細については、を参照してください。 link:task-deploy-cloud-compliance.html["BlueXPのどの分類環境を使用すればよいですか？"]
+
++
+image:screenshot-deploy-classification.png["BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。"]
+
++
+それ以外の場合は、 BlueXP classificationダッシュボードが表示されます。
+
+

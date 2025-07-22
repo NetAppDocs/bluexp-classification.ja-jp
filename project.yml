@@ -25,6 +25,8 @@ sidebar:
     entries:
     - title: BlueXPの分類について説明します
       url: "/concept-cloud-compliance.html"
+    - title: BlueXP classificationにアクセス
+      url: "/task-access.html"
     - title: BlueXP分類を導入します
       entries:
       - title: 使用する導入方法

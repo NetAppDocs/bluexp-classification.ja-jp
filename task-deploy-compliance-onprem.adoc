@@ -337,9 +337,9 @@ BlueXP分類をインストールすると、すべてのインストールア�
 tar -xzf DATASENSE-INSTALLER-V1.25.0.tar.gz
 ----
 . BlueXPでは、* Governance > Classification *を選択します。
-. [ データセンスを活動化（ Activate Data sense ） ] をクリックし
+. *オンプレミスまたはクラウドでの分類の展開*を選択します。
 +
-image:screenshot_cloud_compliance_deploy_start.png["BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。"]
+image:screenshot-deploy-classification.png["BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。"]
 
 . クラウドで準備したインスタンスとオンプレミスで準備したインスタンスのどちらにBlueXP分類をインストールするかに応じて、該当する*[Deploy]*ボタンをクリックしてBlueXP分類のインストールを開始します。
 +

@@ -307,9 +307,9 @@ tar -xzf DataSense-offline-bundle-v1.25.0.tar.gz
 tar -xzf cc_onprem_installer.tar.gz
 ----
 . BlueXPを起動し、「ガバナンス」＞「分類」と選択します。
-. [ データセンスを活動化（ Activate Data sense ） ] をクリックし
+. *オンプレミスまたはクラウドでの分類の展開*を選択します。
 +
-image:screenshot_cloud_compliance_deploy_start.png["BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。"]
+image:screenshot-deploy-classification.png["BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。"]
 
 . [Deploy]*をクリックしてオンプレミスのインストールを開始します。
 +

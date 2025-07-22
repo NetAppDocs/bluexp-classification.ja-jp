@@ -192,29 +192,29 @@ BlueXP分類のインスタンスをクラウドに導入するには、次の�
 .AWSに導入
 --
 .手順
-. BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックします。
+. BlueXP  の左側のナビゲーションメニューから、*ガバナンス>分類*を選択します。
+. *オンプレミスまたはクラウドでの分類の展開*を選択します。
 +
-image:screenshot_cloud_compliance_deploy_start.png["BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。"]
+image:screenshot-deploy-classification.png["BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。"]
 
-. [ データセンスを活動化（ Activate Data sense ） ] をクリックし
-. [_Installation_]ページで、*[Deploy]>[Deploy]*をクリックして「Large」インスタンスサイズを使用し、クラウド導入ウィザードを開始します。
+. _インストール_ ページで、*デプロイ > デプロイ* を選択して、「大」インスタンス サイズを使用し、クラウド デプロイ ウィザードを起動します。
 . 導入手順が完了すると、ウィザードに進捗状況が表示されます。問題が発生した場合は、停止して入力を求められます。
 +
 image:screenshot_cloud_compliance_wizard_start.png["新しいインスタンスを導入するためのBlueXP分類ウィザードのスクリーンショット。"]
 
-. インスタンスが導入され、BlueXP分類がインストールされたら、*[構成に進む]*をクリックして_Configuration_pageに移動します。
+. インスタンスがデプロイされ、 BlueXP classificationがインストールされたら、[*構成に進む*] を選択して [_構成_] ページに移動します。
 
 
 --
 .Azureへの導入
 --
 .手順
-. BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックします。
-. [ データセンスを活動化（ Activate Data sense ） ] をクリックし
+. BlueXP  の左側のナビゲーションメニューから、*ガバナンス>分類*を選択します。
+. *オンプレミスまたはクラウドでの分類の展開*を選択します。
 +
-image:screenshot_cloud_compliance_deploy_start.png["BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。"]
+image:screenshot-deploy-classification.png["BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。"]
 
-. [* Deploy*]をクリックして、クラウド導入ウィザードを開始します。
+. *デプロイ* を選択して、クラウド デプロイ ウィザードを起動します。
 +
 image:screenshot_cloud_compliance_deploy_cloud.png["BlueXP分類をクラウドに導入するためのボタンを選択したスクリーンショット。"]
 
@@ -222,19 +222,19 @@ image:screenshot_cloud_compliance_deploy_cloud.png["BlueXP分類をクラウド�
 +
 image:screenshot_cloud_compliance_wizard_start.png["新しいインスタンスを導入するためのBlueXP分類ウィザードのスクリーンショット。"]
 
-. インスタンスが導入され、BlueXP分類がインストールされたら、*[構成に進む]*をクリックして_Configuration_pageに移動します。
+. インスタンスがデプロイされ、 BlueXP classificationがインストールされたら、[*構成に進む*] を選択して [_構成_] ページに移動します。
 
 
 --
 .Google Cloudに導入
 --
 .手順
-. BlueXPの左ナビゲーションメニューで、* Governance > Classification *をクリックします。
-. [ データセンスを活動化（ Activate Data sense ） ] をクリックし
+. BlueXP  の左側のナビゲーションメニューから、*ガバナンス>分類*を選択します。
+. *オンプレミスまたはクラウドでの分類の展開*を選択します。
 +
-image:screenshot_cloud_compliance_deploy_start.png["BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。"]
+image:screenshot-deploy-classification.png["BlueXP分類をアクティブ化するボタンを選択するスクリーンショット。"]
 
-. [* Deploy*]をクリックして、クラウド導入ウィザードを開始します。
+. *デプロイ* を選択して、クラウド デプロイ ウィザードを起動します。
 +
 image:screenshot_cloud_compliance_deploy_cloud.png["BlueXP分類をクラウドに導入するためのボタンを選択したスクリーンショット。"]
 
@@ -242,7 +242,7 @@ image:screenshot_cloud_compliance_deploy_cloud.png["BlueXP分類をクラウド�
 +
 image:screenshot_cloud_compliance_wizard_start.png["新しいインスタンスを導入するためのBlueXP分類ウィザードのスクリーンショット。"]
 
-. インスタンスが導入され、BlueXP分類がインストールされたら、*[構成に進む]*をクリックして_Configuration_pageに移動します。
+. インスタンスがデプロイされ、 BlueXP classificationがインストールされたら、[*構成に進む*] を選択して [_構成_] ページに移動します。
 
 
 --
