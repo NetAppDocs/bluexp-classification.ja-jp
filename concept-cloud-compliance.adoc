@@ -212,9 +212,3 @@ BlueXP  をSaaSモードで使用する場合、BlueXP  への接続はHTTPS�
 アウトバウンドルールは完全にオープンです。BlueXP分類ソフトウェアのインストールとアップグレード、使用状況の指標の送信には、インターネットアクセスが必要です。
 
 ネットワークに関する厳しい要件がある場合は、をlink:task-deploy-cloud-compliance.html#review-prerequisites["BlueXP分類の連絡先となるエンドポイントについて説明します"^]参照してください。
-
-
-
-== BlueXP  分類でのユーザロール
-
-各ユーザに割り当てられたロールは、BlueXP  内およびBlueXP  分類内で異なる機能を提供します。詳細については、を参照して https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["BlueXP  IAMロール"]ください（標準モードでBlueXP  を使用する場合）。

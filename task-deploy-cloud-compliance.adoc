@@ -150,7 +150,15 @@ AWS、Azure、GCPのいずれにBlueXP分類を導入するかに応じて、次
 |===
 --
 ====
-BlueXPに必要な権限があることを確認します:: BlueXPにリソースを導入し、BlueXP分類インスタンスのセキュリティグループを作成する権限があることを確認します。最新のBlueXP  権限については、を参照し https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["ネットアップが提供するポリシー"^]てください。
+BlueXPに必要な権限があることを確認します:: BlueXPにリソースをデプロイし、 BlueXP classificationインスタンスのセキュリティ グループを作成する権限があることを確認します。
++
+--
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Google Cloud の権限"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#classification["AWS 権限"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#classification["Azure のアクセス許可"^]
+
+
+--
 BlueXPコネクタからBlueXP分類にアクセスできることを確認します:: コネクタとBlueXP分類インスタンスが接続されていることを確認します。コネクタのセキュリティグループで、ポート443を介したBlueXP分類インスタンスとの間のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。この接続により、BlueXP分類インスタンスを導入し、[Compliance]タブと[Governance]タブに情報を表示できます。BlueXPの分類は、AWSとAzureの政府機関のリージョンでサポートされます。
 +
 --
