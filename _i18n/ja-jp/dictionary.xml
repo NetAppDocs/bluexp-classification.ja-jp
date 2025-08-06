@@ -1781,7 +1781,6 @@
   <block id="4582ba30b2499066be90a4bcea5ec4b6" category="paragraph">BlueXP分類でスキャンしているソースファイルは、任意のNFS共有にコピーできます。NFS共有をBlueXP  分類と統合する必要はありません。選択したすべてのファイルがの形式でコピーされるNFS共有の名前を知っておく必要があります。<block ref="5d0795d5bd729889f583de7b0928eaea" prefix=" " category="inline-code"></block></block>
   <block id="6ca416dc347d5360ab86e69583f4b2b0" category="admonition">データベースに存在するファイルはコピーできません。</block>
   <block id="ab24d4e851f3db949095d520c7a20014" category="inline-link-macro">コンプライアンス情報へのユーザアクセスについて</block>
-  <block id="626f686c5ceb0252f691c5ea070f437b" category="list-text">ファイルをコピーする権限が必要です。<block ref="755d8ea7a519899e64b990f74fdc72f2" category="inline-link-macro-rx"></block>です。</block>
   <block id="1394fd88d929360313e8c80ec722b081" category="list-text">ファイルをコピーするには、デスティネーションNFS共有でBlueXP分類インスタンスからのアクセスが許可されている必要があります。</block>
   <block id="11f3580c4a3b779649df6d1a5c193fdf" category="list-text">一度に1～100,000個のファイルをコピーできます。</block>
   <block id="07fc1f9bea8dc1060003a2fea5aa3598" category="list-text">[ データ調査結果 ] ペインで、コピーするファイルを選択し、 [ * コピー ] をクリックします。</block>
@@ -1827,7 +1826,6 @@
   <block id="ed404bde5dfd762dd0759dcedd71cdd7" category="paragraph">BlueXP  分類がスキャンしているソースファイルを、サポートされている非構造化データソースから特定のターゲットデスティネーションの場所にあるディレクトリにコピーでき<block ref="bd72f78a08f0a83b7e3fbbae64df2fed" category="inline-link-rx"></block>ます）。最初のコピー後、ファイル内で変更されたデータは、設定したスケジュールに基づいて同期されます。</block>
   <block id="e4186dd0c6123ee83f2ac799b88930b1" category="paragraph">これは、あるソースシステムから別のシステムにデータを移行する場合に便利です。このアクションでは、機能を使用して<block ref="d9f5c10edef42cff18580599262fd784" category="inline-link-rx"></block>ソースからターゲットにデータをコピーおよび同期します。</block>
   <block id="59a46e0ea7e3441d068ab93e14650d6e" category="admonition">データベース、 OneDrive アカウント、 SharePoint アカウントにあるファイルはコピーおよび同期できません。</block>
-  <block id="2e23ab8075b914f073724aeeab7a7221" category="list-text">ファイルをコピーおよび同期する権限が必要です。<block ref="755d8ea7a519899e64b990f74fdc72f2" category="inline-link-macro-rx"></block>です。</block>
   <block id="2e5ce55dec2ff1c76b2eb8662089db85" category="list-text">選択したファイルはすべて、同じソースリポジトリ（ ONTAP ボリューム、 S3 バケット、 NFS 共有、 CIFS 共有など）にある必要があります。</block>
   <block id="5698905e8d060e455d19636040ff425c" category="inline-link">Quick Start 概要 の略</block>
   <block id="9b9f495105111a0fa74c1500ac1b40e5" category="list-text">BlueXPのコピーおよび同期サービスをアクティブ化し、ソースシステムとターゲットシステム間でファイルを転送するためのデータブローカーを少なくとも1つ設定する必要があります。から、BlueXP  コピーと同期の要件を確認します<block ref="33fe85ab0bf4bd63d137fd0932246743" category="inline-link-rx"></block>。</block>
@@ -1852,7 +1850,6 @@
   <block id="c82ffa722bb30ecf26aa93c8c1f6491b" category="paragraph">必要に応じて、移動したファイルの場所にブレッドクラムファイルを残すことができます。ブレッドクラムファイルは、ファイルが元の場所から移動された理由をユーザーが理解するのに役立ちます。移動されたファイルごとに、システムはという名前のソースの場所にブレッドクラムファイルを作成します<block ref="e5b81a76aedb2ddb1da7aba12de3e20b" prefix=" " category="inline-code"></block>。ダイアログボックスで、ブレッドクラムファイルに追加されるテキストを追加して、ファイルが移動された場所とファイルを移動したユーザを示すことができます。</block>
   <block id="125161c62eedd013601db45d9716edf6" category="paragraph">ソースファイルのサブディレクトリ構造は、ファイルの移動時に移動先の共有に再作成されるため、ファイルの移動元がわかりやすくなります。同じ名前のファイルがコピー先に存在する場合、そのファイルは移動されません。</block>
   <block id="4ae80798b0ef194ea50cfe00aa1b363c" category="admonition">データベースに存在するファイルは移動できません。</block>
-  <block id="7253808b56101588fe6b9f8e3310f2de" category="list-text">ファイルを移動する権限が必要です。<block ref="755d8ea7a519899e64b990f74fdc72f2" category="inline-link-macro-rx"></block>です。</block>
   <block id="3aa95927284ca0cd4e7737dd41a53153" category="list-text">ソースファイルは、オンプレミスのONTAP 、Cloud Volumes ONTAP 、Azure NetApp Files 、ファイル共有、SharePoint Onlineのデータソースに配置できます。</block>
   <block id="49bb7289b8abc33c271f634fc8149b1e" category="list-text">一度に移動できるファイルの最大数は1、500万です。</block>
   <block id="71015deb6ac3269a57685acb827c23be" category="list-text">50 MB以下のファイルのみが移動されます。</block>
@@ -1877,7 +1874,6 @@
   <block id="2a500e3681b7e207d0d6c159ff2008ab" category="list-text">CIFSデータの場合- CIFSクレデンシャルに書き込み権限が必要です。</block>
   <block id="e9d85b8e3ea5257d3468eb6f787a1fcd" category="list-text">S3データの場合- IAMロールには次の権限が含まれている必要があります<block ref="ec68e11afcd3e390ebf5080e8af5b735" prefix=" " category="inline-code"></block>。</block>
   <block id="d771d7d12660fbeb94c2343ab606b51d" category="section-title">ソースファイルを手動で削除する</block>
-  <block id="b7f17bad276a0a849229c1ccd0d02ea8" category="list-text">ファイルを削除する権限が必要です。<block ref="755d8ea7a519899e64b990f74fdc72f2" category="inline-link-macro-rx"></block>です。</block>
   <block id="982e0ea8ac129cb8e1614b1eb919a238" category="list-text">一度に削除できるファイルの最大数は 100 、 000 です。</block>
   <block id="d14aadac54b4954b4a906556c2e19bd5" category="list-text">[ データ調査結果 ] ペインで、削除するファイルを選択します。</block>
   <block id="47a3f3156d581e80ad2e6dc38b57f4fd" category="inline-image-macro">削除するファイルを選択する方法を示すスクリーンショット。 [ データ調査 ] ページの [ 削除 ] ボタン。</block>
@@ -3580,4 +3576,8 @@
   <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetAppは、 BlueXPとそのクラウドサービスに対して、様々なサポートを提供しています。ナレッジベース（KB）記事やコミュニティフォーラムなど、充実した無料のセルフサポートオプションを24時間365日ご利用いただけます。サポート登録には、Webチケットによるリモートテクニカルサポートも含まれます。</block>
   <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">アカウントのシリアル番号、緑色のチェックボックス、および「サポートに登録済み」というテキストが表示されているスクリーンショット。</block>
   <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="030c30fe65e7389b97e25493d1050cb5" category="list-text">ファイルをコピーするには権限が必要です。<block ref="8ccbab5e2c8c15f4593085b049c7211e" category="inline-link-macro-rx"></block> 。</block>
+  <block id="cabac526d4cf33ef9b02b0693cd1699c" category="list-text">ファイルをコピーおよび同期するには権限が必要です。<block ref="8ccbab5e2c8c15f4593085b049c7211e" category="inline-link-macro-rx"></block> 。</block>
+  <block id="3e3cb2a1aa38db84e1a7fbd4e46dd21b" category="list-text">ファイルを移動するには権限が必要です。<block ref="8ccbab5e2c8c15f4593085b049c7211e" category="inline-link-macro-rx"></block> 。</block>
+  <block id="25dc0f9bf48b7d09b459240afbf36637" category="list-text">ファイルを削除するには権限が必要です。<block ref="8ccbab5e2c8c15f4593085b049c7211e" category="inline-link-macro-rx"></block> 。</block>
 </blocks>
