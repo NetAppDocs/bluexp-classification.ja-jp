@@ -1,0 +1,19 @@
+= バージョン1.46
+:allow-uri-read: 
+
+
+
+
+=== バージョン1.46
+
+このBlueXP classificationリリースには、バグ修正と次の更新が含まれています。
+
+.BlueXPタイムラインのスキャンイベントの洞察の強化
+BlueXPタイムラインは、 BlueXP classificationのスキャン イベントに関する強化された分析をサポートするようになりました。タイムラインには、作業環境のスキャンがいつ開始されたか、作業環境のステータス、および問題が表示されるようになりました。共有と作業環境のステータスは、マッピング スキャンでのみ使用できます。
+
+BlueXPのタイムラインの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["BlueXP の操作を監視する"^] 。
+
+.RHEL 9.6 のサポート
+このリリースでは、ダーク サイトの展開を含むBlueXP classificationの手動オンプレミス インストール用に Red Hat Enterprise Linux v9.6 のサポートが追加されました。
+
+次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があり、BlueXP  分類バージョン1.30以降が必要です。Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5。
