@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-* BlueXPの分類は、他のアプリケーションと共有するホストではサポートされません。専用のホストである必要があります。
+* BlueXP classificationは、他のアプリケーションと共有されているホストではサポートされません。ホストは専用ホストである必要があります。
 * オンプレミスでホストシステムを構築する場合は、BlueXP分類スキャンを実行するデータセットのサイズに応じて、これらのシステムサイズの中から選択できます。
 +
 [cols="17,17,27,31"]
@@ -14,7 +14,6 @@
 ** SSDは1TiB、またはオプションで100GiBを利用可能
 ** 895GiBを/var/lib/dockerで使用可能
 ** /tmp 上で 5 GiB
-** * Podmanの場合、/tmpで5 GB *
 ** * Podmanの場合、/var/tmpに30GB *
 
 
@@ -22,18 +21,17 @@
 
 | *大きい* | CPU×16 | 64GBのRAM  a| 
 ** 500GiB SSDオン/オプションまたは100GiBオン/オプション
-** 395GiBは/var/lib/docker、Podman/var/lib/containers、またはPodman/var/lib/containersで使用可能
+** /var/lib/docker または Podman /var/lib/containers で 400 GiB が利用可能
 ** /tmp 上で 5 GiB
-** * Podmanの場合、/tmpで5 GB *
 ** * Podmanの場合、/var/tmpに30GB *
 
 
 |===
-* BlueXP分類インストール用にコンピューティングインスタンスをクラウドに導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。
+* BlueXP classificationインストール用にクラウドにコンピューティング インスタンスを展開する場合は、上記の「大規模」システム要件を満たすシステムを使用します。
 +
-** * Amazon Elastic Compute Cloud（Amazon EC2）インスタンスタイプ*：「m6i.4xlarge」を推奨します。link:reference-instance-types.html#aws-instance-types["追加のAWSインスタンスタイプを参照してください"^]です。
-** * Azure VMのサイズ*：「Standard_D16s_v3」を推奨します。link:reference-instance-types.html#azure-instance-types["その他のAzureインスタンスタイプを参照してください"^]です。
-** *GCPマシンタイプ*:「n2-standard-16」をお勧めします。link:reference-instance-types.html#gcp-instance-types["追加のGCPインスタンスタイプを参照してください"^]です。
+** *Amazon Elastic Compute Cloud (Amazon EC2) インスタンスタイプ*:「m6i.4xlarge」。link:reference-instance-types.html#aws-instance-types["追加のAWSインスタンスタイプを参照してください"^] 。
+** *Azure VM サイズ*:「Standard_D16s_v3」。link:reference-instance-types.html#azure-instance-types["その他のAzureインスタンスタイプを参照してください"^] 。
+** *GCP マシンタイプ*:「n2-standard-16」。link:reference-instance-types.html#gcp-instance-types["追加のGCPインスタンスタイプを参照してください"^] 。
 
 
 * * UNIXフォルダ権限*：次の最小UNIX権限が必要です。
@@ -86,7 +84,7 @@
 
 * Pythonバージョン3.6以降。 https://www.python.org/downloads/["インストール手順を確認します"^]です。
 +
-** * NTPに関する考慮事項*：NetAppでは、ネットワークタイムプロトコル（NTP）サービスを使用するようにBlueXP分類システムを設定することを推奨しています。BlueXP分類システムとBlueXP Connectorシステムの間で時刻が同期されている必要があります。
+** *NTP に関する考慮事項*: NetApp、Network Time Protocol (NTP) サービスを使用するようにBlueXP classificationを構成することを推奨しています。  BlueXP classificationシステムとコネクタの間で時間を同期する必要があります。
 
 
 

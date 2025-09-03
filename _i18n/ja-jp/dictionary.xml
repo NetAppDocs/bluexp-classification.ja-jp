@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
-  <block id="264b044bf416a5337d28443921b46791" category="list-text">BlueXPの分類は、他のアプリケーションと共有するホストではサポートされません。専用のホストである必要があります。</block>
   <block id="914179b3d4545ce8b8e8ba122c53f4d9" category="list-text">オンプレミスでホストシステムを構築する場合は、BlueXP分類スキャンを実行するデータセットのサイズに応じて、これらのシステムサイズの中から選択できます。</block>
   <block id="8c270421a057347baf727ea386f58d8f" category="cell">システムサイズ</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="cell">CPU</block>
@@ -13,13 +12,9 @@
   <block id="c1b7308083354b8b60760460bcce3ccc" category="cell">*大きい*</block>
   <block id="dc8179e6e72156a5578bf35cf9574540" category="cell">CPU×16</block>
   <block id="5a1fdf37d5cd85436f7504641d78b95f" category="cell">64GBのRAM</block>
-  <block id="d5c832490c0ab9dcb105acd9ee7b4709" category="list-text">BlueXP分類インストール用にコンピューティングインスタンスをクラウドに導入する場合は、上記の「大規模」システム要件を満たすシステムを推奨します。</block>
   <block id="e6414c92b8fa46238f4135e4d3e45674" category="inline-link-macro">追加のAWSインスタンスタイプを参照してください</block>
-  <block id="b5f08a168a732355a95d9acdc430dcaf" category="list-text">* Amazon Elastic Compute Cloud（Amazon EC2）インスタンスタイプ*：「m6i.4xlarge」を推奨します。<block ref="2fad631c28a07a1344ecdbaabb5084bf" category="inline-link-macro-rx"></block>です。</block>
   <block id="130a6b20e1175876fb22c9520aa18c8c" category="inline-link-macro">その他のAzureインスタンスタイプを参照してください</block>
-  <block id="d713d26696157989a3e54d75e186ddb9" category="list-text">* Azure VMのサイズ*：「Standard_D16s_v3」を推奨します。<block ref="600a0a16acacbb97202eae2cd680ce79" category="inline-link-macro-rx"></block>です。</block>
   <block id="02a3b057fd8df2afe74574d8ba4929b5" category="inline-link-macro">追加のGCPインスタンスタイプを参照してください</block>
-  <block id="0b0199602ca16ca93e8ce086565ea99e" category="list-text">*GCPマシンタイプ*:「n2-standard-16」をお勧めします。<block ref="0560993eb8cc456f0c5f18a57a7d0f71" category="inline-link-macro-rx"></block>です。</block>
   <block id="114b40cee02180a916d6e0a652f1300d" category="list-text">* UNIXフォルダ権限*：次の最小UNIX権限が必要です。</block>
   <block id="b0f2b97dc5d2b76b26e040408bb1d8af" category="cell">フォルダ</block>
   <block id="9dc48a158dad20b2148d68f6a5863b5e" category="cell">最小権限</block>
@@ -43,7 +38,6 @@
   <block id="42b04f3730744d602d0c4b812384dce9" category="list-text">Docker Engineバージョン19.3.1以降。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>です。</block>
   <block id="1e61042bc6437e79f5a1cc09c86acd1a" category="list-text">Podmanバージョン4以降。Podmanをインストールするには、と入力し <block ref="9305f04686d4e3dadce4d1e9e77d9d71" prefix="(" category="inline-code"></block>ます）。</block>
   <block id="1d7787fe4a7264402153a51d8513414f" category="list-text">Pythonバージョン3.6以降。<block ref="f67fc9f0c7d8aa701884bad21356a242" category="inline-link-rx"></block>です。</block>
-  <block id="dfd993077bb353282906702dc3143ec7" category="list-text">* NTPに関する考慮事項*：NetAppでは、ネットワークタイムプロトコル（NTP）サービスを使用するようにBlueXP分類システムを設定することを推奨しています。BlueXP分類システムとBlueXP Connectorシステムの間で時刻が同期されている必要があります。</block>
   <block id="2808185c0a48de3cd5dcc0d92f453531" category="doc">バージョン1.35</block>
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="paragraph-title">StorageGRIDデータのスキャン</block>
   <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">詳細については、を参照してください <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。</block>
@@ -66,7 +60,6 @@
   <block id="f1a9c2f106d86fe27271e4f8f0c0bd59" category="paragraph">このリリースでは、以前のサポートバージョンに加えて、NFS v4.1もサポートされます。</block>
   <block id="5ae300808387123005a76abbd5a99f46" category="doc">バージョン1.38</block>
   <block id="074f06822cc9864b1be34066c52ec21d" category="paragraph">このBlueXP  分類リリースには、全般的な改善とバグ修正が含まれています。</block>
-  <block id="af8d3a18d6425ec49a99c09691466f39" category="summary">Web UIから使用できるBlueXPの分類機能は、Swagger APIからも使用できます。</block>
   <block id="3e70aaa0489a8fa1d39b16943a3f0844" category="doc">BlueXP分類API</block>
   <block id="8b2aa55ee7b70ec31ec11bb4537186f7" category="paragraph">BlueXPでは、UIのタブに対応する4つのカテゴリが定義されています。</block>
   <block id="5cbac16d406ddfc92080f39efa7437d8" category="list-text">調査</block>
@@ -86,9 +79,7 @@
   <block id="8d4462bd75d514bcb1e0545bfb9272d9" category="list-text">アクションの表示とキャンセル</block>
   <block id="a3c128ab8674fa4b5e836c2d45315f6c" category="list-text">ディレクトリの再スキャン</block>
   <block id="5e20646580da584d76435da00d6face4" category="list-text">データをエクスポートします</block>
-  <block id="a39ca37fb6314be500ea6c4e6028aad1" category="paragraph">このAPIはセキュアで、UIと同じ認証方式を使用します。認証の詳細については、次のページを参照してください。<block ref="86100a8a51cdb9259081132b7d91c690" category="inline-link-rx"></block></block>
   <block id="6bb2320a7f7d5e941653039f26a38ad9" category="section-title">Swagger APIリファレンスへのアクセス</block>
-  <block id="af16b996606b35cb0f77fe07ba2e556a" category="paragraph">Swaggerにアクセスするには、BlueXP分類インスタンスのIPアドレスが必要です。クラウド展開の場合は、パブリックIPアドレスを使用します。次に、次のエンドポイントにアクセスする必要があります。</block>
   <block id="49ef162b6621f970581074315940ec6c" category="paragraph">\https://&lt;classification_ip&gt;/documentation</block>
   <block id="b62dbbecd6533f9627427d34160e7d75" category="section-title">APIを使用した例</block>
   <block id="b7fd2e4068e2c6cc68317c7892c5290c" category="paragraph">次の例は、ファイルをコピーするAPI呼び出しを示しています。</block>
@@ -2805,10 +2796,8 @@
   <block id="74110511ebf4f8eea597c953392110f9" category="list-text">SSDは1TiB、またはオプションで100GiBを利用可能</block>
   <block id="4056804c808441484593a6cd5998f06e" category="list-text">895GiBを/var/lib/dockerで使用可能</block>
   <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">/tmp 上で 5 GiB</block>
-  <block id="79d1a6d2ec5f279b488952c279f36449" category="list-text">* Podmanの場合、/tmpで5 GB *</block>
   <block id="0e1cb4b06a070e11230e1c8de75a1db8" category="list-text">* Podmanの場合、/var/tmpに30GB *</block>
   <block id="16b9e4a3843d82aedd78ddf5568f32cc" category="list-text">500GiB SSDオン/オプションまたは100GiBオン/オプション</block>
-  <block id="7d5ad3bf21c571c611eed766c4a188c1" category="list-text">395GiBは/var/lib/docker、Podman/var/lib/containers、またはPodman/var/lib/containersで使用可能</block>
   <block id="155acacab86f1c55608330de83b4e05f" category="paragraph">あなたもできます<block ref="1a9c56cdde8c9a93a744fbe95f12b64a" category="inline-link-macro-rx"></block>。</block>
   <block id="f9cb03d21a26b2f64053d2e527396790" category="paragraph">オンプレミスインストールは、オンプレミスにあるBlueXP  分類インスタンスを使用してオンプレミスのONTAPシステムをスキャンする場合に適したオプションですが、これは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。</block>
   <block id="ee8870d1e0595ddae329cf8ef1ee89fa" category="paragraph">調査ページの内容をフィルタリングして、表示する結果のみを表示できます。</block>
@@ -3459,7 +3448,6 @@
   <block id="16d42e00c386e70a3a7df4333dbd3a1d" category="paragraph">インスタンス タイプについては、次の仕様を確認してください。</block>
   <block id="b6312fd76a50f60b989ce722e432d447" category="paragraph">ボリューム レベルまたはデータベース スキーマ レベルでスキャンを有効または無効にすることができます。</block>
   <block id="5ef007aec2cc80b49f082c5ae4dba4dc" category="list-text">**マッピングのみのスキャン**データの概要のみが表示され、選択したデータソースで実行されます。マッピングのみのスキャンでは、ファイルにアクセスして内部のデータを確認する必要がないため、マップおよび分類スキャンよりも時間がかかりません。最初にこれを実行して調査領域を特定し、それらの領域に対してMap &amp; Classifyスキャンを実行することもできます。</block>
-  <block id="71653fb5163aa99d8613874ef0398606" category="paragraph">+ BlueXP classificationスキャンによってファイルの「最終アクセス時刻」が変更されないようにするには、ユーザーにCIFSの属性書き込み権限、またはNFSの書き込み権限を付与することをお勧めします。可能であれば、Active Directoryユーザーを、組織内の全ファイルへの権限を持つ親グループに所属させてください。</block>
   <block id="d0169e5c24cd4c5e05dcb7edb4ca10d7" category="doc">バージョン1.45</block>
   <block id="8321b9867214f5caa9d5a37197549cfb" category="paragraph">このBlueXP classificationリリースには、リソース使用率を最適化するコード変更が含まれており、次のようになります。</block>
   <block id="8f993d1847870bf5334f9e8a709029c8" category="paragraph-title">スキャン対象ファイル共有を追加するワークフローの改善</block>
@@ -3467,7 +3455,6 @@
   <block id="628bc6ea752b2d2bd10bc4f22b8cfcca" category="inline-xref-macro">ファイル共有のスキャン</block>
   <block id="2cc1f0459a8aa18da26c0c17c08edd37" category="paragraph-title">拡張ファイル所有者情報</block>
   <block id="c6d521e93c659f52fc0150619d81cd0e" category="paragraph">また、ファイル所有者の詳細情報（アカウント名、メール アドレス、SAM アカウント名）を表示したり、そのユーザーが所有するアイテムを表示したりすることもできます。</block>
-  <block id="8d1256ea20b6f3627b46e3916aa6a135" category="paragraph">BlueXP classificationスキャンによってファイルの「最終アクセス時刻」が変更されないようにするには、ユーザーにCIFSの属性書き込み権限、またはNFSの書き込み権限を付与することをお勧めします。可能であれば、Active Directoryユーザーを、組織内の全ファイルへの権限を持つ親グループに所属させてください。</block>
   <block id="06d20a71e8e976cfefed98d4f05b2dc1" category="list-text">結果をさらに絞り込むには、フィルター ペインでフィルターの 1 つを選択します。</block>
   <block id="07b57c9c0ed87759bcd88b15d5738118" category="paragraph">情報の可用性はデータソースによって異なります。たとえば、データベースファイルの場合、ボリューム名と権限は共有されません。</block>
   <block id="d353221e429d4e01e167115856394ba7" category="paragraph">ストレージシステム内に重複したファイルが保存されていないか確認できます。これは、ストレージスペースを節約できる領域を特定する場合に便利です。また、特定の権限や機密情報を含むファイルが、ストレージシステム内で不必要に重複していないことを確認することも重要です。</block>
@@ -3530,9 +3517,7 @@
   <block id="4c59149345d32f10d4c1edb221d77028" category="paragraph">「調査」タブでキャプチャされたファイルの所有者に関する詳細情報を表示できるようになりました。[調査] タブでファイルのメタデータを表示するときは、ファイルの所有者を見つけて [**詳細を表示**] を選択し、ユーザー名、メール アドレス、SAM アカウント名を表示します。また、このユーザーが所有する他のアイテムも表示できます。この機能は、Active Directoryが稼働している環境でのみご利用いただけます。</block>
   <block id="476669d16044da6b8fccc04e3a65c887" category="paragraph">詳細については、を参照してください <block ref="202490d1a2feeed942d0b33752539ffd" category="inline-link-macro-rx"></block>。</block>
   <block id="ba0582c1a4216adac557c97d2f92f869" category="inline-link-macro">別のコネクタをインストールする</block>
-  <block id="bb421402dbabe6eec32567511e69bc2a" category="inline-link-macro">別の分類インスタンスを展開する</block>
   <block id="7473cbb9b768b471bd45e7579b544a3a" category="inline-link-macro">複数のコネクタの操作</block>
-  <block id="c430d0ad1a785912ff6e7f2d659d752f" category="paragraph">BlueXP classificationでは、スキャンできるデータ量に制限はありません。各コネクタは500TiBのデータのスキャンと表示をサポートしています。500TiBを超えるデータをスキャンするには、 <block ref="a34b864875c7f2ebc4a815c94a375e43" category="inline-link-macro-rx"></block>それから<block ref="a51ca3e7fcece55a05339015489757d6" category="inline-link-macro-rx"></block> .+ BlueXP UIは単一のコネクタからのデータを表示します。複数のコネクタからのデータを表示するヒントについては、 <block ref="5255e271b4118330c3aac09d32603a12" category="inline-link-macro-rx"></block> 。</block>
   <block id="551fbc3b7472150a5293373b773972d7" category="cell">500 TiB に制限されます*</block>
   <block id="acdf9d63036f9706b8165f6f6a7117da" category="paragraph">{アスタリスク} include::_include/コネクタ制限.adoc[]</block>
   <block id="e8c9a8c8c457fc72bf3b116575089845" category="paragraph">BlueXP classificationは、コネクタごとに最大 500 TiB のスキャン データに対して、追加料金なしでBlueXP内のコア機能として利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。今回の新バージョンでは、BlueXPの分類機能をNetAppストレージシステムのスキャンに重点を置いているため、一部のレガシー機能は、以前にライセンス料金を支払ったお客様のみが利用できます。これらのレガシー機能の使用は、有料契約が終了日に達すると期限切れになります。</block>
@@ -3589,4 +3574,20 @@
   <block id="e5d2f68147d287044a7fffa2d0926eae" category="paragraph-title">RHEL 9.6 のサポート</block>
   <block id="f1513d7b9b8ef1acb75bb450ddd12a6c" category="paragraph">このリリースでは、ダーク サイトの展開を含むBlueXP classificationの手動オンプレミス インストール用に Red Hat Enterprise Linux v9.6 のサポートが追加されました。</block>
   <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">2025年8月11日</block>
+  <block id="88490f51308acd9c9a526511feb1b6fb" category="paragraph">+ ファイルの「最終アクセス時刻」がBlueXP classificationスキャンによって変更されていないことを確認したい場合は、ユーザーに CIFS の属性書き込み権限または NFS の書き込み権限を与えることをお勧めします。可能であれば、Active Directory ユーザーを、すべてのファイルへの権限を持つ組織内の親グループの一部として構成します。</block>
+  <block id="06c3d407c31ff0f40292519ad2fbf086" category="inline-link-macro">BlueXP classificationの別のインスタンスを展開する</block>
+  <block id="5872875d7a05b489de9eca6b794aeb0d" category="paragraph">BlueXP classificationでは、スキャンできるデータの量に制限はありません。各コネクタは 500 TiB のデータのスキャンと表示をサポートします。  500TiB以上のデータをスキャンするには、<block ref="a34b864875c7f2ebc4a815c94a375e43" category="inline-link-macro-rx"></block>それから<block ref="d93d7bddd35b0564aa636ce280ef8dbf" category="inline-link-macro-rx"></block>。 BlueXP UI には、単一のコネクタからのデータが表示されます。複数のコネクタからデータを表示するヒントについては、<block ref="5255e271b4118330c3aac09d32603a12" category="inline-link-macro-rx"></block> 。</block>
+  <block id="d55dde897c01cfd972009c9f03ae26e7" category="list-text">BlueXP classificationは、他のアプリケーションと共有されているホストではサポートされません。ホストは専用ホストである必要があります。</block>
+  <block id="fbb27e2a29f9e80c540c4bb1e45f91c9" category="list-text">/var/lib/docker または Podman /var/lib/containers で 400 GiB が利用可能</block>
+  <block id="925c9039268a157dc5413b766386d330" category="list-text">BlueXP classificationインストール用にクラウドにコンピューティング インスタンスを展開する場合は、上記の「大規模」システム要件を満たすシステムを使用します。</block>
+  <block id="10657c54dd5c19e73ee0f8e2223b7a46" category="list-text">*Amazon Elastic Compute Cloud (Amazon EC2) インスタンスタイプ*:「m6i.4xlarge」。<block ref="2fad631c28a07a1344ecdbaabb5084bf" category="inline-link-macro-rx"></block> 。</block>
+  <block id="dcd6c94de63a44c707e6410206f93f30" category="list-text">*Azure VM サイズ*:「Standard_D16s_v3」。<block ref="600a0a16acacbb97202eae2cd680ce79" category="inline-link-macro-rx"></block> 。</block>
+  <block id="e7d3c98d4730560139776bd99350f7c9" category="list-text">*GCP マシンタイプ*:「n2-standard-16」。<block ref="0560993eb8cc456f0c5f18a57a7d0f71" category="inline-link-macro-rx"></block> 。</block>
+  <block id="4729c99a5b7462bb98c9ab0f4f598a51" category="list-text">*NTP に関する考慮事項*: NetApp、Network Time Protocol (NTP) サービスを使用するようにBlueXP classificationを構成することを推奨しています。  BlueXP classificationシステムとコネクタの間で時間を同期する必要があります。</block>
+  <block id="6446da06477af010feea65d51c284e8c" category="summary">Web UI を通じて利用できるBlueXP classification機能は、REST API を通じても利用できます。</block>
+  <block id="dc2db3ddd305206c3c8fd34179c0e3e0" category="paragraph">Web UI を通じて利用できるBlueXP classification機能は、REST API を通じても利用できます。</block>
+  <block id="567ead09d16d940fef8acf1a3c2c193f" category="inline-link-macro">REST API ドキュメント</block>
+  <block id="d0e3c0b1617fba7e035a47001abbc7c1" category="paragraph">API は安全で、UI と同じ認証方法を使用します。認証に関する情報は、<block ref="bbdacd4f187c413013ce0d7ecba5c48f" category="inline-link-macro-rx"></block> 。</block>
+  <block id="078dc57072fdb65adb61b246152fd26d" category="paragraph">API リファレンスにアクセスするには、 BlueXP classificationインスタンスの IP アドレスが必要です。クラウド展開がある場合は、パブリック ID アドレスを使用します。例えば：</block>
+  <block id="66658abcedb95d760806823bcf735240" category="paragraph">BlueXP classificationスキャンによってファイルの「最終アクセス時刻」が変更されないようにしたい場合は、ユーザーに CIFS の属性書き込み権限または NFS の書き込み権限を与えることをお勧めします。可能であれば、Active Directory ユーザーを、すべてのファイルへの権限を持つ組織内の親グループの一部として構成します。</block>
 </blocks>

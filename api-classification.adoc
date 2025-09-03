@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: api-classification.html 
 keywords: api, apis, rest, restful, authorization, classification, data sense, swagger, body, header, list apis 
-summary: Web UIから使用できるBlueXPの分類機能は、Swagger APIからも使用できます。 
+summary: Web UI を通じて利用できるBlueXP classification機能は、REST API を通じても利用できます。 
 ---
 = BlueXP分類API
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Web UIから使用できるBlueXPの分類機能は、Swagger APIから
 
 
 [role="lead"]
-Web UIから使用できるBlueXPの分類機能は、Swagger APIからも使用できます。
+Web UI を通じて利用できるBlueXP classification機能は、REST API を通じても利用できます。
 
 BlueXPでは、UIのタブに対応する4つのカテゴリが定義されています。
 
@@ -52,13 +52,13 @@ APIでは、次の機能を実行できます。
 
 
 
-このAPIはセキュアで、UIと同じ認証方式を使用します。認証の詳細については、次のページを参照してください。 https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html[]
+API は安全で、UI と同じ認証方法を使用します。認証に関する情報は、link:https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html["REST API ドキュメント"^] 。
 
 
 
 == Swagger APIリファレンスへのアクセス
 
-Swaggerにアクセスするには、BlueXP分類インスタンスのIPアドレスが必要です。クラウド展開の場合は、パブリックIPアドレスを使用します。次に、次のエンドポイントにアクセスする必要があります。
+API リファレンスにアクセスするには、 BlueXP classificationインスタンスの IP アドレスが必要です。クラウド展開がある場合は、パブリック ID アドレスを使用します。例えば：
 
 \https://<classification_ip>/documentation
 
